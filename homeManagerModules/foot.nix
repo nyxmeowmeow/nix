@@ -43,6 +43,12 @@
         bright7 = "ffffff";   # bright white
       };
       tweak.box-drawing-base-thickness = "0.06";
+      key-bindings = {
+        scrollback-up-half-page = "Control+Shift+e";
+        scrollback-down-half-page = "Control+Shift+a";
+        scrollback-home = "Control+Shift+h";
+        scrollback-end = "Control+Shift+i";
+      };
     };
   };
 }
