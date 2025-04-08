@@ -4,6 +4,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    jq
     wl-clipboard
     clipse
     eza
