@@ -10,6 +10,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    eza
     fzf
     zoxide
     waybar
