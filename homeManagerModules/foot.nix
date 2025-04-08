@@ -16,9 +16,10 @@
       };
       cursor = {
         style = "beam";
+        blink = "yes";
       };
       colors = {
-        alpha = "0.8";
+        alpha = "0";
         background = "24273a";
         foreground = "cad3f5";
         ## Normal/regular colors (color palette 0-7)
