@@ -47,6 +47,8 @@
     mesa
     libdrm
     libGL
+    xwayland
+
   ];
 
 
