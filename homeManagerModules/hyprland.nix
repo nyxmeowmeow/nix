@@ -154,8 +154,15 @@
 
     animations.enabled = "false";
     workspace = [
-
-      "1, monitor:DP-3"
+      "1, monitor:DP-1"
+      "2, monitor:DP-1"
+      "3, monitor:DP-1"
+      "4, monitor:DP-1"
+      "5, monitor:DP-1"
+      "6, monitor:DP-1"
+      "7, monitor:DP-1"
+      "8, monitor:DP-1"
+      "9, monitor:DP-3"
     ];
     bind = [
       
@@ -201,27 +208,24 @@
       # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
-      "SUPER, 0,      workspace,                 3"
-      "SUPER, Tab,    workspace,                 4"
-      "SUPER, b,      workspace,                 5"
-      "SUPER, w,      workspace,                 6"
-      "SUPER, comma,  togglespecialworkspace,    2"
-      "SUPER, period, togglespecialworkspace"
+      "SUPER, Tab,    workspace,                 1"
+      "SUPER, b,      workspace,                 2"
+      "SUPER, l,      workspace,                 3"
+      "SUPER, d,      workspace,                 4"
+      "SUPER, w,      workspace,                 5"
+      "SUPER, comma,  togglespecialworkspace"
+      "SUPER, period, togglespecialworkspace,    2"
       "SUPER, m,      togglespecialworkspace,    music"
-      "SUPER, l,      workspace,                 8"
-      "SUPER, d,      workspace,                 9"
-      "SUPER SHIFT, minus, workspace,            10"
 
-      "SUPER SHIFT, n,          movetoworkspacesilent,   1"
-      "SUPER SHIFT, Tab,        movetoworkspacesilent,   4"
-      "SUPER SHIFT, b,          movetoworkspacesilent,   5"
-      "SUPER SHIFT, w,          movetoworkspacesilent,   6"
+      "SUPER SHIFT, n,          movetoworkspacesilent,   mon2"
+      "SUPER SHIFT, Tab,        movetoworkspacesilent,   1"
+      "SUPER SHIFT, b,          movetoworkspacesilent,   2"
+      "SUPER SHIFT, l,          movetoworkspacesilent,   3"
+      "SUPER SHIFT, d,          movetoworkspacesilent,   4"
+      "SUPER SHIFT, w,          movetoworkspacesilent,   5"
       "SUPER SHIFT, comma,      movetoworkspacesilent,   special:2"
       "SUPER SHIFT, period,     movetoworkspacesilent,   special"
       "SUPER SHIFT, m,          movetoworkspacesilent,   special:music"
-      "SUPER SHIFT, l,          movetoworkspacesilent,   8"
-      "SUPER SHIFT, d,          movetoworkspacesilent,   9"
-      "SUPER SHIFT, z,          movetoworkspacesilent,   10"
 
 
       "SUPER, h, movefocus, l"
