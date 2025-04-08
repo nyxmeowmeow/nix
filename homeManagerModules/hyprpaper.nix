@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
   
   services.hyprpaper = {
-#    enabled = "true";
+   enable = true;
     settings = {
       ipc = "on";
       splash = false;
