@@ -45,8 +45,8 @@
     kanata
     dconf
     mesa
-    libdrm
     libGL
+    libdrm
     xwayland
 
   ];
