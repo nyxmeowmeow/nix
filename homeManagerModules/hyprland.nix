@@ -189,7 +189,7 @@
       ", XF86AudioPrev,        exec, playerctl previous"
 
 
-      "SUPER, V, exec, fish clipse -fc $fish_pid"
+      "SUPER, V, exec, foot clipse -fc $fish_pid"
       # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
