@@ -10,6 +10,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    zoxide
     waybar
     vscodium
     walker
