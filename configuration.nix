@@ -10,6 +10,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    fzf
     zoxide
     waybar
     vscodium
