@@ -65,6 +65,7 @@
       "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
     ];
     exec-once = [
+      "clipse -listen"
       "udiskie -a"
       "dunst"
       "hyprpaper"
@@ -188,7 +189,8 @@
       ", XF86AudioPrev,        exec, playerctl previous"
 
 
-      "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
+      "SUPER, V, exec, fish clipse -fc $fish_pid"
+      # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
       "SUPER, 0,      workspace,                 3"
@@ -252,6 +254,11 @@
       "SUPER SHIFT, i,Move activewindow to the right,exec, $moveactivewindow 30 0 || hyprctl dispatch movewindow r"
       ];
 
+
+
+    windowrulev2 = [
+      "nofocus, title:^(Remux Recordings)$"
+    ];
   };
 
 
