@@ -45,6 +45,8 @@
     kanata
     dconf
     mesa
+    libdrm
+    libGL
   ];
 
 
