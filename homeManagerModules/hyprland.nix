@@ -162,8 +162,7 @@
       "6, monitor:DP-1"
       "7, monitor:DP-1"
       "8, monitor:DP-1"
-      "9, monitor:DP-1"
-      "second, monitor:DP-3"
+      "9, monitor:DP-3"
     ];
     bind = [
       
@@ -218,7 +217,7 @@
       "SUPER, period, togglespecialworkspace,    2"
       "SUPER, m,      togglespecialworkspace,    music"
 
-      "SUPER SHIFT, n,          movetoworkspacesilent,   second"
+      "SUPER SHIFT, n,          movetoworkspacesilent,   9"
       "SUPER SHIFT, Tab,        movetoworkspacesilent,   1"
       "SUPER SHIFT, b,          movetoworkspacesilent,   2"
       "SUPER SHIFT, l,          movetoworkspacesilent,   3"
