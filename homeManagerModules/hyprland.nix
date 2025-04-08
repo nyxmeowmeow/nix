@@ -153,6 +153,10 @@
     };
 
     animations.enabled = "false";
+    workspace = [
+
+      "1, monitor:DP-3"
+    ];
     bind = [
       
       "SUPER CTRL SHIFT,   Delete, exit"  # kill hyprland session
