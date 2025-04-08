@@ -27,6 +27,7 @@
     foot
     hyprland
     hyprpaper
+    hyprpicker
     polkit_gnome
     fish
     walker
