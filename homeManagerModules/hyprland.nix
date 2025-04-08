@@ -129,7 +129,11 @@
       layout = "dwindle";
     };
     dwindle = {
+      pseudotile = "true";
       preserve_split = "true";
+      split_width_multiplier = "1";
+      split_bias = "2";
+      force_split = "2";
     };
     decoration = {
       dim_special = "0";
