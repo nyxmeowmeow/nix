@@ -39,17 +39,10 @@
     };
   };
 
-
   systemd.tmpfiles.rules = [
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
   ];
 
-
-
-  services.xserver.xkb = {
-    layout = "au";
-    variant = "";
-  };
 
   services.printing.enable = true; # cups
 
