@@ -32,6 +32,7 @@
     fish
     walker
     grimblast
+    slurp
     catppuccin-kvantum
     catppuccin-gtk
     dunst
@@ -48,6 +49,12 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  boot.kernelParams = [
+  "video=DP-1:2560x1440@165"
+  "video=DP-3:2560x1440@75"
+];
+
 
   networking.hostName = "nixos"; # Define your hostname.
 
@@ -79,6 +86,7 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
   services.udisks2.enable = true; 
   systemd.services.udiskie.enable = true;
@@ -125,10 +133,17 @@
         RestartSec = 1;
         TimeoutStopSec = 10;
       };
+    };
   };
-};
 
   
+
+
+
+  systemd.tmpfiles.rules = [
+    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+  ];
+
 
 
 
