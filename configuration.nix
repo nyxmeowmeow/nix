@@ -49,6 +49,7 @@
     libdrm
     xwayland
     wine
+    protonup
   ];
 
 
