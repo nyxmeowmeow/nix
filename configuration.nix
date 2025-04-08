@@ -105,6 +105,10 @@
     enable32Bit = true;
   };
 
+  environment.sessionVariables = { # protonup install path
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d";
+  };
+
 
 
   # Enable the X11 windowing system.
