@@ -17,6 +17,8 @@
       cursor = {
         style = "beam";
         blink = "yes";
+        unfocused-style = "unchanged";
+        color = "24273a cad3f5";
       };
       colors = {
         alpha = "0";
