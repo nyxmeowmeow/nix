@@ -44,6 +44,7 @@
     fastfetch
     kanata
     dconf
+    mesa
   ];
 
 
