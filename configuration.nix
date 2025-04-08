@@ -4,6 +4,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    netcat
     jq
     wl-clipboard
     clipse
@@ -115,7 +116,7 @@
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
 
-  services.udisks2.enable = true; 
+  services.udisks2.enable = true;
   systemd.services.udiskie.enable = true;
   services.gvfs.enable = true;
 
