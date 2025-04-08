@@ -2,7 +2,7 @@
 
   services.clipse = {
     imageDisplay = {
-      type = "kitty";
+      type = "sixel";
     };
   };
 }
