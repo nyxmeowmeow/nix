@@ -8,14 +8,9 @@
     ./homeManagerModules/hyprland.nix
     ./homeManagerModules/foot.nix
     ./homeManagerModules/hyprpaper.nix
-    # ./homeManagerModules/clipse.nix
+    ./homeManagerModules/clipse.nix
   ];
 
-  services.clipse = {
-    imageDisplay = {
-      type = "kitty";
-    };
-  };
 
 
   programs.git = {
