@@ -189,7 +189,7 @@
       ", XF86AudioPrev,        exec, playerctl previous"
 
 
-      "SUPER, V, exec, foot -e fish -c clipse -fc $fish_pid"
+      "SUPER, V, exec, foot -a clipse -e fish -c clipse -fc $fish_pid"
       # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
@@ -258,6 +258,7 @@
 
     windowrulev2 = [
       "nofocus, title:^(Remux Recordings)$"
+      "float, class:^(clipse)$"
     ];
   };
 
