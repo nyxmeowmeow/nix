@@ -9,8 +9,10 @@
         font = "Mononoki Nerd Font Mono:size=20";
         dpi-aware = "yes";
         shell = "fish";
-        
-      
+
+        box-drawings-uses-font-glyphs = "no";
+
+
       };
       cursor = {
         style = "beam";
@@ -39,6 +41,7 @@
         bright6 = "8bd5ca";   # bright cyan
         bright7 = "ffffff";   # bright white
       };
+      tweak.box-drawing-base-thickness = "0.06";
     };
   };
 }
