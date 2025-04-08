@@ -8,12 +8,13 @@
       splash_offset = 2.0;
 
       preload = [
-        "~Pictures/wallpapers/dithered.png" 
+        "~Pictures/wallpapers/buildings1b.png" 
+        "~Pictures/wallpapers/buildings2b.png" 
       ];
 
       wallpaper = [
-        "DP-3,~Pictures/wallpapers/dithered.png"
-        "DP-1,~Pictures/wallpapers/dithered.png"
+        "DP-3,~Pictures/wallpapers/buildings1b.png"
+        "DP-1,~Pictures/wallpapers/buildings2b.png"
       ];
     };
   };

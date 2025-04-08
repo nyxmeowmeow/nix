@@ -11,14 +11,14 @@
       FilteredMatch = "#cad3f5";
       NormalDesc = "#000000";
       NormalTitle = "#cad3f5";
-      SelectedDesc = "#ffffff";
+      SelectedDesc = "#000000";
       SelectedTitle = "#ffffff";
-      SelectedBorder = "#ffffff";
-      SelectedDescBorder = "#ffffff";
-      TitleFore = "#ffffff";
-      Titleback = "#434C5E";
+      SelectedBorder = "#00000000";
+      SelectedDescBorder = "#00000000";
+      TitleFore = "#cad3f5";
+      Titleback = "#00000000";
       StatusMsg = "#ffffff";
-      PinIndicatorColor = "#ff0000";
+      PinIndicatorColor = "#b7bdf8";
     };
   };
 }
