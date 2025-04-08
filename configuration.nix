@@ -5,15 +5,12 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
       ./hardware-configuration.nix
     ];
-    
-    
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+
   environment.systemPackages = with pkgs; [
+    waybar
     vscodium
     walker
     udiskie
@@ -29,7 +26,7 @@
     foot
     hyprland
     hyprpaper
-    hyprpolkitagent
+    polkit_gnome
     fish
     walker
     grimblast
@@ -46,16 +43,11 @@
     dconf
   ];
 
-  # Bootloader.
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   fonts.packages = with pkgs; [
     pkgs.nerd-fonts.mononoki
@@ -107,7 +99,6 @@
   };
 
 
-
   security.polkit.enable = true;
 
   security.polkit.extraConfig = ''
@@ -118,6 +109,24 @@
       }
     });
   '';
+
+  systemd = {
+  user.services.polkit-gnome-authentication-agent-1 = {
+    description = "polkit-gnome-authentication-agent-1";
+    wantedBy = [ "graphical-session.target" ];
+    wants = [ "graphical-session.target" ];
+    after = [ "graphical-session.target" ];
+    serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
+        Restart = "on-failure";
+        RestartSec = 1;
+        TimeoutStopSec = 10;
+      };
+  };
+};
+
+  
 
 
 
@@ -151,14 +160,19 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  programs.fish.enable = true;
+
   users.users.meow = {
     isNormalUser = true;
     description = "meow";
-    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" ];
+    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
+    shell = pkgs.fish;
     packages = with pkgs; [
     #  thunderbird
     ];
   };
+
+
 
   # Install firefox.
   programs.firefox.enable = true;

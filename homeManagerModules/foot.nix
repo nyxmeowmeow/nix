@@ -8,6 +8,7 @@
 
         font = "Mononoki Nerd Font Mono:size=20";
         dpi-aware = "yes";
+        shell = "fish";
         
       
       };

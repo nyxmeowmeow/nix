@@ -71,6 +71,7 @@
       "walker --gapplication-service"
       "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
       "steam -silent"
+      "systemctl --user start hyprpolkitagent"
     ];
     monitor = [
       "DP-1, 2560x1440@165, 0x0, 1"
@@ -179,8 +180,8 @@
       "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
 
 
-      ", XF86AudioMute,        exec, $scrPath/volumecontrol.sh -o m"
-      ", XF86AudioMicMute,     exec $scrPath/volumecontrol.sh -i m"
+      # ", XF86AudioMute,        exec, $scrPath/volumecontrol.sh -o m"
+      # ", XF86AudioMicMute,     exec $scrPath/volumecontrol.sh -i m"
       ", XF86AudioPlay,        exec, $scrPath/playpause.sh"
       ", XF86AudioPause,       exec, $scrPath/playpause.sh"
       ", XF86AudioNext,        exec, playerctl next"
