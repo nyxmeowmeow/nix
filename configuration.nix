@@ -39,7 +39,6 @@
     dunst
     libnotify
     playerctl
-    steam
     yazi
     neovim
     fastfetch
@@ -49,7 +48,7 @@
     libGL
     libdrm
     xwayland
-
+    wine
   ];
 
 
@@ -95,6 +94,11 @@
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
   };
 
 
@@ -173,7 +177,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
