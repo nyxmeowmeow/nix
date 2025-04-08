@@ -50,6 +50,7 @@
     xwayland
     wine
     protonup
+    lutris
   ];
 
 
