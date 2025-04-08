@@ -4,6 +4,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    flatpak
     jq
     wl-clipboard
     clipse
