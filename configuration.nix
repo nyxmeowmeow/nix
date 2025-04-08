@@ -1,15 +1,11 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   imports = [
       ./hardware-configuration.nix
     ];
 
   environment.systemPackages = with pkgs; [
+    wl-clipboard
+    clipse
     eza
     fzf
     zoxide
@@ -125,6 +121,10 @@
   services.dbus.enable = true;
 
   
+  systemd.user.services.clipse = {
+    wantedBy = [ "default.target" ];
+    serviceConfig.ExecStart = "${pkgs.clipse}/bin/clipse";
+  };
 
 
   # Enable the GNOME Desktop Environment.
