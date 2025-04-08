@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    gh
     netcat
     jq
     wl-clipboard
