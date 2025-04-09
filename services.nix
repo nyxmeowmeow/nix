@@ -53,8 +53,6 @@
     musicDirectory = "/home/meow/Music/";
     dataDir = "/home/meow/misc/mpd";
     extraConfig = ''
-      # must specify one or more outputs in order to play audio!
-      # (e.g. ALSA, PulseAudio, PipeWire), see next sections
       audio_output {
         type "pipewire"
         name "meowsound" # this can be whatever you want

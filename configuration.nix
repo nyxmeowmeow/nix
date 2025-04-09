@@ -7,7 +7,7 @@
 
 
   environment.systemPackages = with pkgs; [
-    ncmpcpp
+    mpc
     ripgrep
     nix-inspect
     mpv
