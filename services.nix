@@ -46,6 +46,27 @@
 
   services.printing.enable = true; # cups
 
+
+  services.mpd = {
+    enable = true;
+    user = "meow";
+    musicDirectory = "/home/meow/Music/";
+    dataDir = "/home/meow/misc/mpd";
+    extraConfig = ''
+      # must specify one or more outputs in order to play audio!
+      # (e.g. ALSA, PulseAudio, PipeWire), see next sections
+      audio_output {
+        type "pipewire"
+        name "meowsound" # this can be whatever you want
+      }
+    '';
+  };
+
+  systemd.services.mpd.environment = {
+    # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
+    XDG_RUNTIME_DIR = "/run/user/${toString config.users.users.meow.uid}"; # User-id must match above user. MPD will look inside this directory for the PipeWire socket.
+  };
+
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {

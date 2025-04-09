@@ -5,8 +5,10 @@
       ./services.nix
     ];
 
+  home-manager.backupFileExtension = "backup";
 
   environment.systemPackages = with pkgs; [
+    ncmpcpp
     ripgrep
     nix-inspect
     mpv
