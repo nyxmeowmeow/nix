@@ -7,15 +7,16 @@
 
 
   environment.systemPackages = with pkgs; [
+    mpv
     obs-studio
-    nss
+    # nss
     python3
     fuse
-    fuse3
-    openssl
-    patchelf
+    # fuse3
+    # openssl
+    # patchelf
     libevdev
-    appimage-run
+    # appimage-run
     libqalculate
     hyprprop
     krita
@@ -76,8 +77,11 @@
   boot.kernelParams = [
   "video=DP-1:2560x1440@165"
   "video=DP-3:2560x1440@75"
-];
+  ];
 
+  # boot.kernel.sysctl = {
+    # "vm.max_map_count" = 262144;
+  # };
 
 
   fonts.packages = with pkgs; [
@@ -124,6 +128,7 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 
+  programs.obs-studio.enable = true;
 
 
   # This enables AppImage support.

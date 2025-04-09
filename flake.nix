@@ -2,24 +2,22 @@
   description = "meow meow meow meow :3";
 
   inputs = {
-    # Nixpkgs unstable
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    ssbm-nix.url = "github:djanatyn/ssbm-nix";
 
-    # Home Manager, matched to nixpkgs
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+    ssbm-nix.url = "github:djanatyn/ssbm-nix";
+    nixos-cli.url = "github:water-sucks/nixos";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, home-manager, flake-utils, ssbm-nix, ... }:
+  outputs = { self, nixpkgs, home-manager, flake-utils, ssbm-nix, nixos-cli, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
       in {
-        # Optional CLI packages
-        packages.default = pkgs.hello;
+
       }
     ) // {
       nixosConfigurations = {
@@ -27,15 +25,19 @@
           system = "x86_64-linux";
           modules = [
             ./configuration.nix
+            nixos-cli.nixosModules.nixos-cli
+            {
+              services.nixos-cli = {
+                enable = true;
+                # Other configuration for nixos-cli
+              };
+            }
 
-            # Include the Home Manager module as a system module
             home-manager.nixosModules.home-manager
-
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
 
-              # Define a Home Manager user
               home-manager.users.meow = import ./home.nix;
             }
           ];
