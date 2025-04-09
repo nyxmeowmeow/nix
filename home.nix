@@ -29,6 +29,9 @@
       { key = "P"; command = "previous_found_item"; }
       { key = " "; command = "pause"; }
     ];
+    # settings = [
+
+    # ];
   };
 
 
