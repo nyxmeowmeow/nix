@@ -21,7 +21,6 @@
     libqalculate
     hyprprop
     krita
-    opentabletdriver
     gh
     netcat
     jq
@@ -144,7 +143,7 @@
     ];
   };
 
-
+  hardware.opentabletdriver.enable = true;
 
 
 
