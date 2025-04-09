@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    opentabletdriver
     gh
     netcat
     jq
