@@ -271,6 +271,7 @@
     windowrulev2 = [
       "nofocus, title:^(Remux Recordings)$"
       "float, class:^(clipse)$"
+      "size 800 800, class:^(clipse)$"
     ];
   };
 
