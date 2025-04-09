@@ -2,7 +2,7 @@
 
   home.username = "meow";
   home.homeDirectory = "/home/meow";
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.11";
   
   imports = [
     ./homeManagerModules/hyprland.nix
