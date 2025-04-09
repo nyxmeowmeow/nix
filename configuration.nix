@@ -152,7 +152,17 @@
 
 
 
-
+  security.sudo.extraRules = [
+    {
+      users = [ "meow" ];
+      commands = [
+        {
+          command = "/run/current-system/sw/bin/nixos-rebuild";
+          options = [ "NOPASSWD" ];
+        }
+      ];
+    }
+  ];
 
 
   security.polkit.enable = true;
