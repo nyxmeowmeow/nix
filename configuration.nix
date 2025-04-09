@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    nss
     python3
     fuse
     fuse3
