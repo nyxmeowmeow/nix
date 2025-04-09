@@ -5,20 +5,9 @@
       ./services.nix
     ];
 
-  # This enables AppImage support.
-  programs.appimage.enable = true;
-  programs.appimage.binfmt = true;
-
-  # This is needed for Slippi to run.
-  programs.appimage.package = pkgs.appimage-run.override {
-    extraPkgs = pkgs: [
-      pkgs.curl
-      pkgs.libmpg123
-    ];
-  };
-
 
   environment.systemPackages = with pkgs; [
+    obs-studio
     nss
     python3
     fuse
@@ -135,7 +124,19 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 
-  # Enable the X11 windowing system.
+
+
+  # This enables AppImage support.
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+
+  # This is needed for Slippi to run.
+  programs.appimage.package = pkgs.appimage-run.override {
+    extraPkgs = pkgs: [
+      pkgs.curl
+      pkgs.libmpg123
+    ];
+  };
 
 
 
