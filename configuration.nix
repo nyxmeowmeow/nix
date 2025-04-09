@@ -6,6 +6,8 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    curl
+    openssl
     patchelf
     libevdev
     appimage-run
