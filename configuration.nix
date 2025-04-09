@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    hyprprop
     krita
     opentabletdriver
     gh
