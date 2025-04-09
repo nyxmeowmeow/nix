@@ -7,6 +7,7 @@
 
   environment.systemPackages = with pkgs; [
     fuse
+    fuse3
     curl
     openssl
     patchelf
