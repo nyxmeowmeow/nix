@@ -272,6 +272,104 @@
       "nofocus, title:^(Remux Recordings)$"
       "float, class:^(clipse)$"
       "size 800 800, class:^(clipse)$"
+
+      "suppressevent fullscreen,class:^(krita)$"
+      "stayfocused,title:^(Create new document — Krita)$"
+      "stayfocused,title:^(Saving As — Krita)$"
+      "noblur,class:^(foot)$"
+      "noblur,class:^(vesktop)$"
+      "noblur,class:^(zen)$"
+      "noblur,class:^(com.mitchellh.ghostty)$"
+
+      "workspace special:2,title:(keyb0xx.sh)$"
+      "workspace special:2,class:^(Slippi Launcher)$"
+      "workspace special:2 silent,class:^(Apprun)$"
+      "workspace 3,title:^(Dolphin)$"
+      "workspace 4 silent,class:^(vesktop)$"
+
+      "tile,initialTitle:^(Hammer)"
+
+      "tile,title:(Godot Engine)$"
+      "minsize 600 600,title:^(Editor Settings)$"
+      "minsize 600 600,title:^(Create New Node)$"
+      "minsize 600 600,title:^(Instantiate Child Scene)$"
+      "minsize 600 600,title:^(Command Palette)$"
+      "minsize 600 600,title:(Project Settings)$"
+
+      # misc
+
+      "rounding 0,title:(ELDEN RING)$"
+
+
+      # melee
+
+      "center,title:^(Dolphin)$"
+      "size 2560 1440,title:^(Dolphin)$"
+      "minsize 2560 1440,title:^(Dolphin)$"
+      "rounding 0,title:^(Dolphin)$"
+      "noborder,title:^(Dolphin)$"
+      "float,title:^(Dolphin)$"
+      "immediate,title:^(Dolphin)$"
+
+      # momentum mod (set size in steam launch options not window rules or it shits itself)
+
+      "center,class:^(chaos)$"
+      "rounding 0,class:^(chaos)$"
+      "noborder,class:^(chaos)$"
+      "float,class:^(chaos)$"
+      "immediate,class:^(chaos)$"
+
+      # trackmania
+
+      "center,title:^(Trackmania)$"
+      "size 2560 1080,title:^(Trackmania)$"
+      "minsize 2560 1080,title:^(Trackmania)$"
+      "rounding 0,title:^(Trackmania)$"
+      "noborder,title:^(Trackmania)$"
+      "float,title:^(Trackmania)$"
+      "immediate,title:^(Trackmania)$"
+
+      # battlebit remastered
+
+      "center,class:^(steam_app_671860)$"
+      "rounding 0,class:^(steam_app_671860)$"
+      "noborder,class:^(steam_app_671860)$"
+      "float,class:^(steam_app_671860)$"
+      "immediate,class:^(steam_app_671860)$"
+
+      # ultrakill
+
+      "center,class:^(steam_app_1229490)$"
+      "size 2560 1080,class:^(steam_app_1229490)$"
+      "minsize 2560 1080,class:^(steam_app_1229490)$"
+      "rounding 0,class:^(steam_app_1229490)$"
+      "noborder,class:^(steam_app_1229490)$"
+      "float,class:^(steam_app_1229490)$"
+      "immediate,class:^(steam_app_1229490)$"
+
+      # balatro
+
+      "rounding 0,class:^(steam_app_2379780)$"
+
+      # terraria
+
+      "center,class:^(dotnet)$"
+      "size 2560 1440,class:^(dotnet)$"
+      "minsize 2560 1440,class:^(dotnet)$"
+      "rounding 0,class:^(dotnet)$"
+      "noborder,class:^(dotnet)$"
+      "float,class:^(dotnet)$"
+      "immediate,class:^(dotnet)$"
+
+      # poly bridge
+
+      "center,title:^(Poly Bridge)$"
+      "size 2560 1440,title:^(Poly Bridge)$"
+      "minsize 2560 1440,title:^(Poly Bridge)$"
+      "rounding 0,title:^(Poly Bridge)$"
+      "noborder,title:^(Poly Bridge)$"
+      "float,title:^(Poly Bridge)$"
+
     ];
   };
 

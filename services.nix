@@ -55,7 +55,7 @@
     extraConfig = ''
       audio_output {
         type "pipewire"
-        name "meowsound" # this can be whatever you want
+        name "meowsound"
       }
     '';
   };
