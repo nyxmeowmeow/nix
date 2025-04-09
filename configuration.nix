@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    libevdev
     appimage-run
     libqalculate
     hyprprop
