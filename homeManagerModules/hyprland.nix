@@ -51,19 +51,19 @@
     "$scrPath" = "~/.local/share/bin";
 
     "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
-    exec = ''
-      gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'
-      gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 10'
-      gsettings set org.gnome.desktop.interface monospace-font-name 'Mononoki Nerd Font Mono 9'
-      gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'
-      gsettings set org.gnome.desktop.interface font-hinting 'full'
-      hyprctl setcursor Bibata-Modern-Classic-Transparent 20
-      gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic-Transparent'
-      gsettings set org.gnome.desktop.interface cursor-size 20
-      gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dracula'
-      gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-macchiato-lavender-standard+default'
-      gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-      '';
+    exec = [
+      "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"
+      "gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 10'"
+      "gsettings set org.gnome.desktop.interface monospace-font-name 'Mononoki Nerd Font Mono 9'"
+      "gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'"
+      "gsettings set org.gnome.desktop.interface font-hinting 'full'"
+      "hyprctl setcursor Bibata-Modern-Classic-Transparent 20"
+      "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic-Transparent'"
+      "gsettings set org.gnome.desktop.interface cursor-size 20"
+      "gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dracula'"
+      "gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-macchiato-lavender-standard+default'"
+      "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+    ];
     exec-once = [
       "clipse -listen"
       "udiskie -a"
