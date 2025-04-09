@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    patchelf
     libevdev
     appimage-run
     libqalculate
