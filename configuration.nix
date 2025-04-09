@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    libqalculate
     hyprprop
     krita
     opentabletdriver

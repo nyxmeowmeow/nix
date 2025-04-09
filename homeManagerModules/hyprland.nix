@@ -177,7 +177,7 @@
       # "SUPER,       p, togglefloating"
       # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"
       "SUPER,       2, exec, foot --hold hyprprop"
-      "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
+      # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
       "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
       "SUPER,       4, exec, /home/rain/bin/hextoimg.sh"  # hyprpicker
       "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
