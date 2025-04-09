@@ -179,7 +179,7 @@
       "SUPER,       2, exec, foot --hold hyprprop"
       # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
       "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
-      "SUPER,       4, exec, /home/rain/bin/hextoimg.sh"  # hyprpicker
+      "SUPER,       4, exec, /home/meow/bin/hextoimg.sh"  # hyprpicker
       "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
       "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
