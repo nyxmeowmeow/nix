@@ -8,6 +8,7 @@
 
   environment.systemPackages = with pkgs; [
     mpc
+    mpd
     ripgrep
     nix-inspect
     mpv
