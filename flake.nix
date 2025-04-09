@@ -4,6 +4,7 @@
   inputs = {
     # Nixpkgs unstable
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    ssbm-nix.url = "github:djanatyn/ssbm-nix";
 
     # Home Manager, matched to nixpkgs
     home-manager.url = "github:nix-community/home-manager";
@@ -12,7 +13,7 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, home-manager, flake-utils, ... }:
+  outputs = { self, nixpkgs, home-manager, flake-utils, ssbm-nix, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
