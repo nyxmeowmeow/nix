@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    python3
     fuse
     fuse3
     curl
