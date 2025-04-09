@@ -29,7 +29,11 @@
             {
               services.nixos-cli = {
                 enable = true;
-                # Other configuration for nixos-cli
+                # aliases = [
+                  # genlist = ["generation", "list"]
+                  # switch = ["generation", "switch"]
+                  # rollback = ["generation", "rollback"]
+                # ];
               };
             }
 

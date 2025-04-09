@@ -7,6 +7,7 @@
 
 
   environment.systemPackages = with pkgs; [
+    nix-inspect
     mpv
     obs-studio
     # nss
