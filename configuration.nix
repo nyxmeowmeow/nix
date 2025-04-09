@@ -7,17 +7,18 @@
 
 
   environment.systemPackages = with pkgs; [
+    ripgrep
     nix-inspect
     mpv
     obs-studio
-    # nss
     python3
     fuse
+    # nss
     # fuse3
     # openssl
     # patchelf
-    libevdev
     # appimage-run
+    libevdev
     libqalculate
     hyprprop
     krita
