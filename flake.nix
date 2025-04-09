@@ -10,6 +10,12 @@
     ssbm-nix.url = "github:djanatyn/ssbm-nix";
     nixos-cli.url = "github:water-sucks/nixos";
     flake-utils.url = "github:numtide/flake-utils";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      # IMPORTANT: we're using "libgbm" and is only available in unstable so ensure
+      # to have it up to date or simply don't specify the nixpkgs input  
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, flake-utils, ssbm-nix, nixos-cli, ... }:

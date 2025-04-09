@@ -10,7 +10,6 @@
     ./homeManagerModules/hyprpaper.nix
     ./homeManagerModules/clipse.nix
   ];
-
   programs.ncmpcpp = {
     enable = true;
     bindings = [
