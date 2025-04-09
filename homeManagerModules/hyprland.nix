@@ -179,7 +179,7 @@
       "SUPER,       2, exec, foot --hold hyprprop"
       # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
       "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
-      "SUPER,       4, exec, /home/meow/bin/hextoimg.sh"  # hyprpicker
+      "SUPER,       4, exec, /home/meow/scripts/hextoimg.sh"  # hyprpicker
       "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
       "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
@@ -191,7 +191,7 @@
       # "SUPER SHIFT, f, exec, zen-browser -p rain2"
       "SUPER,       c, exec, foot nvim"
       "SUPER SHIFT, c, exec, foot nvim -c 'lua require('persistence').load()'"
-      "SUPER CTRL,  c, exec, ~/bin/open-recent-dl.sh" # open most recently downloaded file with nvim
+      "SUPER CTRL,  c, exec, ~/scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
       "SUPER,  return, exec, walker -s 3 -m applications,calc"
       "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
 
@@ -223,8 +223,8 @@
       "SUPER SHIFT, l,          movetoworkspacesilent,   3"
       "SUPER SHIFT, d,          movetoworkspacesilent,   4"
       "SUPER SHIFT, w,          movetoworkspacesilent,   5"
-      "SUPER SHIFT, comma,      movetoworkspacesilent,   special:2"
-      "SUPER SHIFT, period,     movetoworkspacesilent,   special"
+      "SUPER SHIFT, comma,      movetoworkspacesilent,   special"
+      "SUPER SHIFT, period,     movetoworkspacesilent,   special:2"
       "SUPER SHIFT, m,          movetoworkspacesilent,   special:music"
 
 
