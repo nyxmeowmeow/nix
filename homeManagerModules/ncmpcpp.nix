@@ -28,7 +28,7 @@
 
       song_list_format = "{%t - }{%a}|{$5%f$9}$R{$5%l$9}";
       song_status_format = "{{%t - }{%a}}|{%f}";
-      song_library_format = "{%n - }{%t}|{%f}";
+      song_library_format = "{%n - }{%t}|{%f} ";
       alternative_header_first_line_format = "$b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b";
       alternative_header_second_line_format = "{{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}";
       current_item_prefix = "$(blue)$r";
