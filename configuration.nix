@@ -78,13 +78,16 @@
   ];
 
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.kernelParams = [
+  boot = {
+
+  loader.systemd-boot.enable = true;
+  loader.efi.canTouchEfiVariables = true;
+  initrd.kernelModules = [ "amdgpu" ];
+  kernelParams = [
   "video=DP-1:2560x1440@165"
   "video=DP-3:2560x1440@75"
   ];
+  };
 
 
 
