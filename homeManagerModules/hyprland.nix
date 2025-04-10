@@ -181,8 +181,8 @@
         # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
         "SUPER,       4, exec, $scripts/hextoimg.sh"  # hyprpicker
-        "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
-        "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
+        "SUPER,       3, exec, $scripts/screenshot.sh s"  # screenshot capture
+        "SUPER CTRL,  3, exec, $scripts/screenshot.sh sf"  # screenshot capture (frozen screen)
 
         "SUPER,       t, exec, foot"
         "SUPER,       s, exec, foot fish -c yazi" # launch yazi from fish to get correct fzf theme
