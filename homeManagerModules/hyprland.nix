@@ -25,13 +25,13 @@
      name = "catppuccin-gtk";
    };
 
-   # iconTheme = {
+   iconTheme = {
    #   package = pkgs.gnome.adwaita-icon-theme;
-   #   name = "Adwaita";
-   # };
+     name = "Tela Circle Dracula";
+   };
 
    font = {
-     name = "Sans";
+     name = "sn pro";
      size = 11;
    };
  };

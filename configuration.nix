@@ -55,8 +55,8 @@
     walker
     grimblast
     slurp
-    #catppuccin-kvantum
-    #catppuccin-gtk
+    catppuccin-kvantum
+    catppuccin-gtk
     dunst
     libnotify
     playerctl
