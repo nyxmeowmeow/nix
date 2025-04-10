@@ -57,7 +57,6 @@
       audio_output {
         type "pulse"
         name "meowaudio"
-        server "127.0.0.1"
       }
     '';
   };
@@ -67,8 +66,8 @@
   #   XDG_RUNTIME_DIR = "/run/user/${toString config.users.users.meow.uid}"; # User-id must match above user. MPD will look inside this directory for the PipeWire socket.
   # };
   services.pulseaudio = {
-    extraConfig = "load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1";
     enable = false;
+    systemWide = true;
   };
   security.rtkit.enable = true;
   services.pipewire = {
