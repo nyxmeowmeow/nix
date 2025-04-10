@@ -34,7 +34,6 @@
     fzf
     zoxide
     waybar
-    vscodium
     walker
     udiskie
     udisks2
