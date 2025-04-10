@@ -55,8 +55,11 @@
     extraConfig = ''
       port "6669"
       audio_output {
-        type "pulse"
-        name "meowaudio"
+        type "alsa"
+        name "meowalsa"
+        mixer_type		"hardware"
+        mixer_device	"default"
+        mixer_control	"PCM"
       }
     '';
   };
