@@ -50,6 +50,7 @@
   wayland.windowManager.hyprland = {
     settings = {
       "$scrPath" = "~/.local/share/bin";
+      "$scripts" = "~/nix/stuff/scripts";
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
       exec = [
         "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"
@@ -169,18 +170,17 @@
       bind = [
         "SUPER CTRL SHIFT,   Delete, exit"  # kill hyprland session
         "SUPER SHIFT,  Return, fullscreen"
-        # "SUPER,       r, exec, $scrPath/dontkillsteam.sh"
-        "SUPER,       r, exec, hyprctl dispatch killactive ''"
+        "SUPER,       r, exec, $scripts/dontkillsteam.sh"
         "SUPER CTRL,  r, exec, hyprctl kill"
         "SUPER CTRL SHIFT, r, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
-        "SUPER,       n, exec, ~/nix/stuff/scripts/swap.sh"
+        "SUPER,       n, exec, $scripts/swap.sh"
         "SUPER, k, togglesplit"
         "SUPER,       y, togglefloating"
         # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"
         "SUPER,       2, exec, foot --hold hyprprop"
         # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
-        "SUPER,       4, exec, ~/nix/stuff/scripts/hextoimg.sh"  # hyprpicker
+        "SUPER,       4, exec, $scripts/hextoimg.sh"  # hyprpicker
         "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
@@ -192,7 +192,7 @@
         # "SUPER SHIFT, f, exec, zen-browser -p rain2"
         "SUPER,       c, exec, foot nvim"
         "SUPER SHIFT, c, exec, foot nvim -c 'lua require('persistence').load()'"
-        "SUPER CTRL,  c, exec, ~/nix/stuff/scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
+        "SUPER CTRL,  c, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
         "SUPER,  return, exec, walker -s 3 -m applications,calc"
         "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
 
