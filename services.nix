@@ -55,19 +55,20 @@
     extraConfig = ''
       port "6669"
       audio_output {
-        type "pulse"
-        name "meowaudio"
+        type "pipewire"
+        name "meowwire"
       }
     '';
   };
 
-  # systemd.services.mpd.environment = {
-  #   # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
-  #   XDG_RUNTIME_DIR = "/run/user/${toString config.users.users.meow.uid}"; # User-id must match above user. MPD will look inside this directory for the PipeWire socket.
-  # };
+  systemd.services.mpd.environment = {
+    # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
+    XDG_RUNTIME_DIR = "/run/user/${toString config.users.users.meow.uid}"; # User-id must match above user. MPD will look inside this directory for the PipeWire socket.
+  };
+
   services.pulseaudio = {
     enable = false;
-    systemWide = true;
+    # systemWide = true;
   };
   security.rtkit.enable = true;
   services.pipewire = {
