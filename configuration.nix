@@ -5,7 +5,6 @@
       ./services.nix
     ];
 
-
   environment.systemPackages = with pkgs; [
     qview
     mpc
