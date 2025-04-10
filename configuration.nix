@@ -6,7 +6,6 @@
     ];
 
   environment.systemPackages = with pkgs; [
-    nixd
     termdown
     tty-clock
     qview
@@ -63,6 +62,8 @@
     playerctl
     yazi
     neovim
+    stylua
+    nixd
     fastfetch
     kanata
     dconf
@@ -84,9 +85,6 @@
   "video=DP-3:2560x1440@75"
   ];
 
-  # boot.kernel.sysctl = {
-    # "vm.max_map_count" = 262144;
-  # };
 
 
   fonts.packages = with pkgs; [
@@ -196,7 +194,7 @@
     extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
     shell = pkgs.fish;
     packages = with pkgs; [
-    #  thunderbird
+    # user package
     ];
   };
 
