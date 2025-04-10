@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    termdown
     tty-clock
     qview
     mpc
