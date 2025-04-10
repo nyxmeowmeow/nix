@@ -271,13 +271,16 @@
 
       windowrulev2 = [
         "nofocus, title:^(Remux Recordings)$"
-        "float, class:^(clipse)$"
-        "size 800 800, class:^(clipse)$"
 
         "float,class:^(footblurmefloatme)$"
         "center,class:^(footblurmefloatme)$"
         "size 1000 1200,class:^(footblurmefloatme)$"
         "noblur,class:^(footblurmefloatme)$"
+
+        "float,class:^(clipse)$"
+        "center,class:^(clipse)$"
+        "size 1000 1200,class:^(clipse)$"
+        "noblur,class:^(clipse)$"
 
         "suppressevent fullscreen,class:^(krita)$"
         "stayfocused,title:^(Create new document — Krita)$"
