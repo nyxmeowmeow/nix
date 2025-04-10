@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DOWNLOADS="$HOME/Downloads"
 LATEST_FILE=$(ls -t "$DOWNLOADS" | head -n 1)

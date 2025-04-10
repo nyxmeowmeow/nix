@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Directory containing the images
 IMAGE_DIR="/home/rain/.config/dunst/icons/hyprpicker"
