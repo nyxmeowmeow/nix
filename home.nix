@@ -11,7 +11,6 @@
     ./homeManagerModules/clipse.nix
     ./homeManagerModules/ncmpcpp.nix
   ];
-  };
 
 
   programs.git = {
