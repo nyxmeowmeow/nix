@@ -55,11 +55,8 @@
     extraConfig = ''
       port "6669"
       audio_output {
-        type "alsa"
-        name "meowalsa"
-        mixer_type		"hardware"
-        mixer_device	"default"
-        mixer_control	"PCM"
+        type "pulse"
+        name "meowaudio"
       }
     '';
   };
@@ -68,8 +65,10 @@
   #   # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
   #   XDG_RUNTIME_DIR = "/run/user/${toString config.users.users.meow.uid}"; # User-id must match above user. MPD will look inside this directory for the PipeWire socket.
   # };
-
-  services.pulseaudio.enable = false;
+  services.pulseaudio = {
+    extraConfig = "load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1";
+    enable = false;
+  };
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
