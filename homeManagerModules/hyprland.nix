@@ -379,10 +379,9 @@
       ];
     };
 
-############### SUBMAPS ###############
 
+    # no nix way to do this :(
     extraConfig = ''
-
       bind = SUPER, p, submap, player
 
       # will start a submap called "player"
