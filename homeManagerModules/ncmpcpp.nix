@@ -71,7 +71,7 @@
 
       screen_switcher_mode = "playlist, browser";
       startup_screen = "browser";
-      startup_slave_screen = "''";
+      startup_slave_screen = "";
 
       startup_slave_screen_focus = "no";
       locked_screen_width_part = "50";
