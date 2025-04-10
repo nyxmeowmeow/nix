@@ -59,7 +59,7 @@
     shell=fish
     app-id=footblurmefloatme
     title=footblurmefloatme
-    font=mononoki nerd font mono:size=20
+    font=Mononoki Nerd Font Mono:size=20
 
 
     [cursor]

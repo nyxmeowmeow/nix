@@ -49,7 +49,6 @@
 
   wayland.windowManager.hyprland.settings = {
     "$scrPath" = "~/.local/share/bin";
-
     "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
     exec = [
       "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"
@@ -167,14 +166,13 @@
       "9, monitor:DP-3"
     ];
     bind = [
-      
       "SUPER CTRL SHIFT,   Delete, exit"  # kill hyprland session
       "SUPER SHIFT,  Return, fullscreen"
       # "SUPER,       r, exec, $scrPath/dontkillsteam.sh"
       "SUPER,       r, exec, hyprctl dispatch killactive ''"
       "SUPER CTRL,  r, exec, hyprctl kill"
       "SUPER CTRL SHIFT, r, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
-      "SUPER,       n, exec, $scrPath/swap.sh"
+      "SUPER,       n, exec, /home/meow/scripts/swap.sh"
       "SUPER, k, togglesplit"
       "SUPER,       y, togglefloating"
       # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"
@@ -378,6 +376,218 @@
       "float,title:^(Poly Bridge)$"
 
     ];
+
+
+
+    "bind" = "SUPER, p, submap, player";
+
+    "submap" = "player";
+
+    # play/pause mpd
+    "bind" = ",      t, exec, playerctl play-pause";
+    "bind" = "SUPER, t, exec, playerctl play-pause";
+    "bind" = ",      t, submap, reset";
+
+    # play/pause firefox
+    "bind" = ",      s, exec, mpc -h localhost -p 6669 toggle";
+    "bind" = "SUPER, s, exec, mpc -h localhost -p 6669 toggle";
+    "bind" = ",      s, submap, reset";
+
+    # previous mpd song
+    "bind" = ",      h, exec, mpc -h localhost -p 6669 prev";
+    "bind" = "SUPER, h, exec, mpc -h localhost -p 6669 prev";
+    "bind" = ",      h, submap, reset";
+
+    # next mpd song
+    "bind" = ",      i, exec, mpc -h localhost -p 6669 next";
+    "bind" = "SUPER, i, exec, mpc -h localhost -p 6669 next";
+    "bind" = ",      i, submap, reset";
+
+    # mpd -vol
+    "bind" = ",      a, exec, mpc -h localhost -p 6669 volume -5";
+    "bind" = "SUPER, a, exec, mpc -h localhost -p 6669 volume -5";
+
+    # mpd +vol
+    "bind" = ",      e, exec, mpc -h localhost -p 6669 volume +5";
+    "bind" = "SUPER, e, exec, mpc -h localhost -p 6669 volume +5";
+
+    # restart current song
+    "bind" = ",      r, exec, mpc -h localhost -p 6669 prev";
+    "bind" = "SUPER, r, exec, mpc -h localhost -p 6669 prev";
+    "bind" = ",      r, exec, mpc -h localhost -p 6669 next";
+    "bind" = "SUPER, r, exec, mpc -h localhost -p 6669 next";
+    "bind" = ",      r, submap, reset";
+
+
+
+
+
+
+    "bind" = ",      p, submap, play_song";
+    "bind" = "SUPER, p, submap, play_song";
+    "submap" = "play_song";
+
+
+
+    "bind" = ",      v, exec, mpc -h localhost -p 6669 searchplay title 'violet'";
+    "bind" = "SUPER, v, exec, mpc -h localhost -p 6669 searchplay title 'violet'";
+    "bind" = ",      v, submap, reset";
+
+    "bind" = ",      s, exec, mpc -h localhost -p 6669 searchplay title 'Salt'";
+    "bind" = "SUPER, s, exec, mpc -h localhost -p 6669 searchplay title 'Salt'";
+    "bind" = ",      s, submap, reset";
+
+    "bind" = ",      p, exec, mpc -h localhost -p 6669 searchplay title 'phoenix'";
+    "bind" = "SUPER, p, exec, mpc -h localhost -p 6669 searchplay title 'phoenix'";
+    "bind" = ",      p, submap, reset";
+
+
+
+    "bind" = ",      d, submap, d";
+    "bind" = "SUPER, d, submap, d";
+    "submap" = "d";
+
+        "bind" = ",      a, exec, mpc -h localhost -p 6669 searchplay title 'daydreamer'";
+        "bind" = "SUPER, a, exec, mpc -h localhost -p 6669 searchplay title 'daydreamer'";
+        "bind" = ",      a, submap, reset";
+
+        "bind" = ",      o, exec, mpc -h localhost -p 6669 searchplay title 'downfall'";
+        "bind" = "SUPER, o, exec, mpc -h localhost -p 6669 searchplay title 'downfall'";
+        "bind" = ",      o, submap, reset";
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "play_song";
+
+
+
+    "bind" = ",      n, submap, n";
+    "bind" = "SUPER, n, submap, n";
+    "submap" = "n";
+
+        "bind" = ",      o, exec, mpc -h localhost -p 6669 searchplay title 'nothing nothing nothing'";
+        "bind" = "SUPER, o, exec, mpc -h localhost -p 6669 searchplay title 'nothing nothing nothing'";
+        "bind" = ",      o, submap, reset";
+
+        "bind" = ",      e, exec, mpc -h localhost -p 6669 searchplay title 'newlove'";
+        "bind" = "SUPER, e, exec, mpc -h localhost -p 6669 searchplay title 'newlove'";
+        "bind" = ",      e, submap, reset";
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "play_song";
+
+
+
+
+    "bind" = ",      h, submap, h";
+    "bind" = "SUPER, h, submap, h";
+    "submap" = "h";
+
+        "bind" = ",      s, exec, mpc -h localhost -p 6669 searchplay title 'homeswitcher'";
+        "bind" = "SUPER, s, exec, mpc -h localhost -p 6669 searchplay title 'homeswitcher'";
+        "bind" = ",      s, submap, reset";
+
+        "bind" = ",      o, exec, mpc -h localhost -p 6669 searchplay title 'how to save a life'";
+        "bind" = "SUPER, o, exec, mpc -h localhost -p 6669 searchplay title 'how to save a life'";
+        "bind" = ",      o, submap, reset";
+
+        "bind" = ",      a, exec, mpc -h localhost -p 6669 searchplay title 'i hate everything about you'";
+        "bind" = "SUPER, a, exec, mpc -h localhost -p 6669 searchplay title 'i hate everything about you'";
+        "bind" = ",      a, submap, reset";
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "play_song";
+
+
+
+    "bind" = ",      t, submap, t";
+    "bind" = "SUPER, t, submap, t";
+    "submap" = "t";
+
+        "bind" = ",      h, exec, mpc -h localhost -p 6669 searchplay title '3 nights'";
+        "bind" = "SUPER, h, exec, mpc -h localhost -p 6669 searchplay title '3 nights'";
+        "bind" = ",      h, submap, reset";
+
+        "bind" = ",      a, exec, mpc -h localhost -p 6669 searchplay title 'ta1lsd004'";
+        "bind" = "SUPER, a, exec, mpc -h localhost -p 6669 searchplay title 'ta1lsd004'";
+        "bind" = ",      a, submap, reset";
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "play_song";
+
+
+
+    "bind" = ",      a, submap, a";
+    "bind" = "SUPER, a, submap, a";
+    "submap" = "a";
+
+        "bind" = ",      s, exec, mpc -h localhost -p 6669 searchplay title 'ascension to heaven'";
+        "bind" = "SUPER, s, exec, mpc -h localhost -p 6669 searchplay title 'ascension to heaven'";
+        "bind" = ",      s, submap, reset";
+
+        "bind" = ",      b, exec, mpc -h localhost -p 6669 searchplay title 'absolute in doubt'";
+        "bind" = "SUPER, b, exec, mpc -h localhost -p 6669 searchplay title 'absolute in doubt'";
+        "bind" = ",      b, submap, reset";
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "play_song";
+
+
+    "bind" = ",      m, submap, m";
+    "bind" = "SUPER, m, submap, m";
+    "submap" = "m";
+
+        "bind" = ",      i, exec, mpc -h localhost -p 6669 searchplay title 'midnight'";
+        "bind" = "SUPER, i, exec, mpc -h localhost -p 6669 searchplay title 'midnight'";
+        "bind" = ",      i, submap, reset";
+
+        "bind" = ",      y, exec, mpc -h localhost -p 6669 searchplay title 'miss you'";
+        "bind" = "SUPER, y, exec, mpc -h localhost -p 6669 searchplay title 'miss you'";
+        "bind" = ",      y, submap, reset";
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "play_song";
+
+    "bind" = ",      k, exec, mpc -h localhost -p 6669 searchplay title 'mr. kill myself'";
+    "bind" = "SUPER, k, exec, mpc -h localhost -p 6669 searchplay title 'mr. kill myself'";
+    "bind" = ",      k, submap, reset";
+
+    "bind" = ",      z, exec, mpc -h localhost -p 6669 searchplay title 'zen garden'";
+    "bind" = "SUPER, z, exec, mpc -h localhost -p 6669 searchplay title 'zen garden'";
+    "bind" = ",      z, submap, reset";
+
+    "bind" = ",      b, exec, mpc -h localhost -p 6669 searchplay title 'The Breach'";
+    "bind" = "SUPER, b, exec, mpc -h localhost -p 6669 searchplay title 'The Breach'";
+    "bind" = ",      b, submap, reset";
+
+    "bind" = ",      l, exec, mpc -h localhost -p 6669 searchplay title 'LosT'";
+    "bind" = "SUPER, l, exec, mpc -h localhost -p 6669 searchplay title 'LosT'";
+    "bind" = ",      l, submap, reset";
+
+    "bind" = ",      r, exec, mpc -h localhost -p 6669 searchplay title 'R.i.p.'";
+    "bind" = "SUPER, r, exec, mpc -h localhost -p 6669 searchplay title 'R.i.p.'";
+    "bind" = ",      r, submap, reset";
+
+    "bind" = ",      t, exec, mpc -h localhost -p 6669 searchplay title 'Throne'";
+    "bind" = "SUPER, t, exec, mpc -h localhost -p 6669 searchplay title 'Throne'";
+    "bind" = ",      t, submap, reset";
+
+
+    "bind" = ", escape, submap, reset";
+    "submap" = "player";
+
+
+
+    # use reset to go back to the global submap";
+    "bind" = ", escape, submap, reset";
+
+    # reset if any other key pressed
+    "bind" = ", catchall, submap, reset";
+
+    # will reset the submap, which will return to the global submap
+    "submap" = "reset";
+
+
+
   };
 
 
