@@ -73,6 +73,8 @@
       "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
       "steam -silent"
       "systemctl --user start hyprpolkitagent"
+      "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/foot2.ini'"
+      "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview /home/rain/Pictures/nc/mmm.png'"
     ];
     monitor = [
       "DP-1, 2560x1440@165, 0x0, 1"

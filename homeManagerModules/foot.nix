@@ -55,7 +55,7 @@
   };
 
 
-  home.file.".config/foot/float".text = ''
+  home.file.".config/foot/float.ini".text = ''
     shell=fish
     app-id=footblurmefloatme
     title=footblurmefloatme
