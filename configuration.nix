@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    tty-clock
     qview
     mpc
     mpd
