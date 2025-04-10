@@ -57,6 +57,7 @@
       audio_output {
         type "pulse"
         name "meowaudio"
+        server "127.0.0.1"
       }
     '';
   };
