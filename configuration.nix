@@ -90,8 +90,8 @@
 
 
   fonts.packages = with pkgs; [
-    pkgs.nerd-fonts.mononoki
-    pkgs.nerd-fonts.iosevka
+    nerd-fonts.mononoki
+    nerd-fonts.iosevka
   ];
 
   networking.hostName = "nixos"; # Define your hostname.

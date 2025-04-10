@@ -7,13 +7,13 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    ssbm-nix.url = "github:djanatyn/ssbm-nix";
+    # ssbm-nix.url = "github:djanatyn/ssbm-nix";
     nixos-cli.url = "github:water-sucks/nixos";
     flake-utils.url = "github:numtide/flake-utils";
 
   };
 
-  outputs = { self, nixpkgs, home-manager, flake-utils, ssbm-nix, nixos-cli, ... }:
+  outputs = { self, nixpkgs, home-manager, flake-utils, nixos-cli, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
