@@ -74,7 +74,7 @@
         "steam -silent"
         "systemctl --user start hyprpolkitagent"
         "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/foot2.ini'"
-        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview /home/meow/Pictures/nc/mmm.png'"
+        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
       ];
       monitor = [
         "DP-1, 2560x1440@165, 0x0, 1"
@@ -173,14 +173,14 @@
         "SUPER,       r, exec, hyprctl dispatch killactive ''"
         "SUPER CTRL,  r, exec, hyprctl kill"
         "SUPER CTRL SHIFT, r, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
-        "SUPER,       n, exec, /home/meow/scripts/swap.sh"
+        "SUPER,       n, exec, ~/nix/stuff/scripts/swap.sh"
         "SUPER, k, togglesplit"
         "SUPER,       y, togglefloating"
         # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"
         "SUPER,       2, exec, foot --hold hyprprop"
         # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
-        "SUPER,       4, exec, /home/meow/scripts/hextoimg.sh"  # hyprpicker
+        "SUPER,       4, exec, ~/nix/stuff/scripts/hextoimg.sh"  # hyprpicker
         "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
@@ -192,7 +192,7 @@
         # "SUPER SHIFT, f, exec, zen-browser -p rain2"
         "SUPER,       c, exec, foot nvim"
         "SUPER SHIFT, c, exec, foot nvim -c 'lua require('persistence').load()'"
-        "SUPER CTRL,  c, exec, ~/scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
+        "SUPER CTRL,  c, exec, ~/nix/stuff/scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
         "SUPER,  return, exec, walker -s 3 -m applications,calc"
         "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
 
