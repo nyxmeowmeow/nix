@@ -394,33 +394,33 @@
       bind = ,      t, submap, reset
 
       # play/pause firefox
-      bind = ,      s, exec, mpc -h localhost -p 6669 toggle
-      bind = SUPER, s, exec, mpc -h localhost -p 6669 toggle
+      bind = ,      s, exec, mpc -p 6669 toggle
+      bind = SUPER, s, exec, mpc -p 6669 toggle
       bind = ,      s, submap, reset
 
       # previous mpd song
-      bind = ,      h, exec, mpc -h localhost -p 6669 prev
-      bind = SUPER, h, exec, mpc -h localhost -p 6669 prev
+      bind = ,      h, exec, mpc -p 6669 prev
+      bind = SUPER, h, exec, mpc -p 6669 prev
       bind = ,      h, submap, reset
 
       # next mpd song
-      bind = ,      i, exec, mpc -h localhost -p 6669 next
-      bind = SUPER, i, exec, mpc -h localhost -p 6669 next
+      bind = ,      i, exec, mpc -p 6669 next
+      bind = SUPER, i, exec, mpc -p 6669 next
       bind = ,      i, submap, reset
 
       # mpd -vol
-      bind = ,      a, exec, mpc -h localhost -p 6669 volume -5
-      bind = SUPER, a, exec, mpc -h localhost -p 6669 volume -5
+      bind = ,      a, exec, mpc -p 6669 volume -5
+      bind = SUPER, a, exec, mpc -p 6669 volume -5
 
       # mpd +vol
-      bind = ,      e, exec, mpc -h localhost -p 6669 volume +5
-      bind = SUPER, e, exec, mpc -h localhost -p 6669 volume +5
+      bind = ,      e, exec, mpc -p 6669 volume +5
+      bind = SUPER, e, exec, mpc -p 6669 volume +5
 
       # restart current song
-      bind = ,      r, exec, mpc -h localhost -p 6669 prev
-      bind = SUPER, r, exec, mpc -h localhost -p 6669 prev
-      bind = ,      r, exec, mpc -h localhost -p 6669 next
-      bind = SUPER, r, exec, mpc -h localhost -p 6669 next
+      bind = ,      r, exec, mpc -p 6669 prev
+      bind = SUPER, r, exec, mpc -p 6669 prev
+      bind = ,      r, exec, mpc -p 6669 next
+      bind = SUPER, r, exec, mpc -p 6669 next
       bind = ,      r, submap, reset
 
 
@@ -439,16 +439,16 @@
 
 
 
-      bind = ,      v, exec, mpc -h localhost -p 6669 searchplay title 'violet'
-      bind = SUPER, v, exec, mpc -h localhost -p 6669 searchplay title 'violet'
+      bind = ,      v, exec, mpc -p 6669 searchplay title 'violet'
+      bind = SUPER, v, exec, mpc -p 6669 searchplay title 'violet'
       bind = ,      v, submap, reset
 
-      bind = ,      s, exec, mpc -h localhost -p 6669 searchplay title 'Salt'
-      bind = SUPER, s, exec, mpc -h localhost -p 6669 searchplay title 'Salt'
+      bind = ,      s, exec, mpc -p 6669 searchplay title 'Salt'
+      bind = SUPER, s, exec, mpc -p 6669 searchplay title 'Salt'
       bind = ,      s, submap, reset
 
-      bind = ,      p, exec, mpc -h localhost -p 6669 searchplay title 'phoenix'
-      bind = SUPER, p, exec, mpc -h localhost -p 6669 searchplay title 'phoenix'
+      bind = ,      p, exec, mpc -p 6669 searchplay title 'phoenix'
+      bind = SUPER, p, exec, mpc -p 6669 searchplay title 'phoenix'
       bind = ,      p, submap, reset
 
 
@@ -457,12 +457,12 @@
       bind = SUPER, d, submap, d
       submap = d
 
-          bind = ,      a, exec, mpc -h localhost -p 6669 searchplay title 'daydreamer'
-          bind = SUPER, a, exec, mpc -h localhost -p 6669 searchplay title 'daydreamer'
+          bind = ,      a, exec, mpc -p 6669 searchplay title 'daydreamer'
+          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'daydreamer'
           bind = ,      a, submap, reset
 
-          bind = ,      o, exec, mpc -h localhost -p 6669 searchplay title 'downfall'
-          bind = SUPER, o, exec, mpc -h localhost -p 6669 searchplay title 'downfall'
+          bind = ,      o, exec, mpc -p 6669 searchplay title 'downfall'
+          bind = SUPER, o, exec, mpc -p 6669 searchplay title 'downfall'
           bind = ,      o, submap, reset
 
       bind = , escape, submap, reset
@@ -474,12 +474,12 @@
       bind = SUPER, n, submap, n
       submap = n
 
-          bind = ,      o, exec, mpc -h localhost -p 6669 searchplay title 'nothing nothing nothing'
-          bind = SUPER, o, exec, mpc -h localhost -p 6669 searchplay title 'nothing nothing nothing'
+          bind = ,      o, exec, mpc -p 6669 searchplay title 'nothing nothing nothing'
+          bind = SUPER, o, exec, mpc -p 6669 searchplay title 'nothing nothing nothing'
           bind = ,      o, submap, reset
 
-          bind = ,      e, exec, mpc -h localhost -p 6669 searchplay title 'newlove'
-          bind = SUPER, e, exec, mpc -h localhost -p 6669 searchplay title 'newlove'
+          bind = ,      e, exec, mpc -p 6669 searchplay title 'newlove'
+          bind = SUPER, e, exec, mpc -p 6669 searchplay title 'newlove'
           bind = ,      e, submap, reset
 
       bind = , escape, submap, reset
@@ -492,16 +492,16 @@
       bind = SUPER, h, submap, h
       submap = h
 
-          bind = ,      s, exec, mpc -h localhost -p 6669 searchplay title 'homeswitcher'
-          bind = SUPER, s, exec, mpc -h localhost -p 6669 searchplay title 'homeswitcher'
+          bind = ,      s, exec, mpc -p 6669 searchplay title 'homeswitcher'
+          bind = SUPER, s, exec, mpc -p 6669 searchplay title 'homeswitcher'
           bind = ,      s, submap, reset
 
-          bind = ,      o, exec, mpc -h localhost -p 6669 searchplay title 'how to save a life'
-          bind = SUPER, o, exec, mpc -h localhost -p 6669 searchplay title 'how to save a life'
+          bind = ,      o, exec, mpc -p 6669 searchplay title 'how to save a life'
+          bind = SUPER, o, exec, mpc -p 6669 searchplay title 'how to save a life'
           bind = ,      o, submap, reset
 
-          bind = ,      a, exec, mpc -h localhost -p 6669 searchplay title 'i hate everything about you'
-          bind = SUPER, a, exec, mpc -h localhost -p 6669 searchplay title 'i hate everything about you'
+          bind = ,      a, exec, mpc -p 6669 searchplay title 'i hate everything about you'
+          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'i hate everything about you'
           bind = ,      a, submap, reset
 
       bind = , escape, submap, reset
@@ -513,13 +513,13 @@
       bind = SUPER, t, submap, t
       submap = t
 
-          bind = ,      h, exec, mpc -h localhost -p 6669 searchplay title '3 nights'
-          bind = SUPER, h, exec, mpc -h localhost -p 6669 searchplay title '3 nights'
+          bind = ,      h, exec, mpc -p 6669 searchplay title '3 nights'
+          bind = SUPER, h, exec, mpc -p 6669 searchplay title '3 nights'
           bind = ,      h, submap, reset
 
 
-          bind = ,      a, exec, mpc -h localhost -p 6669 searchplay title 'ta1lsd004'
-          bind = SUPER, a, exec, mpc -h localhost -p 6669 searchplay title 'ta1lsd004'
+          bind = ,      a, exec, mpc -p 6669 searchplay title 'ta1lsd004'
+          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'ta1lsd004'
           bind = ,      a, submap, reset
 
       bind = , escape, submap, reset
@@ -531,12 +531,12 @@
       bind = SUPER, a, submap, a
       submap = a
 
-          bind = ,      s, exec, mpc -h localhost -p 6669 searchplay title 'ascension to heaven'
-          bind = SUPER, s, exec, mpc -h localhost -p 6669 searchplay title 'ascension to heaven'
+          bind = ,      s, exec, mpc -p 6669 searchplay title 'ascension to heaven'
+          bind = SUPER, s, exec, mpc -p 6669 searchplay title 'ascension to heaven'
           bind = ,      s, submap, reset
 
-          bind = ,      b, exec, mpc -h localhost -p 6669 searchplay title 'absolute in doubt'
-          bind = SUPER, b, exec, mpc -h localhost -p 6669 searchplay title 'absolute in doubt'
+          bind = ,      b, exec, mpc -p 6669 searchplay title 'absolute in doubt'
+          bind = SUPER, b, exec, mpc -p 6669 searchplay title 'absolute in doubt'
           bind = ,      b, submap, reset
 
       bind = , escape, submap, reset
@@ -547,39 +547,39 @@
       bind = SUPER, m, submap, m
       submap = m
 
-          bind = ,      i, exec, mpc -h localhost -p 6669 searchplay title 'midnight'
-          bind = SUPER, i, exec, mpc -h localhost -p 6669 searchplay title 'midnight'
+          bind = ,      i, exec, mpc -p 6669 searchplay title 'midnight'
+          bind = SUPER, i, exec, mpc -p 6669 searchplay title 'midnight'
           bind = ,      i, submap, reset
 
-          bind = ,      y, exec, mpc -h localhost -p 6669 searchplay title 'miss you'
-          bind = SUPER, y, exec, mpc -h localhost -p 6669 searchplay title 'miss you'
+          bind = ,      y, exec, mpc -p 6669 searchplay title 'miss you'
+          bind = SUPER, y, exec, mpc -p 6669 searchplay title 'miss you'
           bind = ,      y, submap, reset
 
       bind = , escape, submap, reset
       submap = play_song
 
-      bind = ,      k, exec, mpc -h localhost -p 6669 searchplay title 'mr. kill myself'
-      bind = SUPER, k, exec, mpc -h localhost -p 6669 searchplay title 'mr. kill myself'
+      bind = ,      k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
+      bind = SUPER, k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
       bind = ,      k, submap, reset
 
-      bind = ,      z, exec, mpc -h localhost -p 6669 searchplay title 'zen garden'
-      bind = SUPER, z, exec, mpc -h localhost -p 6669 searchplay title 'zen garden'
+      bind = ,      z, exec, mpc -p 6669 searchplay title 'zen garden'
+      bind = SUPER, z, exec, mpc -p 6669 searchplay title 'zen garden'
       bind = ,      z, submap, reset
 
-      bind = ,      b, exec, mpc -h localhost -p 6669 searchplay title 'The Breach'
-      bind = SUPER, b, exec, mpc -h localhost -p 6669 searchplay title 'The Breach'
+      bind = ,      b, exec, mpc -p 6669 searchplay title 'The Breach'
+      bind = SUPER, b, exec, mpc -p 6669 searchplay title 'The Breach'
       bind = ,      b, submap, reset
 
-      bind = ,      l, exec, mpc -h localhost -p 6669 searchplay title 'LosT'
-      bind = SUPER, l, exec, mpc -h localhost -p 6669 searchplay title 'LosT'
+      bind = ,      l, exec, mpc -p 6669 searchplay title 'LosT'
+      bind = SUPER, l, exec, mpc -p 6669 searchplay title 'LosT'
       bind = ,      l, submap, reset
 
-      bind = ,      r, exec, mpc -h localhost -p 6669 searchplay title 'R.i.p.'
-      bind = SUPER, r, exec, mpc -h localhost -p 6669 searchplay title 'R.i.p.'
+      bind = ,      r, exec, mpc -p 6669 searchplay title 'R.i.p.'
+      bind = SUPER, r, exec, mpc -p 6669 searchplay title 'R.i.p.'
       bind = ,      r, submap, reset
 
-      bind = ,      t, exec, mpc -h localhost -p 6669 searchplay title 'Throne'
-      bind = SUPER, t, exec, mpc -h localhost -p 6669 searchplay title 'Throne'
+      bind = ,      t, exec, mpc -p 6669 searchplay title 'Throne'
+      bind = SUPER, t, exec, mpc -p 6669 searchplay title 'Throne'
       bind = ,      t, submap, reset
 
 
