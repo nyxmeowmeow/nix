@@ -6,6 +6,7 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    nixd
     termdown
     tty-clock
     qview
