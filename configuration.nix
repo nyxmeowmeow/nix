@@ -7,6 +7,7 @@
 
 
   environment.systemPackages = with pkgs; [
+    qview
     mpc
     mpd
     ripgrep
