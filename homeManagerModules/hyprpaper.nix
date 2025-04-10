@@ -14,7 +14,7 @@
 
       wallpaper = [
         "DP-3,../stuff/1_vert.png"
-        "DP-1,../stuff/1_vert.png"
+        "DP-1,../stuff/1_hor.png"
       ];
     };
   };
