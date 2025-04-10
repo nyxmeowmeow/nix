@@ -53,6 +53,7 @@
     musicDirectory = "/home/meow/Music/";
     dataDir = "/home/meow/misc/mpd";
     extraConfig = ''
+      port "6669"
       audio_output {
         type "pipewire"
         name "meowsound"
