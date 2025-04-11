@@ -301,7 +301,8 @@
 
         "tile,initialTitle:^(Hammer)"
 
-        "tile,title:(Godot Engine)$"
+        "tile,title:(Godot Engine)"
+        "tile,initialtitle:(Godot)"
         "minsize 600 600,title:^(Editor Settings)$"
         "minsize 600 600,title:^(Create New Node)$"
         "minsize 600 600,title:^(Instantiate Child Scene)$"
