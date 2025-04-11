@@ -6,9 +6,9 @@
     ];
 
   environment.systemPackages = with pkgs; [
-    kittysay
     rustc
     cargo
+    rust-analyzer
     unzip
     termdown
     tty-clock
