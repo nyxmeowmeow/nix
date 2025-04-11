@@ -60,7 +60,7 @@
     app-id=footblurmefloatme
     title=footblurmefloatme
     font=Mononoki Nerd Font Mono:size=20
-
+    dpi-aware=yes
 
     [cursor]
     style=beam
