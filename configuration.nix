@@ -6,7 +6,6 @@
     ];
 
   environment.systemPackages = with pkgs; [
-    bottles-unwrapped
     lmms
     godot
     rustc
