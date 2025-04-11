@@ -304,10 +304,15 @@
         "tile,title:(Godot Engine)"
         "tile,initialtitle:(Godot)"
         "minsize 600 600,title:^(Editor Settings)$"
+        "center,title:^(Editor Settings)$"
         "minsize 600 600,title:^(Create New Node)$"
+        "center,title:^(Create New Node)$"
         "minsize 600 600,title:^(Instantiate Child Scene)$"
+        "center,title:^(Instantiate Child Scene)$"
         "minsize 600 600,title:^(Command Palette)$"
+        "center,title:^(Command Palette)$"
         "minsize 600 600,title:(Project Settings)$"
+        "center,title:(Project Settings)$"
 
         # misc
 
