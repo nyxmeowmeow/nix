@@ -9,6 +9,7 @@
     rustc
     cargo
     rust-analyzer
+    clippy
     unzip
     termdown
     tty-clock
