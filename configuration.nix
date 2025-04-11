@@ -6,6 +6,8 @@
     ];
 
   environment.systemPackages = with pkgs; [
+    rustc
+    cargo
     unzip
     termdown
     tty-clock
@@ -77,24 +79,21 @@
     lutris
   ];
 
-
-  boot = {
-
-  loader.systemd-boot.enable = true;
-  loader.efi.canTouchEfiVariables = true;
-  initrd.kernelModules = [ "amdgpu" ];
-  kernelParams = [
-  "video=DP-1:2560x1440@165"
-  "video=DP-3:2560x1440@75"
-  ];
-  };
-
-
-
   fonts.packages = with pkgs; [
     nerd-fonts.mononoki
     nerd-fonts.iosevka
   ];
+
+
+  boot = {
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    initrd.kernelModules = [ "amdgpu" ];
+    kernelParams = [
+      "video=DP-1:2560x1440@165"
+      "video=DP-3:2560x1440@75"
+    ];
+  };
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
@@ -131,6 +130,7 @@
   environment.sessionVariables = { # protonup install path
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d";
   };
+
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
