@@ -24,7 +24,6 @@
           home-manager.users.meow = import ./home.nix {
             inherit inputs;
           };
-          # home.packages = [ zen-browser.packages."x86_64-linux".default ];
         }
       ];
     };
