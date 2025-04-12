@@ -115,7 +115,7 @@
         force_no_accel = "1";
       };
       cursor = {
-        hide_on_key_press = "false";
+        hide_on_key_press = "false"; # set to false to make tablet cursor stay visible
         inactive_timeout = "1";
       };
       xwayland = {

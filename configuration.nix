@@ -6,8 +6,8 @@
     ];
 
   environment.systemPackages = with pkgs; [
-    lmms
-    godot
+    # lmms
+    # godot
     rustc
     cargo
     rust-analyzer
