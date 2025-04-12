@@ -1,9 +1,9 @@
 { config, pkgs, ... }: {
 
   imports = [
-      ./hardware-configuration.nix
-      ./services.nix
-    ];
+    ./hardware-configuration.nix
+    ./services.nix
+  ];
 
   environment.systemPackages = with pkgs; [
     # lmms
