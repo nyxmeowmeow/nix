@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ inputs, ... }: {
 
   home.username = "meow";
   home.homeDirectory = "/home/meow";
@@ -12,6 +12,7 @@
     ./homeManagerModules/ncmpcpp.nix
   ];
 
+  home.packages = [ inputs.zen-browser.packages."x86_64-linux".default ];
 
   programs.git = {
     enable = true;

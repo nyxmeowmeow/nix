@@ -21,7 +21,9 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          home-manager.users.meow = import ./home.nix;
+          home-manager.users.meow = import ./home.nix {
+            inherit inputs;
+          };
           # home.packages = [ zen-browser.packages."x86_64-linux".default ];
         }
       ];
