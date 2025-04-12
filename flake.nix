@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs @ { self, nixpkgs, home-manager, ... }: {
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, ... }: {
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
@@ -21,7 +21,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          # home-manager.users.meow = import ./home.nix;
+          home-manager.users.meow = import ./home.nix;
           # home.packages = [ zen-browser.packages."x86_64-linux".default ];
         }
       ];
