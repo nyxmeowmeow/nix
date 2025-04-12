@@ -115,7 +115,7 @@
         force_no_accel = "1";
       };
       cursor = {
-        hide_on_key_press = "true";
+        hide_on_key_press = "false";
         inactive_timeout = "1";
       };
       xwayland = {
