@@ -1,7 +1,7 @@
 #!/usr/bin/env expect
 
 
-spawn sudo /home/meow/misc/keyb0xx
+spawn sudo steam-run /home/meow/misc/keyb0xx
 
 expect "password for meow:"
 send -- "nrts\r"
