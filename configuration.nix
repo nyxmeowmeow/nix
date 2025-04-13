@@ -174,15 +174,15 @@
     {
       users = [ "meow" ];
       commands = [
-        {
+        { # rebuild no passwd
           command = "/run/current-system/sw/bin/nixos-rebuild";
           options = [ "NOPASSWD" ];
         }
-        {
+        { # kanata no passwd
           command = "/run/current-system/sw/bin/kanata";
           options = [ "NOPASSWD" ];
         }
-        {
+        { # keyb0xx no passwd
           command = "/run/current-system/sw/bin/steam-run /home/meow/misc/keyb0xx";
           options = [ "NOPASSWD" ];
         }

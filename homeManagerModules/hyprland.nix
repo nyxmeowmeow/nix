@@ -61,7 +61,7 @@
         "systemctl --user start hyprpolkitagent"
         "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/float.ini'"
         "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
-        "hyprctl dispatch exec '[size 1000 1200;workspace special:2 silent] foot -c ~/.config/foot/float.ini sudo steam-run /home/meow/misc/keyb0xx'"
+        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini sudo /home/meow/nix/stuff/scripts/keyb0xx.sh'"
       ];
       monitor = [
         "DP-1, 2560x1440@165, 0x0, 1"
@@ -260,7 +260,7 @@
       windowrulev2 = [
         "nofocus, title:^(Remux Recordings)$"
 
-        "float,class:^(footblurmefloatme)$"
+        # "float,class:^(footblurmefloatme)$"
         "center,class:^(footblurmefloatme)$"
         "size 1000 1200,class:^(footblurmefloatme)$"
         "noblur,class:^(footblurmefloatme)$"
