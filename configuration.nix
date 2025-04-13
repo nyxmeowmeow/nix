@@ -62,6 +62,7 @@
     hyprpicker
     polkit_gnome
     fish
+    fishPlugins.tide
     walker
     grimblast
     slurp

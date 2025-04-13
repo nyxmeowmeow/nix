@@ -11,15 +11,15 @@
         shell = "fish";
 
         box-drawings-uses-font-glyphs = "no";
-
-
       };
+
       cursor = {
         style = "beam";
         blink = "yes";
         unfocused-style = "unchanged";
         color = "24273a cad3f5";
       };
+
       colors = {
         alpha = "0";
         background = "24273a";
@@ -44,13 +44,13 @@
         bright6 = "8bd5ca";   # bright cyan
         bright7 = "ffffff";   # bright white
       };
-      tweak.box-drawing-base-thickness = "0.06";
       key-bindings = {
         scrollback-up-half-page = "Control+Shift+e";
         scrollback-down-half-page = "Control+Shift+a";
         scrollback-home = "Control+Shift+h";
         scrollback-end = "Control+Shift+i";
       };
+      tweak.box-drawing-base-thickness = "0.06";
     };
   };
 
