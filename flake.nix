@@ -16,17 +16,23 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
+
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          home-manager.users.meow = import ./home.nix {
-            inherit inputs;
-          };
+          home-manager.users.meow = import ./home.nix;
+            # pkgs = nixpkgs.legacyPackages."x86_64-linux";
+            # inherit pkgs inputs;
+            # zen-browser = inputs.zen-browser.packages."x86_64-linux".default;
+          # };
         }
-      ];
-    };
 
+      ];
+      specialArgs = {
+        inherit zen-browser;
+      };
+    };
   };
 }

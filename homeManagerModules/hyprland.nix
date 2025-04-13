@@ -190,9 +190,8 @@
         "SUPER,       t, exec, foot"
         "SUPER,       s, exec, foot fish -c yazi" # launch yazi from fish to get correct fzf theme
 
-        "SUPER, f, exec, firefox"
-        # "SUPER,       f, exec, zen-browser -p rain"
-        # "SUPER SHIFT, f, exec, zen-browser -p rain2"
+        "SUPER,       f, exec, zen -p rain"
+        "SUPER SHIFT, f, exec, zen -p rain2"
         "SUPER,       c, exec, foot nvim"
         "SUPER SHIFT, c, exec, foot nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  c, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
@@ -290,7 +289,7 @@
         "stayfocused,title:^(Saving As — Krita)$"
         "noblur,class:^(foot)$"
         "noblur,class:^(vesktop)$"
-        "noblur,class:^(zen)$"
+        "noblur,class:^(zen-beta)$"
         "noblur,class:^(com.mitchellh.ghostty)$"
 
         "workspace special:2,title:(keyb0xx.sh)$"

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, zen-browser, ... }: {
 
   imports = [
     ./hardware-configuration.nix
@@ -7,6 +7,8 @@
 
 
   environment.systemPackages = with pkgs; [
+    nushell
+    zen-browser.packages."x86_64-linux".default 
     # lmms
     # godot
     rustc
@@ -87,6 +89,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.mononoki
     nerd-fonts.iosevka
+    sn-pro
   ];
 
 
