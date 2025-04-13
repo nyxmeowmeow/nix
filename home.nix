@@ -12,7 +12,7 @@
     ./homeManagerModules/clipse.nix
     ./homeManagerModules/ncmpcpp.nix
     # ./homeManagerModules/yazi.nix
-    ./homeManagerModules/fish.nix
+    # ./homeManagerModules/fish.nix
   ];
 
 
