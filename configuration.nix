@@ -178,10 +178,14 @@
           command = "/run/current-system/sw/bin/nixos-rebuild";
           options = [ "NOPASSWD" ];
         }
-        # {
-          # command = "/run/current-system/sw/bin/kanata";
-          # options = [ "NOPASSWD" ];
-        # }
+        {
+          command = "/run/current-system/sw/bin/kanata";
+          options = [ "NOPASSWD" ];
+        }
+        {
+          command = "/home/meow/misc/keyb0xx";
+          options = [ "NOPASSWD" ];
+        }
       ];
     }
   ];

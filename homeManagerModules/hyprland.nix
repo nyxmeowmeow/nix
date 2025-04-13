@@ -61,6 +61,7 @@
         "systemctl --user start hyprpolkitagent"
         "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/float.ini'"
         "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
+        "hyprctl dispatch exec '[size 1000 1200;workspace special:2 silent] foot -c ~/.config/foot/float.ini sudo steam-run /home/meow/misc/keyb0xx'"
       ];
       monitor = [
         "DP-1, 2560x1440@165, 0x0, 1"
