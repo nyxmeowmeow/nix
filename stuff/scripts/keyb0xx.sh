@@ -1,4 +1,4 @@
-#!/usr/bin/expect -f
+#!/usr/bin/env expect
 
 
 spawn sudo /home/meow/misc/keyb0xx

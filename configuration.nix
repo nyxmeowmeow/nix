@@ -7,6 +7,7 @@
 
 
   environment.systemPackages = with pkgs; [
+    expect
     nushell
     zen-browser.packages."x86_64-linux".default 
     # lmms
