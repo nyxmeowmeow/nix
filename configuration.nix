@@ -183,7 +183,7 @@
           options = [ "NOPASSWD" ];
         }
         {
-          command = "/home/meow/misc/keyb0xx";
+          command = "/run/current-system/sw/bin/steam-run /home/meow/misc/keyb0xx";
           options = [ "NOPASSWD" ];
         }
       ];
