@@ -118,7 +118,7 @@
 
 
     [colors]
-    alpha=0
+    alpha=0.8
     background=24273a
     foreground=cad3f5
     flash=7f7f00

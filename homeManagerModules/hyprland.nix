@@ -37,6 +37,7 @@
       "$scrPath" = "~/.local/share/bin";
       "$scripts" = "~/nix/stuff/scripts";
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
+
       exec = [
         "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"
         "gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 10'"
@@ -50,23 +51,14 @@
         "gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-macchiato-lavender-standard+default'"
         "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
       ];
-      exec-once = [
-        "clipse -listen"
-        "udiskie -a"
-        "dunst"
-        "hyprpaper"
-        "walker --gapplication-service"
-        "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
-        "steam -silent"
-        "systemctl --user start hyprpolkitagent"
-        "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/float.ini'"
-        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
-        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'"
-      ];
+
+      exec-once = ["clipse -listen" "udiskie -a" "dunst" "hyprpaper" "walker --gapplication-service" "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland" "steam -silent" "systemctl --user start hyprpolkitagent" "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/float.ini'" "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'" "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'" "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"];
+
       monitor = [
         "DP-1, 2560x1440@165, 0x0, 1"
         "DP-3, 2560x1440@75, -2880x486, 1, transform, 3"
       ];
+
       env = [
         "PATH,$PATH:$scrPath"
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -153,6 +145,7 @@
         "8, monitor:DP-1"
         "9, monitor:DP-3"
       ];
+
       bind = [
         "SUPER CTRL SHIFT,   Delete, exit"  # kill hyprland session
         "SUPER SHIFT,  Return, fullscreen"
