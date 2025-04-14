@@ -376,6 +376,7 @@
       ];
       layerrule = [
         "blur, walker"
+        "ignorezero, walker"
       ];
     };
 
