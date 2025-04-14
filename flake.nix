@@ -11,6 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
+
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, ... }: {
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
