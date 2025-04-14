@@ -7,6 +7,7 @@
 
 
   environment.systemPackages = with pkgs; [
+    zenity
     xdg-desktop-portal-termfilechooser
     expect
     nushell
