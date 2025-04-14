@@ -1,5 +1,9 @@
 { config, lib, pkgs, ... }: {
 
+
+
+
+
   services.flatpak.enable = true;
 
   services.xserver.enable = true;
