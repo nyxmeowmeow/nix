@@ -374,6 +374,9 @@
         "float,title:^(Poly Bridge)$"
 
       ];
+      layerrule = [
+        "blur, walker"
+      ];
     };
 
 
