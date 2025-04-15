@@ -52,7 +52,21 @@
         "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
       ];
 
-      exec-once = ["clipse -listen" "udiskie -a" "dunst" "hyprpaper" "walker --gapplication-service" "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland" "steam -silent" "systemctl --user start hyprpolkitagent" "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/float.ini'" "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'" "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'" "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"];
+      exec-once = [
+        "clipse -listen"
+        "udiskie -a"
+        "dunst"
+        "hyprpaper"
+        "walker --gapplication-service"
+        "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
+        "steam -silent"
+        "systemctl --user start hyprpolkitagent"
+        "hyprctl dispatch exec '[workspace special:music silent] foot -c ~/.config/foot/float.ini'"
+        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
+        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'"
+        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
+        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd nata && ./nata.sh -c config.json'"
+      ];
 
       monitor = [
         "DP-1, 2560x1440@165, 0x0, 1"
