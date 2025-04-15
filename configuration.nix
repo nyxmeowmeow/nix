@@ -7,8 +7,8 @@
 
 
   environment.systemPackages = with pkgs; [
-    zenity
-    xdg-desktop-portal-termfilechooser
+    # zenity
+    # xdg-desktop-portal-termfilechooser
     expect
     nushell
     zen-browser.packages."x86_64-linux".default 
