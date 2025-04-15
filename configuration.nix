@@ -7,7 +7,7 @@
 
 
   environment.systemPackages = with pkgs; [
-    chromium
+    google-chrome
     # zenity
     # xdg-desktop-portal-termfilechooser
     expect
