@@ -8,6 +8,9 @@
   ];
 
 
+  environment.systemPackages = [
+    zen-browser.packages."x86_64-linux".default 
+  ];
 
 
   boot = {
@@ -82,6 +85,7 @@
     enable = true;
     daemon.enable = true;
   };
+
 
 
 
