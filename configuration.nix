@@ -6,7 +6,6 @@
     ./stylix.nix
   ];
 
-
   environment.systemPackages = with pkgs; [
     google-chrome
     # zenity
