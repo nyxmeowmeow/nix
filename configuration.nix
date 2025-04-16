@@ -7,6 +7,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    gimp
     google-chrome
     # zenity
     # xdg-desktop-portal-termfilechooser
