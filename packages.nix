@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    pcmanfm-qt
     gimp
     google-chrome
     # zenity
