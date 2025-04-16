@@ -61,6 +61,7 @@
         "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "steam -silent"
         "systemctl --user start hyprpolkitagent"
+
         "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
         "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
         # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'"
@@ -69,6 +70,7 @@
         # TODO: make wider float image
         "hyprctl dispatch exec '[float;size 1600 1200;center;workspace special:3 silent] qview ~/nix/stuff/1_float.png'"
         "hyprctl dispatch exec '[float;size 1600 1200;center;workspace special:3 silent] foot -c ~/.config/foot/float.ini btop'"
+        # TODO: make one for tty-clock
       ];
 
       monitor = [
