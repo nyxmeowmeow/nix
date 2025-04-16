@@ -4,8 +4,8 @@
   stylix.autoEnable = false; # manually specify which to enable
 
   stylix.targets = {
-      gtk.enable = true;
-      qt.enable = true;
+    gtk.enable = true;
+    qt.enable = true;
   };
 
   # stylix.base16Scheme = {
@@ -39,7 +39,7 @@
   #   mantle = "#1e2030";
   #   crust = "#181926";
   # };
-
+  #
   stylix.image = ./stuff/1_hor.png; # must be set for some reason
 
   stylix.cursor = {
