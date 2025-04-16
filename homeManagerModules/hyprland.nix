@@ -97,6 +97,7 @@
         "SDL_VIDEODRIVER=wayland"
         "CLUTTER_BACKEND=wayland"
       ];
+
       input = {
         follow_mouse = "1";
         numlock_by_default = "true";
@@ -106,13 +107,16 @@
         sensitivity = "0";
         force_no_accel = "1";
       };
+
       cursor = {
         hide_on_key_press = "false"; # set to false to make tablet cursor stay visible
         inactive_timeout = "1";
       };
+
       xwayland = {
         force_zero_scaling = "true";
       };
+
       general = {
         allow_tearing = "true";
         resize_on_border = "false";
@@ -123,6 +127,7 @@
         "col.inactive_border" = "rgba(24273aff)";
         layout = "dwindle";
       };
+
       dwindle = {
         pseudotile = "true";
         preserve_split = "true";
@@ -130,6 +135,7 @@
         split_bias = "2";
         force_split = "2";
       };
+
       decoration = {
         dim_special = "0";
         rounding = "0";
@@ -245,7 +251,6 @@
         "SUPER CTRL, a, resizeactive, 0 50"      # down
         "SUPER CTRL, e, resizeactive, 0 -50"     # up
         "SUPER CTRL, i, resizeactive, 50 0"      # right
-
       ];
       bindel = [
         ", XF86AudioNext, exec, ddcutil setvcp 10 + 5"
@@ -255,14 +260,11 @@
         # ", XF86AudioRaiseVolume, exec, $scrPath/volumecontrol.sh -o i"
       ];
       binded = [
-
         "SUPER SHIFT, h,Move activewindow to the right,exec, $moveactivewindow -30 0 || hyprctl dispatch movewindow l"
         "SUPER SHIFT, a,Move activewindow to the right,exec, $moveactivewindow 0 30 || hyprctl dispatch movewindow d"
         "SUPER SHIFT, e,Move activewindow to the right,exec, $moveactivewindow  0 -30 || hyprctl dispatch movewindow u"
         "SUPER SHIFT, i,Move activewindow to the right,exec, $moveactivewindow 30 0 || hyprctl dispatch movewindow r"
       ];
-
-
 
       windowrulev2 = [
         "nofocus, title:^(Remux Recordings)$"

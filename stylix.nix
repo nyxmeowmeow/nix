@@ -5,6 +5,7 @@
 
   stylix.targets = {
       gtk.enable = true;
+      qt.enable = true;
   };
 
   # stylix.base16Scheme = {

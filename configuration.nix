@@ -128,8 +128,6 @@
   };
 
 
-  programs.foot.enable = true;
-  programs.hyprland.enable = true;
 
   programs.steam = {
     enable = true;
