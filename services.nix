@@ -85,7 +85,7 @@
     };
   };
 
-  systemd.tmpfiles.rules = [
+  systemd.tmpfiles.rules = [ # i cant remember what this is for
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
   ];
 
