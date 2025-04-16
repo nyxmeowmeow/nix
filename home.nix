@@ -13,6 +13,7 @@
     ./homeManagerModules/ncmpcpp.nix
     # ./homeManagerModules/yazi.nix
     # ./homeManagerModules/fish.nix
+    ./homeManagerModules/btop.nix
   ];
 
 
