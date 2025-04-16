@@ -3,32 +3,32 @@
   wayland.windowManager.hyprland.enable = true; # enable Hyprland
   home.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    x11.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = 20;
-  };
-
-  gtk = {
-    enable = true;
-
-    theme = {
-      package = pkgs.catppuccin-gtk;
-      name = "catppuccin-gtk";
-    };
-
-    iconTheme = {
-      # package = pkgs.gnome.adwaita-icon-theme;
-      name = "Tela Circle Dracula";
-    };
-
-    font = {
-      name = "sn pro";
-      size = 11;
-    };
-  };
+  # home.pointerCursor = {
+  #   gtk.enable = true;
+  #   x11.enable = true;
+  #   package = pkgs.bibata-cursors;
+  #   name = "Bibata-Modern-Classic";
+  #   size = 20;
+  # };
+  #
+  # gtk = {
+  #   enable = true;
+  #
+  #   theme = {
+  #     package = pkgs.catppuccin-gtk;
+  #     name = "catppuccin-gtk";
+  #   };
+  #
+  #   iconTheme = {
+  #     # package = pkgs.gnome.adwaita-icon-theme;
+  #     name = "Tela Circle Dracula";
+  #   };
+  #
+  #   font = {
+  #     name = "sn pro";
+  #     size = 11;
+  #   };
+  # };
 
 
 

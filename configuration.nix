@@ -3,6 +3,7 @@
   imports = [
     ./hardware-configuration.nix
     ./services.nix
+    ./stylix.nix
   ];
 
 
@@ -125,6 +126,10 @@
     LC_TELEPHONE = "en_AU.UTF-8";
     LC_TIME = "en_AU.UTF-8";
   };
+
+
+  programs.foot.enable = true;
+  programs.hyprland.enable = true;
 
   programs.steam = {
     enable = true;
