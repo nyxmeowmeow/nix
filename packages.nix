@@ -1,11 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    pkgs.kdePackages.kmail
-    pkgs.kdePackages.kmail-account-wizard
-    pkgs.kdePackages.kmailtransport
-    pkgs.kdePackages.akonadi
-    pkgs.kdePackages.kdepim-addons
+    thunderbird
     btop
     gimp
     google-chrome
