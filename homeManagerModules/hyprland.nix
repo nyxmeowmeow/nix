@@ -62,14 +62,13 @@
         "steam -silent"
         "systemctl --user start hyprpolkitagent"
 
-        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
-        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
         # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'"
         "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
         "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd ~/.config/nata/nata.sh -c config.json'"
-        # TODO: make wider float image
-        "hyprctl dispatch exec '[float;size 1600 1200;center;workspace special:3 silent] qview ~/nix/stuff/1_float.png'"
-        "hyprctl dispatch exec '[float;size 1600 1200;center;workspace special:3 silent] foot -c ~/.config/foot/float.ini btop'"
+        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
+        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
+        "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] qview ~/nix/stuff/1_btop.png'"
+        "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] foot -c ~/.config/foot/float.ini btop'"
         # TODO: make one for tty-clock
       ];
 
@@ -222,7 +221,8 @@
         "SUPER, w,      workspace,                 5"
         "SUPER, comma,  togglespecialworkspace"
         "SUPER, period, togglespecialworkspace,    2"
-        "SUPER, escape, togglespecialworkspace,    3"
+        "SUPER, u,      togglespecialworkspace,    btop"
+        "SUPER, j,      togglespecialworkspace,    clock"
         "SUPER, m,      togglespecialworkspace,    music"
 
         "SUPER SHIFT, n,          movetoworkspacesilent,   9"
