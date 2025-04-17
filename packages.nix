@@ -2,6 +2,8 @@
 
   environment.systemPackages = with pkgs; [
     kdePackages.kmail
+    kdePackages.kmail-account-wizard
+    kdePackages.kmailtransport
     btop
     gimp
     google-chrome
