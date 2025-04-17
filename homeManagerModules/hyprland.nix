@@ -62,14 +62,19 @@
         "steam -silent"
         "systemctl --user start hyprpolkitagent"
 
-        # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/float.ini /home/meow/nix/stuff/scripts/keyb0xx.sh'"
+        # kanata
         "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
         "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd ~/.config/nata/nata.sh -c config.json'"
-        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] qview ~/nix/stuff/1_float.png'"
-        "hyprctl dispatch exec '[float;size 1000 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
+
+        # ncmpcpp
+        "hyprctl dispatch exec '[float;size 986 1200;center;workspace special:music silent] qview ~/nix/stuff/1_ncmpcpp.png'"
+        "hyprctl dispatch exec '[float;size 986 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
+        # btop
         "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] qview ~/nix/stuff/1_btop.png'"
         "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] foot -c ~/.config/foot/float.ini btop'"
-        # TODO: make one for tty-clock
+        # tty-clock
+        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] qview ~/nix/stuff/1_clock.png'"
+        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] foot -c ~/.config/foot/float.ini tty-clock -cC 4'"
       ];
 
       monitor = [
