@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    kdePackages.kmail
     btop
     gimp
     google-chrome
