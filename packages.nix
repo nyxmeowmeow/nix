@@ -1,9 +1,11 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    kdePackages.kmail
-    kdePackages.kmail-account-wizard
-    kdePackages.kmailtransport
+    pkgs.kdePackages.kmail
+    pkgs.kdePackages.kmail-account-wizard
+    pkgs.kdePackages.kmailtransport
+    pkgs.kdePackages.akonadi
+    pkgs.kdePackages.kdepim-addons
     btop
     gimp
     google-chrome
