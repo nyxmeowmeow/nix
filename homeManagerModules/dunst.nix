@@ -13,9 +13,6 @@
         scale = 0;
         notification_limit = 20;
 
-        background = "#24273a80";
-        foreground = "#cad3f5ff";
-        frame_color = "#b7bdf8ff";
 
         progress_bar = true;
 
@@ -114,6 +111,12 @@
         sticky_history = true;
 
         history_length = 20;
+      };
+
+      urgency_normal = {
+        background = "#24273a80";
+        foreground = "#cad3f5ff";
+        frame_color = "#b7bdf8ff";
       };
     };
   };
