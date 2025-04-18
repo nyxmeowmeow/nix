@@ -43,7 +43,7 @@ if __name__ == "__main__":
     hex_code = sys.argv[1]
     width = 100  # Width of the image
     height = 100  # Height of the image
-    output_file = '/home/rain/.config/dunst/icons/hyprpicker/color_image.png'  # Output image file path
+    output_file = '/home/meow/.config/dunst/icons/hyprpicker/color_image.png'  # Output image file path
 
     # Create the image
     create_image_from_hex(hex_code, width, height, output_file)
