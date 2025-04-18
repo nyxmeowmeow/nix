@@ -14,6 +14,7 @@
     # ./homeManagerModules/yazi.nix
     # ./homeManagerModules/fish.nix
     ./homeManagerModules/btop.nix
+    ./homeManagerModules/dunst.nix
   ];
 
 
