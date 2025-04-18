@@ -6,8 +6,8 @@
 
       global = {
         monitor = 0;
-        width = 300;
-        height = 300;
+        width = "300";
+        height = "300";
         origin = "top-right";
         offset = "20x20";
         scale = 0;
