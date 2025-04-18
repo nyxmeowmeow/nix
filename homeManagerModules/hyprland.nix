@@ -399,6 +399,8 @@
       layerrule = [
         "blur, walker"
         "ignorezero, walker"
+        "blur,notifications"
+        "ignorezero,notifications"
       ];
     };
 
