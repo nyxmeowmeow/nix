@@ -6,13 +6,16 @@
 
       global = {
         monitor = 0;
-        width = "300";
-        height = "300";
+        width = 300;
+        height = 300;
         origin = "top-right";
         offset = "20x20";
         scale = 0;
         notification_limit = 20;
 
+        background = "#24273a80";
+        foreground = "#cad3f5ff";
+        frame_color = "#b7bdf8ff";
 
         progress_bar = true;
 
@@ -66,9 +69,51 @@
 
         font = "mononoki Nerd Font mono 8";
 
-        # The spacing between lines.  If the height is smaller than the
-        # font height, it will get raised to the font height.
         line_height = 3;
+
+        markup = "full";
+
+
+        format = "%s\n%b";
+
+        alignment = "left";
+
+        vertical_alignment = "center";
+
+
+        show_age_threshold = 60;
+
+
+        ellipsize = "end";
+
+        ignore_newline = false;
+
+
+        stack_duplicates = true;
+
+        # Hide the count of stacked notifications with the same content
+        hide_duplicate_count = false;
+
+        # Display indicators for URLs (U) and actions (A).
+        show_indicators = true;
+
+
+
+
+
+        icon_theme = "Tela-circle-dracula";
+
+        icon_path = "$HOME/.icons/Tela-circle-dracula/16/actions:$HOME/.icons/Tela-circle-dracula/16/apps:$HOME/.icons/Tela-circle-dracula/16/devices:$HOME/.icons/Tela-circle-dracula/16/mimetypes:$HOME/.icons/Tela-circle-dracula/16/panel:$HOME/.icons/Tela-circle-dracula/16/places:$HOME/.icons/Tela-circle-dracula/16/status";
+
+        icon_position = "left";
+
+        min_icon_size = 32;
+
+        max_icon_size = 128;
+
+        sticky_history = true;
+
+        history_length = 20;
       };
     };
   };

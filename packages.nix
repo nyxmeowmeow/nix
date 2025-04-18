@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    tldr
     btop
     gimp
     google-chrome
