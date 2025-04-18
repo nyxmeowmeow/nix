@@ -5,7 +5,7 @@
     settings = {
 
       global = {
-        monitor = 0;
+        monitor = 1;
         width = 300;
         height = 300;
         origin = "top-right";
@@ -48,7 +48,7 @@
 
         # Defines width in pixels of frame around the notification window.
         # Set to 0 to disable.
-        frame_width = 5;
+        frame_width = 2;
 
         gap_size = 5;
 
