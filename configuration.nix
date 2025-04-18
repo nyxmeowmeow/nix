@@ -66,20 +66,9 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 
-  programs.obs-studio.enable = true;
 
 
-  # This enables AppImage support.
-  programs.appimage.enable = true;
-  programs.appimage.binfmt = true;
 
-  # This is needed for Slippi to run.
-  programs.appimage.package = pkgs.appimage-run.override {
-    extraPkgs = pkgs: [
-      pkgs.curl
-      pkgs.libmpg123
-    ];
-  };
 
   security.rtkit.enable = true;
 
@@ -116,38 +105,48 @@
   ];
 
 
-  security.polkit.enable = true;
+  security.polkit = {
+    enable = true;
+    extraConfig = ''
+      /* Allow members of the 'wheel' group to mount devices via Nautilus */
+      polkit.addRule(function(action, subject) {
+        if (action.id == "org.freedesktop.udisks2.filesystem-mount" && subject.isInGroup("wheel")) {
+          return polkit.Result.YES;
+        }
+      });
+    '';
+  };
 
-  security.polkit.extraConfig = ''
-    /* Allow members of the 'wheel' group to mount devices via Nautilus */
-    polkit.addRule(function(action, subject) {
-      if (action.id == "org.freedesktop.udisks2.filesystem-mount" && subject.isInGroup("wheel")) {
-        return polkit.Result.YES;
-      }
-    });
-  '';
 
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  programs.fish.enable = true;
 
   users.users.meow = {
     isNormalUser = true;
     description = "meow";
     extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
     shell = pkgs.fish;
-    packages = with pkgs; [
-    # user package
-    ];
+    # packages = with pkgs; [
+    #   user package
+    # ];
   };
 
 
 
+  programs.fish.enable = true;
   programs.firefox.enable = true;
+  programs.obs-studio.enable = true;
 
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+
+    # This is needed for Slippi to run.
+    package = pkgs.appimage-run.override {
+      extraPkgs = pkgs: [
+        pkgs.curl
+        pkgs.libmpg123
+      ];
+    };
+  };
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

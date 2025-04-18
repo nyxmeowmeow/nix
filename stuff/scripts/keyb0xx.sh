@@ -3,9 +3,6 @@
 
 spawn sudo steam-run /home/meow/misc/keyb0xx
 
-expect "password for meow:"
-send -- "nrts\r"
-
 expect "Enter a number (or 'a' to show all devices):"
 send -- "a\r"
 

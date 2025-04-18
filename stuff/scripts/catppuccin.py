@@ -34,7 +34,7 @@ macchiato = {
 }
 
 def prompt(colour):
-    
+
     if colour in macchiato:
         colour_code = macchiato[colour]
         pyperclip.copy(colour_code)
