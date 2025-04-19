@@ -15,7 +15,7 @@
     # ./homeManagerModules/fish.nix
     ./homeManagerModules/btop.nix
     ./homeManagerModules/dunst.nix
-    # ./homeManagerModules/mpv.nix
+    ./homeManagerModules/mpv.nix
   ];
 
 
