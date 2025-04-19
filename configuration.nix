@@ -7,6 +7,8 @@
     ./stylix.nix
   ];
 
+  xdg.portal.config.common.default = "*";
+
   environment.systemPackages = [
     zen-browser.packages."x86_64-linux".default 
   ];
