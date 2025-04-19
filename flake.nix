@@ -15,10 +15,6 @@
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, ... }: {
 
-    apps.x86_64-linux.default = {
-      type = "app";
-      program = "${nixpkgs.legacyPackages.x86_64-linux.python3.withPackages (ps: [ ps.pillow ])}/bin/python ${./hextoimg.py}";
-    };
 
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
