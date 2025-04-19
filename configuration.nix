@@ -3,15 +3,13 @@
   imports = [
     ./hardware-configuration.nix
     ./services.nix
-    ./stylix.nix
     ./packages.nix
+    ./stylix.nix
   ];
-
 
   environment.systemPackages = [
     zen-browser.packages."x86_64-linux".default 
   ];
-
 
   boot = {
     loader.systemd-boot.enable = true;
@@ -24,7 +22,7 @@
     ];
   };
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   time.timeZone = "Australia/Brisbane";

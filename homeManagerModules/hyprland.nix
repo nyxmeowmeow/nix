@@ -114,7 +114,7 @@
         follow_mouse = "1";
         numlock_by_default = "true";
         #scroll_factor = "1.5";
-        repeat_delay = "15000"; # delay before a held-down key is repeated, in milliseconds
+        repeat_delay = "150000"; # delay before a held-down key is repeated, in milliseconds
         repeat_rate = "20";  # repeat rate for held-down keys, in repeats per seconds
         sensitivity = "0";
         force_no_accel = "1";
@@ -166,6 +166,7 @@
       };
 
       animations.enabled = "false";
+
       workspace = [
         "1, monitor:DP-1"
         "2, monitor:DP-1"
@@ -179,13 +180,13 @@
       ];
 
       bind = [
-        "SUPER CTRL SHIFT,   Delete, exit"  # kill hyprland session
+        "SUPER CTRL SHIFT ALT,   0, exit"  # kill hyprland session
         "SUPER SHIFT,  Return, fullscreen"
         "SUPER,       r, exec, $scripts/dontkillsteam.sh"
         "SUPER CTRL,  r, exec, hyprctl kill"
         "SUPER CTRL SHIFT, r, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
         "SUPER,       n, exec, $scripts/swap.sh"
-        "SUPER, k, togglesplit"
+        "SUPER,       k, togglesplit"
         "SUPER,       y, togglefloating"
         # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"
         "SUPER,       2, exec, foot --hold hyprprop"
@@ -294,6 +295,7 @@
         "noblur,class:^(clipse)$"
 
         "suppressevent fullscreen,class:^(krita)$"
+        "immediate,class:^(krita)$"
         "stayfocused,title:^(Create new document — Krita)$"
         "stayfocused,title:^(Saving As — Krita)$"
         "noblur,class:^(foot)$"

@@ -19,7 +19,7 @@
 
   dbus.enable = true;
 
-  printing.enable = true; # cups
+  printing.enable = false; # cups
 
   pulseaudio = {
     enable = false;
