@@ -231,7 +231,5 @@
       pkgs.mpvScripts.uosc
     ];
   };
-
   home.file.".config/mpv/scripts/webm.lua".source = ../stuff/webm.lua;
-
 }
