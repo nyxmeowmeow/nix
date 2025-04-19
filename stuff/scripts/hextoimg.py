@@ -1,4 +1,4 @@
-from pillow import Image
+from PIL import Image
 import sys
 import os
 import subprocess
