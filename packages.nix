@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    python312Packages.pillow
     trash-cli
     tldr
     btop

@@ -7,7 +7,7 @@ COLOR_CODE=$(hyprpicker -a)
 COLOR_CODE=$(echo "$COLOR_CODE" | xargs)
 
 # Path to the Python script
-PYTHON_SCRIPT="/home/meow/bin/hextoimg.py"
+PYTHON_SCRIPT="/home/meow/nix/stuff/scripts/hextoimg.py"
 
 # Path to the output image
 IMAGE_PATH="/home/meow/.config/dunst/icons/hyprpicker/color_image.png"
