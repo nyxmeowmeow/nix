@@ -76,7 +76,7 @@
         "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] qview ~/nix/stuff/1_btop.png' && sleep 3 && hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] foot -c ~/.config/foot/float.ini btop'"
 
         # tty-clock
-        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] qview ~/nix/stuff/1_clock.png' && sleep 3 && hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] foot -c ~/.config/foot/float.ini tty-clock -cC 4 -f %a,\ %d\ %b\ %Y'"
+        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] qview ~/nix/stuff/1_clock.png' && sleep 3 && hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] foot -c ~/.config/foot/float.ini tty-clock -cC 4 -f %a,\\ %d\\ %b\\ %Y'"
 
       ];
 
