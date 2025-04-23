@@ -24,8 +24,8 @@
               binary: red
               cellpath: cyan
               hints: dark_gray
-            }
-        }
+          }
+      }
     '';
 
     envFile.text = ''
