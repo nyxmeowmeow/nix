@@ -19,12 +19,25 @@
           shape_pipe: purple_bold
       }
 
-      def gl [] { git log --oneline | lines | fzf }
+
+      let multiple_completers = {|spans|
+          match $spans.0 {
+              ls => $ls_completer
+              git => $git_completer
+              b => $zoxide_completer
+              _ => $default_completer
+          } | do $in $spans
+      }
+
 
 
       let zoxide_completer = {|spans|
           $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
       }
+
+
+
+      def gl [] { git log --oneline | lines | fzf }
 
       $env.config = {
           cursor_shape: {
