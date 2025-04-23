@@ -8,7 +8,7 @@
       let config = {
 
           color_config: {
-              shape_nothing = foreground
+              shape_nothing = white
               shape_filepath = green
           }
       }
