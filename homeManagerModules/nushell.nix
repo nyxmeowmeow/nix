@@ -10,6 +10,9 @@
           shape_nothing: foreground
           shape_filepath: green
           shape_external: blue
+          shape_externalarg: foreground
+          shape_keyword: blue
+          shape_pipe: green
       }
 
 
