@@ -7,7 +7,7 @@
     configFile.text = ''
       let $config = {
         filesize_metric: false
-        table_mode: dots
+        table_mode: psql
         use_ls_colors: true
       }
       '';
