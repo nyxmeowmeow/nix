@@ -43,9 +43,9 @@
           keybindings: [
               {
                   name: "fzf_history"
-                  modifier: "control"
-                  keycode: Char('c')
-                  mode: "emacs"
+                  modifier: control
+                  keycode: char_s
+                  mode: emacs
                   event: {
                       send: {
                           command: "commandline edit (history | to text | lines | reverse | uniq | fzf)"
