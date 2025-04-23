@@ -12,11 +12,13 @@
     envFile.text = ''
       $env.config.show_banner = false
       $env.config.table.mode = "none"
-      $env.config.color_config: {
-          shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
-          shape_nothing: foreground
-          shape_filepath: green
-          shape_external: blue
+      $env.config = {
+          color_config: {
+              shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
+              shape_nothing: foreground
+              shape_filepath: green
+              shape_external: blue
+          }
       }
     '';
 
