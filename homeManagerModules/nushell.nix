@@ -40,15 +40,15 @@
 
 
 
-          # keybindings: [
-          #     {
-          #         name: "fzf_history"
-          #         modifier: control
-          #         keycode: char_s
-          #         mode: emacs
-          #         event: Send(EditCommand (ExternalCommand "bash" ["-c" "commandline edit (history | to text | lines | reverse | uniq | fzf)"]))
-          #     }
-          # ]
+          keybindings: [
+              # {
+              #     name: "fzf_history"
+              #     modifier: control
+              #     keycode: char_s
+              #     mode: emacs
+              #     event: Send(EditCommand (ExternalCommand "bash" ["-c" "commandline edit (history | to text | lines | reverse | uniq | fzf)"]))
+              # }
+          ]
       }
     '';
 
@@ -88,7 +88,7 @@
 
 
       ga="git add .";
-      gl="git log --oneline | lines | fzf";
+      gl="git log --pretty=oneline | lines | fzf";
       gd="git diff HEAD^";
       gs="git status";
       cr="cargo run";
