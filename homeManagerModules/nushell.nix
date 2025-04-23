@@ -27,6 +27,18 @@
       }
 
 
+      def nr [...msg: string] {
+        sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+        cd ~/nix
+        git add .
+        let timestamp = (date now | format date '%d/%m %H:%M:%S')
+        let full_msg = if ($msg | is-empty) {
+          $timestamp
+        } else {
+          $"($timestamp) ($msg | str join ' ')"
+        }
+        git commit -m $full_msg
+      }
 
 
       $env.config = {
@@ -203,24 +215,6 @@
 
   };
 
-
-
-  home.file.".config/nushell/custom.nu".text = ''
-
-    def nr [...msg: string] {
-      sudo nixos-rebuild switch --flake /home/meow/nix#nixos
-      cd ~/nix
-      git add .
-      let timestamp = (date now | format date '%d/%m %H:%M:%S')
-      let full_msg = if ($msg | is-empty) {
-        $timestamp
-      } else {
-        $"($timestamp) ($msg | str join ' ')"
-      }
-      git commit -m $full_msg
-    }
-    
-  '';
 
 
   programs.starship = {
