@@ -88,7 +88,7 @@
 
 
       ga="git add .";
-      gl="git log --pretty=oneline | lines | fzf";
+      gl="{| | do git log --oneline | lines | fzf}";
       gd="git diff HEAD^";
       gs="git status";
       cr="cargo run";
