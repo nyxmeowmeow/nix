@@ -19,6 +19,8 @@
           shape_pipe: purple_bold
       }
 
+      def gitlog_fzf = {| | git log --oneline | lines | fzf}
+
 
       let zoxide_completer = {|spans|
           $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
@@ -88,7 +90,7 @@
 
 
       ga="git add .";
-      gl="{| | do git log --oneline | lines | fzf}";
+      # gl="git log --oneline | lines | fzf";
       gd="git diff HEAD^";
       gs="git status";
       cr="cargo run";
