@@ -20,9 +20,11 @@
       }
 
 
-
-
-      def gl [] { git log --oneline | lines | fzf }
+      def gl [] {
+        let selection = (git log --oneline | lines | fzf)
+        let hash = ($selection | split row " " | get 0)
+        $hash | wl-copy
+      }
 
       $env.config = {
           cursor_shape: {
