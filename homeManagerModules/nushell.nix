@@ -157,7 +157,13 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
-      hist="history | fzf | read -l command; eval $command";
+hist-fzf = ''
+  let selected = (history | get command | uniq | fzf)
+  if ($selected | is-empty) == false {
+    do $selected
+  }
+'';
+      hist="history | lines | fzf | read -l command; eval $command";
       fg="job unfreeze"; # prompt every time
 
       sudo="sudo -k"; # prompt every time
