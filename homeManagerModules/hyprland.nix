@@ -56,6 +56,7 @@
       ];
 
       exec-once = [
+        "foot --server"
         "clipse -listen"
         "udiskie -a"
         "dunst"
@@ -311,6 +312,8 @@
         "workspace 4 silent,class:^(vesktop)$"
 
         "tile,initialTitle:^(Hammer)"
+
+        # godot
 
         "tile,title:(Godot Engine)"
         "tile,initialtitle:(Godot)"
