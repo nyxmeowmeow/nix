@@ -44,8 +44,7 @@
               {
                   name: "fzf_history"
                   modifier: "control"
-                  keycode: "char"
-                  char: "s"
+                  keycode: "Char('s')"
                   mode: "emacs"
                   event: {
                       send: {
