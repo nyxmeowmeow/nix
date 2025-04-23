@@ -51,7 +51,6 @@
 
 
 
-
           keybindings: [
               # {
               #     name: "fzf_history"
