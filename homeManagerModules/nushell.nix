@@ -174,7 +174,7 @@
           sudo nixos-rebuild switch --flake /home/meow/nix#nixos
           cd ~/nix
           git add .
-          git commit -m $"(date now | format date '%d/%m %H:%M:%S')"
+          git commit -m $"(date now | format date '%d/%m %H:%M:%S') $it"
         }
       '';
       na="nvim ~/nix/packages.nix -c '/systemPackages'";
