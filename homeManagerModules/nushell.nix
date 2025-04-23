@@ -124,8 +124,8 @@
       # Commands for zoxide. Disable these using --no-cmd.
       #
       
-      alias z = __zoxide_z
-      alias zi = __zoxide_zi
+      alias b = __zoxide_z
+      alias bi = __zoxide_zi
       
       # =============================================================================
       #
