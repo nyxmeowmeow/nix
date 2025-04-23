@@ -14,9 +14,16 @@
 
 
       $env.config = {
+    
+          cursor_shape: {
+              emacs: line
+              vi_insert: line
+              vi_normal: block
+          }
+
           color_config: $color_scheme
           show_banner: false
-          table.mode: none
+          table.mode: "none"
       }
     '';
 
