@@ -14,7 +14,7 @@
 
 
       $env.config = {
-          color_config = $color_scheme
+          color_config: $color_scheme
           show_banner: false
           table.mode: none
       }
