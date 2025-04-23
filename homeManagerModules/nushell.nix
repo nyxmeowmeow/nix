@@ -26,6 +26,12 @@
         $hash | wl-copy
       }
 
+def hist [] {
+  let selected = (history | get command | uniq | fzf)
+  if ($selected | is-empty) == false {
+    do $selected
+  }
+}
 
 
       def nr [...msg: string] {
@@ -157,12 +163,6 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
-hist-fzf = ''
-  let selected = (history | get command | uniq | fzf)
-  if ($selected | is-empty) == false {
-    do $selected
-  }
-'';
       # hist="history | lines | fzf | read -l command; eval $command";
       fg="job unfreeze"; # prompt every time
 
