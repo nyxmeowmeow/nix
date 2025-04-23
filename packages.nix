@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    tiv
+    feh
     trash-cli
     tldr
     btop
