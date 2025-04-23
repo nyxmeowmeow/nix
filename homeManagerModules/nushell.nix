@@ -80,8 +80,8 @@
 
 
 
-      nr="sudo nixos-rebuild switch --flake /home/meow/nix#nixos && cd ~/nix && git add . && git commit -m $(date +'%d/%m %H:%M:%S')";
-      nro="sudo nixos-rebuild switch --offline --flake /home/meow/nix#nixos && cd ~/nix && git add . && git commit -m $(date +'%d/%m %H:%M:%S')";
+      nr="sudo nixos-rebuild switch --flake /home/meow/nix#nixos ; cd ~/nix ; git add . ; git commit -m $(date +'%d/%m %H:%M:%S')";
+      nro="sudo nixos-rebuild switch --offline --flake /home/meow/nix#nixos ; cd ~/nix ; git add . ; git commit -m $(date +'%d/%m %H:%M:%S')";
       na="nvim ~/nix/packages.nix -c '/systemPackages'";
       ns="nix-shell -p";
 
