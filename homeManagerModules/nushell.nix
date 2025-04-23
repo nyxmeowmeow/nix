@@ -23,7 +23,7 @@
 
           color_config: $color_scheme
           show_banner: false
-          table.mode: "none"
+          # table.mode: "none"
       }
     '';
 
