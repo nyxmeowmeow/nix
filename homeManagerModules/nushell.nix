@@ -45,6 +45,50 @@
         Hyprland
       }
     '';
+
+
+    shellAliases = {
+      ".." = "cd ..";
+      "..." = "cd ../..";
+      "...." = "cd ../../..";
+      "....." = "cd ../../../..";
+
+      sudo="sudo -k"; # prompt every time
+      s="sudo -k"; # prompt every time
+      rm="rm -i"; # prompt every time
+      mv="mv -i"; # prompt every time
+      ln="ln -i"; # prompt every time
+
+
+      logout="hyprctl dispatch exit 0";
+      c="clear"; # clear terminal
+      l="eza -lh  --icons=auto"; # long list
+      ls="eza -a1   --icons=auto"; # short list
+      ll="eza -lha --icons=auto --sort=name --group-directories-first"; # long list all
+      ld="eza -lhD --icons=auto"; # long list dirs
+      lt="eza --icons=auto --tree"; # list folder as tree
+      ff="fastfetch --logo nixos_small --logo-color-2 magenta";
+      cl="hyprctl clients";
+
+
+
+      ga="git add .";
+      gl="git log --oneline | fzf";
+      gd="git diff HEAD^";
+      gs="git status";
+      cr="cargo run";
+
+
+
+      nr="sudo nixos-rebuild switch --flake /home/meow/nix#nixos && cd ~/nix && git add . && git commit -m $(date +'%d/%m %H:%M:%S')";
+      nro="sudo nixos-rebuild switch --offline --flake /home/meow/nix#nixos && cd ~/nix && git add . && git commit -m $(date +'%d/%m %H:%M:%S')";
+      na="nvim ~/nix/packages.nix -c '/systemPackages'";
+      ns="nix-shell -p";
+
+      n="nvim";
+    };
+
+
   };
 
 
