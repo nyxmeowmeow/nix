@@ -8,8 +8,8 @@
       let config = {
 
           color_config: {
-              shape_nothing = white
-              shape_filepath = green
+              shape_nothing: foreground
+              shape_filepath: green
           }
       }
     '';
