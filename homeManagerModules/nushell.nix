@@ -6,11 +6,27 @@
 
     configFile.text = ''
       let $config = {
-        filesize_metric: false
-        table_mode: none
-        use_ls_colors: true
+
+        color_config: {
+          separator: purple
+          leading_trailing_space_bg: "#ffffff"
+          header: gb
+          date: wd
+          filesize: c
+          row_index: cb
+          bool: red
+          int: green
+          duration: blue_bold
+          range: purple
+          float: red
+          string: white
+          nothing: red
+          binary: red
+          cellpath: cyan
+          hints: dark_gray
+        }
       }
-      '';
+    '';
 
     envFile.text = ''
       $env.config.show_banner = false
