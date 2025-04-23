@@ -199,13 +199,13 @@
         # TODO: doesnt work using $scripts
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
-        "SUPER,       t, exec, foot"
-        "SUPER,       s, exec, foot bash -c yazi" # launch yazi from fish to get correct fzf theme
+        "SUPER,       t, exec, footclient"
+        "SUPER,       s, exec, footclient bash -c yazi" # launch yazi from fish to get correct fzf theme
 
         "SUPER,       f, exec, zen -p rain"
         "SUPER SHIFT, f, exec, zen -p rain2"
-        "SUPER,       c, exec, foot bash nvim"
-        "SUPER SHIFT, c, exec, foot bash nvim -c 'lua require('persistence').load()'"
+        "SUPER,       c, exec, footclient bash nvim"
+        "SUPER SHIFT, c, exec, footclient bash nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  c, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
         "SUPER,  return, exec, walker -s 3 -m applications,calc"
         "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
@@ -219,7 +219,7 @@
         ", XF86AudioPrev,        exec, playerctl previous"
 
 
-        "SUPER, V, exec, foot -a clipse -e fish -c clipse -fc $fish_pid"
+        "SUPER, V, exec, footclient -a clipse -e fish -c clipse -fc $fish_pid"
         # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
@@ -288,6 +288,8 @@
         "center,class:^(footfloatme)$"
         # "size 1000 1200,class:^(footfloatme)$"
         "noblur,class:^(footfloatme)$"
+
+        "noblur,class:^(footclient)$"
 
         "float,class:^(clipse)$"
         "center,class:^(clipse)$"
