@@ -201,6 +201,8 @@
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
         "SUPER,       t, exec, footclient"
+        "SUPER, SHIFT t, exec, foot"
+        "SUPER, CTRL  t, exec, foot"
         "SUPER,       s, exec, footclient yazi" # launch yazi from fish to get correct fzf theme
 
         "SUPER,       f, exec, zen -p rain"
