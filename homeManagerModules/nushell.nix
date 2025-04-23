@@ -26,14 +26,14 @@
 
       let fish_completer = ...
 
-
-      let multiple_completers = {|spans|
-          match $spans.0 {
-              git => $fish_completer
-              b => $zoxide_completer
-              _ => $fish_completer
-          } | do $in $spans
-      }
+      #
+      # let multiple_completers = {|spans|
+      #     match $spans.0 {
+      #         git => $fish_completer
+      #         b => $zoxide_completer
+      #         _ => $fish_completer
+      #     } | do $in $spans
+      # }
 
       let external_completer = {|spans|
           let expanded_alias = scope aliases
@@ -57,7 +57,7 @@
               asdf => $fish_completer
               # use zoxide completions for zoxide commands
               __zoxide_z | __zoxide_zi => $zoxide_completer
-              _ => $carapace_completer
+              _ => $fish_completer
           } | do $in $spans
       }
 
