@@ -24,13 +24,14 @@
           $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
       }
 
+      let fish_completer = ...
+
 
       let multiple_completers = {|spans|
           match $spans.0 {
-              # ls => $ls_completer
-              # git => $git_completer
+              git => $fish_completer
               b => $zoxide_completer
-              _ => $default_completer
+              _ => $fish_completer
           } | do $in $spans
       }
 
@@ -53,6 +54,13 @@
           table: {
               mode: none
               index_mode: never
+          }
+
+          completions: {
+              external: {
+                  enable: true
+                  completer: $external_completer
+              }
           }
 
 
