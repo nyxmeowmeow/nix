@@ -19,7 +19,7 @@
           shape_pipe: purple_bold
       }
 
-      def gitlog_fzf [] { git log --oneline | lines | fzf }
+      def gl [] { git log --oneline | lines | fzf }
 
 
       let zoxide_completer = {|spans|
