@@ -40,6 +40,7 @@
 
 
 
+
           keybindings: [
               # {
               #     name: "fzf_history"
@@ -139,12 +140,13 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
+      fg="job unfreeze"; # prompt every time
+
       sudo="sudo -k"; # prompt every time
       s="sudo -k"; # prompt every time
       rm="rm -i"; # prompt every time
       mv="mv -i"; # prompt every time
       ln="ln -i"; # prompt every time
-
 
       logout="hyprctl dispatch exit 0";
       c="clear"; # clear terminal
