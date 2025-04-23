@@ -4,22 +4,19 @@
     enable = true;
 
 
-    configFile = {
-      text = ''
+    configFile.text = ''
       let $config = {
         filesize_metric: false
-        table_mode: rounded
+        table_mode: dots
         use_ls_colors: true
       }
       '';
-    };
 
     envFile.text = ''
       $env.config.show_banner = false
     '';
 
     loginFile.text = ''
-      # Prints "Hello, World" upon logging into tty1
       if (tty) == "/dev/tty1" {
         Hyprland
       }
