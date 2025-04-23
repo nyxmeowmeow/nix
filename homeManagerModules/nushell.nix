@@ -185,7 +185,6 @@
 
 
     environmentVariables = {
-
       MANPAGER = "nvim +Man!"; # use nvim for man
       SUDO_TIMESTAMP_TIMEOUT = 0;
       EDITOR = "nvim";
