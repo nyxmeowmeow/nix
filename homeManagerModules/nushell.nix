@@ -48,7 +48,7 @@
                   mode: emacs
                   event: {
                       Send: {
-                          EditCommand: ExecuteHostCommand ("commandline edit (history | to text | lines | reverse | uniq | fzf)")
+                          EditCommand: ExecuteHostCommand("commandline edit (history | to text | lines | reverse | uniq | fzf)")
                       }
                   }
               }
