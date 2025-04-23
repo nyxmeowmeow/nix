@@ -125,7 +125,7 @@
     isNormalUser = true;
     description = "meow";
     extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
-    shell = pkgs.fish;
+    shell = pkgs.nushell;
     # packages = with pkgs; [
     #   user package
     # ];
