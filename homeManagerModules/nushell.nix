@@ -20,6 +20,11 @@
       }
 
 
+      let zoxide_completer = {|spans|
+          $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
+      }
+
+
       let multiple_completers = {|spans|
           match $spans.0 {
               # ls => $ls_completer
@@ -31,9 +36,6 @@
 
 
 
-      let zoxide_completer = {|spans|
-          $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
-      }
 
 
 
