@@ -27,11 +27,17 @@
       }
 
 
-      def nr [msg: string] {
+      def nr [...msg: string] {
         sudo nixos-rebuild switch --flake /home/meow/nix#nixos
         cd ~/nix
         git add .
-        git commit -m $"(date now | format date '%d/%m %H:%M:%S') ($msg)"
+        let timestamp = (date now | format date '%d/%m %H:%M:%S')
+        let full_msg = if ($msg | is-empty) {
+          $timestamp
+        } else {
+          $"($timestamp) ($msg | str join ' ')"
+        }
+        git commit -m $full_msg
       }
 
 
