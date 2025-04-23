@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    libsixel
+    kitty
     trash-cli
     tldr
     btop
