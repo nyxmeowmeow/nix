@@ -20,8 +20,11 @@
       }
 
 
+      let zoxide_completer = {|spans|
+          $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
+      }
+
       $env.config = {
-    
           cursor_shape: {
               emacs: line
               vi_insert: line
@@ -34,6 +37,22 @@
               mode: none
               index_mode: never
           }
+
+
+
+          keybindings: [
+              {
+                  name: "fzf_history"
+                  modifier: "control"
+                  key: "s"
+                  mode: "emacs"
+                  event: {
+                      send: {
+                          command: "commandline edit (history | to text | lines | reverse | uniq | fzf)"
+                      }
+                  }
+              }
+          ]
       }
     '';
 
@@ -73,7 +92,7 @@
 
 
       ga="git add .";
-      gl="git log --oneline | fzf";
+      gl="git log --oneline | lines | fzf";
       gd="git diff HEAD^";
       gs="git status";
       cr="cargo run";
@@ -92,6 +111,21 @@
 
       n="nvim";
     };
+
+
+    environmentVariables = {
+
+      MANPAGER = "nvim +Man!"; # use nvim for man
+      SUDO_TIMESTAMP_TIMEOUT = 0;
+      EDITOR = "nvim";
+      VISUAL = "nvim";
+      BROWSER = "zen";
+      FZF_DEFAULT_OPTS = "--color=fg:#cad3f5,hl:#8bd5ca,fg+:#cad3f5,bg+:#363a4f,hl+:#8bd5ca,info:#7f8c8d,prompt:#b7bdf8,spinner:#b7bdf8,pointer:#b7bdf8,gutter:-1,info:#939ab7,border:#494d64";
+
+
+    };
+
+
 
 
   };
