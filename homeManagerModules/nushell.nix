@@ -46,7 +46,7 @@
                   modifier: control
                   keycode: char_s
                   mode: emacs
-                  event: Send(EditCommand: ExecuteHostCommand("commandline edit (history | to text | lines | reverse | uniq | fzf)"))
+                  event: Send(EditCommand(ExecuteHostCommand $"commandline edit (history | to text | lines | reverse | uniq | fzf)"))
               }
           ]
       }
