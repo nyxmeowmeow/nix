@@ -8,22 +8,8 @@
       let config = {
 
           color_config: {
-              separator: purple
-              leading_trailing_space_bg: "#ffffff"
-              header: gb
-              date: wd
-              filesize: c
-              row_index: cb
-              bool: red
-              int: green
-              duration: blue_bold
-              range: purple
-              float: red
-              string: white
-              nothing: red
-              binary: red
-              cellpath: cyan
-              hints: dark_gray
+              shape_nothing = foreground
+              shape_filepath = green
           }
       }
     '';
