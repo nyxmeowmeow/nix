@@ -13,6 +13,7 @@
           shape_flag: "#cad3f5"
           shape_keyword: blue
           shape_pipe: purple_bold
+          hints: "#5b6078"
       }
 
 
