@@ -7,6 +7,8 @@
     ./stylix.nix
   ];
 
+  home-manager.backupFileExtension = "backup";
+
   xdg.portal.config.common.default = "*";
 
   environment.systemPackages = [
