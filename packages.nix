@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    kitty-img
     trash-cli
     tldr
     btop
