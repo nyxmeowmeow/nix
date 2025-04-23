@@ -11,12 +11,17 @@
           shape_filepath: green
           shape_external: blue
       }
+
+
+      $env.config = {
+          color_config = $color_scheme
+          show_banner: false
+          table.mode: none
+      }
     '';
 
-    envFile.text = ''
-      $env.config.show_banner = false
-      $env.config.table.mode = "none"
-    '';
+    # envFile.text = ''
+    # '';
 
     loginFile.text = ''
       if (tty) == "/dev/tty1" {
