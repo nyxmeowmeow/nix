@@ -6,14 +6,17 @@
 
     configFile.text = ''
       let color_scheme = {
+          hints: "#5b6078"
+          search_result: { bg: cyan fg: "#cad3f5" }
           shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
           shape_filepath: green
+          shape_directory: green
+          shape_internalcall: blue
           shape_external: blue
           shape_externalarg: "#cad3f5"
           shape_flag: "#cad3f5"
           shape_keyword: blue
           shape_pipe: purple_bold
-          hints: "#5b6078"
       }
 
 
