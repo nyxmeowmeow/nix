@@ -157,7 +157,7 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
-      hist="history | lines | fzf | read -l command; eval $command";
+      hist="history | fzf | read -l command; eval $command";
       fg="job unfreeze"; # prompt every time
 
       sudo="sudo -k"; # prompt every time
