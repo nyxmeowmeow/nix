@@ -7,13 +7,14 @@
     configFile.text = ''
       let $config = {
         filesize_metric: false
-        table_mode: psql
+        table_mode: none
         use_ls_colors: true
       }
       '';
 
     envFile.text = ''
       $env.config.show_banner = false
+      $env.config.table.mode = "none"
     '';
 
     loginFile.text = ''
