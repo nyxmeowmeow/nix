@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    imagemagick
+    tiv
     trash-cli
     tldr
     btop
