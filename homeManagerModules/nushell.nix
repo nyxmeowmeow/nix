@@ -20,47 +20,20 @@
       }
 
 
-      let zoxide_completer = {|spans|
-          $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
-      }
-
-      let fish_completer = ...
-
-      #
-      # let multiple_completers = {|spans|
-      #     match $spans.0 {
-      #         git => $fish_completer
-      #         b => $zoxide_completer
-      #         _ => $fish_completer
-      #     } | do $in $spans
-      # }
-
-      let external_completer = {|spans|
-          let expanded_alias = scope aliases
-          | where name == $spans.0
-          | get -i 0.expansion
-      
-          let spans = if $expanded_alias != null {
-              $spans
-              | skip 1
-              | prepend ($expanded_alias | split row ' ' | take 1)
-          } else {
-              $spans
-          }
-      
+      let multiple_completers = {|spans|
           match $spans.0 {
-              # carapace completions are incorrect for nu
-              nu => $fish_completer
-              # fish completes commits and branch names in a nicer way
-              git => $fish_completer
-              # carapace doesn't have completions for asdf
-              asdf => $fish_completer
-              # use zoxide completions for zoxide commands
-              __zoxide_z | __zoxide_zi => $zoxide_completer
-              _ => $fish_completer
+              # ls => $ls_completer
+              # git => $git_completer
+              b => $zoxide_completer
+              _ => $default_completer
           } | do $in $spans
       }
 
+
+
+      let zoxide_completer = {|spans|
+          $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
+      }
 
 
 
@@ -78,13 +51,6 @@
           table: {
               mode: none
               index_mode: never
-          }
-
-          completions: {
-              external: {
-                  enable: true
-                  completer: $external_completer
-              }
           }
 
 
