@@ -4,20 +4,21 @@
     enable = true;
 
 
-    configFile.text = ''
-      let config = {
+    # configFile.text = ''
+    #   let config = {
+    #   }
+    # '';
 
+    envFile.text = ''
+      $env.config.show_banner = false
+      $env.config.table.mode = "none"
+      $env.config = {
           color_config: {
               shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
               shape_nothing: foreground
               shape_filepath: green
           }
       }
-    '';
-
-    envFile.text = ''
-      $env.config.show_banner = false
-      $env.config.table.mode = "none"
     '';
 
     loginFile.text = ''
