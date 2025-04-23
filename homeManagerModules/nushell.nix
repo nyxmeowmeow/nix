@@ -27,6 +27,7 @@
       }
 
 
+
       def nr [...msg: string] {
         sudo nixos-rebuild switch --flake /home/meow/nix#nixos
         cd ~/nix
