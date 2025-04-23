@@ -8,7 +8,7 @@
 
         font = "Mononoki Nerd Font Mono:size=20";
         dpi-aware = "yes";
-        shell = "fish";
+        shell = "nu";
 
         box-drawings-uses-font-glyphs = "no";
       };
@@ -56,7 +56,7 @@
 
 
   home.file.".config/foot/float.ini".text = ''
-    shell=fish
+    shell=nu
     app-id=footfloatme
     title=floatme
     font=Mononoki Nerd Font Mono:size=20
@@ -103,7 +103,7 @@
   '';
 
   home.file.".config/foot/blur.ini".text = ''
-    shell=fish
+    shell=nu
     app-id=footblurme
     title=footblurme
     font=Mononoki Nerd Font Mono:size=20
