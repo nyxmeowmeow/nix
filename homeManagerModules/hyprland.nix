@@ -203,7 +203,7 @@
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
-        "SUPER,       s, exec, footclient nu yazi" # launch yazi from fish to get correct fzf theme
+        "SUPER,       s, exec, footclient nu -e yazi" # launch yazi from fish to get correct fzf theme
 
         "SUPER,       f, exec, zen -p rain"
         "SUPER SHIFT, f, exec, zen -p rain2"
