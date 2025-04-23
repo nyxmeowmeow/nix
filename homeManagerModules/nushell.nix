@@ -5,7 +5,7 @@
 
 
     configFile.text = ''
-      let $config = {
+      let config = {
 
         color_config: {
           separator: purple
