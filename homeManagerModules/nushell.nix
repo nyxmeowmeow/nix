@@ -26,6 +26,15 @@
         $hash | wl-copy
       }
 
+
+      def nr [msg: string] {
+        sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+        cd ~/nix
+        git add .
+        git commit -m $"(date now | format date '%d/%m %H:%M:%S') ($msg)"
+      }
+
+
       $env.config = {
           cursor_shape: {
               emacs: line
@@ -169,14 +178,14 @@
       cr="cargo run";
 
 
-      nr = ''
-        do {
-          sudo nixos-rebuild switch --flake /home/meow/nix#nixos
-          cd ~/nix
-          git add .
-          git commit -m $"(date now | format date '%d/%m %H:%M:%S') $it"
-        }
-      '';
+      # nr = ''
+      #   do {
+      #     sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+      #     cd ~/nix
+      #     git add .
+      #     git commit -m $"(date now | format date '%d/%m %H:%M:%S')"
+      #   }
+      # '';
       na="nvim ~/nix/packages.nix -c '/systemPackages'";
       ns="nix-shell -p";
 
@@ -185,6 +194,7 @@
 
 
     environmentVariables = {
+
       MANPAGER = "nvim +Man!"; # use nvim for man
       SUDO_TIMESTAMP_TIMEOUT = 0;
       EDITOR = "nvim";
