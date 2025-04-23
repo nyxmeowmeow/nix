@@ -22,8 +22,8 @@
 
       let multiple_completers = {|spans|
           match $spans.0 {
-              ls => $ls_completer
-              git => $git_completer
+              # ls => $ls_completer
+              # git => $git_completer
               b => $zoxide_completer
               _ => $default_completer
           } | do $in $spans
