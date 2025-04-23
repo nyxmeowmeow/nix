@@ -8,6 +8,7 @@
       let config = {
 
           color_config: {
+              shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
               shape_nothing: foreground
               shape_filepath: green
           }
@@ -43,7 +44,7 @@
 
       character = {
         success_symbol = "[](blue)";
-        error_symbol = "[](blue)";
+        error_symbol = "[](red)";
       };
 
       directory = {
