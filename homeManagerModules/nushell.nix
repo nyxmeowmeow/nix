@@ -14,9 +14,9 @@
       '';
     };
 
-    # envFile = ''
-    #   $env.FOO = 'BAR'
-    # ''
+    envFile.text = ''
+      $env.config.show_banner = false
+    '';
 
     loginFile.text = ''
       # Prints "Hello, World" upon logging into tty1
