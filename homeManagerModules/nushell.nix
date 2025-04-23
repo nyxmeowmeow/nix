@@ -7,12 +7,12 @@
     configFile.text = ''
       let color_scheme = {
           shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
-          shape_nothing: foreground
           shape_filepath: green
           shape_external: blue
-          shape_externalarg: foreground
+          shape_externalarg: "#cad3f5"
+          shape_flag: "#cad3f5"
           shape_keyword: blue
-          shape_pipe: green
+          shape_pipe: purple_bold
       }
 
 
