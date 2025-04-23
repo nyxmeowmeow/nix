@@ -163,7 +163,7 @@ hist-fzf = ''
     do $selected
   }
 '';
-      hist="history | lines | fzf | read -l command; eval $command";
+      # hist="history | lines | fzf | read -l command; eval $command";
       fg="job unfreeze"; # prompt every time
 
       sudo="sudo -k"; # prompt every time
