@@ -27,7 +27,7 @@
       }
 
 def hist [] {
-  let selected = (history | get command | uniq | fzf)
+  let selected = (history | reverse | get command | uniq | fzf)
   if ($selected | is-empty) == false {
     do $selected
   }
