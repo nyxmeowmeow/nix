@@ -85,8 +85,14 @@
 
     enable = true;
     enableNushellIntegration = true;
+    enableTransience = true;
+
+
     settings = {
       add_newline = true;
+
+      success_symbol = "[➜](bold green)";
+      error_symbol = "[✗](bold red)";
 
     };
 
