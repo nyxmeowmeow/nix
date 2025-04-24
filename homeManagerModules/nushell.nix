@@ -207,52 +207,18 @@ def hist [] {
 
 
     environmentVariables = {
-
       MANPAGER = "nvim +Man!"; # use nvim for man
       SUDO_TIMESTAMP_TIMEOUT = 0;
       EDITOR = "nvim";
       VISUAL = "nvim";
       BROWSER = "zen";
       FZF_DEFAULT_OPTS = "--color=fg:#cad3f5,hl:#8bd5ca,fg+:#cad3f5,bg+:#363a4f,hl+:#8bd5ca,info:#7f8c8d,prompt:#b7bdf8,spinner:#b7bdf8,pointer:#b7bdf8,gutter:-1,info:#939ab7,border:#494d64";
-
-
+      NIXOS_OZONE_WL = "1"; # tell things to use wayland
+      NIXPKGS_ALLOW_UNFREE = "1";
     };
-
-
 
 
   };
 
 
-
-  programs.starship = {
-
-    enable = true;
-    enableFishIntegration = false;
-    enableBashIntegration = false;
-    enableZshIntegration = false;
-    enableNushellIntegration = true;
-    enableTransience = true;
-
-
-    settings = {
-      add_newline = true;
-
-      character = {
-        success_symbol = "[](blue)";
-        error_symbol = "[](red)";
-      };
-
-      directory = {
-        read_only = " ";
-        truncation_length = 10;
-        truncate_to_repo = true; # truncates directory to root folder if in github repo
-        style = "bold blue";
-      };
-
-      nix_shell.symbol = "󱄅 ";
-
-    };
-
-  };
 }
