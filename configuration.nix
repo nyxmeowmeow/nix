@@ -29,6 +29,17 @@
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
+  users.users.meow = {
+    isNormalUser = true;
+    description = "meow";
+    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
+    shell = pkgs.nushell;
+    # packages = with pkgs; [
+    #   user package
+    # ];
+  };
+
+
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
   i18n.extraLocaleSettings = {
@@ -121,15 +132,6 @@
 
 
 
-  users.users.meow = {
-    isNormalUser = true;
-    description = "meow";
-    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
-    shell = pkgs.nushell;
-    # packages = with pkgs; [
-    #   user package
-    # ];
-  };
 
 
 
