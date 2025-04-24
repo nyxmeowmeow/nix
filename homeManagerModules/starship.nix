@@ -31,7 +31,7 @@
       git_branch.symbol = "";
       git_metrics.disabled = false;
       git_status = {
-        format = "'(\[$all_status$ahead_behind\]($style) )'";
+        format = "(\[$all_status$ahead_behind\]($style) )";
 
       };
 
