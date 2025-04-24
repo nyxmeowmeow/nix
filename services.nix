@@ -14,43 +14,43 @@
       };
     };
 
-  udisks2.enable = true;
-  gvfs.enable = true;
+    udisks2.enable = true;
+    gvfs.enable = true;
 
-  dbus.enable = true;
+    dbus.enable = true;
 
-  printing.enable = false; # cups
+    printing.enable = false; # cups
 
-  pulseaudio = {
-    enable = false;
-    # systemWide = true;
-  };
+    pulseaudio = {
+      enable = false;
+      # systemWide = true;
+    };
 
-  pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # jack.enable = true;
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      # jack.enable = true;
 
-    ## use the example session manager (no others are packaged yet so this is enabled by default,
-    ## no need to redefine it in your config for now)
-    # media-session.enable = true;
-  };
+      ## use the example session manager (no others are packaged yet so this is enabled by default,
+      ## no need to redefine it in your config for now)
+      # media-session.enable = true;
+    };
 
-  mpd = {
-    enable = true;
-    user = "meow";
-    musicDirectory = "/home/meow/Music/";
-    dataDir = "/home/meow/misc/mpd";
-    extraConfig = ''
-      port "6669"
-      audio_output {
-        type "pipewire"
-        name "meowwire"
-      }
-    '';
-  };
+    mpd = {
+      enable = true;
+      user = "meow";
+      musicDirectory = "/home/meow/Music/";
+      dataDir = "/home/meow/misc/mpd";
+      extraConfig = ''
+        port "6669"
+        audio_output {
+          type "pipewire"
+          name "meowwire"
+        }
+      '';
+    };
 
   };
 

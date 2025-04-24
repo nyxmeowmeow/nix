@@ -1,31 +1,18 @@
 { config, pkgs, ... }: {
 
-  wayland.windowManager.hyprland.enable = true; # enable Hyprland
-  home.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  # home.pointerCursor = {
-  #   gtk.enable = true;
-  #   x11.enable = true;
-  #   package = pkgs.bibata-cursors;
-  #   name = "Bibata-Modern-Classic";
-  #   size = 20;
-  # };
+  home.sessionVariables.NIXOS_OZONE_WL = "1"; # tell things to use wayland
 
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Standard-Lavender-Dark"; # Example with Blue accent and Standard size
+      name = "Catppuccin-Macchiato-Standard-Lavender-Dark";
       package = pkgs.catppuccin-gtk.override {
         variant = "macchiato";
-        accents = [ "lavender" ]; # You can specify multiple accents
-        size = "standard"; # "compact", "standard", "large"
-        # tweaks = [ "rimless" "black" ]; # Optional tweaks
+        accents = [ "lavender" ]; # can specify multiple accents
+        size = "standard"; # compact, standard, large
+        # tweaks = [ "rimless" "black" ];
       };
     };
-    # theme = {
-    #   package = pkgs.catppuccin-gtk;
-    #   name = "catppuccin-gtk";
-    # };
 
     iconTheme = {
       # package = pkgs.gnome.adwaita-icon-theme;
@@ -41,6 +28,7 @@
 
 
   wayland.windowManager.hyprland = {
+    enable = true;
     settings = {
       "$scrPath" = "~/.local/share/bin";
       "$scripts" = "~/nix/stuff/scripts";
@@ -265,10 +253,10 @@
 
 
       ];
-      bindm = [
-        "SUPER, mouse:272, movewindow"
-        "SUPER, mouse:273, resizewindow"
-      ];
+      # bindm = [
+      #   "SUPER, mouse:272, movewindow"
+      #   "SUPER, mouse:273, resizewindow"
+      # ];
       binde = [
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"

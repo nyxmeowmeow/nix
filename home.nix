@@ -7,12 +7,12 @@
 
   imports = [
     ./homeManagerModules/hyprland.nix
-    ./homeManagerModules/foot.nix
     ./homeManagerModules/hyprpaper.nix
+    ./homeManagerModules/foot.nix
+    ./homeManagerModules/nushell.nix
+    # ./homeManagerModules/yazi.nix
     ./homeManagerModules/clipse.nix
     ./homeManagerModules/ncmpcpp.nix
-    # ./homeManagerModules/yazi.nix
-    ./homeManagerModules/nushell.nix
     ./homeManagerModules/btop.nix
     ./homeManagerModules/dunst.nix
     ./homeManagerModules/mpv.nix
