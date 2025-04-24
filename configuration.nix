@@ -5,15 +5,9 @@
     ./services.nix
     ./packages.nix
     ./stylix.nix
+    ./misc.nix
   ];
 
-  home-manager.backupFileExtension = "backup";
-
-  xdg.portal.config.common.default = "*";
-
-  environment.systemPackages = [
-    zen-browser.packages."x86_64-linux".default 
-  ];
 
   boot = {
     loader.systemd-boot.enable = true;
@@ -40,22 +34,6 @@
   };
 
 
-  time.timeZone = "Australia/Brisbane";
-  i18n.defaultLocale = "en_AU.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_AU.UTF-8";
-    LC_IDENTIFICATION = "en_AU.UTF-8";
-    LC_MEASUREMENT = "en_AU.UTF-8";
-    LC_MONETARY = "en_AU.UTF-8";
-    LC_NAME = "en_AU.UTF-8";
-    LC_NUMERIC = "en_AU.UTF-8";
-    LC_PAPER = "en_AU.UTF-8";
-    LC_TELEPHONE = "en_AU.UTF-8";
-    LC_TIME = "en_AU.UTF-8";
-  };
-
-
-
   programs.steam = {
     enable = true;
     gamescopeSession.enable = true;
@@ -71,31 +49,23 @@
     enable32Bit = true;
   };
 
-  environment.sessionVariables = { # protonup install path
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d";
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d"; # protonup install path
+    NIXOS_OZONE_WL = "1"; # tell things to use wayland
+    NIXPKGS_ALLOW_UNFREE = "1";
   };
+
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
-
-
-
-
-
-  security.rtkit.enable = true;
 
   hardware.opentabletdriver = {
     enable = true;
     daemon.enable = true;
   };
 
-
-
-
-
-
-
+  security.rtkit.enable = true;
 
   security.sudo.extraRules = [
     {
@@ -132,7 +102,9 @@
 
 
 
-
+  environment.systemPackages = [
+    zen-browser.packages."x86_64-linux".default 
+  ];
 
 
   programs.fish.enable = true;
@@ -155,7 +127,5 @@
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-
   system.stateVersion = "24.11";
-
 }
