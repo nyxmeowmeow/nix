@@ -12,6 +12,7 @@
 
     settings = {
       add_newline = true;
+      continuation_prompt = "  ";
 
       character = {
         success_symbol = "[](blue)";
