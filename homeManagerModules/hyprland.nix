@@ -29,7 +29,7 @@
 
     iconTheme = {
       # package = pkgs.gnome.adwaita-icon-theme;
-      name = "Tela-Circle-Dracula";
+      name = "Tela-circle-dracula";
     };
 
     font = {
