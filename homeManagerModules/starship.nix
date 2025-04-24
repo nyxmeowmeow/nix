@@ -27,7 +27,7 @@
 
       nix_shell.symbol = "󱄅 ";
       git_branch.symbol = "";
-      # rust.symbol = " ";
+      rust.symbol = " ";
 
     };
 
