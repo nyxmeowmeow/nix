@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ ... }: {
 
   programs.yazi = {
     enable = true;
@@ -7,7 +7,7 @@
     '';
 
     plugins = {
-      compress = 
+      compress = "https://github.com/KKV9/compress.yazi";
     };
 
       # require("git"):setup()

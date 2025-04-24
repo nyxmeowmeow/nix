@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
 
   stylix.enable = true;
   stylix.autoEnable = false; # manually specify which to enable
