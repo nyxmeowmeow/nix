@@ -1,4 +1,5 @@
-{ config, pkgs, zen-browser, ... }: {
+# { config, pkgs, zen-browser, ... }: {
+{ pkgs, zen-browser, ... }: {
 
   imports = [
     ./hardware-configuration.nix
