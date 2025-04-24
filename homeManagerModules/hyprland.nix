@@ -59,7 +59,7 @@
         "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'"
         "gsettings set org.gnome.desktop.interface cursor-size 20"
         "gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dracula'"
-        "gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-macchiato-lavender-standard+default'"
+        "gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Macchiato-Standard-Lavender-Dark'"
         "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
       ];
 
