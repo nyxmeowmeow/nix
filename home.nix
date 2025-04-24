@@ -1,9 +1,5 @@
 { config, pkgs, ... }: {
 
-  home.username = "meow";
-  home.homeDirectory = "/home/meow";
-  home.stateVersion = "24.11";
-  # home.packages = [ inputs.zen-browser.packages."x86_64-linux".default ];
 
   imports = [
     ./homeManagerModules/hyprland.nix
@@ -17,6 +13,15 @@
     ./homeManagerModules/dunst.nix
     ./homeManagerModules/mpv.nix
   ];
+
+  home.username = "meow";
+  home.homeDirectory = "/home/meow";
+  home.stateVersion = "24.11";
+
+  home.sessionVariables = {
+    NIXOS_OZONE_WL = "1"; # tell things to use wayland
+    NIXPKGS_ALLOW_UNFREE = "1";
+  };
 
 
   programs.git = {

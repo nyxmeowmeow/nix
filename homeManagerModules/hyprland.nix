@@ -1,7 +1,5 @@
 { config, pkgs, ... }: {
 
-  home.sessionVariables.NIXOS_OZONE_WL = "1"; # tell things to use wayland
-
   gtk = {
     enable = true;
     theme = {
