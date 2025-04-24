@@ -18,10 +18,7 @@
   home.homeDirectory = "/home/meow";
   home.stateVersion = "24.11";
 
-  # home.sessionVariables = {
-  #   NIXOS_OZONE_WL = "1"; # tell things to use wayland
-  #   NIXPKGS_ALLOW_UNFREE = "1";
-  # };
+  # home.sessionVariables
 
 
   programs.git = {
