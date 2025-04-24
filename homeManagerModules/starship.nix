@@ -26,7 +26,8 @@
       };
 
       nix_shell.symbol = "󱄅 ";
-      rust.symbol = " ";
+      # rust.symbol = " ";
+      rust.disabled = true;
 
       git_branch.symbol = "";
       git_metrics.disabled = false;
