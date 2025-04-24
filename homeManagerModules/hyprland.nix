@@ -13,15 +13,23 @@
 
   gtk = {
     enable = true;
-
     theme = {
-      package = pkgs.catppuccin-gtk;
-      name = "catppuccin-gtk";
+      name = "Catppuccin-Macchiato-Standard-Lavender-Dark"; # Example with Blue accent and Standard size
+      package = pkgs.catppuccin-gtk.override {
+        variant = "macchiato";
+        accents = [ "lavender" ]; # You can specify multiple accents
+        size = "standard"; # "compact", "standard", "large"
+        # tweaks = [ "rimless" "black" ]; # Optional tweaks
+      };
     };
+    # theme = {
+    #   package = pkgs.catppuccin-gtk;
+    #   name = "catppuccin-gtk";
+    # };
 
     iconTheme = {
       # package = pkgs.gnome.adwaita-icon-theme;
-      name = "Tela Circle Dracula";
+      name = "Tela-Circle-Dracula";
     };
 
     font = {
