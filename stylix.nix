@@ -3,10 +3,10 @@
   stylix.enable = true;
   stylix.autoEnable = false; # manually specify which to enable
 
-  stylix.targets = {
-    gtk.enable = true;
-    qt.enable = true;
-  };
+  # stylix.targets = {
+  #   gtk.enable = true;
+  #   qt.enable = true;
+  # };
 
   # stylix.base16Scheme = {
   #   rosewater = "#f4dbd6";
