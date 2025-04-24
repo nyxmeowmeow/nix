@@ -25,5 +25,25 @@
     userEmail = "rraaiin@proton.me";
   };
 
+  programs.fzf = {
+    enable = true;
+    colors = {
+
+      fg = "#cad3f5";
+      hl = "#8bd5ca";
+      "fg+" = "#cad3f5";
+      "bg+" = "#363a4f";
+      "hl+" = "#8bd5ca";
+      # info = "7f8c8d";
+      prompt = "#b7bdf8";
+      spinner = "#b7bdf8";
+      pointer = "#b7bdf8";
+      gutter = "-1";
+      info = "#939ab7";
+      border = "#494d64";
+    };
+
+  };
+
 
 }
