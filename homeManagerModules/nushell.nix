@@ -37,9 +37,15 @@
       def movify [msg: string] {
         let input = $msg
         let base = (echo $msg | path parse | get stem)
-        let output = (format "{}.mov" $base)
+        let output = ("{}.mov" | format $base)
         ^ffmpeg -i $input -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p $output
       }
+
+
+
+
+
+
 
       def nr [...msg: string] {
         sudo nixos-rebuild switch --flake /home/meow/nix#nixos
