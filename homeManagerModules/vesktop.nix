@@ -51,7 +51,7 @@
       notifications = {
         timeout = 5000;
         position = "bottom-right";
-        useNative = "not-focused";
+        useNative = false;
         logLimit = 50;
       };
 
