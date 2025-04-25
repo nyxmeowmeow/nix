@@ -1,7 +1,7 @@
 { ... }: {
+
   programs.fastfetch = {
     enable = true;
-
 
     settings = {
       logo = {
