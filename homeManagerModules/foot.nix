@@ -56,7 +56,7 @@
   };
 
 
-  home.file.".config/foot/float.ini".text = ''
+  home.file.".config/foot/float.ini".text = /* ini */ ''
     shell=nu
     app-id=footfloatme
     title=floatme
@@ -103,7 +103,7 @@
     box-drawing-base-thickness=0.06
   '';
 
-  home.file.".config/foot/blur.ini".text = ''
+  home.file.".config/foot/blur.ini".text = /* ini */ ''
     shell=nu
     app-id=footblurme
     title=footblurme

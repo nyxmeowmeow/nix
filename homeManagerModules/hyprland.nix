@@ -195,7 +195,7 @@
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
-        "SUPER,       s, exec, footclient yazi"
+        "SUPER,       s, exec, footclient nu -e yazi"
 
         "SUPER,       f, exec, zen -p rain"
         "SUPER SHIFT, f, exec, zen -p rain2"
@@ -407,7 +407,7 @@
 
 
     # no nix way to do this :(
-    extraConfig = ''
+    extraConfig = /* hyprlang */ ''
       bind = SUPER, p, submap, player
 
       # will start a submap called "player"
