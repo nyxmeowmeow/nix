@@ -3,6 +3,8 @@
 
 
   environment.systemPackages = with pkgs; [
+    kitty
+
     ffmpeg
     davinci-resolve
     # mesa-demos
