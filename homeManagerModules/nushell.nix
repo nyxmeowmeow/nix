@@ -34,18 +34,13 @@
       }
 
       # convert .mp4 file to .mov
+
       def movify [msg: string] {
-        let input = $msg
-        let base = (echo $msg | path parse | get stem)
-        let output = ("{}.mov" | format $base)
-        ^ffmpeg -i $input -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p $output
+          let input = $msg
+          let base = (echo $msg | path parse | get stem)
+          let output = $"{$base}.mov"
+          ^ffmpeg -i $input -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p $output
       }
-
-
-
-
-
-
 
       def nr [...msg: string] {
         sudo nixos-rebuild switch --flake /home/meow/nix#nixos
