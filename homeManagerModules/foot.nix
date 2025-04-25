@@ -11,6 +11,8 @@
         dpi-aware = "yes";
         shell = "nu";
 
+        gamma-corrent-blending = "no";
+
         box-drawings-uses-font-glyphs = "no";
       };
 
