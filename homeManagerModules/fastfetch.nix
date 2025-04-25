@@ -87,6 +87,12 @@
           keyColor = "magenta";
         }
         {
+          type = "command";
+          key = "sch";
+          keyColor = "magenta";
+          text = "echo Catppuccin Macchiato";
+        }
+        {
           type = "colors";
           paddingLeft = 0;
           symbol = "circle";
