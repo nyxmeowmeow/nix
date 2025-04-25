@@ -52,7 +52,8 @@ def hist [] {
       }
 
       def timer [...msg: string] {
-        termdown -s \"$msg\"m
+        let full_msg = ($msg | str join " ") + "m"
+        termdown -s $full_msg
       }
 
 
