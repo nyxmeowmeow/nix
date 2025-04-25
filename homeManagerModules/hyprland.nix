@@ -218,7 +218,7 @@
         # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
-        "SUPER, Tab,    workspace,                 1"
+        "SUPER, q,    workspace,                 1"
         "SUPER, b,      workspace,                 2"
         "SUPER, l,      workspace,                 3"
         "SUPER, d,      workspace,                 4"
@@ -230,7 +230,7 @@
         "SUPER, m,      togglespecialworkspace,    music"
 
         "SUPER SHIFT, n,          movetoworkspacesilent,   9"
-        "SUPER SHIFT, Tab,        movetoworkspacesilent,   1"
+        "SUPER SHIFT, q,        movetoworkspacesilent,   1"
         "SUPER SHIFT, b,          movetoworkspacesilent,   2"
         "SUPER SHIFT, l,          movetoworkspacesilent,   3"
         "SUPER SHIFT, d,          movetoworkspacesilent,   4"
@@ -257,10 +257,10 @@
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
 
-        "SUPER CTRL, h, resizeactive, -80 0"     # left
-        "SUPER CTRL, a, resizeactive, 0 80"      # down
-        "SUPER CTRL, e, resizeactive, 0 -80"     # up
-        "SUPER CTRL, i, resizeactive, 80 0"      # right
+        "SUPER CTRL, h, resizeactive, -70 0"     # left
+        "SUPER CTRL, a, resizeactive, 0 70"      # down
+        "SUPER CTRL, e, resizeactive, 0 -70"     # up
+        "SUPER CTRL, i, resizeactive, 70 0"      # right
       ];
       bindel = [
         ", XF86AudioNext, exec, ddcutil setvcp 10 + 5"
