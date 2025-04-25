@@ -32,10 +32,10 @@
           do $selected
         }
 
-      def movify [...msg: string] {
-        ffmpeg -i $msg.mp4 -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p msg.mov
+      # convert .mp4 file to .mov
+      def movify [msg: string] {
+        ffmpeg -i $"($msg).mp4" -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p $"($msg).mov"
       }
-
 
 
       def nr [...msg: string] {
