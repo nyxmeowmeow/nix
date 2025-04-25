@@ -34,7 +34,6 @@
       }
 
       # convert .mp4 file to .mov
-
       def movify [msg: string] {
           let input = $msg
           let base = (echo $msg | path parse | get stem)
