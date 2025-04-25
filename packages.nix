@@ -1,6 +1,11 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    davinci-resolve
+    # mesa-demos
+    vulkan-tools
+    clinfo
+
     trash-cli
     tldr
     btop
