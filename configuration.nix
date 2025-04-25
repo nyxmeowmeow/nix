@@ -58,6 +58,13 @@
     ];
   };
 
+  hardware.opengl = {
+    enable = true;
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
+  };
+
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d"; # protonup install path
     NIXOS_OZONE_WL = "1"; # tell things to use wayland
