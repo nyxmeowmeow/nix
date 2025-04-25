@@ -66,7 +66,7 @@
         }
         {
           type = "gpu";
-          format = "{3}";
+          format = "{1}";
           key = "drv";
           keyColor = "magenta";
         }
@@ -88,7 +88,7 @@
         }
         {
           type = "command";
-          key = "sch";
+          key = "col";
           keyColor = "magenta";
           text = "echo Catppuccin Macchiato";
         }
