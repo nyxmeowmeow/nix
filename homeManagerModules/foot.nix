@@ -2,7 +2,6 @@
   
   programs.foot = {
     enable = true;
-    server.enable = true;
     settings = {
       main = {
         term = "foot";
@@ -53,7 +52,6 @@
         scrollback-end = "Control+Shift+i";
       };
       tweak.box-drawing-base-thickness = "0.06";
-      tweak.surface-bit-depth = "10-bit";
     };
   };
 

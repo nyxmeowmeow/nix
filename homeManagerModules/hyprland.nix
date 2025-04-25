@@ -50,7 +50,7 @@
       ];
 
       exec-once = [
-        # "foot --server"
+        "foot --server"
         "clipse -listen"
         "udiskie -a"
         "dunst"
