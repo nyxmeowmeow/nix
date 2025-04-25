@@ -3,7 +3,7 @@
   imports = [
     ./homeManagerModules/hyprland.nix
     ./homeManagerModules/hyprpaper.nix
-    ./homeManagerModules/foot.nix
+    # ./homeManagerModules/foot.nix
     ./homeManagerModules/nushell.nix
     ./homeManagerModules/starship.nix
     # ./homeManagerModules/yazi.nix
