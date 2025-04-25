@@ -66,7 +66,7 @@
         }
         {
           type = "gpu";
-          format = "{1}";
+          format = "{3}";
           key = "drv";
           keyColor = "magenta";
         }
