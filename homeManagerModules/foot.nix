@@ -22,7 +22,7 @@
       };
 
       colors = {
-        alpha = "1";
+        alpha = "0";
         background = "24273a";
         foreground = "cad3f5";
         ## Normal/regular colors (color palette 0-7)
