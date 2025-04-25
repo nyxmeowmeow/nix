@@ -26,6 +26,10 @@
         style = "bold blue";
       };
 
+      cmd_duration.min_time = 5000;
+
+      hostname.ssh_only = true;
+
       nix_shell.symbol = "󱄅 ";
       # rust.symbol = " ";
       rust.disabled = true;
