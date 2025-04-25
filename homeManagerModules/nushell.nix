@@ -52,7 +52,7 @@ def hist [] {
       }
 
       def timer [...msg: string] {
-        termdown -s "$msg"m
+        termdown -s \"$msg\"m
       }
 
 
