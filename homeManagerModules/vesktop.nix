@@ -23,7 +23,9 @@
 
 
     vencord.settings = {
-      enabledThemes = [ "nyxtheme.css" ];
+      enabledThemes = [
+        # "nyxtheme.css"
+      ];
       useQuickCss = false;
       transparent = true;
       frameless = false;
