@@ -11,7 +11,6 @@
         dpi-aware = "yes";
         shell = "nu";
 
-        gamma-corrent-blending = "no";
 
         box-drawings-uses-font-glyphs = "no";
       };
@@ -54,6 +53,7 @@
         scrollback-end = "Control+Shift+i";
       };
       tweak.box-drawing-base-thickness = "0.06";
+      tweak.surface-bit-depth = "10-bit";
     };
   };
 
