@@ -47,6 +47,14 @@ def hist [] {
         git commit -m $full_msg
       }
 
+      def gcm [...msg: string] {
+        git commit -m $msg
+      }
+
+      def timer [...msg: string] {
+        termdown -s "$msg"m
+      }
+
 
       $env.config = {
           cursor_shape: {
