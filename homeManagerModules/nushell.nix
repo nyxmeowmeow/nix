@@ -57,6 +57,8 @@ def hist [] {
       }
 
 
+
+
       $env.config = {
           cursor_shape: {
               emacs: line

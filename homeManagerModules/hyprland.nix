@@ -33,8 +33,8 @@
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
 
       exec = [
-        "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"
-        "gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 10'"
+        "gsettings set org.gnome.desktop.interface font-name 'sn pro 10'"
+        "gsettings set org.gnome.desktop.interface document-font-name 'sn pro 10'"
         "gsettings set org.gnome.desktop.interface monospace-font-name 'Mononoki Nerd Font Mono 9'"
         "gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'"
         "gsettings set org.gnome.desktop.interface font-hinting 'full'"
@@ -146,9 +146,7 @@
       decoration = {
         dim_special = "0";
         rounding = "0";
-        shadow = {
-          enabled = "false";
-        };
+        shadow.enabled = "false";
         blur = {
           enabled = "true";
           special = "false";
@@ -183,7 +181,7 @@
         "SUPER,       n, exec, $scripts/swap.sh"
         "SUPER,       k, togglesplit"
         "SUPER,       y, togglefloating"
-        # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"
+        "SUPER SHIFT, y, exec, hyprctl dispatch centerwindow"
         "SUPER,       2, exec, foot --hold hyprprop"
         # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
@@ -197,7 +195,7 @@
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
-        "SUPER,       s, exec, footclient nu -e yazi" # launch yazi from fish to get correct fzf theme
+        "SUPER,       s, exec, footclient yazi"
 
         "SUPER,       f, exec, zen -p rain"
         "SUPER SHIFT, f, exec, zen -p rain2"
