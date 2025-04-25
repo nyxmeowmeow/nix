@@ -26,12 +26,16 @@
         $hash | wl-copy
       }
 
-def hist [] {
-  let selected = (history | reverse | get command | uniq | fzf)
-  if ($selected | is-empty) == false {
-    do $selected
-  }
-}
+      def hist [] {
+        let selected = (history | reverse | get command | uniq | fzf)
+        if ($selected | is-empty) == false {
+          do $selected
+        }
+
+      def movify [...msg: string] {
+        ffmpeg -i $msg.mp4 -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p msg.mov
+      }
+
 
 
       def nr [...msg: string] {
