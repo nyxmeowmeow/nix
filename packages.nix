@@ -4,6 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     clang
+    clang-tools
     ffmpeg
     davinci-resolve
     # mesa-demos
