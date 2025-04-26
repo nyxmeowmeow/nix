@@ -178,6 +178,7 @@
 
       ga = "git add .";
       # gl = "git log --oneline | lines | fzf";
+      gcl = "git clone";
       gd = "git diff HEAD^";
       gs = "git status";
       cr = "cargo run";
