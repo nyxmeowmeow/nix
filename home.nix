@@ -24,6 +24,8 @@
   # home.sessionVariables
 
 
+
+
   programs.git = {
     enable = true;
     userName = "rainmeower";
