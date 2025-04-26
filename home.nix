@@ -12,6 +12,7 @@
     ./homeManagerModules/ncmpcpp.nix
     ./homeManagerModules/btop.nix
     # ./homeManagerModules/lazygit.nix
+    ./homeManagerModules/git.nix
     ./homeManagerModules/dunst.nix
     ./homeManagerModules/mpv.nix
     ./homeManagerModules/vesktop.nix
@@ -25,22 +26,6 @@
 
 
 
-
-  programs.git = {
-    enable = true;
-    userName = "rainmeower";
-    userEmail = "rraaiin@proton.me";
-    extraConfig = {
-      url = {
-        "git@github.com:" = {
-          insteadOf = "gh:";
-        };
-        "git@github.com:rainmeower/" = {
-          insteadOf = "me:";
-        };
-      };
-    };
-  };
 
   ## doesnt work?
   # programs.fzf = {
