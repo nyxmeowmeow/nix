@@ -1,16 +1,11 @@
 { pkgs, ... }: {
 
-
-
   environment.systemPackages = with pkgs; [
-    clang
-    clang-tools
     ffmpeg
     davinci-resolve
     # mesa-demos
     vulkan-tools
     clinfo
-
     trash-cli
     tldr
     btop
@@ -20,8 +15,11 @@
     # xdg-desktop-portal-termfilechooser
     expect
     nushell
+    fish
     # lmms
     # godot
+    clang
+    clang-tools
     rustc
     cargo
     rust-analyzer
@@ -72,13 +70,11 @@
     hyprpaper
     hyprpicker
     polkit_gnome
-    fish
-    fishPlugins.tide
     walker
     grimblast
     slurp
-    catppuccin-kvantum
-    catppuccin-gtk
+    # catppuccin-kvantum
+    # catppuccin-gtk
     dunst
     libnotify
     playerctl
