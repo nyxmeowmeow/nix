@@ -49,6 +49,7 @@
       spellCheckLanguages = false;
 
       notifications = {
+        enable = false;
         timeout = 5000;
         position = "bottom-right";
         useNative = false;
