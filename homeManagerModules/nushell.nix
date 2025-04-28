@@ -63,6 +63,7 @@
         termdown -s $full_msg
       }
 
+      $env.path ++= ["~/go/bin"]
 
       $env.config = {
           cursor_shape: {
