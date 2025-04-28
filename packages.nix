@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    vitetris
     ffmpeg
     davinci-resolve
     # mesa-demos
