@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    go
     vitetris
     ffmpeg
     davinci-resolve
