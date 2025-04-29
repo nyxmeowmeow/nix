@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    osu-lazer
     go
     vitetris
     ffmpeg
