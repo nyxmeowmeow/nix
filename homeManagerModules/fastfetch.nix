@@ -47,11 +47,11 @@
           keyColor = "blue";
           text = "echo hyprland";
         }
-        {
-          type = "terminal";
-          key = "tm";
-          keyColor = "blue";
-        }
+        # {
+        #   type = "terminal";
+        #   key = "tm";
+        #   keyColor = "blue";
+        # }
         {
           type = "command";
           key = "tm";
