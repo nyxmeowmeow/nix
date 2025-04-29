@@ -36,10 +36,16 @@
         #   key = "   ds";
         #   keyColor = "green";
         # }
+        # {
+        #   type = "wm";
+        #   key = "wm";
+        #   keyColor = "blue";
+        # }
         {
-          type = "wm";
+          type = "command";
           key = "wm";
           keyColor = "blue";
+          text = "echo hyprland";
         }
         {
           type = "terminal";
@@ -47,9 +53,21 @@
           keyColor = "blue";
         }
         {
-          type = "shell";
+          type = "command";
+          key = "tm";
+          keyColor = "blue";
+          text = "echo foot";
+        }
+        # {
+        #   type = "shell";
+        #   key = "sh";
+        #   keyColor = "blue";
+        # }
+        {
+          type = "command";
           key = "sh";
           keyColor = "blue";
+          text = "echo nushell";
         }
         "break"
         {

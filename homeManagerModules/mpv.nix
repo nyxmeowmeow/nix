@@ -232,5 +232,7 @@
       pkgs.mpvScripts.uosc
     ];
   };
+
+  # cant customise keybinds without changing the .lua file
   home.file.".config/mpv/scripts/webm.lua".source = ../stuff/webm.lua;
 }
