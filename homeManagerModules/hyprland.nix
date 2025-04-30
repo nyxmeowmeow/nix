@@ -21,6 +21,11 @@
       name = "sn pro";
       size = 11;
     };
+
+
+    gtk3.extraConfig = {
+    gtk-key-theme-name = "Emacs";
+    };
   };
 
 
