@@ -29,7 +29,6 @@
         {
           type = "packages";
           key = "pk";
-          format = " {count} ({packageManager})";
           keyColor = "blue";
         }
         # {
