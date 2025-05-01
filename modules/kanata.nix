@@ -1,5 +1,5 @@
 { ... }: {
-#
+
 #   services.kanata = {
 #     enable = true;
 #     keyboards = {
@@ -152,6 +152,7 @@
   users.groups.uinput = { };
 
   systemd.services.kanata-internalKeyboard.serviceConfig = {
+    # User = "root";
     SupplementaryGroups = [
       "input"
       "uinput"

@@ -28,7 +28,7 @@
   users.users.meow = {
     isNormalUser = true;
     description = "meow";
-    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" ];
+    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" "input" "uinput" ];
     shell = pkgs.nushell;
     # packages = with pkgs; [
     #   user package
