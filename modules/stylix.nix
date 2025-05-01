@@ -40,7 +40,7 @@
   #   crust = "#181926";
   # };
   #
-  stylix.image = ./stuff/1_hor.png; # must be set for some reason
+  stylix.image = ../stuff/1_hor.png; # must be set for some reason
 
   stylix.cursor = {
     package = pkgs.bibata-cursors;
