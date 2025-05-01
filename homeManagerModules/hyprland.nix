@@ -253,10 +253,10 @@
 
 
       ];
-      # bindm = [
-      #   "SUPER, mouse:272, movewindow"
-      #   "SUPER, mouse:273, resizewindow"
-      # ];
+      bindm = [
+        "SUPER, mouse:272, movewindow"
+        "SUPER, mouse:273, resizewindow"
+      ];
       binde = [
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
