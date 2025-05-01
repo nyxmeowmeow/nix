@@ -65,8 +65,8 @@
         "systemctl --user start hyprpolkitagent"
 
         # kanata
-        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
-        "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd ~/.config/nata/nata.sh -c config.json'"
+        # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
+        # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd ~/.config/nata/nata.sh -c config.json'"
 
         # ncmpcpp
         "hyprctl dispatch exec '[float;size 986 1200;center;workspace special:music silent] qview ~/nix/stuff/1_ncmpcpp.png' && sleep 3 && hyprctl dispatch exec '[float;size 986 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
