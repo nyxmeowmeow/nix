@@ -94,7 +94,7 @@
 )
 
 (defvirtualkeys
-  space spc
+  layersyms (layer-toggle syms)
 )
 
 
@@ -103,7 +103,7 @@
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 bspc lmet)
   col (tap-hold-press 120 120 S-; lctl) 
-  spc (tap-hold-press 120 120 (on-idle 100 tap-virtualkey space) (layer-toggle syms))
+  spc (tap-hold-press 120 120 spc (on-idle 100 tap-vkey layersyms))
 
   ch_p   (chord ch p)
   ch_S-9 (chord ch S-9)
