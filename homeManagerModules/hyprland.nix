@@ -311,6 +311,17 @@
 
         "tile,initialTitle:^(Hammer)"
 
+
+
+
+        # tmnf
+        "size 2560 1080,class:^(steam_app_11020)$"
+        "minsize 2560 1080,class:^(steam_app_11020)$"
+        "center,class:^(steam_app_11020)$"
+        "suppressevent fullscreen,class:^(steam_app_11020)$"
+        "immediate,class:^(steam_app_11020)$"
+        "noblur,class:^(steam_app_11020)$"
+
         # godot
 
         "tile,title:(Godot Engine)"
