@@ -66,7 +66,7 @@
         b l d w f15  ' f o u j x
   lctrl n r t s g    y h a e i bspc
         , . m c v    k p f16 f17 ; z
-         lmet      f18 enter
+         lmet  spc    f18 enter
 )
 
 (deflayer default
@@ -74,7 +74,7 @@
       _     @ch_l @ch_d @ch_w S--    _    @ch_f @ch_o   @ch_u   _     _
   @lc @ch_n @ch_r @ch_t @ch_s _      _    @ch_h @ch_a   @ch_e   @ch_i rpt-any
       @ch_, @ch_. @ch_m @ch_c _      _    @ch_p @ch_S-9 @ch_S-0 @ch_; _
-                  @lm                  @col @sym
+                  @lm   @spc              @col @sym
 )
 
 (deflayer over
@@ -82,7 +82,7 @@
         b l d w S--  ' f o u j x
   lctrl n r t s g    y h a e i bspc
         , . m c v    k p _ _ ; z
-         lmet     h enter
+         lmet spc    h enter
 )
 
 (deflayer syms
@@ -90,7 +90,11 @@
      `   S-` \   S-5 _       `   left down up   right =
   _  1   2   3   4   S-1     S-3 7    8    9    0     rpt-any
      _   _   _   5   _       S-3 6    S-9  S-0  S-;   _
-             del             _    _
+             del _            _    _
+)
+
+(defvirtualkeys
+  space spc
 )
 
 
@@ -99,7 +103,7 @@
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 bspc lmet)
   col (tap-hold-press 120 120 S-; lctl) 
-
+  spc (tap-hold-press 120 120 (on-idle 100 tap-virtualkey space) (layer-toggle syms))
 
   ch_p   (chord ch p)
   ch_S-9 (chord ch S-9)
