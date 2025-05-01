@@ -5,7 +5,8 @@
     ./hardware-configuration.nix
     ./services.nix
     ./packages.nix
-    ./stylix.nix
+    # ./modules/stylix.nix
+    # ./modules/kanata.nix
     ./misc.nix
   ];
 
