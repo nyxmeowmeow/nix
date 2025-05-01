@@ -1,7 +1,7 @@
 { ... }: {
 
-#   services.kanata = {
-#     enable = true;
+  services.kanata = {
+    enable = true;
 #     keyboards = {
 #       internalKeyboard = {
 #         devices = [
@@ -135,8 +135,8 @@
 #       };
 #
 #     };
-#
-#   };
+
+  };
   # Enable the uinput module
   boot.kernelModules = [ "uinput" ];
 
