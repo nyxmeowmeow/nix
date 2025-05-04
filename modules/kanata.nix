@@ -3,7 +3,7 @@
   services.kanata = {
     enable = true;
     keyboards = {
-      internalKeyboard = {
+      lily58 = {
         port = 10000;
         devices = [
           "/dev/input/by-id/usb-liliums_Lily58-event-kbd"
@@ -157,7 +157,7 @@
   # Ensure the uinput group exists
   users.groups.uinput = { };
 
-  systemd.services.kanata-internalKeyboard.serviceConfig = {
+  systemd.services.kanata-lily58.serviceConfig = {
     # User = "root";
     SupplementaryGroups = [
       "input"

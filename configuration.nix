@@ -6,7 +6,7 @@
     ./services.nix
     ./packages.nix
     ./modules/stylix.nix
-    ./modules/kanata.nix
+    # ./modules/kanata.nix
     ./misc.nix
   ];
 
