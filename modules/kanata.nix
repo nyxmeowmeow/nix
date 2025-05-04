@@ -4,6 +4,7 @@
     enable = true;
     keyboards = {
       internalKeyboard = {
+        port = 10000;
         devices = [
           "/dev/input/by-id/usb-liliums_Lily58-event-kbd"
           "/dev/input/by-id/usb-liliums_Lily58-event-if02"
