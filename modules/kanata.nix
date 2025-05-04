@@ -11,6 +11,8 @@
         ];
 
         extraDefCfg = "process-unmapped-keys yes";
+
+        # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = ''
 
 (defchords ch 12
