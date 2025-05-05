@@ -11,7 +11,6 @@
     ./homeManagerModules/fastfetch.nix
     ./homeManagerModules/ncmpcpp.nix
     ./homeManagerModules/btop.nix
-    # ./homeManagerModules/lazygit.nix
     ./homeManagerModules/git.nix
     ./homeManagerModules/dunst.nix
     ./homeManagerModules/mpv.nix
