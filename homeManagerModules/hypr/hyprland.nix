@@ -52,7 +52,7 @@
       group.groupbar = {
         # gradients = true;
         font_size = 10;
-        render_titles = false;
+        render_titles = true;
         rounding = 8;
         text_color = "0x24273aff";
         "col.active" = "0xb7bdf8ff";
