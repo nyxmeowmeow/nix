@@ -199,6 +199,8 @@
         # TODO: doesnt work using $scripts
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
+        "SUPER,       o, exec, hyprctl dispatch togglegroup"
+
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
