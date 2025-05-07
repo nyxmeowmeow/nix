@@ -51,8 +51,7 @@
 
       group.groupbar = {
         # gradients = true;
-        font_size = 10;
-        render_titles = true;
+        # font_size = 10;
         rounding = 4;
         text_color = "0x24273aff";
         "col.active" = "0xb7bdf8ff";
