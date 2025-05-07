@@ -199,7 +199,9 @@
         # TODO: doesnt work using $scripts
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
-        "SUPER,       o, exec, hyprctl dispatch togglegroup"
+        "SUPER SHIFT, o, exec, hyprctl dispatch togglegroup"
+        "SUPER,       o, exec, hyprctl dispatch changegroupactive"
+        "SUPER CTRL,  o, exec, hyprctl dispatch lockgroups && notify-send 'groups unlocked'|| hyprctl dispatch lockgroups && notify-send 'groups unlocked'"
 
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
