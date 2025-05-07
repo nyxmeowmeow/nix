@@ -1,5 +1,10 @@
 { pkgs, ... }: {
 
+  imports = [
+    ./1.nix
+    # ./2.nix
+  ];
+
   gtk = {
     enable = true;
     theme = {
@@ -131,11 +136,6 @@
       general = {
         allow_tearing = "true";
         resize_on_border = "false";
-        gaps_in = "0";
-        gaps_out = "0";
-        border_size = "2";
-        "col.active_border" = "rgba(b7bdf8ff)";
-        "col.inactive_border" = "rgba(24273aff)";
         layout = "dwindle";
       };
 
