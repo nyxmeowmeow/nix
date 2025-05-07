@@ -287,7 +287,7 @@
         "stayfocused,title:^(Saving As — Krita)$"
         "noblur,class:^(foot)$"
         "noblur,class:^(vesktop)$"
-        "noblur,class:^(zen-beta)$"
+        # "noblur,class:^(zen-beta)$"
 
         "workspace special:2,title:(keyb0xx.sh)$"
         "workspace special:2,class:^(Slippi Launcher)$"
