@@ -147,20 +147,6 @@
         force_split = "2";
       };
 
-      decoration = {
-        dim_special = "0";
-        rounding = "0";
-        shadow.enabled = "false";
-        blur = {
-          enabled = "true";
-          special = "false";
-          size = "6";
-          passes = "3";
-          new_optimizations = "on";
-          ignore_opacity = "on";
-          xray = "false";
-        };
-      };
 
       animations.enabled = "false";
 

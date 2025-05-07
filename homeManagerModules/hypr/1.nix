@@ -3,11 +3,28 @@
 
     settings = {
       general = {
-        gaps_in = "4";
-        gaps_out = "8";
-        border_size = "2";
+        gaps_in = 4;
+        gaps_out = 8;
+        border_size = 2;
         "col.active_border" = "rgba(b7bdf8ff)";
         "col.inactive_border" = "rgba(24273aff)";
+      };
+
+
+
+      decoration = {
+        dim_special = 0;
+        rounding = 10;
+        shadow.enabled = false;
+        blur = {
+          enabled = true;
+          special = false;
+          size = 5;
+          passes = 2;
+          new_optimizations = true;
+          ignore_opacity = true;
+          xray = false;
+        };
       };
 
     };
