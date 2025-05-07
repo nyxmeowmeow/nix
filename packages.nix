@@ -70,6 +70,7 @@
     firefox
     vesktop
     foot
+    hyprsunset
     hyprprop
     hyprland
     hyprpaper
