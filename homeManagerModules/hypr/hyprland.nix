@@ -254,7 +254,10 @@
         "SUPER, e, movefocus, u"
         "SUPER, i, movefocus, r"
 
-
+        "SUPER ALT, h, moveintogroup, l"
+        "SUPER ALT, a, moveintogroup, d"
+        "SUPER ALT, e, moveintogroup, u"
+        "SUPER ALT, i, moveintogroup, r"
 
 
       ];
