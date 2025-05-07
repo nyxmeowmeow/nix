@@ -37,9 +37,13 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
+      binds = {
+        workspace_back_and_forth = true;
+      };
       "$scrPath" = "~/.local/share/bin";
       "$scripts" = "~/nix/stuff/scripts";
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
+
 
       exec = [
         "gsettings set org.gnome.desktop.interface font-name 'sn pro 10'"
