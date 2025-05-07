@@ -8,7 +8,8 @@
       splash_offset = 2.0;
 
       preload = [
-        "~/nix/stuff/4_hor.png" 
+        "~/nix/stuff/1_hor.png" 
+        "~/nix/stuff/4_hor.jpg" 
         "~/nix/stuff/1_vert.png" 
       ];
 
