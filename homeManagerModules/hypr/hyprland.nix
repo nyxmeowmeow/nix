@@ -38,8 +38,11 @@
     enable = true;
     settings = {
       binds = {
-        workspace_back_and_forth = true;
+        workspace_back_and_forth = true; # switch to prev workspace when pressing bind to switch to current workspace
+        hide_special_on_workspace_change = true;
+        workspace_center_on = true;
       };
+
       "$scrPath" = "~/.local/share/bin";
       "$scripts" = "~/nix/stuff/scripts";
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
