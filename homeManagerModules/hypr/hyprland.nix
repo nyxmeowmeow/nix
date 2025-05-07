@@ -188,7 +188,7 @@
         "SUPER,       s, exec, footclient nu -e yazi"
 
         "SUPER,       f, exec, zen -p rain"
-        "SUPER SHIFT, f, exec, zen -p rain2"
+        "SUPER SHIFT, f, exec, zen -p misc"
         "SUPER,       c, exec, footclient nvim"
         "SUPER SHIFT, c, exec, footclient nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  c, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
