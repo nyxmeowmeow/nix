@@ -51,10 +51,6 @@
 
       group = {
 
-          "col.active" = "rgba(b7bdf8ff)";
-          "col.inactive" = "rgba(24273a80)";
-          "col.locked_active" = "rgba(f4dbd6ff)";
-          "col.locked_inactive" = "rgba(24273a80)";
 
 
         groupbar = {
