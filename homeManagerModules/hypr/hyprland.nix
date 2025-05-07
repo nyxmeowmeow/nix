@@ -53,6 +53,7 @@
         # gradients = true;
         # font_size = 10;
         # rounding = 4;
+        render_titles = true;
         text_color = "rgba(24273aff)";
         "col.active" = "rgba(b7bdf8ff)";
         "col.inactive" = "rgba(24273a80)";
