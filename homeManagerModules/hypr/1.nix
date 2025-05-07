@@ -21,6 +21,7 @@
           special = false;
           size = 5;
           passes = 2;
+          popups = true;
           new_optimizations = true;
           ignore_opacity = true;
           xray = false;

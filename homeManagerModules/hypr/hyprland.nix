@@ -49,16 +49,25 @@
 
       };
 
-      group.groupbar = {
-        # gradients = true;
-        # font_size = 10;
-        # rounding = 4;
-        render_titles = true;
-        text_color = "rgba(24273aff)";
-        "col.active" = "rgba(b7bdf8ff)";
-        "col.inactive" = "rgba(24273a80)";
-        "col.locked_active" = "rgba(f4dbd6ff)";
-        "col.locked_inactive" = "rgba(24273a80)";
+      group = {
+
+          "col.active" = "rgba(b7bdf8ff)";
+          "col.inactive" = "rgba(24273a80)";
+          "col.locked_active" = "rgba(f4dbd6ff)";
+          "col.locked_inactive" = "rgba(24273a80)";
+
+
+        groupbar = {
+          # gradients = true;
+          # font_size = 10;
+          # rounding = 4;
+          render_titles = true;
+          text_color = "rgba(24273aff)";
+          "col.active" = "rgba(b7bdf8ff)";
+          "col.inactive" = "rgba(24273a80)";
+          "col.locked_active" = "rgba(f4dbd6ff)";
+          "col.locked_inactive" = "rgba(24273a80)";
+        };
       };
 
       "$scrPath" = "~/.local/share/bin";
