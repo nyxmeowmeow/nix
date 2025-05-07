@@ -39,8 +39,18 @@
     settings = {
       binds = {
         workspace_back_and_forth = true; # switch to prev workspace when pressing bind to switch to current workspace
-        hide_special_on_workspace_change = true;
+        # hide_special_on_workspace_change = true;
         workspace_center_on = true;
+      };
+
+      misc = {
+        font_family = "mononoki nerd font mono";
+        new_window_takes_over_fullscreen = 2; # un-fullscreen when opening a new window
+
+      };
+
+      group.groupbar = {
+        gradients = true;
       };
 
       "$scrPath" = "~/.local/share/bin";
