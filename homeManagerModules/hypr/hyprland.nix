@@ -201,7 +201,7 @@
 
         "SUPER SHIFT, o, exec, hyprctl dispatch togglegroup"
         "SUPER,       o, exec, hyprctl dispatch changegroupactive"
-        "SUPER CTRL,  o, exec, hyprctl dispatch lockgroups && notify-send 'groups locked' || hyprctl dispatch lockgroups && notify-send 'groups unlocked'"
+        "SUPER CTRL,  o, exec, hyprctl dispatch lockgroups lock && notify-send 'groups locked' || hyprctl dispatch lockgroups unlock && notify-send 'groups unlocked'"
 
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
