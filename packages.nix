@@ -1,6 +1,9 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    # protonup
+    # lutris
+    # gimp
     osu-lazer
     go
     vitetris
@@ -12,7 +15,6 @@
     trash-cli
     tldr
     btop
-    gimp
     google-chrome
     # zenity
     # xdg-desktop-portal-termfilechooser
@@ -46,7 +48,6 @@
     # appimage-run
     libevdev
     libqalculate
-    hyprprop
     krita
     gh
     netcat
@@ -69,6 +70,7 @@
     firefox
     vesktop
     foot
+    hyprprop
     hyprland
     hyprpaper
     hyprpicker
@@ -93,8 +95,6 @@
     libdrm
     xwayland
     wine
-    protonup
-    lutris
   ];
 
   fonts.packages = with pkgs; [
