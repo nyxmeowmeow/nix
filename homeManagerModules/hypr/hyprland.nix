@@ -50,7 +50,15 @@
       };
 
       group.groupbar = {
-        gradients = true;
+        # gradients = true;
+        font_size = 10;
+        render_titles = false;
+        rounding = 8;
+        text_color = "0x24273aff";
+        "col.active" = "0xb7bdf8ff";
+        "col.inactive" = "0x24273a80";
+        "col.locked_active" = "0xf0c6c6ff";
+        "col.locked_inactive" = "0x24273a80";
       };
 
       "$scrPath" = "~/.local/share/bin";
