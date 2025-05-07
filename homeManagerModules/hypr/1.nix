@@ -25,6 +25,11 @@
           ignore_opacity = true;
           xray = false;
         };
+
+
+      # windowrulev2 = [
+      #   ];
+
       };
 
     };

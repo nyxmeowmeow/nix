@@ -274,7 +274,7 @@
         # "size 1000 1200,class:^(footfloatme)$"
         "noblur,class:^(footfloatme)$"
 
-        "noblur,class:^(footclient)$"
+        # "noblur,class:^(footclient)$"
 
         "float,class:^(clipse)$"
         "center,class:^(clipse)$"
