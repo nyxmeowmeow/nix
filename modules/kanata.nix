@@ -14,7 +14,6 @@
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = ''
-
 (defchords ch 12
   (p          ) p
   (  S-9      ) S-9
