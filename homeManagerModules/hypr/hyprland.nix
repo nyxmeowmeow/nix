@@ -207,8 +207,8 @@
         "SUPER,       k, togglesplit"
         "SUPER,       y, togglefloating"
         "SUPER SHIFT, y, exec, hyprctl dispatch centerwindow"
-        "SUPER,       2, exec, foot --hold hyprprop"
-        # "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"
+        "SUPER,       2, exec, footclient --hold hyprprop"
+        # "SUPER SHIFT, 2, exec, footclient --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
         "SUPER,       4, exec, $scripts/hextoimg.sh"  # hyprpicker
 
@@ -225,6 +225,8 @@
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
         "SUPER,       s, exec, footclient nu -e yazi"
+
+        "SUPER,       g, exec, footclient qalc"
 
         "SUPER,       f, exec, zen -p rain"
         "SUPER SHIFT, f, exec, zen -p misc"
