@@ -313,6 +313,13 @@
       ];
 
       windowrulev2 = [
+
+        "center,title:^()$"
+
+
+
+
+
         "nofocus, title:^(Remux Recordings)$"
 
         "float,class:^(footfloatme)$"
