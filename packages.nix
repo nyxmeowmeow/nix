@@ -69,7 +69,7 @@
     wget
     git
     dbus
-    firefox
+    # firefox
     vesktop
     foot
     hyprsunset
