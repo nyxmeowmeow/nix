@@ -68,15 +68,15 @@
         b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
         , . k g v    / f15 f16 f17 ; z
-         lmet      f18 enter
+         lmet f14    f18 enter
 )
 
 (deflayer default
-  _   _     _     _     _     _      _    _     _      _      _     _
-      _     @ch_f @ch_d @ch_w _      _    @ch_l @ch_o  @ch_u  _     _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _    @ch_h @ch_a  @ch_e  @ch_i rpt-any
-      @ch_, @ch_. @ch_k @ch_g _      _    @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm                @col @sym
+  _   _     _     _     _     _      _ _     _      _      _     _
+      _     @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  _     _
+  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
+      @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+                       @lm @sym      @col _
 )
 
 (deflayer over
@@ -84,7 +84,7 @@
         b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
         , . k g v    _ _ _ _ ; z
-         lmet        0 enter
+        lmet lsft    0 enter
 )
 
 (deflayer syms
@@ -92,7 +92,7 @@
      `   S-` \   S-5 _       `   left down up   right =
   _  1   2   3   4   S-1     S-3 7    8    9    0     rpt-any
      _   _   _   5   _       S-3 6    S-9  S-0  S-;   _
-             del             _    _
+             del     _       _    _
 )
 
 
