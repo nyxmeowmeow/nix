@@ -68,7 +68,7 @@
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   f18   , . k g v    / f15 f16 f17 ; z
-        lmet lsft    f14 spc
+      lmet r lsft    f14 spc
 )
 
 (deflayer default
@@ -76,15 +76,15 @@
   _   _     @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  _     _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm         _      @sym _
+                  @lm   _     _      @sym _
 )
 
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
-  _     , . k g v    _ _ _ _ ; z
-        lmet lsft    0 enter
+  _     , . k g v    / 8 9 0 ; z
+      lmet r lsft    enter spc
 )
 
 (deflayer syms
@@ -92,7 +92,7 @@
   _  `   S-` \   S-5 _       `   left down up   right _
   _  1   2   3   4   _       S-3 7    8    9    0     rpt-any
   _  _   _   _   5   _       S-3 6    _    _    _     _
-             del     _       _   _
+             del _   _       _   _
 )
 
 
