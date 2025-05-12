@@ -199,7 +199,7 @@
 
       bind = [
         "SUPER CTRL SHIFT ALT,   0, exit"  # kill hyprland session
-        "SUPER CTRL,  Return, fullscreen"
+        "SUPER CTRL,  space, fullscreen"
         "SUPER,       s, exec, $scripts/dontkillsteam.sh"
         "SUPER CTRL,  s, exec, hyprctl kill"
         "SUPER CTRL SHIFT, s, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
@@ -233,7 +233,7 @@
         "SUPER,       g, exec, footclient nvim"
         "SUPER SHIFT, g, exec, footclient nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  g, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
-        "SUPER,  return, exec, walker -s 3 -m applications,calc"
+        "SUPER,  space, exec, walker -s 3 -m applications,calc"
         "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
 
 
