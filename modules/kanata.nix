@@ -89,18 +89,18 @@
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   S-` \   S-5 _       `   left down up   right =
-  _  1   2   3   4   S-1     S-3 7    8    9    0     rpt-any
-  _  _   _   _   5   _       S-3 6    S-9  S-0  S-;   _
-             del     _       _    _
+  _  `   S-` \   S-5 _       `   left down up   right _
+  _  1   2   3   4   _       S-3 7    8    9    0     rpt-any
+  _  _   _   _   5   _       S-3 6    _    _    _     _
+             del     _       _   _
 )
 
 
 
 (defalias
-  sym (tap-hold-press 120 120 tab (layer-toggle syms))
+  sym (tap-hold-press 120 120 enter (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
-  lm (tap-hold-press 120 120 enter lmet)
+  lm (tap-hold-press 120 120 tab lmet)
   ;;col (tap-hold-press 120 120 S-; lctl) 
 
   ch__  (chord ch S--)
