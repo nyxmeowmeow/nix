@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    wev
     # protonup
     # lutris
     # gimp
