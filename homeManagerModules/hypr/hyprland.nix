@@ -199,14 +199,14 @@
 
       bind = [
         "SUPER CTRL SHIFT ALT,   0, exit"  # kill hyprland session
-        "SUPER SHIFT,  Return, fullscreen"
-        "SUPER,       r, exec, $scripts/dontkillsteam.sh"
-        "SUPER CTRL,  r, exec, hyprctl kill"
-        "SUPER CTRL SHIFT, r, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
+        "SUPER CTRL,  Return, fullscreen"
+        "SUPER,       s, exec, $scripts/dontkillsteam.sh"
+        "SUPER CTRL,  s, exec, hyprctl kill"
+        "SUPER CTRL SHIFT, s, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
         "SUPER,       n, exec, $scripts/swap.sh"
-        "SUPER,       k, togglesplit"
-        "SUPER,       y, togglefloating"
-        "SUPER SHIFT, y, exec, hyprctl dispatch centerwindow"
+        "SUPER,       slash, togglesplit"
+        "SUPER,       m, togglefloating"
+        "SUPER SHIFT, m, exec, hyprctl dispatch centerwindow"
         "SUPER,       2, exec, footclient --hold hyprprop"
         # "SUPER SHIFT, 2, exec, footclient --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
@@ -224,15 +224,15 @@
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
-        "SUPER,       s, exec, footclient nu -e yazi"
+        "SUPER,       c, exec, footclient nu -e yazi"
 
-        "SUPER,       g, exec, footclient qalc"
+        "SUPER,       y, exec, footclient qalc"
 
-        "SUPER,       f, exec, zen -p rain"
-        "SUPER SHIFT, f, exec, zen -p misc"
-        "SUPER,       c, exec, footclient nvim"
-        "SUPER SHIFT, c, exec, footclient nvim -c 'lua require('persistence').load()'"
-        "SUPER CTRL,  c, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
+        "SUPER,       l, exec, zen -p rain"
+        "SUPER SHIFT, l, exec, zen -p misc"
+        "SUPER,       g, exec, footclient nvim"
+        "SUPER SHIFT, g, exec, footclient nvim -c 'lua require('persistence').load()'"
+        "SUPER CTRL,  g, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
         "SUPER,  return, exec, walker -s 3 -m applications,calc"
         "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
 
@@ -251,24 +251,24 @@
 
         "SUPER, q,    workspace,                 1"
         "SUPER, b,      workspace,                 2"
-        "SUPER, l,      workspace,                 3"
+        "SUPER, f,      workspace,                 3"
         "SUPER, d,      workspace,                 4"
         "SUPER, w,      workspace,                 5"
         "SUPER, comma,  togglespecialworkspace"
         "SUPER, period, togglespecialworkspace,    2"
         "SUPER, u,      togglespecialworkspace,    btop"
         "SUPER, j,      togglespecialworkspace,    clock"
-        "SUPER, m,      togglespecialworkspace,    music"
+        "SUPER, k,      togglespecialworkspace,    music"
 
         "SUPER SHIFT, n,          movetoworkspacesilent,   9"
         "SUPER SHIFT, q,        movetoworkspacesilent,   1"
         "SUPER SHIFT, b,          movetoworkspacesilent,   2"
-        "SUPER SHIFT, l,          movetoworkspacesilent,   3"
+        "SUPER SHIFT, f,          movetoworkspacesilent,   3"
         "SUPER SHIFT, d,          movetoworkspacesilent,   4"
         "SUPER SHIFT, w,          movetoworkspacesilent,   5"
         "SUPER SHIFT, comma,      movetoworkspacesilent,   special"
         "SUPER SHIFT, period,     movetoworkspacesilent,   special:2"
-        "SUPER SHIFT, m,          movetoworkspacesilent,   special:music"
+        "SUPER SHIFT, k,          movetoworkspacesilent,   special:music"
 
 
         "SUPER, h, movefocus, l"
@@ -314,6 +314,7 @@
 
       windowrulev2 = [
 
+        # tm2020 ubisoft connect floating title bar
         "center,title:^()$"
 
 
