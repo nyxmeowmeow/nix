@@ -72,10 +72,10 @@
 )
 
 (deflayer default
-  _   _     _     _     _     _      _    _     _       _       _     _
-      _     @ch_f @ch_d @ch_w _      _    @ch_l @ch_o   @ch_u   _     _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _    @ch_h @ch_a   @ch_e   @ch_i rpt-any
-      @ch_, @ch_. @ch_k @ch_g _      _    @ch__ @ch_S-9 @ch_S-0 @ch_; _
+  _   _     _     _     _     _      _    _     _      _      _     _
+      _     @ch_f @ch_d @ch_w _      _    @ch_l @ch_o  @ch_u  _     _
+  @lc @ch_n @ch_s @ch_t @ch_c _      _    @ch_h @ch_a  @ch_e  @ch_i rpt-any
+      @ch_, @ch_. @ch_k @ch_g _      _    @ch__ @ch_lp @ch_rp @ch_; _
                   @lm                @col @sym
 )
 
@@ -95,22 +95,18 @@
              del             _    _
 )
 
-(defvirtualkeys
-  layersyms (layer-toggle syms)
-)
 
 
 (defalias
-  sym (tap-hold-press 120 120 enter (layer-toggle syms))
+  sym (tap-hold-press 120 120 tab (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
-  lm (tap-hold-press 120 120 bspc lmet)
+  lm (tap-hold-press 120 120 enter lmet)
   col (tap-hold-press 120 120 S-; lctl) 
-  ;;spc (tap-hold-press 120 120 spc (on-idle 100 tap-vkey layersyms))
 
-  ch__ (chord ch S--)
-  ch_S-9 (chord ch S-9)
-  ch_S-0 (chord ch S-0)
-  ch_;   (chord ch ;)
+  ch__  (chord ch S--)
+  ch_lp (chord ch S-9)
+  ch_rp (chord ch S-0)
+  ch_;  (chord ch ;)
 
   ch_, (chord ch ,)
   ch_. (chord ch .)
