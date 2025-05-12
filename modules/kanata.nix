@@ -65,33 +65,33 @@
 
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
-        b f d w p    ' l o u j x
+  q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
-        , . k g v    / f15 f16 f17 ; z
-         lmet f14    f18 enter
+  f18   , . k g v    / f15 f16 f17 ; z
+        lmet lsft    f14 spc
 )
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-      _     @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  _     _
+  _   _     @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  _     _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
-      @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                       @lm @sym      @col _
+  S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+                  @lm         _      @sym _
 )
 
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -
-        b f d w p    ' l o u j x
+  q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
-        , . k g v    _ _ _ _ ; z
+  _     , . k g v    _ _ _ _ ; z
         lmet lsft    0 enter
 )
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-     `   S-` \   S-5 _       `   left down up   right =
+  _  `   S-` \   S-5 _       `   left down up   right =
   _  1   2   3   4   S-1     S-3 7    8    9    0     rpt-any
-     _   _   _   5   _       S-3 6    S-9  S-0  S-;   _
+  _  _   _   _   5   _       S-3 6    S-9  S-0  S-;   _
              del     _       _    _
 )
 
@@ -101,7 +101,7 @@
   sym (tap-hold-press 120 120 tab (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 enter lmet)
-  col (tap-hold-press 120 120 S-; lctl) 
+  ;;col (tap-hold-press 120 120 S-; lctl) 
 
   ch__  (chord ch S--)
   ch_lp (chord ch S-9)
