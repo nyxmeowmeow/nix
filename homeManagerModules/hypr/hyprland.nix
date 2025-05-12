@@ -249,11 +249,12 @@
         # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
-        "SUPER, q,    workspace,                 1"
+        "SUPER, q,      workspace,                 1"
         "SUPER, b,      workspace,                 2"
         "SUPER, f,      workspace,                 3"
         "SUPER, d,      workspace,                 4"
         "SUPER, w,      workspace,                 5"
+        "SUPER, p,      workspace,                 6"
         "SUPER, comma,  togglespecialworkspace"
         "SUPER, period, togglespecialworkspace,    2"
         "SUPER, u,      togglespecialworkspace,    btop"
@@ -261,11 +262,12 @@
         "SUPER, k,      togglespecialworkspace,    music"
 
         "SUPER SHIFT, n,          movetoworkspacesilent,   9"
-        "SUPER SHIFT, q,        movetoworkspacesilent,   1"
+        "SUPER SHIFT, q,          movetoworkspacesilent,   1"
         "SUPER SHIFT, b,          movetoworkspacesilent,   2"
         "SUPER SHIFT, f,          movetoworkspacesilent,   3"
         "SUPER SHIFT, d,          movetoworkspacesilent,   4"
         "SUPER SHIFT, w,          movetoworkspacesilent,   5"
+        "SUPER SHIFT, p,          movetoworkspacesilent,   6"
         "SUPER SHIFT, comma,      movetoworkspacesilent,   special"
         "SUPER SHIFT, period,     movetoworkspacesilent,   special:2"
         "SUPER SHIFT, k,          movetoworkspacesilent,   special:music"
@@ -463,7 +465,7 @@
 
     # no nix way to do this :(
     extraConfig = /* hyprlang */ ''
-      bind = SUPER, p, submap, player
+      bind = SUPER, _, submap, player
 
       # will start a submap called "player"
       submap = player
@@ -513,8 +515,8 @@
 
 
 
-      bind = ,      p, submap, play_song
-      bind = SUPER, p, submap, play_song
+      bind = ,      _, submap, play_song
+      bind = SUPER, _, submap, play_song
       submap = play_song
 
 

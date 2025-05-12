@@ -76,7 +76,7 @@
       _     @ch_f @ch_d @ch_w _      _    @ch_l @ch_o   @ch_u   _     _
   @lc @ch_n @ch_s @ch_t @ch_c _      _    @ch_h @ch_a   @ch_e   @ch_i rpt-any
       @ch_, @ch_. @ch_k @ch_g _      _    @ch__ @ch_S-9 @ch_S-0 @ch_; _
-                  @lm                 @col @sym
+                  @lm                @col @sym
 )
 
 (deflayer over
