@@ -2,7 +2,7 @@
 
   environment.systemPackages = with pkgs; [
 
-    wev
+    # wev
     # protonup
     # lutris
     # gimp
