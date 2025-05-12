@@ -476,9 +476,9 @@
       bind = ,      t, submap, reset
 
       # play/pause firefox
-      bind = ,      s, exec, mpc -p 6669 toggle
-      bind = SUPER, s, exec, mpc -p 6669 toggle
-      bind = ,      s, submap, reset
+      bind = ,      c, exec, mpc -p 6669 toggle
+      bind = SUPER, c, exec, mpc -p 6669 toggle
+      bind = ,      c, submap, reset
 
       # previous mpd song
       bind = ,      h, exec, mpc -p 6669 prev
@@ -499,11 +499,11 @@
       bind = SUPER, e, exec, mpc -p 6669 volume +5
 
       # restart current song
-      bind = ,      r, exec, mpc -p 6669 prev
-      bind = SUPER, r, exec, mpc -p 6669 prev
-      bind = ,      r, exec, mpc -p 6669 next
-      bind = SUPER, r, exec, mpc -p 6669 next
-      bind = ,      r, submap, reset
+      bind = ,      s, exec, mpc -p 6669 prev
+      bind = SUPER, s, exec, mpc -p 6669 prev
+      bind = ,      s, exec, mpc -p 6669 next
+      bind = SUPER, s, exec, mpc -p 6669 next
+      bind = ,      s, submap, reset
 
 
 
