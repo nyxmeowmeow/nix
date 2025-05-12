@@ -15,42 +15,42 @@
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = ''
 (defchords ch 12
-  (p          ) p
-  (  S-9      ) S-9
-  (      S-0  ) S-0
-  (          ;) ;
-  (p S-9      ) [
-  (p     S-0  ) ]
-  (  S-9 S-0  ) /
-  (p S-9 S-0  ) S-/
-  (      S-0 ;) S-1
+  (S--          ) S--
+  (    S-9      ) S-9
+  (        S-0  ) S-0
+  (            ;) ;
+  (S-- S-9      ) [
+  (S--     S-0  ) ]
+  (    S-9 S-0  ) /
+  (S-- S-9 S-0  ) S-/
+  (        S-0 ;) S-1
 
-  (l    ) l
+  (f    ) f
   (  d  ) d
   (    w) w
-  (l d  ) S-\
+  (f d  ) S-\
   (  d w) S-8
 
   (,      ) ,
   (  .    ) .
-  (    m  ) m
-  (      c) c
+  (    k  ) k
+  (      g) g
   (, .    ) S-7
-  (  . m  ) =
-  (    m c) +
+  (  . k  ) =
+  (    k g) +
 
-  (f    ) f
+  (l    ) l
   (  o  ) o
   (    u) u
-  (f o  ) S-'
+  (l o  ) S-'
 
   (n      ) n
-  (  r    ) r
+  (  s    ) s
   (    t  ) t
-  (      s) s
-  (n r    ) S-,
-  (  r t  ) S-[
-  (    t s) esc
+  (      c) c
+  (n s    ) S-,
+  (  s t  ) S-[
+  (    t c) esc
 
   (h      ) h
   (  a    ) a
@@ -65,26 +65,26 @@
 
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
-        b l d w f15  ' f o u j x
-  lctrl n r t s g    y h a e i bspc
-        , . m c v    k p f16 f17 ; z
+        b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+        , . k g v    / f15 f16 f17 ; z
          lmet      f18 enter
 )
 
 (deflayer default
   _   _     _     _     _     _      _    _     _       _       _     _
-      _     @ch_l @ch_d @ch_w S--    _    @ch_f @ch_o   @ch_u   _     _
-  @lc @ch_n @ch_r @ch_t @ch_s _      _    @ch_h @ch_a   @ch_e   @ch_i rpt-any
-      @ch_, @ch_. @ch_m @ch_c _      _    @ch_p @ch_S-9 @ch_S-0 @ch_; _
+      _     @ch_f @ch_d @ch_w _      _    @ch_l @ch_o   @ch_u   _     _
+  @lc @ch_n @ch_s @ch_t @ch_c _      _    @ch_h @ch_a   @ch_e   @ch_i rpt-any
+      @ch_, @ch_. @ch_k @ch_g _      _    @ch__ @ch_S-9 @ch_S-0 @ch_; _
                   @lm                 @col @sym
 )
 
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -
-        b l d w S--  ' f o u j x
-  lctrl n r t s g    y h a e i bspc
-        , . m c v    k p _ _ ; z
-         lmet        h enter
+        b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+        , . k g v    _ _ _ _ ; z
+         lmet        0 enter
 )
 
 (deflayer syms
@@ -107,28 +107,28 @@
   col (tap-hold-press 120 120 S-; lctl) 
   ;;spc (tap-hold-press 120 120 spc (on-idle 100 tap-vkey layersyms))
 
-  ch_p   (chord ch p)
+  ch__ (chord ch S--)
   ch_S-9 (chord ch S-9)
   ch_S-0 (chord ch S-0)
   ch_;   (chord ch ;)
 
   ch_, (chord ch ,)
   ch_. (chord ch .)
-  ch_m (chord ch m)
-  ch_c (chord ch c)
+  ch_k (chord ch k)
+  ch_g (chord ch g)
 
-  ch_f (chord ch f)
+  ch_l (chord ch l)
   ch_o (chord ch o)
   ch_u (chord ch u)
 
-  ch_l (chord ch l)
+  ch_f (chord ch f)
   ch_d (chord ch d)
   ch_w (chord ch w)
 
   ch_n (chord ch n)
-  ch_r (chord ch r)
-  ch_t (chord ch t)
   ch_s (chord ch s)
+  ch_t (chord ch t)
+  ch_c (chord ch c)
 
   ch_h (chord ch h)
   ch_a (chord ch a)
