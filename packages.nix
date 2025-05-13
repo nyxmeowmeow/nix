@@ -5,7 +5,7 @@
     # wev
     # protonup
     # lutris
-    # gimp
+    gimp
     osu-lazer
     go
     vitetris
