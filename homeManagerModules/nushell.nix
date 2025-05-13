@@ -8,7 +8,7 @@
       let color_scheme = {
           hints: "#5b6078"
           search_result: { bg: cyan fg: "#cad3f5" }
-          shape_garbage: { fg: "#000000" bg: "#FF0000" attr: b}
+          shape_garbage: { fg: "#24273a" bg: "#ed8796" attr: b}
           shape_filepath: green
           shape_directory: green
           shape_internalcall: blue
