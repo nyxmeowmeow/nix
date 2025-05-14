@@ -24,6 +24,11 @@
   # home.sessionVariables
 
 
+  # xdg.desktopEntries = {
+  #   fish.noDisplay = true;
+  #   yazi.noDisplay = true;
+  #   btop.noDisplay = true;
+  # };
 
 
   ## doesnt work?
