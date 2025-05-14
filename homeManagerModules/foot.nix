@@ -50,9 +50,9 @@
         scrollback-down-half-page = "Control+Shift+a";
         scrollback-home = "Control+Shift+h";
         scrollback-end = "Control+Shift+i";
-        search-start = "Control+/";
-        find-prev = "Control+h";
-        find-next = "Control+i";
+        # search-start = "Control+/";
+        # find-prev = "Control+h";
+        # find-next = "Control+i";
       };
       tweak.box-drawing-base-thickness = "0.06";
     };
