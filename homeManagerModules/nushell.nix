@@ -42,7 +42,8 @@
       }
 
       def nr [...msg: string] {
-        sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+        let bootmsg = (date now | format date '%H:%M_%d-%m')
+        sudo bash -c 'NIXOS_LABEL=$bootmsg nixos-rebuild switch --flake /home/meow/nix#nixos'
         cd ~/nix
         git add .
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
