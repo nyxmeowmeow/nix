@@ -106,16 +106,6 @@
   lm (tap-hold-press 120 120 tab lmet)
   ;;col (tap-hold-press 120 120 S-; lctl) 
 
-  ch__  (chord ch S--)
-  ch_lp (chord ch S-9)
-  ch_rp (chord ch S-0)
-  ch_;  (chord ch ;)
-
-  ch_, (chord ch ,)
-  ch_. (chord ch .)
-  ch_k (chord ch k)
-  ch_g (chord ch g)
-
   ch_j (chord ch j)
   ch_l (chord ch l)
   ch_o (chord ch o)
@@ -135,6 +125,16 @@
   ch_a (chord ch a)
   ch_e (chord ch e)
   ch_i (chord ch i)
+
+  ch__  (chord ch S--)
+  ch_lp (chord ch S-9)
+  ch_rp (chord ch S-0)
+  ch_;  (chord ch ;)
+
+  ch_, (chord ch ,)
+  ch_. (chord ch .)
+  ch_k (chord ch k)
+  ch_g (chord ch g)
 )
 
         '';
