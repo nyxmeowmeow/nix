@@ -637,12 +637,13 @@
           bind = SUPER, y, exec, mpc -p 6669 searchplay title 'miss you'
           bind = ,      y, submap, reset
 
+          bind = ,      k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
+          bind = SUPER, k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
+          bind = ,      k, submap, reset
+
       bind = , escape, submap, reset
       submap = play_song
 
-      bind = ,      k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
-      bind = SUPER, k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
-      bind = ,      k, submap, reset
 
       bind = ,      z, exec, mpc -p 6669 searchplay title 'zen garden'
       bind = SUPER, z, exec, mpc -p 6669 searchplay title 'zen garden'

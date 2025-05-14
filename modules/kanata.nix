@@ -24,11 +24,13 @@
   (    S-9 S-0  ) S-/
   (        S-0 ;) S-1
 
-  (f    ) f
-  (  d  ) d
-  (    w) w
-  (f d  ) S-\
-  (  d w) S-8
+  (b      ) b
+  (  f    ) f
+  (    d  ) d
+  (      w) w
+  (b f    ) S-5
+  (  f d  ) S-\
+  (    d w) S-8
 
   (,      ) ,
   (  .    ) .
@@ -38,10 +40,13 @@
   (  . k  ) =
   (    k g) +
 
-  (l    ) l
-  (  o  ) o
-  (    u) u
-  (l o  ) S-'
+  (l    )   l
+  (  o    ) o
+  (    u  ) u
+  (      j) j
+  (    u j) S-3
+  (  o u  ) \
+  (l o    ) S-'
 
   (n      ) n
   (  s    ) s
@@ -72,7 +77,7 @@
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  _   _     @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  _     _
+  _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _     _      @sym _
@@ -88,7 +93,7 @@
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   S-` \   S-5 _       `   left down up   right _
+  _  `   S-` \   _   _       _   left down up   right _
   _  1   2   3   4   _       S-3 7    8    9    0     rpt-any
   _  _   _   _   5   _       S-3 6    _    _    _     _
              del _   _       _   _
@@ -112,10 +117,12 @@
   ch_k (chord ch k)
   ch_g (chord ch g)
 
+  ch_j (chord ch j)
   ch_l (chord ch l)
   ch_o (chord ch o)
   ch_u (chord ch u)
 
+  ch_b (chord ch b)
   ch_f (chord ch f)
   ch_d (chord ch d)
   ch_w (chord ch w)
