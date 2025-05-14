@@ -15,15 +15,6 @@
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = ''
 (defchords ch 12
-  (S--          ) S--
-  (    S-9      ) S-9
-  (        S-0  ) S-0
-  (            ;) ;
-  (S-- S-9      ) [
-  (S--     S-0  ) ]
-  (    S-9 S-0  ) S-/
-  (        S-0 ;) S-1
-
   (b      ) b
   (  f    ) f
   (    d  ) d
@@ -32,21 +23,13 @@
   (  f d  ) S-\
   (    d w) S-8
 
-  (,      ) ,
-  (  .    ) .
-  (    k  ) k
-  (      g) g
-  (, .    ) S-7
-  (  . k  ) =
-  (    k g) +
-
   (l    )   l
   (  o    ) o
   (    u  ) u
   (      j) j
-  (    u j) S-3
-  (  o u  ) \
   (l o    ) S-'
+  (  o u  ) \
+  (    u j) S-3
 
   (n      ) n
   (  s    ) s
@@ -64,6 +47,23 @@
   (h a e  ) del
   (  a e  ) S-]
   (    e i) S-.
+
+  (,      ) ,
+  (  .    ) .
+  (    k  ) k
+  (      g) g
+  (, .    ) S-7
+  (  . k  ) =
+  (    k g) +
+
+  (S--          ) S--
+  (    S-9      ) S-9
+  (        S-0  ) S-0
+  (            ;) ;
+  (S-- S-9      ) [
+  (S--     S-0  ) ]
+  (    S-9 S-0  ) S-/
+  (        S-0 ;) S-1
 )
 
 
@@ -93,10 +93,10 @@
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   S-` \   _   _       _   left down up   right _
-  _  1   2   3   4   _       S-3 7    8    9    0     rpt-any
-  _  _   _   _   5   _       S-3 6    _    _    _     _
-             del _   _       _   _
+  _  `   S-` _   _   _       _   left down up   right _
+  _  1   2   3   4   _       _   7    8    9    0     rpt-any
+  _  _   _   _   5   _       _   6    _    _    _     _
+             _   _   _       _   _
 )
 
 
