@@ -9,7 +9,7 @@
 
       preload = [
         "~/nix/stuff/1_hor.png" 
-        "~/nix/stuff/4_hor.jpg" 
+        "~/nix/stuff/3_hor.jpg" 
         "~/nix/stuff/1_vert.png" 
       ];
 
