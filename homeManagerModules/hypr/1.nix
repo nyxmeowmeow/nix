@@ -19,7 +19,7 @@
         blur = {
           enabled = true;
           special = false;
-          size = 5;
+          size = 7;
           passes = 2;
           popups = true;
           new_optimizations = true;
