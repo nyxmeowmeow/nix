@@ -19,8 +19,8 @@
         blur = {
           enabled = true;
           special = false;
-          size = 7;
-          passes = 2;
+          size = 4;
+          passes = 3;
           popups = true;
           new_optimizations = true;
           ignore_opacity = true;
