@@ -5,19 +5,19 @@
     # wev
     # protonup
     # lutris
-    gimp
-    osu-lazer
+    # gimp
+    # osu-lazer
     go
     vitetris
     ffmpeg
-    davinci-resolve
+    # davinci-resolve
     # mesa-demos
     vulkan-tools
     clinfo
     trash-cli
     tldr
     btop
-    google-chrome
+    # google-chrome
     # zenity
     # xdg-desktop-portal-termfilechooser
     expect
@@ -38,7 +38,7 @@
     mpc
     mpd
     ripgrep
-    nix-inspect
+    # nix-inspect
     mpv
     obs-studio
     python3
