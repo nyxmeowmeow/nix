@@ -14,7 +14,7 @@
       ];
 
       wallpaper = [
-        "DP-1,~/nix/stuff/4_hor.jpg"
+        "DP-1,~/nix/stuff/3_hor.jpg"
         "DP-3,~/nix/stuff/1_vert.png"
       ];
     };
