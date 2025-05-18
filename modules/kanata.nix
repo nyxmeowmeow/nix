@@ -87,7 +87,7 @@
   esc   1 2 3 4 5    6 7 8 9 0 -
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
-  _     , . k g v    / 8 9 0 ; z
+  tab   , . k g v    / 8 9 0 ; z
       lmet r lsft    enter spc
 )
 
