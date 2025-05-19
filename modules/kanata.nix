@@ -40,7 +40,7 @@
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   S-` _   _   _       _   left down up   right _
+  _  `   S-` '   '   _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt-any
   _  _   .   _   5   _       _   6    @dcol _    _     _
              _   _   _       _   _
@@ -145,6 +145,7 @@
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
+    ((key-history e 2)) (macro e) break
     ((key-history w 1)) (macro y) break
     ((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
