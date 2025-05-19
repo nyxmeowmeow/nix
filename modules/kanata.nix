@@ -16,7 +16,7 @@
         config = /* rust */ ''
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    j l o u ' x
+  q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   f18   , . k g v    / f15 f16 f17 ; z
       lmet r lsft    f14 spc
@@ -24,7 +24,7 @@
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @magic-key _
+  _   @ch_b @ch_f @ch_d @ch_w _      @magic-key @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _     _      @sym _
@@ -32,7 +32,7 @@
 
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    j l o u ' x
+  q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   tab   , . k g v    / 8 9 0 ; z
       lmet r lsft    enter spc
@@ -58,10 +58,10 @@
   (l    )   l
   (  o    ) o
   (    u  ) u
-  (      x) @magic-key
+  (      j) j
   (l o    ) S-'
   (  o u  ) +
-  (    u x) S-.
+  (    u j) S-.
 
   (n      ) n
   (  s    ) s
@@ -102,6 +102,7 @@
   sym (tap-hold-press 120 120 enter (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 tab lmet)
+  ;;col (tap-hold-press 120 120 S-; lctl) 
 
   dcol (macro S-; S-;)
 
@@ -113,6 +114,7 @@
   ch_l (chord ch l)
   ch_o (chord ch o)
   ch_u (chord ch u)
+  ch_j (chord ch j)
 
   ch_n (chord ch n)
   ch_s (chord ch s)
@@ -134,18 +136,18 @@
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
 
-  magic-key (multi(switch
+  magic-key (switch
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
     ((key-history 3 1)) (macro i n c l u d e spc) break
     ((key-history o 1)) (macro a) break
+    ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
+    ((key-history e 1)) (macro u) break
     ((key-history ] 1)) (macro ;) break
     () rpt break
   )
-  (chord ch x)
-)
 
 
 )
