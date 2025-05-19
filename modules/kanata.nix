@@ -148,12 +148,14 @@
     ((and(key-history e 2) (key-history r 1))) (macro e) break
     ((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
+    ((and(key-history e 2) (key-history v 1))) (macro e) break
     ((key-history w 1)) (macro y) break
     ((key-history c 1)) (macro y) break
     ;;((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
     ((key-history . 1)) (macro ;) break
     ((key-history ] 1)) (macro ;) break
+    ((key-history { 1)) (macro S-] ; left left) break
     () rpt break
   )
 
