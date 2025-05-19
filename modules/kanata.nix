@@ -13,7 +13,7 @@
         extraDefCfg = "process-unmapped-keys yes";
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
-        config = ''
+        config = /* python */ ''
 (defchords ch 12
   (b      ) b
   (  f    ) f
@@ -65,7 +65,8 @@
   (    S-9 S-0  ) S-/
   (        S-0 ;) S-1
 
-
+  (7  ) 7
+  (  8) 8
   (7 8) .
 )
 
@@ -141,8 +142,8 @@
   ch_;  (chord ch ;)
 
 
-  ch_7  (chord ch 7)
-  ch_8  (chord ch 8)
+  ch_7 (chord ch 7)
+  ch_8 (chord ch 8)
 )
 
         '';
