@@ -64,10 +64,6 @@
   (S--     S-0  ) S-5
   (    S-9 S-0  ) S-/
   (        S-0 ;) S-1
-
-  (7  ) 7
-  (  8) 8
-  (7 8) .
 )
 
 
@@ -96,10 +92,10 @@
 )
 
 (deflayer syms
-  f1 f2  f3  f4  f5  f6      f7  home  pgdn  pgup end   f12
-  _  `   S-` _   _   _       _   left  down  up   right _
-  _  1   2   3   4   _       _   @ch_7 @ch_8 9    0     rpt-any
-  _  _   _   _   5   _       _   6     _     _    _     _
+  f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
+  _  `   S-` _   _   _       _   left down up   right _
+  _  1   2   3   4   _       _   7    8    9    0     rpt-any
+  _  ,   .   _   5   _       _   6    S-9  S-0  ;     _
              _   _   _       _   _
 )
 
@@ -140,12 +136,7 @@
   ch_lp (chord ch S-9)
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
-
-
-  ch_7 (chord ch 7)
-  ch_8 (chord ch 8)
 )
-
         '';
       };
 
