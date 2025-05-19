@@ -25,7 +25,7 @@
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
   _   @ch_b @ch_f @ch_d @ch_w _      @magic-key @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
+  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _     _      @sym _
 )
@@ -41,7 +41,7 @@
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
   _  `   S-` '   '   _       _   left down up   right _
-  _  1   2   3   4   _       _   7    8    9    0     rpt-any
+  _  1   2   3   4   _       _   7    8    9    0     rpt
   _  _   .   _   5   _       _   6    @dcol _    _     _
              _   _   _       _   _
 )
@@ -135,10 +135,6 @@
   ch_lp (chord ch S-9)
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
-
-  rpeat (switch
-    () rpt break
-  )
 
   magic-key (switch
     ((key-history lsft 1)) (caps-word-custom 1000
