@@ -137,7 +137,7 @@
   ch_;  (chord ch ;)
 
   magic-key (switch
-    ((key-history x 1)) (macro i n c l u d e spc) break
+    ((key-history ] 1)) (macro ;) break
     () rpt break
   )
 
