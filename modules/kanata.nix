@@ -42,10 +42,9 @@
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
   _  `   S-` _   _   _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt-any
-  _  ,   .   _   5   _       _   6    S-9  S-0  ;     _
+  _  _   .   _   5   _       _   6    @dcol _    _     _
              _   _   _       _   _
 )
-
 
 (defchords ch 12
   (b      ) b
@@ -104,6 +103,8 @@
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 tab lmet)
   ;;col (tap-hold-press 120 120 S-; lctl) 
+
+  dcol (macro S-; S-;)
 
   ch_b (chord ch b)
   ch_f (chord ch f)
