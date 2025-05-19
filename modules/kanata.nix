@@ -58,7 +58,7 @@
   (l    )   l
   (  o    ) o
   (    u  ) u
-  (      ') j
+  (      ') @magic-key
   (l o    ) S-'
   (  o u  ) +
   (    u ') S-.
