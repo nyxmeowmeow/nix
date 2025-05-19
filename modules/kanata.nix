@@ -145,7 +145,7 @@
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
-    ((key-history e 2) (key-history r 1)) (macro e) break
+    ((and(key-history e 2) (key-history r 1))) (macro e) break
     ((key-history w 1)) (macro y) break
     ;;((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
