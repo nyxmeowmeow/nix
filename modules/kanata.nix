@@ -16,7 +16,7 @@
         config = /* rust */ ''
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    ' l o u j x
+  q     b f d w p    j l o u ' x
   lctrl n s t c y    m h a e i bspc
   f18   , . k g v    / f15 f16 f17 ; z
       lmet r lsft    f14 spc
