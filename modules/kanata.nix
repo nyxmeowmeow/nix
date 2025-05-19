@@ -137,7 +137,7 @@
   ch_;  (chord ch ;)
 
   rpeat (switch
-    () rpt break
+    () rpt-any break
   )
 
   magic-key (switch
