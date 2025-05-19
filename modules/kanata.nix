@@ -25,7 +25,7 @@
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
   _   @ch_b @ch_f @ch_d @ch_w _      @magic-key @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
+  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _     _      @sym _
 )
@@ -136,12 +136,14 @@
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
 
+  rpeat (switch
+    () rpt break
+  )
+
   magic-key (switch
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
-    ((and(key-history i 2) (key-history t 1))) (macro ' s) break
-    ((and(key-history c 3) (key-history a 2) (key-history n 1))) (macro ' t) break
     ((key-history 3 1)) (macro i n c l u d e spc S-,) break
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
