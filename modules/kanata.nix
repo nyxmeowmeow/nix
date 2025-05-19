@@ -58,10 +58,10 @@
   (l    )   l
   (  o    ) o
   (    u  ) u
-  (      ') @magic-key
+  (      x) @magic-key
   (l o    ) S-'
   (  o u  ) +
-  (    u ') S-.
+  (    u x) S-.
 
   (n      ) n
   (  s    ) s
@@ -146,7 +146,7 @@
     ((key-history ] 1)) (macro ;) break
     () rpt break
   )
-  (chord ch ')
+  (chord ch x)
 )
 
 
