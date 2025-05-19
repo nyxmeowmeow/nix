@@ -140,7 +140,7 @@
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
-    ((key-history 3 1)) (macro i n c l u d e) break
+    ((key-history 3 1)) (macro i n c l u d e spc S-, S-. left) break
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
@@ -152,7 +152,6 @@
     ((key-history c 1)) (macro y) break
     ;;((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
-    ((and(key-history p 2) (key-history f 1))) (macro bspc r i n t f S-9 S-' S-' S-0 ; left left left) break
     ((key-history . 1)) (macro ;) break
     ((key-history ] 1)) (macro ;) break
     () rpt break
