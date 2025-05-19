@@ -140,9 +140,7 @@
              (lsft -)) break
     ((key-history 3 1)) (macro i n c l u d e spc) break
     ((key-history o 1)) (macro a) break
-    ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
-    ((key-history e 1)) (macro u) break
     ((key-history ] 1)) (macro ;) break
     () rpt break
   )
