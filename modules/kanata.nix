@@ -136,14 +136,9 @@
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
 
-  ;;magic-key (switch
-    ;;(key-history S-3 1) (macro i n c l u d e spc) break
-    ;;() rpt break
-  ;;)
-magic-key (switch
-    ((key-history y 2)) u break
-    ((key-history y 1)) o break
-    () y break
+  magic-key (switch
+    ((key-history x 1)) (macro i n c l u d e spc) break
+    () rpt break
   )
 
 
