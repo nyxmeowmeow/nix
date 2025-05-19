@@ -139,7 +139,7 @@
   magic-key (switch
     ((key-history lsft 1)) (caps-word-custom 1000 (
              q b f d w p l o u j x n s t c y m h a e i k g v)
-             (-)) break
+             (lsft -)) break
     ((key-history 3 1)) (macro i n c l u d e spc) break
     ((key-history ] 1)) (macro ;) break
     () rpt break
