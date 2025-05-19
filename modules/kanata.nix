@@ -146,7 +146,7 @@
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
     ((key-history w 1)) (macro y) break
-    ((key-history y 1)) (macro p) break
+    ;;((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
     ((key-history ] 1)) (macro ;) break
   ;; sfs stuff
