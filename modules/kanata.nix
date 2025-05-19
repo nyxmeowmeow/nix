@@ -24,7 +24,7 @@
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
+  _   @ch_b @ch_f @ch_d @ch_w _      @magic-key @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _     _      @sym _
@@ -135,6 +135,18 @@
   ch_lp (chord ch S-9)
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
+
+  ;;magic-key (switch
+    ;;(key-history S-3 1) (macro i n c l u d e spc) break
+    ;;() rpt break
+  ;;)
+magic-key (switch
+    ((key-history y 2)) u break
+    ((key-history y 1)) o break
+    () y break
+  )
+
+
 )
         '';
       };
