@@ -152,6 +152,7 @@
     ((key-history c 1)) (macro y) break
     ;;((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
+    ((and(key-history p 2) (key-history f 1))) (macro bspc r i n t f S-9 S-' S-' S-0 ; left left left) break
     ((key-history . 1)) (macro ;) break
     ((key-history ] 1)) (macro ;) break
     () rpt break
