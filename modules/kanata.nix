@@ -14,6 +14,39 @@
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* python */ ''
+(defsrc
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  q     b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  f18   , . k g v    / f15 f16 f17 ; z
+      lmet r lsft    f14 spc
+)
+
+(deflayer default
+  _   _     _     _     _     _      _ _     _      _      _     _
+  _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
+  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
+  S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+                  @lm   _     _      @sym _
+)
+
+(deflayer over
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  q     b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  tab   , . k g v    / 8 9 0 ; z
+      lmet r lsft    enter spc
+)
+
+(deflayer syms
+  f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
+  _  `   S-` _   _   _       _   left down up   right _
+  _  1   2   3   4   _       _   7    8    9    0     rpt-any
+  _  ,   .   _   5   _       _   6    S-9  S-0  ;     _
+             _   _   _       _   _
+)
+
+
 (defchords ch 12
   (b      ) b
   (  f    ) f
@@ -65,41 +98,6 @@
   (    S-9 S-0  ) S-/
   (        S-0 ;) S-1
 )
-
-
-(defsrc
-  esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    ' l o u j x
-  lctrl n s t c y    m h a e i bspc
-  f18   , . k g v    / f15 f16 f17 ; z
-      lmet r lsft    f14 spc
-)
-
-(deflayer default
-  _   _     _     _     _     _      _ _     _      _      _     _
-  _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i rpt-any
-  S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm   _     _      @sym _
-)
-
-(deflayer over
-  esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    ' l o u j x
-  lctrl n s t c y    m h a e i bspc
-  tab   , . k g v    / 8 9 0 ; z
-      lmet r lsft    enter spc
-)
-
-(deflayer syms
-  f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   S-` _   _   _       _   left down up   right _
-  _  1   2   3   4   _       _   7    8    9    0     rpt-any
-  _  ,   .   _   5   _       _   6    S-9  S-0  ;     _
-             _   _   _       _   _
-)
-
-
 
 (defalias
   sym (tap-hold-press 120 120 enter (layer-toggle syms))
