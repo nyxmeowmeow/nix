@@ -140,20 +140,16 @@
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
-    ((key-history 3 1)) (macro i n c l u d e spc) break
+    ((key-history 3 1)) (macro i n c l u d e) break
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
+    ((key-history e 2) (key-history r 1)) (macro e) break
     ((key-history w 1)) (macro y) break
     ;;((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
     ((key-history ] 1)) (macro ;) break
-  ;; sfs stuff
-    ((key-history e 2)) (macro e) break
-    ((key-history g 2)) (macro v) break
-    ((key-history l 2)) (macro m) break
-    ((key-history u 2)) (macro e) break
     () rpt break
   )
 
