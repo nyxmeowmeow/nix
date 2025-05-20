@@ -17,7 +17,7 @@
     trash-cli
     tldr
     btop
-    # google-chrome
+    google-chrome
     # zenity
     # xdg-desktop-portal-termfilechooser
     expect
