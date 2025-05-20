@@ -140,26 +140,37 @@
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
+
+  ;; // #include <
     ((key-history 3 1)) (macro i n c l u d e spc S-,) break
+
+  ;; // sfb
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
+
     ((and(key-history e 2) (key-history r 1))) (macro e) break
     ((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
     ((and(key-history e 2) (key-history v 1))) (macro e) break
+
     ((key-history w 1)) (macro y) break
     ((key-history c 1)) (macro y) break
-    ;;((key-history y 1)) (macro p) break
+    ((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
-    ((key-history . 1)) (macro ;) break
+
+  ;; // non-sfb repeat key for >
+    ((key-history . 1)) (macro S-.) break
+  ;; // non-sfb ; for ]
     ((key-history ] 1)) (macro ;) break
+  ;; // auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
     () rpt break
   )
 
-    rpeat (switch
+  ;; // normal rpt except for ()
+  rpeat (switch
     ((key-history 9 1)) (macro S-9) break
     ((key-history 0 1)) (macro S-0) break
     () rpt break
