@@ -14,6 +14,7 @@
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
+
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
   q     b f d w p    ' l o u j x
