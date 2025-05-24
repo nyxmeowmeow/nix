@@ -20,7 +20,7 @@
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   f18   , . k g v    / f15 f16 f17 ; z
-      lmet r lsft    f14 spc
+      lmet r lsft    f14 spc ralt
 )
 
 (deflayer default
@@ -28,7 +28,7 @@
   _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm   _ @magic-key @sym _
+                  @lm   _ @magic-key @sym _ tab
 )
 
 (deflayer over
@@ -36,7 +36,7 @@
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   tab   , . k g v    / 8 9 0 ; z
-      lmet r lsft    enter spc
+      lmet r lsft    enter spc tab
 )
 
 (deflayer syms
@@ -44,7 +44,7 @@
   _  `   S-` '   '   _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt-any
   _  _   .   _   5   _       _   6    @dcol _    _     _
-             _   _   lsft       _   _
+             _   _   lsft    _   _    _
 )
 
 (defchords ch 12
