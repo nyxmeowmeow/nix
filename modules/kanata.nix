@@ -44,7 +44,7 @@
   _  `   S-` '   '   _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt-any
   _  _   .   _   5   _       _   6    @dcol _    _     _
-             _   _   _       _   _
+             _   _   lsft       _   _
 )
 
 (defchords ch 12
