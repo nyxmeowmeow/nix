@@ -70,7 +70,7 @@
   (      c) c
   (n s    ) [
   (  s t  ) S-[
-  (    t c) esc
+  (    t c) (one-shot-press 300 lsft)
 
   (h      ) h
   (  a    ) a
