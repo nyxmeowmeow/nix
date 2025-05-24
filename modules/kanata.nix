@@ -71,7 +71,7 @@
   (n s    ) [
   (  s t  ) S-[
   (    t c) bspc
-  (  s t c) bspc
+  (  s t c) del
 
   (h      ) h
   (  a    ) a
