@@ -233,8 +233,8 @@
         "SUPER,       g, exec, footclient nvim"
         "SUPER SHIFT, g, exec, footclient nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  g, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
-        "SUPER,  space, exec, walker -s 3 -m applications,calc"
-        "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"
+        "SUPER,   space, exec, walker -s 3 -m applications"
+        "SUPER SHIFT, y, exec, walker -s 3 -m catppuccin"
 
 
         # ", XF86AudioMute,        exec, $scrPath/volumecontrol.sh -o m"

@@ -167,6 +167,8 @@
     ((key-history ] 1)) (macro ;) break
   ;; // auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
+
+    ((key-history = 1)) (macro S-.) break
     () rpt break
   )
 
