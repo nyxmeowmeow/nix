@@ -70,14 +70,14 @@
   (      c) c
   (n s    ) [
   (  s t  ) S-[
-  (    t c) (one-shot-press 300 lsft)
+  (    t c) bspc
+  (  s t c) bspc
 
   (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
-  (h a    ) bspc
-  (h a e  ) del
+  (h a    ) (one-shot-press 300 lsft)
   (  a e  ) S-]
   (    e i) ]
 
@@ -102,8 +102,8 @@
 (defalias
   sym (tap-hold-press 120 120 enter (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
-  lm (tap-hold-press 120 120 tab lmet)
-  ;;col (tap-hold-press 120 120 S-; lctl) 
+  lm (tap-hold-press 120 120 esc lmet)
+  ;;col (tap-hold-press 120 120 S-; lctl)
 
   dcol (macro S-; S-;)
 
