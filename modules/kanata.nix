@@ -158,6 +158,7 @@
 
     ((key-history w 1)) (macro y) break
     ((key-history c 1)) (macro y) break
+    ((key-history p 1)) (macro y) break
     ((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro u s t) break
 
