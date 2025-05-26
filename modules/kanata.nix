@@ -20,7 +20,7 @@
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   f18   , . k g v    / f15 f16 f17 ; z
-      lmet r lsft    f14 spc ralt
+      lmet r lsft    f14 spc rsft ralt
 )
 
 (deflayer default
@@ -28,7 +28,7 @@
   _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm   _ @magic-key @sym _ tab
+                  @lm   _ @magic     @sym _  @rs tab
 )
 
 (deflayer over
@@ -36,15 +36,15 @@
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   tab   , . k g v    / 8 9 0 ; z
-      lmet r lsft    enter spc tab
+      lmet r lsft    enter spc rsft tab
 )
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
   _  `   S-` '   '   _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt-any
-  _  _   .   _   5   _       _   6    @dcol _    _     _
-             _   _   lsft    _   _    _
+  _  _   .   _   5   _       _   6    @dcol _   _     _
+             _   _   lsft    _   _    _    _
 )
 
 (defchords ch 12
@@ -70,14 +70,14 @@
   (      c) c
   (n s    ) [
   (  s t  ) S-[
-  (    t c) bspc
+  (    t c) (one-shot-press 300 lsft)
   (  s t c) del
 
   (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
-  (h a    ) (one-shot-press 300 lsft)
+  (h a    ) (one-shot-press 300 rsft)
   (  a e  ) S-]
   (    e i) ]
 
@@ -103,6 +103,7 @@
   sym (tap-hold-press 120 120 enter (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 esc lmet)
+  rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
 
   dcol (macro S-; S-;)
@@ -137,7 +138,7 @@
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
 
-  magic-key (switch
+  magic (switch
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
@@ -151,7 +152,6 @@
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
 
-    ((and(key-history e 2) (key-history r 1))) (macro e) break
     ((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
     ((and(key-history e 2) (key-history v 1))) (macro e) break

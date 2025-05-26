@@ -13,9 +13,9 @@
 
   boot = {
     loader = {
-    systemd-boot.enable = true;
-    systemd-boot.configurationLimit = 20;
-    efi.canTouchEfiVariables = true;
+      systemd-boot.enable = true;
+      systemd-boot.configurationLimit = 20;
+      efi.canTouchEfiVariables = true;
     };
     initrd.kernelModules = [ "amdgpu" ];
     kernelPackages = pkgs.linuxPackages_zen;
