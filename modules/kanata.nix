@@ -139,6 +139,9 @@
   ch_;  (chord ch ;)
 
   magic (switch
+    ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
+
+
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
