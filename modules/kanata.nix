@@ -140,6 +140,7 @@
 
   magic (switch
     ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
+    ((key-history enter 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
 
 
     ((key-history lsft 1)) (caps-word-custom 1000
