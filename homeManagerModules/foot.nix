@@ -54,7 +54,7 @@
         # find-prev = "Control+h";
         # find-next = "Control+i";
       };
-      tweak.box-drawing-base-thickness = "0.06";
+      tweak.box-drawing-base-thickness = "0.05";
     };
   };
 
