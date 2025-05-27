@@ -70,14 +70,15 @@
   (      c) c
   (n s    ) [
   (  s t  ) S-[
+  (  s   c) S-`
   (    t c) (one-shot-press 300 lsft)
-  (  s t c) del
 
   (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
   (h a    ) (one-shot-press 300 rsft)
+  (h   e  ) del
   (  a e  ) S-]
   (    e i) ]
 
@@ -147,7 +148,7 @@
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
 
-  ;; // #include <
+  ;; // #include
     ((key-history 3 1)) (macro i n c l u d e) break
 
   ;; // sfb
@@ -156,15 +157,18 @@
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
 
+  ;; // sfs
     ((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
     ((and(key-history e 2) (key-history v 1))) (macro e) break
     ((and(key-history s 2) (key-history t 1))) (macro d) break
 
+  ;; // sfb
     ((key-history w 1)) (macro y) break
     ((key-history c 1)) (macro y) break
     ((key-history p 1)) (macro y) break
     ((key-history y 1)) (macro p) break
+
     ((key-history j 1)) (macro u s t) break
 
   ;; // non-sfb repeat key for >
