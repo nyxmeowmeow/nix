@@ -55,6 +55,14 @@
              _   _   _       _   _    _    _
 )
 
+(defvirtualkeys
+  wind (one-shot-press 500 (layer-toggle win))
+  )
+
+(defseq
+  wind (M-S-9)
+  )
+
 (defchords ch 12
   (b      ) b
   (  f    ) f
