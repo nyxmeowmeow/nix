@@ -295,10 +295,10 @@
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
 
-        "SUPER CTRL, h, resizeactive, -70 0"     # left
-        "SUPER CTRL, a, resizeactive, 0 70"      # down
-        "SUPER CTRL, e, resizeactive, 0 -70"     # up
-        "SUPER CTRL, i, resizeactive, 70 0"      # right
+        "SUPER CTRL, h, resizeactive, -40 0"     # left
+        "SUPER CTRL, a, resizeactive, 0 40"      # down
+        "SUPER CTRL, e, resizeactive, 0 -40"     # up
+        "SUPER CTRL, i, resizeactive, 40 0"      # right
       ];
       bindel = [
         ", XF86AudioNext, exec, ddcutil setvcp 10 + 5"
