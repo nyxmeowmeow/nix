@@ -41,10 +41,18 @@
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   S-` '   '   _       _   left down up   right _
+  _  `   S-` '   @wn _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt
   _  _   .   _   5   _       _   6    @dcol _   _     _
              _   _   lsft    _   _    _    _
+)
+
+(deflayer win
+  _  _   _   _   _   _       _   _    _    _    _     _
+  _  _   _   _   _   _       _   _    _    _    _     _
+  _  _   _   _   _   _       _   @wl  _    _    @wr   _
+  _  _   _   _   _   _       _   _    _    _    _     _
+             _   _   _       _   _    _    _
 )
 
 (defchords ch 12
@@ -106,6 +114,7 @@
   lm (tap-hold-press 120 120 esc lmet)
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
+  wn (one-shot-press 500 (layer-toggle win))
 
   dcol (macro S-; S-;)
 
@@ -197,6 +206,9 @@
     ((key-history 0 1)) (macro S-0) break
     () rpt break
   )
+
+  wl (macro M-C-h M-C-h M-C-h M-C-h )
+  wr (macro M-C-i M-C-i M-C-i M-C-i )
 
 )
         '';
