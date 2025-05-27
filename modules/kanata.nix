@@ -207,8 +207,10 @@
     () rpt break
   )
 
-  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h )
-  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i )
+  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h)
+  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
+  wd (macro M-C-a M-C-a M-C-a M-C-a)
+  wu (macro M-C-e M-C-e M-C-e M-C-e)
 
 )
         '';
