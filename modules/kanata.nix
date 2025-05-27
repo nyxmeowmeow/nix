@@ -60,7 +60,7 @@
   )
 
 (defseq
-  wind (M-x M-x)
+  wind (. .)
   )
 
 (defchords ch 12
