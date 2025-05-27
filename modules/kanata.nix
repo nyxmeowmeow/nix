@@ -211,7 +211,8 @@
   wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
   wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
   wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
-  wt (macro M-/ M-C-h M-C-h M-C-h M-C-h M-i M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
+  ;; // split 3 windows into thirds
+  wt (macro M-/ M-C-h M-C-h M-C-h M-C-h M-i M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-i)
 
 )
         '';
