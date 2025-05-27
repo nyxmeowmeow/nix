@@ -7,7 +7,7 @@
     protontricks
     # wev
     # protonup
-    # lutris
+    lutris
     # gimp
     # osu-lazer
     go
