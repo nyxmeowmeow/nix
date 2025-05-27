@@ -210,7 +210,7 @@
   };
 
 
-  home.file.".config/btop/themes/catppuccinmacchiato.theme".text = ''
+  home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
 
     # Main background, empty for terminal default, need to be empty if you want transparent background
     theme[main_bg]=""
@@ -243,16 +243,16 @@
     theme[proc_misc]="#c6a0f6"
 
     # Cpu box outline color
-    theme[cpu_box]="#c6a0f6"
+    theme[cpu_box]="#b7bdf8"
 
     # Memory/disks box outline color
-    theme[mem_box]="#a6da95"
+    theme[mem_box]="#b7bdf8"
 
     # Net up/down box outline color
-    theme[net_box]="#ed8796"
+    theme[net_box]="#b7bdf8"
 
     # Processes box outline color
-    theme[proc_box]="#91d7e3"
+    theme[proc_box]="#b7bdf8"
 
     # Box divider line and small boxes line color
     theme[div_line]="#494d64"
