@@ -54,14 +54,8 @@
   _  _   _   _   _   _       _   _    _    _    _     _
              _   _   _       _   _    _    _
 )
-
-(defvirtualkeys
-  wind (one-shot-press 500 (layer-toggle win))
-  )
-
-(defseq
-  wind (. .)
-  )
+(defseq git-status (g s t))
+(defvirtualkeys git-status (macro g i t spc s t a t u s))
 
 (defchords ch 12
   (b      ) b
