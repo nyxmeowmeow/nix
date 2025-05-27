@@ -54,8 +54,6 @@
   _  _   _   _   _   _       _   _    _    _    _     _
              _   _   _       _   _    _    _
 )
-(defseq git-status (g s t))
-(defvirtualkeys git-status (macro g i t spc s t a t u s))
 
 (defchords ch 12
   (b      ) b
@@ -209,10 +207,10 @@
     () rpt break
   )
 
-  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h)
-  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
-  wd (macro M-C-a M-C-a M-C-a M-C-a)
-  wu (macro M-C-e M-C-e M-C-e M-C-e)
+  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h)
+  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
+  wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
+  wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
 
 )
         '';
