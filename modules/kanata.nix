@@ -148,7 +148,7 @@
              (lsft -)) break
 
   ;; // #include <
-    ((key-history 3 1)) (macro i n c l u d e spc S-,) break
+    ((key-history 3 1)) (macro i n c l u d e) break
 
   ;; // sfb
     ((key-history o 1)) (macro a) break
@@ -176,6 +176,7 @@
 
     ((key-history ; 1)) (macro S-;) break
     ((key-history = 1)) (macro S-.) break
+    ((key-history - 1)) (macro S-.) break
     ((key-history 9 1)) (macro S-9) break
     ((key-history 0 1)) (macro S-0) break
     () rpt break
