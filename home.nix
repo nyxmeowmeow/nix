@@ -1,6 +1,12 @@
 { ... }: {
 
   imports = [
+
+    /* theme */
+    # ./themes/black/black_theme.nix
+    ./themes/macchiato/macchiato_theme.nix
+
+
     ./homeManagerModules/hypr/hyprland.nix
     ./homeManagerModules/hypr/hyprpaper.nix
     ./homeManagerModules/foot.nix
@@ -15,8 +21,6 @@
     ./homeManagerModules/dunst.nix
     ./homeManagerModules/mpv.nix
     ./homeManagerModules/vesktop.nix
-    ./homeManagerModules/gtk.nix
-
   ];
 
   home.username = "meow";
