@@ -54,14 +54,14 @@
   --icon-secondary: var(--subtext) !important;
   --icon-tertiary: #b8c0e099 !important;
   --channels-default: #8e9297 !important;
-  --channeltextarea-background: transparent !important;
-  --channeltextarea-background-hover: transparent !important;
+  --channeltextarea-background: black !important;
+  --channeltextarea-background-hover: black !important;
   --interactive-normal: var(--subtext) !important;
   --interactive-hover: var(--text) !important;
   --interactive-active: var(--text) !important;
   --interactive-muted: #4f545c !important;
-  --card-primary-bg: transparent !important;
-  --card-secondary-bg: transparent !important;
+  --card-primary-bg: black !important;
+  --card-secondary-bg: black !important;
   --message-reacted-background: var(--lavender-trans) !important;
   --message-reacted-border: var(--lavender-trans) !important;
   --message-reacted-text: var(--lavender) !important;
