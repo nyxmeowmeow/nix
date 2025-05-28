@@ -1,7 +1,6 @@
 { ... }: {
 
   imports = [
-
     /* theme */
     ./themes/black/.black_theme.nix
     # ./themes/macchiato/.macchiato_theme.nix
