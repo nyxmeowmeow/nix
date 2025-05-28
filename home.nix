@@ -15,6 +15,8 @@
     ./homeManagerModules/dunst.nix
     ./homeManagerModules/mpv.nix
     ./homeManagerModules/vesktop.nix
+    ./homeManagerModules/gtk.nix
+
   ];
 
   home.username = "meow";

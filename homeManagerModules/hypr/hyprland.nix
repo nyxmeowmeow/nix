@@ -1,38 +1,9 @@
 { pkgs, ... }: {
 
   imports = [
-    ./1.nix
-    # ./2.nix
+    ./hypr_1.nix
+    # ./hypr_2.nix
   ];
-
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Catppuccin-Macchiato-Standard-Lavender-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        variant = "macchiato";
-        accents = [ "lavender" ]; # can specify multiple accents
-        size = "standard"; # compact, standard, large
-        # tweaks = [ "rimless" "black" ];
-      };
-    };
-
-    iconTheme = {
-      # package = pkgs.gnome.adwaita-icon-theme;
-      name = "Tela-circle-dracula";
-    };
-
-    font = {
-      name = "sn pro";
-      size = 11;
-    };
-
-
-    gtk3.extraConfig.gtk-key-theme-name = "Emacs";
-    gtk4.extraConfig.gtk-key-theme-name = "Emacs";
-  };
-
-
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -76,22 +47,8 @@
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
 
 
-      exec = [
-        "gsettings set org.gnome.desktop.interface font-name 'sn pro 10'"
-        "gsettings set org.gnome.desktop.interface document-font-name 'sn pro 10'"
-        "gsettings set org.gnome.desktop.interface monospace-font-name 'Mononoki Nerd Font Mono 9'"
-        "gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'"
-        "gsettings set org.gnome.desktop.interface font-hinting 'full'"
-        # "hyprctl setcursor Bibata-Modern-Classic-Transparent 20"
-        # "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic-Transparent'"
-        # "gsettings set org.gnome.desktop.interface cursor-size 20"
-        "hyprctl setcursor Bibata-Modern-Classic 20"
-        "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'"
-        "gsettings set org.gnome.desktop.interface cursor-size 20"
-        "gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dracula'"
-        "gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Macchiato-Standard-Lavender-Dark'"
-        "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-      ];
+      # exec = [
+      # ];
 
       exec-once = [
         "foot --server"
@@ -107,15 +64,6 @@
         # kanata
         # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
         # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd ~/.config/nata/nata.sh -c config.json'"
-
-        # ncmpcpp
-        "hyprctl dispatch exec '[float;size 986 1200;center;workspace special:music silent] qview ~/nix/stuff/7_ncmpcpp.png' && sleep 3 && hyprctl dispatch exec '[float;size 986 1200;center;workspace special:music silent] foot -c ~/.config/foot/float.ini ncmpcpp'"
-
-        # btop
-        "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] qview ~/nix/stuff/7_btop.png' && sleep 3 && hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] foot -c ~/.config/foot/float.ini btop'"
-
-        # tty-clock
-        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] qview ~/nix/stuff/7_clock.png' && sleep 3 && hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] foot -c ~/.config/foot/float.ini tty-clock -cC 4 -f %a,\\ %d\\ %b\\ %Y'"
 
       ];
 

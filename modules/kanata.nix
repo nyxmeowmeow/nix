@@ -188,6 +188,8 @@
 
   ;; // non-sfb repeat key for >
     ((key-history . 1)) (macro S-.) break
+  ;; // non-sfb for <=
+    ((key-history , 1)) (macro =) break
   ;; // non-sfb ; for ]
     ((key-history ] 1)) (macro ;) break
   ;; // auto ; for {}
