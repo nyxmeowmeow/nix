@@ -140,7 +140,7 @@
 
 .visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026,
 .visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
-  background-color: transparent;
+  background-color: black;
 }
 
 .visual-refresh .selected_b3f026.item_b3f026,
@@ -178,16 +178,16 @@
 /* transparent chat area */
 .visual-refresh .chatContent_f75fb0,
 .visual-refresh.channelTextArea_f75fb0 {
-  background: transparent !important;
+  background: black !important;
 }
 
 /* transparent homepage */
 .visual-refresh .tabBody__133bf {
-  background-color: transparent;
+  background-color: black;
 }
 
 .theme-dark .themed__9293f {
-  background: transparent !important;
+  background: black !important;
 }
 
 /* remove top bar */
@@ -234,16 +234,16 @@
 }
 
 .visual-refresh .scroller_ac6cb0 {
-  background-color: transparent;
+  background-color: black;
 }
 
 .backdrop__78332 {
-  background: transparent !important;
+  background: black !important;
 }
 
 /* transparent ctrl k input bar */
 .input_ac6cb0 {
-  background-color: transparent;
+  background-color: black;
 }
 
 .header__71961 {
@@ -348,7 +348,7 @@
 }
 
 .visual-refresh .outer_bf1984 {
-  background-color: transparent;
+  background-color: black;
 }
 
 
