@@ -62,7 +62,7 @@
         let full_msg = if ($msg | is-empty) {
           $timestamp
         } else {
-          $"($timestamp) ($msg | str join ' ')"
+          $"($msg) ($timestamp | str join ' ')"
         }
         git commit -m $full_msg
       }
