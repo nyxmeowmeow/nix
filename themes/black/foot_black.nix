@@ -18,12 +18,12 @@
         style = "beam";
         blink = "yes";
         unfocused-style = "unchanged";
-        color = "24273a cad3f5";
+        color = "000000 cad3f5";
       };
 
       colors = {
-        alpha = "0.5";
-        background = "24273a";
+        alpha = "1";
+        background = "000000";
         foreground = "cad3f5";
         ## Normal/regular colors (color palette 0-7)
         regular0 = "242424";  # black
@@ -71,12 +71,12 @@
     blink=yes
     blink-rate=500
     unfocused-style=unchanged
-    color=24273a cad3f5
+    color=000000 cad3f5
 
 
     [colors]
-    alpha=0
-    background=24273a
+    alpha=1
+    background=000000
     foreground=cad3f5
     flash=7f7f00
     flash-alpha=0.5
@@ -103,7 +103,7 @@
 
 
     [tweak]
-    box-drawing-base-thickness=0.06
+    box-drawing-base-thickness=0.05
   '';
 
   home.file.".config/foot/blur.ini".text = /* ini */ ''
@@ -118,12 +118,12 @@
     blink=yes
     blink-rate=500
     unfocused-style=unchanged
-    color=24273a cad3f5
+    color=000000 cad3f5
 
 
     [colors]
-    alpha=0.8
-    background=24273a
+    alpha=1
+    background=000000
     foreground=cad3f5
     flash=7f7f00
     flash-alpha=0.5
@@ -150,7 +150,7 @@
 
 
     [tweak]
-    box-drawing-base-thickness=0.06
+    box-drawing-base-thickness=0.05
   '';
 }
 
