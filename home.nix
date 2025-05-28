@@ -7,8 +7,7 @@
     # ./themes/macchiato/macchiato_theme.nix
 
 
-    ./homeManagerModules/hypr/hyprland.nix
-    ./homeManagerModules/hypr/hyprpaper.nix
+    ./homeManagerModules/hyprland.nix
     ./homeManagerModules/nushell.nix
     ./homeManagerModules/starship.nix
     # ./homeManagerModules/yazi.nix

@@ -4,6 +4,7 @@
     ./gtk_black.nix
     ./hyprland_black.nix
     ./foot_black.nix
+    ./hyprpaper_black.nix
 
   ];
 
