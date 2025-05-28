@@ -8,13 +8,12 @@
       splash_offset = 2.0;
 
       preload = [
-        "~/nix/stuff/7_hor.png" 
-        "~/nix/stuff/1_vert.png" 
+        "~/nix/themes/black/wallpapers/1_hor.png" 
       ];
 
       wallpaper = [
-        "DP-1,~/nix/stuff/7_hor.png"
-        "DP-3,~/nix/stuff/1_vert.png"
+        "DP-1, ~/nix/themes/black/wallpapers/1_hor.png" 
+        "DP-3, ~/nix/themes/black/wallpapers/1_hor.png" 
       ];
     };
   };
