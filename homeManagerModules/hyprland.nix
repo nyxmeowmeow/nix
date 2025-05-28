@@ -138,9 +138,9 @@
       bind = [
         "SUPER CTRL SHIFT ALT,   0, exit"  # kill hyprland session
         "SUPER CTRL,  space, fullscreen"
-        "SUPER,       backspace, exec, $scripts/dontkillsteam.sh"
-        "SUPER CTRL,  backspace, exec, hyprctl kill"
-        "SUPER CTRL SHIFT, backspace, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
+        "SUPER,       o, exec, $scripts/dontkillsteam.sh"
+        "SUPER CTRL,  o, exec, hyprctl kill"
+        "SUPER CTRL SHIFT, o, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
         "SUPER,       n, exec, $scripts/swap.sh"
         "SUPER,       slash, togglesplit"
         "SUPER,       m, togglefloating"
@@ -155,9 +155,9 @@
         # TODO: doesnt work using $scripts
         "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)
 
-        "SUPER SHIFT, o, exec, hyprctl dispatch togglegroup"
-        "SUPER,       o, exec, hyprctl dispatch changegroupactive"
-        "SUPER CTRL,  o, exec, hyprctl dispatch lockgroups toggle"
+        "SUPER SHIFT, x, exec, hyprctl dispatch togglegroup"
+        "SUPER,       x, exec, hyprctl dispatch changegroupactive"
+        "SUPER CTRL,  x, exec, hyprctl dispatch lockgroups toggle"
 
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
