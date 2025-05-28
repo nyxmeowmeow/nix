@@ -3,8 +3,8 @@
   imports = [
 
     /* theme */
-    ./themes/black/black_theme.nix
-    # ./themes/macchiato/macchiato_theme.nix
+    ./themes/black/.black_theme.nix
+    # ./themes/macchiato/.macchiato_theme.nix
 
 
     ./homeManagerModules/hyprland.nix
