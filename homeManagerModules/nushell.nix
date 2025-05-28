@@ -198,7 +198,7 @@
 
       cr = "cargo run";
 
-      meow = "echo :3"; # prompt every time
+      meow = "echo :3"; # so silly
 
       # nr = ''
       #   do {

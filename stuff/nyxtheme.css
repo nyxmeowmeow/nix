@@ -8,7 +8,7 @@
   --font-display: mononoki nerd font;
   --font-code: mononoki nerd font, 'mononoki nerd font', monospace;
   --bg-brand: var(--lavender);
-  --background-primary: transparent !important;
+  --background-primary: black !important;
   --background-secondary: transparent !important;
   --background-tertiary: transparent !important;
   --background-accent: transparent !important;
