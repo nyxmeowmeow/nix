@@ -99,7 +99,7 @@
   (    k g) \
 
   (S--          ) S--
-  (    S-9      ) S-9
+  (    S-9      ) @lp
   (        S-0  ) S-0
   (            ;) ;
   (S-- S-9      ) S-3
@@ -117,6 +117,11 @@
   wn (one-shot-press 500 (layer-toggle win))
 
   dcol (macro S-; S-;)
+
+  lp (switch
+    (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
+    () S-9 break
+  )
 
   ch_b (chord ch b)
   ch_f (chord ch f)
@@ -211,7 +216,6 @@
   wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
   wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
   wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
-  ;; // split 3 windows into thirds
   wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-/)
 
 )
