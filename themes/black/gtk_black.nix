@@ -9,6 +9,7 @@
         accents = [ "lavender" ]; # can specify multiple accents
         size = "standard"; # compact, standard, large
         # tweaks = [ "rimless" "black" ];
+        tweaks = [ "black" ];
       };
     };
 
