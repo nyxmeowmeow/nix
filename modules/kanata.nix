@@ -170,6 +170,7 @@
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
+    ((key-history i 1)) (macro x) break
 
   ;; // sfs
     ((and(key-history e 2) (key-history s 1))) (macro e) break

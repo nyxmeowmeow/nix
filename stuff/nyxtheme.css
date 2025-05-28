@@ -69,6 +69,29 @@
   --background-message-hover: transparent !important;
 }
 
+.visual-refresh .wrapper_ef3116 {
+    background-color: black !important;
+}
+.theme-dark .container__37e49 {
+    background: black !important;
+}
+.visual-refresh .scroller__99e7c {
+    background: black !important;
+}
+.visual-refresh .privateChannels__35e86 {
+    background: black;
+}
+.visual-refresh .sidebar_c48ade:after {
+    background: black;
+}
+
+
+
+
+
+
+
+
 /* hide youtube watch together thing */
 .itemContainer__675e5 {
   display: none;
@@ -100,7 +123,7 @@
 }
 
 .replying__5126c {
-  background: transparent;
+  background: black;
 }
 
 
@@ -396,7 +419,6 @@
 
 
 :root {
-
   --rosewater: #f4dbd6;
   --flamingo: #f0c6c6;
   --pink: #f5bde6;
