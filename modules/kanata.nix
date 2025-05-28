@@ -93,13 +93,13 @@
   (,      ) ,
   (  .    ) .
   (    k  ) k
-  (      g) g
+  (      g) @win
   (, .    ) S-7
   (  . k  ) S-\
   (    k g) \
 
   (S--          ) S--
-  (    S-9      ) @lp
+  (    S-9      ) S-9
   (        S-0  ) S-0
   (            ;) ;
   (S-- S-9      ) S-3
@@ -118,9 +118,9 @@
 
   dcol (macro S-; S-;)
 
-  lp (switch
+  win (switch
     (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
-    () S-9 break
+    () g break
   )
 
   ch_b (chord ch b)
