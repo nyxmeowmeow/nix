@@ -55,11 +55,6 @@
         "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "steam -silent"
         "systemctl --user start hyprpolkitagent"
-
-        # kanata
-        # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini sudo kanata -nc /home/meow/.config/kanata/symbols.kbd -p 10000'"
-        # "hyprctl dispatch exec '[workspace special:2 silent] foot -c ~/.config/foot/blur.ini cd ~/.config/nata/nata.sh -c config.json'"
-
       ];
 
       monitor = [
