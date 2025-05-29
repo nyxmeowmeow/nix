@@ -159,11 +159,6 @@
 
 
     ((and
-    (key-history p 7)
-    (key-history r 6)
-    (key-history i 5)
-    (key-history n 4)
-    (key-history t 3)
     (key-history l 2)
     (key-history n 1)
   )) (macro S-1 S-9 S-' S-[ S-] S-' ,) break
