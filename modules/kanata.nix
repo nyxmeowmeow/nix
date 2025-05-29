@@ -158,6 +158,19 @@
     ((key-history enter 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
 
 
+    ((and
+    (key-history p 7)
+    (key-history r 6)
+    (key-history i 5)
+    (key-history n 4)
+    (key-history t 3)
+    (key-history l 2)
+    (key-history n 1)
+  )) (macro S-1 S-9 S-' S-[ S-] S-' ,) break
+
+
+
+
     ((key-history lsft 1)) (caps-word-custom 1000
              (q b f d w p l o u j x n s t c y m h a e i k g v)
              (lsft -)) break
