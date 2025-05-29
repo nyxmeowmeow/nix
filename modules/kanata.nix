@@ -76,19 +76,19 @@
   (  s    ) s
   (    t  ) t
   (      c) c
-  (n s    ) [
+  (n s    ) (one-shot-press 300 lsft)
   (  s t  ) S-[
   (  s   c) S-`
-  (    t c) (one-shot-press 300 lsft)
+  (    t c) [
 
   (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
-  (h a    ) (one-shot-press 300 rsft)
+  (h a    ) ]
   (h   e  ) del
   (  a e  ) S-]
-  (    e i) ]
+  (    e i) (one-shot-press 300 rsft)
 
   (,      ) ,
   (  .    ) .
