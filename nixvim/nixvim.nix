@@ -1,6 +1,8 @@
 { ... }: {
 imports = [
 ./colorscheme.nix
+./options.nix
+./lsp.nix
 ];
 	programs.nixvim = {
 		enable = true;
