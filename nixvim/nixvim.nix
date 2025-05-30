@@ -1,3 +1,4 @@
+{ ... }: {
 programs.nixvim = {
     enable = true;
     colorschemes.catppuccin = {
@@ -8,3 +9,4 @@ programs.nixvim = {
       enable = true;
     };
 };
+}
