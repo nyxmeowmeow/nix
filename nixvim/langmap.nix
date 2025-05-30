@@ -1,7 +1,7 @@
 { ... }: {
 programs.nixvim = {
-extraConfigLua = ''
-
+extraConfigLua = /* lua */ ''
+      print("Hello world!")
 
 local function escape(str)
   -- You need to escape these characters to work correctly
