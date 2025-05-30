@@ -6,14 +6,12 @@ imports = [
 ./telescope.nix
 ./keybinds.nix
 ./langmap.nix
+./lualine.nix
 ];
 
 	programs.nixvim = {
 		enable = true;
 		clipboard.register = "unnamedplus";
-		plugins.lualine = {
-			enable = true;
-		};
 		plugins.web-devicons.enable = true;
 	};
 }
