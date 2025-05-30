@@ -15,28 +15,28 @@ programs.nixvim = {
 	{
 		key = "<C-a>";
 		action = "<C-d>";
-		mode = "n";
+		mode = [ "n" "v" "x" ];
 	}
 	{
 		key = "<C-e>";
 		action = "<C-u>";
-		mode = "n";
+		mode = [ "n" "v" "x" ];
 	}
 	{
 		key = "<C-S>";
 		action = "<cmd>w<cr>";
-		mode = "n";
+		mode = [ "i" "n" "v" "x" ];
 		options.silent = true;
 	}
 	{
 		key = "<leader>h";
 		action = "<cmd>bp<cr>";
-		mode = "n";
+		mode = [ "n" "v" "x" ];
 	}
 	{
 		key = "<leader>l";
 		action = "<cmd>bn<cr>";
-		mode = "n";
+		mode = [ "n" "v" "x" ];
 	}
 	];
 };
