@@ -7,12 +7,13 @@ imports = [
 ./keybinds.nix
 ./langmap.nix
 ];
+
 	programs.nixvim = {
 		enable = true;
-		
-clipboard.register = "unnamedplus";
+		clipboard.register = "unnamedplus";
 		plugins.lualine = {
 			enable = true;
 		};
+		plugins.web-devicons.enable = true;
 	};
-	 }
+}
