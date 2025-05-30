@@ -21,7 +21,10 @@
         truncate_to_repo = true; # truncates directory to root folder if in github repo
       };
 
-      cmd_duration.min_time = 5000;
+      cmd_duration = {
+        min_time = 999999; # 5000
+        format = "[$duration]($style) ";
+      };
 
       hostname.ssh_only = true;
 
