@@ -30,7 +30,7 @@
         regular1 = "F22C86";  # red
         regular2 = "A5E07F";  # green
         regular3 = "EFBA5D";  # yellow
-        regular4 = "6F44F0";  # blue
+        regular4 = "9466ff";  # blue
         regular5 = "DBBFEF";  # magenta
         regular6 = "8bd5ca";  # cyan
         regular7 = "d5e7ff";  # white
