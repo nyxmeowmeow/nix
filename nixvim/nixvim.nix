@@ -3,6 +3,7 @@ imports = [
 ./ui/colorscheme.nix
 ./ui/telescope.nix
 ./ui/lualine.nix
+./ui/noice.nix
 ./options.nix
 ./lsp.nix
 ./keybinds.nix

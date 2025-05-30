@@ -28,6 +28,6 @@ format = {
 };
 
 nui.enable = true;
-nvim-notify.enable = true;
+#nvim-notify.enable = true;
 };
 }
