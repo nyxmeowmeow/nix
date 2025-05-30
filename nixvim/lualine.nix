@@ -33,6 +33,7 @@
 			
 					{
 						__unkeyed-1 = "buffers";
+separator = "";
 						buffers_color = {
 							active = {
 								bg = "#A4A0E8";
