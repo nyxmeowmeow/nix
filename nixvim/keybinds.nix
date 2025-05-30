@@ -8,7 +8,7 @@ globals.mapleader = " ";
         mode = "n";
       }
       {
-        key = "gi";
+        key = "gl";
         action = "$";
         mode = "n";
       }
@@ -17,6 +17,16 @@ globals.mapleader = " ";
         action = "<cmd>w<cr>";
         mode = "n";
 	options.silent = true;
+      }
+      {
+        key = "<leader>h";
+        action = "bp";
+        mode = "n";
+      }
+      {
+        key = "<leader>l";
+        action = "bn";
+        mode = "n";
       }
     ];
 };
