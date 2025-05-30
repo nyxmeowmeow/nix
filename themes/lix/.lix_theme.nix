@@ -6,6 +6,7 @@
     ./hyprland_lix.nix
     ./foot_lix.nix
     ./hyprpaper_lix.nix
+    ./starship_lix.nix
 
   ];
 
