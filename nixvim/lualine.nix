@@ -1,6 +1,15 @@
 { ... }: {
 	programs.nixvim.plugins.lualine = {
 		enable = true;
+
+
+    lazyLoad.settings.event = [
+      "VimEnter"
+      "BufReadPost"
+      "BufNewFile"
+    ];
+
+
 		settings = {
 			icons_enabled = true;
 			always_show_tabline = true;
