@@ -3,8 +3,11 @@
 		plugins.telescope = {
 			enable = true;
 			settings = {
+			defaults = {
+
 				selection_caret = "  ";
 				entry_prefix = "  ";
+			};
 				pickers = {
 					colorscheme = {
 						enable_preview = true;
