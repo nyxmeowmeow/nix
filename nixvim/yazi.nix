@@ -2,8 +2,11 @@
 programs.nixvim = {
 plugins.yazi = {
 enable = true;
-#yazi_floating_window_border = "none";
-#highlight_hovered_buffers_in_same_directory = false;
+settings = {
+
+yazi_floating_window_border = "none";
+highlight_hovered_buffers_in_same_directory = false;
+};
 };
 
 
