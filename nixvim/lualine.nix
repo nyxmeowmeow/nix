@@ -47,6 +47,34 @@
 						};
 					}
 				];
+				lualine_b = [];
+				lualine_c = [];
+				lualine_x = [];
+				lualine_y = [];
+				lualine_z = [
+				"diagnostics"
+				{
+        sources = [ "nvim_diagnostic" "coc" ];
+	sections = [ "error" ];
+
+
+        diagnostics_color = {
+          error = "DiagnosticError";
+          warn = "DiagnosticWarn";
+          info = "DiagnosticInfo";
+          hint = "DiagnosticHint";
+        };
+        symbols = { error = ""; warn = ""; info = ""; hint = ""; };
+        colored = true;
+        update_in_insert = false;
+        always_visible = false;
+
+
+
+
+
+				}
+				];
 			};
 		};
 	};
