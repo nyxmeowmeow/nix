@@ -13,6 +13,16 @@ globals.mapleader = " ";
         mode = "n";
       }
       {
+        key = "<C-a>";
+        action = "<C-d>";
+        mode = "n";
+      }
+      {
+        key = "<C-e>";
+        action = "<C-u>";
+        mode = "n";
+      }
+      {
         key = "<C-S>";
         action = "<cmd>w<cr>";
         mode = "n";
