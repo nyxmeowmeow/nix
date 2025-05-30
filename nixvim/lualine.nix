@@ -34,21 +34,13 @@
 					{
 						__unkeyed-1 = "buffers";
 separator = "";
-						buffers_color = {
-							active = {
-								bg = "#A4A0E8";
-								fg = "#3B224C";
-							};
-							inactive = {
-								bg = "#00000000";
-								fg = "#A4A0E8";
-							};
-						};
 						symbols = {
 							modified = " ";
 							alternate_file = "";
 						};
                         max_length = 1000000;
+
+                        use_mode_colors = true;
 					}
 				];
 				lualine_b = [ "none" ];
