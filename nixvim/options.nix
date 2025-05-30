@@ -1,7 +1,9 @@
 { ... }: {
     programs.nixvim.options = {
   number = true;
-  shiftwidth = 2;
+  shiftwidth = 4;
+  expandtab = true;
+  tabstop = 4;
   relativenumber = true;
   termguicolors = true;
     };
