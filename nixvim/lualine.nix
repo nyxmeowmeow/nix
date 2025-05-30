@@ -1,7 +1,7 @@
 { ... }: {
 		programs.nixvim.plugins.lualine = {
 			enable = true;
-			options = {
+			settings = {
     icons_enabled = true;
 
     theme = {
