@@ -1,4 +1,4 @@
-{ pkgs, zen-browser, ... }: {
+{ pkgs, zen-browser, nixvim, ... }: {
 
   imports = [
     ./hardware-configuration.nix
@@ -7,6 +7,7 @@
     ./modules/stylix.nix
     ./modules/kanata.nix
     ./misc.nix
+    nixvim.nixosModules.nixvim
   ];
 
 

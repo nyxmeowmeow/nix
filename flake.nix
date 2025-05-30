@@ -17,7 +17,7 @@
     };
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, ... }: {
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, ... }: {
 
 
 
@@ -41,7 +41,7 @@
 
       ];
       specialArgs = {
-        inherit zen-browser;
+        inherit zen-browser nixvim;
       };
     };
   };
