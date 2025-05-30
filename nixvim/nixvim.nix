@@ -8,6 +8,7 @@ imports = [
 ./langmap.nix
 ./lualine.nix
 ./misc.nix
+./yazi.nix
 ];
 
 	programs.nixvim = {
