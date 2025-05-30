@@ -1,5 +1,5 @@
 { ... }: {
-	programs.nixvim.options = {
+	programs.nixvim.opts = {
 		number = true;
 		shiftwidth = 4;
 		expandtab = true;

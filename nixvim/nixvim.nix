@@ -7,6 +7,7 @@ imports = [
 ./keybinds.nix
 ./langmap.nix
 ./lualine.nix
+./misc.nix
 ];
 
 	programs.nixvim = {
