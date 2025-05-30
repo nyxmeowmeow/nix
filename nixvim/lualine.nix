@@ -48,6 +48,7 @@ separator = "";
 							modified = " ";
 							alternate_file = "";
 						};
+                        max_length = 1000000;
 					}
 				];
 				lualine_b = [ "none" ];
