@@ -1,11 +1,16 @@
 {
 	programs.nixvim.opts = {
-		number = true;
-		shiftwidth = 4;
-		expandtab = true;
-		tabstop = 4;
-		relativenumber = true;
 		termguicolors = true;
+		number = true;
+		relativenumber = true;
+
+		shiftwidth = 4;
+		tabstop = 4;
+		expandtab = true;
+
+        breakindent = true; # indent wrap
+        breakindentopt = "shift:2";
+
 	};
 	
 }
