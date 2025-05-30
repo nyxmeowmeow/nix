@@ -92,7 +92,7 @@
     libnotify
     playerctl
     yazi
-    neovim
+    #neovim
     stylua
     nixd
     fastfetch
