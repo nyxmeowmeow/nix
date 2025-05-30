@@ -6,7 +6,8 @@ imports = [
 ./ui/noice.nix
 ./options.nix
 ./lsp.nix
-./keymaps.nix
+./keymaps/keymaps.nix
+./keymaps/no_yank_del.nix
 ./langmap.nix
 ./misc.nix
 ./yazi.nix

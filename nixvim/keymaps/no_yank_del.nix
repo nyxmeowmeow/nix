@@ -27,6 +27,7 @@ programs.nixvim = {
 		action = "\"_x";
 		mode = [ "n" "v" "x" ];
     }
-]
+];
+};
 
 }
