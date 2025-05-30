@@ -3,7 +3,7 @@
 		plugins.telescope = {
 			enable = true;
           keymaps = {
-            "<leader><space>" = "find_files";
+            "<leader>f" = "find_files";
           };
       };
 		};
