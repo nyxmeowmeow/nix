@@ -15,12 +15,12 @@
 			always_show_tabline = true;
 
 			theme = {
-				normal = { c = { 
+				normal = { a = { 
 					fg = "#A4A0E8";
 					bg = "#00000000";
 				}; 
 				};
-				inactive = { c = {
+				inactive = { a = {
 					fg = "#A4A0E8";
 					bg = "#00000000";
 				};
