@@ -33,6 +33,7 @@
 
         LineNrAbove.fg = "#886C9C";
         LineNrBelow.fg = "#886C9C";
+        LineNr.fg = "#DBBFEF";
         CursorLineNr.fg = "#DBBFEF";
         CursorLine.bg = "#47345E";
         NoiceCmdlinePopupTitleSearch.fg = "#DBBFEF";
