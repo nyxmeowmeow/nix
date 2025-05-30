@@ -35,7 +35,9 @@ vim.opt.langmap = vim.fn.join({
 
 
 
-vim.cmd([[
+'';
+extraConfigVim = ''
+
 function! RunMacroWithLangremap(registerLetter, count)
     set langremap
     execute "normal " .. a:count .. "@" .. a:registerLetter
@@ -49,7 +51,6 @@ for letter in split('a b c d e f g h i j k l m n o p q r s t u v w x y z')
     \   .. ' <Leader>q' .. letter
     \   .. ' :<C-U>call RunMacroWithLangremap("' .. letter .. '", v:count1)<CR>'
 endfor
-]])
 '';
 };
 }
