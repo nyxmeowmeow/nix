@@ -20,17 +20,17 @@
         {
           type = "os";
           key = "os";
-          keyColor = "#A4A0E8";
+          keyColor = "magenta";
         }
         {
           type = "kernel";
           key = "kn";
-          keyColor = "#A4A0E8";
+          keyColor = "magenta";
         }
         {
           type = "packages";
           key = "pk";
-          keyColor = "#A4A0E8";
+          keyColor = "magenta";
         }
         # {
         #   type = "display";
@@ -40,34 +40,34 @@
         # {
         #   type = "wm";
         #   key = "wm";
-        #   keyColor = "#A4A0E8";
+        #   keyColor = "magenta";
         # }
         {
           type = "command";
           key = "wm";
-          keyColor = "#A4A0E8";
+          keyColor = "magenta";
           text = "echo hyprland";
         }
         # {
         #   type = "terminal";
         #   key = "tm";
-        #   keyColor = "#A4A0E8";
+        #   keyColor = "magenta";
         # }
         {
           type = "command";
           key = "tm";
-          keyColor = "#A4A0E8";
+          keyColor = "magenta";
           text = "echo foot";
         }
         # {
         #   type = "shell";
         #   key = "sh";
-        #   keyColor = "#A4A0E8";
+        #   keyColor = "magenta";
         # }
         {
           type = "command";
           key = "sh";
-          keyColor = "#A4A0E8";
+          keyColor = "magenta";
           text = "echo nushell";
         }
         "break"
