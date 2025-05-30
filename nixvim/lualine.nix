@@ -34,6 +34,16 @@
 					{
 						__unkeyed-1 = "buffers";
 separator = "";
+						buffers_color = {
+							normal = {
+								bg = "#A4A0E8";
+								fg = "#3B224C";
+							};
+							insert = {
+								bg = "#00000000";
+								fg = "#A4A0E8";
+							};
+						};
 						symbols = {
 							modified = " ";
 							alternate_file = "";
