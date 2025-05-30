@@ -29,8 +29,9 @@
 
 			sections = {
 				lualine_a = [
-					"buffers"
+			
 					{
+						__unkeyed-1 = "buffers";
 						buffers_color = {
 							active = {
 								bg = "#A4A0E8";
@@ -52,8 +53,8 @@
 				lualine_x = [ "none" ];
 				lualine_y = [ "none" ];
 				lualine_z = [
-					"diagnostics"
 					{
+						__unkeyed-1 = "diagnostics";
 						sources = [ "nvim_diagnostic" "coc" ];
 						sections = [ "error" ];
 
