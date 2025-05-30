@@ -1,12 +1,12 @@
 {
 imports = [
-./colorscheme.nix
+./ui/colorscheme.nix
+./ui/telescope.nix
+./ui/lualine.nix
 ./options.nix
 ./lsp.nix
-./telescope.nix
 ./keybinds.nix
 ./langmap.nix
-./lualine.nix
 ./misc.nix
 ./yazi.nix
 ];
