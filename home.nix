@@ -6,7 +6,6 @@
     ./themes/lix/.lix_theme.nix
     # ./themes/macchiato/.macchiato_theme.nix
 
-
     ./home_modules/hyprland.nix
     ./home_modules/nushell.nix
     ./home_modules/starship.nix
