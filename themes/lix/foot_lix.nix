@@ -10,7 +10,6 @@
         dpi-aware = "yes";
         shell = "nu";
 
-
         box-drawings-uses-font-glyphs = "no";
       };
 
