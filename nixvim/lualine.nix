@@ -19,12 +19,12 @@ options = {
         section_separators = "";
 			theme = {
 				normal = { a = { 
-					fg = "#00000000";
+					fg = "#3B224C";
 					bg = "#A4A0E8";
 				}; 
 				};
 				insert = { a = { 
-					fg = "#00000000";
+					fg = "#3B224C";
 					bg = "#DBBFEF";
 				}; 
 				};
