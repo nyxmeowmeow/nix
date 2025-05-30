@@ -8,8 +8,12 @@
 		tabstop = 4;
 		expandtab = true;
 
+
+        wrap = true;
+        linebreak = true; # only wrap at whitespace
         breakindent = true; # indent wrap
         breakindentopt = "shift:2";
+        showbreak = "↪ "; 
 
 	};
 	
