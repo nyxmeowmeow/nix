@@ -40,11 +40,12 @@ options = {
 			
 					{
 						__unkeyed-1 = "buffers";
-                        symbols = {
-                            modified = " ";
-                            alternate_file = "";
-                        };
-                        max_length = 150;
+                        separator = " ";
+						symbols = {
+							modified = " ";
+							alternate_file = "";
+						};
+                        max_length = 1000000;
 
                         use_mode_colors = true;
 					}
