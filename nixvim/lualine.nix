@@ -45,7 +45,7 @@ options = {
 							modified = " ";
 							alternate_file = "";
 						};
-                        max_length = 1000000;
+                        max_length = 150;
 
                         use_mode_colors = true;
 					}
