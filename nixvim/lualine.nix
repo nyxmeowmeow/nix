@@ -14,6 +14,7 @@
 			icons_enabled = true;
 			always_show_tabline = true;
 
+options = {
 			theme = {
 				normal = { a = { 
 					fg = "#A4A0E8";
@@ -30,6 +31,7 @@
 					bg = "#00000000";
 				};
 				};
+};
 			};
         component_separators = "";
         section_separators = "";
