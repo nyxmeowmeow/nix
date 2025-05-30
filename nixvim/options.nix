@@ -1,4 +1,4 @@
-{ ... }: {
+{
 	programs.nixvim.opts = {
 		number = true;
 		shiftwidth = 4;

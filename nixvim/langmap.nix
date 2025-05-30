@@ -1,4 +1,4 @@
-{ ... }: {
+{
 programs.nixvim = {
 extraConfigLua = /* lua */ ''
       print("Hello world!")
