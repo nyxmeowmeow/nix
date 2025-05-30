@@ -1,8 +1,6 @@
 { ... }: {
-options = {
-  number = true;
-  shiftwidth = 2;
-  relativenumber = true;
-  termguicolors = true;
-};
+    programs.nixvim.colorschemes.catppuccin = {
+        enable = true;
+        flavour = "macchiato";
+    };
 }
