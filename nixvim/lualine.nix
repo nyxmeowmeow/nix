@@ -3,11 +3,11 @@
 		enable = true;
 
 
-    lazyLoad.settings.event = [
-      "VimEnter"
-      "BufReadPost"
-      "BufNewFile"
-    ];
+    #lazyLoad.settings.event = [
+    #  "VimEnter"
+    #  "BufReadPost"
+    #  "BufNewFile"
+    #];
 
 
 		settings = {
@@ -28,12 +28,12 @@
 			};
 
 			component_separators = {
-				left = "";
-				right = "";
+				left = " ";
+				right = " ";
 			};
 			section_separators = {
-				left = "";
-				right = "";
+				left = " ";
+				right = " ";
 			};
 
 			sections = {
