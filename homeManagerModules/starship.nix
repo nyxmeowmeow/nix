@@ -14,16 +14,11 @@
       add_newline = true;
       continuation_prompt = "  ";
 
-      character = {
-        success_symbol = "[](blue)";
-        error_symbol = "[](red)";
-      };
 
       directory = {
         read_only = " ";
         truncation_length = 10;
         truncate_to_repo = true; # truncates directory to root folder if in github repo
-        style = "bold blue";
       };
 
       cmd_duration.min_time = 5000;

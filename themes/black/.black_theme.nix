@@ -6,6 +6,7 @@
     ./hyprland_black.nix
     ./foot_black.nix
     ./hyprpaper_black.nix
+    ./starship_black.nix
 
   ];
 

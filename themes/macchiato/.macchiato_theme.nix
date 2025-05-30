@@ -6,6 +6,7 @@
     ./hyprland_macchiato.nix
     ./foot_macchiato.nix
     ./hyprpaper_macchiato.nix
+    ./starship_macchiato.nix
 
   ];
 
