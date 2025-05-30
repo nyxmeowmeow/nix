@@ -3,7 +3,7 @@
   programs.starship = {
     settings = {
       character = {
-        success_symbol = "[󰘧](fg)";
+        success_symbol = "[󰘧](purple)";
         error_symbol = "[󰘧](red)";
       };
 
