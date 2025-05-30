@@ -20,6 +20,11 @@
 					bg = "#00000000";
 				}; 
 				};
+				insert = { a = { 
+					fg = "#DBBFEF";
+					bg = "#00000000";
+				}; 
+				};
 				inactive = { a = {
 					fg = "#A4A0E8";
 					bg = "#00000000";
@@ -33,17 +38,7 @@
 			
 					{
 						__unkeyed-1 = "buffers";
-separator = "";
-						buffers_color = {
-							normal = {
-								bg = "#A4A0E8";
-								fg = "#3B224C";
-							};
-							insert = {
-								bg = "#00000000";
-								fg = "#A4A0E8";
-							};
-						};
+                        separator = "";
 						symbols = {
 							modified = " ";
 							alternate_file = "";
