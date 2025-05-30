@@ -8,7 +8,7 @@
       };
 
       directory = {
-        style = "bold";
+        style = "bold #A4A0E8";
       };
       git_metrics.disabled = false;
       git_status = {
