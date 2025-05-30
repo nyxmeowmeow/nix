@@ -5,6 +5,11 @@
 			settings = {
 				selection_caret = "  ";
 				entry_prefix = "  ";
+				pickers = {
+					colorscheme = {
+						enable_preview = true;
+					};
+				};
 			};
 			keymaps = {
 				"<leader>r" = "oldfiles";
