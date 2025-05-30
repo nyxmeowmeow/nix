@@ -20,7 +20,7 @@
         {
           type = "os";
           key = "os";
-          keyColor = "foreground";
+          keyColor = "text";
         }
         {
           type = "kernel";
