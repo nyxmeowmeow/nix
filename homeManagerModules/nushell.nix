@@ -13,10 +13,10 @@
           shape_directory: green
           shape_internalcall: blue
           shape_external: blue
-          shape_externalarg: "#cad3f5"
-          shape_flag: "#cad3f5"
-          shape_keyword: blue
-          shape_pipe: purple_bold
+          shape_externalarg: "#A4A0E8"
+          shape_flag: "#A4A0E8"
+          shape_keyword: "#A4A0E8"
+          shape_pipe: purple
       }
 
 
