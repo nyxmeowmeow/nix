@@ -6,7 +6,7 @@
 	keymaps = [
 	{
 		key = "<leader><space>";
-		action = "builtin.oldfiles";
+		action = "require'telescope.builtin'.find_files{}";
 		mode = "n";
 		lua = true;
 	}
