@@ -34,7 +34,7 @@
         LineNrAbove.fg = "#886C9C";
         LineNrBelow.fg = "#886C9C";
         CursorLineNr.fg = "#DBBFEF";
-        CursorLine.bg = "#886C9C";
+        CursorLine.bg = "#47345E";
         NoiceCmdlinePopupTitleSearch.fg = "#DBBFEF";
         NoiceCmdlinePopupBorderHelp.fg = "#DBBFEF";
         NoiceCmdlinePopupTitleHelp.fg = "#DBBFEF";
@@ -50,7 +50,6 @@
         TelescopeTitle.fg = "#DBBFEF";
         SnacksIndentChunk.fg = "#DBBFEF";
         SnacksIndentScope.fg = "#DBBFEF";
-        AlphaShortcut.fg = "#DBBFEF";
         RenderMarkdownCode.bg = "#3B224C";
         RenderMarkdownBullet.fg = "#A4A0E8";
         RenderMarkdownCodeInline.bg = "#3B224C";
