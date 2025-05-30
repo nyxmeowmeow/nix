@@ -26,20 +26,8 @@
 				};
 				};
 			};
-
-			component_separators = {
-				left = " ";
-				right = " ";
-			};
-        sectionSeparators = {
-          left = "█"; # 
-          right = "█"; # 
-        };
-#			section_separators = {
-#				left = " ";
-#				right = " ";
-#			};
-
+        component_separators = "";
+        section_separators = "";
 			sections = {
 				lualine_a = [
 			
