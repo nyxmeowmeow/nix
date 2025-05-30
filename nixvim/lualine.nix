@@ -15,15 +15,17 @@
 			always_show_tabline = true;
 
 options = {
+        component_separators = "";
+        section_separators = "";
 			theme = {
 				normal = { a = { 
-					fg = "#A4A0E8";
-					bg = "#00000000";
+					fg = "#00000000";
+					bg = "#A4A0E8";
 				}; 
 				};
 				insert = { a = { 
-					fg = "#DBBFEF";
-					bg = "#00000000";
+					fg = "#00000000";
+					bg = "#DBBFEF";
 				}; 
 				};
 				inactive = { a = {
@@ -33,8 +35,6 @@ options = {
 				};
 };
 			};
-        component_separators = "";
-        section_separators = "";
 			sections = {
 				lualine_a = [
 			
