@@ -2,14 +2,9 @@
 	programs.nixvim = {
 		plugins.telescope = {
 			enable = true;
+          keymaps = {
+            "<leader><space>" = "find_files";
+          };
+      };
 		};
-	keymaps = [
-	{
-		key = "<leader><space>";
-		action = "require'telescope.builtin'.find_files{}";
-		mode = "n";
-		lua = true;
-	}
-	];
-	};
 }
