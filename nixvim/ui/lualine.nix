@@ -40,7 +40,7 @@ options = {
 			
 					{
 						__unkeyed-1 = "buffers";
-                        separator = " ";
+                        separator = "";
 						symbols = {
 							modified = " ";
 							alternate_file = "";
