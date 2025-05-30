@@ -12,7 +12,6 @@
     ./homeManagerModules/starship.nix
     # ./homeManagerModules/yazi.nix
     ./homeManagerModules/clipse.nix
-    ./homeManagerModules/fastfetch.nix
     ./homeManagerModules/ncmpcpp.nix
     ./homeManagerModules/btop.nix
     ./homeManagerModules/git.nix
