@@ -30,12 +30,12 @@ programs.nixvim = {
 	}
 	{
 		key = "<leader>h";
-		action = "bp";
+		action = "<cmd>bp<cr>";
 		mode = "n";
 	}
 	{
 		key = "<leader>l";
-		action = "bn";
+		action = "<cmd>bn<cr>";
 		mode = "n";
 	}
 	];
