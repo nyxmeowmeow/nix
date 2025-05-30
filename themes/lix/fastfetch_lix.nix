@@ -109,7 +109,7 @@
           type = "command";
           key = "col";
           keyColor = "magenta";
-          text = "echo Catppuccin Macchiato";
+          text = "echo lix";
         }
         {
           type = "colors";
