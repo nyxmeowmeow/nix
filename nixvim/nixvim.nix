@@ -5,6 +5,7 @@ imports = [
 ./ui/lualine.nix
 ./ui/noice.nix
 ./options.nix
+./diagnostic.nix
 ./lsp.nix
 ./keymaps/keymaps.nix
 ./keymaps/no_yank_del.nix
