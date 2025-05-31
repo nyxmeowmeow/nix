@@ -4,7 +4,11 @@
       enable = true;
       servers = {
         nixd.enable = true;
-        rust-analyzer.enable = true;
+        rust_analyzer = {
+          enable = true;
+          installRustc = false;
+          installCargo = false;
+        };
       };
     };
   };
