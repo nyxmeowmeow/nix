@@ -1,24 +1,24 @@
 {
-	programs.nixvim = {
-		plugins.telescope = {
-			enable = true;
-			settings = {
-			defaults = {
+  programs.nixvim = {
+    plugins.telescope = {
+      enable = true;
+      settings = {
+        defaults = {
 
-				selection_caret = "  ";
-				entry_prefix = "  ";
-			};
-				pickers = {
-					colorscheme = {
-						enable_preview = true;
-					};
-				};
-			};
-			keymaps = {
-				"<leader>r" = "oldfiles";
+          selection_caret = "  ";
+          entry_prefix = "  ";
+        };
+        pickers = {
+          colorscheme = {
+            enable_preview = true;
+          };
+        };
+      };
+      keymaps = {
+        "<leader>r" = "oldfiles";
 
         "<leader>i" = "find_files { cwd = '/home/meow/nix' }";
-			};
-		};
-	};
-	 }
+      };
+    };
+  };
+}
