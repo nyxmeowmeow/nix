@@ -4,7 +4,10 @@
       enable = true;
       servers = {
         nixd.enable = true;
-        hls.enable = true;
+        hls = {
+        enable = true;
+        installGhc = false;
+        };
         clangd.enable = true;
         rust_analyzer = {
           enable = true;
