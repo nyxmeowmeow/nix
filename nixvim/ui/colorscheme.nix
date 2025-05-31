@@ -59,7 +59,7 @@
         RenderMarkdownTableRow.fg = "#DBBFEF";
         RenderMarkdownTableFill.fg = "#DBBFEF";
 #TermCursor.bg = colors.text
-#Character.fg = colors.teal
+Character.fg = "#A4A0E8";
         String.fg = "#A5E07F";
 #Constant.fg = colors.peach
 #FunctionBuiltIn.fg = colors.green
@@ -67,7 +67,7 @@
 #Boolean.fg = colors.peach
 #Float.fg = colors.peach
         Conditional.fg = "#D678B5";
-# Statement.fg = "#DBBFEF";
+Statement.fg = "#DBBFEF";
 # Repeat.fg = "#DBBFEF";
 # Label.fg = "#DBBFEF";
 Keyword.fg = "#D678B5";
