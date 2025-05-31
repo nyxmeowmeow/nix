@@ -91,18 +91,18 @@
 
 
 #"@lsp.type.class".fg = "";
-#"@lsp.type.comment".fg = "";
+"@lsp.type.comment".fg = "#886C9C";
 #"@lsp.type.decorator".fg = "";
-#"@lsp.type.enum".fg = "";
+"@lsp.type.enum".fg = "#D5E7FF";
 "@lsp.type.enumMember".fg = "#A4A0E8";
 #"@lsp.type.event".fg = "";
 #"@lsp.type.function".fg = "";
 #"@lsp.type.interface".fg = "";
 "@lsp.type.keyword".fg = "#D678B5";
-"@lsp.type.macro".fg = "#0000FF";
-#"@constant.macro".fg = "";
-#"@lsp.type.method".fg = "";
-#"@function.method".fg = "";
+"@lsp.type.macro".fg = "#DBBFEF";
+"@constant.macro".fg = "#DBBFEF";
+"@lsp.type.method".fg = "#000000";
+"@function.method".fg = "#00FF00";
 #"@lsp.type.modifier".fg = "";
 #"@type.qualifier".fg = "";
 #"@lsp.type.namespace".fg = "";
