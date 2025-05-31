@@ -3,6 +3,16 @@
     globals.mapleader = " ";
     keymaps = [
     {
+      key = "x";
+      action = "d"; # vanilla d behaviour
+      mode = [ "n" "v" "x" ];
+    }
+    {
+      key = "X";
+      action = "D"; # vanilla D behaviour
+      mode = [ "n" "v" "x" ];
+    }
+    {
       key = "d";
       action = "\"_d";
       mode = [ "n" "v" "x" ];
