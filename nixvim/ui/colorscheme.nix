@@ -108,7 +108,7 @@
         TSOperator.fg = "#DBBFEF";
 #        TSParameter 
 #        TSProperty 
-#        TSPunctDelimiter 
+        TSPunctDelimiter.fg = "#00FF00";
         TSPunctBracket.fg = "#A4A0E8";
         TSPunctSpecial.fg = "#FF0000";
 #        TSTag 
