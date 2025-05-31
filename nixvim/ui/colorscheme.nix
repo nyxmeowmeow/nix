@@ -97,6 +97,7 @@
 "@lsp.type.enumMember".fg = "#A4A0E8";
 #"@lsp.type.event".fg = "";
 "@lsp.type.function".fg = "#D5E7FF";
+"@function.builtin".fg = "#DBBFEF";
 #"@lsp.type.interface".fg = "";
 "@lsp.type.keyword".fg = "#D678B5";
 "@lsp.type.macro".fg = "#DBBFEF";
