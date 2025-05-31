@@ -207,7 +207,7 @@
     ((key-history ; 1)) (macro S-;) break
     ((key-history = 1)) (macro S-.) break
     ((key-history - 1)) (macro S-.) break
-    ((key-history 9 1)) (macro S-9) break
+    ((key-history 9 1)) (macro S-') break
     ((key-history 0 1)) (macro S-0) break
     () rpt break
   )
