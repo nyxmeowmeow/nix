@@ -61,7 +61,7 @@
 #TermCursor.bg = colors.text
 Character.fg = "#A4A0E8";
         String.fg = "#A5E07F";
-#Constant.fg = colors.peach
+Constant.fg = "#C78DFC";
 #FunctionBuiltIn.fg = colors.green
 #Number.fg = colors.peach
 #Boolean.fg = colors.peach
