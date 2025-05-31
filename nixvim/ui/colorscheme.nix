@@ -113,6 +113,10 @@
 "Operator".fg = "#DBBFEF";
 "Delimiter".fg = "#A4A0E8";
 #"@lsp.type.parameter".fg = "";
+"@paramater".fg = "#A4A0E8";
+"@property".fg = "#D5E7FF";
+"@module".fg = "#DBBFEF";
+
 #"@lsp.type.property".fg = "";
 "@lsp.type.regexp".fg = "#FF0000";
 "@lsp.type.string".fg = "#A5E07F";
