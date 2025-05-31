@@ -59,35 +59,71 @@
         RenderMarkdownTableRow.fg = "#DBBFEF";
         RenderMarkdownTableFill.fg = "#DBBFEF";
 #TermCursor.bg = colors.text
-Character.fg = "#A4A0E8";
+        Character.fg = "#A4A0E8";
         String.fg = "#A5E07F";
-Constant.fg = "#C78DFC";
+        Constant.fg = "#C78DFC";
 #FunctionBuiltIn.fg = colors.green
 #Number.fg = colors.peach
 #Boolean.fg = colors.peach
 #Float.fg = colors.peach
         Conditional.fg = "#D678B5";
-Statement.fg = "#DBBFEF";
+        Statement.fg = "#DBBFEF";
 # Repeat.fg = "#DBBFEF";
 # Label.fg = "#DBBFEF";
-Keyword.fg = "#D678B5";
+        Keyword.fg = "#D678B5";
 # Exception.fg = "#DBBFEF";
 # Include.fg = "#DBBFEF";
 # PreProc.fg = "#DBBFEF";
 # Define.fg = "#DBBFEF";
-Macro.fg = "#DBBFEF";
+        Macro.fg = "#DBBFEF";
 # PreCondit.fg = "#DBBFEF";
 # StorageClass.fg = "#DBBFEF";
 # Type.fg = "#D5E7FF";
 # Structure.fg = "#DBBFEF";
 # Typedef.fg = "#DBBFEF";
 # Tag.fg = "#DBBFEF";
-Special.fg = "#DBBFEF";
-SpecialChar.fg = "#FF0000";
-# SpecialComment.fg = "#DBBFEF";
+        Special.fg = "#DBBFEF";
+        SpecialChar.fg = "#FF0000";
+        SpecialComment.fg = "#886C9C";
 # Debug.fg = "#DBBFEF";
 # Ignore.fg = "#DBBFEF";
-        };
-};
-};
+
+        TSComment.fg = "#886C9C";
+#        TSConstant 
+#        TSConstBuiltin 
+#        TSConstMacro 
+#        TSConstructor 
+#        TSError 
+#        TSException 
+#        TSField 
+#        TSFunction 
+#        TSFuncBuiltin 
+#        TSFuncMacro 
+#        TSInclude 
+#        TSKeyword 
+#        TSLabel 
+#        TSMethod 
+#        TSNamespace 
+#        TSOperator 
+#        TSParameter 
+#        TSProperty 
+#        TSPunctDelimiter 
+#        TSPunctBracket 
+#        TSPunctSpecial 
+#        TSTag 
+#        TSText 
+#        TSType 
+#        TSVariable 
+#        TSVariableBuiltin 
+
+
+
+
+
+
+
+
+      };
+    };
+  };
 }
