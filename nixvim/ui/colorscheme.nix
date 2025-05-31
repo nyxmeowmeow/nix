@@ -82,6 +82,7 @@
 # Structure.fg = "#DBBFEF";
 # Typedef.fg = "#DBBFEF";
 # Tag.fg = "#DBBFEF";
+        Comment.fg = "#886C9C";
         Special.fg = "#DBBFEF";
         SpecialChar.fg = "#FF0000";
         SpecialComment.fg = "#886C9C";
@@ -104,15 +105,15 @@
 #        TSLabel 
 #        TSMethod 
 #        TSNamespace 
-#        TSOperator 
+        TSOperator.fg = "#DBBFEF";
 #        TSParameter 
 #        TSProperty 
 #        TSPunctDelimiter 
-#        TSPunctBracket 
-#        TSPunctSpecial 
+        TSPunctBracket.fg = "#A4A0E8";
+        TSPunctSpecial.fg = "#FF0000";
 #        TSTag 
-#        TSText 
-#        TSType 
+        TSText.fg = "#A4A0E8";
+        TSType.fg = "#D5E7FF";
 #        TSVariable 
 #        TSVariableBuiltin 
 
