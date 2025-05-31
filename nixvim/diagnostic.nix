@@ -1,5 +1,5 @@
 {
-programs.nixvim.plugins.tiny-inline-diagnostic = {
-enable = true;
-};
+    programs.nixvim.plugins.tiny-inline-diagnostic = {
+        enable = true;
+    };
 }
