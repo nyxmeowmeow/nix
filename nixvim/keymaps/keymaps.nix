@@ -4,7 +4,7 @@
     keymaps = [
     {
       key = "<esc>";
-      action = "<cmd>nohlsearch<R>";
+      action = "<cmd>nohlsearch<cr>";
       mode = "n";
     }
     {

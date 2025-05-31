@@ -89,34 +89,34 @@
 # Debug.fg = "#DBBFEF";
 # Ignore.fg = "#DBBFEF";
 
-        TSComment.fg = "#886C9C";
-        TSConstan.bg = "#FF0000";
-        TSConstBuilti.bg = "#FF0000";
-        TSConstMacr.bg = "#FF0000";
-        TSConstructo.bg = "#FF0000";
-        TSErro.bg = "#FF0000";
-        TSExceptio.bg = "#FF0000";
-        TSFiel.bg = "#FF0000";
-        TSFunctio.bg = "#FF0000";
-        TSFuncBuilti.bg = "#FF0000";
-        TSFuncMacr.bg = "#FF0000";
-        TSInclud.bg = "#FF0000";
-        TSKeywor.bg = "#FF0000";
-        TSLabe.bg = "#FF0000";
-        TSMetho.bg = "#FF0000";
-        TSNamespac.bg = "#FF0000";
-        TSOperator.fg = "#DBBFEF";
-#        TSParameter 
-#        TSProperty 
-        TSPunctDelimiter.fg = "#00FF00";
-        TSPunctBracket.fg = "#A4A0E8";
-        TSPunctSpecial.fg = "#FF0000";
-#        TSTag 
-        TSText.fg = "#A4A0E8";
-        TSType.fg = "#D5E7FF";
-#        TSVariable 
-#        TSVariableBuiltin 
 
+"@lsp.type.class".fg = "#FFFFFF";
+"@lsp.type.comment".fg = "#FFFFFF";
+"@lsp.type.decorator".fg = "#FFFFFF";
+"@lsp.type.enum".fg = "#FFFFFF";
+"@lsp.type.enumMember".fg = "#FFFFFF";
+"@lsp.type.event".fg = "#FFFFFF";
+"@lsp.type.function".fg = "#FFFFFF";
+"@lsp.type.interface".fg = "#FFFFFF";
+"@lsp.type.keyword".fg = "#FFFFFF";
+"@lsp.type.macro".fg = "#FFFFFF";
+"@constant.macro".fg = "#FFFFFF";
+"@lsp.type.method".fg = "#FFFFFF";
+"@function.method".fg = "#FFFFFF";
+"@lsp.type.modifier".fg = "#FFFFFF";
+"@type.qualifier".fg = "#FFFFFF";
+"@lsp.type.namespace".fg = "#FFFFFF";
+"@lsp.type.number".fg = "#FFFFFF";
+"@lsp.type.operator".fg = "#FFFFFF";
+"@lsp.type.parameter".fg = "#FFFFFF";
+"@lsp.type.property".fg = "#FFFFFF";
+"@lsp.type.regexp".fg = "#FFFFFF";
+"@lsp.type.string".fg = "#FFFFFF";
+"@lsp.type.struct".fg = "#FFFFFF";
+"@lsp.type.type".fg = "#FFFFFF";
+"@lsp.type.typeParameter".fg = "#FFFFFF";
+"@type.definition".fg = "#FFFFFF";
+"@lsp.type.variable".fg = "#FFFFFF";
 
 
 
