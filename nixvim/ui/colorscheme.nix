@@ -90,33 +90,33 @@
 # Ignore.fg = "#DBBFEF";
 
 
-"@lsp.type.class".fg = "#FFFFFF";
-"@lsp.type.comment".fg = "#FFFFFF";
-"@lsp.type.decorator".fg = "#FFFFFF";
-"@lsp.type.enum".fg = "#FFFFFF";
-"@lsp.type.enumMember".fg = "#FFFFFF";
-"@lsp.type.event".fg = "#FFFFFF";
-"@lsp.type.function".fg = "#FFFFFF";
-"@lsp.type.interface".fg = "#FFFFFF";
-"@lsp.type.keyword".fg = "#FFFFFF";
-"@lsp.type.macro".fg = "#FFFFFF";
-"@constant.macro".fg = "#FFFFFF";
-"@lsp.type.method".fg = "#FFFFFF";
-"@function.method".fg = "#FFFFFF";
-"@lsp.type.modifier".fg = "#FFFFFF";
-"@type.qualifier".fg = "#FFFFFF";
-"@lsp.type.namespace".fg = "#FFFFFF";
-"@lsp.type.number".fg = "#FFFFFF";
-"@lsp.type.operator".fg = "#FFFFFF";
-"@lsp.type.parameter".fg = "#FFFFFF";
-"@lsp.type.property".fg = "#FFFFFF";
-"@lsp.type.regexp".fg = "#FFFFFF";
-"@lsp.type.string".fg = "#FFFFFF";
-"@lsp.type.struct".fg = "#FFFFFF";
-"@lsp.type.type".fg = "#FFFFFF";
-"@lsp.type.typeParameter".fg = "#FFFFFF";
-"@type.definition".fg = "#FFFFFF";
-"@lsp.type.variable".fg = "#FFFFFF";
+#"@lsp.type.class".fg = "";
+#"@lsp.type.comment".fg = "";
+#"@lsp.type.decorator".fg = "";
+#"@lsp.type.enum".fg = "";
+"@lsp.type.enumMember".fg = "#A4A0E8";
+#"@lsp.type.event".fg = "";
+#"@lsp.type.function".fg = "";
+#"@lsp.type.interface".fg = "";
+"@lsp.type.keyword".fg = "#D678B5";
+"@lsp.type.macro".fg = "#0000FF";
+#"@constant.macro".fg = "";
+#"@lsp.type.method".fg = "";
+#"@function.method".fg = "";
+#"@lsp.type.modifier".fg = "";
+#"@type.qualifier".fg = "";
+#"@lsp.type.namespace".fg = "";
+"@lsp.type.number".fg = "#EFBA5D";
+"@lsp.type.operator".fg = "#DBBFEF";
+#"@lsp.type.parameter".fg = "";
+#"@lsp.type.property".fg = "";
+"@lsp.type.regexp".fg = "#FF0000";
+"@lsp.type.string".fg = "#A5E07F";
+#"@lsp.type.struct".fg = "";
+"@lsp.type.type".fg = "#D5E7FF";
+#"@lsp.type.typeParameter".fg = "";
+"@type.definition".fg = "#FF00FF";
+"@lsp.type.variable".fg = "#A4A0E8";
 
 
 
