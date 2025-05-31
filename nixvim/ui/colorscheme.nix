@@ -90,29 +90,32 @@
 # Ignore.fg = "#DBBFEF";
 
 
-#"@lsp.type.class".fg = "";
+"@lsp.type.class".fg = "#D5E7FF";
 "@lsp.type.comment".fg = "#886C9C";
 #"@lsp.type.decorator".fg = "";
 "@lsp.type.enum".fg = "#D5E7FF";
 "@lsp.type.enumMember".fg = "#A4A0E8";
 #"@lsp.type.event".fg = "";
-#"@lsp.type.function".fg = "";
+"@lsp.type.function".fg = "#D5E7FF";
 #"@lsp.type.interface".fg = "";
 "@lsp.type.keyword".fg = "#D678B5";
 "@lsp.type.macro".fg = "#DBBFEF";
 "@constant.macro".fg = "#DBBFEF";
-"@lsp.type.method".fg = "#000000";
+"@lsp.type.method".fg = "#D5E7FF";
 "@function.method".fg = "#00FF00";
 #"@lsp.type.modifier".fg = "";
 #"@type.qualifier".fg = "";
 #"@lsp.type.namespace".fg = "";
 "@lsp.type.number".fg = "#EFBA5D";
 "@lsp.type.operator".fg = "#DBBFEF";
+"@operator".fg = "#DBBFEF";
+"Operator".fg = "#DBBFEF";
+"Delimiter".fg = "#A4A0E8";
 #"@lsp.type.parameter".fg = "";
 #"@lsp.type.property".fg = "";
 "@lsp.type.regexp".fg = "#FF0000";
 "@lsp.type.string".fg = "#A5E07F";
-#"@lsp.type.struct".fg = "";
+"@lsp.type.struct".fg = "#D5E7FF";
 "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
 "@type.definition".fg = "#FF00FF";
