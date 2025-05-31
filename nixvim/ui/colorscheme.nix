@@ -90,21 +90,21 @@
 # Ignore.fg = "#DBBFEF";
 
         TSComment.fg = "#886C9C";
-#        TSConstant 
-#        TSConstBuiltin 
-#        TSConstMacro 
-#        TSConstructor 
-#        TSError 
-#        TSException 
-#        TSField 
-#        TSFunction 
-#        TSFuncBuiltin 
-#        TSFuncMacro 
-#        TSInclude 
-#        TSKeyword 
-#        TSLabel 
-#        TSMethod 
-#        TSNamespace 
+        TSConstan.bg = "#FF0000";
+        TSConstBuilti.bg = "#FF0000";
+        TSConstMacr.bg = "#FF0000";
+        TSConstructo.bg = "#FF0000";
+        TSErro.bg = "#FF0000";
+        TSExceptio.bg = "#FF0000";
+        TSFiel.bg = "#FF0000";
+        TSFunctio.bg = "#FF0000";
+        TSFuncBuilti.bg = "#FF0000";
+        TSFuncMacr.bg = "#FF0000";
+        TSInclud.bg = "#FF0000";
+        TSKeywor.bg = "#FF0000";
+        TSLabe.bg = "#FF0000";
+        TSMetho.bg = "#FF0000";
+        TSNamespac.bg = "#FF0000";
         TSOperator.fg = "#DBBFEF";
 #        TSParameter 
 #        TSProperty 
