@@ -84,7 +84,7 @@
 # Tag.fg = "#DBBFEF";
         Comment.fg = "#886C9C";
         Special.fg = "#DBBFEF";
-        SpecialChar.fg = "#FF0000";
+        SpecialChar.fg = "#DBBFEF";
         SpecialComment.fg = "#886C9C";
 # Debug.fg = "#DBBFEF";
 # Ignore.fg = "#DBBFEF";
