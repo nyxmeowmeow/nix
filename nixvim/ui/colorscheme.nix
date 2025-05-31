@@ -30,7 +30,7 @@
         pink = "#DBBFEF";
       };
       highlight_overrides.all = {
-
+        MatchParen = { fg = "#F22C86"; bg = "None"; };
         LineNrAbove.fg = "#886C9C";
         LineNrBelow.fg = "#886C9C";
         LineNr.fg = "#DBBFEF";
