@@ -9,7 +9,7 @@
     tabstop = 2;
     expandtab = true;
 
-    smartcase = true; # ignore case for search unless uppercase
+    ignorecase = true;
 
 
     wrap = true;
