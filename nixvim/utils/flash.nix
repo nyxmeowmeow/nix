@@ -1,7 +1,7 @@
 {
   programs.nixvim.plugins.flash = {
     enable = true;
-    options = {
+    settings = {
       labels = "nisetachr";
 
     };
