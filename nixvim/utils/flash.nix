@@ -3,6 +3,7 @@
   plugins.flash = {
     enable = true;
     settings = {
+    label.uppercase = false;
       labels = "nisetachr";
       prompt = {
         win_config.col = 1000;
