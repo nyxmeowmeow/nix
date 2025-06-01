@@ -195,6 +195,7 @@
 
     ((key-history j 1)) (macro u s t) break
 
+    ((key-history 1 1)) (macro [) break
   ;; // non-sfb repeat key for >
     ((key-history . 1)) (macro S-.) break
   ;; // non-sfb for <=
@@ -204,6 +205,7 @@
   ;; // auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
 
+    ((key-history \ 1)) (macro n) break
     ((key-history ; 1)) (macro S-;) break
     ((key-history = 1)) (macro S-.) break
     ((key-history - 1)) (macro S-.) break
@@ -215,7 +217,7 @@
   ;; // normal rpt except for syms
   rpeat (switch
     ((key-history , 1)) (macro S-,) break
-    ((key-history \ 1)) (macro n) break
+    ((key-history \ 1)) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break
     ((key-history 7 1)) (macro S-7) break
     ((key-history 9 1)) (macro S-9) break
