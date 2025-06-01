@@ -1,11 +1,18 @@
 {
-  programs.nixvim.plugins.flash = {
+  programs.nixvim = {
+  plugins.flash = {
     enable = true;
     settings = {
       labels = "nisetachr";
-      keymaps = {
-      "<cr>" = "Jump";
-      };
     };
+  };
+    keymaps = [
+    {
+      key = "<cr>";
+      action = "function() require('flash').jump() end";
+      mode = [ "n" "v" "x" ];
+      lua = true;
+    }
+    ];
   };
 }
