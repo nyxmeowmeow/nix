@@ -30,6 +30,12 @@
         pink = "#DBBFEF";
       };
       highlight_overrides.all = {
+        FlashMatch.fg = "#DBBFEF";
+        FlashCurrent.fg = "#D678B5";
+        FlashLabel.fg = "#F22C86";
+
+
+
         MatchParen = { fg = "#F22C86"; bg = "None"; };
         LineNrAbove.fg = "#886C9C";
         LineNrBelow.fg = "#886C9C";

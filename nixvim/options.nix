@@ -1,12 +1,15 @@
 {
   programs.nixvim.opts = {
     termguicolors = true;
+
     number = true;
     relativenumber = true;
 
     shiftwidth = 2;
     tabstop = 2;
     expandtab = true;
+
+    smartcase = true; # ignore case for search unless uppercase
 
 
     wrap = true;
