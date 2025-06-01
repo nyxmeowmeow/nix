@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       labels = "nisetachr";
-      prompt.enable = false;
+      prompt.win_config.col = 1000;
     };
   };
     keymaps = [
