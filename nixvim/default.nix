@@ -10,6 +10,7 @@
     ./utils/diagnostic.nix
     ./utils/flash.nix
     ./utils/lsp.nix
+    ./utils/scope.nix
     ./utils/yazi.nix
     ./langmap.nix
     ./misc.nix
