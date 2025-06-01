@@ -8,6 +8,7 @@
     ./ui/noice.nix
     ./ui/telescope.nix
     ./utils/diagnostic.nix
+    ./utils/flash.nix
     ./utils/lsp.nix
     ./utils/yazi.nix
     ./langmap.nix
