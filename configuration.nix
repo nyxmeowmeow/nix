@@ -7,7 +7,7 @@
     ./modules/stylix.nix
     ./modules/kanata.nix
     ./misc.nix
-    ./nixvim/nixvim.nix
+    ./nixvim/default.nix
     nixvim.nixosModules.nixvim
   ];
 
