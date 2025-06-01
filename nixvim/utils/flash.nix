@@ -4,7 +4,7 @@
     settings = {
       labels = "nisetachr";
       keymaps = {
-      "<cr>" = "function() require('flash').jump() end";
+      "<cr>" = "Jump";
       };
     };
   };
