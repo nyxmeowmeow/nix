@@ -8,8 +8,7 @@
       };
 
       nix_shell = {
-      enable = true;
-      symbol = "";
+        symbol = "";
       };
 
       directory = {
