@@ -58,7 +58,7 @@
         "hyprctl dispatch exec '[float;size 1600 1000;center;workspace special:btop silent] foot btop'"
 
         # tty-clock
-        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] foot tty-clock -cC 4 -f %a,\\ %d\\ %b\\ %Y'"
+        "hyprctl dispatch exec '[float;size 968 526;center;workspace special:clock silent] foot tty-clock -cC 5 -f %a,\\ %d\\ %b\\ %Y'"
       ];
 
     };
