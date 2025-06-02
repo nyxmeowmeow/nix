@@ -14,19 +14,19 @@
     theme[hi_fg]="#D678B5"
 
     # Background color of selected item in processes box
-    theme[selected_bg]="#886C9C"
+    theme[selected_bg]="#5A3D6E"
 
     # Foreground color of selected item in processes box
     theme[selected_fg]="#DBBFEF"
 
     # Color of inactive/disabled text
-    theme[inactive_fg]="#6e738d"
+    theme[inactive_fg]="#A4A0E8"
 
     # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
     theme[graph_text]="#DBBFEF"
 
     # Background color of the percentage meters
-    theme[meter_bg]="#886C9C"
+    theme[meter_bg]="#5A3D6E"
 
     # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
     theme[proc_misc]="#c6a0f6"
@@ -62,29 +62,29 @@
     theme[free_end]="#D678B5"
 
     # Mem/Disk cached meter
-    theme[cached_start]="#b1f0fd"
-    theme[cached_mid]="#8be9fd"
-    theme[cached_end]="#26d7fd"
+    theme[cached_start]="#D5E7FF"
+    theme[cached_mid]="#D5E7FF"
+    theme[cached_end]="#D5E7FF"
 
     # Mem/Disk available meter
-    theme[available_start]="#ffd4a6"
-    theme[available_mid]="#ffb86c"
-    theme[available_end]="#ff9c33"
+    theme[available_start]="#E3C0A8"
+    theme[available_mid]="#E3C0A8"
+    theme[available_end]="#E3C0A8"
 
     # Mem/Disk used meter
-    theme[used_start]="#96faaf"
-    theme[used_mid]="#50fa7b"
-    theme[used_end]="#0dfa49"
+    theme[used_start]="#A5E07F"
+    theme[used_mid]="#A5E07F"
+    theme[used_end]="#A5E07F"
 
     # Download graph colors
-    theme[download_start]="#bd93f9"
-    theme[download_mid]="#50fa7b"
-    theme[download_end]="#8be9fd"
+    theme[download_start]="#D678B5"
+    theme[download_mid]="#D678B5"
+    theme[download_end]="#D678B5"
 
     # Upload graph colors
-    theme[upload_start]="#8c42ab"
-    theme[upload_mid]="#ff79c6"
-    theme[upload_end]="#ff33a8"
+    theme[upload_start]="#C78DFC"
+    theme[upload_mid]="#C78DFC"
+    theme[upload_end]="#C78DFC"
 
     # Process box color gradient for threads, mem and cpu usage
     theme[process_start]="#A4A0E8"
