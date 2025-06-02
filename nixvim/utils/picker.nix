@@ -16,7 +16,7 @@
         };
 
         keymaps = {
-          "<leader>r" = "snacks picker";
+          "<leader>r" = "picker";
         };
 
 
@@ -24,19 +24,19 @@
       };
     };
 
-    keymaps = [
-    {
-      key = "<leader>r";
-      action = "Snacks.picker()";
-      mode = [ "n" "v" "x" ];
-      lua = true;
-    }
-    {
-      key = "<leader><space>";
-      action = "Snacks.picker.buffers()";
-      mode = [ "n" "v" "x" ];
-      lua = true;
-    }
-    ];
+#    keymaps = [
+#    {
+#      key = "<leader>r";
+#      action = "Snacks.picker()";
+#      mode = [ "n" "v" "x" ];
+#      lua = true;
+#    }
+#    {
+#      key = "<leader><space>";
+#      action = "Snacks.picker.buffers()";
+#      mode = [ "n" "v" "x" ];
+#      lua = true;
+#    }
+#    ];
   };
 }
