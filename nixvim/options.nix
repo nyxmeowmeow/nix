@@ -10,6 +10,7 @@
     expandtab = true;
 
     ignorecase = true;
+    smartcase = true;
 
 
     wrap = true;
