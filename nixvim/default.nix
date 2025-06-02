@@ -4,6 +4,7 @@
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
     ./utils/splitjoin.nix
+    ./utils/comment.nix
     ./langmap.nix
     ./misc.nix
     ./nixvim.nix
