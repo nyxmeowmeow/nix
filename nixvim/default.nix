@@ -10,7 +10,7 @@
     ./utils/diagnostic.nix
     ./utils/flash.nix
     ./utils/lsp.nix
-    ./utils/scope.nix
+    ./utils/indentscope.nix
     ./utils/yazi.nix
     ./langmap.nix
     ./misc.nix
