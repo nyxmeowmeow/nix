@@ -1,13 +1,16 @@
 {
   programs.nixvim = {
-    plugins.mini.modules.splitjoin.enable = true;
-    keymaps = [
-    {
-      key = "ga";
-      action = "MiniSplitjoin.toggle()";
-      mode = [ "n" "v" "x" ];
-      lua = true;
-    }
-    ];
+    plugins.mini.modules.comment = {
+      enable = true;
+      settings = {
+        ignore_blank_line = true;
+      };
+      keymaps = {
+        comment = "x";
+        comment_line = "X";
+        comment_visual = "x";
+        textobject = "x";
+      };
+    };
   };
 }

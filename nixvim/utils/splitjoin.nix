@@ -1,6 +1,6 @@
 {
   programs.nixvim = {
-    plugins.mini.splitjoin.pairs.enable = true;
+    plugins.mini.modules.splitjoin.pairs.enable = true;
     keymaps = [
     {
       key = "ga";
