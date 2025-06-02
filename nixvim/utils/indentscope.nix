@@ -6,7 +6,7 @@
           draw = {
               delay = 100,
           },
-          symbol = "│";
+          symbol = "│"; -- ⎸
       })
     '';
 #    plugins.mini-indentscope = {

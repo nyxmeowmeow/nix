@@ -8,6 +8,10 @@
         treesitter = true;
         gitsigns = true;
         noice = true;
+        mini = {
+        enable = true;
+        indentscope_color = "#886C9C";
+        };
 
       };
       no_italic = false;
