@@ -6,7 +6,8 @@
     ./ui/colorscheme.nix
     ./ui/lualine.nix
     ./ui/noice.nix
-    ./ui/telescope.nix
+    #./ui/telescope.nix
+    ./ui/picker.nix
     ./utils/diagnostic.nix
     ./utils/flash.nix
     ./utils/lsp.nix
