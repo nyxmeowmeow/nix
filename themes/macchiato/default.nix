@@ -1,7 +1,7 @@
 { ... }: {
 
   imports = [
-  ./btop.nix
+  ./btop_macchiato.nix
     ./gtk_macchiato.nix
     ./fastfetch_macchiato.nix
     ./hyprland_macchiato.nix
