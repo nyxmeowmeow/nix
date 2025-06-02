@@ -15,28 +15,22 @@
           git.enable = false;
         };
 
-        keymaps = {
-          "<leader>r" = "picker";
-        };
-
 
 
       };
     };
 
-#    keymaps = [
-#    {
-#      key = "<leader>r";
-#      action = "Snacks.picker()";
-#      mode = [ "n" "v" "x" ];
-#      lua = true;
-#    }
-#    {
-#      key = "<leader><space>";
-#      action = "Snacks.picker.buffers()";
-#      mode = [ "n" "v" "x" ];
-#      lua = true;
-#    }
-#    ];
+    keymaps = [
+    {
+      key = "<leader>r";
+      action = "<cmd>lua Snacks.picker.files()<cr>";
+      mode = [ "n" "v" "x" ];
+    }
+    {
+      key = "<leader><space>";
+      action = "<cmd>lua Snacks.picker.buffers()<cr>";
+      mode = [ "n" "v" "x" ];
+    }
+    ];
   };
 }
