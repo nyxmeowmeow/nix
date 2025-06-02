@@ -10,13 +10,13 @@
     ./ui/colorscheme.nix
     ./ui/lualine.nix
     ./ui/noice.nix
+    ./utils/bracketed.nix
     ./utils/diagnostic.nix
     ./utils/flash.nix
     ./utils/indentscope.nix
     ./utils/lsp.nix
     ./utils/surround.nix
     ./utils/telescope.nix
-    ./utils/unimpaired.nix
     ./utils/yazi.nix
   ];
 }

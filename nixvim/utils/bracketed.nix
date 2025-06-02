@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   programs.nixvim = {
+  plugins.mini.enable = true;
     extraPlugins = [ pkgs.vimPlugins.mini-bracketed ];
     extraConfigLua = ''
       require('mini.bracketed').setup({
