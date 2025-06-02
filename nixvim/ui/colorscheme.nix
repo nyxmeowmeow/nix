@@ -38,6 +38,8 @@
         FlashCurrent.fg = "#D678B5";
         FlashLabel.fg = "#F22C86";
 
+        TelescopeSelection = { fg = "#3B224C"; bg = "#DBBFEF"; };
+
 
 
         MatchParen = { fg = "#F22C86"; bg = "None"; };
