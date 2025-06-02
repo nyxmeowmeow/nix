@@ -1,10 +1,9 @@
 { ... }: {
 
   imports = [
-    /* theme */
-    # ./themes/black/.black_theme.nix
-    ./themes/lix/.lix_theme.nix
-    # ./themes/macchiato/.macchiato_theme.nix
+    # ./themes/black/default.nix
+    ./themes/lix/default.nix
+    # ./themes/macchiato/default.nix
 
     ./home_modules/hyprland.nix
     ./home_modules/nushell.nix
