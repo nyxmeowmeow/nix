@@ -1,10 +1,7 @@
-{ ... }: {
+{
 
   home-manager.backupFileExtension = "backup";
-
   xdg.portal.config.common.default = "*";
-
-
 
   time.timeZone = "Australia/Brisbane";
   i18n.defaultLocale = "en_AU.UTF-8";
@@ -19,6 +16,4 @@
     LC_TELEPHONE = "en_AU.UTF-8";
     LC_TIME = "en_AU.UTF-8";
   };
-
-
 }

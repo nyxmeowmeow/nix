@@ -1,4 +1,5 @@
 { ... }: {
+
   programs.starship = {
     settings = {
       character = {
