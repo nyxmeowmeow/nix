@@ -1,21 +1,22 @@
 {
   imports = [
-    ./nixvim.nix
+    #./utils/picker.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
+    ./langmap.nix
+    ./misc.nix
+    ./nixvim.nix
+    ./options.nix
     ./ui/colorscheme.nix
     ./ui/lualine.nix
     ./ui/noice.nix
-    ./utils/telescope.nix
-    #./utils/picker.nix
     ./utils/diagnostic.nix
     ./utils/flash.nix
-    ./utils/lsp.nix
     ./utils/indentscope.nix
+    ./utils/lsp.nix
     ./utils/surround.nix
+    ./utils/telescope.nix
+    ./utils/unimpaired.nix
     ./utils/yazi.nix
-    ./langmap.nix
-    ./misc.nix
-    ./options.nix
   ];
 }
