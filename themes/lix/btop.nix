@@ -11,13 +11,13 @@
     theme[title]="#DBBFEF"
 
     # Highlight color for keyboard shortcuts
-    theme[hi_fg]="#8aadf4"
+    theme[hi_fg]="#D678B5"
 
     # Background color of selected item in processes box
-    theme[selected_bg]="#363a4f"
+    theme[selected_bg]="#886C9C"
 
     # Foreground color of selected item in processes box
-    theme[selected_fg]="#cad3f5"
+    theme[selected_fg]="#DBBFEF"
 
     # Color of inactive/disabled text
     theme[inactive_fg]="#6e738d"
@@ -26,7 +26,7 @@
     theme[graph_text]="#DBBFEF"
 
     # Background color of the percentage meters
-    theme[meter_bg]="#363a4f"
+    theme[meter_bg]="#886C9C"
 
     # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
     theme[proc_misc]="#c6a0f6"
@@ -44,22 +44,22 @@
     theme[proc_box]="#DBBFEF"
 
     # Box divider line and small boxes line color
-    theme[div_line]="#494d64"
+    theme[div_line]="#3B224C"
 
     # Temperature graph colors
-    theme[temp_start]="#bd93f9"
-    theme[temp_mid]="#ff79c6"
-    theme[temp_end]="#ff33a8"
+    theme[temp_start]="#DBBFEF"
+    theme[temp_mid]="#D678B5"
+    theme[temp_end]="#F22C86"
 
     # CPU graph colors
-    theme[cpu_start]="#c6a0f6"
-    theme[cpu_mid]="#7dc4e4"
-    theme[cpu_end]="#a6da95"
+    theme[cpu_start]="#A4A0E8"
+    theme[cpu_mid]="#C78DFC"
+    theme[cpu_end]="#D678B5"
 
     # Mem/Disk free meter
-    theme[free_start]="#ffa6d9"
-    theme[free_mid]="#ff79c6"
-    theme[free_end]="#ff33a8"
+    theme[free_start]="#D678B5"
+    theme[free_mid]="#D678B5"
+    theme[free_end]="#D678B5"
 
     # Mem/Disk cached meter
     theme[cached_start]="#b1f0fd"
@@ -87,9 +87,9 @@
     theme[upload_end]="#ff33a8"
 
     # Process box color gradient for threads, mem and cpu usage
-    theme[process_start]="#91d7e3"
-    theme[process_mid]="#95c2c9"
-    theme[process_end]="#6e738d"
+    theme[process_start]="#A4A0E8"
+    theme[process_mid]="#A4A0E8"
+    theme[process_end]="#A4A0E8"
 
   '';
   }
