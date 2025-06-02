@@ -1,6 +1,7 @@
 { ... }: {
 
   imports = [
+  ./btop.nix
     ./gtk_lix.nix
     ./fastfetch_lix.nix
     ./hyprland_lix.nix

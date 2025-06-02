@@ -5,10 +5,10 @@
     theme[main_bg]=""
 
     # Main text color
-    theme[main_fg]="#cad3f5"
+    theme[main_fg]="#A4A0E8"
 
     # Title color for boxes
-    theme[title]="#b7bdf8"
+    theme[title]="#DBBFEF"
 
     # Highlight color for keyboard shortcuts
     theme[hi_fg]="#8aadf4"
@@ -23,7 +23,7 @@
     theme[inactive_fg]="#6e738d"
 
     # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
-    theme[graph_text]="#b7bdf8"
+    theme[graph_text]="#DBBFEF"
 
     # Background color of the percentage meters
     theme[meter_bg]="#363a4f"
@@ -32,16 +32,16 @@
     theme[proc_misc]="#c6a0f6"
 
     # Cpu box outline color
-    theme[cpu_box]="#b7bdf8"
+    theme[cpu_box]="#DBBFEF"
 
     # Memory/disks box outline color
-    theme[mem_box]="#b7bdf8"
+    theme[mem_box]="#DBBFEF"
 
     # Net up/down box outline color
-    theme[net_box]="#b7bdf8"
+    theme[net_box]="#DBBFEF"
 
     # Processes box outline color
-    theme[proc_box]="#b7bdf8"
+    theme[proc_box]="#DBBFEF"
 
     # Box divider line and small boxes line color
     theme[div_line]="#494d64"

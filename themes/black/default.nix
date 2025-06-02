@@ -1,6 +1,7 @@
 { ... }: {
 
   imports = [
+  ./btop.nix
     ./gtk_black.nix
     ./fastfetch_black.nix
     ./hyprland_black.nix
