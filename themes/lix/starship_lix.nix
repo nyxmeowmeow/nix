@@ -7,9 +7,15 @@
         error_symbol = "[󰘧](red)";
       };
 
+      nix_shell = {
+      enable = true;
+      symbol = "";
+      };
+
       directory = {
         style = "bold #DBBFEF";
       };
+
       git_metrics.disabled = false;
       git_status = {
         format = "(\[$all_status$ahead_behind\]($style) )";
@@ -17,9 +23,6 @@
         behind = "\${count}";
         diverged = "\${ahead_count}\${behind_count}";
       };
-
     };
-
   };
-
 }

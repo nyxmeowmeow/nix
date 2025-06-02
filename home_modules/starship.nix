@@ -28,7 +28,6 @@
 
       hostname.ssh_only = true;
 
-      nix_shell.symbol = "󱄅 ";
       # rust.symbol = " ";
       rust.disabled = true;
 
