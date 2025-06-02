@@ -3,6 +3,7 @@
     #./utils/picker.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
+    ./utils/splitjoin.nix
     ./langmap.nix
     ./misc.nix
     ./nixvim.nix
