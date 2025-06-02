@@ -1,0 +1,452 @@
+* {
+  scrollbar-width: none;
+  /* box-shadow: none; */
+}
+
+.visual-refresh.theme-dark {
+  --font-primary: mononoki nerd font;
+  --font-display: mononoki nerd font;
+  --font-code: mononoki nerd font, 'mononoki nerd font', monospace;
+  --bg-brand: var(--lavender);
+  --background-primary: var(--bg) !important;
+  --background-secondary: var(--bg) !important;
+  --background-tertiary: var(--bg) !important;
+  --background-accent: var(--bg) !important;
+  --background-bg: var(--bg) !important;
+  --background-bg-low: var(--bg) !important;
+  --background-bg-lower: var(--bg) !important;
+  --background-bg-lowest: var(--bg) !important;
+  --background-code: #24273a !important;
+  --background-surface: var(--bg) !important;
+  --background-surface-high: #363a4f !important;
+  --background-surface-higher: #363a4f !important;
+  --modal-background: var(--bg) !important;
+  --chat-background-default: var(--bg) !important;
+  --base-overlay-chat: var(--bg) !important;
+  --base-bg-primary: var(--bg) !important;
+  --base-bg-secondary: var(--bg) !important;
+  --base-bg-tertiary: var(--bg) !important;
+  --base-mod-normal: var(--bg) !important;
+  --base-mod-faint: var(--bg) !important;
+  --base-mod-subtle: var(--bg) !important;
+  --base-mod-strong: var(--bg) !important;
+  --background-mod-normal: var(--bg) !important;
+  --background-mod-subtle: var(--bg) !important;
+  --background-mod-hover: var(--bg) !important;
+  --background-mentioned: var(--bg) !important;
+  --background-mentioned-hover: var(--bg) !important;
+  --mention-foreground: var(--lavender) !important;
+  --mention-background: var(--lavender-trans) !important;
+  --border-faint: transparent !important;
+  --border-subtle: transparent !important;
+  --border-strong: transparent !important;
+  --input-border: transparent !important;
+  --header-primary: var(--text) !important;
+  --header-secondary: var(--subtext) !important;
+  --text-normal: var(--text) !important;
+  --text-muted: #b8c0e099 !important;
+  --chat-text-muted: #b8c0e099 !important;
+  --text-default: var(--text) !important;
+  --text-primary: var(--text) !important;
+  --text-secondary: var(--subtext) !important;
+  --text-tertiary: #b8c0e099 !important;
+  --icon-primary: var(--text) !important;
+  --icon-secondary: var(--subtext) !important;
+  --icon-tertiary: #b8c0e099 !important;
+  --channels-default: #8e9297 !important;
+  --channeltextarea-background: var(--bg) !important;
+  --channeltextarea-background-hover: var(--bg) !important;
+  --interactive-normal: var(--subtext) !important;
+  --interactive-hover: var(--text) !important;
+  --interactive-active: var(--text) !important;
+  --interactive-muted: #4f545c !important;
+  --card-primary-bg: var(--bg) !important;
+  --card-secondary-bg: var(--bg) !important;
+  --message-reacted-background: var(--lavender-trans) !important;
+  --message-reacted-border: var(--lavender-trans) !important;
+  --message-reacted-text: var(--lavender) !important;
+  --background-modifier-selected: transparent !important;
+  --background-message-hover: transparent !important;
+}
+
+.visual-refresh .wrapper_ef3116 {
+    background-color: var(--bg) !important;
+}
+.theme-dark .container__37e49 {
+    background: var(--bg) !important;
+}
+.visual-refresh .scroller__99e7c {
+    background: var(--bg) !important;
+}
+.visual-refresh .privateChannels__35e86 {
+    background: var(--bg);
+}
+.visual-refresh .sidebar_c48ade:after {
+    background: var(--bg);
+}
+
+
+
+
+
+
+
+
+/* hide youtube watch together thing */
+.itemContainer__675e5 {
+  display: none;
+}
+
+/* remove border at top of homepage */
+.container__9293f {
+  border-bottom: none !important;
+}
+
+/* old messages divider */
+.visual-refresh.divider__908e2 {
+  border-top: thin solid --text-muted;
+}
+
+.visual-refresh .content__908e2 {
+  color: --text-muted;
+  background: #24273a;
+}
+
+/* change reply mention colour */
+.hasReply_c19a55::before {
+  background: #b7bdf8;
+}
+
+/* change replying colour */
+.replying__5126c::before {
+  background: #b7bdf8;
+}
+
+.replying__5126c {
+  background: var(--bg);
+}
+
+
+/* make "replying to" popup appear to be floating */
+.floatingBars__74017:empty+.visual-refresh .stackedBars__74017:nth-child(2),
+.visual-refresh .stackedBars__74017:first-child {
+  border-radius: 8px;
+}
+
+/* hide replying to x button */
+.closeButton_e876a8 {
+  visibility: hidden;
+}
+
+.mentioned__5126c::before {
+  background: #b7bdf8;
+}
+
+/* hide weird gradient in top right of homepage */
+.theme-dark .children__9293f:after {
+  background: transparent;
+}
+
+/* hide group dm button in top right of homepage */
+.icon__9293f {
+  display: none;
+}
+
+/* remove stuff from friend bar in homepage */
+.title__9293f {
+  display: none;
+}
+
+.visual-refresh .iconWrapper__9293f {
+  display: none;
+}
+
+.visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026,
+.visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
+  background-color: var(--bg);
+}
+
+.visual-refresh .selected_b3f026.item_b3f026,
+.visual-refresh .selected_b3f026.item_b3f026:hover {
+  color: #cad3f5 !important;
+}
+
+.dot__9293f {
+  display: none;
+}
+
+.children__9293f {
+  margin-left: -28px;
+}
+
+/* remove text below the friend bar */
+.container__13cf1 {
+  display: none;
+}
+
+.header__7d20c {
+  display: none;
+}
+
+/* remove the buttons to the right of items in online friends list on homepage */
+.actions_fc004c {
+  display: none;
+}
+
+/* remove message hover popup thing */
+.message__5126c>.buttonContainer_c19a55 {
+  display: none !important;
+}
+
+/* transparent chat area */
+.visual-refresh .chatContent_f75fb0,
+.visual-refresh.channelTextArea_f75fb0 {
+  background: var(--bg) !important;
+}
+
+/* transparent homepage */
+.visual-refresh .tabBody__133bf {
+  background-color: var(--bg);
+}
+
+.theme-dark .themed__9293f {
+  background: var(--bg) !important;
+}
+
+/* remove top bar */
+/* .subtitleContainer_f75fb0 { */
+/* 	visibility: hidden; */
+/* } */
+
+/* hide avatar in top bar */
+.wrapper__44b0c.pointer__44b0c.avatar_f75fb0 {
+  display: none;
+}
+
+/* anchor top bar search bar to right side */
+.search__49676 {
+  position: absolute;
+  right: 0;
+}
+
+.icon__97492.iconLayout_fea832.small_fea832 {
+  display: none;
+}
+
+/* remove other top bar */
+:root {
+  --custom-app-top-bar-height: 0 !important;
+}
+
+.visual-refresh {
+  div[class^="bg_"] {
+    &>div[class^="bar_"] {
+      display: none;
+    }
+  }
+
+  ul[data-list-id="guildsnav"]>div[class^="itemsContainer_"] {
+    margin-top: 6px;
+  }
+}
+
+/* ctrl k menu */
+.visual-refresh .quickswitcher_ac6cb0 {
+  background-color: #24273acc;
+  backdrop-filter: blur(10px) !important;
+}
+
+.visual-refresh .scroller_ac6cb0 {
+  background-color: var(--bg);
+}
+
+.backdrop__78332 {
+  background: var(--bg) !important;
+}
+
+/* transparent ctrl k input bar */
+.input_ac6cb0 {
+  background-color: var(--bg);
+}
+
+.header__71961 {
+  display: none;
+}
+
+/* hide ctrl k tip */
+.protip_ac6cb0 {
+  display: none
+}
+
+/* remove ctrl k border */
+.visual-refresh .quickswitcher_ac6cb0 {
+  border: none;
+}
+
+[aria-label="Add a Server"] {
+  display: none;
+}
+
+[aria-label="Discover"] {
+  display: none;
+}
+
+[aria-label="Download Apps"] {
+  display: none;
+}
+
+[aria-label="New Group DM"] {
+  display: none;
+}
+
+
+
+/* hide the silly ; */
+.app_a3002d {
+  color: transparent;
+}
+
+.app_a3002d>.app__160d8 {
+  color: initial;
+}
+
+
+/* hide the buttons on the right of the input bar */
+.buttons__74017 {
+  display: none;
+}
+
+
+
+/* hide the ctrl k menu button */
+.searchBar__35e86 {
+  display: none;
+}
+
+
+/* transparent bottom left profile panel */
+.visual-refresh .panels_c48ade {
+  background: transparent !important;
+}
+
+
+/* remove bottom left profile button */
+.avatarWrapper__37e49 {
+  visibility: hidden;
+}
+
+/* hide thing above dms list */
+.privateChannelsHeaderContainer__99e7c.container__13cf1 {
+  display: none;
+}
+
+
+/* hide nitro and shop buttons on homepage */
+[href="/store"],
+[href='/shop'] {
+  display: none;
+}
+
+/* pad top of server list */
+.guilds_c48ade {
+  padding-top: 12px;
+}
+
+
+/* remove react border */
+.visual-refresh .reaction__23977.reactionMe__23977 {
+  border-color: transparent;
+}
+
+
+/* remove add reaction button background */
+.visual-refresh .reactionBtn__23977 {
+  background-color: transparent;
+}
+
+
+/* remove border on active now elements */
+.wrapper__00943 {
+  border: none;
+}
+
+.visual-refresh .outer_bf1984 {
+  background-color: var(--bg);
+}
+
+
+/* change new message pill colour */
+.item__58105 {
+  background-color: #b7bdf8;
+}
+
+/* remove homepage search bar */
+.searchBar__5ec2f {
+  display: none;
+}
+
+/* make non-hovered discord logo background transparent */
+.visual-refresh .childWrapperNoHoverBg__6e9f8 {
+  background-color: transparent;
+}
+
+.sidebarList_c48ade {
+  border: none !important;
+}
+
+/* remove server list divider */
+.guildSeparator__252b6 {
+  visibility: hidden;
+}
+
+/* remove border between friends in homepage */
+.peopleListItem_cc6179 {
+  border-top: none;
+}
+
+/* remove friends list divider */
+.sectionDivider__35e86 {
+  display: none;
+}
+
+/* add padding to friends button on homepage */
+.friendsButtonContainer__35e86 {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+
+
+
+:root {
+  --rosewater: #f4dbd6;
+  --flamingo: #f0c6c6;
+  --pink: #f5bde6;
+  --mauve: #c6a0f6;
+  --red: #ed8796;
+  --maroon: #ee99a0;
+  --peach: #f5a97f;
+  --yellow: #eed49f;
+  --green: #a6da95;
+  --teal: #8bd5ca;
+  --sky: #91d7e3;
+  --sapphire: #7dc4e4;
+  --blue: #8aadf4;
+  --lavender: #b7bdf8;
+  --lavender-trans: #b7bdf833;
+  --text: #A4A0E8;
+  --subtext1: #b8c0e0;
+  --subtext0: #a5adcb;
+  --subtext: #886C9C;
+  --overlay2: #939ab7;
+  --overlay1: #8087a2;
+  --overlay0: #6e738d;
+  --overlay: #6e738d;
+  --surface2: #5b6078;
+  --surface1: #494d64;
+  --surface0: #363a4f;
+  --surface: #363a4f;
+  --bg: #3B224C;
+  --mantle: #1e2030;
+  --crust: #181926;
+}

@@ -44,7 +44,7 @@
     theme[proc_box]="#DBBFEF"
 
     # Box divider line and small boxes line color
-    theme[div_line]="#3B224C"
+    theme[div_line]="#886C9C"
 
     # Temperature graph colors
     theme[temp_start]="#DBBFEF"
