@@ -12,6 +12,7 @@
     ./utils/flash.nix
     ./utils/lsp.nix
     ./utils/indentscope.nix
+    ./utils/surround.nix
     ./utils/yazi.nix
     ./langmap.nix
     ./misc.nix
