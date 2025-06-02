@@ -17,19 +17,22 @@
 
 
 
+
       };
     };
 
     keymaps = [
     {
       key = "<leader>r";
-      action = "<cmd>lua Snacks.picker.files()<cr>";
+      action = "Snacks.picker()";
       mode = [ "n" "v" "x" ];
+      lua = true;
     }
     {
       key = "<leader><space>";
-      action = "<cmd>lua Snacks.picker.buffers()<cr>";
+      action = "Snacks.picker.buffers()";
       mode = [ "n" "v" "x" ];
+      lua = true;
     }
     ];
   };
