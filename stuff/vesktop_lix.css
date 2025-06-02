@@ -44,15 +44,15 @@
   --header-primary: var(--text) !important;
   --header-secondary: var(--subtext) !important;
   --text-normal: var(--text) !important;
-  --text-muted: #b8c0e099 !important;
-  --chat-text-muted: #b8c0e099 !important;
+  --text-muted: var(--subtext) !important;
+  --chat-text-muted: var(--subtext) !important;
   --text-default: var(--text) !important;
   --text-primary: var(--text) !important;
   --text-secondary: var(--subtext) !important;
-  --text-tertiary: #b8c0e099 !important;
+  --text-tertiary: var(--subtext) !important;
   --icon-primary: var(--text) !important;
   --icon-secondary: var(--subtext) !important;
-  --icon-tertiary: #b8c0e099 !important;
+  --icon-tertiary: var(--subtext) !important;
   --channels-default: #8e9297 !important;
   --channeltextarea-background: var(--bg) !important;
   --channeltextarea-background-hover: var(--bg) !important;
@@ -109,7 +109,7 @@
 
 .visual-refresh .content__908e2 {
   color: --text-muted;
-  background: #24273a;
+  background: var(--bg);
 }
 
 /* change reply mention colour */
@@ -168,7 +168,7 @@
 
 .visual-refresh .selected_b3f026.item_b3f026,
 .visual-refresh .selected_b3f026.item_b3f026:hover {
-  color: #cad3f5 !important;
+  color: var(--text) !important;
 }
 
 .dot__9293f {
@@ -252,7 +252,7 @@
 
 /* ctrl k menu */
 .visual-refresh .quickswitcher_ac6cb0 {
-  background-color: #24273acc;
+  background-color: var(--bg);
   backdrop-filter: blur(10px) !important;
 }
 
