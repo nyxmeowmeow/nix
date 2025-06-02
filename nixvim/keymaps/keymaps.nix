@@ -27,6 +27,10 @@
       action = "$";
       mode = "n";
     }
+    { key = "{"; action = "("; mode = [ "n" "v" "x" ]; }
+    { key = "}"; action = ")"; mode = [ "n" "v" "x" ]; }
+    { key = "("; action = "{"; mode = [ "n" "v" "x" ]; }
+    { key = ")"; action = "}"; mode = [ "n" "v" "x" ]; }
     {
       key = "H";
       action = "<C-o>";

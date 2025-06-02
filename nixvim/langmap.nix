@@ -10,8 +10,8 @@
       end
 
       -- Recommended to use lua template string
-      local en = [[qwfrtyuiopasdfghjkl'zxcvbnm;/,\t{}]]
-      local ru = [[qcyb{jpnklsdo}ghaei`zfuwtmv;/,x'()]]
+      local en = [[qwfrtyuiopasdfghjkl'zxcvbnm;/,\t]]
+      local ru = [[qcyb{jpnklsdo}ghaei`zfuwtmv;/,x']]
       local en_shift = [[QWFRTYUIOPASDFGHJKL'ZXCVBNMT]]
       local ru_shift = [[QCYB_JPNKLSDO_GHAEI`ZFUWTMV_]]
 
