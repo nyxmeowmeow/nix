@@ -1,10 +1,10 @@
 {
-  programs.nixvim = {
-    plugins.harpoon = {
-      enable = true;
-      enableTelescope = true;
-      keymapsSilent = true;
-      };
+  # programs.nixvim = {
+  #   plugins.harpoon = {
+  #     enable = true;
+  #     enableTelescope = true;
+  #     keymapsSilent = true;
+  #     };
       #FIXME
       #FIXME
       #FIXME
@@ -46,5 +46,5 @@
     # mode = "n";
     # }
     # ];
-  };
+  # };
 }
