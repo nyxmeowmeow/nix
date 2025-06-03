@@ -21,12 +21,19 @@
       };
       keymaps = {
         "<leader>r" = "oldfiles";
-        "<leader>gc" = "git commits";
-        "<leader>gs" = "git status";
-        "<leader>f" = "live grep";
+        "<leader>gc" = "git_commits";
+        "<leader>gs" = "git_status";
+        "<leader>f" = "live_grep";
 
-        "<leader>i" = "find_files { cwd = '/home/meow/nix' }";
+        # "<leader>i" = "find_files { cwd = '/home/meow/nix' }";
       };
     };
+    # keymaps = [
+    # {
+    #   key = "<leader>gc";
+    #   action = "<cmd>Telescope git_commits<cr>";
+    #   mode = [ "n" "v" "x" "o" ];
+    # }
+    # ];
   };
 }
