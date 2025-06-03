@@ -17,7 +17,10 @@
             enable_preview = true;
           };
         };
-        layout_config.preview_height = 10;
+        layout_config = {
+        preview_height = 1;
+        layout_strategy = "vertical";
+        };
       };
       keymaps = {
         "<leader>r" = "oldfiles";
