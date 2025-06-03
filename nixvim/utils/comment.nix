@@ -11,10 +11,10 @@
         ignore_blank_line = true;
       };
       keymaps = {
-        comment = "x";
-        comment_line = "gx";
-        comment_visual = "x";
-        textobject = "x";
+        comment = "&";
+        comment_line = "g&";
+        comment_visual = "&";
+        textobject = "&";
       };
     };
   };
