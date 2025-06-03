@@ -3,13 +3,18 @@
     enable = true;
 
     settings = {
-      signcolumn = false;
-      number = false;
-      relativenumber = false;
-      cursorline = false;
-      cursorcolumn = false;
-      foldcolumn = false;
-
+      options = {
+        signcolumn = false;
+        number = false;
+        relativenumber = false;
+        cursorline = false;
+        cursorcolumn = false;
+        foldcolumn = false;
+      };
+      backdrop = 1;
+      plugins = {
+      gitsigns.enable = false;
+      };
 
     };
 
