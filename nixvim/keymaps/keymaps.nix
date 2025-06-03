@@ -3,6 +3,11 @@
     globals.mapleader = " ";
     keymaps = [
     {
+      key = "x";
+      action = "gcc";
+      mode = "n";
+    }
+    {
       key = "<C-o>";
       action = "o<esc>";
       mode = "n";

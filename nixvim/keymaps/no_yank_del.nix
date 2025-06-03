@@ -18,9 +18,9 @@
       mode = [ "n" "v" "x" ];
     }
     {
-      key = "<C-D>";
+      key = "<C-d>";
       action = "D"; # vanilla d behaviour
-      mode = [ "n" "v" "x" ];
+      mode = [ "n" "v" "x" "o" ];
     }
     {
       key = "d";
@@ -30,22 +30,17 @@
     {
       key = "D";
       action = "\"_D";
-      mode = [ "n" "v" "x" ];
+      mode = [ "n" "v" "x" "o" ];
     }
     {
       key = "c";
       action = "\"_c";
-      mode = [ "n" "v" "x" ];
+      mode = [ "n" "v" "x" "o" ];
     }
     {
       key = "C";
       action = "\"_C";
-      mode = [ "n" "v" "x" ];
-    }
-    {
-      key = "x";
-      action = "\"_x";
-      mode = [ "n" "v" "x" ];
+      mode = [ "n" "v" "x" "o" ];
     }
     ];
   };
