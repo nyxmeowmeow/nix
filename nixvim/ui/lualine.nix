@@ -28,6 +28,16 @@
             bg = "#DBBFEF";
           }; 
           };
+          visual = { a = { 
+            fg = "#3B224C";
+            bg = "#D678B5";
+          }; 
+          };
+          replace = { a = { 
+            fg = "#3B224C";
+            bg = "#D678B5";
+          }; 
+          };
           inactive = { a = {
             fg = "#A4A0E8";
             bg = "#00000000";

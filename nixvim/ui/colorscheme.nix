@@ -37,6 +37,7 @@
         FlashMatch.fg = "#DBBFEF";
         FlashCurrent.fg = "#D678B5";
         FlashLabel.fg = "#F22C86";
+        FlashBackdrop.fg = "#886C9C";
 
         TelescopeSelection = { fg = "#3B224C"; bg = "#DBBFEF"; gui = null; };
         TelescopeSelectionCaret.fg = "#3B224C";

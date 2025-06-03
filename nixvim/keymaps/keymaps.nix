@@ -3,6 +3,11 @@
     globals.mapleader = " ";
     keymaps = [
     {
+      key = "<C-w>";
+      action = "<C-v>";
+      mode = "n";
+    }
+    {
       key = "<esc>";
       action = "<cmd>nohlsearch<cr>";
       mode = "n";
