@@ -3,13 +3,18 @@
     globals.mapleader = " ";
     keymaps = [
     {
-      key = "x";
+      key = "p";
+      action = "\"_dP"; # dont yank selected when pasting
+      mode = [ "v" ];
+    }
+    {
+      key = "<C-d>";
       action = "d"; # vanilla d behaviour
       mode = [ "n" "v" "x" ];
     }
     {
-      key = "X";
-      action = "D"; # vanilla D behaviour
+      key = "<C-D>";
+      action = "D"; # vanilla d behaviour
       mode = [ "n" "v" "x" ];
     }
     {
