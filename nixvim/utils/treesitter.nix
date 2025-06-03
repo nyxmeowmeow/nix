@@ -3,7 +3,7 @@
     enable = false;
 
     lazyLoad.settings.event = [
-      "BufEnter"
+      "DeferredUIEnter"
     ];
     };
 }

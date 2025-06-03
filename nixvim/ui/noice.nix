@@ -4,7 +4,7 @@
       enable = true;
 
       lazyLoad.settings.event = [
-        "BufEnter"
+        "DeferredUIEnter"
       ];
 
       settings = {
