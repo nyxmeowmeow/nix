@@ -1,8 +1,6 @@
 {
   programs.nixvim = {
     extraConfigLua = /* lua */ ''
-      print("Hello world!")
-
       local function escape(str)
       -- You need to escape these characters to work correctly
       local escape_chars = [[;,."|\]]
@@ -10,10 +8,10 @@
       end
 
       -- Recommended to use lua template string
-      local en = [[qwfrtyuiopasdfghjkl'zxcvbnm;/,\t]]
-      local ru = [[qcyb{jpnklsdo}ghaei`zfuwtmv;/,x']]
-      local en_shift = [[QWFRTYUIOPASDFGHJKL'ZXCVBNMT]]
-      local ru_shift = [[QCYB_JPNKLSDO_GHAEI`ZFUWTMV_]]
+      local en = [[qwfrtyuiopasdghjklzcvbnm]]
+      local ru = [[qcfbdjpnkls&oghaeizuwtmv]]
+      local en_shift = [[QWFRTYUIOPASDGHJKLZCVBNM]]
+      local ru_shift = [[QCFBDJPNKLS&OGHAEIZUWTMV]]
 
       vim.opt.langmap = vim.fn.join({
           -- | `to` should be first     | `from` should be second
