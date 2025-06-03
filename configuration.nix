@@ -32,7 +32,7 @@
 
   users.users.meow = {
     isNormalUser = true;
-    description = "meow";
+    description = "colon three";
     extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" "input" "uinput" ];
     shell = pkgs.nushell;
     # packages = with pkgs; [
@@ -44,6 +44,7 @@
 
   programs.steam = {
     enable = true;
+    extraCompatPackages = [ pkgs.proton-ge-bin ];
     gamescopeSession.enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
@@ -123,7 +124,6 @@
   ];
 
 
-  programs.fish.enable = true;
   programs.firefox.enable = true;
   programs.obs-studio.enable = true;
 
@@ -142,6 +142,5 @@
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   system.stateVersion = "24.11";
 }

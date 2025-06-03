@@ -169,7 +169,7 @@
         "SUPER,       l, exec, zen -p rain"
         "SUPER SHIFT, l, exec, zen -p misc"
         "SUPER,       s, exec, footclient nvim"
-        "SUPER SHIFT, s, exec, footclient nvim -c 'lua require('persistence').load()'"
+        #"SUPER SHIFT, s, exec, footclient nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  s, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
         "SUPER,   space, exec, walker -s 3 -m applications"
         "SUPER SHIFT, y, exec, walker -s 3 -m catppuccin"
