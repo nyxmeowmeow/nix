@@ -24,10 +24,6 @@
     shell = pkgs.nushell;
   };
 
-
-
-
-
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d"; # protonup install path
     NIXOS_OZONE_WL = "1"; # tell things to use wayland
@@ -38,11 +34,7 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
-
-
-
   environment.systemPackages = [ zen-browser.packages."x86_64-linux".default ];
-
 
   programs.firefox.enable = true;
   programs.obs-studio.enable = true;
