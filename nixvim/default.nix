@@ -5,6 +5,8 @@
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
     ./utils/splitjoin.nix
+    ./utils/treesitter.nix
+    ./utils/treesitter-textobjects.nix
     ./utils/comment.nix
     ./langmap.nix
     ./misc.nix
