@@ -29,7 +29,8 @@
       "<leader>r" = "oldfiles";
       "<leader>gw" = "git_commits";
       "<leader>ga" = "git_status";
-      "<leader>f" = "live_grep";
+      "<leader>f" = "live_grep { cwd = '/home/meow/nix' }";
+      "<leader>/" = "current_buffer_fuzzy_find";
 
       "<leader>i" = "oldfiles { cwd = '/home/meow/nix' }";
     };
