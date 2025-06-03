@@ -21,11 +21,11 @@
       };
       keymaps = {
         "<leader>r" = "oldfiles";
-        "<leader>gc" = "git_commits";
-        "<leader>gs" = "git_status";
+        "<leader>gw" = "git_commits";
+        "<leader>ga" = "git_status";
         "<leader>f" = "live_grep";
 
-        # "<leader>i" = "find_files { cwd = '/home/meow/nix' }";
+        "<leader>i" = "oldfiles { cwd = '/home/meow/nix' }";
       };
     };
     # keymaps = [
