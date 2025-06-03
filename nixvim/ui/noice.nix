@@ -2,6 +2,11 @@
   programs.nixvim.plugins = {
     noice = {
       enable = true;
+
+      lazyLoad.settings.event = [
+        "BufEnter"
+      ];
+
       settings = {
         cmdline = {
           enabled = true;

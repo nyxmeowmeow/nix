@@ -2,6 +2,11 @@
   programs.nixvim = {
     plugins.yazi = {
       enable = true;
+
+      lazyLoad.settings.event = [
+        "BufEnter"
+      ];
+
       settings = {
 
         yazi_floating_window_border = "none";

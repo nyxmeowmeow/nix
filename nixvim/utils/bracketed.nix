@@ -1,6 +1,11 @@
 {
   programs.nixvim.plugins.mini.modules.bracketed = {
     enable = true;
+
+    lazyLoad.settings.event = [
+      "BufEnter"
+    ];
+
     settings = {
       keymaps = [
       { buffer = "r"; }

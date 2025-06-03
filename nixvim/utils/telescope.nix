@@ -2,6 +2,11 @@
   programs.nixvim = {
     plugins.telescope = {
       enable = true;
+
+    lazyLoad.settings.event = [
+      "BufEnter"
+    ];
+
       settings = {
         defaults = {
 
