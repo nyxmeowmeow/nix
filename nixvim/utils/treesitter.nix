@@ -1,6 +1,6 @@
 {
     programs.nixvim.plugins.treesitter = {
-    enable = false;
+    enable = true;
 
     lazyLoad.settings.event = [
       "DeferredUIEnter"
