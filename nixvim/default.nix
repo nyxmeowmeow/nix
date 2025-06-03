@@ -14,6 +14,7 @@
     ./nixvim.nix
     ./options.nix
     ./ui/colorscheme.nix
+    ./ui/zen-mode.nix
     ./ui/lualine.nix
     ./ui/noice.nix
     ./utils/bracketed.nix
