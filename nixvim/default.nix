@@ -2,7 +2,7 @@
   imports = [
     # ./utils/picker.nix
     ./utils/hex_color.nix
-    ./utils/harp.nix
+    ./utils/harpoon.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
     ./utils/splitjoin.nix
