@@ -42,6 +42,7 @@
         TelescopeSelection = { fg = "#3B224C"; bg = "#DBBFEF"; gui = null; };
         TelescopeSelectionCaret.fg = "#3B224C";
         TelescopePromptPrefix.fg = "#3B224C";
+        TelescopePromptCounter.fg = "#3B224C";
         TelescopePrevieHyphen.fg = "#3B224C";
         TelescopeResultsDiffUntracked.fg = "#886C9C";
         MiniIndentscopeSymbol.fg = "#886C9C";
