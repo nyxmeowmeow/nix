@@ -10,6 +10,7 @@
     ./utils/comment.nix
     ./langmap.nix
     ./misc.nix
+    ./lazy.nix
     ./nixvim.nix
     ./options.nix
     ./ui/colorscheme.nix

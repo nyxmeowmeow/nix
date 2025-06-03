@@ -2,11 +2,11 @@
   programs.nixvim.plugins.lualine = {
     enable = true;
 
-#lazyLoad.settings.event = [
-#  "VimEnter"
-#  "BufReadPost"
-#  "BufNewFile"
-#];
+    lazyLoad.settings.event = [
+      "VimEnter"
+      "BufReadPost"
+      "BufNewFile"
+    ];
 
     settings = {
       icons_enabled = true;
