@@ -9,6 +9,7 @@
     ./modules/security.nix
     ./modules/hardware.nix
     ./modules/boot.nix
+    ./modules/steam.nix
     ./misc.nix
     ./nixvim/default.nix
     nixvim.nixosModules.nixvim
