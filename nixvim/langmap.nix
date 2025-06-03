@@ -8,10 +8,10 @@
       end
 
       -- Recommended to use lua template string
-      local en = [[qwfrtyuiopasdghjklzcvbnm]]
-      local ru = [[qcfbdjpnkls&oghaeizuwtmv]]
-      local en_shift = [[QWFRTYUIOPASDGHJKLZCVBNM]]
-      local ru_shift = [[QCFBDJPNKLS&OGHAEIZUWTMV]]
+      local en = [[qwfrtyuiopasdghjklzcvbnmx]]
+      local ru = [[qcfbdjpnkls&oghaeizuwtmvx]]
+      local en_shift = [[QWFRTYUIOPASDGHJKLZCVBNMx]]
+      local ru_shift = [[QCFBDJPNKLS&OGHAEIZUWTMVx]]
 
       vim.opt.langmap = vim.fn.join({
           -- | `to` should be first     | `from` should be second
