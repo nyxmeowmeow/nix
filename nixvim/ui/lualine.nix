@@ -3,7 +3,7 @@
     enable = true;
 
     lazyLoad.settings.event = [
-      "VimEnter"
+#      "VimEnter"
       "BufReadPost"
       "BufNewFile"
     ];
