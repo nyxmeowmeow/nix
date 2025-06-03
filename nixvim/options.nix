@@ -19,9 +19,9 @@
       breakindentopt = "shift:2";
     showbreak = "↪ "; 
 
-    "vim.diagnostic.severity.ERROR".icon = " ";
-    "vim.diagnostic.severity.HINT".icon = " ";
-    "vim.diagnostic.severity.INFO".icon = " ";
-    "vim.diagnostic.severity.WARN".icon = " ";
+    #"vim.diagnostic.severity.ERROR".icon = " ";
+    #"vim.diagnostic.severity.HINT".icon = " ";
+    #"vim.diagnostic.severity.INFO".icon = " ";
+    #"vim.diagnostic.severity.WARN".icon = " ";
   };
 }
