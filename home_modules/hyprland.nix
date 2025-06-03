@@ -533,10 +533,9 @@
       bind = SUPER, t, submap, t
       submap = t
 
-          bind = ,      h, exec, mpc -p 6669 searchplay title '3 nights'
-          bind = SUPER, h, exec, mpc -p 6669 searchplay title '3 nights'
+          bind = ,      h, exec, mpc -p 6669 searchplay title 'Throne'
+          bind = SUPER, h, exec, mpc -p 6669 searchplay title 'Throne'
           bind = ,      h, submap, reset
-
 
           bind = ,      a, exec, mpc -p 6669 searchplay title 'ta1lsd004'
           bind = SUPER, a, exec, mpc -p 6669 searchplay title 'ta1lsd004'
@@ -599,10 +598,9 @@
       bind = SUPER, r, exec, mpc -p 6669 searchplay title 'R.i.p.'
       bind = ,      r, submap, reset
 
-      bind = ,      t, exec, mpc -p 6669 searchplay title 'Throne'
-      bind = SUPER, t, exec, mpc -p 6669 searchplay title 'Throne'
-      bind = ,      t, submap, reset
-
+      bind = ,      3, exec, mpc -p 6669 searchplay title '3 nights'
+      bind = SUPER, 3, exec, mpc -p 6669 searchplay title '3 nights'
+      bind = ,      3, submap, reset
 
       bind = , escape, submap, reset
       submap = player

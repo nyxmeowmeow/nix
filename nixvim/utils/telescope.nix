@@ -21,6 +21,9 @@
       };
       keymaps = {
         "<leader>r" = "oldfiles";
+        "<leader>gc" = "git commits";
+        "<leader>gs" = "git status";
+        "<leader>f" = "live grep";
 
         "<leader>i" = "find_files { cwd = '/home/meow/nix' }";
       };

@@ -7,7 +7,6 @@
     ./utils/splitjoin.nix
     ./utils/treesitter.nix
     ./utils/treesitter-textobjects.nix
-    ./lua_shit.nix
     ./langmap.nix
     ./misc.nix
     ./lazy.nix
