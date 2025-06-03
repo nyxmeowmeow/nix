@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -162,7 +162,7 @@
         "SUPER,       t, exec, footclient"
         "SUPER, SHIFT t, exec, foot"
         "SUPER, CTRL  t, exec, foot"
-        "SUPER,       c, exec, footclient nu -e yazi"
+        "SUPER,       c, exec, footclient yazi"
 
         "SUPER,       y, exec, footclient qalc"
 
