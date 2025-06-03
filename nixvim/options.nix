@@ -19,6 +19,13 @@
       breakindentopt = "shift:2";
     showbreak = "↪ "; 
 
+    diagnostic.severity = {
+ERROR = " ";
+WARN = " ";
+INFO = " ";
+HINT = " ";
+    };
+
   };
 
 }
