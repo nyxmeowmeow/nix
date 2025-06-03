@@ -2,11 +2,6 @@
   programs.nixvim = {
   plugins.flash = {
     enable = true;
-
-    lazyLoad.settings.event = [
-      "DeferredUIEnter"
-    ];
-
     settings = {
       label.uppercase = false;
       labels = "nisetachr";
@@ -21,6 +16,12 @@
       key = "<cr>";
       action = "function() require('flash').jump() end";
       mode = [ "n" "v" "x" ];
+      lua = true;
+    }
+    {
+      key = "<cr>";
+      action = "function() require('flash').remote() end";
+      mode = [ "o" ];
       lua = true;
     }
     ];
