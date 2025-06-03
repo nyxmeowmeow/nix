@@ -1,4 +1,4 @@
-{ ... }: {
+{
 
   imports = [
     # ./themes/black/default.nix

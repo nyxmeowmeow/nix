@@ -23,13 +23,11 @@
     description = "colon three";
     extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" "input" "uinput" ];
     shell = pkgs.nushell;
-    # packages = with pkgs; [
-    #   user package
-    # ];
   };
 
 
 
+  programs.gamemode.enable = true;
   programs.steam = {
     enable = true;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
@@ -39,7 +37,6 @@
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
 
-  programs.gamemode.enable = true;
 
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d"; # protonup install path
@@ -52,10 +49,6 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 
-  hardware.opentabletdriver = {
-    enable = true;
-    daemon.enable = true;
-  };
 
   security.rtkit.enable = true;
 
@@ -83,7 +76,6 @@
   security.polkit = {
     enable = true;
     extraConfig = ''
-      /* Allow members of the 'wheel' group to mount devices via Nautilus */
       polkit.addRule(function(action, subject) {
         if (action.id == "org.freedesktop.udisks2.filesystem-mount" && subject.isInGroup("wheel")) {
           return polkit.Result.YES;
@@ -93,9 +85,7 @@
   };
 
 
-  environment.systemPackages = [
-    zen-browser.packages."x86_64-linux".default 
-  ];
+  environment.systemPackages = [ zen-browser.packages."x86_64-linux".default ];
 
 
   programs.firefox.enable = true;

@@ -1,4 +1,4 @@
-{ ... }: {
+{
 
   home.file.".config/vesktop/themes/vesktop_lix.css".source = ../stuff/vesktop_lix.css;
 

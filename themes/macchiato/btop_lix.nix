@@ -1,4 +1,3 @@
-
 {
   home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
 

@@ -13,4 +13,11 @@
       rocmPackages.clr.icd
     ];
   };
+
+
+  hardware.opentabletdriver = {
+    enable = true;
+    daemon.enable = true;
+  };
+
 }
