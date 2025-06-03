@@ -12,6 +12,8 @@
     ignorecase = true;
     smartcase = true;
 
+    autochdir = true; # auto cd into current buffers dir
+
 
     wrap = true;
     linebreak = true; # only wrap at whitespace
