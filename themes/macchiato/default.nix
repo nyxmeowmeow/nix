@@ -1,5 +1,4 @@
 {
-
   imports = [
     ./btop_macchiato.nix
     ./gtk_macchiato.nix
@@ -9,5 +8,4 @@
     ./hyprpaper_macchiato.nix
     ./starship_macchiato.nix
   ];
-
 }

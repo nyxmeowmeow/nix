@@ -1,5 +1,4 @@
 {
-
   imports = [
     ./btop_lix.nix
     ./gtk_lix.nix
@@ -9,5 +8,4 @@
     ./hyprpaper_lix.nix
     ./starship_lix.nix
   ];
-
 }

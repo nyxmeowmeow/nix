@@ -1,5 +1,4 @@
 {
-
   imports = [
     ../macchiato/fastfetch_macchiato.nix
     ../macchiato/starship_black.nix
@@ -10,5 +9,4 @@
     ./hyprland_black.nix
     ./hyprpaper_black.nix
   ];
-
 }

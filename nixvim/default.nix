@@ -1,6 +1,6 @@
 {
   imports = [
-    #./utils/picker.nix
+    # ./utils/picker.nix
     ./utils/hex_color.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
