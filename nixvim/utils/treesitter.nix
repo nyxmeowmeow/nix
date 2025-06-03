@@ -1,3 +1,6 @@
 {
-    programs.nixvim.plugins.treesitter.enable = true;
+    programs.nixvim.plugins.treesitter = {
+    enable = true;
+    nixvimInjections = true;
+    };
 }
