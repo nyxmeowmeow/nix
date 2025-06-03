@@ -3,14 +3,14 @@
     globals.mapleader = " ";
     keymaps = [
     {
-      key = "x";
-      action = "gc";
-      mode = [ "n" "v" ];
+      key = "<C-o>";
+      action = "o<esc>";
+      mode = "n";
     }
     {
-      key = "gx";
-      action = "gcc";
-      mode = [ "n" "v" ];
+      key = "<C-S-o>";
+      action = "O<esc>";
+      mode = "n";
     }
     {
       key = "<C-w>";

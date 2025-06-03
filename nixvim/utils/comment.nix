@@ -3,9 +3,7 @@
     plugins.mini.modules.comment = {
       enable = true;
 
-      lazyLoad.settings.event = [
-        "DeferredUIEnter"
-      ];
+      lazyLoad.settings.event = [ "DeferredUIEnter" ];
 
       settings = {
         ignore_blank_line = true;
