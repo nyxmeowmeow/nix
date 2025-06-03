@@ -18,22 +18,23 @@
             enable_preview = true;
           };
         };
-
+        side_by_side = false;
+        layout_strategy = "horizontal";
         layout_config = {
-          horizontal = {
-            height = 0.5;
-          };
+          preview_width = 0.5;
         };
       };
-      keymaps = {
-        "<leader>r" = "oldfiles";
-        "<leader>gw" = "git_commits";
-        "<leader>ga" = "git_status";
-        "<leader>f" = "live_grep";
 
-        "<leader>i" = "oldfiles { cwd = '/home/meow/nix' }";
-      };
+    keymaps = {
+      "<leader>r" = "oldfiles";
+      "<leader>gw" = "git_commits";
+      "<leader>ga" = "git_status";
+      "<leader>f" = "live_grep";
+
+      "<leader>i" = "oldfiles { cwd = '/home/meow/nix' }";
     };
+    };
+  };
 # keymaps = [
 # {
 #   key = "<leader>gc";
@@ -41,5 +42,4 @@
 #   mode = [ "n" "v" "x" "o" ];
 # }
 # ];
-  };
 }
