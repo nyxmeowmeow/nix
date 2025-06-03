@@ -6,10 +6,9 @@
       label.uppercase = false;
       labels = "nisetachr";
       prompt = {
-        win_config.col = 1000;
-        prefix = null;
+        win_config.zindex = -1000;
+        prefix = [ "" "FlashPromptIcon" ];
       };
-      char.autohide = true;
     };
   };
     keymaps = [
