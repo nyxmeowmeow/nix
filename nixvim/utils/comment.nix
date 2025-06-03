@@ -11,10 +11,10 @@
         ignore_blank_line = true;
       };
       keymaps = {
-        comment = "\\\\";
+        comment = "S-\\";
         comment_line = "g\\\\";
-        comment_visual = "\\\\";
-        textobject = "\\\\";
+        comment_visual = "S-\\";
+        textobject = "S-\\";
       };
     };
   };
