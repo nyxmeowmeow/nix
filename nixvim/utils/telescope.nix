@@ -3,23 +3,26 @@
     plugins.telescope = {
       enable = true;
 
-    lazyLoad.settings.event = [
-      "DeferredUIEnter"
-    ];
+      lazyLoad.settings.event = [
+        "DeferredUIEnter"
+      ];
 
       settings = {
         defaults = {
           selection_caret = "  ";
           entry_prefix = "  ";
         };
+
         pickers = {
           colorscheme = {
             enable_preview = true;
           };
         };
+
         layout_config = {
-        preview_height = 1;
-        layout_strategy = "vertical";
+          horizontal = {
+            height = 0.5;
+          };
         };
       };
       keymaps = {
@@ -31,12 +34,12 @@
         "<leader>i" = "oldfiles { cwd = '/home/meow/nix' }";
       };
     };
-    # keymaps = [
-    # {
-    #   key = "<leader>gc";
-    #   action = "<cmd>Telescope git_commits<cr>";
-    #   mode = [ "n" "v" "x" "o" ];
-    # }
-    # ];
+# keymaps = [
+# {
+#   key = "<leader>gc";
+#   action = "<cmd>Telescope git_commits<cr>";
+#   mode = [ "n" "v" "x" "o" ];
+# }
+# ];
   };
 }
