@@ -9,7 +9,6 @@
 
       settings = {
         defaults = {
-
           selection_caret = "  ";
           entry_prefix = "  ";
         };
@@ -18,6 +17,7 @@
             enable_preview = true;
           };
         };
+        layout_config.preview_height = 10;
       };
       keymaps = {
         "<leader>r" = "oldfiles";
