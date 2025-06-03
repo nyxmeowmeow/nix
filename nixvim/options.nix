@@ -19,7 +19,21 @@
       breakindentopt = "shift:2";
     showbreak = "↪ "; 
 
-
+    "vim.diagnostic.severity.ERROR" = {
+      enabled = false;
+      icon = " ";
+    };
+    "vim.diagnostic.severity.HINT" = {
+      enabled = false;
+      icon = " ";
+    };
+    "vim.diagnostic.severity.INFO" = {
+      enabled = false;
+      icon = " ";
+    };
+    "vim.diagnostic.severity.WARN" = {
+      enabled = false;
+      icon = " ";
+    };
   };
-
 }
