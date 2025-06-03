@@ -5,10 +5,7 @@
     settings = {
       label.uppercase = false;
       labels = "nisetachr";
-      prompt = {
-        win_config.zindex = -1000;
-        #prefix = [ "" "FlashPromptIcon" ];
-      };
+      prompt.enabled = false;
     };
   };
     keymaps = [
