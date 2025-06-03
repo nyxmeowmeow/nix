@@ -6,26 +6,14 @@
     ./packages.nix
     ./modules/stylix.nix
     ./modules/kanata.nix
+    ./modules/hardware.nix
+    ./modules/boot.nix
     ./misc.nix
     ./nixvim/default.nix
     nixvim.nixosModules.nixvim
   ];
 
 
-  boot = {
-    loader = {
-      timeout = 2;
-      systemd-boot.enable = true;
-      systemd-boot.configurationLimit = 20;
-      efi.canTouchEfiVariables = true;
-    };
-    initrd.kernelModules = [ "amdgpu" ];
-    kernelPackages = pkgs.linuxPackages_zen;
-    kernelParams = [
-      "video=DP-1:2560x1440@165"
-      "video=DP-3:2560x1440@75"
-    ];
-  };
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
@@ -52,20 +40,6 @@
   };
 
   programs.gamemode.enable = true;
-
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [
-      mesa
-      libva
-      libvdpau-va-gl
-      vulkan-loader
-      vulkan-validation-layers
-      mesa.opencl  # Enables Rusticl (OpenCL) support
-      rocmPackages.clr.icd
-    ];
-  };
 
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d"; # protonup install path
