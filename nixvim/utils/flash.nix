@@ -7,7 +7,7 @@
       labels = "nisetachr";
       prompt = {
         win_config.zindex = -1000;
-        prefix = [ "" "FlashPromptIcon" ];
+        #prefix = [ "" "FlashPromptIcon" ];
       };
     };
   };
