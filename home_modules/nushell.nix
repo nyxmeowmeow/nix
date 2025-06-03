@@ -6,7 +6,7 @@
 
     configFile.text = /* nu */ ''
       let color_scheme = {
-          hints: "#5b6078"
+          hints: "#886C9C"
           search_result: { bg: cyan fg: "#cad3f5" }
           shape_garbage: { fg: "#24273a" bg: "#ed8796" attr: b}
           shape_filepath: green
