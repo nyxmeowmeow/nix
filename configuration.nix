@@ -6,14 +6,13 @@
     ./packages.nix
     ./modules/stylix.nix
     ./modules/kanata.nix
+    ./modules/security.nix
     ./modules/hardware.nix
     ./modules/boot.nix
     ./misc.nix
     ./nixvim/default.nix
     nixvim.nixosModules.nixvim
   ];
-
-
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
@@ -27,15 +26,6 @@
 
 
 
-  programs.gamemode.enable = true;
-  programs.steam = {
-    enable = true;
-    extraCompatPackages = [ pkgs.proton-ge-bin ];
-    gamescopeSession.enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-  };
 
 
   environment.sessionVariables = {
@@ -49,40 +39,6 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
 
-
-  security.rtkit.enable = true;
-
-  security.sudo.extraRules = [
-    {
-      users = [ "meow" ];
-      commands = [
-        { # rebuild no passwd
-          command = "/run/current-system/sw/bin/nixos-rebuild";
-          options = [ "NOPASSWD" ];
-        }
-        { # kanata no passwd
-          command = "/run/current-system/sw/bin/kanata";
-          options = [ "NOPASSWD" ];
-        }
-        { # keyb0xx no passwd
-          command = "/run/current-system/sw/bin/steam-run /home/meow/misc/keyb0xx";
-          options = [ "NOPASSWD" ];
-        }
-      ];
-    }
-  ];
-
-
-  security.polkit = {
-    enable = true;
-    extraConfig = ''
-      polkit.addRule(function(action, subject) {
-        if (action.id == "org.freedesktop.udisks2.filesystem-mount" && subject.isInGroup("wheel")) {
-          return polkit.Result.YES;
-        }
-      });
-    '';
-  };
 
 
   environment.systemPackages = [ zen-browser.packages."x86_64-linux".default ];
