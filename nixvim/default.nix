@@ -7,7 +7,6 @@
     ./utils/splitjoin.nix
     ./utils/treesitter.nix
     ./utils/treesitter-textobjects.nix
-    ./utils/comment.nix
     ./langmap.nix
     ./misc.nix
     ./lazy.nix
