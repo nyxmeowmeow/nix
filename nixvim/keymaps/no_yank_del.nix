@@ -8,7 +8,12 @@
       mode = [ "v" ];
     }
     {
-      key = "<C-d>";
+      key = "<C-l>";
+      action = "p"; # vanilla p behaviour
+      mode = [ "v" ];
+    }
+    {
+      key = "<C-o>";
       action = "d"; # vanilla d behaviour
       mode = [ "n" "v" "x" ];
     }
