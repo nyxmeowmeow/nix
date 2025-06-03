@@ -2,9 +2,9 @@
   programs.nixvim.plugins.lualine = {
     enable = true;
 
-    lazyLoad.settings.event = [
-      "DeferredUIEnter"
-    ];
+    #lazyLoad.settings.event = [
+    #  "DeferredUIEnter"
+    #];
 
     settings = {
       icons_enabled = true;
