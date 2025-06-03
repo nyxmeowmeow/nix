@@ -9,6 +9,7 @@
         win_config.col = 1000;
         prefix = null;
       };
+      char.autohide = false;
     };
   };
     keymaps = [
