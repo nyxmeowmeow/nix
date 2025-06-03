@@ -1,6 +1,6 @@
 {
     programs.nixvim.plugins.treesitter = {
-    enable = true;
+    enable = false;
 
     lazyLoad.settings.event = [
       "BufEnter"
