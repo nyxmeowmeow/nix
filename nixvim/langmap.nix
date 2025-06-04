@@ -1,6 +1,13 @@
 {
   programs.nixvim = {
     extraConfigLua = /* lua */ ''
+
+
+
+      vim.opt.shortmess:append("I")
+
+
+
       local function escape(str)
       -- You need to escape these characters to work correctly
       local escape_chars = [[;,."|\]]
