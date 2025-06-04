@@ -168,8 +168,8 @@
 
         "SUPER,       y, exec, footclient qalc"
 
-        "SUPER,       l, exec, zen -p rain"
-        "SUPER SHIFT, l, exec, zen -p misc"
+        "SUPER,       z, exec, zen -p rain"
+        "SUPER SHIFT, z, exec, zen -p misc"
         "SUPER,       s, exec, footclient nvim"
         #"SUPER SHIFT, s, exec, footclient nvim -c 'lua require('persistence').load()'"
         "SUPER CTRL,  s, exec, $scripts/open-recent-dl.sh" # open most recently downloaded file with nvim
@@ -415,7 +415,7 @@
 
     # no nix way to do this :(
     extraConfig = /* hyprlang */ ''
-      bind = SUPER SHIFT, minus, submap, player
+      bind = SUPER, l, submap, player
 
       # will start a submap called "player"
       submap = player
@@ -465,8 +465,8 @@
 
 
 
-      bind = SHIFT,       minus, submap, play_song
-      bind = SUPER SHIFT, minus, submap, play_song
+      bind = ,       l, submap, play_song
+      bind = SUPER , l, submap, play_song
       submap = play_song
 
 
