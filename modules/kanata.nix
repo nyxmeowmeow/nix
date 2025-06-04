@@ -207,8 +207,6 @@
     ((key-history j 1)) (macro u s t) break
 
     ((key-history \ 1)) (macro n) break
-    ;;((key-history 1 1)) (macro [) break
-
 
 
     ;; non-sfb for !=
@@ -217,7 +215,7 @@
     ;; non-sfb for vec![]
     ;;((and(key-history c 2) (key-history 1 1))) (macro [) break
 
-    ((key-history 1 1)) (macro ]) break
+    ((key-history 1 1)) (macro [) break
 
   ;; // non-sfb for >>
     ((key-history . 1)) (macro S-.) break
