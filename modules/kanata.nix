@@ -43,9 +43,6 @@
   (  f    ) f
   (    d  ) d
   (      w) w
-  (b f    ) S-,
-  (  f d  ) =
-  (    d w) S-8
 
   (l    )   l
   (  o    ) o
@@ -59,36 +56,21 @@
   (  s    ) s
   (    t  ) t
   (      c) c
-  (n s    ) (one-shot-press 300 lsft)
-  (  s t  ) S-[
-  (  s   c) S-`
-  (    t c) [
 
   (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
-  (h a    ) ]
-  (h   e  ) del
-  (  a e  ) S-]
-  (    e i) (one-shot-press 300 rsft)
 
   (,      ) ,
   (  .    ) .
   (    k  ) k
   (      g) g
-  (, .    ) \
-  (  . k  ) S-\
-  (    k g) S-1
 
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) S-0
   (            ;) ;
-  (S-- S-9      ) S-3
-  (S--     S-0  ) S-5
-  (    S-9 S-0  ) S-/
-  (        S-0 ;) S-7
 )
 
 (defalias
