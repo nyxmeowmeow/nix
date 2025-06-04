@@ -55,7 +55,7 @@
              _   _   _       _   _    _    _
 )
 
-(defchords ch 12
+(defchords ch 15
   (b      ) b
   (  f    ) f
   (    d  ) d
