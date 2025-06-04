@@ -1,7 +1,7 @@
 {
   imports = [
     # ./utils/picker.nix
-    ./utils/hex_color.nix
+    ./utils/colorizer.nix
     ./utils/harpoon.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
