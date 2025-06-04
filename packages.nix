@@ -22,6 +22,7 @@
     vulkan-tools
     trash-cli
     tldr
+    btop
     # zenity
     # xdg-desktop-portal-termfilechooser
     nushell
@@ -31,7 +32,6 @@
 
     unzip
 
-    btop
     termdown
     tty-clock
 
