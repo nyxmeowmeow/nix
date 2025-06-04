@@ -134,15 +134,15 @@
   ch_u (chord ch u)
   ch_j (chord ch j)
 
-  ch_n (chord ch n)
-  ch_s (chord ch s)
-  ch_t (chord ch t)
-  ch_c (chord ch c)
+;;  ch_n (chord ch n)
+;;  ch_s (chord ch s)
+;;  ch_t (chord ch t)
+;;  ch_c (chord ch c)
 
-  ch_h (chord ch h)
-  ch_a (chord ch a)
-  ch_e (chord ch e)
-  ch_i (chord ch i)
+;;  ch_h (chord ch h)
+;;  ch_a (chord ch a)
+;;  ch_e (chord ch e)
+;;  ch_i (chord ch i)
 
   ch_, (chord ch ,)
   ch_. (chord ch .)
@@ -153,6 +153,24 @@
   ch_lp (chord ch S-9)
   ch_rp (chord ch S-0)
   ch_;  (chord ch ;)
+
+
+  ch_n (switch ((key-timing 2 less-than 25)) _ break () (chord ch n) break)
+  ch_s (switch ((key-timing 2 less-than 25)) _ break () (chord ch s) break)
+  ch_t (switch ((key-timing 2 less-than 25)) _ break () (chord ch t) break)
+  ch_c (switch ((key-timing 2 less-than 25)) _ break () (chord ch c) break)
+  ch_h (switch ((key-timing 2 less-than 25)) _ break () (chord ch h) break)
+  ch_a (switch ((key-timing 2 less-than 25)) _ break () (chord ch a) break)
+  ch_e (switch ((key-timing 2 less-than 25)) _ break () (chord ch e) break)
+  ch_i (switch ((key-timing 2 less-than 25)) _ break () (chord ch i) break)
+
+
+
+
+
+
+
+
 
   magic (switch
     ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
