@@ -187,7 +187,7 @@
         # "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard
 
 
-        "SUPER, q,      workspace,                 1"
+        "SUPER SHIFT, semicolon, workspace,        1"
         "SUPER, b,      workspace,                 2"
         "SUPER, f,      workspace,                 3"
         "SUPER, d,      workspace,                 4"
