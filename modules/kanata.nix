@@ -101,7 +101,7 @@
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) S-0
-  (            ;) @;
+  (            ;) ;
   (S-- S-9      ) S-3
   (S--     S-0  ) S-5
   (    S-9 S-0  ) S-/
@@ -115,7 +115,6 @@
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
   wn (one-shot-press 500 (layer-toggle win))
-  ; (tap-hold 10 100 ; rsft)
 
   dcol (macro S-; S-;)
 
