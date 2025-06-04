@@ -212,12 +212,12 @@
 
 
     ;; non-sfb for !=
-    ((and(key-history spc 3) (key-history lsft 2) (key-history 1 1))) (macro =) break
-    ((and(key-history spc 3) (key-history rsft 2) (key-history 1 1))) (macro =) break
+    ;;((and(key-history spc 2) (key-history 1 1))) (macro =) break
 
     ;; non-sfb for vec![]
-    ((and(key-history c 3) (key-history lsft 2) (key-history 1 1))) (macro [) break
-    ((and(key-history c 3) (key-history rsft 2) (key-history 1 1))) (macro [) break
+    ;;((and(key-history c 2) (key-history 1 1))) (macro [) break
+
+    ((key-history 1 1)) (macro ]) break
 
   ;; // non-sfb for >>
     ((key-history . 1)) (macro S-.) break
@@ -229,6 +229,7 @@
     ((key-history { 1)) (macro S-] ; left left) break
 
 
+    ((key-history x 1)) (macro p k g s) break
 
 
     ((key-history 7 1)) (macro S-7) break
