@@ -2,18 +2,20 @@
 
   environment.systemPackages = with pkgs; [
     helix
-    tt
     haskell-language-server
     ghc
     socat
     protontricks
     # wev
-    # protonup
     lutris
     # gimp
     # osu-lazer
     go
+
+    tt # typing
     vitetris
+    cl-wordle
+
     ffmpeg
     # davinci-resolve
     # mesa-demos
