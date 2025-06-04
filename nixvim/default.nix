@@ -13,7 +13,8 @@
     ./lazy.nix
     ./nixvim.nix
     ./options.nix
-    ./ui/colorscheme.nix
+    ./ui/colorscheme_macchiato.nix
+    # ./ui/colorscheme_lix.nix
     ./ui/zen-mode.nix
     ./ui/lualine.nix
     ./ui/noice.nix
