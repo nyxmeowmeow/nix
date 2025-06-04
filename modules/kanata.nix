@@ -91,7 +91,7 @@
   (  a e  ) S-]
   (    e i) (one-shot-press 300 rsft)
 
-  (,      ) (tap-hold-press 110 70 , rsft)
+  (,      ) (tap-hold-press 110 150 , rsft)
   (  .    ) .
   (    k  ) k
   (      g) @win
