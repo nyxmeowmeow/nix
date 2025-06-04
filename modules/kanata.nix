@@ -20,7 +20,7 @@
   q     b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
   f18   , . k g v    / f15 f16 f17 ; z
-      lmet r lsft    f14 spc rsft ralt
+      lmet r lsft    ent spc rsft ralt
 )
 
 (deflayer default
