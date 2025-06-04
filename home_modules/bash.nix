@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   programs.bash = {
     enable = true;
     enableCompletion = true;
@@ -57,5 +57,8 @@
 
       n = "nvim";
     };
+    initExtra = ''
+      source ${pkgs.bashInteractive}/etc/profile.d/bash_completion.sh
+    '';
   };
 }

@@ -1,9 +1,12 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    bash-completion
+    nix-bash-completions
+
     helix
-    haskell-language-server
-    ghc
+
+
     socat
     protontricks
     # wev
@@ -29,15 +32,10 @@
     # xdg-desktop-portal-termfilechooser
     expect
     nushell
-    fish
-    # lmms
     # godot
-    clang
-    clang-tools
-    rustc
-    cargo
-    rust-analyzer
-    clippy
+
+
+
     unzip
     termdown
     tty-clock
