@@ -81,7 +81,7 @@
   (  s   c) S-`
   (    t c) [
 
-  (h      ) @h
+  (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
@@ -126,7 +126,6 @@
 
 
 
-  h (switch ((key-timing 2 less-than 200)) _ break () (one-shot-release 500 rsft) break)
 
 
 
