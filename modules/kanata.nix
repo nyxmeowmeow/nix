@@ -167,38 +167,38 @@
 ;;  ch_;  (chord ch ;)
 
 
-;; chords disabled if pressed < 30ms after a different key
+;; chords disabled if pressed < 40ms after a different key
 
 
-  ch_b (switch ((key-timing 2 less-than 30)) _ break () (chord ch b) break)
-  ch_f (switch ((key-timing 2 less-than 30)) _ break () (chord ch f) break)
-  ch_d (switch ((key-timing 2 less-than 30)) _ break () (chord ch d) break)
-  ch_w (switch ((key-timing 2 less-than 30)) _ break () (chord ch w) break)
+  ch_b (switch ((key-timing 2 less-than 40)) _ break () (chord ch b) break)
+  ch_f (switch ((key-timing 2 less-than 40)) _ break () (chord ch f) break)
+  ch_d (switch ((key-timing 2 less-than 40)) _ break () (chord ch d) break)
+  ch_w (switch ((key-timing 2 less-than 40)) _ break () (chord ch w) break)
 
-  ch_l (switch ((key-timing 2 less-than 30)) _ break () (chord ch l) break)
-  ch_o (switch ((key-timing 2 less-than 30)) _ break () (chord ch o) break)
-  ch_u (switch ((key-timing 2 less-than 30)) _ break () (chord ch u) break)
-  ch_j (switch ((key-timing 2 less-than 30)) _ break () (chord ch j) break)
+  ch_l (switch ((key-timing 2 less-than 40)) _ break () (chord ch l) break)
+  ch_o (switch ((key-timing 2 less-than 40)) _ break () (chord ch o) break)
+  ch_u (switch ((key-timing 2 less-than 40)) _ break () (chord ch u) break)
+  ch_j (switch ((key-timing 2 less-than 40)) _ break () (chord ch j) break)
 
-  ch_n (switch ((key-timing 2 less-than 30)) _ break () (chord ch n) break)
-  ch_s (switch ((key-timing 2 less-than 30)) _ break () (chord ch s) break)
-  ch_t (switch ((key-timing 2 less-than 30)) _ break () (chord ch t) break)
-  ch_c (switch ((key-timing 2 less-than 30)) _ break () (chord ch c) break)
+  ch_n (switch ((key-timing 2 less-than 40)) _ break () (chord ch n) break)
+  ch_s (switch ((key-timing 2 less-than 40)) _ break () (chord ch s) break)
+  ch_t (switch ((key-timing 2 less-than 40)) _ break () (chord ch t) break)
+  ch_c (switch ((key-timing 2 less-than 40)) _ break () (chord ch c) break)
 
-  ch_h (switch ((key-timing 2 less-than 30)) _ break () (chord ch h) break)
-  ch_a (switch ((key-timing 2 less-than 30)) _ break () (chord ch a) break)
-  ch_e (switch ((key-timing 2 less-than 30)) _ break () (chord ch e) break)
-  ch_i (switch ((key-timing 2 less-than 30)) _ break () (chord ch i) break)
+  ch_h (switch ((key-timing 2 less-than 40)) _ break () (chord ch h) break)
+  ch_a (switch ((key-timing 2 less-than 40)) _ break () (chord ch a) break)
+  ch_e (switch ((key-timing 2 less-than 40)) _ break () (chord ch e) break)
+  ch_i (switch ((key-timing 2 less-than 40)) _ break () (chord ch i) break)
 
-  ch_, (switch ((key-timing 2 less-than 30)) _ break () (chord ch ,) break)
-  ch_. (switch ((key-timing 2 less-than 30)) _ break () (chord ch .) break)
-  ch_k (switch ((key-timing 2 less-than 30)) _ break () (chord ch k) break)
-  ch_g (switch ((key-timing 2 less-than 30)) _ break () (chord ch g) break)
+  ch_, (switch ((key-timing 2 less-than 40)) _ break () (chord ch ,) break)
+  ch_. (switch ((key-timing 2 less-than 40)) _ break () (chord ch .) break)
+  ch_k (switch ((key-timing 2 less-than 40)) _ break () (chord ch k) break)
+  ch_g (switch ((key-timing 2 less-than 40)) _ break () (chord ch g) break)
 
-  ch__  (switch ((key-timing 2 less-than 30)) _ break () (chord ch S--) break)
-  ch_lp (switch ((key-timing 2 less-than 30)) _ break () (chord ch S-9) break)
-  ch_rp (switch ((key-timing 2 less-than 30)) _ break () (chord ch S-0) break)
-  ch_;  (switch ((key-timing 2 less-than 30)) _ break () (chord ch ;) break)
+  ch__  (switch ((key-timing 2 less-than 40)) _ break () (chord ch S--) break)
+  ch_lp (switch ((key-timing 2 less-than 40)) _ break () (chord ch S-9) break)
+  ch_rp (switch ((key-timing 2 less-than 40)) _ break () (chord ch S-0) break)
+  ch_;  (switch ((key-timing 2 less-than 40)) _ break () (chord ch ;) break)
 
 
 
