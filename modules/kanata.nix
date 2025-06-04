@@ -58,16 +58,17 @@
 
 (defchords ch 15
 
-  (h c) 1
-  (a c) 2
-  (e c) 3
-  (i c) 4
-  (h t) 5
-  (a t) 6
-  (e t) 7
-  (i t) 8
-  (a s) 9
-  (e s) 0
+  ;;crackhead idea
+  ;;(h c) 1
+  ;;(a c) 2
+  ;;(e c) 3
+  ;;(i c) 4
+  ;;(h t) 5
+  ;;(a t) 6
+  ;;(e t) 7
+  ;;(i t) 8
+  ;;(a s) 9
+  ;;(e s) 0
 
 
   (b      ) b
