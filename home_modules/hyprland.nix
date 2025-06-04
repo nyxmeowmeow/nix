@@ -230,7 +230,7 @@
       # kanata keys
         "$hyperkey, 1, togglefloating"
         "$hyperkey, 2, togglesplit"
-        "$hyperkey, 3, hyprctl dispatch centerwindow"
+        "$hyperkey, 3, centerwindow"
 
 
 
