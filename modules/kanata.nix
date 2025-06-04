@@ -82,7 +82,7 @@
   (  s   c) S-`
   (    t c) [
 
-  (h      ) (tap-hold-release 70 70 h (layer-toggle syms))
+  (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
@@ -91,8 +91,8 @@
   (  a e  ) S-]
   (    e i) (one-shot-press 300 rsft)
 
-  (,      ) (tap-hold-release 110 150 , rsft)
-  (  .    ) .
+  (,      ) ,
+  (  .    ) (tap-hold-press 110 1 . rsft)
   (    k  ) k
   (      g) @win
   (, .    ) \
@@ -102,7 +102,7 @@
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) S-0
-  (            ;) (tap-hold-release 110 70 ; rsft)
+  (            ;) (tap-hold-press 110 1 ; rsft)
   (S-- S-9      ) S-3
   (S--     S-0  ) S-5
   (    S-9 S-0  ) S-/
