@@ -58,7 +58,7 @@
       n = "nvim";
     };
     initExtra = ''
-    source ${pkgs.bash-completion}
+    source ${pkgs.bash-completion}/etc/bash_completion.d/000_bash_completion_compat.bash
     '';
   };
 }
