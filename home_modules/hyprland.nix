@@ -200,7 +200,7 @@
         "SUPER, k,      togglespecialworkspace,    music"
 
         "SUPER SHIFT, n,          movetoworkspacesilent,   9"
-        "SUPER SHIFT, q,          movetoworkspacesilent,   1"
+        #"SUPER SHIFT, semicolon,          movetoworkspacesilent,   1" # shift is already being used by the the toggle workspace key
         "SUPER SHIFT, b,          movetoworkspacesilent,   2"
         "SUPER SHIFT, f,          movetoworkspacesilent,   3"
         "SUPER SHIFT, d,          movetoworkspacesilent,   4"
