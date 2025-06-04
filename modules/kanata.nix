@@ -115,7 +115,7 @@
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
   wn (one-shot-press 500 (layer-toggle win))
-  ; (tap-hold 10 100 ; (one-shot-press 500 rsft))
+  ; (tap-hold 10 100 ; rsft)
 
   dcol (macro S-; S-;)
 
