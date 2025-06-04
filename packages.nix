@@ -1,7 +1,6 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-  leptonica
     # bash-completion
     # nix-bash-completions
     expect
