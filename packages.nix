@@ -70,6 +70,7 @@
     polkit_gnome
     grimblast
     slurp
+    tesseract # ocr
     # catppuccin-kvantum
     # catppuccin-gtk
     dunst
