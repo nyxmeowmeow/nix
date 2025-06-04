@@ -1,6 +1,6 @@
 {
 
-  home.file.".config/vesktop/themes/vesktop_lix.css".source = ../stuff/vesktop_lix.css;
+  home.file.".config/vesktop/themes/vesktop_black.css".source = ../stuff/vesktop_lix.css;
 
   programs.vesktop = {
     enable = true;
