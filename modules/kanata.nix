@@ -76,13 +76,13 @@
   (n      ) n
   (  s    ) s
   (    t  ) t
-  (      c) (tap-hold-press 110 110 h (layer-toggle syms))
+  (      c) c
   (n s    ) (one-shot-press 300 lsft)
   (  s t  ) S-[
   (  s   c) S-`
   (    t c) [
 
-  (h      ) (tap-hold-press 110 110 h (layer-toggle syms))
+  (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
