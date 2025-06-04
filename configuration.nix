@@ -4,7 +4,7 @@
     ./hardware-configuration.nix
     ./services.nix
     ./packages.nix
-    # ./modules/stylix.nix
+    ./modules/stylix.nix
     ./modules/kanata.nix
     ./modules/security.nix
     ./modules/hardware.nix

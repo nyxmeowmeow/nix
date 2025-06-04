@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
+    stylix.url = "github:danth/stylix";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       # IMPORTANT: we're using "libgbm" and is only available in unstable so ensure
@@ -24,6 +25,7 @@
       modules = [
         ./configuration.nix
 
+        inputs.stylix.nixosModules.stylix
 
         home-manager.nixosModules.home-manager
         {
