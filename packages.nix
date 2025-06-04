@@ -69,6 +69,7 @@
     hyprpicker
     polkit_gnome
     grimblast
+    grim
     slurp
     tesseract # ocr
     # catppuccin-kvantum
