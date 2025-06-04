@@ -82,7 +82,7 @@
   (  s   c) S-`
   (    t c) [
 
-  (h      ) (tap-hold-press-timeout 70 70 h (layer-toggle syms) j)
+  (h      ) (tap-hold-release 70 70 h (layer-toggle syms))
   (  a    ) a
   (    e  ) e
   (      i) i
@@ -102,7 +102,7 @@
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) S-0
-  (            ;) ;
+  (            ;) (tap-hold-press 110 1 ; rsft)
   (S-- S-9      ) S-3
   (S--     S-0  ) S-5
   (    S-9 S-0  ) S-/
