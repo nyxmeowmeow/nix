@@ -1,5 +1,4 @@
 {
-  
   programs.foot = {
     enable = true;
     settings = {
@@ -22,7 +21,7 @@
       };
 
       colors = {
-        alpha = "1";
+        alpha = "0.8";
         background = "000000";
         foreground = "cad3f5";
         ## Normal/regular colors (color palette 0-7)
