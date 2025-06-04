@@ -5,7 +5,10 @@
     settings = {
       label.uppercase = false;
       labels = "nisetachr";
-      prompt.enabled = false;
+      prompt = {
+        win_config.col = 1000;
+        prefix = null;
+      };
     };
   };
     keymaps = [
@@ -13,12 +16,6 @@
       key = "<cr>";
       action = "function() require('flash').jump() end";
       mode = [ "n" "v" "x" ];
-      lua = true;
-    }
-    {
-      key = "<cr>";
-      action = "function() require('flash').remote() end";
-      mode = [ "o" ];
       lua = true;
     }
     ];

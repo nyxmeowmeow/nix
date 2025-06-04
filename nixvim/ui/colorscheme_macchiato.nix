@@ -57,14 +57,14 @@
         SnacksIndentChunk.fg = "#b7bdf8";
         SnacksIndentScope.fg = "#b7bdf8";
         RenderMarkdownCode.bg = "#3B224C";
-        RenderMarkdownBullet.fg = "#A4A0E8";
+        RenderMarkdownBullet.fg = "#cad3f5";
         RenderMarkdownCodeInline.bg = "#a5adcb";
         RenderMarkdownInlineHighlight.fg = "#b7bdf8";
         RenderMarkdownTableHead.fg = "#b7bdf8";
         RenderMarkdownTableRow.fg = "#b7bdf8";
         RenderMarkdownTableFill.fg = "#b7bdf8";
 #TermCursor.bg = colors.text
-        Character.fg = "#A4A0E8";
+        Character.fg = "#cad3f5";
         String.fg = "#a6da95";
         Constant.fg = "#C78DFC";
 #FunctionBuiltIn.fg = colors.green
@@ -99,7 +99,7 @@
 "@lsp.type.comment".fg = "#886C9C";
 #"@lsp.type.decorator".fg = "";
 "@lsp.type.enum".fg = "#D5E7FF";
-"@lsp.type.enumMember".fg = "#A4A0E8";
+"@lsp.type.enumMember".fg = "#cad3f5";
 #"@lsp.type.event".fg = "";
 "@lsp.type.function".fg = "#D5E7FF";
 "@function.builtin".fg = "#b7bdf8";
@@ -112,13 +112,13 @@
 #"@lsp.type.modifier".fg = "";
 #"@type.qualifier".fg = "";
 #"@lsp.type.namespace".fg = "";
-"@lsp.type.number".fg = "#EFBA5D";
+"@lsp.type.number".fg = "#eed49f";
 "@lsp.type.operator".fg = "#b7bdf8";
 "@operator".fg = "#b7bdf8";
 "Operator".fg = "#b7bdf8";
-"Delimiter".fg = "#A4A0E8";
+"Delimiter".fg = "#cad3f5";
 #"@lsp.type.parameter".fg = "";
-"@paramater".fg = "#A4A0E8";
+"@paramater".fg = "#cad3f5";
 "@property".fg = "#D5E7FF";
 "@module".fg = "#b7bdf8";
 
@@ -129,7 +129,7 @@
 "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
 "@type.definition".fg = "#FF00FF";
-"@lsp.type.variable".fg = "#A4A0E8";
+"@lsp.type.variable".fg = "#cad3f5";
 
 
 
