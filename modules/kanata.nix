@@ -17,25 +17,25 @@
 
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    ' l o u j x
+  f18   b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
-  f18   , . k g v    / f15 f16 f17 ; z
+  q     , . k g v    / f15 f16 f17 ; z
       lmet r lsft    ent spc rsft ralt
 )
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  _   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
+  S-;   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
-  S-; @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+  q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _ @magic     @sym _  @rs tab
 )
 
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -
-  q     b f d w p    ' l o u j x
+  tab   b f d w p    ' l o u j x
   lctrl n s t c y    m h a e i bspc
-  tab   , . k g v    / 8 9 0 ; z
+  q     , . k g v    / 8 9 0 ; z
       lmet r lsft    enter spc rsft tab
 )
 
@@ -189,8 +189,6 @@
   ch_a (switch ((key-timing 2 less-than 30)) _ break () (chord ch a) break)
   ch_e (switch ((key-timing 2 less-than 30)) _ break () (chord ch e) break)
   ch_i (switch ((key-timing 2 less-than 30)) _ break () (chord ch i) break)
-
-  ch_q (switch ((key-timing 2 less-than 30)) _ break () (macro q) break)
 
   ch_, (switch ((key-timing 2 less-than 30)) _ break () (chord ch ,) break)
   ch_. (switch ((key-timing 2 less-than 30)) _ break () (chord ch .) break)
