@@ -8,6 +8,7 @@
     ./modules/kanata.nix
     ./modules/security.nix
     ./modules/hardware.nix
+    ./modules/languages.nix
     ./modules/boot.nix
     ./modules/steam.nix
     ./misc.nix

@@ -57,8 +57,8 @@
 
       n = "nvim";
     };
-    initExtra = ''
-      source ${pkgs.bashInteractive}/etc/profile.d/bash_completion.sh
-    '';
+    # initExtra = ''
+    #   source ${pkgs.bashInteractive}/etc/profile.d/bash_completion.sh
+    # '';
   };
 }

@@ -3,15 +3,17 @@
   environment.systemPackages = with pkgs; [
     bash-completion
     nix-bash-completions
+    expect
+
 
     helix
 
 
     socat
-    protontricks
     # wev
-    lutris
+    # lutris
     # gimp
+    krita
     # osu-lazer
     go
 
@@ -21,41 +23,31 @@
 
     ffmpeg
     # davinci-resolve
-    # mesa-demos
     vulkan-tools
-    clinfo
     trash-cli
     tldr
     btop
-    google-chrome
     # zenity
     # xdg-desktop-portal-termfilechooser
-    expect
     nushell
     # godot
 
 
 
     unzip
+
     termdown
     tty-clock
+
     qview
     mpc
-    mpd
     ripgrep
     # nix-inspect
     mpv
     obs-studio
-    python3
     fuse
-    # nss
-    # fuse3
-    # openssl
-    # patchelf
-    # appimage-run
     libevdev
     libqalculate
-    krita
     gh
     netcat
     jq
@@ -69,21 +61,17 @@
     udiskie
     udisks2
     gvfs
-    nautilus
-    gcc
     wget
     git
     dbus
     # firefox
     vesktop
     foot
-    hyprsunset
     hyprprop
     hyprland
     hyprpaper
     hyprpicker
     polkit_gnome
-    walker
     grimblast
     slurp
     # catppuccin-kvantum
@@ -94,7 +82,6 @@
     yazi
     #neovim
     stylua
-    nixd
     fastfetch
     kanata
     dconf
