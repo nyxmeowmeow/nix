@@ -146,6 +146,7 @@
         #"SUPER,       slash, togglesplit"
         #"SUPER,       m, togglefloating"
         "SUPER SHIFT, m, exec, hyprctl dispatch centerwindow"
+        "SUPER,       1, exec, footclient --hold bash grim -g '$(slurp)' screenshot.png ; tesseract screenshot.png output; cat output.txt"
         "SUPER,       2, exec, footclient --hold hyprprop"
         # "SUPER SHIFT, 2, exec, footclient --hold hyprctl clients"
         "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"
