@@ -57,6 +57,19 @@
 )
 
 (defchords ch 15
+
+  (n h) 1
+  (s h) 2
+  (t h) 3
+  (c h) 4
+  (n a) 5
+  (s a) 6
+  (t a) 7
+  (c a) 8
+  (n e) 9
+  (s e) 0
+
+
   (b      ) b
   (  f    ) f
   (    d  ) d
