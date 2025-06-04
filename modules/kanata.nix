@@ -178,21 +178,18 @@
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
     ((key-history e 1)) (macro u) break
-    ((key-history i 1)) (macro x) break
-    ((and(key-history s 2) (key-history t 1))) (macro d) break
+    ;;((key-history i 1)) (macro x) break
 
   ;; // sfs
     ((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
     ((and(key-history e 2) (key-history v 1))) (macro e) break
-    ((and(key-history s 2) (key-history t 1))) (macro d) break
 
     ((and(key-history n 2) (key-history i 1))) (macro x) break
   ;; // sfb
     ((key-history w 1)) (macro y) break
     ((key-history c 1)) (macro y) break
     ((key-history p 1)) (macro y) break
-    ((key-history y 1)) (macro s) break
 
     ((key-history j 1)) (macro u s t) break
 
@@ -206,6 +203,10 @@
     ((key-history ] 1)) (macro ;) break
   ;; // auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
+
+
+    ((and(key-history s 2) (key-history t 1))) (macro d) break
+
 
     ((key-history 7 1)) (macro S-7) break
     ((key-history ; 1)) (macro S-;) break
