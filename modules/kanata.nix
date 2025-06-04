@@ -157,11 +157,8 @@
     ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
     ((key-history enter 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
 
+    ((and(key-history s 2) (key-history t 1))) (macro d) break
 
-    ((and
-    (key-history l 2)
-    (key-history n 1)
-  )) (macro S-1 S-9 S-' S-[ S-] S-' ,) break
 
 
 
@@ -205,7 +202,6 @@
     ((key-history { 1)) (macro S-] ; left left) break
 
 
-    ((and(key-history s 2) (key-history t 1))) (macro d) break
 
 
     ((key-history 7 1)) (macro S-7) break
