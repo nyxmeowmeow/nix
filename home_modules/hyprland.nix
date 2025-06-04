@@ -39,6 +39,7 @@
 
       "$scrPath" = "~/.local/share/bin";
       "$scripts" = "~/nix/stuff/scripts";
+      "$hyperkey" = "SUPER SHIFT CTRL ALT";
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
 
 
@@ -142,8 +143,8 @@
         "SUPER CTRL,  o, exec, hyprctl kill"
         "SUPER CTRL SHIFT, o, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"
         "SUPER,       n, exec, $scripts/swap.sh"
-        "SUPER,       slash, togglesplit"
-        "SUPER,       m, togglefloating"
+        #"SUPER,       slash, togglesplit"
+        #"SUPER,       m, togglefloating"
         "SUPER SHIFT, m, exec, hyprctl dispatch centerwindow"
         "SUPER,       2, exec, footclient --hold hyprprop"
         # "SUPER SHIFT, 2, exec, footclient --hold hyprctl clients"
@@ -221,6 +222,16 @@
         "SUPER ALT, a, moveintogroup, d"
         "SUPER ALT, e, moveintogroup, u"
         "SUPER ALT, i, moveintogroup, r"
+
+
+
+
+
+      # kanata keys
+        "$hyperkey, 1, togglefloating"
+        "$hyperkey, 2, togglesplit"
+        "$hyperkey, 3, hyprctl dispatch centerwindow"
+
 
 
 

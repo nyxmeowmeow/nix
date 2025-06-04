@@ -49,8 +49,8 @@
 
 (deflayer win
   _  _   _   _   _   _       _   _    _    _    _     _
-  _  _   _   _   _   _       _   _    _    _    _     _
-  _  _   _   @wt _   _       _   @wl  @wd  @wu  @wr   _
+  _  @fl _   _   _   _       _   _    _    _    _     _
+  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
   _  _   _   _   _   _       _   _    _    _    _     _
              _   _   _       _   _    _    _
 )
@@ -283,6 +283,9 @@
   wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
   wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
   wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-/)
+  fl (macro M-S-C-A-1) ;; float window
+  sp (macro M-S-C-A-2) ;; change split orientation
+  cn (macro M-S-C-A-3) ;; center window
 
 )
         '';
