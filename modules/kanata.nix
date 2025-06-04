@@ -81,7 +81,7 @@
   (  s   c) S-`
   (    t c) [
 
-  (h      ) h
+  (h      ) @h
   (  a    ) a
   (    e  ) e
   (      i) i
@@ -123,6 +123,20 @@
     (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
     () g break
   )
+
+
+
+  h (switch ((key-timing 2 less-than 200)) _ break () (tap-hold-release-timeout 200 500 h ralt h) break)
+
+
+
+
+
+
+
+
+
+
 
 ;;  ch_b (chord ch b)
 ;;  ch_f (chord ch f)
