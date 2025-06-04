@@ -15,6 +15,8 @@
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
 
+
+
 (defsrc
   esc   1 2 3 4 5    6 7 8 9 0 -
   f18   b f d w p    ' l o u j x
@@ -26,16 +28,33 @@
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
   S-;   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i _
+  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm   _ _        @sym _  @rs tab
+                  @lm   _ @magic     @sym _  @rs tab
 )
+
+(deflayer over
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  tab   b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  q     , . k g v    / 8 9 0 ; z
+      lmet r lsft    enter spc rsft tab
+)
+
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   _   _   _   _       _   left down up   right _
+  _  `   _   _   @wn _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt
   _  _   .   _   5   _       _   6    _    _    _     _
              _   _   lsft    _   _    _    _
+)
+
+(deflayer win
+  _  _   _   _   _   _       _   _    _    _    _     _
+  _  _   @fl _   _   _       _   _    _    _    _     _
+  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
+  _  _   _   _   _   _       _   _    _    _    _     _
+             _   _   _       _   _    _    _
 )
 
 (defchords ch 15
@@ -43,6 +62,9 @@
   (  f    ) f
   (    d  ) d
   (      w) w
+  (b f    ) S-,
+  (  f d  ) =
+  (    d w) S-8
 
   (l    )   l
   (  o    ) o
@@ -56,21 +78,36 @@
   (  s    ) s
   (    t  ) t
   (      c) c
+  (n s    ) (one-shot-press 300 lsft)
+  (  s t  ) S-[
+  (  s   c) S-`
+  (    t c) [
 
   (h      ) h
   (  a    ) a
   (    e  ) e
   (      i) i
+  (h a    ) ]
+  (h   e  ) del
+  (  a e  ) S-]
+  (    e i) (one-shot-press 300 rsft)
 
   (,      ) ,
   (  .    ) .
   (    k  ) k
-  (      g) g
+  (      g) @win
+  (, .    ) \
+  (  . k  ) S-\
+  (    k g) S-1
 
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) S-0
   (            ;) ;
+  (S-- S-9      ) S-3
+  (S--     S-0  ) S-5
+  (    S-9 S-0  ) S-/
+  (        S-0 ;) S-7
 )
 
 (defalias
@@ -78,44 +115,141 @@
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 esc lmet)
   rs (tap-hold-press 120 120 bspc lsft)
+  ;;col (tap-hold-press 120 120 S-; lctl)
+  wn (one-shot-press 500 (layer-toggle win))
+
+
+  win (switch
+    (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
+    () g break
+  )
+
+
+
+
 
 
 
 ;; chords disabled if pressed < 40ms after a different key
 
 
-  ch_b (switch ((key-timing 2 less-than 40)) _ break () (chord ch b) break)
-  ch_f (switch ((key-timing 2 less-than 40)) _ break () (chord ch f) break)
-  ch_d (switch ((key-timing 2 less-than 40)) _ break () (chord ch d) break)
-  ch_w (switch ((key-timing 2 less-than 40)) _ break () (chord ch w) break)
+  ch_b (switch ((key-timing 1 less-than 40)) _ break () (chord ch b) break)
+  ch_f (switch ((key-timing 1 less-than 40)) _ break () (chord ch f) break)
+  ch_d (switch ((key-timing 1 less-than 40)) _ break () (chord ch d) break)
+  ch_w (switch ((key-timing 1 less-than 40)) _ break () (chord ch w) break)
 
-  ch_l (switch ((key-timing 2 less-than 40)) _ break () (chord ch l) break)
-  ch_o (switch ((key-timing 2 less-than 40)) _ break () (chord ch o) break)
-  ch_u (switch ((key-timing 2 less-than 40)) _ break () (chord ch u) break)
-  ch_j (switch ((key-timing 2 less-than 40)) _ break () (chord ch j) break)
+  ch_l (switch ((key-timing 1 less-than 40)) _ break () (chord ch l) break)
+  ch_o (switch ((key-timing 1 less-than 40)) _ break () (chord ch o) break)
+  ch_u (switch ((key-timing 1 less-than 40)) _ break () (chord ch u) break)
+  ch_j (switch ((key-timing 1 less-than 40)) _ break () (chord ch j) break)
 
-  ch_n (switch ((key-timing 2 less-than 40)) _ break () (chord ch n) break)
-  ch_s (switch ((key-timing 2 less-than 40)) _ break () (chord ch s) break)
-  ch_t (switch ((key-timing 2 less-than 40)) _ break () (chord ch t) break)
-  ch_c (switch ((key-timing 2 less-than 40)) _ break () (chord ch c) break)
+  ch_n (switch ((key-timing 1 less-than 40)) _ break () (chord ch n) break)
+  ch_s (switch ((key-timing 1 less-than 40)) _ break () (chord ch s) break)
+  ch_t (switch ((key-timing 1 less-than 40)) _ break () (chord ch t) break)
+  ch_c (switch ((key-timing 1 less-than 40)) _ break () (chord ch c) break)
 
-  ch_h (switch ((key-timing 2 less-than 40)) _ break () (chord ch h) break)
-  ch_a (switch ((key-timing 2 less-than 40)) _ break () (chord ch a) break)
-  ch_e (switch ((key-timing 2 less-than 40)) _ break () (chord ch e) break)
-  ch_i (switch ((key-timing 2 less-than 40)) _ break () (chord ch i) break)
+  ch_h (switch ((key-timing 1 less-than 40)) _ break () (chord ch h) break)
+  ch_a (switch ((key-timing 1 less-than 40)) _ break () (chord ch a) break)
+  ch_e (switch ((key-timing 1 less-than 40)) _ break () (chord ch e) break)
+  ch_i (switch ((key-timing 1 less-than 40)) _ break () (chord ch i) break)
 
-  ch_, (switch ((key-timing 2 less-than 40)) _ break () (chord ch ,) break)
-  ch_. (switch ((key-timing 2 less-than 40)) _ break () (chord ch .) break)
-  ch_k (switch ((key-timing 2 less-than 40)) _ break () (chord ch k) break)
-  ch_g (switch ((key-timing 2 less-than 40)) _ break () (chord ch g) break)
+  ch_, (switch ((key-timing 1 less-than 40)) _ break () (chord ch ,) break)
+  ch_. (switch ((key-timing 1 less-than 40)) _ break () (chord ch .) break)
+  ch_k (switch ((key-timing 1 less-than 40)) _ break () (chord ch k) break)
+  ch_g (switch ((key-timing 1 less-than 40)) _ break () (chord ch g) break)
 
-  ch__  (switch ((key-timing 2 less-than 40)) _ break () (chord ch S--) break)
-  ch_lp (switch ((key-timing 2 less-than 40)) _ break () (chord ch S-9) break)
-  ch_rp (switch ((key-timing 2 less-than 40)) _ break () (chord ch S-0) break)
-  ch_;  (switch ((key-timing 2 less-than 40)) _ break () (chord ch ;) break)
+  ch__  (switch ((key-timing 1 less-than 40)) _ break () (chord ch S--) break)
+  ch_lp (switch ((key-timing 1 less-than 40)) _ break () (chord ch S-9) break)
+  ch_rp (switch ((key-timing 1 less-than 40)) _ break () (chord ch S-0) break)
+  ch_;  (switch ((key-timing 1 less-than 40)) _ break () (chord ch ;) break)
 
 
 
+
+
+
+
+
+  magic (switch
+    ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
+    ((key-history enter 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
+
+
+
+
+
+
+    ((key-history lsft 1)) (caps-word-custom 1000
+             (q b f d w p l o u j x n s t c y m h a e i k g v)
+             (lsft -)) break
+
+  ;; // #include
+    ((key-history 3 1)) (macro i n c l u d e) break
+
+  ;; // sfb
+    ((key-history o 1)) (macro a) break
+    ((key-history a 1)) (macro o) break
+    ((key-history u 1)) (macro e) break
+    ((key-history e 1)) (macro u) break
+    ;;((key-history i 1)) (macro x) break
+    ((key-history t 1)) (macro d) break
+    ((key-history i 1)) (macro x) break
+
+  ;; // sfs
+    ((and(key-history e 2) (key-history s 1))) (macro e) break
+    ((and(key-history e 2) (key-history y 1))) (macro e) break
+    ((and(key-history e 2) (key-history v 1))) (macro e) break
+
+    ((and(key-history n 2) (key-history i 1))) (macro x) break
+  ;; // sfb
+    ((key-history w 1)) (macro y) break
+    ((key-history c 1)) (macro y) break
+    ((key-history p 1)) (macro y) break
+
+    ((key-history j 1)) (macro u s t) break
+
+    ((key-history \ 1)) (macro n) break
+    ((key-history 1 1)) (macro [) break
+  ;; // non-sfb repeat key for >
+    ((key-history . 1)) (macro S-.) break
+  ;; // non-sfb for <=
+    ((key-history , 1)) (macro =) break
+  ;; // non-sfb ; for ]
+    ((key-history ] 1)) (macro ;) break
+  ;; // auto ; for {}
+    ((key-history { 1)) (macro S-] ; left left) break
+
+
+
+
+    ((key-history 7 1)) (macro S-7) break
+    ((key-history ; 1)) (macro S-;) break
+    ((key-history = 1)) (macro S-.) break
+    ((key-history - 1)) (macro S-.) break
+    ((key-history 9 1)) (macro S-') break
+    ((key-history 0 1)) (macro S-0) break
+    () rpt break
+  )
+
+  ;; // normal rpt except for syms
+  rpeat (switch
+    ((key-history , 1)) (macro S-,) break
+    ((key-history \ 1)) (macro S-\) break
+    ((key-history ; 1)) (macro S-;) break
+    ((key-history 7 1)) (macro S-7) break
+    ((key-history 9 1)) (macro S-9) break
+    ((key-history 0 1)) (macro S-0) break
+    () rpt break
+  )
+
+  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h)
+  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
+  wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
+  wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
+  wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-S-C-A-2)
+  fl (macro M-S-C-A-1) ;; float window
+  sp (macro M-S-C-A-2) ;; change split orientation
+  cn (macro M-S-C-A-3) ;; center window
 
 )
         '';
