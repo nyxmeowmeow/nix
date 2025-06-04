@@ -126,7 +126,7 @@
 
 
 
-  h (switch ((key-timing 2 less-than 200)) _ break () (tap-hold-release-timeout 200 500 h ralt h) break)
+  h (switch ((key-timing 2 less-than 200)) _ break () (tap-hold-release-timeout 200 500 h rsft h) break)
 
 
 
