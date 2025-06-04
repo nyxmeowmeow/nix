@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+  leptonica
     # bash-completion
     # nix-bash-completions
     expect
@@ -69,9 +70,7 @@
     hyprpicker
     polkit_gnome
     grimblast
-    grim
     slurp
-    tesseract # ocr
     # catppuccin-kvantum
     # catppuccin-gtk
     dunst
