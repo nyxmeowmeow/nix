@@ -42,9 +42,9 @@
 
 (deflayer syms
   f1 f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _  `   _   _   @wn _       _   left down up   right _
+  _  `   .   _   @wn _       _   left down up   right _
   _  1   2   3   4   _       _   7    8    9    0     rpt
-  _  _   .   _   5   _       _   6    _    _    _     _
+  _  0   9   8   5   _       _   6    3    2    1     _
              _   _   lsft    _   _    _    _
 )
 
@@ -91,7 +91,7 @@
   (  s    ) s
   (    t  ) t
   (      c) c
-  (n s    ) (one-shot-press 300 lsft)
+  (n s    ) (one-shot-press 300 (layer-toggle syms))
   (  s t  ) S-[
   (  s   c) S-`
   (    t c) [
@@ -103,7 +103,7 @@
   (h a    ) ]
   (h   e  ) del
   (  a e  ) S-]
-  (    e i) (one-shot-press 300 rsft)
+  (    e i) (one-shot-press 300 (layer-toggle syms))
 
   (,      ) (tap-hold-press 110 110 , rsft)
   (  .    ) .
