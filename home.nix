@@ -13,7 +13,7 @@
     ./home_modules/ncmpcpp.nix
     ./home_modules/btop.nix
     ./home_modules/git.nix
-    ./home_modules/bash.nix
+    # ./home_modules/bash.nix
     ./home_modules/fzf.nix
     ./home_modules/zoxide.nix
     ./home_modules/dunst.nix

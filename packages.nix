@@ -1,12 +1,9 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    bash-completion
-    nix-bash-completions
+    # bash-completion
+    # nix-bash-completions
     expect
-
-
-    helix
 
 
     socat
@@ -15,7 +12,6 @@
     # gimp
     krita
     # osu-lazer
-    go
 
     tt # typing
     vitetris
@@ -26,7 +22,6 @@
     vulkan-tools
     trash-cli
     tldr
-    btop
     # zenity
     # xdg-desktop-portal-termfilechooser
     nushell
@@ -36,6 +31,7 @@
 
     unzip
 
+    btop
     termdown
     tty-clock
 
