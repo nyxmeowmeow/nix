@@ -169,6 +169,7 @@
 
 ;; chords disabled if pressed < 30ms after a different key
 
+
   ch_b (switch ((key-timing 2 less-than 30)) _ break () (chord ch b) break)
   ch_f (switch ((key-timing 2 less-than 30)) _ break () (chord ch f) break)
   ch_d (switch ((key-timing 2 less-than 30)) _ break () (chord ch d) break)
@@ -188,6 +189,8 @@
   ch_a (switch ((key-timing 2 less-than 30)) _ break () (chord ch a) break)
   ch_e (switch ((key-timing 2 less-than 30)) _ break () (chord ch e) break)
   ch_i (switch ((key-timing 2 less-than 30)) _ break () (chord ch i) break)
+
+  ch_q (switch ((key-timing 2 less-than 30)) _ break () (macro q) break)
 
   ch_, (switch ((key-timing 2 less-than 30)) _ break () (chord ch ,) break)
   ch_. (switch ((key-timing 2 less-than 30)) _ break () (chord ch .) break)
