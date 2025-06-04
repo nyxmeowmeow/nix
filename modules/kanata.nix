@@ -282,7 +282,7 @@
   wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
   wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
   wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
-  wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-/)
+  wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-S-C-A-2)
   fl (macro M-S-C-A-1) ;; float window
   sp (macro M-S-C-A-2) ;; change split orientation
   cn (macro M-S-C-A-3) ;; center window
