@@ -158,9 +158,9 @@
   ch_g (switch ((key-timing 1 less-than 40)) _ break () (chord ch g) break)
 
   ch__  (switch ((key-timing 1 less-than 40)) _ break () (chord ch S--) break)
-  ch_lp (switch ((key-timing 1 less-than 40)) _ break () (chord ch S-9) break)
-  ch_rp (switch ((key-timing 1 less-than 40)) _ break () (chord ch S-0) break)
-  ch_;  (switch ((key-timing 1 less-than 40)) _ break () (chord ch ;) break)
+  ch_lp (chord ch S-9)
+  ch_rp (chord ch S-0)
+  ch_;  (chord ch ;)
 
 
 
