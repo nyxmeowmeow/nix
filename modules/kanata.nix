@@ -105,7 +105,7 @@
   (  a e  ) S-]
   (    e i) (one-shot-press 300 (layer-toggle syms))
 
-  (,      ) (tap-hold-press 110 110 , rsft)
+  (,      ) (tap-hold-press 110 110 , lsft)
   (  .    ) .
   (    k  ) k
   (      g) @win
@@ -153,7 +153,7 @@
   
   ;; easier `, `
   sc (switch
-    (lsft) (macro , spc) break
+    (lsft) (multi (release-key lsft) (macro , spc)) break
     () spc break
   )
 
