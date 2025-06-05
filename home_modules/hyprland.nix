@@ -39,6 +39,7 @@
       "$scrPath" = "~/.local/share/bin";
       "$scripts" = "~/nix/stuff/scripts";
       "$hyperkey" = "SUPER SHIFT CTRL ALT";
+      "$song" = "~/nix/stuff/scripts/mpc.sh";
       "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";
 
 
@@ -470,8 +471,8 @@
 
 
 
-      bind = ,      v, exec, mpc -p 6669 searchplay title 'violet'
-      bind = SUPER, v, exec, mpc -p 6669 searchplay title 'violet'
+      bind = ,      v, exec, $song 'violet'
+      bind = SUPER, v, exec, $song 'violet'
       bind = ,      v, submap, reset
 
 
