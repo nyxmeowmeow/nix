@@ -26,7 +26,7 @@
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  S-;   @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
+  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm   _ @magic     @sym _  @rs tab
@@ -116,7 +116,7 @@
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) S-0
-  (            ;) (tap-hold-press 110 110 ; rsft)
+  (            ;) @semi?
   (S-- S-9      ) S-3
   (S--     S-0  ) S-5
   (    S-9 S-0  ) S-/
@@ -140,12 +140,15 @@
   )
 
   cw (caps-word-custom 1000
-  (q b f d w p l o u j x n s t c y m h a e i k g v)
-  (lsft -))
+    (q b f d w p l o u j x n s t c y m h a e i k g v)
+    (lsft -)
+  )
 
 
 
 
+  semi? (switch
+    ((key-history 0 1)) (tap-hold-press 110 110 ; rsft) break () _ break)
 
 
 ;; chords disabled if pressed < 40ms after a different key
