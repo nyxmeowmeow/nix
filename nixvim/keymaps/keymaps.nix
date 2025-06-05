@@ -5,7 +5,7 @@
 
     { # append semicolon
       key = "<leader>;";
-      action = "mzA;`z";
+      action = "mzA;<esc>`z";
       mode = "n";
     }
 
