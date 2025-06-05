@@ -148,7 +148,8 @@
 
 
   semi? (switch
-    ((key-history 0 1)) (tap-hold-press 110 110 ; rsft) break () _ break)
+    ((key-history 0 1)) _ break () (tap-hold-press 110 110 ; rsft) break)
+  
 
 
 ;; chords disabled if pressed < 40ms after a different key
