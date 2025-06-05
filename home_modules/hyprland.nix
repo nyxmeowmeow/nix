@@ -476,8 +476,8 @@
       bind = ,      v, submap, reset
 
 
-      bind = ,      p, exec, mpc -p 6669 searchplay title 'phoenix'
-      bind = SUPER, p, exec, mpc -p 6669 searchplay title 'phoenix'
+      bind = ,      p, exec, $song 'phoenix'
+      bind = SUPER, p, exec, $song 'phoenix'
       bind = ,      p, submap, reset
 
 
@@ -486,12 +486,12 @@
       bind = SUPER, d, submap, d
       submap = d
 
-          bind = ,      a, exec, mpc -p 6669 searchplay title 'daydreamer'
-          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'daydreamer'
+          bind = ,      a, exec, $song 'daydreamer'
+          bind = SUPER, a, exec, $song 'daydreamer'
           bind = ,      a, submap, reset
 
-          bind = ,      o, exec, mpc -p 6669 searchplay title 'downfall'
-          bind = SUPER, o, exec, mpc -p 6669 searchplay title 'downfall'
+          bind = ,      o, exec, $song 'downfall'
+          bind = SUPER, o, exec, $song 'downfall'
           bind = ,      o, submap, reset
 
       bind = , escape, submap, reset
@@ -503,12 +503,12 @@
       bind = SUPER, s, submap, s
       submap = s
 
-          bind = ,      a, exec, mpc -p 6669 searchplay title 'Salt'
-          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'Salt'
+          bind = ,      a, exec, $song 'Salt'
+          bind = SUPER, a, exec, $song 'Salt'
           bind = ,      a, submap, reset
 
-          bind = ,      u, exec, mpc -p 6669 searchplay title 'summer'
-          bind = SUPER, u, exec, mpc -p 6669 searchplay title 'summer'
+          bind = ,      u, exec, $song 'summer'
+          bind = SUPER, u, exec, $song 'summer'
           bind = ,      u, submap, reset
 
       bind = , escape, submap, reset
@@ -520,12 +520,12 @@
       bind = SUPER, n, submap, n
       submap = n
 
-          bind = ,      o, exec, mpc -p 6669 searchplay title 'nothing nothing nothing'
-          bind = SUPER, o, exec, mpc -p 6669 searchplay title 'nothing nothing nothing'
+          bind = ,      o, exec, $song 'nothing nothing nothing'
+          bind = SUPER, o, exec, $song 'nothing nothing nothing'
           bind = ,      o, submap, reset
 
-          bind = ,      e, exec, mpc -p 6669 searchplay title 'newlove'
-          bind = SUPER, e, exec, mpc -p 6669 searchplay title 'newlove'
+          bind = ,      e, exec, $song 'newlove'
+          bind = SUPER, e, exec, $song 'newlove'
           bind = ,      e, submap, reset
 
       bind = , escape, submap, reset
@@ -538,16 +538,16 @@
       bind = SUPER, h, submap, h
       submap = h
 
-          bind = ,      s, exec, mpc -p 6669 searchplay title 'homeswitcher'
-          bind = SUPER, s, exec, mpc -p 6669 searchplay title 'homeswitcher'
+          bind = ,      s, exec, $song 'homeswitcher'
+          bind = SUPER, s, exec, $song 'homeswitcher'
           bind = ,      s, submap, reset
 
-          bind = ,      o, exec, mpc -p 6669 searchplay title 'how to save a life'
-          bind = SUPER, o, exec, mpc -p 6669 searchplay title 'how to save a life'
+          bind = ,      o, exec, $song 'how to save a life'
+          bind = SUPER, o, exec, $song 'how to save a life'
           bind = ,      o, submap, reset
 
-          bind = ,      a, exec, mpc -p 6669 searchplay title 'i hate everything about you'
-          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'i hate everything about you'
+          bind = ,      a, exec, $song 'i hate everything about you'
+          bind = SUPER, a, exec, $song 'i hate everything about you'
           bind = ,      a, submap, reset
 
       bind = , escape, submap, reset
@@ -559,12 +559,12 @@
       bind = SUPER, t, submap, t
       submap = t
 
-          bind = ,      h, exec, mpc -p 6669 searchplay title 'Throne'
-          bind = SUPER, h, exec, mpc -p 6669 searchplay title 'Throne'
+          bind = ,      h, exec, $song 'Throne'
+          bind = SUPER, h, exec, $song 'Throne'
           bind = ,      h, submap, reset
 
-          bind = ,      a, exec, mpc -p 6669 searchplay title 'ta1lsd004'
-          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'ta1lsd004'
+          bind = ,      a, exec, $song 'ta1lsd004'
+          bind = SUPER, a, exec, $song 'ta1lsd004'
           bind = ,      a, submap, reset
 
       bind = , escape, submap, reset
@@ -576,16 +576,16 @@
       bind = SUPER, a, submap, a
       submap = a
 
-          bind = ,      l, exec, mpc -p 6669 searchplay title 'alchemist'
-          bind = SUPER, l, exec, mpc -p 6669 searchplay title 'alchemist'
+          bind = ,      l, exec, $song 'alchemist'
+          bind = SUPER, l, exec, $song 'alchemist'
           bind = ,      l, submap, reset
 
-          bind = ,      s, exec, mpc -p 6669 searchplay title 'ascension to heaven'
-          bind = SUPER, s, exec, mpc -p 6669 searchplay title 'ascension to heaven'
+          bind = ,      s, exec, $song 'ascension to heaven'
+          bind = SUPER, s, exec, $song 'ascension to heaven'
           bind = ,      s, submap, reset
 
-          bind = ,      b, exec, mpc -p 6669 searchplay title 'absolute in doubt'
-          bind = SUPER, b, exec, mpc -p 6669 searchplay title 'absolute in doubt'
+          bind = ,      b, exec, $song 'absolute in doubt'
+          bind = SUPER, b, exec, $song 'absolute in doubt'
           bind = ,      b, submap, reset
 
       bind = , escape, submap, reset
@@ -596,40 +596,40 @@
       bind = SUPER, m, submap, m
       submap = m
 
-          bind = ,      i, exec, mpc -p 6669 searchplay title 'midnight'
-          bind = SUPER, i, exec, mpc -p 6669 searchplay title 'midnight'
+          bind = ,      i, exec, $song 'midnight'
+          bind = SUPER, i, exec, $song 'midnight'
           bind = ,      i, submap, reset
 
-          bind = ,      y, exec, mpc -p 6669 searchplay title 'miss you'
-          bind = SUPER, y, exec, mpc -p 6669 searchplay title 'miss you'
+          bind = ,      y, exec, $song 'miss you'
+          bind = SUPER, y, exec, $song 'miss you'
           bind = ,      y, submap, reset
 
-          bind = ,      k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
-          bind = SUPER, k, exec, mpc -p 6669 searchplay title 'mr. kill myself'
+          bind = ,      k, exec, $song 'mr. kill myself'
+          bind = SUPER, k, exec, $song 'mr. kill myself'
           bind = ,      k, submap, reset
 
       bind = , escape, submap, reset
       submap = play_song
 
 
-      bind = ,      z, exec, mpc -p 6669 searchplay title 'zen garden'
-      bind = SUPER, z, exec, mpc -p 6669 searchplay title 'zen garden'
+      bind = ,      z, exec, $song 'zen garden'
+      bind = SUPER, z, exec, $song 'zen garden'
       bind = ,      z, submap, reset
 
-      bind = ,      b, exec, mpc -p 6669 searchplay title 'The Breach'
-      bind = SUPER, b, exec, mpc -p 6669 searchplay title 'The Breach'
+      bind = ,      b, exec, $song 'The Breach'
+      bind = SUPER, b, exec, $song 'The Breach'
       bind = ,      b, submap, reset
 
-      bind = ,      l, exec, mpc -p 6669 searchplay title 'LosT'
-      bind = SUPER, l, exec, mpc -p 6669 searchplay title 'LosT'
+      bind = ,      l, exec, $song 'LosT'
+      bind = SUPER, l, exec, $song 'LosT'
       bind = ,      l, submap, reset
 
-      bind = ,      r, exec, mpc -p 6669 searchplay title 'R.i.p.'
-      bind = SUPER, r, exec, mpc -p 6669 searchplay title 'R.i.p.'
+      bind = ,      r, exec, $song 'R.i.p.'
+      bind = SUPER, r, exec, $song 'R.i.p.'
       bind = ,      r, submap, reset
 
-      bind = ,      3, exec, mpc -p 6669 searchplay title '3 nights'
-      bind = SUPER, 3, exec, mpc -p 6669 searchplay title '3 nights'
+      bind = ,      3, exec, $song '3 nights'
+      bind = SUPER, 3, exec, $song '3 nights'
       bind = ,      3, submap, reset
 
       bind = , escape, submap, reset
