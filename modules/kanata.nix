@@ -149,7 +149,7 @@
 
   ;; easier (); roll
   semi? (switch
-    ((and(or (key-history ] 1) (key-history . 1) (key-history 9 1) (key-history 0 1)) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
+    ((and(or (key-history ] 1) (key-history . 1) (key-history 0 1)) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
   
   ;; easier `, `
   sc (switch
