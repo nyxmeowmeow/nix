@@ -414,7 +414,7 @@
 
     # no nix way to do this :(
     extraConfig = /* hyprlang */ ''
-      bind = SUPER SHIFT, 3, submap, player
+      bind = SUPER, l, submap, player
 
       # will start a submap called "player"
       submap = player
@@ -464,8 +464,8 @@
 
 
 
-      bind = SHIFT,       3, submap, play_song
-      bind = SUPER SHIFT, 3, submap, play_song
+      bind = ,       l, submap, play_song
+      bind = SUPER , l, submap, play_song
       submap = play_song
 
 

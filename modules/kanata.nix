@@ -32,14 +32,6 @@
                   @lm   _ @magic     @sym _  @rs tab
 )
 
-(deflayer super
-  _   _     _     _     _     _      _ _     _      _      _     _
-  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
-  q   @ch_, @ch_. @ch_k @g   _      _ S-3   @ch_lp @ch_rp @ch_; _
-                  @lm   _ @magic     @sym _  @rs tab
-)
-
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -
   tab   b f d w p    ' l o u j x
@@ -116,7 +108,7 @@
   (,      ) (tap-hold-press 110 110 , rsft)
   (  .    ) .
   (    k  ) k
-  (      g) g
+  (      g) @win
   (, .    ) \
   (  . k  ) S-\
   (    k g) S-1
@@ -134,19 +126,18 @@
 (defalias
   sym (tap-hold-press 120 120 enter (layer-toggle syms))
   lc (tap-hold-press 120 120 - lctl)
-  lm (tap-hold-press 120 120 esc (multi lmet (layer-toggle super)))
+  lm (tap-hold-press 120 120 esc lmet)
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
   wn (one-shot-press 1000 (layer-toggle win))
 
-  g (one-shot-press 1000 (layer-toggle win))
 
 
   ;; FIXME stopped working for no reason
-  ;;win (switch
-  ;;  (lmet rmet) (one-shot-press 1000 (layer-toggle win)) break
-  ;;  () g break
-  ;;)
+  win (switch
+    (lmet rmet) (one-shot-press 1000 (layer-toggle win)) break
+    () g break
+  )
 
   cw (caps-word-custom 1000
     (q b f d w p l o u j x n s t c y m h a e i k g v)
