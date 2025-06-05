@@ -29,7 +29,7 @@
   S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm   _ @magic     @sym _  @rs tab
+                  @lm  _ @magic     @sym @sc @rs tab
 )
 
 (deflayer over
@@ -135,7 +135,7 @@
 
   ;; FIXME stopped working for no reason
   win (switch
-    (lmet rmet) (layer-toggle win) break
+    (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
     () g break
   )
 
@@ -151,6 +151,11 @@
   semi? (switch
     ((and(key-history 0 1) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
   
+  ;; easier `, `
+  sc (switch
+    (lsft) (macro , spc) break
+    () spc break
+  )
 
 
   ;; chords disabled if pressed < 40ms after a different key
