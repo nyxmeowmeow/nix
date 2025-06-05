@@ -147,13 +147,13 @@
 
 
 
+  ;; easier (); roll
   semi? (switch
-    ((key-history 0 1)) _ break () (tap-hold-press 110 110 ; rsft) break)
+    ((and(key-history 0 1) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
   
 
 
-;; chords disabled if pressed < 40ms after a different key
-
+  ;; chords disabled if pressed < 40ms after a different key
 
   ch_b (switch ((key-timing 1 less-than 40)) _ break () (chord ch b) break)
   ch_f (switch ((key-timing 1 less-than 40)) _ break () (chord ch f) break)
