@@ -619,7 +619,7 @@
 
 
       # use reset to go back to the global submap
-      bind = escape, escape, submap, reset
+      bind = , escape, submap, reset
 
       # reset if any other key pressed
       # bind = , catchall, submap, reset
