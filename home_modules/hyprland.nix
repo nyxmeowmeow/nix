@@ -474,9 +474,6 @@
       bind = SUPER, v, exec, mpc -p 6669 searchplay title 'violet'
       bind = ,      v, submap, reset
 
-      bind = ,      s, exec, mpc -p 6669 searchplay title 'Salt'
-      bind = SUPER, s, exec, mpc -p 6669 searchplay title 'Salt'
-      bind = ,      s, submap, reset
 
       bind = ,      p, exec, mpc -p 6669 searchplay title 'phoenix'
       bind = SUPER, p, exec, mpc -p 6669 searchplay title 'phoenix'
@@ -495,6 +492,23 @@
           bind = ,      o, exec, mpc -p 6669 searchplay title 'downfall'
           bind = SUPER, o, exec, mpc -p 6669 searchplay title 'downfall'
           bind = ,      o, submap, reset
+
+      bind = , escape, submap, reset
+      submap = play_song
+
+
+
+      bind = ,      s, submap, s
+      bind = SUPER, s, submap, s
+      submap = s
+
+          bind = ,      a, exec, mpc -p 6669 searchplay title 'Salt'
+          bind = SUPER, a, exec, mpc -p 6669 searchplay title 'Salt'
+          bind = ,      a, submap, reset
+
+          bind = ,      u, exec, mpc -p 6669 searchplay title 'summer'
+          bind = SUPER, u, exec, mpc -p 6669 searchplay title 'summer'
+          bind = ,      u, submap, reset
 
       bind = , escape, submap, reset
       submap = play_song
@@ -560,6 +574,10 @@
       bind = ,      a, submap, a
       bind = SUPER, a, submap, a
       submap = a
+
+          bind = ,      l, exec, mpc -p 6669 searchplay title 'alchemist'
+          bind = SUPER, l, exec, mpc -p 6669 searchplay title 'alchemist'
+          bind = ,      l, submap, reset
 
           bind = ,      s, exec, mpc -p 6669 searchplay title 'ascension to heaven'
           bind = SUPER, s, exec, mpc -p 6669 searchplay title 'ascension to heaven'
