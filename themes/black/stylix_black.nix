@@ -3,18 +3,18 @@
   stylix.enable = true;
   stylix.autoEnable = false; # manually specify which to enable
 
-  # stylix.targets = {
-  #   gtk.enable = true;
-  #   qt.enable = true;
-  # };
+  stylix.targets = {
+    gtk.enable = true;
+    qt.enable = true;
+  };
 
   stylix.base16Scheme = {
-    base00 = "#000000";
-    base01 = "#181926";
-    base02 = "#1e2030";
-    base03 = "#363a4f";
-    base04 = "#494d64";
-    base05 = "#6e738d";
+    base00 = "#000000"; # base
+    base01 = "#181926"; # crust
+    base02 = "#1e2030"; # mantle
+    base03 = "#363a4f"; # surface0
+    base04 = "#494d64"; # surface1
+    base05 = "#6e738d"; # overlay
     base07 = "#a5adcb"; # subtext
     base06 = "#cad3f5"; # text
     base08 = "#b7bdf8"; # lavender
@@ -32,7 +32,7 @@
 
   stylix.cursor = {
     package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic $";
+    name = "Bibata-Modern-Classic";
     size = 20;
   };
 
