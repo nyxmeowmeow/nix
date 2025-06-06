@@ -14,9 +14,9 @@
     ./nixvim/default.nix
     nixvim.nixosModules.nixvim
 
-    ./themes/black/stylix.nix
-    # ./themes/lix/stylix.nix
-    # ./themes/macchiato/stylix.nix
+    ./themes/black/stylix_black.nix
+    # ./themes/lix/stylix_lix.nix
+    # ./themes/macchiato/stylix_macchiato.nix
 
   ];
 
