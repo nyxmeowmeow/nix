@@ -1,18 +1,18 @@
 {
-    base00 = "#000000"; # base
-    base01 = "#181926"; # crust
-    base02 = "#1e2030"; # mantle
-    base03 = "#363a4f"; # surface0
-    base04 = "#494d64"; # surface1
-    base05 = "#6e738d"; # overlay
-    base07 = "#a5adcb"; # subtext
-    base06 = "#cad3f5"; # text
-    base08 = "#b7bdf8"; # lavender
-    base09 = "#8aadf4"; # blue
-    base0A = "#c6a0f6"; # mauve
-    base0B = "#f5bde6"; # pink
-    base0C = "#ed8796"; # red
-    base0D = "#f5a97f"; # peach
-    base0E = "#eed49f"; # yellow
-    base0F = "#a6da95"; # green
+    base00 = "#3B224C"; # base
+    base01 = "#A4A0E8"; # text
+    base02 = "#2B1C3D"; # crust
+    base03 = "#47345E"; # mantle
+    base04 = "#D5E7FF"; # surface0
+    base05 = "#5A3D6E"; # surface1
+    base06 = "#C7B8E0"; # overlay
+    base07 = "#886C9C"; # subtext
+    base08 = "#DBBFEF"; # lavender
+    base09 = "#6F44F0"; # blue
+    base0A = "#C78DFC"; # mauve
+    base0B = "#D678B5"; # pink
+    base0C = "#F22C86"; # red
+    base0D = "#EFBA5D"; # peach
+    base0E = "#E3C0A8"; # yellow
+    base0F = "#A5E07F"; # green
 }
