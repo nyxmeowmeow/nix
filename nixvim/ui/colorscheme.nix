@@ -11,7 +11,6 @@ theme_cols = {
     TelescopeSelection = {
       fg = "none";
       bg = colors.base08;
-      gui = "none";
     };
     CursorLine.bg = "#47345E";
     RenderMarkdownCode.bg = "#3B224C";
@@ -110,7 +109,6 @@ theme_cols = {
     TelescopeSelection = {
       fg = "none";
       bg = colors.base08;
-      gui = "none";
     };
     CursorLine.bg = "#47345E";
     RenderMarkdownCode.bg = "#3B224C";
