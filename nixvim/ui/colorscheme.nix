@@ -11,8 +11,6 @@ theme_cols = {
       bg = colors.base08;
       gui = "none";
     };
-
-
     CursorLine.bg = "#47345E";
     RenderMarkdownCode.bg = "#3B224C";
     RenderMarkdownBullet.fg = colors.base01;
@@ -26,8 +24,6 @@ theme_cols = {
 #Float.fg = colors.peach
 # Repeat.fg = colors.base08";
 # Type.fg = "#D5E7FF";
-
-
     "@lsp.type.class".fg = "#D5E7FF";
     "@lsp.type.comment".fg = colors.base07;
     "@lsp.type.enum".fg = "#D5E7FF";
@@ -38,30 +34,23 @@ theme_cols = {
     "Delimiter".fg = colors.base01;
     "@paramater".fg = colors.base01;
     "@property".fg = "#D5E7FF";
-
 #"@lsp.type.property".fg = "";
     "@lsp.type.string".fg = "#A5E07F";
     "@lsp.type.struct".fg = "#D5E7FF";
     "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
     "@lsp.type.variable".fg = colors.base01;
-
-
   };
 
 
   lix = {
     FlashCurrent.fg = colors.base0B;
     FlashLabel.fg = "#F22C86";
-
     TelescopeSelection = { fg = colors.base00; bg = "#DBBFEF"; gui = "none"; };
     TelescopeSelectionCaret.fg = colors.base00;
     TelescopePromptPrefix.fg = colors.base00;
     TelescopePromptCounter.fg = colors.base00;
     TelescopePrevieHyphen.fg = colors.base00;
-
-
-
     MatchParen = { fg = "#F22C86"; bg = "none"; };
     CursorLine.bg = "#47345E";
     RenderMarkdownBullet.fg = colors.base01;
@@ -90,8 +79,6 @@ theme_cols = {
 # Tag.fg = colors.base08;
 # Debug.fg = colors.base08;
 # Ignore.fg = colors.base08;
-
-
     "@lsp.type.class".fg = "#D5E7FF";
 #"@lsp.type.decorator".fg = "";
     "@lsp.type.enum".fg = "#D5E7FF";
@@ -109,7 +96,6 @@ theme_cols = {
 #"@lsp.type.parameter".fg = "";
     "@paramater".fg = colors.base01;
     "@property".fg = "#D5E7FF";
-
 #"@lsp.type.property".fg = "";
     "@lsp.type.string".fg = "#A5E07F";
     "@lsp.type.struct".fg = "#D5E7FF";
@@ -119,11 +105,12 @@ theme_cols = {
   };
 
 
-    MatchParen = { fg = colors.base0C; bg = "None"; };
-    Conditional.fg = colors.base0A;
-    Keyword.fg = colors.base0A;
-    "@lsp.type.keyword".fg = colors.base0A;
-    FlashCurrent.fg = colors.base0A;
+
+  MatchParen = { fg = colors.base0C; bg = "None"; };
+  Conditional.fg = colors.base0A;
+  Keyword.fg = colors.base0A;
+  "@lsp.type.keyword".fg = colors.base0A;
+  FlashCurrent.fg = colors.base0A;
   FlashMatch.fg = colors.base08;
   LineNr.fg = colors.base08;
   CursorLineNr.fg = colors.base08;
@@ -158,15 +145,15 @@ theme_cols = {
   "@operator".fg = colors.base08;
   "Operator".fg = colors.base08;
   "@module".fg = colors.base08;
-    FlashBackdrop.fg = colors.base07;
-    TelescopeResultsDiffUntracked.fg = colors.base07;
-    MiniIndentscopeSymbol.fg = colors.base07;
-    LineNrAbove.fg = colors.base07;
-    LineNrBelow.fg = colors.base07;
-    Comment.fg = colors.base07;
-    SpecialComment.fg = colors.base07;
-    "@lsp.type.comment".fg = colors.base07;
-    String.fg = colors.base0F;
+   FlashBackdrop.fg = colors.base07;
+   TelescopeResultsDiffUntracked.fg = colors.base07;
+   MiniIndentscopeSymbol.fg = colors.base07;
+   LineNrAbove.fg = colors.base07;
+   LineNrBelow.fg = colors.base07;
+   Comment.fg = colors.base07;
+   SpecialComment.fg = colors.base07;
+   "@lsp.type.comment".fg = colors.base07;
+   String.fg = colors.base0F;
 };
 
 in {
