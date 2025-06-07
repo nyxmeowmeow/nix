@@ -196,6 +196,28 @@
 
 
 
+  ;; magic keys:
+  ;; a -> o
+  ;; o -> a
+  ;; e -> u
+  ;; u -> e
+  ;; i -> x
+  ;;
+  ;; c -> y
+  ;; p -> y
+
+  ;; ( -> "
+  ;; ! -> [
+  ;; = -> >
+  ;; - -> >
+  ;; { -> {};
+
+  ;; TODO: 
+  ;; us -> e
+  ;; st -> d
+  ;; <spc>! -> =
+
+
 
   magic (switch
     ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
