@@ -1,4 +1,8 @@
-{
+{ config, ... }: 
+  let
+    colors = import ../../themes/${config.theme}/colors.nix { };
+  in
+  {
   programs.nixvim.colorschemes.catppuccin = {
     enable = true;
     settings = {
