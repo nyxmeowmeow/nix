@@ -10,13 +10,10 @@
     ./modules/languages.nix
     ./modules/boot.nix
     ./modules/steam.nix
+    ./modules/stylix.nix
     ./misc.nix
     ./nixvim/default.nix
     nixvim.nixosModules.nixvim
-
-    ./themes/black/stylix_black.nix
-    # ./themes/lix/stylix_lix.nix
-    # ./themes/macchiato/stylix_macchiato.nix
 
   ];
 
