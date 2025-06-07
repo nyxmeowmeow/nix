@@ -1,9 +1,4 @@
-{ config, ... }:
 {
-config = {
-theme = let
-  colors = import ../../themes/${config.theme}/colors.nix { };
-in {
   programs.nixvim.colorschemes.catppuccin = {
     enable = true;
     settings = {
@@ -25,13 +20,13 @@ in {
       no_underline = true;
 
 
-      highlight_overrides.all = /*with colors;*/ {
+      highlight_overrides.all = {
         FlashMatch.fg = "#DBBFEF";
         FlashCurrent.fg = "#D678B5";
         FlashLabel.fg = "#F22C86";
         FlashBackdrop.fg = "#886C9C";
 
-        TelescopeSelection = { fg = colors.base00; bg = "#b7bdf8"; gui = null; };
+        TelescopeSelection = { fg = "#000000"; bg = "#b7bdf8"; gui = null; };
         TelescopeSelectionCaret.fg = "#b7bdf8";
         TelescopePromptPrefix.fg = "#a5adcb";
         TelescopePromptCounter.fg = "#a5adcb";
@@ -145,7 +140,5 @@ in {
 
       };
     };
-  };
-  };
   };
 }
