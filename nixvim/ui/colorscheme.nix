@@ -178,7 +178,7 @@ in {
       no_underline = true;
 
 
-      highlight_overrides.all = theme_cols.${config.theme} or {};
+      highlight_overrides.all = theme_cols.${config.theme};
       };
   };
 }
