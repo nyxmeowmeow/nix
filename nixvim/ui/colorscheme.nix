@@ -1,4 +1,4 @@
-{ lib, config, ... }: 
+{ config, ... }: 
 let
 colors = import ../../themes/${config.theme}/colors.nix;
 theme_cols = {
@@ -191,7 +191,7 @@ in {
       no_underline = true;
 
 
-      highlight_overrides.all = theme_cols;
-    };
+      highlight_overrides.all = theme_cols.${config.theme} or {};
+      };
   };
 }
