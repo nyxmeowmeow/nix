@@ -40,6 +40,51 @@ theme_cols = {
     "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
     "@lsp.type.variable".fg = colors.base01;
+
+
+  MatchParen = { fg = colors.base0C; bg = "None"; };
+  Conditional.fg = colors.base0A;
+  Keyword.fg = colors.base0A;
+  "@lsp.type.keyword".fg = colors.base0A;
+  FlashCurrent.fg = colors.base0A;
+  CursorLineNr.fg = colors.base08;
+  NoiceCmdlinePopupTitleSearch.fg = colors.base08;
+  NoiceCmdlinePopupBorderHelp.fg = colors.base08;
+  NoiceCmdlinePopupTitleHelp.fg = colors.base08;
+  NoiceCmdlinePopupTitle.fg = colors.base08;
+  NoiceCmdlinePopupBorder.fg = colors.base08;
+  NoiceCmdlineIcon.fg = colors.base08;
+  NoiceCmdlinePopupBorderLua.fg = colors.base08;
+  NoiceCmdlinePopupBorderCalculator.fg = colors.base08;
+  NoiceCmdlinePopupTitleCalculator.fg = colors.base08;
+  NoiceCmdlinePopupBorderSearch.fg = colors.base08;
+  NoiceCmdlineIconSearch.fg = colors.base08;
+  TelescopeBorder.fg = colors.base08;
+  TelescopeTitle.fg = colors.base08;
+  SnacksIndentChunk.fg = colors.base08;
+  SnacksIndentScope.fg = colors.base08;
+  RenderMarkdownInlineHighlight.fg = colors.base08;
+  RenderMarkdownTableHead.fg = colors.base08;
+  RenderMarkdownTableRow.fg = colors.base08;
+  RenderMarkdownTableFill.fg = colors.base08;
+  Statement.fg = colors.base08;
+  Macro.fg = colors.base08;
+  Special.fg = colors.base08;
+  SpecialChar.fg = colors.base08;
+  "@function.builtin".fg = colors.base08;
+  "@lsp.type.macro".fg = colors.base08;
+  "@constant.macro".fg = colors.base08;
+  "@lsp.type.operator".fg = colors.base08;
+  "@operator".fg = colors.base08;
+  "Operator".fg = colors.base08;
+  "@module".fg = colors.base08;
+   TelescopeResultsDiffUntracked.fg = colors.base07;
+   MiniIndentscopeSymbol.fg = colors.base07;
+   LineNrAbove.fg = colors.base07;
+   LineNrBelow.fg = colors.base07;
+   Comment.fg = colors.base07;
+   SpecialComment.fg = colors.base07;
+   String.fg = colors.base0F;
   };
 
 
@@ -102,15 +147,8 @@ theme_cols = {
     "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
     "@lsp.type.variable".fg = colors.base01;
-  };
 
 
-
-  MatchParen = { fg = colors.base0C; bg = "None"; };
-  Conditional.fg = colors.base0A;
-  Keyword.fg = colors.base0A;
-  "@lsp.type.keyword".fg = colors.base0A;
-  FlashCurrent.fg = colors.base0A;
   FlashMatch.fg = colors.base08;
   LineNr.fg = colors.base08;
   CursorLineNr.fg = colors.base08;
@@ -153,7 +191,9 @@ theme_cols = {
    Comment.fg = colors.base07;
    SpecialComment.fg = colors.base07;
    "@lsp.type.comment".fg = colors.base07;
-   String.fg = colors.base0F;
+  };
+
+
 };
 
 in {
