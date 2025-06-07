@@ -86,6 +86,7 @@
     libdrm
     xwayland
     wine
+    wine64
   ];
 
   fonts.packages = with pkgs; [
