@@ -4,6 +4,7 @@
     ./hardware-configuration.nix
     ./services.nix
     ./packages.nix
+    ./themes/theme.nix
     ./modules/kanata.nix
     ./modules/security.nix
     ./modules/hardware.nix
@@ -14,8 +15,9 @@
     ./misc.nix
     ./nixvim/default.nix
     nixvim.nixosModules.nixvim
-
   ];
+
+
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
