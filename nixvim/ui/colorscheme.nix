@@ -1,6 +1,6 @@
 { lib, config, ... }: 
 let
-colors = import ./plug/colorscheme/colors/${config.theme}.nix { };
+colors = import ../../themes/${config.theme}/colors.nix;
 theme_cols = {
   macchiato = {
     FlashMatch.fg = colors.base0F;
@@ -170,11 +170,6 @@ theme_cols = {
 };
 
 in {
-  options.theme = lib.mkOption {
-    type = lib.types.enum [ "black" "lix" "macchiato" ];
-    default = "black";
-    description = "The color theme to use.";
-  };
   programs.nixvim.colorschemes.catppuccin = {
     enable = true;
     settings = {
