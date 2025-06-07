@@ -1,5 +1,5 @@
 {
-    base00 = "#000000"; # base
+    base00 = "#24273a"; # base
     base01 = "#cad3f5"; # text
     base02 = "#181926"; # crust
     base03 = "#1e2030"; # mantle
