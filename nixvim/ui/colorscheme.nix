@@ -46,7 +46,7 @@ theme_cols = {
   lix = {
     FlashCurrent.fg = colors.base0B;
     FlashLabel.fg = "#F22C86";
-    TelescopeSelection = { fg = colors.base00; bg = "#DBBFEF"; gui = "none"; };
+    TelescopeSelection = { fg = colors.base00; bg = "#DBBFEF"; };
     TelescopeSelectionCaret.fg = colors.base00;
     TelescopePromptPrefix.fg = colors.base00;
     TelescopePromptCounter.fg = colors.base00;
