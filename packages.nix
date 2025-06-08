@@ -25,6 +25,7 @@
     btop
     # zenity
     # xdg-desktop-portal-termfilechooser
+    xdg-utils
     nushell
     # godot
 
