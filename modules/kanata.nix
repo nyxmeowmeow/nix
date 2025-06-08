@@ -28,7 +28,7 @@
   _   _     _     _     _     _      _ _     _      _      _     _
   S-; b f d w _      _ l o  u  j _
   @lc n s t c _      _ h a  e  i @rpeat
-  q   @ch_, @ch_. k g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+  q   @, @. k g _      _ @_ @lp @rp @; _
                   @lm  _ @magic     @sym @sc @rs tab
 )
 
@@ -97,19 +97,19 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- c (t! homerowmod $tot 100 @ch_c lsft)
- h (t! homerowmod $tot 100 @ch_h rsft)
- t (t! homerowmod $tot 100 @ch_t lctl)
- a (t! homerowmod $tot 100 @ch_a rctl)
- n (t! homerowmodfiltered $tot 200 @ch_n lalt (n))
- i (t! homerowmod $tot 200 @ch_i ralt)
- s (t! homerowmod $tot 150 @ch_s lmet)
+ c (t! homerowmod $tot 100 @c lsft)
+ h (t! homerowmod $tot 100 @h rsft)
+ t (t! homerowmod $tot 100 @t lctl)
+ a (t! homerowmod $tot 100 @a rctl)
+ n (t! homerowmodfiltered $tot 200 @n lalt (n))
+ i (t! homerowmod $tot 200 @i ralt)
+ s (t! homerowmod $tot 150 @s lmet)
  ;; define each letter as typing-layer trigger
- q (multi q @.tp) w (multi @ch_w @.tp) j (multi @ch_j @.tp) r (multi r @.tp) f (multi @ch_f @.tp) y (multi y @.tp) u (multi @ch_u @.tp) k (multi @ch_k @.tp) o (multi @ch_o @.tp) p (multi p @.tp) g (multi @ch_g @.tp) l (multi @ch_l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi @ch_d @.tp) v (multi v @.tp) b (multi @ch_b @.tp) e (multi @ch_e @.tp) m (multi m @.tp) 
+ q (multi q @.tp) w (multi @w @.tp) j (multi @j @.tp) r (multi r @.tp) f (multi @f @.tp) y (multi y @.tp) u (multi @u @.tp) k (multi @k @.tp) o (multi @o @.tp) p (multi p @.tp) g (multi @g @.tp) l (multi @l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi @d @.tp) v (multi v @.tp) b (multi @b @.tp) e (multi @e @.tp) m (multi m @.tp) 
 )
 
 (deflayermap (typing) 
- a (multi(unshift a) @ch_a) b (unshift b) c (unshift c) d (unshift d) e (unshift e) f (unshift f) g (unshift g) h (multi (unshift h) @ch_h) i (unshift i) j (unshift j) k (unshift k) l (unshift l) m (unshift m) n (unshift n) o (unshift o) p (unshift p) q (unshift q) r (unshift r) s (unshift s) t (unshift t) u (unshift u) v (unshift v) w (unshift w) x (unshift x) y (unshift y) z (unshift z) 
+ a (unshift a) b (unshift b) c (unshift c) d (unshift d) e (unshift e) f (unshift f) g (unshift g) h (unshift h) i (unshift i) j (unshift j) k (unshift k) l (unshift l) m (unshift m) n (unshift n) o (unshift o) p (unshift p) q (unshift q) r (unshift r) s (unshift s) t (unshift t) u (unshift u) v (unshift v) w (unshift w) x (unshift x) y (unshift y) z (unshift z) 
  caps XX ;; 5. key deactivations of caps, numbers, ... are optional
 )
 
@@ -221,35 +221,35 @@
 
   ;; chords disabled if pressed < 40ms after a different key
 
-  ch_b (switch ((key-timing 1 less-than 40)) _ break () (chord ch b) break)
-  ch_f (switch ((key-timing 1 less-than 40)) _ break () (chord ch f) break)
-  ch_d (switch ((key-timing 1 less-than 40)) _ break () (chord ch d) break)
-  ch_w (switch ((key-timing 1 less-than 40)) _ break () (chord ch w) break)
+  b (switch ((key-timing 1 less-than 40)) _ break () (chord ch b) break)
+  f (switch ((key-timing 1 less-than 40)) _ break () (chord ch f) break)
+  d (switch ((key-timing 1 less-than 40)) _ break () (chord ch d) break)
+  w (switch ((key-timing 1 less-than 40)) _ break () (chord ch w) break)
 
-  ch_l (switch ((key-timing 1 less-than 40)) _ break () (chord ch l) break)
-  ch_o (switch ((key-timing 1 less-than 40)) _ break () (chord ch o) break)
-  ch_u (switch ((key-timing 1 less-than 40)) _ break () (chord ch u) break)
-  ch_j (switch ((key-timing 1 less-than 40)) _ break () (chord ch j) break)
+  l (switch ((key-timing 1 less-than 40)) _ break () (chord ch l) break)
+  o (switch ((key-timing 1 less-than 40)) _ break () (chord ch o) break)
+  u (switch ((key-timing 1 less-than 40)) _ break () (chord ch u) break)
+  j (switch ((key-timing 1 less-than 40)) _ break () (chord ch j) break)
 
-  ch_n (switch ((key-timing 1 less-than 40)) _ break () (chord ch n) break)
-  ch_s (switch ((key-timing 1 less-than 40)) _ break () (chord ch s) break)
-  ch_t (switch ((key-timing 1 less-than 40)) _ break () (chord ch t) break)
-  ch_c (switch ((key-timing 1 less-than 40)) _ break () (chord ch c) break)
+  n (switch ((key-timing 1 less-than 40)) _ break () (chord ch n) break)
+  s (switch ((key-timing 1 less-than 40)) _ break () (chord ch s) break)
+  t (switch ((key-timing 1 less-than 40)) _ break () (chord ch t) break)
+  c (switch ((key-timing 1 less-than 40)) _ break () (chord ch c) break)
 
-  ch_h (switch ((key-timing 1 less-than 40)) _ break () (chord ch h) break)
-  ch_a (switch ((key-timing 1 less-than 40)) _ break () (chord ch a) break)
-  ch_e (switch ((key-timing 1 less-than 40)) _ break () (chord ch e) break)
-  ch_i (switch ((key-timing 1 less-than 40)) _ break () (chord ch i) break)
+  h (switch ((key-timing 1 less-than 40)) _ break () (chord ch h) break)
+  a (switch ((key-timing 1 less-than 40)) _ break () (chord ch a) break)
+  e (switch ((key-timing 1 less-than 40)) _ break () (chord ch e) break)
+  i (switch ((key-timing 1 less-than 40)) _ break () (chord ch i) break)
 
-  ch_, (switch ((key-timing 1 less-than 40)) _ break () (chord ch ,) break)
-  ch_. (switch ((key-timing 1 less-than 40)) _ break () (chord ch .) break)
-  ch_k (switch ((key-timing 1 less-than 40)) _ break () (chord ch k) break)
-  ch_g (switch ((key-timing 1 less-than 40)) _ break () (chord ch g) break)
+  , (switch ((key-timing 1 less-than 40)) _ break () (chord ch ,) break)
+  . (switch ((key-timing 1 less-than 40)) _ break () (chord ch .) break)
+  k (switch ((key-timing 1 less-than 40)) _ break () (chord ch k) break)
+  g (switch ((key-timing 1 less-than 40)) _ break () (chord ch g) break)
 
-  ch__  (switch ((key-timing 1 less-than 40)) _ break () (chord ch S--) break)
-  ch_lp (chord ch S-9)
-  ch_rp (chord ch S-0)
-  ch_;  (chord ch ;)
+  _  (switch ((key-timing 1 less-than 40)) _ break () (chord ch S--) break)
+  lp (chord ch S-9)
+  rp (chord ch S-0)
+  ;  (chord ch ;)
 
 
 
