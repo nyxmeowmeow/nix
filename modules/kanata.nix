@@ -9,167 +9,309 @@
           "/dev/input/by-id/usb-liliums_Lily58-event-if02"
         ];
 
-        extraDefCfg = ''
-        process-unmapped-keys yes
-        concurrent-tap-hold yes
-        sequence-timeout 2002
-        sequence-input-mode hidden-suppressed
-        sequence-backtrack-modcancel no
-        '';
+        extraDefCfg = "process-unmapped-keys yes";
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
-        
-(defvirtualkeys
-  lshift-start nop1
-  lshift-end nop2
-  lshift-down nop3
-  lshift-pre nop4
-  rshift-start nop5
-  rshift-end nop6
-  rshift-down nop7
-  rshift-pre nop8
-  seq-start sldr
-  no-lshift (macro c)
-  no-rshift (macro h)
-  
- sft-b (macro S-b)
- sft-f (macro S-f)
- sft-d (macro S-d)
- sft-w (macro S-w)
- sft-p (macro S-p)
- sft-n (macro S-n)
- sft-s (macro S-s)
- sft-t (macro S-t)
- sft-c (macro S-c)
- sft-y (macro S-y)
- sft-k (macro S-k)
- sft-g (macro S-g)
- sft-v (macro S-v)
- sft-l (macro S-l)
- sft-o (macro S-o)
- sft-u (macro S-u)
- sft-j (macro S-j)
- sft-m (macro S-m)
- sft-h (macro S-h)
- sft-a (macro S-a)
- sft-e (macro S-e)
- sft-i (macro S-i)
- sft-. (macro S-.)
- sft-, (macro S-,)
- ;; non shift on hand
- nsft-b (macro c b)
- nsft-f (macro c f)
- nsft-d (macro c d)
- nsft-w (macro c w)
- nsft-p (macro c p)
- nsft-n (macro c n)
- nsft-s (macro c s)
- nsft-t (macro c t)
- nsft-c (macro c c)
- nsft-y (macro c y)
- nsft-k (macro c k)
- nsft-g (macro c g)
- nsft-v (macro c v)
-  ;; non shift other hand
- nsft-l (macro h  l )
- nsft-o (macro h  o )
- nsft-u (macro h  u )
- nsft-j (macro h  j )
- nsft-m (macro h  m )
- nsft-h (macro h  h )
- nsft-a (macro h  a )
- nsft-e (macro h  e )
- nsft-i (macro h  i )
-)
 
-(defseq
- no-lshift (nop1 nop3 nop2)
- no-rshift (nop5 nop7 nop6)
- 
- ;; right hand sft
- sft-l (nop1 nop3 l )
- sft-o (nop1 nop3 o )
- sft-u (nop1 nop3 u )
- sft-j (nop1 nop3 j )
- sft-m (nop1 nop3 m )
- sft-h (nop1 nop3 h )
- sft-a (nop1 nop3 a )
- sft-e (nop1 nop3 e )
- sft-i (nop1 nop3 i )
- ;; left hand sft
- sft-b (nop5 nop7 b )
- sft-f (nop5 nop7 f )
- sft-d (nop5 nop7 d )
- sft-w (nop5 nop7 w )
- sft-p (nop5 nop7 p )
- sft-n (nop5 nop7 n )
- sft-s (nop5 nop7 s )
- sft-t (nop5 nop7 t )
- sft-c (nop5 nop7 c )
- sft-y (nop5 nop7 y )
- sft-k (nop5 nop7 k )
- sft-g (nop5 nop7 g )
- sft-v (nop5 nop7 v )
- ;; lefthand roles
- nsft-b (nop1 nop3 b )
- nsft-f (nop1 nop3 f )
- nsft-d (nop1 nop3 d )
- nsft-w (nop1 nop3 w )
- nsft-p (nop1 nop3 p )
- nsft-n (nop1 nop3 n )
- nsft-s (nop1 nop3 s )
- nsft-t (nop1 nop3 t )
- nsft-c (nop1 nop3 c )
- nsft-y (nop1 nop3 y )
- nsft-k (nop1 nop3 k )
- nsft-g (nop1 nop3 g )
- nsft-v (nop1 nop3 v )
- ;; right hand roles
- nsft-l (nop5 nop7 l )
- nsft-o (nop5 nop7 o )
- nsft-u (nop5 nop7 u )
- nsft-j (nop5 nop7 j )
- nsft-m (nop5 nop7 m )
- nsft-h (nop5 nop7 h )
- nsft-a (nop5 nop7 a )
- nsft-e (nop5 nop7 e )
- nsft-i (nop5 nop7 i )
-)
+
 
 (defsrc
-  esc 
-           1    2    3    4    5    6    7    8    9    0            
-  tab       -    z    u    a        x    p    l    f    j    q        
-  caps      c    s    i    e    o    d    t    n    r    h    k   ret
-  lsft         y    .        ,        b    g    w    m    v    rsft
-            lmet lalt      spc            ralt bspc
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  f18   b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  q     , . k g v    / f15 f16 f17 ; z
+      lmet r lsft    ent spc rsft ralt
 )
 
-(deflayermap (base icon base.ico)
- c (fork    
-	(multi 
-		(on-press tap-vkey lshift-pre) ;;not used
-		(on-press tap-vkey seq-start) 
-		(on-press tap-vkey lshift-start)
-		(on-press press-vkey lshift-down)
-		(on-release release-vkey lshift-down)
-		(on-release tap-vkey lshift-end))
-    (multi (unicode E) f17) ;; there is a BUG preventing me from using S-e. And (unicode) will not end a sequence therefore f17
-    (nop7)
-   )
- h (fork   
-	(multi     
-	    (on-press tap-vkey rshift-pre)
-		(on-press tap-vkey seq-start) 
-		(on-press tap-vkey rshift-start)
-		(on-press press-vkey rshift-down)
-		(on-release release-vkey rshift-down)
-		(on-release tap-vkey rshift-end))
-	(multi (unicode T) f17 ) 
-	(nop3)
-   )
-)'';
+(deflayer default
+  _   _     _     _     _     _      _ _     _      _      _     _
+  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
+  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
+  q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+                  @lm  _ @magic     @sym @sc @rs tab
+)
+
+(deflayer over
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  tab   b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  q     , . k g v    / 8 9 0 ; z
+      lmet r lsft    enter spc rsft tab
+)
+
+(deflayer syms
+  f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
+  _   `   .   _   _   _       _   left down up   right _
+  _   1   2   3   4   _       _   7    8    9    0     rpt
+  @wn 0   9   8   5   _       _   6    3    2    1     @wn
+              _   @cw lsft    _   _    _    _
+)
+
+(deflayer win
+  _  _   _   _   _   _       _   _    _    _    _     _
+  _  _   @fl _   _   _       _   _    _    _    _     _
+  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
+  _  _   _   _   _   _       _   _    _    _    _     _
+             _   _   _       _   _    _    _
+)
+
+(defchords ch 15
+
+  ;;crackhead idea
+  ;;(h c) 1
+  ;;(a c) 2
+  ;;(e c) 3
+  ;;(i c) 4
+  ;;(h t) 5
+  ;;(a t) 6
+  ;;(e t) 7
+  ;;(i t) 8
+  ;;(a s) 9
+  ;;(e s) 0
+
+
+  (b      ) b
+  (  f    ) f
+  (    d  ) d
+  (      w) w
+  (b f    ) S-,
+  (  f d  ) =
+  (    d w) S-8
+
+  (l    )   l
+  (  o    ) o
+  (    u  ) u
+  (      j) j
+  (l o    ) S-'
+  (  o u  ) +
+  (    u j) S-.
+
+  (n      ) n
+  (  s    ) s
+  (    t  ) t
+  (      c) c
+  (n s    ) (one-shot-press 300 (layer-toggle syms))
+  (  s t  ) S-[
+  (  s   c) S-`
+  (    t c) [
+
+  (h      ) h
+  (  a    ) a
+  (    e  ) e
+  (      i) i
+  (h a    ) ]
+  (h   e  ) del
+  (  a e  ) S-]
+  (    e i) (one-shot-press 300 (layer-toggle syms))
+
+  (,      ) (tap-hold-press 110 110 , lsft)
+  (  .    ) .
+  (    k  ) k
+  (      g) @win
+  (, .    ) \
+  (  . k  ) S-\
+  (    k g) S-1
+
+  (S--          ) S--
+  (    S-9      ) S-9
+  (        S-0  ) S-0
+  (            ;) @semi?
+  (S-- S-9      ) S-3
+  (S--     S-0  ) S-5
+  (    S-9 S-0  ) S-/
+  (        S-0 ;) S-7
+)
+
+(defalias
+  sym (tap-hold-press 120 120 enter (layer-toggle syms))
+  lc (tap-hold-press 120 120 - lctl)
+  lm (tap-hold-press 120 120 esc lmet)
+  rs (tap-hold-press 120 120 bspc lsft)
+  ;;col (tap-hold-press 120 120 S-; lctl)
+  wn (one-shot-press 1000 (layer-toggle win))
+
+
+
+  ;; FIXME stopped working for no reason
+  win (switch
+    (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
+    () g break
+  )
+
+  cw (caps-word-custom 1000
+    (q b f d w p l o u j x n s t c y m h a e i k g v)
+    (lsft -)
+  )
+
+
+
+
+  ;; easier (); roll
+  semi? (switch
+    ((and(or (key-history ] 1) (key-history . 1) (key-history 0 1)) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
+  
+  ;; easier `, `
+  sc (switch
+    (lsft) (multi (release-key lsft) (macro , spc)) break
+    () spc break
+  )
+
+
+  ;; chords disabled if pressed < 40ms after a different key
+
+  ch_b (switch ((key-timing 1 less-than 40)) _ break () (chord ch b) break)
+  ch_f (switch ((key-timing 1 less-than 40)) _ break () (chord ch f) break)
+  ch_d (switch ((key-timing 1 less-than 40)) _ break () (chord ch d) break)
+  ch_w (switch ((key-timing 1 less-than 40)) _ break () (chord ch w) break)
+
+  ch_l (switch ((key-timing 1 less-than 40)) _ break () (chord ch l) break)
+  ch_o (switch ((key-timing 1 less-than 40)) _ break () (chord ch o) break)
+  ch_u (switch ((key-timing 1 less-than 40)) _ break () (chord ch u) break)
+  ch_j (switch ((key-timing 1 less-than 40)) _ break () (chord ch j) break)
+
+  ch_n (switch ((key-timing 1 less-than 40)) _ break () (chord ch n) break)
+  ch_s (switch ((key-timing 1 less-than 40)) _ break () (chord ch s) break)
+  ch_t (switch ((key-timing 1 less-than 40)) _ break () (chord ch t) break)
+  ch_c (switch ((key-timing 1 less-than 40)) _ break () (chord ch c) break)
+
+  ch_h (switch ((key-timing 1 less-than 40)) _ break () (chord ch h) break)
+  ch_a (switch ((key-timing 1 less-than 40)) _ break () (chord ch a) break)
+  ch_e (switch ((key-timing 1 less-than 40)) _ break () (chord ch e) break)
+  ch_i (switch ((key-timing 1 less-than 40)) _ break () (chord ch i) break)
+
+  ch_, (switch ((key-timing 1 less-than 40)) _ break () (chord ch ,) break)
+  ch_. (switch ((key-timing 1 less-than 40)) _ break () (chord ch .) break)
+  ch_k (switch ((key-timing 1 less-than 40)) _ break () (chord ch k) break)
+  ch_g (switch ((key-timing 1 less-than 40)) _ break () (chord ch g) break)
+
+  ch__  (switch ((key-timing 1 less-than 40)) _ break () (chord ch S--) break)
+  ch_lp (chord ch S-9)
+  ch_rp (chord ch S-0)
+  ch_;  (chord ch ;)
+
+
+
+
+
+
+
+  ;; magic keys:
+  ;; a -> o
+  ;; o -> a
+  ;; e -> u
+  ;; u -> e
+  ;; i -> x
+  ;;
+  ;; c -> y
+  ;; p -> y
+
+  ;; ( -> "
+  ;; ! -> [
+  ;; = -> >
+  ;; - -> >
+  ;; { -> };
+  ;; < -> =
+  ;; > -> >
+  ;; # -> include
+  ;; \ -> n
+
+  ;; TODO: 
+  ;; us -> e
+  ;; st -> d
+  ;;  ! -> =
+
+
+
+  magic (switch
+    ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
+    ((key-history enter 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
+
+
+
+
+
+
+
+  ;; // #include
+    ((key-history 3 1)) (macro i n c l u d e) break
+
+  ;; // sfb
+    ((key-history o 1)) (macro a) break
+    ((key-history a 1)) (macro o) break
+    ((key-history u 1)) (macro e) break
+    ((key-history e 1)) (macro u) break
+    ;;((key-history i 1)) (macro x) break
+    ((key-history i 1)) (macro x) break
+
+  ;; // sfs
+    ((and(key-history e 2) (key-history s 1))) (macro e) break
+    ((and(key-history e 2) (key-history y 1))) (macro e) break
+    ((and(key-history e 2) (key-history v 1))) (macro e) break
+
+    ((and(key-history n 2) (key-history i 1))) (macro x) break
+  ;; // sfb
+    ((key-history w 1)) (macro y) break
+    ((key-history c 1)) (macro y) break
+    ((key-history p 1)) (macro y) break
+
+    ((key-history j 1)) (macro u s t) break
+
+    ((key-history \ 1)) (macro n) break
+
+
+    ;; non-sfb for !=
+    ;;((and(key-history spc 2) (key-history 1 1))) (macro =) break
+
+    ;; non-sfb for vec![]
+    ;;((and(key-history c 2) (key-history 1 1))) (macro [) break
+
+    ((key-history 1 1)) (macro [) break
+
+  ;; // non-sfb for >>
+    ((key-history . 1)) (macro S-.) break
+  ;; // non-sfb for <=
+    ((key-history , 1)) (macro =) break
+  ;; // non-sfb ; for ]
+    ((key-history ] 1)) (macro ;) break
+  ;; // auto ; for {}
+    ((key-history { 1)) (macro S-] ; left left) break
+
+
+    ((key-history x 1)) (macro p k g s) break
+
+
+    ((key-history 7 1)) (macro S-7) break
+    ((key-history ; 1)) (macro S-;) break
+    ((key-history = 1)) (macro S-.) break
+    ((key-history - 1)) (macro S-.) break
+    ((key-history 9 1)) (macro S-') break
+    ((key-history 0 1)) (macro S-0) break
+    () rpt break
+  )
+
+  ;; // normal rpt except for syms
+  rpeat (switch
+    ((key-history , 1)) (macro S-,) break
+    ((key-history \ 1)) (macro S-\) break
+    ((key-history ; 1)) (macro S-;) break
+    ((key-history 7 1)) (macro S-7) break
+    ((key-history 9 1)) (macro S-9) break
+    ((key-history 0 1)) (macro S-0) break
+    () rpt break
+  )
+
+  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h)
+  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
+  wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
+  wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
+  wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-S-C-A-2)
+  fl (macro M-S-C-A-1) ;; float window
+  sp (macro M-S-C-A-2) ;; change split orientation
+  cn (macro M-S-C-A-3) ;; center window
+
+)
+        '';
       };
 
     };
