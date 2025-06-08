@@ -44,7 +44,7 @@
   f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
   _   `   .   _   _   _       _   left down up   right _
   _   1   2   3   4   _       _   7    8    9    0     rpt
-  @wn 0   9   8   5   _       _   6    3    2    1     @wn
+  _   0   9   8   5   _       _   6    3    2    1     _
               _   @cw lsft    _   _    _    _
 )
 
@@ -108,7 +108,8 @@
   (,      ) (tap-hold-press 110 110 , lsft)
   (  .    ) .
   (    k  ) k
-  (      g) @win
+  (      g) (switch (lmet rmet) (layer-while-held win) break () g break)
+
   (, .    ) \
   (  . k  ) S-\
   (    k g) S-1
@@ -129,7 +130,6 @@
   lm (tap-hold-press 120 120 esc lmet)
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
-  wn (one-shot-press 1000 (layer-toggle win))
 
 
 
