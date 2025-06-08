@@ -135,7 +135,7 @@
 
   ;; FIXME stopped working for no reason
   win (switch
-    (lmet rmet) (one-shot-press 500 (layer-toggle win)) break
+    (lmet rmet) (layer-while-held win) break
     () g break
   )
 
