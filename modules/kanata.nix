@@ -59,15 +59,15 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- f (t! homerowmod $tot 160 f lsft)
- j (t! homerowmod $tot 140 j rsft)
- d (t! homerowmod $tot 300 d lctl)
- k (t! homerowmod $tot 300 k rctl)
- s (t! homerowmodfiltered $tot 400 s lalt (a))
- l (t! homerowmod $tot 400 l ralt)
- a (t! homerowmod $tot 450 a lmet)
+ c (t! homerowmod $tot 100 c lsft)
+ h (t! homerowmod $tot 100 h rsft)
+ t (t! homerowmod $tot 100 t lctl)
+ a (t! homerowmod $tot 100 a rctl)
+ n (t! homerowmodfiltered $tot 200 n lalt (n))
+ i (t! homerowmod $tot 200 i ralt)
+ s (t! homerowmod $tot 150 s lmet)
  ;; define each letter as typing-layer trigger
- q (multi q @.tp) w (multi w @.tp) e (multi e @.tp) r (multi r @.tp) t (multi t @.tp) y (multi y @.tp) u (multi u @.tp) i (multi i @.tp) o (multi o @.tp) p (multi p @.tp) g (multi g @.tp) h (multi h @.tp) z (multi z @.tp) x (multi x @.tp) c (multi c @.tp) v (multi v @.tp) b (multi b @.tp) n (multi n @.tp) m (multi m @.tp) 
+ q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp) g (multi g @.tp) l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) e (multi e @.tp) m (multi m @.tp) 
 )
 
 (deflayermap (typing) 
