@@ -163,7 +163,7 @@
 )
 
 (deflayermap (base icon base.ico)
- e (fork    
+ c (fork    
 	(multi 
 		(on-press tap-vkey lshift-pre) ;;not used
 		(on-press tap-vkey seq-start) 
@@ -174,7 +174,7 @@
     (multi (unicode E) f17) ;; there is a BUG preventing me from using S-e. And (unicode) will not end a sequence therefore f17
     (nop7)
    )
- t (fork   
+ h (fork   
 	(multi     
 	    (on-press tap-vkey rshift-pre)
 		(on-press tap-vkey seq-start) 
