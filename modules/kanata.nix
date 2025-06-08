@@ -26,9 +26,9 @@
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
-  q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+  S-; b f d w _      _ l o  u  j _
+  @lc n s t c _      _ h a  e  i @rpeat
+  q   @ch_, @ch_. k g _      _ @ch__ @ch_lp @ch_rp @ch_; _
                   @lm  _ @magic     @sym @sc @rs tab
 )
 
@@ -97,15 +97,15 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- c (t! homerowmod $tot 100 c lsft)
- h (t! homerowmod $tot 100 h rsft)
- t (t! homerowmod $tot 100 t lctl)
- a (t! homerowmod $tot 100 a rctl)
- n (t! homerowmodfiltered $tot 200 n lalt (n))
- i (t! homerowmod $tot 200 i ralt)
- s (t! homerowmod $tot 150 s lmet)
+ c (t! homerowmod $tot 100 @ch_c lsft)
+ h (t! homerowmod $tot 100 @ch_h rsft)
+ t (t! homerowmod $tot 100 @ch_t lctl)
+ a (t! homerowmod $tot 100 @ch_a rctl)
+ n (t! homerowmodfiltered $tot 200 @ch_n lalt (n))
+ i (t! homerowmod $tot 200 @ch_i ralt)
+ s (t! homerowmod $tot 150 @ch_s lmet)
  ;; define each letter as typing-layer trigger
- q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp) g (multi g @.tp) l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) e (multi e @.tp) m (multi m @.tp) 
+ q (multi q @.tp) w (multi @ch_w @.tp) j (multi @ch_j @.tp) r (multi r @.tp) f (multi @ch_f @.tp) y (multi y @.tp) u (multi @ch_u @.tp) k (multi @ch_k @.tp) o (multi @ch_o @.tp) p (multi p @.tp) g (multi @ch_g @.tp) l (multi @ch_l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi @ch_d @.tp) v (multi v @.tp) b (multi @ch_b @.tp) e (multi @ch_e @.tp) m (multi m @.tp) 
 )
 
 (deflayermap (typing) 
