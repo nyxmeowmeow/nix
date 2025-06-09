@@ -43,7 +43,7 @@
 
 (deflayer syms
   f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _   `   .   _   _   _       _   left down up   right _
+  @dr   `   .   @dp   @dst   _       _   left down up   right _
   _   1   2   3   4   _       _   7    8    9    0     rpt
   _   0   9   8   5   _       _   6    3    2    1     _
               _   @cw lsft    _   _    _    _
@@ -132,6 +132,10 @@
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
 
+  dr (dynamic-macro-record 0)
+  dp (dynamic-macro-play 0)
+  dms dynamic-macro-record-stop
+  dst (dynamic-macro-record-stop-truncate 1)
 
 
   ;; FIXME stopped working for no reason
