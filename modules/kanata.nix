@@ -27,6 +27,24 @@
       lmet r lsft    ent spc rsft ralt
 )
 
+(deflayer over
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  tab   b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  q     , . k g v    / 8 9 0 ; z
+      lmet r lsft    enter spc rsft tab
+)
+
+(deflayer syms
+  f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
+  _   `   .   _   _   _       _   left down up   right _
+  _   1   2   3   4   _       _   7    8    9    0     rpt
+  _   0   9   8   5   _       _   6    3    2    1     _
+              _   _ lsft    _   _    _    _
+)
+
+
+
 (defvirtualkeys
   to-base (layer-switch base)
 )
@@ -91,6 +109,28 @@
   (  f d  ) = 15 all-released (typing)
   (    d w) S-8 15 all-released (typing)
 
+  (l o    ) S-' 15 all-released (typing)
+  (  o u  ) + 15 all-released (typing)
+  (    u j) S-. 15 all-released (typing)
+
+  (n s    ) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing)
+  (  s t  ) S-[ 15 all-released (typing)
+  (  s   c) S-` 15 all-released (typing)
+  (    t c) [ 15 all-released (typing)
+
+  (h a    ) ] 15 all-released (typing)
+  (h   e  ) del 15 all-released (typing)
+  (  a e  ) S-] 15 all-released (typing)
+  (    e i) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing)
+
+  (, .    ) \ 15 all-released (typing)
+  (  . k  ) S-\ 15 all-released (typing)
+  (    k g) S-1 15 all-released (typing)
+
+  (- 9    ) S-3 15 all-released (typing)
+  (-   0  ) S-5 15 all-released (typing)
+  (  9 0  ) S-/ 15 all-released (typing)
+  (    0 ;) S-7 15 all-released (typing)
 )
 
 
