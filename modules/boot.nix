@@ -4,7 +4,7 @@
     loader = {
       timeout = 2;
       systemd-boot.enable = true;
-      systemd-boot.configurationLimit = 20;
+      systemd-boot.configurationLimit = 50;
       efi.canTouchEfiVariables = true;
     };
     initrd.kernelModules = [ "amdgpu" ];

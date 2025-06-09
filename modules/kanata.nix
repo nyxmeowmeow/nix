@@ -9,6 +9,7 @@
           "/dev/input/by-id/usb-liliums_Lily58-event-if02"
         ];
 
+#chords-v2-min-idle 40
         extraDefCfg = "process-unmapped-keys yes";
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
