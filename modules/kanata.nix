@@ -9,7 +9,10 @@
           "/dev/input/by-id/usb-liliums_Lily58-event-if02"
         ];
 
-        extraDefCfg = "process-unmapped-keys yes";
+        extraDefCfg = ''
+          process-unmapped-keys yes
+          concurrent-tap-hold yes
+        '';
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
@@ -26,9 +29,9 @@
 
 (deflayer default
   _   _     _     _     _     _      _ _     _      _      _     _
-  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
-  q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+  S-; b f d w _      _ l o  u  j _
+  @lc n s t c _      _ h a  e  i @rpeat
+  q   @, @. k g _      _ @_ @lp @rp @; _
                   @lm  _ @magic     @sym @sc @rs tab
 )
 
@@ -56,7 +59,69 @@
              _   _   _       _   _    _    _
 )
 
-(defchords ch 15
+
+(defvirtualkeys
+  to-base (layer-switch base)
+)
+
+(defvar
+  tot 100 ;; tot=timeouttap
+)
+
+
+(deftemplate homerowmod (timeouttap timeouthold keytap keyhold)
+	(tap-hold $timeouttap $timeouthold 
+		(multi $keytap  @.tp) 
+		$keyhold
+	)
+)
+
+;; homerowmodfiltered: include a way to fix problematic bigrams
+(deftemplate homerowmodfiltered (timeouttap timeouthold keytap keyhold typinglist)
+  (tap-hold-release-keys $timeouttap $timeouthold
+    (multi $keytap  @.tp)
+    $keyhold
+    $typinglist ;; Activates $keytap early if a key within $typinglist is pressed before hold activates.
+  )
+)
+
+(defalias
+  ;; call @.tp whenever you want to enter typing-layer
+  .tp (switch
+        ;;(lsft rsft) XX break ;; skip typing-layer activation for upper case keys might this solves some FJ problems
+        ()  (multi
+              (layer-switch typing)
+              (on-idle  95 tap-vkey to-base )
+            ) break
+      )
+  .spc-typing   (multi (layer-switch base) spc) ;; expilcitly leave typing-layer when hitting `space` - this allows experimenting with higher idle timeouts
+)
+
+
+(deflayermap (base)
+ ;; define home row mods (they act as typing-layer triggers, too )
+ c (t! homerowmod $tot 100 c lsft)
+ h (t! homerowmod $tot 100 h rsft)
+ t (t! homerowmod $tot 100 t lctl)
+ a (t! homerowmod $tot 100 a rctl)
+ n (t! homerowmodfiltered $tot 200 n lalt (n))
+ i (t! homerowmod $tot 200 i ralt)
+ s (t! homerowmod $tot 150 s lmet)
+ ;; define each letter as typing-layer trigger
+ q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp) g (multi g @.tp) l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) e (multi e @.tp) m (multi m @.tp) 
+)
+
+(deflayermap (typing) 
+ a (unshift a) b (unshift b) c (unshift c) d (unshift d) e (unshift e) f (unshift f) g (unshift g) h (unshift h) i (unshift i) j (unshift j) k (unshift k) l (unshift l) m (unshift m) n (unshift n) o (unshift o) p (unshift p) q (unshift q) r (unshift r) s (unshift s) t (unshift t) u (unshift u) v (unshift v) w (unshift w) x (unshift x) y (unshift y) z (unshift z) 
+ caps XX ;; 5. key deactivations of caps, numbers, ... are optional
+)
+
+
+
+
+
+
+(defchordsv2
 
   ;;crackhead idea
   ;;(h c) 1
@@ -71,57 +136,32 @@
   ;;(e s) 0
 
 
-  (b      ) b
-  (  f    ) f
-  (    d  ) d
-  (      w) w
-  (b f    ) S-,
-  (  f d  ) =
-  (    d w) S-8
+  (b f    ) S-, 15 all-released (typing)
+  (  f d  ) = 15 all-released (typing)
+  (    d w) S-8 15 all-released (typing)
 
-  (l    )   l
-  (  o    ) o
-  (    u  ) u
-  (      j) j
-  (l o    ) S-'
-  (  o u  ) +
-  (    u j) S-.
+  (l o    ) S-' 15 all-released (typing)
+  (  o u  ) + 15 all-released (typing)
+  (    u j) S-. 15 all-released (typing)
 
-  (n      ) n
-  (  s    ) s
-  (    t  ) t
-  (      c) c
-  (n s    ) (one-shot-press 300 (layer-toggle syms))
-  (  s t  ) S-[
-  (  s   c) S-`
-  (    t c) [
+  (n s    ) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing)
+  (  s t  ) S-[ 15 all-released (typing)
+  (  s   c) S-` 15 all-released (typing)
+  (    t c) [ 15 all-released (typing)
 
-  (h      ) h
-  (  a    ) a
-  (    e  ) e
-  (      i) i
-  (h a    ) ]
-  (h   e  ) del
-  (  a e  ) S-]
-  (    e i) (one-shot-press 300 (layer-toggle syms))
+  (h a    ) ] 15 all-released (typing)
+  (h   e  ) del 15 all-released (typing)
+  (  a e  ) S-] 15 all-released (typing)
+  (    e i) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing)
 
-  (,      ) (tap-hold-press 110 110 , lsft)
-  (  .    ) .
-  (    k  ) k
-  (      g) (switch (lmet rmet) (layer-while-held win) break () g break)
+  (, .    ) \ 15 all-released (typing)
+  (  . k  ) S-\ 15 all-released (typing)
+  (    k g) S-1 15 all-released (typing)
 
-  (, .    ) \
-  (  . k  ) S-\
-  (    k g) S-1
-
-  (S--          ) S--
-  (    S-9      ) S-9
-  (        S-0  ) S-0
-  (            ;) @semi?
-  (S-- S-9      ) S-3
-  (S--     S-0  ) S-5
-  (    S-9 S-0  ) S-/
-  (        S-0 ;) S-7
+  (- 9    ) S-3 15 all-released (typing)
+  (-   0  ) S-5 15 all-released (typing)
+  (  9 0  ) S-/ 15 all-released (typing)
+  (    0 ;) S-7 15 all-released (typing)
 )
 
 (defalias
@@ -160,35 +200,35 @@
 
   ;; chords disabled if pressed < 40ms after a different key
 
-  ch_b (switch ((key-timing 1 less-than 40)) _ break () (chord ch b) break)
-  ch_f (switch ((key-timing 1 less-than 40)) _ break () (chord ch f) break)
-  ch_d (switch ((key-timing 1 less-than 40)) _ break () (chord ch d) break)
-  ch_w (switch ((key-timing 1 less-than 40)) _ break () (chord ch w) break)
+  b (switch ((key-timing 1 less-than 40)) _ break () b break)
+  f (switch ((key-timing 1 less-than 40)) _ break () f break)
+  d (switch ((key-timing 1 less-than 40)) _ break () d break)
+  w (switch ((key-timing 1 less-than 40)) _ break () w break)
 
-  ch_l (switch ((key-timing 1 less-than 40)) _ break () (chord ch l) break)
-  ch_o (switch ((key-timing 1 less-than 40)) _ break () (chord ch o) break)
-  ch_u (switch ((key-timing 1 less-than 40)) _ break () (chord ch u) break)
-  ch_j (switch ((key-timing 1 less-than 40)) _ break () (chord ch j) break)
+  l (switch ((key-timing 1 less-than 40)) _ break () l break)
+  o (switch ((key-timing 1 less-than 40)) _ break () o break)
+  u (switch ((key-timing 1 less-than 40)) _ break () u break)
+  j (switch ((key-timing 1 less-than 40)) _ break () j break)
 
-  ch_n (switch ((key-timing 1 less-than 40)) _ break () (chord ch n) break)
-  ch_s (switch ((key-timing 1 less-than 40)) _ break () (chord ch s) break)
-  ch_t (switch ((key-timing 1 less-than 40)) _ break () (chord ch t) break)
-  ch_c (switch ((key-timing 1 less-than 40)) _ break () (chord ch c) break)
+  n (switch ((key-timing 1 less-than 40)) _ break () n break)
+  s (switch ((key-timing 1 less-than 40)) _ break () s break)
+  t (switch ((key-timing 1 less-than 40)) _ break () t break)
+  c (switch ((key-timing 1 less-than 40)) _ break () c break)
 
-  ch_h (switch ((key-timing 1 less-than 40)) _ break () (chord ch h) break)
-  ch_a (switch ((key-timing 1 less-than 40)) _ break () (chord ch a) break)
-  ch_e (switch ((key-timing 1 less-than 40)) _ break () (chord ch e) break)
-  ch_i (switch ((key-timing 1 less-than 40)) _ break () (chord ch i) break)
+  h (switch ((key-timing 1 less-than 40)) _ break () h break)
+  a (switch ((key-timing 1 less-than 40)) _ break () a break)
+  e (switch ((key-timing 1 less-than 40)) _ break () e break)
+  i (switch ((key-timing 1 less-than 40)) _ break () i break)
 
-  ch_, (switch ((key-timing 1 less-than 40)) _ break () (chord ch ,) break)
-  ch_. (switch ((key-timing 1 less-than 40)) _ break () (chord ch .) break)
-  ch_k (switch ((key-timing 1 less-than 40)) _ break () (chord ch k) break)
-  ch_g (switch ((key-timing 1 less-than 40)) _ break () (chord ch g) break)
+  , (switch ((key-timing 1 less-than 40)) _ break () , break)
+  . (switch ((key-timing 1 less-than 40)) _ break () . break)
+  k (switch ((key-timing 1 less-than 40)) _ break () k break)
+  g (switch ((key-timing 1 less-than 40)) _ break () g break)
 
-  ch__  (switch ((key-timing 1 less-than 40)) _ break () (chord ch S--) break)
-  ch_lp (chord ch S-9)
-  ch_rp (chord ch S-0)
-  ch_;  (chord ch ;)
+  _  (switch ((key-timing 1 less-than 40)) _ break () S-- break)
+  lp S-9
+  rp S-0
+  ;  ;
 
 
 
