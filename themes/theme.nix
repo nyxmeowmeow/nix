@@ -3,8 +3,8 @@
     default = lib.mkDefault "black";
     type = lib.types.enum [
       "black"
-        "lix"
-        "macchiato"
+      "lix"
+      "macchiato"
     ];
   };
 }

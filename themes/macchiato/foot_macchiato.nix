@@ -1,5 +1,8 @@
+{ config, lib, ... }:
+let
+colors = import ./colors.nix;
+in
 {
-  
   programs.foot = {
     enable = true;
     settings = {
@@ -23,7 +26,7 @@
 
       colors = {
         alpha = "0.5";
-        background = "24273a";
+        background = colors.base00;
         foreground = "cad3f5";
         ## Normal/regular colors (color palette 0-7)
         regular0 = "242424";  # black
