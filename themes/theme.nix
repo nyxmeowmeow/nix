@@ -4,6 +4,7 @@ let
     "black"
     "lix"
     "macchiato"
+    "ocean"
   ];
 in {
   options.theme = lib.mkOption {
@@ -12,7 +13,7 @@ in {
     description = "Global theme selection for NixOS and Home Manager.";
   };
 
-  config.theme = "lix";
+  config.theme = "ocean";
 
 }
 

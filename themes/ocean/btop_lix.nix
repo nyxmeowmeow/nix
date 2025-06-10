@@ -1,7 +1,7 @@
 { lib, theme, ... }: {
 
 
-  config = lib.mkIf (theme == "lix") {
+  config = lib.mkIf (theme == "ocean") {
 
   home.file.".config/btop/themes/btop.theme".text = /* ini */ ''
 

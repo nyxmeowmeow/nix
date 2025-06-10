@@ -1,7 +1,7 @@
 { lib, theme, ... }: {
   config = lib.mkIf (theme == "macchiato" || theme == "black") {
 
-  home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
+  home.file.".config/btop/themes/btop.theme".text = /* ini */ ''
 
     # Main background, empty for terminal default, need to be empty if you want transparent background
     theme[main_bg]=""
