@@ -153,15 +153,25 @@
 
   ;; easier (); roll
   semi? (switch
-    ((and(or (key-history ] 1) (key-history . 1) (key-history 0 1)) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
+    ((and
+      (or
+      (key-history ] 1)
+      (key-history . 1) 
+      (key-history 0 1)) 
+    (key-timing 1 less-than 120))) _ break
+    () (tap-hold-press 110 110 ; rsft) break)
 
   rp? (switch
-    ((and(key-history 9 1) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 S-0 rctl) break)
+    ((and
+    (key-history 9 1) 
+    (key-timing 1 less-than 120))) _ break
+    () (tap-hold-press 110 110 S-0 rctl) break)
 
   per? (switch
-    ((key-timing 1 less-than 120)) _ break () (tap-hold-press 110 110 . lctl) break)
+    ((key-timing 1 less-than 120)) _ break ()
+    (tap-hold-press 110 110 . lctl) break)
 
-  
+
   ;; easier `, `
   sc (switch
     (lsft) (multi (release-key lsft) (macro , spc)) break
