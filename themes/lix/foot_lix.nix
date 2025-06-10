@@ -1,4 +1,5 @@
-{
+{ lib, theme, ... }: {
+  config = lib.mkIf (theme == "lix") {
   
   programs.foot = {
     enable = true;
@@ -104,5 +105,6 @@
     [tweak]
     box-drawing-base-thickness=0.05
   '';
+  };
 }
 

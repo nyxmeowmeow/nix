@@ -1,22 +1,23 @@
-{
+{ lib, theme, ... }: {
+  config = lib.mkIf (theme == "lix") {
 
-  programs.fastfetch = {
-    enable = true;
+    programs.fastfetch = {
+      enable = true;
 
-    settings = {
-      logo = {
-        source = "nixos_small";
-        padding = {
-          left = 1;
-          right = 2;
+      settings = {
+        logo = {
+          source = "nixos_small";
+          padding = {
+            left = 1;
+            right = 2;
+          };
         };
-      };
 
-      display = {
-        separator = "  ";
-      };
+        display = {
+          separator = "  ";
+        };
 
-      modules = [
+        modules = [
         {
           type = "os";
           key = "os";
@@ -32,38 +33,38 @@
           key = "pk";
           keyColor = "magenta";
         }
-        # {
-        #   type = "display";
-        #   key = "   ds";
-        #   keyColor = "green";
-        # }
-        # {
-        #   type = "wm";
-        #   key = "wm";
-        #   keyColor = "magenta";
-        # }
+# {
+#   type = "display";
+#   key = "   ds";
+#   keyColor = "green";
+# }
+# {
+#   type = "wm";
+#   key = "wm";
+#   keyColor = "magenta";
+# }
         {
           type = "command";
           key = "wm";
           keyColor = "magenta";
           text = "echo hyprland";
         }
-        # {
-        #   type = "terminal";
-        #   key = "tm";
-        #   keyColor = "magenta";
-        # }
+# {
+#   type = "terminal";
+#   key = "tm";
+#   keyColor = "magenta";
+# }
         {
           type = "command";
           key = "tm";
           keyColor = "magenta";
           text = "echo foot";
         }
-        # {
-        #   type = "shell";
-        #   key = "sh";
-        #   keyColor = "magenta";
-        # }
+# {
+#   type = "shell";
+#   key = "sh";
+#   keyColor = "magenta";
+# }
         {
           type = "command";
           key = "sh";
@@ -117,7 +118,8 @@
           symbol = "circle";
         }
         "break"
-      ];
+          ];
+      };
     };
   };
-}
+                     }
