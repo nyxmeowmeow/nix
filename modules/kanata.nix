@@ -107,16 +107,15 @@
   (    e i) (one-shot-press 300 (layer-toggle syms))
 
   (,      ) (tap-hold-press 110 110 , lsft)
-  (  .    ) .
+  (  .    ) @per?
   (    k  ) k
   (      g) (switch (lmet rmet) (layer-while-held win) break () g break)
-
   (, .    ) \
   (  . k  ) S-\
   (    k g) S-1
 
   (S--          ) S--
-  (    S-9      ) @lp?
+  (    S-9      ) S-9
   (        S-0  ) @rp?
   (            ;) @semi?
   (S-- S-9      ) S-3
@@ -159,8 +158,8 @@
   rp? (switch
     ((and(key-history 9 1) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 S-0 rctl) break)
 
-  lp? (switch
-    ((key-timing 1 less-than 120)) _ break () (tap-hold-press 110 110 S-0 lctl) break)
+  per? (switch
+    ((key-timing 1 less-than 120)) _ break () (tap-hold-press 110 110 . lctl) break)
 
   
   ;; easier `, `
