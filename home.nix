@@ -15,6 +15,7 @@
         ./themes/black/default.nix
         ./themes/lix/default.nix
         ./themes/macchiato/default.nix
+        ./themes/ocean/default.nix
 
           ./home_modules/hyprland.nix
           ./home_modules/nushell.nix

@@ -19,7 +19,7 @@
           rounding = 10;
           shadow.enabled = false;
           blur = {
-            enabled = true;
+            enabled = false;
             special = false;
             size = 4;
             passes = 3;
