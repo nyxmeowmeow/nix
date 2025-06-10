@@ -296,6 +296,7 @@ theme_cols = {
    cBlock.fg = colors.base01;
    cParen.fg = colors.base01;
    cBracket.fg = colors.base01;
+    "@lsp.mod.paramater.c".fg = colors.base0A;
   };
 
 
