@@ -151,6 +151,7 @@
 
    ent (switch
      (rsft) (macro (unmod ; enter)) break
+     (lsft) (macro (unmod , enter)) break
      () @wi break
    )
 
