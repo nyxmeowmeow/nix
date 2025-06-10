@@ -1,4 +1,6 @@
-{
+{ lib, theme, ... }: {
+  config = lib.mkIf (theme == "black") {
+
   programs.foot = {
     enable = true;
     settings = {
@@ -151,5 +153,6 @@
     [tweak]
     box-drawing-base-thickness=0.05
   '';
+  };
 }
 

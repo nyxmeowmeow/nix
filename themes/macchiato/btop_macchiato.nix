@@ -1,5 +1,5 @@
 { lib, theme, ... }: {
-  config = lib.mkIf (theme == "macchiato") {
+  config = lib.mkIf (theme == "macchiato" || "black") {
 
   home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
 

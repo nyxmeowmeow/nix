@@ -1,5 +1,5 @@
 { lib, theme, ... }: {
-  config = lib.mkIf (theme == "macchiato") {
+  config = lib.mkIf (theme == "macchiato" || "black") {
 
     programs.ncmpcpp.settings = {
       colors_enabled = "yes";
