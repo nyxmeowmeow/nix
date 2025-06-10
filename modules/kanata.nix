@@ -150,8 +150,15 @@
 
 
    ent (switch
-     (rsft) (macro (unmod ; enter)) break
-     (lsft) (macro (unmod , enter)) break
+    ((and
+    (key-history lsft 1) 
+    (key-timing 1 less-than 120))) (macro (unmod , enter)) break
+    ((and
+    (key-history rsft 1) 
+    (key-timing 1 less-than 120))) (macro (unmod ; enter)) break
+
+     ;;(rsft) (macro (unmod ; enter)) break
+     ;;(lsft) (macro (unmod , enter)) break
      () @wi break
    )
 
@@ -269,7 +276,6 @@
 
 
 
-    ((and(key-history e 5) (key-history u 4) (key-history r 3) (key-history o 2))) (macro (unicode 	€)) break
 
 
 
