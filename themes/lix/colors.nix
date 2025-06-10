@@ -8,7 +8,7 @@
     base06 = "#C7B8E0"; # overlay
     base07 = "#886C9C"; # subtext
     base08 = "#DBBFEF"; # lavender
-    base09 = "#7b58e3"; # blue
+    base09 = "#5792e2"; # blue
     base0A = "#C78DFC"; # mauve
     base0B = "#D678B5"; # pink
     base0C = "#F22C86"; # red
