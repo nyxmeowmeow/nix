@@ -308,7 +308,7 @@ theme_cols = {
    "@type.builtin".fg = colors.base0E;
 
 
-   StorageClass.fg = colors.base0B;
+   StorageClass.fg = colors.base08;
 
 
   };
