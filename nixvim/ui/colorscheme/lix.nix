@@ -120,6 +120,8 @@ in
       "@lsp.mod.paramater.c".fg = colors.base0A;
       "@lsp.type.paramater.c".fg = colors.base0A;
 
+      Identifier.fg = colors.base01;
+
 
       Type.fg = colors.base0E;
       Structure.fg = colors.base0E;
