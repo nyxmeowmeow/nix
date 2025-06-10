@@ -28,7 +28,7 @@ in
 
       colors = {
         alpha = "0.5";
-        background = colors.base00;
+        background = "24273a";
         foreground = "cad3f5";
         ## Normal/regular colors (color palette 0-7)
         regular0 = "242424";  # black
