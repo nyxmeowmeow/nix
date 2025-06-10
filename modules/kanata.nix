@@ -163,7 +163,7 @@
 
 
    close (switch
-     (rctl) (macro S-0 ;) break
+     (rctl) (multi (unmod rctl) (macro S-0 ;)) break
      () @semi? break
    )
 
