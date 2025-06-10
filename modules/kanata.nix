@@ -116,8 +116,8 @@
   (    k g) S-1
 
   (S--          ) S--
-  (    S-9      ) S-9
-  (        S-0  ) S-0
+  (    S-9      ) @lp?
+  (        S-0  ) @rp?
   (            ;) @semi?
   (S-- S-9      ) S-3
   (S--     S-0  ) S-5
@@ -155,6 +155,13 @@
   ;; easier (); roll
   semi? (switch
     ((and(or (key-history ] 1) (key-history . 1) (key-history 0 1)) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 ; rsft) break)
+
+  rp? (switch
+    ((and(key-history 9 1) (key-timing 1 less-than 120))) _ break () (tap-hold-press 110 110 S-0 rctl) break)
+
+  lp? (switch
+    ((key-timing 1 less-than 120)) _ break () (tap-hold-press 110 110 S-0 lctl) break)
+
   
   ;; easier `, `
   sc (switch
@@ -225,6 +232,9 @@
   ;; us -> e
   ;; st -> d
   ;;  ! -> =
+  ;; degrees -> sym
+  ;; euro -> sym
+  ;; pound -> sym
 
 
 
