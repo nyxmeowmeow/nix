@@ -15,7 +15,7 @@
 
         wallpaper = [
           "DP-1, ~/nix/themes/black/wallpapers/1_hor.png" 
-            "DP-3, ~/nix/themes/black/wallpapers/1_hor.png" 
+          "DP-3, ~/nix/themes/black/wallpapers/1_hor.png" 
         ];
       };
     };

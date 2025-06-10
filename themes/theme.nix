@@ -11,7 +11,8 @@ in {
     default = "lix"; # Set a default theme
     description = "Global theme selection for NixOS and Home Manager.";
   };
-  config.theme = "lix";
+
+  config.theme = "macchiato";
 
 }
 
