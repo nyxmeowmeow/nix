@@ -290,7 +290,6 @@ theme_cols = {
    Comment.fg = colors.base07;
    SpecialComment.fg = colors.base07;
    "@lsp.type.comment".fg = colors.base07;
-   Type.fg = colors.base04;
 
    rustFoldBraces.fg = colors.base01;
    cBlock.fg = colors.base01;
@@ -298,6 +297,13 @@ theme_cols = {
    cBracket.fg = colors.base01;
     "@lsp.mod.paramater.c".fg = colors.base0A;
     "@lsp.type.paramater.c".fg = colors.base0A;
+
+
+  Type.fg = colors.base0E;
+  Structure.fg = colors.base0E;
+
+
+
   };
 
 
