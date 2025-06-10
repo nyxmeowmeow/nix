@@ -30,7 +30,7 @@
   S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm  _ @magic     @sym @sc @rs tab
+                  @lm  _ @magic      @wi @sc @rs tab
 )
 
 (deflayer over
@@ -125,7 +125,8 @@
 )
 
 (defalias
-  sym (tap-hold-press 120 120 enter (layer-toggle syms))
+  ;;sym (tap-hold-press 120 120 enter (layer-toggle syms))
+  wi (tap-hold-press 120 120 enter (layer-toggle win))
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 esc lmet)
   rs (tap-hold-press 120 120 bspc lsft)
@@ -137,11 +138,10 @@
   ;;dst (dynamic-macro-record-stop-truncate 1)
 
 
-  ;; FIXME stopped working for no reason
-  win (switch
-    (lmet rmet) (layer-while-held win) break
-    () g break
-  )
+  ;; win (switch
+  ;;   (lmet rmet) (layer-while-held win) break
+  ;;   () g break
+  ;; )
 
   cw (caps-word-custom 1000
     (q b f d w p l o u j x n s t c y m h a e i k g v)
