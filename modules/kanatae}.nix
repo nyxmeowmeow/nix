@@ -12,6 +12,7 @@
         extraDefCfg = ''
           process-unmapped-keys yes
           concurrent-tap-hold yes
+          chords-v2-min-idle 40
         '';
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
@@ -31,6 +32,7 @@
   q   _ _ _ _ _      _ S-- S-9 S-0 ; _
                   @lm  _ @magic     @sym @sc @rs tab
 )
+deflayermap
 
 (deflayer over
   esc   1 2 3 4 5    6 7 8 9 0 -

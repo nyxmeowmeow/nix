@@ -128,7 +128,13 @@
   ;;sym (tap-hold-press 120 120 enter (layer-toggle syms))
   wi (tap-hold-press 120 120 enter (layer-toggle win))
   lc (tap-hold-press 120 120 - lctl)
-  lm (tap-hold-press 120 120 esc lmet)
+lm (multi 
+nop1
+(tap-hold-press 120 120 esc lmet)
+)
+
+
+
   rs (tap-hold-press 120 120 bspc lsft)
   ;;col (tap-hold-press 120 120 S-; lctl)
 
@@ -138,10 +144,13 @@
   ;;dst (dynamic-macro-record-stop-truncate 1)
 
 
-  ;; win (switch
-  ;;   (lmet rmet) (layer-while-held win) break
-  ;;   () g break
-  ;; )
+win (switch
+    (nop1) (layer-while-held win) break
+    (lmet rmet) (layer-while-held win) break
+    () g break
+  )
+
+
 
   cw (caps-word-custom 1000
     (q b f d w p l o u j x n s t c y m h a e i k g v)
