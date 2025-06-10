@@ -162,15 +162,14 @@
     () (tap-hold-press 110 110 ; rsft) break)
 
   rp? (switch
-    ((and
-    (or
-    (key-history 9 2) 
-    (key-timing 1 less-than 120)))) _ break
-    () (tap-hold-press 110 110 S-0 rctl) break)
+    ((key-timing 1 less-than 120)) _ break
+    () (tap-hold-press 110 110 S-0 rctl) break
+  )
 
   per? (switch
     ((key-timing 1 less-than 120)) _ break ()
-    (tap-hold-press 110 110 . lctl) break)
+    (tap-hold-press 110 110 . lctl) break
+  )
 
 
   ;; easier `, `
