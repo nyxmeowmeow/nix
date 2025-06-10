@@ -1,6 +1,7 @@
 {
   description = "meow meow meow meow :3";
 
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
@@ -24,6 +25,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
+        ./shared.nix
 
         inputs.stylix.nixosModules.stylix
 
@@ -32,7 +34,6 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          home-manager.users.meow = import ./home.nix;
             # pkgs = nixpkgs.legacyPackages."x86_64-linux";
             # inherit pkgs inputs;
             # zen-browser = inputs.zen-browser.packages."x86_64-linux".default;

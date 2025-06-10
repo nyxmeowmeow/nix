@@ -1,5 +1,7 @@
-{
+{ config, lib, ... }: {
 
+
+  config = lib.mkIf (config.mrrp.theme == "lix") {
 
   home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
 
@@ -94,4 +96,5 @@
     theme[process_end]="#A4A0E8"
 
   '';
+  };
   }

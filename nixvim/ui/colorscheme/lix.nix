@@ -4,7 +4,7 @@ colors = import ../../../themes/lix/colors.nix;
 in
 {
 
-  config = lib.mkIf (config.theme == "lix") {
+  config = lib.mkIf (config.mrrp.theme == "lix") {
 
     programs.nixvim.colorschemes.catppuccin.settings.highlight_overrides.all = {
 

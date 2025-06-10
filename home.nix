@@ -1,4 +1,6 @@
-{
+{ mrrp, ... }: {
+
+  theme = mrrp;
 
   imports = [
     # ./themes/black/default.nix

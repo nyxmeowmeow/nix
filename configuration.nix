@@ -1,6 +1,5 @@
 { pkgs, zen-browser, nixvim, ... }: {
 
-  theme = "lix";
 
   imports = [
     ./hardware-configuration.nix
