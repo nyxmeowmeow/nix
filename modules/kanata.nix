@@ -43,7 +43,7 @@
 
 (deflayer syms
   f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _   `   .   _   _   _       _   left down up   right _
+  _   ,   .   `   `   _       _   left down up   right _
   _   1   2   3   4   _       _   7    8    9    0     rpt
   _   0   9   8   5   _       _   6    3    2    1     _
               _   @cw lsft    _   _    _    _
@@ -109,7 +109,7 @@
   (,      ) (tap-hold-press 110 110 , lsft)
   (  .    ) @per?
   (    k  ) k
-  (      g) (switch (lmet rmet) (layer-while-held win) break () g break)
+  (      g) g
   (, .    ) \
   (  . k  ) S-\
   (    k g) S-1
@@ -149,6 +149,10 @@
   )
 
 
+   close (switch
+     (rctl) (macro S-0 ;) break
+     () ; break
+   )
 
 
   ;; easier (); roll
@@ -158,8 +162,11 @@
       (key-history ] 1)
       (key-history . 1) 
       (key-history 0 1)) 
-    (key-timing 1 less-than 120))) _ break
+    (key-timing 1 less-than 120))) @close break
     () (tap-hold-press 110 110 ; rsft) break)
+
+
+
 
   rp? (switch
     ((and
