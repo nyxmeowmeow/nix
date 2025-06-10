@@ -7,10 +7,7 @@
       videoDrivers = [
         "amdgpu"
       ];
-      displayManager = {
-        gdm.enable = false;
-        lightdm.enable = false;
-      };
+      displayManager.lightdm.enable = false;
     };
 
     udisks2.enable = true;
