@@ -12,7 +12,7 @@ in {
     description = "Global theme selection for NixOS and Home Manager.";
   };
 
-  config.theme = "black";
+  config.theme = "lix";
 
 }
 
