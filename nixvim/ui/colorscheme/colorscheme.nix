@@ -338,7 +338,7 @@ in {
       no_underline = true;
 
 
-      highlight_overrides.all = theme_cols.${config.theme};
+      # highlight_overrides.all = theme_cols.${config.theme};
       };
   };
 }
