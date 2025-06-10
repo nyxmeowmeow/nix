@@ -25,7 +25,8 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
-        ./shared.nix
+        ./home.nix
+        ./themes/theme.nix
 
         inputs.stylix.nixosModules.stylix
 
@@ -33,11 +34,6 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-
-            # pkgs = nixpkgs.legacyPackages."x86_64-linux";
-            # inherit pkgs inputs;
-            # zen-browser = inputs.zen-browser.packages."x86_64-linux".default;
-          # };
         }
 
       ];

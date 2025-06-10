@@ -1,10 +1,11 @@
-{ config, lib, ... }: 
+{ lib, theme, ... }: 
+
 let
 colors = import ../../../themes/lix/colors.nix;
 in
 {
 
-  config = lib.mkIf (config.mrrp.theme == "lix") {
+  config = lib.mkIf (theme == "lix") {
 
     programs.nixvim.colorschemes.catppuccin.settings.highlight_overrides.all = {
 

@@ -1,10 +1,17 @@
-{ lib, ... }: {
-  options.mrrp.theme = lib.mkOption {
-    default = lib.mkDefault "black";
-    type = lib.types.enum [
-      "black"
-      "lix"
-      "macchiato"
-    ];
+{ lib, ... }:
+let
+  enumThemes = [
+    "black"
+    "lix"
+    "macchiato"
+  ];
+in {
+  options.theme = lib.mkOption {
+    type = lib.types.enum enumThemes;
+    default = "lix"; # Set a default theme
+    description = "Global theme selection for NixOS and Home Manager.";
   };
+  config.theme = "lix";
+
 }
+
