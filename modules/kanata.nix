@@ -163,7 +163,7 @@
 
   rp? (switch
     ((and
-    (key-history 9 2) 
+    (key-history 9 1) 
     (key-timing 1 less-than 120))) (macro S-0) break
     () (tap-hold-press 110 110 S-0 rctl) break
   )
