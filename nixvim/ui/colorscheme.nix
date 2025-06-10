@@ -291,6 +291,7 @@ theme_cols = {
    SpecialComment.fg = colors.base07;
    "@lsp.type.comment".fg = colors.base07;
 
+   PreProc.fg = colors.base01;
    rustFoldBraces.fg = colors.base01;
    cBlock.fg = colors.base01;
    cParen.fg = colors.base01;
@@ -299,9 +300,12 @@ theme_cols = {
     "@lsp.type.paramater.c".fg = colors.base0A;
 
 
-  Type.fg = colors.base0E;
-  Structure.fg = colors.base0E;
+   Type.fg = colors.base0E;
+   Structure.fg = colors.base0E;
+   rustStructure.fg = colors.base0E;
+   "@lsp.type.class.c".fg = colors.base0A; # typedef
 
+   StorageClass.fg = colors.base0D;
 
 
   };
