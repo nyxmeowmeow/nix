@@ -117,7 +117,7 @@
   (S--          ) S--
   (    S-9      ) S-9
   (        S-0  ) @rp?
-  (            ;) @semi?
+  (            ;) @close
   (S-- S-9      ) S-3
   (S--     S-0  ) S-5
   (    S-9 S-0  ) S-/
@@ -149,10 +149,6 @@
   )
 
 
-   close (switch
-     (rctl) (macro S-0 ;) break
-     () ; break
-   )
 
 
   ;; easier (); roll
@@ -162,10 +158,14 @@
       (key-history ] 1)
       (key-history . 1) 
       (key-history 0 1)) 
-    (key-timing 1 less-than 120))) @close break
+    (key-timing 1 less-than 120))) _ break
     () (tap-hold-press 110 110 ; rsft) break)
 
 
+   close (switch
+     (rctl) (macro S-0 ;) break
+     () @semi? break
+   )
 
 
   rp? (switch
