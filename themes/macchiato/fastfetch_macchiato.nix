@@ -1,22 +1,24 @@
-{
+{ lib, theme, ... }: {
+  config = lib.mkIf (theme == "macchiato") {
 
-  programs.fastfetch = {
-    enable = true;
 
-    settings = {
-      logo = {
-        source = "nixos_small";
-        padding = {
-          left = 1;
-          right = 2;
+    programs.fastfetch = {
+      enable = true;
+
+      settings = {
+        logo = {
+          source = "nixos_small";
+          padding = {
+            left = 1;
+            right = 2;
+          };
         };
-      };
 
-      display = {
-        separator = "  ";
-      };
+        display = {
+          separator = "  ";
+        };
 
-      modules = [
+        modules = [
         {
           type = "os";
           key = "os";
@@ -32,38 +34,38 @@
           key = "pk";
           keyColor = "blue";
         }
-        # {
-        #   type = "display";
-        #   key = "   ds";
-        #   keyColor = "green";
-        # }
-        # {
-        #   type = "wm";
-        #   key = "wm";
-        #   keyColor = "blue";
-        # }
+# {
+#   type = "display";
+#   key = "   ds";
+#   keyColor = "green";
+# }
+# {
+#   type = "wm";
+#   key = "wm";
+#   keyColor = "blue";
+# }
         {
           type = "command";
           key = "wm";
           keyColor = "blue";
           text = "echo hyprland";
         }
-        # {
-        #   type = "terminal";
-        #   key = "tm";
-        #   keyColor = "blue";
-        # }
+# {
+#   type = "terminal";
+#   key = "tm";
+#   keyColor = "blue";
+# }
         {
           type = "command";
           key = "tm";
           keyColor = "blue";
           text = "echo foot";
         }
-        # {
-        #   type = "shell";
-        #   key = "sh";
-        #   keyColor = "blue";
-        # }
+# {
+#   type = "shell";
+#   key = "sh";
+#   keyColor = "blue";
+# }
         {
           type = "command";
           key = "sh";
@@ -117,7 +119,8 @@
           symbol = "circle";
         }
         "break"
-      ];
+          ];
+      };
     };
   };
 }

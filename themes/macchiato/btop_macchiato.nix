@@ -1,4 +1,6 @@
-{
+{ lib, theme, ... }: {
+  config = lib.mkIf (theme == "macchiato") {
+
   home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
 
     # Main background, empty for terminal default, need to be empty if you want transparent background
@@ -92,4 +94,5 @@
     theme[process_end]="#6e738d"
 
   '';
+  };
   }

@@ -1,8 +1,10 @@
-{ config, lib, ... }:
+{ lib, theme, ... }:
 let
-colors = import ./colors.nix;
+  colors = import ./colors.nix;
 in
 {
+  config = lib.mkIf (theme == "macchiato") {
+
   programs.foot = {
     enable = true;
     settings = {
@@ -108,5 +110,5 @@ in
     [tweak]
     box-drawing-base-thickness=0.05
   '';
+  };
 }
-
