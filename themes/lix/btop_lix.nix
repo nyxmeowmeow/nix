@@ -1,4 +1,6 @@
 {
+
+
   home.file.".config/btop/themes/catppuccinmacchiato.theme".text = /* ini */ ''
 
     # Main background, empty for terminal default, need to be empty if you want transparent background
