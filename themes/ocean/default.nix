@@ -1,11 +1,11 @@
 {
   imports = [
-    ./btop_lix.nix
-    ./gtk_lix.nix
-    ./fastfetch_lix.nix
-    ./hyprland_lix.nix
-    ./foot_lix.nix
-    ./hyprpaper_lix.nix
-    ./starship_lix.nix
+    ./btop_ocean.nix
+    ./gtk_ocean.nix
+    ./fastfetch_ocean.nix
+    ./hyprland_ocean.nix
+    ./foot_ocean.nix
+    ./hyprpaper_ocean.nix
+    ./starship_ocean.nix
   ];
 }

@@ -10,11 +10,12 @@
 
         preload = [
           "~/nix/themes/ocean/wallpapers/2_hor.png" 
+          "~/nix/themes/ocean/wallpapers/a_hor.gif" 
         ];
 
         wallpaper = [
           "DP-1, ~/nix/themes/ocean/wallpapers/2_hor.png"
-          "DP-3, ~/nix/themes/ocean/wallpapers/2_hor.png"
+          "DP-3, ~/nix/themes/ocean/wallpapers/a_hor.gif"
         ];
       };
     };
