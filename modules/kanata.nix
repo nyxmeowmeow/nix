@@ -269,6 +269,7 @@
 
 
 
+    ((and(key-history e 4) (key-history u 3) (key-history r 2) (key-history o 1))) (macro (unicode 	€)) break
 
 
 
