@@ -1,5 +1,5 @@
 { lib, theme, ... }: {
-  config = lib.mkIf (theme == "macchiato" || "black") {
+  config = lib.mkIf (theme == "macchiato" || theme == "black") {
 
 
     programs.starship = {
