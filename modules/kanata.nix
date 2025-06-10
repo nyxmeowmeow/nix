@@ -30,7 +30,7 @@
   S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
   @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
   q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm  _ @magic      @wi @sc @rs tab
+                  @lm  _ @magic      @ent @sc @rs tab
 )
 
 (deflayer over
@@ -149,6 +149,10 @@
   )
 
 
+   ent (switch
+     (rsft) (macro (unmod ; enter)) break
+     () @wi break
+   )
 
 
   ;; easier (); roll
@@ -162,6 +166,7 @@
     () (tap-hold-press 110 110 ; rsft) break)
 
 
+  ;; easier ); roll
    close (switch
      (rctl) (macro S-((unmod (rctl) 0)) (unmod (rctl) ;)) break
      () @semi? break
