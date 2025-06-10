@@ -305,8 +305,10 @@ theme_cols = {
    Structure.fg = colors.base0E;
    rustStructure.fg = colors.base0E;
    "@lsp.type.class.c".fg = colors.base0A; # typedef
+   "@type.builtin".fg = colors.base0E;
 
-   StorageClass.fg = colors.base0D;
+
+   StorageClass.fg = colors.base0B;
 
 
   };
