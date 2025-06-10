@@ -18,22 +18,22 @@
         style = "beam";
         blink = "yes";
         unfocused-style = "unchanged";
-        color = "3B224C A4A0E8";
+        color = "a0b8e6 0c1228";
       };
 
       colors = {
-        alpha = "1";
-        background = "3B224C";
-        foreground = "A4A0E8";
+        alpha = "0.65";
+        background = "0c1228";
+        foreground = "a0b8e6";
         ## Normal/regular colors (color palette 0-7)
-        regular0 = "281733";  # black
-        regular1 = "F22C86";  # red
-        regular2 = "A5E07F";  # green
-        regular3 = "EFBA5D";  # yellow
-        regular4 = "9466ff";  # blue
-        regular5 = "DBBFEF";  # magenta
-        regular6 = "8bd5ca";  # cyan
-        regular7 = "d5e7ff";  # white
+        regular0 = "000000";  # black
+        regular1 = "d874e4";  # red
+        regular2 = "8ec3d2";  # green
+        regular3 = "6aedf2";  # yellow
+        regular4 = "5081e8";  # blue
+        regular5 = "000000";  # magenta
+        regular6 = "6aedf2";  # cyan
+        regular7 = "D5E7FF";  # white
 
         ## Bright colors (color palette 8-15)
         bright0 = "616161";   # bright black
