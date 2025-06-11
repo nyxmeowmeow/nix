@@ -5,7 +5,7 @@ in {
   config = lib.mkIf (config.theme == "lix") {
 
 
-    programs.nixvim.colchemes.catppuccin = {
+    programs.nixvim.colorschemes.catppuccin = {
       enable = true;
       settings = {
         flavour = "macchiato";

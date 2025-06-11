@@ -4,7 +4,7 @@ col = import ../../themes/macchiato/colors.nix;
 in {
   config = lib.mkIf (config.theme == "macchiato" || config.theme == "black") {
 
-    programs.nixvim.colchemes.catppuccin = {
+    programs.nixvim.colorschemes.catppuccin = {
       enable = true;
       settings = {
         flavour = "macchiato";
