@@ -9,15 +9,12 @@
           "/dev/input/by-id/usb-liliums_Lily58-event-if02"
         ];
 
-#chords-v2-min-idle 40
         extraDefCfg = ''
           process-unmapped-keys yes
           concurrent-tap-hold yes
           chords-v2-min-idle 40
         '';
 
-
-        # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
 (defsrc)
 
@@ -348,7 +345,7 @@ bspc @rpeat
     ((key-history i 1)) (macro x) break
 
   ;; // sfs
-    ((and(key-history e 2) (key-history s 1))) (macro e) break
+    ;;((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
     ((and(key-history e 2) (key-history v 1))) (macro e) break
 
