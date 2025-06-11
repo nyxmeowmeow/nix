@@ -34,7 +34,7 @@
  q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) e (multi e @.tp) m (multi m @.tp) 
 
 f18 S-;
-lctrl @lc
+lctrl -
 bspc @rpeat
 g (switch
     (nop1) (layer-while-held win) break
@@ -48,10 +48,10 @@ lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
 lsft @magic
 ent @ent
 spc @sc
-rsft @rs
+rsft bspc
 ralt tab
-, (tap-hold-press 110 110 , lsft)
-. @per?
+;;, (tap-hold-press 110 110 , lsft)
+;;. @per?
 
 
 )
