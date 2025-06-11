@@ -2,7 +2,7 @@
 let
 colors = import ../../themes/lix/colors.nix;
 in {
-  config = lib.mkIf (config.theme == "macchiato") {
+  config = lib.mkIf (config.theme == "macchiato" || config.theme == "black") {
 
     programs.nixvim.colorschemes.catppuccin = {
       enable = true;
