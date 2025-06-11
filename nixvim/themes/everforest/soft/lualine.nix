@@ -1,8 +1,8 @@
-{ lib, theme, ... }: 
+{ lib, config, ... }: 
 let
   col = import ../../../../themes/everforest/soft/colors.nix;
 in {
-  config = lib.mkIf (theme == "everforest_soft") {
+  config = lib.mkIf (config.theme == "everforest_soft") {
 
     programs.nixvim.plugins.lualine.settings.options = {
       theme = {
