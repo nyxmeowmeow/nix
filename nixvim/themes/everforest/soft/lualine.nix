@@ -1,6 +1,6 @@
 { lib, theme, ... }: 
 let
-  col = import ../../../../../themes/everforest/soft/colors.nix;
+  col = import ../../../../themes/everforest/soft/colors.nix;
 in {
   config = lib.mkIf (theme == "everforest_soft") {
 
