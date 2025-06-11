@@ -6,7 +6,7 @@
       settings = {
         background = "hard";
         disable_italic_comments = true;
-        show_eob = false; # ~ at end of buffer
+        show_eob = 0; # ~ at end of buffer
       };
     };
   };
