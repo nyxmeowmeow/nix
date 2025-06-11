@@ -1,6 +1,6 @@
 { lib, theme, ... }: 
 let
-  col = import ../../../../themes/everforest/soft/colors.nix;
+  col = import ../../../../themes/everforest/hard/colors.nix;
 in {
 # config = lib.mkIf (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") {
 
@@ -23,8 +23,8 @@ in {
         bg = col.fg;
       }; 
       inactive.a = {
-        fg = col.bg;
-        bg = col.gray1;
+        fg = col.gray1;
+        bg = col.bg;
       }; 
     };
   };
