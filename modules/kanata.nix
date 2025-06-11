@@ -46,8 +46,6 @@ f16 S-9
 f17 S-0
 lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
 lsft @magic
-ent @ent
-spc @sc
 rsft bspc
 ralt tab
 ;;, (tap-hold-press 110 110 , lsft)
@@ -199,10 +197,10 @@ r @cw
   (  . k  ) S-\ 15 all-released (typing)
   (    k g) S-1 15 all-released (typing)
 
-  (- 9    ) S-3 15 all-released (typing)
-  (-   0  ) S-5 15 all-released (typing)
-  (  9 0  ) S-/ 15 all-released (typing)
-  (    0 ;) S-7 15 all-released (typing)
+  (f15 f16      ) S-3 15 all-released (typing)
+  (f15     f17  ) S-5 15 all-released (typing)
+  (    f16 f17  ) S-/ 15 all-released (typing)
+  (        f17 ;) S-7 15 all-released (typing)
 )
 
 
@@ -231,19 +229,6 @@ r @cw
     (lsft -)
   )
 
-
-   ent (switch
-    ((and
-    (key-history lsft 1) 
-    (key-timing 1 less-than 120))) (macro (unmod , enter)) break
-    ((and
-    (key-history rsft 1) 
-    (key-timing 1 less-than 120))) (macro (unmod ; enter)) break
-
-     ;;(rsft) (macro (unmod ; enter)) break
-     ;;(lsft) (macro (unmod , enter)) break
-     () @wi break
-   )
 
 
   ;; easier (); roll
