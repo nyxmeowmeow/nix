@@ -165,7 +165,7 @@ r @cw
 
 (deflayermap (typing) 
  a (unshift a) b (unshift b) c (unshift c) d (unshift d) e (unshift e) f (unshift f) g (unshift g) h (unshift h) i (unshift i) j (unshift j) k (unshift k) l (unshift l) m (unshift m) n (unshift n) o (unshift o) p (unshift p) q (unshift q) r (unshift r) s (unshift s) t (unshift t) u (unshift u) v (unshift v) w (unshift w) x (unshift x) y (unshift y) z (unshift z) 
- caps XX ;; 5. key deactivations of caps, numbers, ... are optional
+ ;;caps XX ;; 5. key deactivations of caps, numbers, ... are optional
 )
 
 
