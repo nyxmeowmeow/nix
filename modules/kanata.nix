@@ -10,7 +10,11 @@
         ];
 
 #chords-v2-min-idle 40
-        extraDefCfg = "process-unmapped-keys yes";
+        extraDefCfg = ''
+          process-unmapped-keys yes
+          concurrent-tap-hold yes
+        '';
+
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
@@ -56,6 +60,48 @@
   _  _   _   _   _   _       _   _    _    _    _     _
              _   _   _       _   _    _    _
 )
+
+(deflayermap base
+f18 S-;
+b @ch_b
+f @ch_f
+d @ch_d
+w @ch_w
+l @ch_l
+o @ch_o
+u @ch_u
+j @ch_j
+lctrl @lc
+n @ch_n
+s @ch_s
+t @ch_t
+c @ch_c
+h @ch_h
+a @ch_a
+e @ch_e
+i @ch_i
+bspc @rpeat
+, @ch_,
+. @ch_.
+k @ch_k
+g (switch
+    (nop1) (layer-while-held win) break
+    (lmet rmet) (layer-while-held win) break
+    () @ch_g break
+)
+f15 @ch__
+f16 @ch_lp
+f17 @ch_rp
+; @ch_;
+lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
+lsft @magic
+ent @ent
+spc @sc
+rsft @rs
+ralt tab
+
+)
+
 
 (defchords ch 15
 
@@ -123,21 +169,6 @@
   (    S-9 S-0  ) S-/
   (        S-0 ;) S-7
 )
-
-;;(defseq
-;;  float (M-g f)
-;;)
-;;
-;;(defvirtualkeys
-;;  float (macro M-S-C-A-1)
-;;)
-
-(deftemplate seq (vk-name input-keys output-action)
-    (defvirtualkeys $vk-name $output-action)
-    (defseq $vk-name $input-keys)
-)
-
-(t! seq float (M-g f) (macro M-S-C-A-1))
 
 
 (defalias
