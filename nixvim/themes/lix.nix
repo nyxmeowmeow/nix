@@ -1,11 +1,11 @@
 { lib, config, ... }: 
 let
-  colors = import ../../themes/lix/colors.nix;
+  col = import ../../themes/lix/colors.nix;
 in {
   config = lib.mkIf (config.theme == "lix") {
 
 
-    programs.nixvim.colorschemes.catppuccin = {
+    programs.nixvim.colchemes.catppuccin = {
       enable = true;
       settings = {
         flavour = "macchiato";
@@ -27,129 +27,129 @@ in {
 
         highlight_overrides.all = {
 
-          FlashCurrent.fg = colors.base0B;
+          FlashCurrent.fg = col.base0B;
           FlashLabel.fg = "#F22C86";
-          TelescopeSelection = { fg = colors.base00; bg = "#DBBFEF"; };
-          TelescopeSelectionCaret.fg = colors.base00;
-          TelescopePromptPrefix.fg = colors.base00;
-          TelescopePromptCounter.fg = colors.base00;
-          TelescopePrevieHyphen.fg = colors.base00;
+          TelescopeSelection = { fg = col.base00; bg = "#DBBFEF"; };
+          TelescopeSelectionCaret.fg = col.base00;
+          TelescopePromptPrefix.fg = col.base00;
+          TelescopePromptCounter.fg = col.base00;
+          TelescopePrevieHyphen.fg = col.base00;
           MatchParen = { fg = "#F22C86"; bg = "none"; };
           CursorLine.bg = "#47345E";
-          RenderMarkdownBullet.fg = colors.base01;
-          RenderMarkdownCodeInline.bg = colors.base00;
-#TermCursor.bg = colors.text
-          Character.fg = colors.base01;
+          RenderMarkdownBullet.fg = col.base01;
+          RenderMarkdownCodeInline.bg = col.base00;
+#TermCursor.bg = col.text
+          Character.fg = col.base01;
           String.fg = "#A5E07F";
           Constant.fg = "#C78DFC";
-#FunctionBuiltIn.fg = colors.green
-#Number.fg = colors.peach
-#Boolean.fg = colors.peach
-#Float.fg = colors.peach
-          Conditional.fg = colors.base0B;
-# Repeat.fg = colors.base08;
-# Label.fg = colors.base08;
-          Keyword.fg = colors.base0B;
-# Exception.fg = colors.base08;
-# Include.fg = colors.base08;
-# PreProc.fg = colors.base08;
-# Define.fg = colors.base08;
-# PreCondit.fg = colors.base08;
-# StorageClass.fg = colors.base08;
+#FunctionBuiltIn.fg = col.green
+#Number.fg = col.peach
+#Boolean.fg = col.peach
+#Float.fg = col.peach
+          Conditional.fg = col.base0B;
+# Repeat.fg = col.base08;
+# Label.fg = col.base08;
+          Keyword.fg = col.base0B;
+# Exception.fg = col.base08;
+# Include.fg = col.base08;
+# PreProc.fg = col.base08;
+# Define.fg = col.base08;
+# PreCondit.fg = col.base08;
+# StorageClass.fg = col.base08;
 # Type.fg = "#D5E7FF";
-# Structure.fg = colors.base08;
-# Typedef.fg = colors.base08;
-# Tag.fg = colors.base08;
-# Debug.fg = colors.base08;
-# Ignore.fg = colors.base08;
+# Structure.fg = col.base08;
+# Typedef.fg = col.base08;
+# Tag.fg = col.base08;
+# Debug.fg = col.base08;
+# Ignore.fg = col.base08;
           "@lsp.type.class".fg = "#D5E7FF";
 #"@lsp.type.decorator".fg = "";
           "@lsp.type.enum".fg = "#D5E7FF";
-          "@lsp.type.enumMember".fg = colors.base01;
+          "@lsp.type.enumMember".fg = col.base01;
 #"@lsp.type.event".fg = "";
           "@lsp.type.function".fg = "#D5E7FF";
 #"@lsp.type.interface".fg = "";
-          "@lsp.type.keyword".fg = colors.base0B;
+          "@lsp.type.keyword".fg = col.base0B;
           "@lsp.type.method".fg = "#D5E7FF";
 #"@lsp.type.modifier".fg = "";
 #"@type.qualifier".fg = "";
 #"@lsp.type.namespace".fg = "";
-          "@lsp.type.number".fg = colors.base09;
-          Number.fg = colors.base09;
-          "Delimiter".fg = colors.base01;
+          "@lsp.type.number".fg = col.base09;
+          Number.fg = col.base09;
+          "Delimiter".fg = col.base01;
 #"@lsp.type.parameter".fg = "";
-          "@parameter".fg = colors.base0A;
+          "@parameter".fg = col.base0A;
           "@property".fg = "#D5E7FF";
 #"@lsp.type.property".fg = "";
           "@lsp.type.string".fg = "#A5E07F";
           "@lsp.type.struct".fg = "#D5E7FF";
           "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
-          "@lsp.type.variable".fg = colors.base01;
+          "@lsp.type.variable".fg = col.base01;
 
 
-          FlashMatch.fg = colors.base08;
-          LineNr.fg = colors.base08;
-          CursorLineNr.fg = colors.base08;
-          NoiceCmdlinePopupTitleSearch.fg = colors.base08;
-          NoiceCmdlinePopupBorderHelp.fg = colors.base08;
-          NoiceCmdlinePopupTitleHelp.fg = colors.base08;
-          NoiceCmdlinePopupTitle.fg = colors.base08;
-          NoiceCmdlinePopupBorder.fg = colors.base08;
-          NoiceCmdlineIcon.fg = colors.base08;
-          NoiceCmdlinePopupBorderLua.fg = colors.base08;
-          NoiceCmdlinePopupBorderCalculator.fg = colors.base08;
-          NoiceCmdlinePopupTitleCalculator.fg = colors.base08;
-          NoiceCmdlinePopupBorderSearch.fg = colors.base08;
-          NoiceCmdlineIconSearch.fg = colors.base08;
-          TelescopeBorder.fg = colors.base08;
-          TelescopeTitle.fg = colors.base08;
-          SnacksIndentChunk.fg = colors.base08;
-          SnacksIndentScope.fg = colors.base08;
-          RenderMarkdownCode.bg = colors.base00;
-          RenderMarkdownInlineHighlight.fg = colors.base08;
-          RenderMarkdownTableHead.fg = colors.base08;
-          RenderMarkdownTableRow.fg = colors.base08;
-          RenderMarkdownTableFill.fg = colors.base08;
-          Statement.fg = colors.base08;
-          Macro.fg = colors.base08;
-          Special.fg = colors.base08;
-          SpecialChar.fg = colors.base08;
-          "@function.builtin".fg = colors.base08;
-          "@lsp.type.macro".fg = colors.base08;
-          "@constant.macro".fg = colors.base08;
-          "@lsp.type.operator".fg = colors.base08;
-          "@operator".fg = colors.base08;
-          "Operator".fg = colors.base08;
-          "@module".fg = colors.base08;
-          FlashBackdrop.fg = colors.base07;
-          TelescopeResultsDiffUntracked.fg = colors.base07;
-          MiniIndentscopeSymbol.fg = colors.base07;
-          LineNrAbove.fg = colors.base07;
-          LineNrBelow.fg = colors.base07;
-          Comment.fg = colors.base07;
-          SpecialComment.fg = colors.base07;
-          "@lsp.type.comment".fg = colors.base07;
+          FlashMatch.fg = col.base08;
+          LineNr.fg = col.base08;
+          CursorLineNr.fg = col.base08;
+          NoiceCmdlinePopupTitleSearch.fg = col.base08;
+          NoiceCmdlinePopupBorderHelp.fg = col.base08;
+          NoiceCmdlinePopupTitleHelp.fg = col.base08;
+          NoiceCmdlinePopupTitle.fg = col.base08;
+          NoiceCmdlinePopupBorder.fg = col.base08;
+          NoiceCmdlineIcon.fg = col.base08;
+          NoiceCmdlinePopupBorderLua.fg = col.base08;
+          NoiceCmdlinePopupBorderCalculator.fg = col.base08;
+          NoiceCmdlinePopupTitleCalculator.fg = col.base08;
+          NoiceCmdlinePopupBorderSearch.fg = col.base08;
+          NoiceCmdlineIconSearch.fg = col.base08;
+          TelescopeBorder.fg = col.base08;
+          TelescopeTitle.fg = col.base08;
+          SnacksIndentChunk.fg = col.base08;
+          SnacksIndentScope.fg = col.base08;
+          RenderMarkdownCode.bg = col.base00;
+          RenderMarkdownInlineHighlight.fg = col.base08;
+          RenderMarkdownTableHead.fg = col.base08;
+          RenderMarkdownTableRow.fg = col.base08;
+          RenderMarkdownTableFill.fg = col.base08;
+          Statement.fg = col.base08;
+          Macro.fg = col.base08;
+          Special.fg = col.base08;
+          SpecialChar.fg = col.base08;
+          "@function.builtin".fg = col.base08;
+          "@lsp.type.macro".fg = col.base08;
+          "@constant.macro".fg = col.base08;
+          "@lsp.type.operator".fg = col.base08;
+          "@operator".fg = col.base08;
+          "Operator".fg = col.base08;
+          "@module".fg = col.base08;
+          FlashBackdrop.fg = col.base07;
+          TelescopeResultsDiffUntracked.fg = col.base07;
+          MiniIndentscopeSymbol.fg = col.base07;
+          LineNrAbove.fg = col.base07;
+          LineNrBelow.fg = col.base07;
+          Comment.fg = col.base07;
+          SpecialComment.fg = col.base07;
+          "@lsp.type.comment".fg = col.base07;
 
-          PreProc.fg = colors.base01;
-          rustFoldBraces.fg = colors.base01;
-          cBlock.fg = colors.base01;
-          cParen.fg = colors.base01;
-          cBracket.fg = colors.base01;
-          "@lsp.mod.paramater.c".fg = colors.base0A;
-          "@lsp.type.paramater.c".fg = colors.base0A;
+          PreProc.fg = col.base01;
+          rustFoldBraces.fg = col.base01;
+          cBlock.fg = col.base01;
+          cParen.fg = col.base01;
+          cBracket.fg = col.base01;
+          "@lsp.mod.paramater.c".fg = col.base0A;
+          "@lsp.type.paramater.c".fg = col.base0A;
 
-          Identifier.fg = colors.base01;
-
-
-          Type.fg = colors.base0E;
-          Structure.fg = colors.base0E;
-          rustStructure.fg = colors.base0E;
-          "@lsp.type.class.c".fg = colors.base0A; # typedef
-            "@type.builtin".fg = colors.base0E;
+          Identifier.fg = col.base01;
 
 
-          StorageClass.fg = colors.base08;
+          Type.fg = col.base0E;
+          Structure.fg = col.base0E;
+          rustStructure.fg = col.base0E;
+          "@lsp.type.class.c".fg = col.base0A; # typedef
+            "@type.builtin".fg = col.base0E;
+
+
+          StorageClass.fg = col.base08;
 
 
         };
