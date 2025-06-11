@@ -21,13 +21,14 @@
 
 
 
-(defsrc
-  esc   1 2 3 4 5    6 7 8 9 0 -
-  f18   b f d w p    ' l o u j x
-  lctrl n s t c y    m h a e i bspc
-  q     , . k g v    / f15 f16 f17 ; z
-      lmet r lsft    ent spc rsft ralt
-)
+;;(defsrc
+;;  esc   1 2 3 4 5    6 7 8 9 0 -
+;;  f18   b f d w p    ' l o u j x
+;;  lctrl n s t c y    m h a e i bspc
+;;  q     , . k g v    / f15 f16 f17 ; z
+;;      lmet r lsft    ent spc rsft ralt
+;;)
+(defsrc)
 
 (deflayermap base
 f18 S-;
@@ -78,47 +79,39 @@ ralt tab
 ;;                  @lm  _ @magic      @ent @sc @rs tab
 ;;)
 
-(deflayer over
-  esc   1 2 3 4 5    6 7 8 9 0 -
-  tab   b f d w p    ' l o u j x
-  lctrl n s t c y    m h a e i bspc
-  q     , . k g v    / 8 9 0 ; z
-      lmet r lsft    enter spc rsft tab
+;;(deflayer over
+;;  esc   1 2 3 4 5    6 7 8 9 0 -
+;;  tab   b f d w p    ' l o u j x
+;;  lctrl n s t c y    m h a e i bspc
+;;  q     , . k g v    / 8 9 0 ; z
+;;      lmet r lsft    enter spc rsft tab
+;;)
+;;
+;;(deflayer syms
+;;  f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
+;;  _   ,   .   `   `   _       _   left down up   right _
+;;  _   1   2   3   4   _       _   7    8    9    0     rpt
+;;  _   0   9   8   5   _       _   6    3    2    1     _
+;;              _   @cw lsft    _   _    _    _
+;;)
+(deflayermap syms
+1 2
 )
 
-(deflayer syms
-  f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _   ,   .   `   `   _       _   left down up   right _
-  _   1   2   3   4   _       _   7    8    9    0     rpt
-  _   0   9   8   5   _       _   6    3    2    1     _
-              _   @cw lsft    _   _    _    _
-)
-
-(deflayer win
-  _  _   _   _   _   _       _   _    _    _    _     _
-  _  _   @fl _   _   _       _   _    _    _    _     _
-  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
-  _  _   _   _   _   _       _   _    _    _    _     _
-             _   _   _       _   _    _    _
+;;(deflayer win
+;;  _  _   _   _   _   _       _   _    _    _    _     _
+;;  _  _   @fl _   _   _       _   _    _    _    _     _
+;;  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
+;;  _  _   _   _   _   _       _   _    _    _    _     _
+;;             _   _   _       _   _    _    _
+;;)
+(deflayermap win
+  f @fl
 )
 
 
 
 (defchords ch 15
-
-  ;;crackhead idea
-  ;;(h c) 1
-  ;;(a c) 2
-  ;;(e c) 3
-  ;;(i c) 4
-  ;;(h t) 5
-  ;;(a t) 6
-  ;;(e t) 7
-  ;;(i t) 8
-  ;;(a s) 9
-  ;;(e s) 0
-
-
   (b      ) b
   (  f    ) f
   (    d  ) d
@@ -127,7 +120,7 @@ ralt tab
   (  f d  ) =
   (    d w) S-8
 
-  (l    )   l
+  (l      )   l
   (  o    ) o
   (    u  ) u
   (      j) j
