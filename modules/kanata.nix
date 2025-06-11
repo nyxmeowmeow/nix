@@ -195,32 +195,32 @@ bspc @rpeat
 
 (defchordsv2
 
-  (b f    ) S-, 15 all-released (typing)
-  (  f d  ) = 15 all-released (typing)
-  (    d w) S-8 15 all-released (typing)
+  (b f    ) S-, 15 all-released (typing over)
+  (  f d  ) = 15 all-released (typing over)
+  (    d w) S-8 15 all-released (typing over)
 
-  (l o    ) S-' 15 all-released (typing)
-  (  o u  ) + 15 all-released (typing)
-  (    u j) S-. 15 all-released (typing)
+  (l o    ) S-' 15 all-released (typing over)
+  (  o u  ) + 15 all-released (typing over)
+  (    u j) S-. 15 all-released (typing over)
 
-  (n s    ) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing)
-  (  s t  ) S-[ 15 all-released (typing)
-  (  s   c) S-` 15 all-released (typing)
-  (    t c) [ 15 all-released (typing)
+  (n s    ) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing over)
+  (  s t  ) S-[ 15 all-released (typing over)
+  (  s   c) S-` 15 all-released (typing over)
+  (    t c) [ 15 all-released (typing over)
 
-  (h a    ) ] 15 all-released (typing)
-  (h   e  ) del 15 all-released (typing)
-  (  a e  ) S-] 15 all-released (typing)
-  (    e i) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing)
+  (h a    ) ] 15 all-released (typing over)
+  (h   e  ) del 15 all-released (typing over)
+  (  a e  ) S-] 15 all-released (typing over)
+  (    e i) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing over)
 
-  (, .    ) \ 15 all-released (typing)
-  (  . k  ) S-\ 15 all-released (typing)
-  (    k g) S-1 15 all-released (typing)
+  (, .    ) \ 15 all-released (typing over)
+  (  . k  ) S-\ 15 all-released (typing over)
+  (    k g) S-1 15 all-released (typing over)
 
-  (f15 f16      ) S-3 15 all-released (typing)
-  (f15     f17  ) S-5 15 all-released (typing)
-  (    f16 f17  ) S-/ 15 all-released (typing)
-  (        f17 ;) S-7 15 all-released (typing)
+  (f15 f16      ) S-3 15 all-released (typing over)
+  (f15     f17  ) S-5 15 all-released (typing over)
+  (    f16 f17  ) S-/ 15 all-released (typing over)
+  (        f17 ;) S-7 15 all-released (typing over)
 )
 
 
