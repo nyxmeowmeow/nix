@@ -38,7 +38,7 @@ f18 S-;
 lctrl -
 bspc @rpeat
 g (switch
-    (nop1) (layer-while-held win) break
+    (nop1) (one-shot-press 500 (layer-while-held win)) break
     (lmet rmet) (layer-while-held win) break
     () g break
 )
