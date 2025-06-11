@@ -10,7 +10,7 @@
     ./themes/everforest/hard/lualine.nix
     # ./themes/black.nix
     ./themes/macchiato.nix
-    # ./utils/picker.nix
+    ./utils/picker.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
     ./langmap.nix
