@@ -52,13 +52,6 @@ ralt tab
 
 )
 
-;;(deflayer over
-;;  esc   1 2 3 4 5    6 7 8 9 0 -
-;;  tab   b f d w p    ' l o u j x
-;;  lctrl n s t c y    m h a e i bspc
-;;  q     , . k g v    / 8 9 0 ; z
-;;      lmet r lsft    enter spc rsft tab
-;;)
 
 (deflayermap over
 f18 tab
