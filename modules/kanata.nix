@@ -187,7 +187,7 @@ bspc @rpeat
 
 (defchordsv2
 
-  (b f    ) S-, 15 all-released (typing over)
+  (b f    ) S-7 15 all-released (typing over)
   (  f d  ) = 15 all-released (typing over)
   (    d w) S-8 15 all-released (typing over)
 
@@ -195,7 +195,7 @@ bspc @rpeat
   (  o u  ) + 15 all-released (typing over)
   (    u j) S-. 15 all-released (typing over)
 
-  (n s    ) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing over)
+  (n s    ) S-8 15 all-released (typing over)
   (  s t  ) S-[ 15 all-released (typing over)
   (  s   c) S-` 15 all-released (typing over)
   (    t c) [ 15 all-released (typing over)
@@ -203,7 +203,7 @@ bspc @rpeat
   (h a    ) ] 15 all-released (typing over)
   (h   e  ) del 15 all-released (typing over)
   (  a e  ) S-] 15 all-released (typing over)
-  (    e i) (one-shot-press 300 (layer-toggle syms)) 15 all-released (typing over)
+  (    e i) S-7 15 all-released (typing over)
 
   (, .    ) \ 15 all-released (typing over)
   (  . k  ) S-\ 15 all-released (typing over)
