@@ -19,9 +19,6 @@
 
         # configFile = "/home/meow/.config/kanata/symbols.kbd";
         config = /* rust */ ''
-
-
-
 (defsrc)
 
 (deflayermap (base)
@@ -44,13 +41,17 @@ g (switch
     (lmet rmet) (layer-while-held win) break
     () g break
 )
+f15 S--
+f16 S-9
+f17 S-0
 lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
 lsft @magic
 ent @ent
 spc @sc
 rsft @rs
 ralt tab
-
+, (tap-hold-press 110 110 , lsft)
+. @per?
 
 
 )
@@ -130,7 +131,7 @@ r @cw
 )
 
 (defvar
-  tot 100 ;; tot=timeouttap
+  tot 80 ;; tot=timeouttap
 )
 
 
