@@ -63,6 +63,13 @@ ralt tab
 ;;      lmet r lsft    enter spc rsft tab
 ;;)
 
+(deflayermap over
+f18 tab
+f15 8
+f16 9
+f17 0
+)
+
 (deflayermap syms
 esc f1
 1 f2
