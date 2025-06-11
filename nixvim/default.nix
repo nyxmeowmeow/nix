@@ -1,15 +1,15 @@
 {
   imports = [
-    # ./ui/colorscheme/everforest/hard.nix
-    # ./ui/colorscheme/everforest/medium.nix
-    ./ui/colorscheme/everforest/soft/soft.nix
-    ./ui/colorscheme/everforest/soft/lualine.nix
-    # ./ui/colorscheme/everforest/medium/medium.nix
-    # ./ui/colorscheme/everforest/medium/lualine.nix
-    # ./ui/colorscheme/everforest/hard/hard.nix
-    # ./ui/colorscheme/everforest/hard/lualine.nix
-    # ./ui/colorscheme/black.nix
-    # ./ui/colorscheme/macchiato.nix
+    # ./themes/everforest/hard.nix
+    # ./themes/everforest/medium.nix
+    ./themes/everforest/soft/soft.nix
+    ./themes/everforest/soft/lualine.nix
+    # ./themes/everforest/medium/medium.nix
+    # ./themes/everforest/medium/lualine.nix
+    # ./themes/everforest/hard/hard.nix
+    # ./themes/everforest/hard/lualine.nix
+    # ./themes/black.nix
+    # ./themes/macchiato.nix
     # ./utils/picker.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix

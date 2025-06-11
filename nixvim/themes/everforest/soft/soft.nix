@@ -2,7 +2,7 @@
 let
   col = import ../../../../themes/everforest/soft/colors.nix;
 in {
-  # config = lib.mkIf (config.theme == "everforest_soft") {
+  config = lib.mkIf (config.theme == "everforest_soft") {
   # TODO change visual bg to gray1 or something
 
     programs.nixvim.colorschemes.everforest = {
@@ -20,5 +20,5 @@ in {
         # };
       };
     };
-  # };
+  };
 }
