@@ -6,6 +6,7 @@ in {
 
     programs.nixvim.plugins.lualine.settings.options = {
       theme = {
+      # FIXME
         normal.a = { 
           fg = col.bg;
           bg = col.gray1;

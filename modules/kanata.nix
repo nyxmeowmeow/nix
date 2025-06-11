@@ -124,6 +124,14 @@
   (        S-0 ;) S-7
 )
 
+(defseq
+  float (M-g f)
+)
+
+(defvirtualkeys
+  float (macro M-S-C-A-1)
+)
+
 (defalias
   ;;sym (tap-hold-press 120 120 enter (layer-toggle syms))
   wi (tap-hold-press 120 120 enter (layer-toggle win))
