@@ -64,6 +64,10 @@ ralt tab
 ;;)
 
 (deflayermap over
+b b
+f f
+d d
+w w
 f18 tab
 f15 8
 f16 9
