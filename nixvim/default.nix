@@ -3,6 +3,7 @@
     # ./ui/colorscheme/everforest/hard.nix
     # ./ui/colorscheme/everforest/medium.nix
     ./ui/colorscheme/everforest/soft.nix
+    ./ui/colorscheme/everforest/lualine.nix
     # ./ui/colorscheme/black.nix
     # ./ui/colorscheme/macchiato.nix
     # ./utils/picker.nix
