@@ -1,8 +1,7 @@
 { lib, theme, ... }:
 let
   colors = import ./colors.nix;
-in
-{
+in {
   config = lib.mkIf (theme == "macchiato") {
 
   programs.foot = {

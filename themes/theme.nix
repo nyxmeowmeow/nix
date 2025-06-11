@@ -1,16 +1,15 @@
-{ lib, ... }:
-let
-  enumThemes = [
-    "black"
-    "lix"
-    "macchiato"
-    "ocean"
-  ];
-in {
+{ lib, ... }: {
   options.theme = lib.mkOption {
-    type = lib.types.enum enumThemes;
+    type = lib.types.enum [
+      "black"
+      "lix"
+      "macchiato"
+      "ocean"
+      "everforest_hard"
+      "everforest_medium"
+      "everforest_soft"
+    ];
     default = "lix"; # Set a default theme
-    description = "Global theme selection for NixOS and Home Manager.";
   };
 
   config.theme = "lix";
