@@ -29,38 +29,6 @@
       lmet r lsft    ent spc rsft ralt
 )
 
-(deflayer default
-  _   _     _     _     _     _      _ _     _      _      _     _
-  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
-  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
-  q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
-                  @lm  _ @magic      @ent @sc @rs tab
-)
-
-(deflayer over
-  esc   1 2 3 4 5    6 7 8 9 0 -
-  tab   b f d w p    ' l o u j x
-  lctrl n s t c y    m h a e i bspc
-  q     , . k g v    / 8 9 0 ; z
-      lmet r lsft    enter spc rsft tab
-)
-
-(deflayer syms
-  f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
-  _   ,   .   `   `   _       _   left down up   right _
-  _   1   2   3   4   _       _   7    8    9    0     rpt
-  _   0   9   8   5   _       _   6    3    2    1     _
-              _   @cw lsft    _   _    _    _
-)
-
-(deflayer win
-  _  _   _   _   _   _       _   _    _    _    _     _
-  _  _   @fl _   _   _       _   _    _    _    _     _
-  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
-  _  _   _   _   _   _       _   _    _    _    _     _
-             _   _   _       _   _    _    _
-)
-
 (deflayermap base
 f18 S-;
 b @ch_b
@@ -101,6 +69,39 @@ rsft @rs
 ralt tab
 
 )
+
+;;(deflayer default
+;;  _   _     _     _     _     _      _ _     _      _      _     _
+;;  S-; @ch_b @ch_f @ch_d @ch_w _      _ @ch_l @ch_o  @ch_u  @ch_j _
+;;  @lc @ch_n @ch_s @ch_t @ch_c _      _ @ch_h @ch_a  @ch_e  @ch_i @rpeat
+;;  q   @ch_, @ch_. @ch_k @ch_g _      _ @ch__ @ch_lp @ch_rp @ch_; _
+;;                  @lm  _ @magic      @ent @sc @rs tab
+;;)
+
+(deflayer over
+  esc   1 2 3 4 5    6 7 8 9 0 -
+  tab   b f d w p    ' l o u j x
+  lctrl n s t c y    m h a e i bspc
+  q     , . k g v    / 8 9 0 ; z
+      lmet r lsft    enter spc rsft tab
+)
+
+(deflayer syms
+  f1  f2  f3  f4  f5  f6      f7  home pgdn pgup end   f12
+  _   ,   .   `   `   _       _   left down up   right _
+  _   1   2   3   4   _       _   7    8    9    0     rpt
+  _   0   9   8   5   _       _   6    3    2    1     _
+              _   @cw lsft    _   _    _    _
+)
+
+(deflayer win
+  _  _   _   _   _   _       _   _    _    _    _     _
+  _  _   @fl _   _   _       _   _    _    _    _     _
+  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
+  _  _   _   _   _   _       _   _    _    _    _     _
+             _   _   _       _   _    _    _
+)
+
 
 
 (defchords ch 15
