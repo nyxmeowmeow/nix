@@ -95,7 +95,44 @@ ralt tab
 ;;              _   @cw lsft    _   _    _    _
 ;;)
 (deflayermap syms
-1 2
+esc f1
+1 f2
+2 f3
+3 f4
+4 f5
+5 f6
+6 f7
+7 home
+8 pgdn
+9 pgup
+0 end
+b ,
+f .
+d ` 
+w `
+l left
+o down
+u up
+j right
+n 1
+s 2
+t 3
+c 4
+h 7
+a 8
+e 9
+i 0
+bspc rpt
+, 0
+. 9
+k 8
+g 5
+f15 6
+f16 3
+f17 2
+; 1
+r @cw
+
 )
 
 ;;(deflayer win
@@ -107,6 +144,13 @@ ralt tab
 ;;)
 (deflayermap win
   f @fl
+  s @sp
+  t @wt
+  c @cn
+  h @wl
+  a @wd
+  e @wu
+  i @wr
 )
 
 
