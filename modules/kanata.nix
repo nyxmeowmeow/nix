@@ -30,7 +30,7 @@
  n (t! homerowmodfiltered $tot 200 n lalt (n))
  i (t! homerowmod $tot 150 i ralt)
  s (t! homerowmod $tot 110 s (layer-while-held syms))
- e (t! homerowmod $tot 110 s (layer-while-held syms))
+ e (t! homerowmod $tot 110 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
  q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
 
