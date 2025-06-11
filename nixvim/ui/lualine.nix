@@ -14,33 +14,33 @@
       options = {
         component_separators = "";
         section_separators = "";
-        theme = {
-          normal = { a = { 
-            fg = "#3B224C";
-            bg = "#A4A0E8";
-          }; 
-          };
-          insert = { a = { 
-            fg = "#3B224C";
-            bg = "#DBBFEF";
-          }; 
-          };
-          visual = { a = { 
-            fg = "#3B224C";
-            bg = "#D678B5";
-          }; 
-          };
-          replace = { a = { 
-            fg = "#3B224C";
-            bg = "#D678B5";
-          }; 
-          };
-          inactive = { a = {
-            fg = "#A4A0E8";
-            bg = "#00000000";
-          };
-          };
-        };
+        # theme = {
+        #   normal = { a = { 
+        #     fg = "#3B224C";
+        #     bg = "#A4A0E8";
+        #   }; 
+        #   };
+        #   insert = { a = { 
+        #     fg = "#3B224C";
+        #     bg = "#DBBFEF";
+        #   }; 
+        #   };
+        #   visual = { a = { 
+        #     fg = "#3B224C";
+        #     bg = "#D678B5";
+        #   }; 
+        #   };
+        #   replace = { a = { 
+        #     fg = "#3B224C";
+        #     bg = "#D678B5";
+        #   }; 
+        #   };
+        #   inactive = { a = {
+        #     fg = "#A4A0E8";
+        #     bg = "#00000000";
+        #   };
+        #   };
+        # };
       };
       sections = {
         lualine_a = [
