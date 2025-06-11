@@ -1,5 +1,8 @@
 {
   imports = [
+    # ./ui/colorscheme/everforest/hard.nix
+    # ./ui/colorscheme/everforest/medium.nix
+    ./ui/colorscheme/everforest/soft.nix
     # ./ui/colorscheme/black.nix
     # ./ui/colorscheme/macchiato.nix
     # ./utils/picker.nix
@@ -10,8 +13,7 @@
     ./misc.nix
     ./nixvim.nix
     ./options.nix
-    ./ui/colorscheme/colorscheme.nix
-    ./ui/colorscheme/lix.nix
+    # ./ui/colorscheme/lix.nix
     ./ui/lualine.nix
     ./ui/noice.nix
     ./ui/zen-mode.nix
