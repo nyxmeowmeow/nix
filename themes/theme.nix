@@ -12,7 +12,7 @@
     default = "lix"; # Set a default theme
   };
 
-  config.theme = "lix";
+  config.theme = "black";
 
 }
 

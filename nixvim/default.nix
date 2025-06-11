@@ -8,7 +8,7 @@
     ./themes/everforest/medium/lualine.nix
     ./themes/everforest/hard/hard.nix
     ./themes/everforest/hard/lualine.nix
-    # ./themes/black.nix
+    ./themes/black.nix
     ./themes/macchiato.nix
     # ./utils/picker.nix
     ./keymaps/keymaps.nix
