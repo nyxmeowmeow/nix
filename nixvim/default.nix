@@ -2,8 +2,12 @@
   imports = [
     # ./ui/colorscheme/everforest/hard.nix
     # ./ui/colorscheme/everforest/medium.nix
-    ./ui/colorscheme/everforest/soft.nix
-    ./ui/colorscheme/everforest/lualine.nix
+    ./ui/colorscheme/everforest/soft/soft.nix
+    ./ui/colorscheme/everforest/soft/lualine.nix
+    # ./ui/colorscheme/everforest/medium/medium.nix
+    # ./ui/colorscheme/everforest/medium/lualine.nix
+    # ./ui/colorscheme/everforest/hard/hard.nix
+    # ./ui/colorscheme/everforest/hard/lualine.nix
     # ./ui/colorscheme/black.nix
     # ./ui/colorscheme/macchiato.nix
     # ./utils/picker.nix
