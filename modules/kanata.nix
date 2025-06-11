@@ -124,13 +124,21 @@
   (        S-0 ;) S-7
 )
 
-(defseq
-  float (M-g f)
+;;(defseq
+;;  float (M-g f)
+;;)
+;;
+;;(defvirtualkeys
+;;  float (macro M-S-C-A-1)
+;;)
+
+(deftemplate seq (vk-name input-keys output-action)
+    (defvirtualkeys $vk-name $output-action)
+    (defseq $vk-name $input-keys)
 )
 
-(defvirtualkeys
-  float (macro M-S-C-A-1)
-)
+(t! seq float (M-g f) (macro M-S-C-A-1))
+
 
 (defalias
   ;;sym (tap-hold-press 120 120 enter (layer-toggle syms))
