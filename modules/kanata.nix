@@ -24,6 +24,36 @@
 
 (defsrc)
 
+(deflayermap (base)
+ ;; define home row mods (they act as typing-layer triggers, too )
+ c (t! homerowmod $tot 100 c lsft)
+ h (t! homerowmod $tot 100 h rsft)
+ t (t! homerowmod $tot 100 t lctl)
+ a (t! homerowmod $tot 100 a rctl)
+ n (t! homerowmodfiltered $tot 200 n lalt (n))
+ i (t! homerowmod $tot 200 i ralt)
+ s (t! homerowmod $tot 150 s lmet)
+ ;; define each letter as typing-layer trigger
+ q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) e (multi e @.tp) m (multi m @.tp) 
+
+f18 S-;
+lctrl @lc
+bspc @rpeat
+g (switch
+    (nop1) (layer-while-held win) break
+    (lmet rmet) (layer-while-held win) break
+    () g break
+)
+lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
+lsft @magic
+ent @ent
+spc @sc
+rsft @rs
+ralt tab
+
+
+
+)
 
 ;;(deflayer over
 ;;  esc   1 2 3 4 5    6 7 8 9 0 -
@@ -133,36 +163,6 @@ r @cw
 )
 
 
-(deflayermap (base)
- ;; define home row mods (they act as typing-layer triggers, too )
- c (t! homerowmod $tot 100 c lsft)
- h (t! homerowmod $tot 100 h rsft)
- t (t! homerowmod $tot 100 t lctl)
- a (t! homerowmod $tot 100 a rctl)
- n (t! homerowmodfiltered $tot 200 n lalt (n))
- i (t! homerowmod $tot 200 i ralt)
- s (t! homerowmod $tot 150 s lmet)
- ;; define each letter as typing-layer trigger
- q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp) l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) e (multi e @.tp) m (multi m @.tp) 
-
-f18 S-;
-lctrl @lc
-bspc @rpeat
-g (switch
-    (nop1) (layer-while-held win) break
-    (lmet rmet) (layer-while-held win) break
-    () g break
-)
-lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
-lsft @magic
-ent @ent
-spc @sc
-rsft @rs
-ralt tab
-
-
-
-)
 
 (deflayermap (typing) 
  a (unshift a) b (unshift b) c (unshift c) d (unshift d) e (unshift e) f (unshift f) g (unshift g) h (unshift h) i (unshift i) j (unshift j) k (unshift k) l (unshift l) m (unshift m) n (unshift n) o (unshift o) p (unshift p) q (unshift q) r (unshift r) s (unshift s) t (unshift t) u (unshift u) v (unshift v) w (unshift w) x (unshift x) y (unshift y) z (unshift z) 
