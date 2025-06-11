@@ -2,31 +2,30 @@
 let
   col = import ../../../../themes/everforest/soft/colors.nix;
 in {
-  # config = lib.mkIf (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") {
+# config = lib.mkIf (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") {
 
-    programs.nixvim.plugins.lualine.settings.options = {
-      theme = {
-        normal.a = { 
-          fg = col.bg;
-          bg = col.gray1;
-        }; 
-        insert.a = { 
-          fg = col.bg;
-          bg = col.fg;
-        }; 
-        visual.a = { 
-          fg = col.bg;
-          bg = col.fg;
-        }; 
-        replace.a = { 
-          fg = col.bg;
-          bg = col.fg;
-        }; 
-        inactive.a = {
-          fg = col.bg;
-          bg = col.gray1;
-        }; 
-      };
+  programs.nixvim.plugins.lualine.settings.options = {
+    theme = {
+      normal.a = { 
+        fg = col.bg;
+        bg = col.gray1;
+      }; 
+      insert.a = { 
+        fg = col.bg;
+        bg = col.fg;
+      }; 
+      visual.a = { 
+        fg = col.bg;
+        bg = col.fg;
+      }; 
+      replace.a = { 
+        fg = col.bg;
+        bg = col.fg;
+      }; 
+      inactive.a = {
+        fg = col.bg;
+        bg = col.gray1;
+      }; 
     };
   };
 }
