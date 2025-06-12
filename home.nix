@@ -18,6 +18,7 @@
         ./themes/ocean/default.nix
 
           ./home_modules/hyprland.nix
+          ./home_modules/tofi.nix
           ./home_modules/nushell.nix
           ./home_modules/starship.nix
         # ./home_modules/yazi.nix
