@@ -19,6 +19,36 @@
 (defsrc)
 
 (deflayermap (base)
+ ;; define home row mods (they act as typing-layer triggers, too )
+ c (t! homerowmod $tot 110 c lsft)
+ h (t! homerowmod $tot 110 h rsft)
+ t (t! homerowmod $tot 110 t lctl)
+ a (t! homerowmod $tot 110 a rctl)
+ n (t! homerowmodfiltered $tot 200 n lalt (n))
+ i (t! homerowmod $tot 150 i ralt)
+ s (t! homerowmod $tot 120 s (layer-while-held syms))
+ e (t! homerowmod $tot 120 e (layer-while-held syms))
+ ;; define each letter as typing-layer trigger
+ ;; q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
+
+f18 S-;
+lctrl -
+bspc @rpeat
+g (switch
+    (nop1) (one-shot-press 500 (layer-while-held win)) break
+    (lmet rmet) (layer-while-held win) break
+    () g break
+)
+f15 S--
+f16 S-9
+f17 S-0
+lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
+lsft @magic
+rsft bspc
+ralt tab
+;;, (tap-hold-press 110 110 , lsft)
+;;. @per?
+
 
 )
 
