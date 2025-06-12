@@ -42,7 +42,7 @@ g (switch
 f15 S--
 f16 S-9
 f17 S-0
-lmet (multi  nop1 (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet)))
+lmet (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
 lsft @magic
 rsft bspc
 ralt tab
