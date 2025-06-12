@@ -1,6 +1,5 @@
 {
-  services.kanata = {
-    enable = true;
+  services.kanata = { enable = true;
     keyboards = {
       lily58 = {
         port = 10000;
@@ -16,6 +15,7 @@
         '';
 
         config = /* rust */ ''
+
 (defsrc)
 
 (deflayermap (base)
