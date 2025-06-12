@@ -29,7 +29,7 @@
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
-;; q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
+ q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
 
 f18 S-;
 lctrl -
@@ -42,7 +42,7 @@ g (switch
 f15 S--
 f16 S-9
 f17 S-0
-lmet (multi (layer-switch base) nop1 (tap-hold-press 120 120 esc lmet))
+lmet (multi (layer-switch sup) nop1 (tap-hold-press 120 120 esc lmet))
 lsft @magic
 rsft bspc
 ralt tab
@@ -108,6 +108,10 @@ r @cw
 ;;  _  _   _   _   _   _       _   _    _    _    _     _
 ;;             _   _   _       _   _    _    _
 ;;)
+
+(deflayer sup
+)
+
 (deflayermap win
   f @fl
   s @sp
