@@ -35,7 +35,7 @@ f18 S-;
 lctrl -
 bspc @rpeat
 g (switch
-    (nop1) (one-shot-press 500 (layer-while-held win)) break
+    ;; (nop1) (one-shot-press 500 (layer-while-held win)) break
     (lmet rmet) (layer-while-held win) break
     () g break
 )
@@ -348,11 +348,11 @@ bspc @rpeat
     ((key-history 3 1)) (macro i n c l u d e) break
 
   ;; // sfb
-    ((key-history o 2)) (macro a) break
-    ((key-history a 2)) (macro o) break
-    ((key-history u 2)) (macro e) break
-    ((key-history e 2)) (macro u) break
-    ((key-history i 2)) (macro x) break
+    ((key-history o 1)) (macro a) break
+    ((key-history a 1)) (macro o) break
+    ((key-history u 1)) (macro e) break
+    ((key-history e 1)) (macro u) break
+    ((key-history i 1)) (macro x) break
 
   ;; // sfs
     ;;((and(key-history e 2) (key-history s 1))) (macro e) break
