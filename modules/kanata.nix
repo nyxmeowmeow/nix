@@ -215,32 +215,32 @@ bspc @rpeat
 
 (defchordsv2
 
-  (b f    ) S-7 15 all-released (typing over win)
-  (  f d  ) = 15 all-released (typing over win)
-  (    d w) S-8 15 all-released (typing over win)
+  (b f    ) S-7 15 all-released (typing over win sup)
+  (  f d  ) = 15 all-released (typing over win sup)
+  (    d w) S-8 15 all-released (typing over win sup)
 
-  (l o    ) S-' 15 all-released (typing over win)
-  (  o u  ) + 15 all-released (typing over win)
-  (    u j) S-. 15 all-released (typing over win)
+  (l o    ) S-' 15 all-released (typing over win sup)
+  (  o u  ) + 15 all-released (typing over win sup)
+  (    u j) S-. 15 all-released (typing over win sup)
 
-  (n s    ) S-, 15 all-released (typing over win)
-  (  s t  ) S-[ 15 all-released (typing over win)
-  (  s   c) S-` 15 all-released (typing over win)
-  (    t c) [ 15 all-released (typing over win)
+  (n s    ) S-, 15 all-released (typing over win sup)
+  (  s t  ) S-[ 15 all-released (typing over win sup)
+  (  s   c) S-` 15 all-released (typing over win sup)
+  (    t c) [ 15 all-released (typing over win sup)
 
-  (h a    ) ] 15 all-released (typing over win)
-  (h   e  ) del 15 all-released (typing over win)
-  (  a e  ) S-] 15 all-released (typing over win)
-  (    e i) S-. 15 all-released (typing over win)
+  (h a    ) ] 15 all-released (typing over win sup)
+  (h   e  ) del 15 all-released (typing over win sup)
+  (  a e  ) S-] 15 all-released (typing over win sup)
+  (    e i) S-. 15 all-released (typing over win sup)
 
-  (, .    ) \ 15 all-released (typing over win)
-  (  . k  ) S-\ 15 all-released (typing over win)
-  (    k g) S-1 15 all-released (typing over win)
+  (, .    ) \ 15 all-released (typing over win sup)
+  (  . k  ) S-\ 15 all-released (typing over win sup)
+  (    k g) S-1 15 all-released (typing over win sup)
 
-  (f15 f16      ) S-3 15 all-released (typing over win)
-  (f15     f17  ) S-5 15 all-released (typing over win)
-  (    f16 f17  ) S-/ 15 all-released (typing over win)
-  (        f17 ;) S-7 15 all-released (typing over win)
+  (f15 f16      ) S-3 15 all-released (typing over win sup)
+  (f15     f17  ) S-5 15 all-released (typing over win sup)
+  (    f16 f17  ) S-/ 15 all-released (typing over win sup)
+  (        f17 ;) S-7 15 all-released (typing over win sup)
 )
 
 
