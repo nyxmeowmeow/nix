@@ -165,7 +165,6 @@ r @cw
  a (unshift a)
  b (unshift b)
  d (unshift d)
- e (unshift e)
  f (unshift f)
  g (unshift g)
  i (unshift i)
@@ -178,7 +177,6 @@ r @cw
  p (unshift p)
  q (unshift q)
  r (unshift r)
- s (unshift s)
  t (unshift t)
  u (unshift u)
  v (unshift v)
@@ -189,6 +187,8 @@ r @cw
 
  h (multi (t! homerowmod $tot 100 h rsft) (layer-switch base))
  c (multi (t! homerowmod $tot 100 c lsft) (layer-switch base))
+ s (t! homerowmod $tot 110 s (layer-while-held syms))
+ e (t! homerowmod $tot 110 e (layer-while-held syms))
 f15 S--
 f16 S-9
 f17 S-0
