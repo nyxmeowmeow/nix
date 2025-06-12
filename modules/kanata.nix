@@ -187,8 +187,8 @@ r @cw
 
  a (multi (t! homerowmod $tot 110 a rsft) (layer-switch base))
  t (multi (t! homerowmod $tot 110 t lsft) (layer-switch base))
- s (t! homerowmod $tot 120 s (layer-while-held syms))
- e (t! homerowmod $tot 120 e (layer-while-held syms))
+ s (t! homerowmod $tot 120 (unshift s) (layer-while-held syms))
+ e (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
 f15 S--
 f16 S-9
 f17 S-0
