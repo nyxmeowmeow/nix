@@ -153,7 +153,7 @@ r @cw
         ;;(lsft rsft) XX break ;; skip typing-layer activation for upper case keys might this solves some FJ problems
         ()  (multi
               (layer-switch typing)
-              (on-idle  95 tap-vkey to-base )
+              (on-idle  70 tap-vkey to-base )
             ) break
       )
   .spc-typing   (multi (layer-switch base) spc) ;; expilcitly leave typing-layer when hitting `space` - this allows experimenting with higher idle timeouts
