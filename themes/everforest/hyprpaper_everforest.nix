@@ -9,11 +9,11 @@
         splash_offset = 2.0;
 
         preload = [
-          "~/nix/themes/everforest/wallpapers/1_hor.png" 
+          "~/nix/themes/everforest/wallpapers/1_hor.jpg" 
         ];
 
         wallpaper = [
-          "DP-1, ~/nix/themes/everforest/wallpapers/1_hor.png"
+          "DP-1, ~/nix/themes/everforest/wallpapers/1_hor.jpg"
             "DP-3, ~/nix/themes/lix/wallpapers/2_hor.png"
         ];
       };
