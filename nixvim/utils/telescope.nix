@@ -27,6 +27,7 @@
 
     keymaps = {
       "<leader>r" = "oldfiles";
+      "<leader><leader>" = "buffers";
       "<leader>gw" = "git_commits";
       "<leader>ga" = "git_status";
       "<leader>f" = "live_grep { cwd = '/home/meow/nix' }";
@@ -36,11 +37,4 @@
     };
     };
   };
-# keymaps = [
-# {
-#   key = "<leader>gc";
-#   action = "<cmd>Telescope git_commits<cr>";
-#   mode = [ "n" "v" "x" "o" ];
-# }
-# ];
 }

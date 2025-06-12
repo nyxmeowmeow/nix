@@ -4,14 +4,14 @@
   programs.foot = {
     enable = true;
     settings = {
-      cursor = {
-        color = "3B224C A4A0E8";
-      };
+      cursor.color = "3B224C A4A0E8";
 
       colors = {
         alpha = "1";
+
         background = "3B224C";
         foreground = "A4A0E8";
+
         ## Normal/regular colors (color palette 0-7)
         regular0 = "281733";  # black
         regular1 = "F22C86";  # red
@@ -36,4 +36,3 @@
   };
   };
 }
-
