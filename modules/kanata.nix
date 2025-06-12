@@ -162,10 +162,33 @@ r @cw
 
 
 (deflayermap (typing) 
- a (unshift a) b (unshift b) d (unshift d) e (unshift e) f (unshift f) g (unshift g) i (unshift i) j (unshift j) k (unshift k) l (unshift l) m (unshift m) n (unshift n) o (unshift o) p (unshift p) q (unshift q) r (unshift r) s (unshift s) t (unshift t) u (unshift u) v (unshift v) w (unshift w) x (unshift x) y (unshift y) z (unshift z) 
+ a (unshift a)
+ b (unshift b)
+ d (unshift d)
+ e (unshift e)
+ f (unshift f)
+ g (unshift g)
+ i (unshift i)
+ j (unshift j)
+ k (unshift k)
+ l (unshift l)
+ m (unshift m)
+ n (unshift n)
+ o (unshift o)
+ p (unshift p)
+ q (unshift q)
+ r (unshift r)
+ s (unshift s)
+ t (unshift t)
+ u (unshift u)
+ v (unshift v)
+ w (unshift w)
+ x (unshift x)
+ y (unshift y)
+ z (unshift z) 
 
- h (t! homerowmod $tot 100 h rsft)
- c (t! homerowmod $tot 100 c lsft)
+ h (multi (t! homerowmod $tot 100 h rsft) (layer-switch base))
+ c (multi (t! homerowmod $tot 100 c lsft) (layer-switch base))
 f15 S--
 f16 S-9
 f17 S-0
