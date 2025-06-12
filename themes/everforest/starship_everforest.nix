@@ -4,7 +4,7 @@
     programs.starship = {
       settings = {
         character = {
-          success_symbol = "[󰘧](purple)";
+          success_symbol = "[󰘧](#9DA9A0)";
           error_symbol = "[󰘧](red)";
         };
 
@@ -13,7 +13,7 @@
         };
 
         directory = {
-          style = "bold #DBBFEF";
+          style = "bold #9DA9A0";
         };
 
         git_metrics.disabled = false;
