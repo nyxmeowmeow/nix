@@ -184,6 +184,7 @@ r @cw
  x (unshift x)
  y (unshift y)
  z (unshift z) 
+ ent (unshift ent)
 
  a (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
  t (multi (t! homerowmod $tot 110 (unshift t) lsft) (layer-switch base))
