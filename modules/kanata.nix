@@ -144,6 +144,14 @@ b b
 f f
 d d
 w w
+n n
+s s
+t t
+c c
+h h
+a a
+e e
+i i
 
 
 )
