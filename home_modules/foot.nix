@@ -5,8 +5,8 @@
       main = {
         term = "foot";
 
-        font = "Mononoki Nerd Font Mono:size=20";
-        dpi-aware = true;
+        font = "Mononoki Nerd Font Mono:size=30";
+        dpi-aware = false;
         shell = "nu";
 
 
