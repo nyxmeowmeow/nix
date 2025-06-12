@@ -343,25 +343,16 @@ bspc @rpeat
 
 
   magic (switch
-    ((key-history spc 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
-    ((key-history enter 1)) (tap-hold-press 120 120 enter (layer-toggle syms)) break
-
-
-
-
-
-
 
   ;; // #include
     ((key-history 3 1)) (macro i n c l u d e) break
 
   ;; // sfb
-    ((key-history o 1)) (macro a) break
-    ((key-history a 1)) (macro o) break
-    ((key-history u 1)) (macro e) break
-    ((key-history e 1)) (macro u) break
-    ;;((key-history i 1)) (macro x) break
-    ((key-history i 1)) (macro x) break
+    ((key-history o 2)) (macro a) break
+    ((key-history a 2)) (macro o) break
+    ((key-history u 2)) (macro e) break
+    ((key-history e 2)) (macro u) break
+    ((key-history i 2)) (macro x) break
 
   ;; // sfs
     ;;((and(key-history e 2) (key-history s 1))) (macro e) break
