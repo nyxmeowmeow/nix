@@ -4,27 +4,14 @@
   programs.foot = {
     enable = true;
     settings = {
-      main = {
-        term = "foot";
-
-        font = "Mononoki Nerd Font Mono:size=20";
-        dpi-aware = "yes";
-        shell = "nu";
-
-        box-drawings-uses-font-glyphs = "no";
-      };
-
-      cursor = {
-        style = "beam";
-        blink = "yes";
-        unfocused-style = "unchanged";
-        color = "333C43 D3C6AA";
-      };
+      cursor.color = "333C43 D3C6AA";
 
       colors = {
         alpha = "1";
+
         background = "333C43";
         foreground = "D3C6AA";
+
         ## Normal/regular colors (color palette 0-7)
         regular0 = "293136";  # black
         regular1 = "E67E80";  # red
@@ -45,16 +32,6 @@
         bright6 = "8bd5ca";   # bright cyan
         bright7 = "ffffff";   # bright white
       };
-      key-bindings = {
-        scrollback-up-half-page = "Control+Shift+e";
-        scrollback-down-half-page = "Control+Shift+a";
-        scrollback-home = "Control+Shift+h";
-        scrollback-end = "Control+Shift+i";
-        # search-start = "Control+/";
-        # find-prev = "Control+h";
-        # find-next = "Control+i";
-      };
-      tweak.box-drawing-base-thickness = "0.05";
     };
   };
 

@@ -1,12 +1,8 @@
 {
   imports = [
-    ../macchiato/btop_macchiato.nix
-    ../macchiato/fastfetch_macchiato.nix
-    ../macchiato/ncmpcpp_macchiato.nix
-    ../macchiato/starship_macchiato.nix
-    ./foot_black.nix
-    ./gtk_black.nix
-    ./hyprland_black.nix
-    ./hyprpaper_black.nix
+  ./hyprland_everforest.nix
+  ./hyprpaper_everforest.nix
+  ./ncmpcpp_everforest.nix
+  ./soft/foot_everforest_s.nix
   ];
 }
