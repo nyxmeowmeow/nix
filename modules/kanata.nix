@@ -29,16 +29,16 @@
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
- q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
+ g (multi g @.tp) q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) r (multi r @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
 
 f18 S-;
 lctrl -
 bspc @rpeat
-g (switch
-    ;; (nop1) (one-shot-press 500 (layer-while-held win)) break
-    ;;(lmet rmet) (layer-while-held win) break
-    () g break
-)
+;;g (switch
+;;    (nop1) (one-shot-press 500 (layer-while-held win)) break
+;;    (lmet rmet) (layer-while-held win) break
+;;    () g break
+;;)
 f15 S--
 f16 S-9
 f17 S-0
