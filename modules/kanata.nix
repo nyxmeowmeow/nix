@@ -140,6 +140,11 @@ r @cw
 ;;)
 
 (deflayermap sup
+b b
+f f
+d d
+w w
+
 
 )
 
