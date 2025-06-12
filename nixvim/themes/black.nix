@@ -29,7 +29,7 @@ in {
           FlashLabel.fg = "#F22C86";
           FlashBackdrop.fg = "#886C9C";
           TelescopeSelection = {
-            fg = "none";
+            fg = col.base00;
             bg = col.base08;
           };
           CursorLine.bg = "#47345E";
