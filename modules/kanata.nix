@@ -243,7 +243,7 @@ bspc @rpeat
 
 (defalias
   ;;sym (tap-hold-press 120 120 enter (layer-toggle syms))
-  wi (tap-hold-press 120 120 enter (layer-toggle win))
+  ;;wi (tap-hold-press 120 120 enter (layer-toggle win))
   lc (tap-hold-press 120 120 - lctl)
   lm (tap-hold-press 120 120 esc lmet)
   rs (tap-hold-press 120 120 bspc lsft)
