@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+  emacs
     # bash-completion
     # nix-bash-completions
     expect
