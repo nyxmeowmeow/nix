@@ -16,6 +16,7 @@
         ./themes/lix/default.nix
         ./themes/macchiato/default.nix
         ./themes/ocean/default.nix
+        ./themes/everforest/default.nix
 
           ./home_modules/foot.nix
           ./home_modules/hyprland.nix
