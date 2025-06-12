@@ -22,7 +22,7 @@
     ./ui/noice.nix
     ./ui/zen-mode.nix
     ./utils/bracketed.nix
-    ./utils/colorizer.nix
+    ./ui/colorizer.nix
     ./utils/diagnostic.nix
     ./utils/flash.nix
     ./utils/harpoon.nix
