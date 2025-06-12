@@ -140,6 +140,8 @@ r @cw
 ;;)
 
 (deflayermap sup
+bspc rsft
+- lctl
 b b
 f f
 d d
