@@ -17,6 +17,7 @@
         ./themes/macchiato/default.nix
         ./themes/ocean/default.nix
 
+          ./home_modules/foot.nix
           ./home_modules/hyprland.nix
           ./home_modules/tofi.nix
           ./home_modules/nushell.nix
