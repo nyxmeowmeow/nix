@@ -20,10 +20,10 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- c (t! homerowmod $tot 110 c lsft)
- h (t! homerowmod $tot 110 h rsft)
- t (t! homerowmod $tot 110 t lctl)
- a (t! homerowmod $tot 110 a rctl)
+ t (t! homerowmod $tot 110 t lsft)
+ a (t! homerowmod $tot 110 a rsft)
+ c (t! homerowmod $tot 110 c lctl)
+ h (t! homerowmod $tot 110 h rctl)
  n (t! homerowmodfiltered $tot 200 n lalt (n))
  i (t! homerowmod $tot 150 i ralt)
  s (t! homerowmod $tot 120 s (layer-while-held syms))
@@ -162,7 +162,7 @@ r @cw
 
 
 (deflayermap (typing) 
- a (unshift a)
+ h (unshift h)
  b (unshift b)
  d (unshift d)
  f (unshift f)
@@ -177,7 +177,7 @@ r @cw
  p (unshift p)
  q (unshift q)
  r (unshift r)
- t (unshift t)
+ c (unshift c)
  u (unshift u)
  v (unshift v)
  w (unshift w)
@@ -185,8 +185,8 @@ r @cw
  y (unshift y)
  z (unshift z) 
 
- h (multi (t! homerowmod $tot 110 h rsft) (layer-switch base))
- c (multi (t! homerowmod $tot 110 c lsft) (layer-switch base))
+ a (multi (t! homerowmod $tot 110 a rsft) (layer-switch base))
+ t (multi (t! homerowmod $tot 110 t lsft) (layer-switch base))
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
 f15 S--
