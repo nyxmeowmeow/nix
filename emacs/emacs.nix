@@ -1,8 +1,7 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
   home.packages = [ pkgs.emacs ];
 
   home.sessionVariables = {
     EMACSDIR = ./emacs;
   };
-
 }
