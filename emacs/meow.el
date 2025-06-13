@@ -27,7 +27,9 @@
      '("/" . meow-visit)
      '("m" . meow-search)
      '("c" . meow-next-word)
+     '("C" . meow-next-symbol)
      '("t" . meow-back-word)
+     '("T" . meow-back-symbol)
      '("x" . meow-line)
      '("f" . meow-find)
      '("d" . meow-till)
@@ -39,10 +41,26 @@
      '("s" . meow-append)
      '("k" . meow-open-below)
      '("K" . meow-open-above)
+     '(";" . meow-cancel-selection)
+     '("C-;" . meow-pop-selection)
      '("<backspace>" . meow-delete)
      '("<escape>" . meow-cancel-selection)
      ; '("k" . meow-reverse)
      ))
+
+(setq meow-char-thing-table
+      '((?r . round)
+        (?b . square)
+        (?c . curly)
+        (?a . angle)
+        (?s . string)
+        (?p . paragraph)
+        (?l . line)
+        (?f . buffer)))
+
+(with-eval-after-load 'meow
+  (add-to-list 'meow-expand-exclude-mode-list meow-normal-mode)
+)
 
   (meow-setup)
   (meow-global-mode 1))
