@@ -1,15 +1,10 @@
 { config, ... }: {
 
-
   home-manager = {
     extraSpecialArgs = {
       theme = config.theme;
     };
     users.meow = {
-
-
-
-
 
       imports = [
         ./themes/black/default.nix
@@ -40,17 +35,6 @@
       home.username = "meow";
       home.homeDirectory = "/home/meow";
       home.stateVersion = "24.11";
-
-
-
-
-
-
-
-
-
     };
-
-
   };
-                 }
+}

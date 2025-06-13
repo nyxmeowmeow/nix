@@ -32,8 +32,8 @@
 ;; Set font and theme
 (set-face-attribute 'default nil :font "mononoki nerd font mono" :height 250)
 
-(load-file "~/.emacs.d/meow.el")
-(load-file "~/.emacs.d/theme.el")
+(load-file "~/nix/emacs/meow.el")
+(load-file "~/nix/emacs/theme.el")
 
 (setq initial-frame-alist default-frame-alist)
 (setq default-frame-alist default-frame-alist)
