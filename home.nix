@@ -41,7 +41,11 @@
       home.homeDirectory = "/home/meow";
       home.stateVersion = "24.11";
 
-  home.file.".emacs.d".source = ./emacs;
+home.file.".emacs.d".source = builtins.path {
+  path = ./emacs;
+  name = "emacs-config";
+  filter = path: type: true;
+};
 
 
 
