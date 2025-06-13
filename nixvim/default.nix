@@ -13,7 +13,7 @@
     # ./utils/picker.nix
     ./keymaps/keymaps.nix
     ./keymaps/no_yank_del.nix
-    ./langmap.nix
+    ./keymaps/langmap.nix
     ./lazy.nix
     ./misc.nix
     ./nixvim.nix

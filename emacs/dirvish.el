@@ -2,18 +2,26 @@
   :init
   (dirvish-override-dired-mode)  ; replace `dired` with `dirvish`
   :config
-  (setq dirvish-mode-line-format
-        '(:left (sort file-time " " file-size symlink) :right (omit yank index)))
   (setq dirvish-attributes
         '(nerd-icons vc-state))
-  (dirvish-override-dired-mode))
+  (dirvish-override-dired-mode)
+  :bind
+  ("C-c y" . dirvish)
+
+
+
+
+  )
 
 
 (with-eval-after-load 'dirvish
   (define-key dirvish-mode-map (kbd "h") 'dired-up-directory)
   (define-key dirvish-mode-map (kbd "i") 'dired-find-file)
   (define-key dirvish-mode-map (kbd "TAB") 'dirvish-subtree-toggle)
-  (define-key dirvish-mode-map (kbd "SPC") 'dirvish-dispatch))
+  (define-key dirvish-mode-map (kbd "SPC") 'dirvish-dispatch)
+  (define-key dirvish-mode-map (kbd "a") 'dired-next-line)
+  (define-key dirvish-mode-map (kbd "e") 'dired-previous-line)
+  )
 
 
 (setq dirvish-preview-dispatchers
@@ -52,4 +60,5 @@
   (define-key dirvish-mode-map (kbd "SPC") #'dirvish-quick-access))
 
 (setq dirvish-default-layout '(0 0.4 0.6))
-(setq dirvish-use-mode-line nil)        ; hide mode line
+
+

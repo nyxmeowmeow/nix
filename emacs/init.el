@@ -36,9 +36,12 @@
 (setq scroll-conservatively 101)  ; avoid recentering
 (setq scroll-step 1)              ; scroll one line at a time
 
+(blink-cursor-mode 0)
+
 (load-file "~/nix/emacs/meow.el")
 (load-file "~/nix/emacs/theme.el")
 (load-file "~/nix/emacs/dirvish.el")
+(load-file "~/nix/emacs/line.el")
 
 (setq initial-frame-alist default-frame-alist)
 (setq default-frame-alist default-frame-alist)
@@ -61,3 +64,34 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(use-package vterm
+  :ensure t)
+
+
+(defun my/yazi ()
+  "Open Yazi in vterm."
+  (interactive)
+  (vterm)
+  (vterm-send-string "yazi")
+  (vterm-send-return))
