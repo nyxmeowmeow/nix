@@ -1,9 +1,9 @@
 # emacs-generated folders
-auto-save-list/
-eln-cache/
-elpa/
-games/
-url/
+emacs/auto-save-list/
+emacs/eln-cache/
+emacs/elpa/
+emacs/games/
+emacs/url/
 
 # emacs backup files
 *~
