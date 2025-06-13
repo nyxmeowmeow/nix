@@ -41,7 +41,7 @@
      '("K" . meow-open-above)
      '("<backspace>" . meow-delete)
      '("<escape>" . meow-cancel-selection)
-     '("k" . meow-reverse)
+     ; '("k" . meow-reverse)
      ))
 
   (meow-setup)

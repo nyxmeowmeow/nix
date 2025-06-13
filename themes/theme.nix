@@ -9,10 +9,10 @@
       "everforest_medium"
       "everforest_soft"
     ];
-    default = "macchiato"; # Set a default theme
+    default = "black"; # Set a default theme
   };
 
-  config.theme = "everforest_soft";
+  config.theme = "macchiato";
 
 }
 
