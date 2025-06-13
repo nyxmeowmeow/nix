@@ -18,6 +18,7 @@
         ./themes/ocean/default.nix
         ./themes/everforest/default.nix
 
+          ./emacs/emacs.nix
           ./home_modules/foot.nix
           ./home_modules/hyprland.nix
           ./home_modules/tofi.nix
@@ -40,6 +41,7 @@
       home.homeDirectory = "/home/meow";
       home.stateVersion = "24.11";
 
+  home.file.".emacs.d".source = ./emacs;
 
 
 
