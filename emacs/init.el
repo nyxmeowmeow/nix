@@ -30,7 +30,7 @@
 (show-paren-mode 1)
 
 ;; Set font and theme
-(set-face-attribute 'default nil :font "mononoki nerd font mono" :height 250)
+(set-face-attribute 'default nil :font "mononoki nerd font mono-25")
 
 (load-file "~/nix/emacs/meow.el")
 (load-file "~/nix/emacs/theme.el")
