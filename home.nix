@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ pkgs, config, ... }: {
 
   home-manager = {
     extraSpecialArgs = {
@@ -35,6 +35,15 @@
       home.username = "meow";
       home.homeDirectory = "/home/meow";
       home.stateVersion = "24.11";
+
+
+# programs.emacs = {
+# enable = true;
+# package = pkgs.emacs-pgtk;
+# };
+
+
+
     };
   };
 }
