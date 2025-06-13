@@ -3,5 +3,6 @@
 
   home.sessionVariables = {
     EMACSDIR = ./emacs;
+    EMACSLOADPATH= ./emacs;
   };
 }
