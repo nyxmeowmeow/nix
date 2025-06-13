@@ -6,4 +6,4 @@ emacs/games/
 emacs/url/
 
 # emacs backup files
-*~
+emacs/*~
