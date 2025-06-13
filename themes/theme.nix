@@ -9,7 +9,7 @@
       "everforest_medium"
       "everforest_soft"
     ];
-    default = "lix"; # Set a default theme
+    default = "macchiato"; # Set a default theme
   };
 
   config.theme = "everforest_soft";
