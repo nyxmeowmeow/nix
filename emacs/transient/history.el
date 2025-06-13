@@ -1,0 +1,1 @@
+((dirvish-quick-access nil))

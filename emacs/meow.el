@@ -21,12 +21,12 @@
      ; '("m" . meow-right)
      '("o" . meow-kill)
      '("l" . meow-yank)
-     '("j" . meow-save)
+     '("j" . meow-save-clipboard)
      '("u" . meow-change)
      '("p" . meow-undo)
      '("/" . meow-visit)
      '("m" . meow-search)
-     '("c" . meow-next-word)
+     '("c" . meow-next-word-1)
      '("C" . meow-next-symbol)
      '("t" . meow-back-word)
      '("T" . meow-back-symbol)
@@ -48,6 +48,19 @@
      ; '("k" . meow-reverse)
      ))
 
+(defun meow-next-word-1 (n)
+  (interactive "p")
+   ;; The optional last arg, default value is "w_", C-h s for info about syntax table
+  (meow-next-thing meow-word-thing 'word n "w")) 
+
+
+(defun meow-save-clipboard ()
+  "Copy in clipboard."
+  (interactive)
+  (let ((meow-use-clipboard t))
+    (meow-save)))
+
+
 (setq meow-char-thing-table
       '((?r . round)
         (?b . square)
@@ -57,6 +70,35 @@
         (?p . paragraph)
         (?l . line)
         (?f . buffer)))
+
+(defun forward-vimlike-word (&optional arg)
+  "Alternate `forward-word'. Essentially the same idea as Vim's 'e'."
+  (interactive "^p")
+  (setq arg (or arg 1))
+  (cl-destructuring-bind (sign move-func char-func)
+      (if (>= arg 0)
+          '(1 skip-syntax-forward char-after)
+        '(-1 skip-syntax-backward char-before))
+    (with-syntax-table (standard-syntax-table)
+      (let ((distance sign))
+        (while (and distance (> (abs distance) 0) (> (* arg sign) 0))
+          (setq distance
+                (when-let ((next-char (funcall char-func))
+                           (next-syntax (char-syntax next-char)))
+                  (cond ((eq next-syntax ?w)
+                         (funcall move-func "w"))
+                        ((eq next-syntax ?\ )
+                         (prog1
+                             (funcall move-func " ")
+                           (forward-vimlike-word sign)))
+                        (t
+                         (funcall move-func "^w ")))))
+          (setq arg (- arg sign)))
+        (and distance (> (abs distance) 0))))))
+
+(put 'vimlike-word 'forward-op #'forward-vimlike-word)
+
+(setq meow--word-thing 'vimlike-word)
 
 (with-eval-after-load 'meow
   (add-to-list 'meow-expand-exclude-mode-list meow-normal-mode)

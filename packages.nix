@@ -40,7 +40,6 @@
 
     qview
     mpc
-    ripgrep
     # nix-inspect
     mpv
     obs-studio
@@ -52,6 +51,8 @@
     jq
     wl-clipboard
     clipse
+    ripgrep
+    fd
     eza
     fzf
     zoxide

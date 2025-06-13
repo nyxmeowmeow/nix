@@ -32,8 +32,13 @@
 ;; Set font and theme
 (set-face-attribute 'default nil :font "mononoki nerd font mono-25")
 
+(setq scroll-margin 5)
+(setq scroll-conservatively 101)  ; avoid recentering
+(setq scroll-step 1)              ; scroll one line at a time
+
 (load-file "~/nix/emacs/meow.el")
 (load-file "~/nix/emacs/theme.el")
+(load-file "~/nix/emacs/dirvish.el")
 
 (setq initial-frame-alist default-frame-alist)
 (setq default-frame-alist default-frame-alist)
