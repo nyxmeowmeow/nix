@@ -172,159 +172,302 @@
         }
         ];
 
-# [tasks]
-# micro_workers    = 10
-# macro_workers    = 10
-# bizarre_retry    = 3
-# image_alloc      = 536870912  # 512MB
-# image_bound      = [ 0, 0 ]
-# suppress_preload = false
-#
-# [plugin]
-#
-# fetchers = [
-# 	# Mimetype
-# 	{ id = "mime", name = "*", run = "mime", prio = "high" },
-#
-#         { id   = "git", name = "*", run  = "git" },
-# 	{ id   = "git", name = "*/", run  = "git" },
-#   # { id = "simple-tag", name = "*", run = "simple-tag" },
-#   # { id = "simple-tag", name = "*/", run = "simple-tag" },
-#   # { id = "git", name = "*", run = "git" },
-#   # { id = "git", name = "*/", run = "git" },
-# ]
-# spotters = [
-# 	{ name = "*/", run = "folder" },
-# 	# Code
-# 	{ mime = "text/*", run = "code" },
-# 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
-# 	# Image
-# 	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-# 	{ mime = "image/*", run = "image" },
-# 	# Video
-# 	{ mime = "video/*", run = "video" },
-# 	# Fallback
-# 	{ name = "*", run = "file" },
-# ]
-# preloaders = [
-# 	# Image
-# 	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-# 	{ mime = "image/*", run = "image" },
-# 	# Video
-# 	{ mime = "video/*", run = "video" },
-# 	# PDF
-# 	{ mime = "application/pdf", run = "pdf" },
-# 	# Font
-# 	{ mime = "font/*", run = "font" },
-# 	{ mime = "application/ms-opentype", run = "font" },
-# ]
-# previewers = [
-# 	{ name = "*/", run = "folder", sync = true },
-# 	# Code
-# 	{ mime = "text/*", run = "code" },
-# 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
-# 	# JSON
-# 	{ mime = "application/{json,ndjson}", run = "json" },
-# 	# Image
-# 	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-# 	{ mime = "image/*", run = "image" },
-# 	# Video
-# 	{ mime = "video/*", run = "video" },
-# 	# PDF
-# 	{ mime = "application/pdf", run = "pdf" },
-# 	# Archive
-# 	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", run = "archive" },
-# 	{ mime = "application/{debian*-package,redhat-package-manager,rpm,android.package-archive}", run = "archive" },
-#   # { name = "*.{AppImage,appimage}", run = "archive" },
-# 	{ name = "*.{AppImage,appimage}", run = "appimaged" },
-# 	# Virtual Disk / Disk Image
-# 	{ mime = "application/{iso9660-image,qemu-disk,ms-wim,apple-diskimage}", run = "archive" },
-# 	{ mime = "application/virtualbox-{vhd,vhdx}", run = "archive" },
-# 	{ name = "*.{img,fat,ext,ext2,ext3,ext4,squashfs,ntfs,hfs,hfsx}", run = "archive" },
-# 	# Font
-# 	{ mime = "font/*", run = "font" },
-# 	{ mime = "application/ms-opentype", run = "font" },
-# 	# Empty file
-# 	{ mime = "inode/empty", run = "empty" },
-# 	# Fallback
-# 	{ name = "*", run = "file" },
-# ]
-#
-# [input]
-# cursor_blink = false
-#
-# # cd
-# cd_title  = ""
-# cd_origin = "center"
-# cd_offset = [ 0, 0, 50, 3 ]
-#
-# # create
-# create_title  = [ "", "" ]
-# create_origin = "center"
-# create_offset = [ 0, 0, 50, 3 ]
-#
-# # rename
-# rename_title  = ""
-# rename_origin = "hovered"
-# rename_offset = [ 0, 1, 50, 3 ]
-#
-# # filter
-# filter_title  = ""
-# filter_origin = "center"
-# filter_offset = [ 0, 0, 50, 3 ]
-#
-# # find
-# find_title  = [ "", "" ]
-# find_origin = "center"
-# find_offset = [ 0, 0, 50, 3 ]
-#
-# # search
-# search_title  = " Search via {n} "
-# search_origin = "center"
-# search_offset = [ 0, 0, 50, 3 ]
-#
-# # shell
-# shell_title  = [ "", "" ]
-# shell_origin = "center"
-# shell_offset = [ 0, 0, 50, 3 ]
-#
-# [confirm]
-# # trash
-# trash_title 	= " Trash {n} selected file{s}? "
-# trash_origin	= "center"
-# trash_offset	= [ 0, 0, 70, 20 ]
-#
-# # delete
-# delete_title 	= "PERMANENTLY delete {n} selected file{s}?"
-# delete_origin	= "center"
-# delete_offset	= [ 0, 0, 70, 20 ]
-#
-# # overwrite
-# overwrite_title   = " Overwrite file? "
-# overwrite_content = "Will overwrite the following file:"
-# overwrite_origin  = "center"
-# overwrite_offset  = [ 0, 0, 50, 15 ]
-#
-# # quit
-# quit_title   = " Quit? "
-# quit_content = "The following tasks are still running, are you sure you want to quit?"
-# quit_origin  = "center"
-# quit_offset  = [ 0, 0, 50, 15 ]
-#
-# [pick]
-# open_title  = ""
-# open_origin = "hovered"
-# open_offset = [ 0, 1, 50, 7 ]
-#
-# [which]
-# sort_by      	 = "none"
-# sort_sensitive = false
-# sort_reverse 	 = false
-# sort_translit  = false
-#
+        tasks = {
+          micro_workers    = 10;
+          macro_workers    = 10;
+          bizarre_retry    = 3;
+          image_alloc      = 536870912; # 512MB
+            image_bound      = [ 0 0 ];
+          suppress_preload = false;
+        };
 
 
-    };
+        plugin = {
+
+          fetchers = [
+# Mimetype
+          {
+            id = "mime";
+            name = "*";
+            run = "mime";
+            prio = "high";
+          }
+
+          {
+            id   = "git";
+            name = "*";
+            run  = "git";
+          }
+
+          {
+            id   = "git";
+            name = "*/";
+            run  = "git";
+          }
+          ];
+
+          spotters = [
+          {
+            name = "*/";
+            run = "folder";
+          }
+
+# Code
+          {
+            mime = "text/*";
+            run = "code";
+          }
+
+          {
+            mime = "application/{mbox,javascript,wine-extension-ini}";
+            run = "code";
+          }
+
+# Image
+          {
+            mime = "image/{avif,hei?,jxl,svg+xml}";
+            run = "magick";
+          }
+
+          {
+            mime = "image/*";
+            run = "image";
+          }
+
+# Video
+          {
+            mime = "video/*";
+            run = "video";
+          }
+
+# Fallback
+          {
+            name = "*";
+            run = "file";
+          }
+          ];
+
+          preloaders = [
+# Image
+          {
+            mime = "image/{avif,hei?,jxl,svg+xml}";
+            run = "magick";
+          }
+
+          {
+            mime = "image/*";
+            run = "image";
+          }
+
+# Video
+          {
+            mime = "video/*";
+            run = "video";
+          }
+
+# PDF
+          {
+            mime = "application/pdf";
+            run = "pdf";
+          }
+
+# Font
+          {
+            mime = "font/*";
+            run = "font";
+          }
+
+          {
+            mime = "application/ms-opentype";
+            run = "font";
+          }
+          ];
+
+          previewers = [
+          {
+            name = "*/";
+            run = "folder";
+            sync = true;
+          }
+
+# Code
+          {
+            mime = "text/*";
+            run = "code";
+          }
+
+          {
+            mime = "application/{mbox,javascript,wine-extension-ini}";
+            run = "code";
+          }
+
+# JSON
+          {
+            mime = "application/{json,ndjson}";
+            run = "json";
+          }
+
+# Image
+          {
+            mime = "image/{avif,hei?,jxl,svg+xml}";
+            run = "magick";
+          }
+
+          {
+            mime = "image/*";
+            run = "image";
+          }
+
+# Video
+          {
+            mime = "video/*";
+            run = "video";
+          }
+
+# PDF
+          {
+            mime = "application/pdf";
+            run = "pdf";
+          }
+
+# Archive
+          {
+            mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}";
+            run = "archive";
+          }
+
+          {
+            mime = "application/{debian*-package,redhat-package-manager,rpm,android.package-archive}";
+            run = "archive";
+          }
+
+# { name = "*.{AppImage,appimage}", run = "archive" },
+
+          {
+            name = "*.{AppImage,appimage}";
+            run = "appimaged";
+          }
+
+# Virtual Disk / Disk Image
+          {
+            mime = "application/{iso9660-image,qemu-disk,ms-wim,apple-diskimage}";
+            run = "archive";
+          }
+
+          {
+            mime = "application/virtualbox-{vhd,vhdx}";
+            run = "archive";
+          }
+
+          {
+            name = "*.{img,fat,ext,ext2,ext3,ext4,squashfs,ntfs,hfs,hfsx}";
+            run = "archive";
+          }
+
+# Font
+          {
+            mime = "font/*";
+            run = "font";
+          }
+
+          {
+            mime = "application/ms-opentype";
+            run = "font";
+          }
+
+# Empty file
+          {
+            mime = "inode/empty";
+            run = "empty";
+          }
+
+# Fallback
+          {
+            name = "*";
+            run = "file";
+          }
+          ];
+
+          input = {
+            cursor_blink = false;
+
+            # cd
+            cd_title  = "";
+            cd_origin = "center";
+            cd_offset = [ 0 0 50 3 ];
+
+            # create
+            create_title  = [ "" "" ];
+            create_origin = "center";
+            create_offset = [ 0 0 50 3 ];
+
+            # rename
+            rename_title  = "";
+            rename_origin = "hovered";
+            rename_offset = [ 0 1 50 3 ];
+
+            # filter
+            filter_title  = "";
+            filter_origin = "center";
+            filter_offset = [ 0 0 50 3 ];
+
+            # find
+            find_title  = [ "" "" ];
+            find_origin = "center";
+            find_offset = [ 0 0 50 3 ];
+
+            # search
+            search_title  = " Search via {n} ";
+            search_origin = "center";
+            search_offset = [ 0 0 50 3 ];
+
+            # shell
+            shell_title  = [ "" "" ];
+            shell_origin = "center";
+            shell_offset = [ 0 0 50 3 ];
+
+            confirm = {
+              # trash
+              trash_title 	= " Trash {n} selected file{s}? ";
+              trash_origin	= "center";
+              trash_offset	= [ 0 0 70 20 ];
+
+              # delete
+              delete_title 	= "PERMANENTLY delete {n} selected file{s}?";
+              delete_origin	= "center";
+              delete_offset	= [ 0 0 70 20 ];
+
+              # overwrite
+              overwrite_title   = " Overwrite file? ";
+              overwrite_content = "Will overwrite the following file:";
+              overwrite_origin  = "center";
+              overwrite_offset  = [ 0 0 50 15 ];
+
+              # quit
+              quit_title   = " Quit? ";
+              quit_content = "The following tasks are still running, are you sure you want to quit?";
+              quit_origin  = "center";
+              quit_offset  = [ 0 0 50 15 ];
+            };
+
+            pick = {
+              open_title  = "";
+              open_origin = "hovered";
+              open_offset = [ 0 1 50 7 ];
+            };
+
+            which = {
+              sort_by      	 = "none";
+              sort_sensitive = false;
+              sort_reverse 	 = false;
+              sort_translit  = false;
+            };
+
+
+
+          };
+        };
+      };
     };
   };
 }
