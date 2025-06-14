@@ -144,27 +144,27 @@
         #{ on = [ ";" "r" ]; run = "sort random --reverse=no";                      desc = "Sort randomly"; }
 
         # Goto
-        { on = [ "r" "<Space>" ]; run = "cd --interactive"; desc = "Jump interactively"; }
-        { on = [ "r" "r" ];       run = "cd /";             desc = "root"; }
-        { on = [ "r" "h" ];       run = "cd ~";             desc = "home"; }
-        { on = [ "r" "n" ];       run = "cd ~/nix";         desc = "~/nix"; }
-        { on = [ "r" "f" ];       run = "cd ~/.config";     desc = "~/.config"; }
-        { on = [ "r" "l" ];       run = "cd ~/.local";      desc = "~/.local"; }
-        { on = [ "r" "a" ];       run = "cd ~/art";         desc = "~/art"; }
-        { on = [ "r" "d" "e" ];  run = "cd ~/Desktop";     desc = "~/Desktop"; }
-        { on = [ "r" "d" "o" ];  run = "cd ~/Documents";   desc = "~/Documents"; }
-        { on = [ "r" "d" "l" ];  run = "cd ~/Downloads";   desc = "~/Downloads"; }
-        { on = [ "r" "m" "u" ];  run = "cd ~/Music";       desc = "~/Music"; }
-        { on = [ "r" "m" "i" ];  run = "cd ~/misc";       desc = "~/misc"; }
-        { on = [ "r" "i" ];       run = "cd ~/Pictures";    desc = "~/Pictures"; }
-        { on = [ "r" "t" ];       run = "cd ~/.local/share/Trash/files";    desc = "Trash"; }
-        { on = [ "r" "p" ];       run = "cd ~/projects";    desc = "~/projects"; }
-        { on = [ "r" "v" ];       run = "cd ~/Videos";      desc = "~/Videos"; }
-        { on = [ "r" "o" "r" ];  run = "cd ~/Documents/Obsidian_Vault/Rust/Book_notes";      desc = "obsidian rust"; }
-        { on = [ "r" "o" "n" ];  run = "cd ~/Documents/Obsidian_Vault/NixOS";      desc = "obsidian nix"; }
-        { on = [ "r" "s" "t" ];  run = "cd ~/.local/share/Steam/steamapps/common"; desc = "steamapps"; }
-        { on = [ "r" "s" "i" ];  run = "cd ~/silly";       desc = "silly"; }
-        { on = [ "r" "g" ];       run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/"; desc = "GD songs"; }
+        { on = [ "<Space>" "<Space>" ]; run = "cd --interactive"; desc = "Jump interactively"; }
+        { on = [ "<Space>" "r" ];       run = "cd /";             desc = "root"; }
+        { on = [ "<Space>" "h" ];       run = "cd ~";             desc = "home"; }
+        { on = [ "<Space>" "n" ];       run = "cd ~/nix";         desc = "~/nix"; }
+        { on = [ "<Space>" "f" ];       run = "cd ~/.config";     desc = "~/.config"; }
+        { on = [ "<Space>" "l" ];       run = "cd ~/.local";      desc = "~/.local"; }
+        { on = [ "<Space>" "a" ];       run = "cd ~/art";         desc = "~/art"; }
+        { on = [ "<Space>" "d" "e" ];  run = "cd ~/Desktop";     desc = "~/Desktop"; }
+        { on = [ "<Space>" "d" "o" ];  run = "cd ~/Documents";   desc = "~/Documents"; }
+        { on = [ "<Space>" "d" "l" ];  run = "cd ~/Downloads";   desc = "~/Downloads"; }
+        { on = [ "<Space>" "m" "u" ];  run = "cd ~/Music";       desc = "~/Music"; }
+        { on = [ "<Space>" "m" "i" ];  run = "cd ~/misc";       desc = "~/misc"; }
+        { on = [ "<Space>" "i" ];       run = "cd ~/Pictures";    desc = "~/Pictures"; }
+        { on = [ "<Space>" "t" ];       run = "cd ~/.local/share/Trash/files";    desc = "Trash"; }
+        { on = [ "<Space>" "p" ];       run = "cd ~/projects";    desc = "~/projects"; }
+        { on = [ "<Space>" "v" ];       run = "cd ~/Videos";      desc = "~/Videos"; }
+        { on = [ "<Space>" "o" "r" ];  run = "cd ~/Documents/Obsidian_Vault/Rust/Book_notes";      desc = "obsidian rust"; }
+        { on = [ "<Space>" "o" "n" ];  run = "cd ~/Documents/Obsidian_Vault/NixOS";      desc = "obsidian nix"; }
+        { on = [ "<Space>" "s" "t" ];  run = "cd ~/.local/share/Steam/steamapps/common"; desc = "steamapps"; }
+        { on = [ "<Space>" "s" "i" ];  run = "cd ~/silly";       desc = "silly"; }
+        { on = [ "<Space>" "g" ];       run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/"; desc = "GD songs"; }
 
 
         # Tabs
