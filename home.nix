@@ -19,7 +19,7 @@
           ./home_modules/tofi.nix
           ./home_modules/nushell.nix
           ./home_modules/starship.nix
-        ./home_modules/yazi.nix
+          ./home_modules/yazi.nix
           ./home_modules/clipse.nix
           ./home_modules/ncmpcpp.nix
           ./home_modules/btop.nix

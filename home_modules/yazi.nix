@@ -9,6 +9,12 @@
 
     plugins = {
     git = pkgs.yaziPlugins.git;
+    sudo = pkgs.yaziPlugins.sudo;
+    no-status = pkgs.yaziPlugins.no-status;
+    starship = pkgs.yaziPlugins.starship;
+    restore = pkgs.yaziPlugins.restore;
+    chmod = pkgs.yaziPlugins.chmod;
+    piper = pkgs.yaziPlugins.piper;
     };
 
       # require("git"):setup()
