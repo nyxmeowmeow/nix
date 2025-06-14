@@ -46,13 +46,25 @@
     }
 
     {
-      key = "gh";
+      key = "e";
+      action = "ge";
+      mode = "n";
+    }
+
+    {
+      key = "a";
+      action = "ga";
+      mode = "n";
+    }
+
+    {
+      key = "ga";
       action = "^";
       mode = "n";
     }
 
     {
-      key = "gl";
+      key = "ge";
       action = "$";
       mode = "n";
     }
