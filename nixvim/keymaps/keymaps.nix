@@ -72,13 +72,13 @@
 
     {
       key = "e";
-      action = "ge";
+      action = "gk";
       mode = "n";
     }
 
     {
       key = "a";
-      action = "ga";
+      action = "gj";
       mode = "n";
     }
 
