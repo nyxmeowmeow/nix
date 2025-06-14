@@ -15,7 +15,7 @@
       end
 
       -- Recommended to use lua template string
-      local en = [[qwfrtyuiopashgdjkczhhbnmve\]]
+      local en = [[qwfrtyuiopashgdjkczlhbnmve\]]
       local ru = [[qcfbdjpnkls&oghaeizuwtmvryx]]
       local en_shift = [[QWFRTYUIOPASDGDJKCZHHBNMVE\]]
       local ru_shift = [[QCFBDJPNKLS&OGHAEIZUWTMVRYx]]

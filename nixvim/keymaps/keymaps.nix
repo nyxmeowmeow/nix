@@ -3,6 +3,8 @@
     globals.mapleader = " ";
     keymaps = [
 
+
+
     { # put cursor at top of screen
       key = "zA";
       action = "z<cr>";
@@ -164,6 +166,12 @@
       action = "<C-6>";
       mode = "n";
     }
+
+    { key = "left"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "down"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "up"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "right"; action = ""; mode = [ "n" "v" "x" ]; }
+
 
     ];
   };
