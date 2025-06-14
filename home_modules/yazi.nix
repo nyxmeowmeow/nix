@@ -2,7 +2,8 @@
 
   programs.yazi = {
     enable = true;
-    enableFishIntegration = true;
+    # enableFishIntegration = true;
+    enableNushellIntegration = true;
     initLua = ''
     '';
 
