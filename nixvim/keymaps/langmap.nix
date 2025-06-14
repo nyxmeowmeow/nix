@@ -15,9 +15,9 @@
       end
 
       -- Recommended to use lua template string
-      local en = [[qwfrtyuiopashgdjkczlhbnmve\]]
+      local en = [[qwfrtyuiopashgdjkczlsbnmve\]]
       local ru = [[qcfbdjpnkls&oghaeizuwtmvryx]]
-      local en_shift = [[QWFRTYUIOPASDGDJKCZHHBNMVE\]]
+      local en_shift = [[QWFRTYUIOPASDGDJKCZHSBNMVE\]]
       local ru_shift = [[QCFBDJPNKLS&OGHAEIZUWTMVRYx]]
 
       vim.opt.langmap = vim.fn.join({
