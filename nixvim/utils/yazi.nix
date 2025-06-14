@@ -9,7 +9,7 @@
 
       settings = {
 
-        yazi_floating_window_border = "round";
+        yazi_floating_window_border = "rounded";
         highlight_hovered_buffers_in_same_directory = false;
       };
     };
