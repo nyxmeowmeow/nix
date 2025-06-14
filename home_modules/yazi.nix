@@ -10,6 +10,7 @@
       -- require("mime-preview"):setup()
       -- require("simple-tag"):setup()
       require("git"):setup()
+      require("starship"):setup()
     '';
 
     plugins = {
@@ -47,8 +48,8 @@
         { on = "<C-S-e>"; run = "arrow -50%"; desc = "Move cursor up one page"; }
         { on = "<C-S-a>"; run = "arrow 50%";  desc = "Move cursor down one page"; }
 
-        { on = [ "c" "c" ]; run = "arrow top"; desc = "Move cursor to the top"; }
-        { on = "C";          run = "arrow bot";  desc = "Move cursor to the bottom"; }
+        { on = [ "g" "g" ]; run = "arrow top"; desc = "Move cursor to the top"; }
+        { on = "G";          run = "arrow bot";  desc = "Move cursor to the bottom"; }
 
         # Navigation
         { on = "h"; run = "leave"; desc = "Go back to the parent directory"; }
@@ -76,9 +77,6 @@
         # Spotting
         { on = "<Tab>"; run = "spot"; desc = "Spot hovered file"; }
 
-        # Archiving
-        { on = "'"; run = "plugin compress"; desc = "Archive selected files"; }
-
         # Tagging
         { on = [ "~" ]; run = "plugin simple-tag -- toggle-tag"; desc = "Toggle tag with any key (press any key to toggle tag)"; }
 
@@ -102,8 +100,8 @@
         { on = "k";         run = "search --via=fd";             desc = "Search files by name via fd"; }
         { on = "K";         run = "search --via=rg";             desc = "Search files by content via ripgrep"; }
         { on = "<C-s>";     run = "escape --search";             desc = "Cancel the ongoing search"; }
-        { on = "b";         run = "plugin zoxide";               desc = "Jump to a directory via zoxide"; }
-        { on = "B";         run = "plugin fzf";                  desc = "Jump to a file/directory via fzf"; }
+        { on = "c";         run = "plugin zoxide";               desc = "Jump to a directory via zoxide"; }
+        { on = "C";         run = "plugin fzf";                  desc = "Jump to a file/directory via fzf"; }
 
         { on   = ["r" "f"];       run  = "shell 'fish' --block";       desc = "Open shell here"; }
 
@@ -189,7 +187,7 @@
         { on = "}"; run = "tab_swap 1";  desc = "Swap current tab with next tab"; }
 
         # Tasks
-        { on = "u"; run = "tasks_show"; desc = "Show task manager"; }
+        { on = "f"; run = "tasks_show"; desc = "Show task manager"; }
 
 
         # Projects
