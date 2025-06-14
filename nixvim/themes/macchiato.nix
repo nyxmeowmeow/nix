@@ -63,6 +63,7 @@ in {
           "@lsp.type.variable".fg = col.base01;
 
 
+          FloatBorder.fg = col.base08;
           MatchParen = { fg = col.base0C; bg = "None"; };
           Conditional.fg = col.base0A;
           Keyword.fg = col.base0A;
