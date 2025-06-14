@@ -71,6 +71,8 @@
         { on = "w"; run = "visual_mode";         desc = "Enter visual mode (selection mode)"; }
         { on = "W"; run = "visual_mode --unset"; desc = "Enter visual mode (unset mode)"; }
 
+        { on = "p"; run = "plugin restore"; desc = "Restore files"; }
+
         # Seeking
         { on = "A"; run = "seek 5";  desc = "Seek down 5 units in the preview"; }
         { on = "E"; run = "seek -5"; desc = "Seek up 5 units in the preview"; }
@@ -128,8 +130,8 @@
         # Find
         { on = "s"; run = "find --smart";            desc = "Find next file"; }
         # { on = "S"; run = "find --previous --smart"; desc = "Find previous file"; }
-        { on = "p"; run = "find_arrow";              desc = "Goto the next found"; }
-        { on = "P"; run = "find_arrow --previous";   desc = "Goto the previous found"; }
+        { on = "m"; run = "find_arrow";              desc = "Goto the next found"; }
+        { on = "M"; run = "find_arrow --previous";   desc = "Goto the previous found"; }
 
         # Sorting
         #{ on = [ ";" "m" ]; run = [ "sort mtime --reverse=no", "linemode mtime" ]; desc = "Sort by modified time"; }
