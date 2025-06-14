@@ -1,5 +1,4 @@
 {
-
   programs.yazi = {
     settings = {
       mgr = {
