@@ -70,13 +70,13 @@
     }
 
     {
-      key = "e";
+      key = "k";
       action = "gk";
       mode = "n";
     }
 
     {
-      key = "a";
+      key = "j";
       action = "gj";
       mode = "n";
     }
