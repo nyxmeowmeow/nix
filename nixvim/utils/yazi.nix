@@ -20,7 +20,7 @@
 
     keymaps = [
     {
-      key = "<leader>y";
+      key = "<leader>e";
       mode = [ "n" "v" ];
       action = "<cmd>Yazi<cr>";
     }
