@@ -1,5 +1,9 @@
 { pkgs, ... }: {
 
+  imports = [
+  ./settings.nix
+  ];
+
   programs.yazi = {
     enable = true;
     # enableFishIntegration = true;
