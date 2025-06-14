@@ -87,6 +87,7 @@
         { on = "u";         run = "yank --cut";                  desc = "Cut"; }
         { on = "f";         run = "paste";                       desc = "Paste"; }
         # { on = "f"         run = "paste --force";               desc = "Paste yanked files (overwrite if the destination exists)"; }
+        { on = [ "r" "c" ];         run = "plugin chmod";                        desc = "Change mode"; }
         { on = [ "r" "s" "l" ];         run = "link";                        desc = "Symlink absolute"; }
         { on = [ "r" "s" "r" ];         run = "link --relative";             desc = "Symlink relative"; }
         { on = [ "r" "s" "h" ];     run = "hardlink";                    desc = "Hardlink"; }
