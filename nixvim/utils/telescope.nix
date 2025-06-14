@@ -26,7 +26,7 @@
       };
 
       keymaps = {
-        "<leader>r" = "oldfiles";
+        "<leader>v" = "oldfiles";
         "<leader><leader>" = "buffers";
         "<leader>gw" = "git_commits";
         "<leader>ga" = "git_status";
