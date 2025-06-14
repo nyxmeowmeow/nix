@@ -75,13 +75,13 @@
     { key = ")"; action = "}"; mode = [ "n" "v" "x" ]; }
 
     {
-      key = "H";
+      key = "<C-b>";
       action = "<C-o>";
       mode = [ "n" "v" "x" ];
     }
 
     {
-      key = "L";
+      key = "<C-w>";
       action = "<C-i>";
       mode = [ "n" "v" "x" ];
     }
@@ -93,7 +93,7 @@
     }
 
     {
-      key = "<C-f>";
+      key = "<C-r>";
       action = "<C-v>";
       mode = "n" ;
     }
@@ -102,12 +102,6 @@
       key = "U";
       action = "<C-r>";
       mode = ["n" "v" "x" ];
-    }
-
-    {
-      key = "<C-c>";
-      action = "e";
-      mode = [ "n" "v" "x" ];
     }
 
     {
@@ -130,8 +124,14 @@
     }
 
     {
-      key = "<leader>h";
+      key = "<leader>d";
       action = "<cmd>bp<cr>";
+      mode = [ "n" "v" "x" ];
+    }
+
+    {
+      key = "<leader>c";
+      action = "<cmd>bn<cr>";
       mode = [ "n" "v" "x" ];
     }
 
@@ -139,12 +139,6 @@
       key = "<leader>a";
       action = "<C-6>";
       mode = "n";
-    }
-
-    {
-      key = "<leader>l";
-      action = "<cmd>bn<cr>";
-      mode = [ "n" "v" "x" ];
     }
 
     ];
