@@ -22,7 +22,7 @@
     }
 
     {
-      key = "<C-w>";
+      key = "<C-r>";
       action = "<C-v>";
       mode = "n";
     }
