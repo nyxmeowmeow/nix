@@ -37,7 +37,7 @@
 
 
     keymap = {
-      input.keymap = [
+      input.prepend_keymap = [
         { on = "<Esc>"; run = "escape";             desc = "Exit visual mode, clear selected; or cancel search"; }
         { on = "<C-z>"; run = "suspend";            desc = "Suspend the process"; }
         { on = "q"; run = "quit";            desc = "Suspend the process"; }
