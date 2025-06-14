@@ -50,7 +50,6 @@
       };
 
       preview = {
-        wrap            = false;
         tab_size        = 2;
         max_width       = 600;
         max_height      = 900;
