@@ -3,6 +3,31 @@
     globals.mapleader = " ";
     keymaps = [
 
+
+    { # put cursor at top of screen
+      key = "zA";
+      action = "z<cr>";
+      mode = "n";
+    }
+
+    { # put cursor at bottom of screen
+      key = "zE";
+      action = "z-";
+      mode = "n";
+    }
+
+    { # put top of screen at cursor
+      key = "ze";
+      action = "zt";
+      mode = "n";
+    }
+
+    { # put bottom of screen at cursor
+      key = "za";
+      action = "zb";
+      mode = "n";
+    }
+
     { # append semicolon
       key = "<leader>;";
       action = "mzA;<esc>`z";
