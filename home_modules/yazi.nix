@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
 
   programs.yazi = {
     enable = true;
@@ -7,6 +7,9 @@
     initLua = ''
     '';
 
+    plugins = {
+    git = pkgs.yaziPlugins.git;
+    };
 
       # require("git"):setup()
       # require("folder-rules"):setup()
