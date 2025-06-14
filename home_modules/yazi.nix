@@ -5,16 +5,21 @@
     # enableFishIntegration = true;
     enableNushellIntegration = true;
     initLua = ''
+      require("folder-rules"):setup()
+      require("no-status"):setup()
+      require("mime-preview"):setup()
+      -- require("simple-tag"):setup()
+      require("git"):setup()
     '';
 
     plugins = {
-    git = pkgs.yaziPlugins.git;
-    sudo = pkgs.yaziPlugins.sudo;
-    no-status = pkgs.yaziPlugins.no-status;
-    starship = pkgs.yaziPlugins.starship;
-    restore = pkgs.yaziPlugins.restore;
-    chmod = pkgs.yaziPlugins.chmod;
-    piper = pkgs.yaziPlugins.piper;
+      git = pkgs.yaziPlugins.git;
+      sudo = pkgs.yaziPlugins.sudo;
+      no-status = pkgs.yaziPlugins.no-status;
+      starship = pkgs.yaziPlugins.starship;
+      restore = pkgs.yaziPlugins.restore;
+      chmod = pkgs.yaziPlugins.chmod;
+      piper = pkgs.yaziPlugins.piper;
     };
 
       # require("git"):setup()
@@ -23,6 +28,14 @@
       # require("simple-tag"):setup()
 
     # flavours = "../stuff/yazitheme.lua";
+
+
+    settings = {
+
+    };
+
+
+
     keymap = {
       input.keymap = [
         { on = "<Esc>"; run = "escape";             desc = "Exit visual mode, clear selected; or cancel search"; }
@@ -44,6 +57,8 @@
         # Navigation
         { on = "h"; run = "leave"; desc = "Go back to the parent directory"; }
         { on = "i"; run = "enter"; desc = "Enter the child directory"; }
+        { on = "a"; run = "arrow next"; desc = ""; }
+        { on = "e"; run = "arrow prev"; desc = ""; }
 
         { on = "H"; run = "back";    desc = "Go back to the previous directory"; }
         { on = "I"; run = "forward"; desc = "Go forward to the next directory"; }
