@@ -167,10 +167,10 @@
       mode = "n";
     }
 
-    { key = "left"; action = ""; mode = [ "n" "v" "x" ]; }
-    { key = "down"; action = ""; mode = [ "n" "v" "x" ]; }
-    { key = "up"; action = ""; mode = [ "n" "v" "x" ]; }
-    { key = "right"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "<left>"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "<down>"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "<up>"; action = ""; mode = [ "n" "v" "x" ]; }
+    { key = "<right>"; action = ""; mode = [ "n" "v" "x" ]; }
 
 
     ];
