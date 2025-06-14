@@ -117,7 +117,7 @@
           } ];
 
           open = [ {
-            run = "xdg-open '$1'";
+            run = "xdg-open \"$1\"";
             desc = "Open";
             for = "linux";
           } ];
@@ -129,7 +129,7 @@
             for = "linux";
           }
           {
-            run = "exiftool '$1'; echo 'Press enter to exit'; read _";
+            run = "exiftool \"$1\"; echo 'Press enter to exit'; read _";
             block = true;
             desc = "Show EXIF";
             for = "unix";
@@ -137,18 +137,18 @@
 
           extract = [
           {
-            run = "ya pub extract --list '$@'";
+            run = "ya pub extract --list \"$@\"";
             desc = "Extract here";
             for = "unix";
           } ];
 
           play = [
           {
-            run = "mpv --force-window '$@'";
+            run = "mpv --force-window \"$@\"";
             orphan = true;
             for = "unix";
           }
-          { run = "mediainfo '$1'; echo 'Press enter to exit'; read _";
+          { run = "mediainfo \"$1\"; echo 'Press enter to exit'; read _";
             block = true;
             desc = "Show media info";
             for = "unix";
@@ -156,13 +156,13 @@
           ];
 
           qview = [ {
-            run = "qview '$@'";
+            run = "qview \"$@\"";
             orphan = true;
             for = "unix";
           } ];
 
           krita = [ {
-            run = "krita '$@'";
+            run = "krita \"$@\"";
             orphan = true;
             for = "unix";
           } ];
