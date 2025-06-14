@@ -12,5 +12,9 @@
       suffix_last = "l";
       suffix_next = "n";
     };
+    extraConfigLua = ''
+require('mini.surround').setup()
+
+    '';
   };
 }
