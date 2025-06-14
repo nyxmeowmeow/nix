@@ -42,10 +42,6 @@
         { on = "<C-z>"; run = "suspend";            desc = "Suspend the process"; }
         { on = "q"; run = "quit";            desc = "Suspend the process"; }
 
-        # Hopping
-        { on = "e"; run = "arrow -1"; desc = "Move cursor up"; }
-        { on = "a"; run = "arrow 1";  desc = "Move cursor down"; }
-
         { on = "<C-e>"; run = "arrow -10";  desc = "Move cursor up half page"; }
         { on = "<C-a>"; run = "arrow 10";   desc = "Move cursor down half page"; }
         { on = "<C-S-e>"; run = "arrow -50%"; desc = "Move cursor up one page"; }
