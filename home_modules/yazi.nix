@@ -322,7 +322,7 @@
         }
 
         {
-          on = "f";
+          on = "l";
           run = "paste";
           desc = "Paste";
         }
