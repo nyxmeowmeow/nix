@@ -5,9 +5,9 @@
     # enableFishIntegration = true;
     enableNushellIntegration = true;
     initLua = ''
-      require("folder-rules"):setup()
+      -- require("folder-rules"):setup()
       require("no-status"):setup()
-      require("mime-preview"):setup()
+      -- require("mime-preview"):setup()
       -- require("simple-tag"):setup()
       require("git"):setup()
     '';
