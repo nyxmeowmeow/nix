@@ -29,442 +29,443 @@
         ueberzug_offset = [ 0 0 0 0 ];
       };
 
-      opener = {
-        edit = [ {
-          run = "nvim \"$@\"";
-          desc = "$EDITOR";
-          block = true;
-          for = "unix";
-        } ];
 
-        open = [ {
-          run = "xdg-open '$1'";
-          desc = "Open";
-          for = "linux";
-        } ];
+      input = {
+        cursor_blink = false;
 
-        reveal = [
-        {
-          run = "xdg-open '$(dirname \"$1\")'";
-          desc = "Reveal";
-          for = "linux";
-        }
-        {
-          run = "exiftool '$1'; echo 'Press enter to exit'; read _";
-          block = true;
-          desc = "Show EXIF";
-          for = "unix";
-        } ];
+# cd
+        cd_title  = "";
+        cd_origin = "center";
+        cd_offset = [ 0 0 50 3 ];
 
-        extract = [
-        {
-          run = "ya pub extract --list '$@'";
-          desc = "Extract here";
-          for = "unix";
-        } ];
+# create
+        create_title  = [ "" "" ];
+        create_origin = "center";
+        create_offset = [ 0 0 50 3 ];
 
-        play = [
-        {
-          run = "mpv --force-window '$@'";
-          orphan = true;
-          for = "unix";
-        }
-        { run = "mediainfo '$1'; echo 'Press enter to exit'; read _";
-          block = true;
-          desc = "Show media info";
-          for = "unix";
-        }
-        ];
+# rename
+        rename_title  = "";
+        rename_origin = "hovered";
+        rename_offset = [ 0 1 50 3 ];
 
-        qview = [ {
-          run = "qview '$@'";
-          orphan = true;
-          for = "unix";
-        } ];
+# filter
+        filter_title  = "";
+        filter_origin = "center";
+        filter_offset = [ 0 0 50 3 ];
 
-        krita = [ {
-          run = "krita '$@'";
-          orphan = true;
-          for = "unix";
-        } ];
-      };
+# find
+        find_title  = [ "" "" ];
+        find_origin = "center";
+        find_offset = [ 0 0 50 3 ];
 
+# search
+        search_title  = " Search via {n} ";
+        search_origin = "center";
+        search_offset = [ 0 0 50 3 ];
 
+# shell
+        shell_title  = [ "" "" ];
+        shell_origin = "center";
+        shell_offset = [ 0 0 50 3 ];
 
-      open = {
-        rules = [
-        {
-          name = "*.gif";
-          use = [ "qview" "reveal" ];
-        }
+        confirm = {
+# trash
+          trash_title 	= " Trash {n} selected file{s}? ";
+          trash_origin	= "center";
+          trash_offset	= [ 0 0 70 20 ];
 
-        {
-          name = "*.png";
-          use = [ "qview" "reveal" ];
-        }
+# delete
+          delete_title 	= "PERMANENTLY delete {n} selected file{s}?";
+          delete_origin	= "center";
+          delete_offset	= [ 0 0 70 20 ];
 
-        {
-          name = "*.jpg";
-          use = [ "qview" "reveal" ];
-        }
+# overwrite
+          overwrite_title   = " Overwrite file? ";
+          overwrite_content = "Will overwrite the following file:";
+          overwrite_origin  = "center";
+          overwrite_offset  = [ 0 0 50 15 ];
 
-        {
-          name = "*.jpeg";
-          use = [ "qview" "reveal" ];
-        }
+# quit
+          quit_title   = " Quit? ";
+          quit_content = "The following tasks are still running, are you sure you want to quit?";
+          quit_origin  = "center";
+          quit_offset  = [ 0 0 50 15 ];
+        };
 
-        {
-          name = "*.kra*";
-          use = [ "krita" "reveal" ];
-        }
+        pick = {
+          open_title  = "";
+          open_origin = "hovered";
+          open_offset = [ 0 1 50 7 ];
+        };
 
-# Folder
-        {
-          name = "*/";
-          use = [ "edit" "open" "reveal" ];
-        }
-
-# Text
-        {
-          mime = "text/*";
-          use = [ "edit" "reveal" ];
-        }
-
-# Image
-        {
-          mime = "image/*";
-          use = [ "open" "reveal" ];
-        }
-
-# Media
-        {
-          mime = "{audio; ideo}/*";
-          use = [ "play" "reveal" ];
-        }
-
-# Archive
-        {
-          mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}";
-          use = [ "extract" "reveal" ];
-        }
-
-# JSON
-        {
-          mime = "application/{json, djson}";
-          use = [ "edit" "reveal" ];
-        }
-
-        {
-          mime = "*/javascript";
-          use = [ "edit" "reveal" ];
-        }
-
-# Empty file
-        {
-          mime = "inode/empty";
-          use = [ "edit" "reveal" ];
-        }
-
-# Fallback
-        {
-          name = "*";
-          use = [ "open" "reveal" ];
-        }
-        ];
-
-        tasks = {
-          micro_workers    = 10;
-          macro_workers    = 10;
-          bizarre_retry    = 3;
-          image_alloc      = 536870912; # 512MB
-            image_bound      = [ 0 0 ];
-          suppress_preload = false;
+        which = {
+          sort_by      	 = "none";
+          sort_sensitive = false;
+          sort_reverse 	 = false;
+          sort_translit  = false;
         };
 
 
-        plugin = {
 
-          fetchers = [
-# Mimetype
+
+        opener = {
+          edit = [ {
+            run = "nvim \"$@\"";
+            desc = "$EDITOR";
+            block = true;
+            for = "unix";
+          } ];
+
+          open = [ {
+            run = "xdg-open '$1'";
+            desc = "Open";
+            for = "linux";
+          } ];
+
+          reveal = [
           {
-            id = "mime";
-            name = "*";
-            run = "mime";
-            prio = "high";
+            run = "xdg-open '$(dirname \"$1\")'";
+            desc = "Reveal";
+            for = "linux";
           }
-
           {
-            id   = "git";
-            name = "*";
-            run  = "git";
+            run = "exiftool '$1'; echo 'Press enter to exit'; read _";
+            block = true;
+            desc = "Show EXIF";
+            for = "unix";
+          } ];
+
+          extract = [
+          {
+            run = "ya pub extract --list '$@'";
+            desc = "Extract here";
+            for = "unix";
+          } ];
+
+          play = [
+          {
+            run = "mpv --force-window '$@'";
+            orphan = true;
+            for = "unix";
           }
-
-          {
-            id   = "git";
-            name = "*/";
-            run  = "git";
+          { run = "mediainfo '$1'; echo 'Press enter to exit'; read _";
+            block = true;
+            desc = "Show media info";
+            for = "unix";
           }
           ];
 
-          spotters = [
+          qview = [ {
+            run = "qview '$@'";
+            orphan = true;
+            for = "unix";
+          } ];
+
+          krita = [ {
+            run = "krita '$@'";
+            orphan = true;
+            for = "unix";
+          } ];
+        };
+
+
+
+        open = {
+          rules = [
           {
-            name = "*/";
-            run = "folder";
+            name = "*.gif";
+            use = [ "qview" "reveal" ];
           }
 
-# Code
+          {
+            name = "*.png";
+            use = [ "qview" "reveal" ];
+          }
+
+          {
+            name = "*.jpg";
+            use = [ "qview" "reveal" ];
+          }
+
+          {
+            name = "*.jpeg";
+            use = [ "qview" "reveal" ];
+          }
+
+          {
+            name = "*.kra*";
+            use = [ "krita" "reveal" ];
+          }
+
+# Folder
+          {
+            name = "*/";
+            use = [ "edit" "open" "reveal" ];
+          }
+
+# Text
           {
             mime = "text/*";
-            run = "code";
-          }
-
-          {
-            mime = "application/{mbox,javascript,wine-extension-ini}";
-            run = "code";
+            use = [ "edit" "reveal" ];
           }
 
 # Image
           {
-            mime = "image/{avif,hei?,jxl,svg+xml}";
-            run = "magick";
-          }
-
-          {
             mime = "image/*";
-            run = "image";
+            use = [ "open" "reveal" ];
           }
 
-# Video
+# Media
           {
-            mime = "video/*";
-            run = "video";
-          }
-
-# Fallback
-          {
-            name = "*";
-            run = "file";
-          }
-          ];
-
-          preloaders = [
-# Image
-          {
-            mime = "image/{avif,hei?,jxl,svg+xml}";
-            run = "magick";
-          }
-
-          {
-            mime = "image/*";
-            run = "image";
-          }
-
-# Video
-          {
-            mime = "video/*";
-            run = "video";
-          }
-
-# PDF
-          {
-            mime = "application/pdf";
-            run = "pdf";
-          }
-
-# Font
-          {
-            mime = "font/*";
-            run = "font";
-          }
-
-          {
-            mime = "application/ms-opentype";
-            run = "font";
-          }
-          ];
-
-          previewers = [
-          {
-            name = "*/";
-            run = "folder";
-            sync = true;
-          }
-
-# Code
-          {
-            mime = "text/*";
-            run = "code";
-          }
-
-          {
-            mime = "application/{mbox,javascript,wine-extension-ini}";
-            run = "code";
-          }
-
-# JSON
-          {
-            mime = "application/{json,ndjson}";
-            run = "json";
-          }
-
-# Image
-          {
-            mime = "image/{avif,hei?,jxl,svg+xml}";
-            run = "magick";
-          }
-
-          {
-            mime = "image/*";
-            run = "image";
-          }
-
-# Video
-          {
-            mime = "video/*";
-            run = "video";
-          }
-
-# PDF
-          {
-            mime = "application/pdf";
-            run = "pdf";
+            mime = "{audio; ideo}/*";
+            use = [ "play" "reveal" ];
           }
 
 # Archive
           {
             mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}";
-            run = "archive";
+            use = [ "extract" "reveal" ];
+          }
+
+# JSON
+          {
+            mime = "application/{json, djson}";
+            use = [ "edit" "reveal" ];
           }
 
           {
-            mime = "application/{debian*-package,redhat-package-manager,rpm,android.package-archive}";
-            run = "archive";
-          }
-
-# { name = "*.{AppImage,appimage}", run = "archive" },
-
-          {
-            name = "*.{AppImage,appimage}";
-            run = "appimaged";
-          }
-
-# Virtual Disk / Disk Image
-          {
-            mime = "application/{iso9660-image,qemu-disk,ms-wim,apple-diskimage}";
-            run = "archive";
-          }
-
-          {
-            mime = "application/virtualbox-{vhd,vhdx}";
-            run = "archive";
-          }
-
-          {
-            name = "*.{img,fat,ext,ext2,ext3,ext4,squashfs,ntfs,hfs,hfsx}";
-            run = "archive";
-          }
-
-# Font
-          {
-            mime = "font/*";
-            run = "font";
-          }
-
-          {
-            mime = "application/ms-opentype";
-            run = "font";
+            mime = "*/javascript";
+            use = [ "edit" "reveal" ];
           }
 
 # Empty file
           {
             mime = "inode/empty";
-            run = "empty";
+            use = [ "edit" "reveal" ];
           }
 
 # Fallback
           {
             name = "*";
-            run = "file";
+            use = [ "open" "reveal" ];
           }
           ];
 
-          input = {
-            cursor_blink = false;
-
-            # cd
-            cd_title  = "";
-            cd_origin = "center";
-            cd_offset = [ 0 0 50 3 ];
-
-            # create
-            create_title  = [ "" "" ];
-            create_origin = "center";
-            create_offset = [ 0 0 50 3 ];
-
-            # rename
-            rename_title  = "";
-            rename_origin = "hovered";
-            rename_offset = [ 0 1 50 3 ];
-
-            # filter
-            filter_title  = "";
-            filter_origin = "center";
-            filter_offset = [ 0 0 50 3 ];
-
-            # find
-            find_title  = [ "" "" ];
-            find_origin = "center";
-            find_offset = [ 0 0 50 3 ];
-
-            # search
-            search_title  = " Search via {n} ";
-            search_origin = "center";
-            search_offset = [ 0 0 50 3 ];
-
-            # shell
-            shell_title  = [ "" "" ];
-            shell_origin = "center";
-            shell_offset = [ 0 0 50 3 ];
-
-            confirm = {
-              # trash
-              trash_title 	= " Trash {n} selected file{s}? ";
-              trash_origin	= "center";
-              trash_offset	= [ 0 0 70 20 ];
-
-              # delete
-              delete_title 	= "PERMANENTLY delete {n} selected file{s}?";
-              delete_origin	= "center";
-              delete_offset	= [ 0 0 70 20 ];
-
-              # overwrite
-              overwrite_title   = " Overwrite file? ";
-              overwrite_content = "Will overwrite the following file:";
-              overwrite_origin  = "center";
-              overwrite_offset  = [ 0 0 50 15 ];
-
-              # quit
-              quit_title   = " Quit? ";
-              quit_content = "The following tasks are still running, are you sure you want to quit?";
-              quit_origin  = "center";
-              quit_offset  = [ 0 0 50 15 ];
-            };
-
-            pick = {
-              open_title  = "";
-              open_origin = "hovered";
-              open_offset = [ 0 1 50 7 ];
-            };
-
-            which = {
-              sort_by      	 = "none";
-              sort_sensitive = false;
-              sort_reverse 	 = false;
-              sort_translit  = false;
-            };
+          tasks = {
+            micro_workers    = 10;
+            macro_workers    = 10;
+            bizarre_retry    = 3;
+            image_alloc      = 536870912; # 512MB
+              image_bound      = [ 0 0 ];
+            suppress_preload = false;
+          };
 
 
+          plugin = {
 
+            fetchers = [
+# Mimetype
+            {
+              id = "mime";
+              name = "*";
+              run = "mime";
+              prio = "high";
+            }
+
+            {
+              id   = "git";
+              name = "*";
+              run  = "git";
+            }
+
+            {
+              id   = "git";
+              name = "*/";
+              run  = "git";
+            }
+            ];
+
+            spotters = [
+            {
+              name = "*/";
+              run = "folder";
+            }
+
+# Code
+            {
+              mime = "text/*";
+              run = "code";
+            }
+
+            {
+              mime = "application/{mbox,javascript,wine-extension-ini}";
+              run = "code";
+            }
+
+# Image
+            {
+              mime = "image/{avif,hei?,jxl,svg+xml}";
+              run = "magick";
+            }
+
+            {
+              mime = "image/*";
+              run = "image";
+            }
+
+# Video
+            {
+              mime = "video/*";
+              run = "video";
+            }
+
+# Fallback
+            {
+              name = "*";
+              run = "file";
+            }
+            ];
+
+            preloaders = [
+# Image
+            {
+              mime = "image/{avif,hei?,jxl,svg+xml}";
+              run = "magick";
+            }
+
+            {
+              mime = "image/*";
+              run = "image";
+            }
+
+# Video
+            {
+              mime = "video/*";
+              run = "video";
+            }
+
+# PDF
+            {
+              mime = "application/pdf";
+              run = "pdf";
+            }
+
+# Font
+            {
+              mime = "font/*";
+              run = "font";
+            }
+
+            {
+              mime = "application/ms-opentype";
+              run = "font";
+            }
+            ];
+
+            previewers = [
+            {
+              name = "*/";
+              run = "folder";
+              sync = true;
+            }
+
+# Code
+            {
+              mime = "text/*";
+              run = "code";
+            }
+
+            {
+              mime = "application/{mbox,javascript,wine-extension-ini}";
+              run = "code";
+            }
+
+# JSON
+            {
+              mime = "application/{json,ndjson}";
+              run = "json";
+            }
+
+# Image
+            {
+              mime = "image/{avif,hei?,jxl,svg+xml}";
+              run = "magick";
+            }
+
+            {
+              mime = "image/*";
+              run = "image";
+            }
+
+# Video
+            {
+              mime = "video/*";
+              run = "video";
+            }
+
+# PDF
+            {
+              mime = "application/pdf";
+              run = "pdf";
+            }
+
+# Archive
+            {
+              mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}";
+              run = "archive";
+            }
+
+            {
+              mime = "application/{debian*-package,redhat-package-manager,rpm,android.package-archive}";
+              run = "archive";
+            }
+
+# { name = "*.{AppImage,appimage}", run = "archive" },
+
+            {
+              name = "*.{AppImage,appimage}";
+              run = "appimaged";
+            }
+
+# Virtual Disk / Disk Image
+            {
+              mime = "application/{iso9660-image,qemu-disk,ms-wim,apple-diskimage}";
+              run = "archive";
+            }
+
+            {
+              mime = "application/virtualbox-{vhd,vhdx}";
+              run = "archive";
+            }
+
+            {
+              name = "*.{img,fat,ext,ext2,ext3,ext4,squashfs,ntfs,hfs,hfsx}";
+              run = "archive";
+            }
+
+# Font
+            {
+              mime = "font/*";
+              run = "font";
+            }
+
+            {
+              mime = "application/ms-opentype";
+              run = "font";
+            }
+
+# Empty file
+            {
+              mime = "inode/empty";
+              run = "empty";
+            }
+
+# Fallback
+            {
+              name = "*";
+              run = "file";
+            }
+            ];
           };
         };
       };
