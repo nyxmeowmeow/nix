@@ -22,6 +22,7 @@
       chmod = pkgs.yaziPlugins.chmod;
       piper = pkgs.yaziPlugins.piper;
       mount = pkgs.yaziPlugins.mount;
+      jump-to-char = pkgs.yaziPlugins.jump-to-char;
     };
 
       # require("git"):setup()
@@ -43,6 +44,8 @@
         { on = "<Esc>"; run = "escape";             desc = "Exit visual mode, clear selected; or cancel search"; }
         { on = "<C-z>"; run = "suspend";            desc = "Suspend the process"; }
         { on = "q"; run = "quit";            desc = "Suspend the process"; }
+
+        { on = "f"; run = "plugin jump-to-char";            desc = "Jump to char"; }
 
         { on = "<C-e>"; run = "arrow -10";  desc = "Move cursor up half page"; }
         { on = "<C-a>"; run = "arrow 10";   desc = "Move cursor down half page"; }
