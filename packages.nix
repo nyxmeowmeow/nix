@@ -29,7 +29,7 @@
     # xdg-desktop-portal-termfilechooser
     xdg-utils
     nushell
-    # godot
+    godot
 
 
 
