@@ -101,7 +101,7 @@
 
 # Toggle
       {
-        on = [ "r" "i" ];
+        on = [ "g" "i" ];
         run = [ "toggle" "arrow 1" ];
         desc = "Toggle the current selection state";
       }
@@ -204,31 +204,31 @@
 # { on = "f"         run = "paste --force";               desc = "Paste yanked files (overwrite if the destination exists)"; }
 
       {
-        on = [ "r" "c" ];
+        on = [ "g" "c" ];
         run = "plugin chmod";
         desc = "Change mode";
       }
 
       {
-        on = [ "r" "m" ];
+        on = [ "g" "m" ];
         run = "plugin mount";
         desc = "Mount";
       }
 
       {
-        on = [ "r" "s" "l" ];
+        on = [ "g" "s" "l" ];
         run = "link";
         desc = "Symlink absolute";
       }
 
       {
-        on = [ "r" "s" "r" ];
+        on = [ "g" "s" "r" ];
         run = "link --relative";
         desc = "Symlink relative";
       }
 
       {
-        on = [ "r" "s" "h" ];
+        on = [ "g" "s" "h" ];
         run = "hardlink";
         desc = "Hardlink";
       }
@@ -303,7 +303,7 @@
 
 
       {
-        on   = ["r" "f"];
+        on   = ["g" "f"];
         run  = "shell 'fish' --block";
         desc = "Open shell here";
       }
