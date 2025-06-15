@@ -70,6 +70,7 @@ in {
           "@lsp.type.keyword".fg = col.base0A;
           FlashCurrent.fg = col.base0A;
           CursorLineNr.fg = col.base08;
+          LineNr.fg = col.base08;
           NoiceCmdlinePopupTitleSearch.fg = col.base08;
           NoiceCmdlinePopupBorderHelp.fg = col.base08;
           NoiceCmdlinePopupTitleHelp.fg = col.base08;

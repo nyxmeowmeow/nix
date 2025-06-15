@@ -658,52 +658,52 @@
 # Sudo
 # sudo cp/mv
       {
-        on = ["R" "l" ];
+        on = ["S" "l" ];
         run = "plugin sudo -- paste";
         desc = "sudo paste";
       }
 
 # sudo cp/mv --force
-# { on = ["R" "P"]; run = "plugin sudo -- paste --force"; desc = "sudo paste"; }
+# { on = ["S" "P"]; run = "plugin sudo -- paste --force"; desc = "sudo paste"; }
 
 # sudo mv
       {
-        on = ["R" "s"];
+        on = ["S" "s"];
         run = "plugin sudo -- rename";
         desc = "sudo rename";
       }
 
 # sudo ln -s (absolute-path)
       {
-        on = ["R" "n" "l"];
+        on = ["S" "n" "l"];
         run = "plugin sudo -- link";
         esc = "sudo link";
       }
 
 # sudo ln -s (relative-path)
       {
-        on = ["R" "n" "r"];
+        on = ["S" "n" "r"];
         run = "plugin sudo -- link --relative";
         desc = "sudo link relative path";
       }
 
 # sudo ln
       {
-        on = ["R" "n" "h"];
+        on = ["S" "n" "h"];
         run = "plugin sudo -- hardlink";
         desc = "sudo hardlink";
       }
 
 # sudo touch/mkdir
       {
-        on = ["R" "t"];
+        on = ["S" "t"];
         run = "plugin sudo -- create";
         desc = "sudo create";
       }
 
 # sudo trash
       {
-        on = ["R" "o"];
+        on = ["S" "o"];
         run = "plugin sudo -- remove";
         desc = "sudo trash";
       }
