@@ -12,7 +12,7 @@
     default = "black"; # Set a default theme
   };
 
-  config.theme = "macchiato";
+  config.theme = "black";
 
 }
 
