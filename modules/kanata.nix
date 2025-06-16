@@ -207,7 +207,7 @@ i i
   .tp (switch
         ;;(lsft rsft) XX break ;; skip typing-layer activation for upper case keys might this solves some FJ problems
         ()  (multi
-              (layer-switch typing)
+              (one-shot-press 500 (layer-while-held typing))
               (on-idle 1 tap-vkey to-base )
             ) break
       )

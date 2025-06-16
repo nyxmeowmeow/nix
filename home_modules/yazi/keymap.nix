@@ -186,7 +186,6 @@
       {
         on = "j";
         run = [ "shell -- for path in \"$@\"; do echo \"file://$path\"; done | wl-copy -t text/uri-list" "yank" ];
- # ['shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ]
         desc = "Yank";
       }
 
