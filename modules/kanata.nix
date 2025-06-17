@@ -179,6 +179,7 @@ i i
 
 (defvirtualkeys
   to-base (layer-switch base)
+  to-over (layer-switch over)
 )
 
 (defvar
