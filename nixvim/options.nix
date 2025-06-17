@@ -14,6 +14,7 @@
 
     autochdir = true; # auto cd into current buffers dir
 
+    guifont = "mononoki:h25";
 
     wrap = true;
     linebreak = true; # only wrap at whitespace
