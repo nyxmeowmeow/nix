@@ -8,7 +8,7 @@
     expect
 
 
-    socat
+    # socat
     # wev
     # lutris
     # gimp
