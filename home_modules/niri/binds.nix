@@ -1,7 +1,6 @@
 {
   programs.niri.settings.binds = {
-    "Mod+T".action.spawn = "footclient";
-    "Mod+C".action.spawn = "foot";
+    "Mod+T".action.spawn = "foot"; # TODO
     "Mod+Shift+E".action.quit.skip-confirmation = true;
   };
 }

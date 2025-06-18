@@ -5,6 +5,7 @@
     ./settings.nix 
     ./binds.nix 
     ./outputs.nix
+    ./layout.nix
   ];
 
   home.packages = with pkgs; [
