@@ -7,6 +7,7 @@
     "Mod+N".action = focus-monitor-next;
     "Mod+3".action = screenshot;
     "Mod+O".action = close-window;
+    "Mod+Return".action = toggle-overview;
 
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
@@ -23,5 +24,9 @@
     "Mod+Shift+A".action = move-window-down;
     "Mod+Shift+E".action = move-window-up;
 
+    "Alt+H".action = swap-window-left;
+    "Alt+I".action = swap-window-right;
+
+# expand-column-to-available-width
   };
 }
