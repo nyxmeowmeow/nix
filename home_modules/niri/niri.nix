@@ -7,12 +7,10 @@
     # ./rules.nix
   ];
 
-    home.packages = with pkgs; [
-      xwayland-satellite
-      swaybg
-    ];
-  programs.niri = {
-    enable = true;
-    package = pkgs.niri-unstable;
-  };
+  home.packages = with pkgs; [
+    xwayland-satellite
+    swaybg
+  ];
+
+  programs.niri.enable = true;
 }
