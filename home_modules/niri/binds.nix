@@ -5,6 +5,8 @@
     sh = spawn "sh" "-c";
   in
   {
+    "Mod+G".action = spawn "~/misc/wlr-which-key";
+
     "Mod+T".action = spawn "footclient";
     "Mod+C".action = spawn "footclient" "yazi";
     "Mod+S".action = spawn "footclient" "nvim";
