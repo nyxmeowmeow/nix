@@ -2,7 +2,7 @@
   programs.niri.settings.input = {
     mouse = {
     accel-profile = "flat";
-    accell-speed = 0.2;
+    accel-speed = 0.2;
 
     };
   };
