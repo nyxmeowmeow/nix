@@ -1,13 +1,18 @@
 { config, ... }: {
   programs.niri.settings.binds = with config.lib.niri.actions; {
-    "Mod+T".action = spawn "foot"; # TODO change to footclient
-    "Mod+C".action = spawn "foot" "yazi"; # TODO change to footclient
-    "Mod+S".action = spawn "foot" "nvim"; # TODO change to footclient
+    "Mod+T".action = spawn "footclient";
+    "Mod+C".action = spawn "footclient" "yazi";
+    "Mod+S".action = spawn "footclient" "nvim";
 
     "Mod+N".action = focus-monitor-next;
     "Mod+3".action = screenshot;
     "Mod+O".action = close-window;
     "Mod+Return".action = toggle-overview;
+
+    "Mod+Space".action = spawn "walker";
+
+    "Mod+Z".action = spawn "zen" "-p" "misc";
+    "Mod+Shift+Z".action = spawn "zen";
 
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
