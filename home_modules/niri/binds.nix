@@ -8,6 +8,10 @@
     "Mod+3".action = screenshot;
     "Mod+O".action = close-window;
 
+    "Mod+B".action = focus-workspace "browser";
+    "Mod+F".action = focus-workspace "game";
+    "Mod+D".action = focus-workspace "discord";
+    "Mod+W".action = focus-workspace "browser_2";
 
     "Mod+H".action = focus-column-left;
     "Mod+I".action = focus-column-right;
