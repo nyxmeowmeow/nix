@@ -9,6 +9,7 @@
     ./animations.nix
     ./startup.nix
     ./window_rules.nix
+    ./input.nix
   ];
 
   home.packages = with pkgs; [
