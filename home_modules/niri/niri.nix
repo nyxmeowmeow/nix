@@ -2,9 +2,9 @@
 
   imports = [
     inputs.niri.homeModules.niri 
-    # ./settings.nix 
-    # ./binds.nix 
-    # ./rules.nix
+    ./settings.nix 
+    ./binds.nix 
+    # ./outputs.nix
   ];
 
   home.packages = with pkgs; [
