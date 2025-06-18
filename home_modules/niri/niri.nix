@@ -4,7 +4,7 @@
     inputs.niri.homeModules.niri 
     ./settings.nix 
     ./binds.nix 
-    # ./outputs.nix
+    ./outputs.nix
   ];
 
   home.packages = with pkgs; [

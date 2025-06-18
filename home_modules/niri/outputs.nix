@@ -1,9 +1,17 @@
 {
   programs.niri.settings = {
     outputs = {
-      # "eDP-1" = {
-      # mode = "2560x1080@165
-      # };
+      "DP-1" = {
+        enable = true;
+        name = "main";
+        focus-at-startup = true;
+        variable-refresh-rate = false;
+        mode = {
+          width = 2560;
+          height = 1440;
+          refresh = 165.08;
+        };
+      };
     };
   };
 }
