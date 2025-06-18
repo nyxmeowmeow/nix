@@ -1,6 +1,8 @@
 {
   programs.niri.settings.window-rules = [
   {
+
+
     draw-border-with-background = false;
     geometry-corner-radius =
       let

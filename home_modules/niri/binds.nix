@@ -57,7 +57,6 @@
 
 
   # expand-column-to-available-width
-  # toggle-windowed-fullscreen
   # focus-window-previous
   # move-column-left
   # move-column-right
