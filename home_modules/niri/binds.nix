@@ -5,6 +5,7 @@
     "Mod+S".action = spawn "foot" "nvim"; # TODO change to footclient
 
     "Mod+N".action = focus-monitor-next;
+    "Mod+O".action = close-window; # TODO change to footclient
 
     "Mod+H".action = focus-column-left;
     "Mod+I".action = focus-column-right;
