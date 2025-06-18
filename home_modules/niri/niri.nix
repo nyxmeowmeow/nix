@@ -7,6 +7,7 @@
     ./outputs.nix
     ./layout.nix
     ./animations.nix
+    ./startup.nix
   ];
 
   home.packages = with pkgs; [
