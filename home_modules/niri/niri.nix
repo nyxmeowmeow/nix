@@ -13,6 +13,8 @@
 
   home.packages = with pkgs; [
     xwayland-satellite
+    wlr-which-key # submaps
+
     # xdg-desktop-portal-gtk
     # xdg-desktop-portal-gnome
     # gnome-keyring
