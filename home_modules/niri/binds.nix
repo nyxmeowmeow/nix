@@ -1,8 +1,17 @@
 { config, ... }: {
-  programs.niri.settings.binds = with config.lib.niri.actions; {
+
+  programs.niri.settings.binds = with config.lib.niri.actions; 
+  let
+    sh = spawn "sh" "-c";
+  in
+  {
     "Mod+T".action = spawn "footclient";
     "Mod+C".action = spawn "footclient" "yazi";
     "Mod+S".action = spawn "footclient" "nvim";
+
+
+    "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
+    "XF86AudioLowerVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
 
     "Mod+N".action = focus-monitor-next;
     "Mod+3".action = screenshot;
@@ -11,13 +20,23 @@
 
     "Mod+Space".action = spawn "walker";
 
-    "Mod+Z".action = spawn "zen" "-p" "misc";
+    "Mod+Z".action = sh "zen -p misc";
     "Mod+Shift+Z".action = spawn "zen";
 
+
+    "Mod+Shift+Semicolon".action = focus-workspace "one";
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
     "Mod+D".action = focus-workspace "discord";
     "Mod+W".action = focus-workspace "browser_2";
+    "Mod+P".action = focus-workspace "two";
+
+    # "Mod+Shift+B".action = move-window-to-workspace "browser";
+    # "Mod+Shift+F".action = move-window-to-workspace "game";
+    # "Mod+Shift+D".action = move-window-to-workspace "discord";
+    # "Mod+Shift+W".action = move-window-to-workspace "browser_2";
+    # "Mod+Shift+P".action = move-window-to-workspace "two";
+
 
     "Mod+H".action = focus-column-left;
     "Mod+I".action = focus-column-right;

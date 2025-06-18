@@ -21,12 +21,12 @@
         name = "discord";
         open-on-output = "DP-1";
       };
-      "3" = {
-        name = "three";
-        open-on-output = "DP-1";
-      };
       "4" = {
         name = "browser_2";
+        open-on-output = "DP-1";
+      };
+      "5" = {
+        name = "two";
         open-on-output = "DP-1";
       };
       "9" = {
