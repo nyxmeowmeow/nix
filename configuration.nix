@@ -5,7 +5,6 @@
     ./hardware-configuration.nix
     ./services.nix
     ./packages.nix
-    ./wm/niri.nix
     ./modules/kanata.nix
     ./modules/security.nix
     ./modules/hardware.nix
