@@ -21,7 +21,7 @@
     "Mod+Space".action = spawn "walker";
 
     "Mod+Z".action = sh "zen -p misc";
-    "Mod+Shift+Z".action = spawn "zen";
+    "Mod+Shift+Z".action = sh "zen -p rain";
 
 
     "Mod+Shift+Semicolon".action = focus-workspace "one";
@@ -51,6 +51,23 @@
     "Alt+H".action = swap-window-left;
     "Alt+I".action = swap-window-right;
 
-# expand-column-to-available-width
+
+
+
+  # expand-column-to-available-width
+  # toggle-windowed-fullscreen
+  # focus-window-previous
+  # move-column-left
+  # move-column-right
+  # center-column
+  # set-window-width
+  # set-window-height
+  # switch-preset-window-width
+  # switch-preset-window-height
+  # reset-window-height
+  # maximize-column
+  # toggle-window-floating
+
+
   };
 }

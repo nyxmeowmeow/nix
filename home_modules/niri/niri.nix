@@ -13,7 +13,9 @@
 
   home.packages = with pkgs; [
     xwayland-satellite
-    swaybg
+    # xdg-desktop-portal-gtk
+    # xdg-desktop-portal-gnome
+    # gnome-keyring
   ];
 
   programs.niri.enable = true;

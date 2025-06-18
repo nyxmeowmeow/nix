@@ -4,6 +4,11 @@
     keymaps = [
 
 
+    { # put cursor at top of screen
+      key = "Zz";
+      action = "ZZ";
+      mode = "n";
+    }
 
     { # put cursor at top of screen
       key = "zA";
