@@ -6,6 +6,7 @@
     ./binds.nix 
     ./outputs.nix
     ./layout.nix
+    ./animations.nix
   ];
 
   home.packages = with pkgs; [
