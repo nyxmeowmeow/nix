@@ -5,6 +5,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
+    niri.url = "github:sodiboo/niri-flake";
     stylix.url = "github:danth/stylix";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -18,7 +19,7 @@
     };
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, ... }: {
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }: {
 
 
 
@@ -38,7 +39,7 @@
 
       ];
       specialArgs = {
-        inherit zen-browser nixvim;
+        inherit zen-browser nixvim niri;
       };
     };
   };
