@@ -20,7 +20,7 @@
         focus-at-startup = false;
         variable-refresh-rate = false;
 
-        transform.rotation = 90;
+        transform.rotation = 270;
 
         mode = {
           width = 2560;
