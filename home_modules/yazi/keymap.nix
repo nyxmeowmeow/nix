@@ -126,13 +126,13 @@
 
 # Visual mode
       {
-        on = "w";
+        on = "r";
         run = "visual_mode";
         desc = "Enter visual mode (selection mode)";
       }
 
       {
-        on = "W";
+        on = "R";
         run = "visual_mode --unset";
         desc = "Enter visual mode (unset mode)";
       }
@@ -448,7 +448,7 @@
       {
         on = [ "<Space>" "n" ];
         run = "cd ~/nix";
-        desc = "~/nix";
+        desc = "nix";
       }
 
       {
@@ -466,61 +466,67 @@
       {
         on = [ "<Space>" "a" ];
         run = "cd ~/art";
-        desc = "~/art";
+        desc = "art";
       }
 
       {
         on = [ "<Space>" "d" "e" ];
         run = "cd ~/Desktop";
-        desc = "~/Desktop";
+        desc = "desktop";
       }
 
       {
         on = [ "<Space>" "d" "o" ];
         run = "cd ~/Documents";
-        desc = "~/Documents";
+        desc = "documents";
       }
 
       {
         on = [ "<Space>" "d" "l" ];
         run = "cd ~/Downloads";
-        desc = "~/Downloads";
+        desc = "downloads";
       }
 
       {
         on = [ "<Space>" "m" "u" ];
         run = "cd ~/Music";
-        desc = "~/Music";
+        desc = "music";
       }
 
       {
         on = [ "<Space>" "m" "i" ];
         run = "cd ~/misc";
-        desc = "~/misc";
+        desc = "misc";
       }
 
       {
         on = [ "<Space>" "i" ];
         run = "cd ~/Pictures";
-        desc = "~/Pictures";
+        desc = "pictures";
       }
 
       {
         on = [ "<Space>" "t" ];
         run = "cd ~/.local/share/Trash/files";
-        desc = "Trash";
+        desc = "trash";
       }
 
       {
-        on = [ "<Space>" "p" ];
+        on = [ "<Space>" "p" "r" ];
         run = "cd ~/projects";
-        desc = "~/projects";
+        desc = "projects";
+      }
+
+      {
+        on = [ "<Space>" "p" "i" ];
+        run = "cd ~/Pictures";
+        desc = "pictures";
       }
 
       {
         on = [ "<Space>" "v" ];
         run = "cd ~/Videos";
-        desc = "~/Videos";
+        desc = "videos";
       }
 
       {
@@ -551,6 +557,12 @@
         on = [ "<Space>" "g" ];
         run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
         desc = "GD songs";
+      }
+
+      {
+        on = [ "<space>" "1" ];
+        run = "cd /run/media/meow/66d7f84b-92ba-41dc-8847-b486ec0c3817";
+        desc = "drive #1";
       }
 
 
