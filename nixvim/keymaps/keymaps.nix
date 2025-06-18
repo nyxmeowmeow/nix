@@ -72,13 +72,13 @@
     }
 
     {
-      key = "k";
+      key = "<c-s-k>";
       action = "gk";
       mode = "n";
     }
 
     {
-      key = "j";
+      key = "<c-s-j>";
       action = "gj";
       mode = "n";
     }
