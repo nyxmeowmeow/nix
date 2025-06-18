@@ -16,19 +16,19 @@
   }
   {
     matches = [ { app-id = "^vesktop$"; } ];
-    block-out-from = [ "screen-capture" "screencast" ];
+    block-out-from = "screencast";
   }
-  {
-    matches = [ { title = "mail"; } ];
-    block-out-from = [ "screen-capture" "screencast" ];
-  }
-  {
-    matches = [ { title = "bitwarden"; } ];
-    block-out-from = [ "screen-capture" "screencast" ];
-  }
-  {
-    matches = [ { title = "password"; } ];
-    block-out-from = [ "screen-capture" "screencast" ];
-  }
+  # {
+  #   matches = [ { title = "mail"; } ];
+  #   block-out-from = [ "screen-capture" "screencast" ];
+  # }
+  # {
+  #   matches = [ { title = "bitwarden"; } ];
+  #   block-out-from = [ "screen-capture" "screencast" ];
+  # }
+  # {
+  #   matches = [ { title = "password"; } ];
+  #   block-out-from = [ "screen-capture" "screencast" ];
+  # }
   ];
 }

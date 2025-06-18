@@ -8,6 +8,7 @@
     ./layout.nix
     ./animations.nix
     ./startup.nix
+    ./window_rules.nix
   ];
 
   home.packages = with pkgs; [
