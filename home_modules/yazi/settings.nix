@@ -2,7 +2,7 @@
   programs.yazi = {
     settings = {
       mgr = {
-        ratio          = [ 1 3 4 ];
+        ratio          = [ 0 3 4 ];
         sort_by        = "natural";
         sort_sensitive = false;
         sort_reverse 	 = false;
