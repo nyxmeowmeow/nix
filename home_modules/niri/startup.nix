@@ -1,12 +1,12 @@
 {
   programs.niri.settings.spawn-at-startup = [
-        "foot --server"
-        "clipse -listen"
-        "udiskie -a"
-        "dunst"
-        "walker --gapplication-service"
-        "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
-        "steam -silent"
+    { command = [ "foot" "--server" ]; }
+    { command = [ "clipse" "-listen" ]; }
+    { command = [ "udiskie" "-a" ]; }
+    { command = [ "dunst" ]; }
+    { command = [ "walker" "--gapplication-service" ]; }
+    { command = [ "vesktop" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland" ]; }
+    { command = [ "steam" "-silent" ]; }
 
   ];
 }
