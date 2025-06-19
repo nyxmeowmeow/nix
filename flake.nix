@@ -48,7 +48,9 @@
                 slippi.homeManagerModules.default
                 {
                   # use your path
-                  slippi-launcher.isoPath = "/home/user/Downloads/melee.iso";
+                  slippi-launcher.isoPath = "/home/meow/melee/meow.iso";
+                  slippi-launcher.launchMeleeOnPlay = false;
+                  slippi-launcher.enableJukebox = false;
                 }
               ];
             };
