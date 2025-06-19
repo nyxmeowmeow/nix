@@ -32,6 +32,7 @@
  ;; define each letter as typing-layer trigger
  g (multi g @.tp) r (multi r @.tp) q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
 
+esc (layer-switch over)
 spc (switch
 (lctl rctl) (one-shot-press 500 (layer-while-held win)) break
 () spc break
@@ -60,6 +61,7 @@ ralt tab
 
 
 (deflayermap over
+esc (layer-switch base)
 
 
 f18 tab
