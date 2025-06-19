@@ -6,17 +6,17 @@
     always-center-single-column = true;
 
 
-    # focus-ring = {
-    #   enable = true;
-    #   width = 2;
-    #   active = "#B7BDF8";
-    # };
-    # tab-indicator = {
-    #   enable = true;
-    #   active = "#B7BDF8";
-    #   inactive = "#A5ADCB";
-    #   hide-when-single-tab = true;
-    # };
+    focus-ring = {
+      enable = true;
+      width = 2;
+      active.color = "#B7BDF8";
+    };
+    tab-indicator = {
+      enable = true;
+      active.color = "#B7BDF8";
+      inactive.color = "#A5ADCB";
+      hide-when-single-tab = true;
+    };
 
     default-column-width = { proportion = 1. / 2.; };
     preset-column-widths = [
