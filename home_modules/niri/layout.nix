@@ -14,7 +14,7 @@
     tab-indicator = {
       enable = true;
       active.color = "#B7BDF8";
-      inactive.color = "#A5ADCB";
+      inactive.color = "#5b6078";
       hide-when-single-tab = true;
     };
 
