@@ -13,7 +13,6 @@
         ./themes/ocean/default.nix
         ./themes/everforest/default.nix
 
-./slippi.nix
           ./emacs/emacs.nix
           ./home_modules/foot.nix
           ./home_modules/niri/niri.nix

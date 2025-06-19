@@ -20,7 +20,7 @@
     slippi.url = "github:lytedev/slippi-nix";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }: {
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }: {
 
 
 
@@ -37,6 +37,22 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
+        }
+
+        slippi.nixosModules.default
+        {
+          home-manager = {
+            # ... snip -- see Home Manager's documentation for details
+            users.meow = {
+              imports = [
+                slippi.homeManagerModules.default
+                {
+                  # use your path
+                  slippi-launcher.isoPath = "/home/user/Downloads/melee.iso";
+                }
+              ];
+            };
+          };
         }
 
       ];
