@@ -405,6 +405,8 @@ bspc @rpeat
 
   magic (switch
 
+    ((key-history q 1)) (macro u e r y) break
+
   ;; // #include
     ((key-history 3 1)) (macro i n c l u d e) break
 
