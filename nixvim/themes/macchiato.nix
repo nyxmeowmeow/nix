@@ -49,7 +49,7 @@ in {
           "@lsp.type.comment".fg = col.base07;
           "@lsp.type.enum".fg = "#D5E7FF";
           "@lsp.type.enumMember".fg = col.base01;
-          "@lsp.type.function".fg = "#D5E7FF";
+          "@lsp.type.function".fg = col.base09;
           "@lsp.type.method".fg = "#D5E7FF";
           "@lsp.type.number".fg = "#EFBA5D";
           "Delimiter".fg = col.base01;
