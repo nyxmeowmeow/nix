@@ -20,7 +20,7 @@
 
     default-column-width = { proportion = 1. / 2.; };
     preset-column-widths = [
-    { proportion = 0.34; }
+    { proportion = 0.3334; }
     { proportion = 1. / 2.; }
     { proportion = 2. / 3.; }
     ];
