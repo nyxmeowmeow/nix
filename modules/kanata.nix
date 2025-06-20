@@ -1,5 +1,7 @@
-{
-  services.kanata = { enable = true;
+{ pkgs, ... }: {
+  services.kanata = {
+    enable = true;
+    package = pkgs.kanata-with-cmd;
     keyboards = {
       lily58 = {
         port = 10000;
@@ -14,7 +16,7 @@
           chords-v2-min-idle 40
         '';
 
-        config = /* rust */ ''
+        config = /* scheme */ ''
 
 
 (defsrc)
@@ -34,18 +36,12 @@
 
 esc (layer-switch over)
 spc (switch
-(lctl rctl) (one-shot-press 500 (layer-while-held win)) break
 () spc break
 )
 
 f18 S-;
 lctrl -
 bspc @rpeat
-;;g (switch
-;;    ;;(nop1) (one-shot-press 500 (layer-while-held win)) break
-;;    (lmet rmet) (layer-while-held win) break
-;;    () (multi g @.tp) break
-;;)
 f15 S--
 f16 S-9
 f17 S-0
@@ -139,14 +135,6 @@ r @cw
 
 )
 
-;;(deflayer win
-;;  _  _   _   _   _   _       _   _    _    _    _     _
-;;  _  _   @fl _   _   _       _   _    _    _    _     _
-;;  _  _   @sp @wt @cn _       _   @wl  @wd  @wu  @wr   _
-;;  _  _   _   _   _   _       _   _    _    _    _     _
-;;             _   _   _       _   _    _    _
-;;)
-
 (deflayermap sup
 rsft rsft
 - lctl
@@ -165,20 +153,6 @@ i i
 
 
 )
-
-(deflayermap win
-  f @fl
-  s @sp
-  t @wt
-  c @cn
-  h @wl
-  a @wd
-  e @wu
-  i @wr
-)
-
-
-
 
 (defvirtualkeys
   to-base (layer-switch base)
@@ -272,32 +246,32 @@ bspc @rpeat
 
 (defchordsv2
 
-  (b f    ) S-7 15 all-released (typing over win sup)
-  (  f d  ) = 15 all-released (typing over win sup)
-  (    d w) S-8 15 all-released (typing over win sup)
+  (b f    ) S-7 15 all-released (typing over sup)
+  (  f d  ) = 15 all-released (typing over sup)
+  (    d w) S-8 15 all-released (typing over sup)
 
-  (l o    ) S-' 15 all-released (typing over win sup)
-  (  o u  ) + 15 all-released (typing over win sup)
-  (    u j) S-. 15 all-released (typing over win sup)
+  (l o    ) S-' 15 all-released (typing over sup)
+  (  o u  ) + 15 all-released (typing over sup)
+  (    u j) S-. 15 all-released (typing over sup)
 
-  (n s    ) S-, 15 all-released (typing over win sup)
-  (  s t  ) S-[ 15 all-released (typing over win sup)
-  (  s   c) S-` 15 all-released (typing over win sup)
-  (    t c) [ 15 all-released (typing over win sup)
+  (n s    ) S-, 15 all-released (typing over sup)
+  (  s t  ) S-[ 15 all-released (typing over sup)
+  (  s   c) S-` 15 all-released (typing over sup)
+  (    t c) [ 15 all-released (typing over sup)
 
-  (h a    ) ] 15 all-released (typing over win sup)
-  (h   e  ) del 15 all-released (typing over win sup)
-  (  a e  ) S-] 15 all-released (typing over win sup)
-  (    e i) S-. 15 all-released (typing over win sup)
+  (h a    ) ] 15 all-released (typing over sup)
+  (h   e  ) del 15 all-released (typing over sup)
+  (  a e  ) S-] 15 all-released (typing over sup)
+  (    e i) S-. 15 all-released (typing over sup)
 
-  (, .    ) \ 15 all-released (typing over win sup)
-  (  . k  ) S-\ 15 all-released (typing over win sup)
-  (    k g) S-1 15 all-released (typing over win sup)
+  (, .    ) \ 15 all-released (typing over sup)
+  (  . k  ) S-\ 15 all-released (typing over sup)
+  (    k g) S-1 15 all-released (typing over sup)
 
-  (f15 f16      ) S-3 15 all-released (typing over win sup)
-  (f15     f17  ) S-5 15 all-released (typing over win sup)
-  (    f16 f17  ) S-/ 15 all-released (typing over win sup)
-  (        f17 ;) S-7 15 all-released (typing over win sup)
+  (f15 f16      ) S-3 15 all-released (typing over sup)
+  (f15     f17  ) S-5 15 all-released (typing over sup)
+  (    f16 f17  ) S-/ 15 all-released (typing over sup)
+  (        f17 ;) S-7 15 all-released (typing over sup)
 )
 
 
@@ -315,11 +289,6 @@ bspc @rpeat
   ;;ds dynamic-macro-record-stop
   ;;dst (dynamic-macro-record-stop-truncate 1)
 
-
-  win (switch
-    (lmet rmet) (layer-while-held win) break
-    () g break
-  )
 
   cw (caps-word-custom 1000
     (q b f d w p l o u j x n s t c y m h a e i k g v)
@@ -405,6 +374,7 @@ bspc @rpeat
 
   magic (switch
 
+  ;; // query
     ((key-history q 1)) (macro u e r y) break
 
   ;; // #include
@@ -473,15 +443,6 @@ bspc @rpeat
     ((key-history 0 1)) (macro S-0) break
     () rpt break
   )
-
-  wl (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h)
-  wr (macro M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i M-C-i)
-  wd (macro M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a M-C-a)
-  wu (macro M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e M-C-e)
-  wt (macro M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-C-h M-S-C-A-2)
-  fl (macro M-S-C-A-1) ;; float window
-  sp (macro M-S-C-A-2) ;; change split orientation
-  cn (macro M-S-C-A-3) ;; center window
 
 )
         '';
