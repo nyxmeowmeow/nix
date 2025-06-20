@@ -15,15 +15,15 @@
   home.packages = with pkgs; [
     xwayland-satellite
 
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
+    # xdg-desktop-portal-gtk
+    # xdg-desktop-portal-gnome
     # gnome-keyring
   ];
 
-  xdg.portal.configPackages = [
-    pkgs.xdg-desktop-portal-gtk
-    pkgs.xdg-desktop-portal-gnome
-  ];
+  # xdg.portal.configPackages = [
+  #   pkgs.xdg-desktop-portal-gtk
+  #   pkgs.xdg-desktop-portal-gnome
+  # ];
 
   programs.niri.enable = true;
 }
