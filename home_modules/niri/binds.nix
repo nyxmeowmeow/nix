@@ -52,7 +52,11 @@
 
     "Alt+H".action = swap-window-left;
     "Alt+I".action = swap-window-right;
+    "Alt+A".action = move-window-down;
+    "Alt+E".action = move-window-up;
 
+    "Alt+Shift+9".action = switch-preset-window-width;
+    "Alt+Shift+0".action = switch-preset-window-height;
 
 
 
@@ -67,7 +71,6 @@
   # switch-preset-window-height
   # reset-window-height
   # maximize-column
-  # toggle-window-floating
 
 
   };
