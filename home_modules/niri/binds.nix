@@ -55,8 +55,8 @@
     "Alt+A".action = move-window-down;
     "Alt+E".action = move-window-up;
 
-    "Alt+Shift+9".action = switch-preset-window-width;
-    "Alt+Shift+0".action = switch-preset-window-height;
+    "Mod+Shift+9".action = switch-preset-window-width;
+    "Mod+Shift+0".action = switch-preset-window-height;
 
 
 
