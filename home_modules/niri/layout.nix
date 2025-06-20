@@ -15,12 +15,12 @@
       enable = true;
       active.color = "#B7BDF8";
       inactive.color = "#5b6078";
-      hide-when-single-tab = true;
+      hide-when-single-tab = false;
     };
 
     default-column-width = { proportion = 1. / 2.; };
     preset-column-widths = [
-    { proportion = 0.3334; }
+    { proportion = 0.3334; } # leaks a bit with exactly 1/3
     { proportion = 1. / 2.; }
     { proportion = 2. / 3.; }
     ];

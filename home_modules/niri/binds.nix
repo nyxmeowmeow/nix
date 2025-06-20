@@ -58,6 +58,11 @@
     "Mod+Shift+9".action = switch-preset-window-width;
     "Mod+Shift+0".action = switch-preset-window-height;
 
+    "Mod+M".action = maximize-column;
+    "Mod+Shift+minus".action = toggle-column-tabbed-display;
+
+
+
 
 
   # expand-column-to-available-width
