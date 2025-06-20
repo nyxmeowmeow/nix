@@ -25,8 +25,8 @@
  a (t! homerowmod $tot 110 a rsft)
  c (t! homerowmod $tot 110 c lctl)
  h (t! homerowmod $tot 110 h rctl)
- n (t! homerowmodfiltered $tot 200 n lalt (n))
- i (t! homerowmod $tot 150 i ralt)
+ n (t! homerowmodfiltered $tot 200 n lsft (n))
+ i (t! homerowmod $tot 150 i rsft)
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
@@ -228,12 +228,10 @@ i i
  d (unshift d)
  f (unshift f)
  g (unshift g)
- i (unshift i)
  j (unshift j)
  k (unshift k)
  l (unshift l)
  m (unshift m)
- n (unshift n)
  o (unshift o)
  p (unshift p)
  q (unshift q)
@@ -251,6 +249,8 @@ i i
  t (multi (t! homerowmod $tot 110 (unshift t) lsft) (layer-switch base))
  s (t! homerowmod $tot 120 (unshift s) (layer-while-held syms))
  e (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
+ i (multi (t! homerowmod $tot 140 (unshift i) rsft) (layer-switch base))
+ n (multi (t! homerowmod $tot 140 (unshift n) lsft) (layer-switch base))
 f15 S--
 f16 S-9
 f17 S-0
