@@ -20,5 +20,10 @@
     # gnome-keyring
   ];
 
+  xdg.portal.configPackages = [
+    pkgs.xdg-desktop-portal-gtk
+    pkgs.xdg-desktop-portal-gnome
+  ];
+
   programs.niri.enable = true;
 }
