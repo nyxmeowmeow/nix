@@ -18,5 +18,6 @@
     cargo
     rust-analyzer
     clippy
+    pkg-config
   ];
 }
