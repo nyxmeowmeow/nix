@@ -18,8 +18,6 @@
         '';
 
         config = /* scheme */ ''
-
-
 (defsrc)
 
 (deflayermap (base)

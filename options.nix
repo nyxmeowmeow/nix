@@ -1,6 +1,6 @@
 { lib, ... }: {
 
-  config.theme = "black";
+  config.theme = "everforest_soft";
   # config.wm = "niri";
   # TODO font
 
