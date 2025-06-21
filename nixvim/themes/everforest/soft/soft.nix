@@ -5,7 +5,8 @@ in {
   config = lib.mkIf (config.theme == "everforest_soft") {
   # TODO change visual bg to gray1 or something
 
-    programs.nixvim.colorschemes.everforest = {
+    programs.nixvim = {
+    colorschemes.everforest = {
       enable = true;
       settings = {
         background = "soft";
@@ -19,10 +20,15 @@ in {
         #   lualine_a_inactive.fg = col.gray1;
         LineNr.fg = col.gray2;
         };
-        colours_override = {
-        red = col.gray2;
-        };
       };
+    };
+    extraConfigLua = /* lua */ ''
+      require("everforest").setup({
+          colours_override = function (palette)
+          palette.fg = "#9DA9A0"
+          end
+          })
+    '';
     };
   };
 }
