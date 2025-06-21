@@ -28,7 +28,8 @@
       modules = [
         ./configuration.nix
         ./home.nix
-        ./themes/theme.nix
+        # ./themes/theme.nix
+        ./options.nix
 
         inputs.stylix.nixosModules.stylix
 
