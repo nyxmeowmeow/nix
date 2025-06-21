@@ -19,7 +19,7 @@
           };
         };
         side_by_side = false;
-        layout_strategy = "horizontal";
+        layout_strategy = "bottom_pane";
         layout_config = {
           preview_width = 0.5;
         };
