@@ -12,12 +12,13 @@ in {
         disable_italic_comments = true;
         show_eob = 0; # ~ at end of buffer
 
-        # on_highlights = {
+        on_highlights = {
         #   lualine_transparent.fg = col.gray1;
         #   lualine_a_normal = { fg = col.bg; bg = col.gray1; };
         #   lualine_a_insert = { fg = col.bg; bg = col.fg; };
         #   lualine_a_inactive.fg = col.gray1;
-        # };
+        LineNr.fg = col.aqua;
+        };
       };
     };
   };
