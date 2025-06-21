@@ -89,6 +89,12 @@
     }
 
     {
+      key = "<C-h>";
+      action = "d";
+      mode = [ "n" "v" "x" "o" ];
+    }
+
+    {
       key = "gj";
       action = "^";
       mode = "n";
@@ -100,19 +106,31 @@
       mode = "n";
     }
 
+    {
+      key = "gJ";
+      action = "gj";
+      mode = "n";
+    }
+
+    {
+      key = "gK";
+      action = "gk";
+      mode = "n";
+    }
+
     { key = "{"; action = "("; mode = [ "n" "v" "x" ]; }
     { key = "}"; action = ")"; mode = [ "n" "v" "x" ]; }
     { key = "("; action = "{"; mode = [ "n" "v" "x" ]; }
     { key = ")"; action = "}"; mode = [ "n" "v" "x" ]; }
 
     {
-      key = "<C-b>";
+      key = "<C-t>";
       action = "<C-o>";
       mode = [ "n" "v" "x" ];
     }
 
     {
-      key = "<C-w>";
+      key = "<C-c>";
       action = "<C-i>";
       mode = [ "n" "v" "x" ];
     }

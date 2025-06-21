@@ -2,6 +2,7 @@
 
   config.theme = "black";
   # config.wm = "niri";
+  # TODO font
 
 
 
@@ -15,7 +16,7 @@
       "everforest_medium"
       "everforest_soft"
     ];
-    default = "black"; # Set a default theme
+    default = "black";
   };
 
   # options.wm = lib.mkOption {
@@ -23,7 +24,7 @@
   #     "niri"
   #     "hyprland"
   #   ];
-  #   default = "niri"; # Set a default theme
+  #   default = "niri";
   # };
 
 }
