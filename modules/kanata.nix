@@ -158,6 +158,8 @@ i i
 (deflayermap krita
 lsft lsft
 lctl lctl
+r spc
+spc r
 )
 
 (defvirtualkeys
