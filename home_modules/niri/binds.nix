@@ -6,6 +6,7 @@
   in
   {
     "Mod+G".action = spawn "~/misc/wlr-which-key";
+    "Mod+L".action = sh "~/misc/wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
 
     "Mod+T".action = spawn "footclient";
     "Mod+C".action = spawn "footclient" "yazi";
