@@ -14,6 +14,7 @@
           process-unmapped-keys yes
           concurrent-tap-hold yes
           chords-v2-min-idle 40
+          danger-enable-cmd yes
         '';
 
         config = /* scheme */ ''
