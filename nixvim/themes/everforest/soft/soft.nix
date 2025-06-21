@@ -22,13 +22,6 @@ in {
         };
       };
     };
-    extraConfigLua = /* lua */ ''
-      require("everforest").setup({
-          colours_override = function (palette)
-          palette.fg = "#9DA9A0"
-          end
-          })
-    '';
     };
   };
 }
