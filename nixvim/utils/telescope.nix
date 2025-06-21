@@ -17,9 +17,13 @@
           colorscheme = {
             enable_preview = true;
           };
+          git_commits = {
+            praview_width = 0.7;
+            preview_cutoff = 1;
+          };
         };
         side_by_side = false;
-        layout_strategy = "bottom_pane";
+        layout_strategy = "horizontal";
         layout_config = {
           preview_width = 0.5;
         };
