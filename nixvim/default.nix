@@ -24,6 +24,7 @@
     ./utils/bracketed.nix
     ./ui/colorizer.nix
     ./utils/diagnostic.nix
+    ./utils/completion.nix
     # ./utils/firenvim.nix
     ./utils/flash.nix
     ./utils/harpoon.nix
