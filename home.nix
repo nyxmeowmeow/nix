@@ -17,7 +17,7 @@
           ./emacs/emacs.nix
           ./home_modules/foot.nix
           ./home_modules/niri/niri.nix
-          ./home_modules/hyprland.nix
+          # ./home_modules/hyprland.nix
           ./home_modules/tofi.nix
           ./home_modules/nushell.nix
           ./home_modules/starship.nix
