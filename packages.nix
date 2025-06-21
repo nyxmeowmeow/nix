@@ -67,10 +67,7 @@
     # firefox
     vesktop
     foot
-    hyprprop
-    hyprland
     hyprpaper
-    hyprpicker
     polkit_gnome
     grimblast
     slurp
