@@ -1,7 +1,7 @@
 { lib, ... }: {
 
   config.theme = "black";
-  config.wm = "niri";
+  # config.wm = "niri";
 
 
 
@@ -18,13 +18,13 @@
     default = "black"; # Set a default theme
   };
 
-  options.wm = lib.mkOption {
-    type = lib.types.enum [
-      "niri"
-      "hyprland"
-    ];
-    default = "niri"; # Set a default theme
-  };
+  # options.wm = lib.mkOption {
+  #   type = lib.types.enum [
+  #     "niri"
+  #     "hyprland"
+  #   ];
+  #   default = "niri"; # Set a default theme
+  # };
 
 }
 
