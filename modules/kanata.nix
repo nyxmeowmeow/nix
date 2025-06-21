@@ -155,6 +155,11 @@ i i
 
 )
 
+(deflayermap krita
+lsft lsft
+lctl lctl
+)
+
 (defvirtualkeys
   to-base (layer-switch base)
   to-over (layer-switch over)
