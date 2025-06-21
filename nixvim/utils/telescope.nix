@@ -18,7 +18,7 @@
             enable_preview = true;
           };
           git_commits = {
-            praview_width = 0.7;
+            preview_width = 0.5;
             preview_cutoff = 1;
           };
         };
