@@ -17,7 +17,10 @@ in {
         #   lualine_a_normal = { fg = col.bg; bg = col.gray1; };
         #   lualine_a_insert = { fg = col.bg; bg = col.fg; };
         #   lualine_a_inactive.fg = col.gray1;
-        LineNr.fg = col.aqua;
+        LineNr.fg = col.gray2;
+        };
+        colours_override = {
+        red = col.gray2;
         };
       };
     };
