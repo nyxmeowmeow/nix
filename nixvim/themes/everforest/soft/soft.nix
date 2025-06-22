@@ -21,7 +21,7 @@ in {
         LineNr.fg = col.gray2;
         };
         colors_override = {
-          fg = [ "#9DA9A0" ];
+          fg = [ "#9DA9A0" "247" ];
         };
       };
     };
