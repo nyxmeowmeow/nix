@@ -4,13 +4,13 @@
   programs.foot = {
     enable = true;
     settings = {
-      cursor.color = "333C43 D3C6AA";
+      cursor.color = "333C43 9DA9A0";
 
       colors = {
         alpha = "1";
 
         background = "333C43";
-        foreground = "D3C6AA";
+        foreground = "9DA9A0";
 
         ## Normal/regular colors (color palette 0-7)
         regular0 = "293136";  # black
