@@ -1,4 +1,4 @@
-{ pkgs, zen-browser, ... }: {
+{ pkgs, ... }: {
 
 
 
@@ -22,7 +22,6 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
-  environment.systemPackages = [ zen-browser.packages."x86_64-linux".default ];
 
   programs.firefox.enable = true;
   programs.obs-studio.enable = true;
