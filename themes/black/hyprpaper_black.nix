@@ -1,7 +1,6 @@
 { lib, theme, ... }: {
   config = lib.mkIf (theme == "black") {
 
-
     services.hyprpaper = {
       enable = true;
       settings = {
