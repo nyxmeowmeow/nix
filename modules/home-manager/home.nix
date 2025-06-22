@@ -1,10 +1,5 @@
 { config, ... }: {
 
-  home-manager = {
-    extraSpecialArgs = {
-      theme = config.theme;
-    };
-    users.meow = {
 
 
       home.username = "meow";
@@ -17,6 +12,4 @@
 
 
 
-    };
-  };
 }

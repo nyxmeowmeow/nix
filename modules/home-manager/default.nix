@@ -3,38 +3,41 @@
   home-manager = {
     extraSpecialArgs = {
       theme = config.theme;
+      zen-browser = inputs.zen-browser;
     };
     users.meow = {
       imports = [
 
-        inputs.nixvim.homeModules.nixvim
+
+
           ../../themes/black/default.nix
+          ../../themes/everforest/default.nix
           ../../themes/lix/default.nix
           ../../themes/macchiato/default.nix
           ../../themes/ocean/default.nix
-          ../../themes/everforest/default.nix
-
-
-          ./nixvim/default.nix
+          ./btop.nix
+          ./clipse.nix
+          ./dunst.nix
           ./emacs/emacs.nix
           ./foot.nix
+          ./fzf.nix
+          ./git.nix
+          ./mpv.nix
+          ./ncmpcpp.nix
           ./niri/niri.nix
-# ./hyprland.nix
-          ./tofi.nix
+          ./nixvim/default.nix
           ./nushell.nix
           ./starship.nix
-          ./yazi/yazi.nix
-          ./clipse.nix
-          ./ncmpcpp.nix
-          ./btop.nix
-          ./git.nix
-# ./bash.nix
-          ./fzf.nix
-          ./zoxide.nix
-          ./dunst.nix
-          ./mpv.nix
+          ./tofi.nix
           ./vesktop.nix
+          ./yazi/yazi.nix
+          ./zen.nix
+          ./zoxide.nix
+          ./home.nix
+        inputs.nixvim.homeModules.nixvim
+# ./bash.nix
+# ./hyprland.nix
           ];
     };
   };
-                 }
+}

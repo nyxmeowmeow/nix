@@ -29,7 +29,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./modules/nixos/default.nix
-        ./modules/home-manager/home.nix
+        ./modules/home-manager/default.nix
         ./modules/nixos/options.nix
 
 {
