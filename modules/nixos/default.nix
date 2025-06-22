@@ -1,8 +1,8 @@
 {
   imports = [
-    ./hardware-configuration.nix
-    ./services.nix
-    ./packages.nix
+    ./core/hardware-configuration.nix
+    ./core/services.nix
+    ./core/packages.nix
     ./kanata.nix
     ./core/security.nix
     ./core/hardware.nix
