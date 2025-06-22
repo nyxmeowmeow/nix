@@ -1,7 +1,8 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    # emacs-pgtk
+    # quickshell
+
 
     # bash-completion
     # nix-bash-completions

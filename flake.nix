@@ -18,6 +18,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     slippi.url = "github:lytedev/slippi-nix";
+
+    mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }: {
@@ -29,6 +31,20 @@
         ./configuration.nix
         ./home.nix
         ./options.nix
+
+{
+  nixpkgs.overlays = [
+    (final: prev: {
+      mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
+      rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
+    })
+  ];
+}
+
+
+
+
+
 
         inputs.stylix.nixosModules.stylix
 
