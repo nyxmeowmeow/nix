@@ -38,7 +38,9 @@
       ];
 
       home.username = "meow";
-      home.homeDirectory = "/home/meow";
+      lib.mkForce = {
+        home.homeDirectory = "/home/meow";
+      };
       home.stateVersion = "24.11";
 
 

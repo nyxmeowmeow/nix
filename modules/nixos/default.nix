@@ -2,6 +2,7 @@
   imports = [
     ./core/boot.nix
     ./core/hardware-configuration.nix
+    ./core/configuration.nix
     ./core/hardware.nix
     ./core/nix.nix
     ./core/nixpkgs.nix

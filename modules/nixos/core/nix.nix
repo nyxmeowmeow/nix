@@ -7,11 +7,11 @@
       keep-outputs = false;
     };
 
-
     gc = {
       automatic = true;
       dates = "weekly";
       options = "--delete-older-than 10d";
     };
   };
+  system.stateVersion = "24.11";
 }
