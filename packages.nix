@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    # quickshell
+    quickshell
 
 
     # bash-completion
