@@ -107,11 +107,11 @@
    #  envFile.text = /* nu */ ''
    #  '';
 
-    loginFile.text = /* nu */ ''
-      if (tty) == "/dev/tty1" {
-        Hyprland
-      }
-    '';
+    # loginFile.text = /* nu */ ''
+    #   if (tty) == "/dev/tty1" {
+    #     Hyprland
+    #   }
+    # '';
 
 
     shellAliases = {
