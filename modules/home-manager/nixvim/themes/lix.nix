@@ -1,8 +1,8 @@
-{ lib, config, ... }: 
+{ lib, theme, ... }: 
 let
   col = import ../../../../themes/lix/colors.nix;
 in {
-  config = lib.mkIf (config.theme == "lix") {
+  config = lib.mkIf (theme == "lix") {
 
 
     programs.nixvim.colorschemes.catppuccin = {

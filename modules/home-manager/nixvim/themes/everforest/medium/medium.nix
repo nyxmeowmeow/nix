@@ -1,5 +1,5 @@
-{ lib, config, ... }: {
-  config = lib.mkIf (config.theme == "everforest_medium") {
+{ lib, theme, ... }: {
+  config = lib.mkIf (theme == "everforest_medium") {
 
     programs.nixvim.colorschemes.everforest = {
       enable = true;

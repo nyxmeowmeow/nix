@@ -1,8 +1,8 @@
-{ lib, config, ... }:
+{ lib, theme, ... }:
 let
 col = import ../../../../themes/macchiato/colors.nix;
 in {
-  config = lib.mkIf (config.theme == "black") {
+  config = lib.mkIf (theme == "black") {
 
     programs.nixvim.colorschemes.catppuccin = {
       enable = true;
