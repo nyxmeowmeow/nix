@@ -16,8 +16,11 @@
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/meow/.steam/root/compatibilitytools.d"; # protonup install path
     NIXOS_OZONE_WL = "1"; # tell things to use wayland
     NIXPKGS_ALLOW_UNFREE = "1";
+    DISPLAY = ":0";
   };
-
+  environment.variables = {
+    DISPLAY = ":0";
+  };
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
