@@ -45,7 +45,7 @@ f15 S--
 f16 S-9
 f17 S-0
 lmet (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
-f19 @magic
+lsft @magic
 rsft bspc
 ralt tab
 ;;, (tap-hold-press 110 110 , lsft)
@@ -235,7 +235,7 @@ f15 S--
 f16 S-9
 f17 S-0
 lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
-f19 @magic
+lsft @magic
 rsft bspc
 ralt tab
 f18 S-;
