@@ -124,6 +124,68 @@
   (        f17 ;) S-7 15 all-released (over)
 )
 
+  (defalias
+  magic (switch
+
+  ;; // query
+    ((key-history q 1)) (macro u e r y) break
+
+  ;; // #include
+    ((key-history 3 1)) (macro i n c l u d e) break
+
+  ;; // sfb
+    ((key-history o 1)) (macro a) break
+    ((key-history a 1)) (macro o) break
+    ((key-history u 1)) (macro e) break
+    ((key-history e 1)) (macro u) break
+    ((key-history i 1)) (macro x) break
+
+  ;; // sfs
+    ;;((and(key-history e 2) (key-history s 1))) (macro e) break
+    ((and(key-history e 2) (key-history y 1))) (macro e) break
+    ((and(key-history e 2) (key-history v 1))) (macro e) break
+
+    ((and(key-history n 2) (key-history i 1))) (macro x) break
+  ;; // sfb
+    ((key-history w 1)) (macro y) break
+    ((key-history c 1)) (macro y) break
+    ((key-history p 1)) (macro y) break
+
+    ((key-history j 1)) (macro u s t) break
+
+    ((key-history \ 1)) (macro n) break
+
+
+    ;; non-sfb for !=
+    ;;((and(key-history spc 2) (key-history 1 1))) (macro =) break
+
+    ;; non-sfb for vec![]
+    ;;((and(key-history c 2) (key-history 1 1))) (macro [) break
+
+    ((key-history 1 1)) (macro [) break
+
+  ;; // non-sfb for >>
+    ((key-history . 1)) (macro S-.) break
+  ;; // non-sfb for <=
+    ((key-history , 1)) (macro =) break
+  ;; // non-sfb ; for ]
+    ((key-history ] 1)) (macro ;) break
+  ;; // auto ; for {}
+    ((key-history { 1)) (macro S-] ; left left) break
+
+
+    ((key-history x 1)) (macro p k g s) break
+
+
+    ((key-history 7 1)) (macro S-7) break
+    ((key-history ; 1)) (macro S-;) break
+    ((key-history = 1)) (macro S-.) break
+    ((key-history - 1)) (macro S-.) break
+    ((key-history 9 1)) (macro S-') break
+    ((key-history 0 1)) (macro S-0) break
+    () rpt break
+  )
+)
         '';
       };
 
