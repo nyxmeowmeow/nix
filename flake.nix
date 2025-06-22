@@ -28,9 +28,9 @@
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
-        ./configuration.nix
-        ./home.nix
-        ./options.nix
+        ./modules/nixos/core/configuration.nix
+        ./modules/home-manager/home.nix
+        ./modules/nixos/options.nix
 
 {
   nixpkgs.overlays = [

@@ -9,7 +9,7 @@
   # };
 
 
-  stylix.image = ../themes/macchiato/wallpapers/1_hor.png; # must be set for some reason
+  stylix.image = ../../themes/macchiato/wallpapers/1_hor.png; # must be set for some reason
 
   stylix.cursor = {
     package = pkgs.bibata-cursors;

@@ -1,6 +1,6 @@
 { lib, config, ... }: 
 let
-  col = import ../../../../themes/everforest/medium/colors.nix;
+  col = import ../../../../../../themes/everforest/medium/colors.nix;
 in {
   config = lib.mkIf (config.theme == "everforest_medium") {
 

@@ -1,6 +1,6 @@
 { lib, config, ... }:
 let
-col = import ../../themes/macchiato/colors.nix;
+col = import ../../../../themes/macchiato/colors.nix;
 in {
   config = lib.mkIf (config.theme == "macchiato") {
 

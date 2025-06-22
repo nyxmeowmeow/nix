@@ -1,4 +1,4 @@
-{ pkgs, zen-browser, nixvim, ... }: {
+{ pkgs, zen-browser, ... }: {
 
 
   imports = [
@@ -14,7 +14,7 @@
     ./modules/stylix.nix
     ./misc.nix
     ./nixvim/default.nix
-    nixvim.nixosModules.nixvim
+    # nixvim.nixosModules.nixvim
   ];
 
 

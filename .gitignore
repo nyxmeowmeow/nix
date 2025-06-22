@@ -1,9 +1,9 @@
 # emacs-generated folders
-emacs/auto-save-list/
-emacs/eln-cache/
-emacs/elpa/
-emacs/games/
-emacs/url/
+modules/home-manager/emacs/auto-save-list/
+modules/home-manager/emacs/eln-cache/
+modules/home-manager/emacs/elpa/
+modules/home-manager/emacs/games/
+modules/home-manager/emacs/url/
 
 # emacs backup files
-emacs/*~
+modules/home-manager/emacs/*~
