@@ -44,6 +44,7 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
+ f19 @magic
  t (t! homerowmod $tot 160 t lsft)
  a (t! homerowmod $tot 160 a rsft)
  c (t! homerowmod $tot 300 c lctl)
