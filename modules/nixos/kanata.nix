@@ -69,6 +69,7 @@
 )
 
 (deflayermap over)
+(deflayermap krita)
 
 (deflayermap (typing) 
  h (unshift h)
