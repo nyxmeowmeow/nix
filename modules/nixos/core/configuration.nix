@@ -1,23 +1,6 @@
 { pkgs, zen-browser, ... }: {
 
 
-  imports = [
-    ./hardware-configuration.nix
-    ./services.nix
-    ./packages.nix
-    ./modules/kanata.nix
-    ./modules/security.nix
-    ./modules/hardware.nix
-    ./modules/languages.nix
-    ./modules/boot.nix
-    ./modules/steam.nix
-    ./modules/stylix.nix
-    ./misc.nix
-    ./nixvim/default.nix
-    # nixvim.nixosModules.nixvim
-  ];
-
-
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;

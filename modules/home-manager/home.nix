@@ -16,6 +16,7 @@
         ../../themes/everforest/default.nix
 
 
+    ./nixvim/default.nix
           ./emacs/emacs.nix
           ./foot.nix
           ./niri/niri.nix
