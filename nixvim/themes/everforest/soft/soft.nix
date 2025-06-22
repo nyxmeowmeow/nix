@@ -20,6 +20,9 @@ in {
         #   lualine_a_inactive.fg = col.gray1;
         LineNr.fg = col.gray2;
         };
+        colors_override = {
+          fg = [ "#9DA9A0" ];
+        };
       };
     };
     };
