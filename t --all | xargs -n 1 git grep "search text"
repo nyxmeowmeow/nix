@@ -1,0 +1,686 @@
+[33mcommit ff2166ee0e59543be9441f68945d29ec3913b281[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Wed Jun 18 16:33:32 2025 +1000
+
+    18/06 16:33:32
+
+[1mdiff --git a/home_modules/niri/binds.nix b/home_modules/niri/binds.nix[m
+[1mindex a4bda89..66adc99 100644[m
+[1m--- a/home_modules/niri/binds.nix[m
+[1m+++ b/home_modules/niri/binds.nix[m
+[36m@@ -1,9 +1,18 @@[m
+ { config, ... }: {[m
+[31m-  programs.niri.settings.binds = with config.lib.niri.actions; {[m
+[32m+[m
+[32m+[m[32m  programs.niri.settings.binds = with config.lib.niri.actions;[m[41m [m
+[32m+[m[32m  let[m
+[32m+[m[32m    sh = spawn "sh" "-c";[m
+[32m+[m[32m  in[m
+[32m+[m[32m  {[m
+     "Mod+T".action = spawn "footclient";[m
+     "Mod+C".action = spawn "footclient" "yazi";[m
+     "Mod+S".action = spawn "footclient" "nvim";[m
+ [m
+[32m+[m
+[32m+[m[32m    "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";[m
+[32m+[m[32m    "XF86AudioLowerVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";[m
+[32m+[m
+     "Mod+N".action = focus-monitor-next;[m
+     "Mod+3".action = screenshot;[m
+     "Mod+O".action = close-window;[m
+[36m@@ -11,13 +20,23 @@[m
+ [m
+     "Mod+Space".action = spawn "walker";[m
+ [m
+[31m-    "Mod+Z".action = spawn "zen" "-p" "misc";[m
+[32m+[m[32m    "Mod+Z".action = sh "zen -p misc";[m
+     "Mod+Shift+Z".action = spawn "zen";[m
+ [m
+[32m+[m
+[32m+[m[32m    "Mod+Shift+Semicolon".action = focus-workspace "one";[m
+     "Mod+B".action = focus-workspace "browser";[m
+     "Mod+F".action = focus-workspace "game";[m
+     "Mod+D".action = focus-workspace "discord";[m
+     "Mod+W".action = focus-workspace "browser_2";[m
+[32m+[m[32m    "Mod+P".action = focus-workspace "two";[m
+[32m+[m
+[32m+[m[32m    # "Mod+Shift+B".action = move-window-to-workspace "browser";[m
+[32m+[m[32m    # "Mod+Shift+F".action = move-window-to-workspace "game";[m
+[32m+[m[32m    # "Mod+Shift+D".action = move-window-to-workspace "discord";[m
+[32m+[m[32m    # "Mod+Shift+W".action = move-window-to-workspace "browser_2";[m
+[32m+[m[32m    # "Mod+Shift+P".action = move-window-to-workspace "two";[m
+[32m+[m
+ [m
+     "Mod+H".action = focus-column-left;[m
+     "Mod+I".action = focus-column-right;[m
+
+[33mcommit 0a99dd7d453daac1a6fa3b6e14fb190085439dd0[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Wed Jun 4 13:36:41 2025 +1000
+
+    04/06 13:36:41
+
+[1mdiff --git a/home_modules/bash.nix b/home_modules/bash.nix[m
+[1mindex 6fd1459..b6bbc22 100644[m
+[1m--- a/home_modules/bash.nix[m
+[1m+++ b/home_modules/bash.nix[m
+[36m@@ -1,25 +1,23 @@[m
+ {[m
+[31m-programs.bash = {[m
+[31m-enable = true;[m
+[31m-enableCompletion = true;[m
+[31m-historyFile = "~/.config";[m
+[31m-historyIgnore = [[m
+[31m-"ls"[m
+[31m-"nr"[m
+[31m-"ng"[m
+[31m-"mkdir"[m
+[31m-];[m
+[31m-sessionVariables = {[m
+[32m+[m[32m  programs.bash = {[m
+[32m+[m[32m    enable = true;[m
+[32m+[m[32m    enableCompletion = true;[m
+[32m+[m[32m    historyFile = "~/.config";[m
+[32m+[m[32m    historyIgnore = [[m
+[32m+[m[32m      "ls"[m
+[32m+[m[32m        "nr"[m
+[32m+[m[32m        "ng"[m
+[32m+[m[32m        "mkdir"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    sessionVariables = {[m
+       MANPAGER = "nvim +Man!"; # use nvim for man[m
+[31m-      SUDO_TIMESTAMP_TIMEOUT = 0;[m
+[32m+[m[32m        SUDO_TIMESTAMP_TIMEOUT = 0;[m
+       EDITOR = "nvim";[m
+       VISUAL = "nvim";[m
+       BROWSER = "zen";[m
+[31m-      # TODO move this to themes/*[m
+[31m-      # FZF_DEFAULT_OPTS = "--color=fg:#A4A0E8,hl:#DBBFEF,fg+:#A4A0E8,bg+:#5A3D6E,hl+:#DBBFEF,info:#886C9C,prompt:#DBBFEF,spinner:-1,pointer:-1,gutter:#3B224C,info:#886C9C,border:#3B224C";[m
+       NIXOS_OZONE_WL = "1"; # tell things to use wayland[m
+[31m-      NIXPKGS_ALLOW_UNFREE = "1";[m
+[31m-};[m
+[32m+[m[32m        NIXPKGS_ALLOW_UNFREE = "1";[m
+[32m+[m[32m    };[m
+ [m
+     shellAliases = {[m
+       ".." = "cd ..";[m
+[36m@@ -30,23 +28,22 @@[m [msessionVariables = {[m
+       hist="history | fzf | read -l command; eval $command";[m
+ [m
+       sudo = "sudo -k"; # prompt every time[m
+[31m-      s = "sudo -k"; # prompt every time[m
+[31m-      rm = "rm -i"; # prompt every time[m
+[31m-      mv = "mv -i"; # prompt every time[m
+[31m-      ln = "ln -i"; # prompt every time[m
+[32m+[m[32m        s = "sudo -k"; # prompt every time[m
+[32m+[m[32m        rm = "rm -i"; # prompt every time[m
+[32m+[m[32m        mv = "mv -i"; # prompt every time[m
+[32m+[m[32m        ln = "ln -i"; # prompt every time[m
+ [m
+[31m-      logout = "hyprctl dispatch exit 0";[m
+[31m-      # l = "eza -lh  --icons=auto"; # long list[m
+[32m+[m[32m        logout = "hyprctl dispatch exit 0";[m
+[32m+[m[32m# l = "eza -lh  --icons=auto"; # long list[m
+       ls = "eza -a1   --icons=auto"; # short list[m
+[31m-      # ll = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all[m
+[31m-      # ld = "eza -lhD --icons=auto"; # long list dirs[m
+[31m-      # lt = "eza --icons=auto --tree"; # list folder as tree[m
+[31m-      ff = "fastfetch --logo nixos_small --logo-color-2 magenta";[m
+[32m+[m[32m# ll = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all[m
+[32m+[m[32m# ld = "eza -lhD --icons=auto"; # long list dirs[m
+[32m+[m[32m# lt = "eza --icons=auto --tree"; # list folder as tree[m
+[32m+[m[32m        ff = "fastfetch --logo nixos_small --logo-color-2 magenta";[m
+ [m
+ [m
+ [m
+       ga = "git add .";[m
+[31m-      # gl = "git log --oneline | lines | fzf";[m
+       gcl = "git clone";[m
+       gd = "git diff HEAD^";[m
+       gs = "git status";[m
+[36m@@ -55,18 +52,10 @@[m [msessionVariables = {[m
+ [m
+       meow = "echo :3"; # so silly[m
+ [m
+[31m-      # nr = ''[m
+[31m-      #   do {[m
+[31m-      #     sudo nixos-rebuild switch --flake /home/meow/nix#nixos[m
+[31m-      #     cd ~/nix[m
+[31m-      #     git add .[m
+[31m-      #     git commit -m $"(date now | format date '%d/%m %H:%M:%S')"[m
+[31m-      #   }[m
+[31m-      # '';[m
+[31m-      na = "nvim ~/nix/packages.nix -c '/systemPackages'";[m
+[32m+[m[32m        na = "nvim ~/nix/packages.nix -c '/systemPackages'";[m
+       ns = "nix-shell -p";[m
+ [m
+       n = "nvim";[m
+     };[m
+[31m-};[m
+[32m+[m[32m  };[m
+ }[m
+[1mdiff --git a/home_modules/nushell.nix b/home_modules/nushell.nix[m
+[1mindex aa39142..8edf322 100644[m
+[1m--- a/home_modules/nushell.nix[m
+[1m+++ b/home_modules/nushell.nix[m
+[36m@@ -221,8 +221,6 @@[m
+       EDITOR = "nvim";[m
+       VISUAL = "nvim";[m
+       BROWSER = "zen";[m
+[31m-      #!FZF_DEFAULT_OPTS = "--color=fg:#cad3f5,hl:#8bd5ca,fg+:#cad3f5,bg+:#363a4f,hl+:#8bd5ca,info:#7f8c8d,prompt:#b7bdf8,spinner:#b7bdf8,pointer:#b7bdf8,gutter:-1,info:#939ab7,border:#494d64";[m
+[31m-      FZF_DEFAULT_OPTS = "--color=fg:#A4A0E8,hl:#DBBFEF,fg+:#A4A0E8,bg+:#5A3D6E,hl+:#DBBFEF,info:#886C9C,prompt:#DBBFEF,spinner:-1,pointer:-1,gutter:#3B224C,info:#886C9C,border:#3B224C";[m
+       NIXOS_OZONE_WL = "1"; # tell things to use wayland[m
+       NIXPKGS_ALLOW_UNFREE = "1";[m
+     };[m
+
+[33mcommit bf7e430cd1a8a33527fb53755900c03fcc01537a[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Wed Jun 4 13:27:08 2025 +1000
+
+    04/06 13:27:08
+
+[1mdiff --git a/home_modules/fzf.nix b/home_modules/fzf.nix[m
+[1mindex f14d6c0..14d7431 100644[m
+[1m--- a/home_modules/fzf.nix[m
+[1m+++ b/home_modules/fzf.nix[m
+[36m@@ -16,7 +16,6 @@[m [mprograms.fzf = {[m
+     border = "#3B224C";[m
+   };[m
+ [m
+[31m-      FZF_DEFAULT_OPTS = "--color=fg:#A4A0E8,hl:#DBBFEF,fg+:#A4A0E8,bg+:#5A3D6E,hl+:#DBBFEF,info:#886C9C,prompt:#DBBFEF,spinner:-1,pointer:-1,gutter:#3B224C,info:#886C9C,border:#3B224C";[m
+ };[m
+ [m
+ }[m
+
+[33mcommit 3370daceb708d1360dfd657028d91fe4a8aa83cd[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Wed Jun 4 13:26:29 2025 +1000
+
+    04/06 13:26:29
+
+[1mdiff --git a/home_modules/fzf.nix b/home_modules/fzf.nix[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f14d6c0[m
+[1m--- /dev/null[m
+[1m+++ b/home_modules/fzf.nix[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m{[m
+[32m+[m[32mprograms.fzf = {[m
+[32m+[m[32m  enable = true;[m
+[32m+[m[32m  enableBashIntegration = true;[m
+[32m+[m[32m  colors = {[m
+[32m+[m[32m    fg = "#A4A0E8";[m
+[32m+[m[32m    hl = "#DBBFEF";[m
+[32m+[m[32m    "fg+" = "#A4A0E8";[m
+[32m+[m[32m    "bg+" = "#5A3D6E";[m
+[32m+[m[32m    "hl+" = "#DBBFEF";[m
+[32m+[m[32m    info = "#886C9C";[m
+[32m+[m[32m    prompt = "#DBBFEF";[m
+[32m+[m[32m    spinner = "#3B224C";[m
+[32m+[m[32m    pointer = "#3B224C";[m
+[32m+[m[32m    gutter = "#3B224C";[m
+[32m+[m[32m    border = "#3B224C";[m
+[32m+[m[32m  };[m
+[32m+[m
+[32m+[m[32m      FZF_DEFAULT_OPTS = "--color=fg:#A4A0E8,hl:#DBBFEF,fg+:#A4A0E8,bg+:#5A3D6E,hl+:#DBBFEF,info:#886C9C,prompt:#DBBFEF,spinner:-1,pointer:-1,gutter:#3B224C,info:#886C9C,border:#3B224C";[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32m}[m
+
+[33mcommit 667ff7d52ba53d8463a4ad0f5fd0d2e2507e2dfc[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Wed Jun 4 13:11:53 2025 +1000
+
+    04/06 13:11:53
+
+[1mdiff --git a/home_modules/bash.nix b/home_modules/bash.nix[m
+[1mindex 103fa55..8df9491 100644[m
+[1m--- a/home_modules/bash.nix[m
+[1m+++ b/home_modules/bash.nix[m
+[36m@@ -3,5 +3,72 @@[m [mprograms.bash = {[m
+ enable = true;[m
+ enableCompletion = true;[m
+ historyFile = "~/.config";[m
+[32m+[m[32mhistoryIgnore = [[m
+[32m+[m[32m"ls"[m
+[32m+[m[32m"nr"[m
+[32m+[m[32m"ng"[m
+[32m+[m[32m"mkdir"[m
+[32m+[m[32m];[m
+[32m+[m[32msessionVariables = {[m
+[32m+[m[32m      MANPAGER = "nvim +Man!"; # use nvim for man[m
+[32m+[m[32m      SUDO_TIMESTAMP_TIMEOUT = 0;[m
+[32m+[m[32m      EDITOR = "nvim";[m
+[32m+[m[32m      VISUAL = "nvim";[m
+[32m+[m[32m      BROWSER = "zen";[m
+[32m+[m[32m      # TODO move this to themes/*[m
+[32m+[m[32m      FZF_DEFAULT_OPTS = "--color=fg:#A4A0E8,hl:#DBBFEF,fg+:#A4A0E8,bg+:#5A3D6E,hl+:#DBBFEF,info:#886C9C,prompt:#DBBFEF,spinner:-1,pointer:-1,gutter:#3B224C,info:#886C9C,border:#3B224C";[m
+[32m+[m[32m      NIXOS_OZONE_WL = "1"; # tell things to use wayland[m
+[32m+[m[32m      NIXPKGS_ALLOW_UNFREE = "1";[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32m    shellAliases = {[m
+[32m+[m[32m      ".." = "cd ..";[m
+[32m+[m[32m      "..." = "cd ../..";[m
+[32m+[m[32m      "...." = "cd ../../..";[m
+[32m+[m[32m      "....." = "cd ../../../..";[m
+[32m+[m
+[32m+[m[32m      hist="history | fzf | read -l command; eval $command";[m
+[32m+[m
+[32m+[m[32m      sudo = "sudo -k"; # prompt every time[m
+[32m+[m[32m      s = "sudo -k"; # prompt every time[m
+[32m+[m[32m      rm = "rm -i"; # prompt every time[m
+[32m+[m[32m      mv = "mv -i"; # prompt every time[m
+[32m+[m[32m      ln = "ln -i"; # prompt every time[m
+[32m+[m
+[32m+[m[32m      logout = "hyprctl dispatch exit 0";[m
+[32m+[m[32m      c = "clear"; # clear terminal[m
+[32m+[m[32m      l = "eza -lh  --icons=auto"; # long list[m
+[32m+[m[32m      ls = "eza -a1   --icons=auto"; # short list[m
+[32m+[m[32m      ll = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all[m
+[32m+[m[32m      ld = "eza -lhD --icons=auto"; # long list dirs[m
+[32m+[m[32m      lt = "eza --icons=auto --tree"; # list folder as tree[m
+[32m+[m[32m      ff = "fastfetch --logo nixos_small --logo-color-2 magenta";[m
+[32m+[m[32m      cl = "hyprctl clients";[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      ga = "git add .";[m
+[32m+[m[32m      # gl = "git log --oneline | lines | fzf";[m
+[32m+[m[32m      gcl = "git clone";[m
+[32m+[m[32m      gd = "git diff HEAD^";[m
+[32m+[m[32m      gs = "git status";[m
+[32m+[m
+[32m+[m[32m      cr = "cargo run";[m
+[32m+[m
+[32m+[m[32m      meow = "echo :3"; # so silly[m
+[32m+[m
+[32m+[m[32m      # nr = ''[m
+[32m+[m[32m      #   do {[m
+[32m+[m[32m      #     sudo nixos-rebuild switch --flake /home/meow/nix#nixos[m
+[32m+[m[32m      #     cd ~/nix[m
+[32m+[m[32m      #     git add .[m
+[32m+[m[32m      #     git commit -m $"(date now | format date '%d/%m %H:%M:%S')"[m
+[32m+[m[32m      #   }[m
+[32m+[m[32m      # '';[m
+[32m+[m[32m      na = "nvim ~/nix/packages.nix -c '/systemPackages'";[m
+[32m+[m[32m      ns = "nix-shell -p";[m
+[32m+[m
+[32m+[m[32m      n = "nvim";[m
+[32m+[m[32m    };[m
+ };[m
+ }[m
+
+[33mcommit 0da3e6299f633f6642b43b63b2be882029d8548d[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Tue Jun 3 17:30:23 2025 +1000
+
+    03/06 17:30:23
+
+[1mdiff --git a/home_modules/nushell.nix b/home_modules/nushell.nix[m
+[1mindex dc44d8a..836474d 100644[m
+[1m--- a/home_modules/nushell.nix[m
+[1m+++ b/home_modules/nushell.nix[m
+[36m@@ -221,7 +221,8 @@[m
+       EDITOR = "nvim";[m
+       VISUAL = "nvim";[m
+       BROWSER = "zen";[m
+[31m-      FZF_DEFAULT_OPTS = "--color=fg:#cad3f5,hl:#8bd5ca,fg+:#cad3f5,bg+:#363a4f,hl+:#8bd5ca,info:#7f8c8d,prompt:#b7bdf8,spinner:#b7bdf8,pointer:#b7bdf8,gutter:-1,info:#939ab7,border:#494d64";[m
+[32m+[m[32m      #!FZF_DEFAULT_OPTS = "--color=fg:#cad3f5,hl:#8bd5ca,fg+:#cad3f5,bg+:#363a4f,hl+:#8bd5ca,info:#7f8c8d,prompt:#b7bdf8,spinner:#b7bdf8,pointer:#b7bdf8,gutter:-1,info:#939ab7,border:#494d64";[m
+[32m+[m[32m      FZF_DEFAULT_OPTS = "--color=fg:#A4A0E8,hl:#000000,fg+:#A4A0E8,bg+:#5A3D6E,hl+:#000000,info:#886C9C,prompt:#DBBFEF,spinner:-1,pointer:-1,gutter:-1,info:#886C9C,border:-1";[m
+       NIXOS_OZONE_WL = "1"; # tell things to use wayland[m
+       NIXPKGS_ALLOW_UNFREE = "1";[m
+     };[m
+
+[33mcommit c75fb494edd78b26bc8086bffbcbd3fa6a9fe10a[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Wed Apr 23 19:44:50 2025 +1000
+
+    23/04 19:44:50
+
+[1mdiff --git a/homeManagerModules/nushell.nix b/homeManagerModules/nushell.nix[m
+[1mindex 3563c4b..62f0def 100644[m
+[1m--- a/homeManagerModules/nushell.nix[m
+[1m+++ b/homeManagerModules/nushell.nix[m
+[36m@@ -20,8 +20,11 @@[m
+       }[m
+ [m
+ [m
+[32m+[m[32m      let zoxide_completer = {|spans|[m
+[32m+[m[32m          $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}[m
+[32m+[m[32m      }[m
+[32m+[m
+       $env.config = {[m
+[31m-    [m
+           cursor_shape: {[m
+               emacs: line[m
+               vi_insert: line[m
+[36m@@ -34,6 +37,22 @@[m
+               mode: none[m
+               index_mode: never[m
+           }[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m          keybindings: [[m
+[32m+[m[32m              {[m
+[32m+[m[32m                  name: "fzf_history"[m
+[32m+[m[32m                  modifier: "control"[m
+[32m+[m[32m                  key: "s"[m
+[32m+[m[32m                  mode: "emacs"[m
+[32m+[m[32m                  event: {[m
+[32m+[m[32m                      send: {[m
+[32m+[m[32m                          command: "commandline edit (history | to text | lines | reverse | uniq | fzf)"[m
+[32m+[m[32m                      }[m
+[32m+[m[32m                  }[m
+[32m+[m[32m              }[m
+[32m+[m[32m          ][m
+       }[m
+     '';[m
+ [m
+[36m@@ -73,7 +92,7 @@[m
+ [m
+ [m
+       ga="git add .";[m
+[31m-      gl="git log --oneline | fzf";[m
+[32m+[m[32m      gl="git log --oneline | lines | fzf";[m
+       gd="git diff HEAD^";[m
+       gs="git status";[m
+       cr="cargo run";[m
+[36m@@ -94,6 +113,21 @@[m
+     };[m
+ [m
+ [m
+[32m+[m[32m    environmentVariables = {[m
+[32m+[m
+[32m+[m[32m      MANPAGER = "nvim +Man!"; # use nvim for man[m
+[32m+[m[32m      SUDO_TIMESTAMP_TIMEOUT = 0;[m
+[32m+[m[32m      EDITOR = "nvim";[m
+[32m+[m[32m      VISUAL = "nvim";[m
+[32m+[m[32m      BROWSER = "zen";[m
+[32m+[m[32m      FZF_DEFAULT_OPTS = "--color=fg:#cad3f5,hl:#8bd5ca,fg+:#cad3f5,bg+:#363a4f,hl+:#8bd5ca,info:#7f8c8d,prompt:#b7bdf8,spinner:#b7bdf8,pointer:#b7bdf8,gutter:-1,info:#939ab7,border:#494d64";[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    };[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+   };[m
+ [m
+ [m
+
+[33mcommit bcb60d9c4e08b00da0e4fc80012cf24bd7ce6437[m
+Author: rainmeower <rraaiin@proton.me>
+Date:   Tue Apr 8 16:35:39 2025 +1000
+
+    init
+
+[1mdiff --git a/homeManagerModules/hyprland.nix b/homeManagerModules/hyprland.nix[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0b43bf6[m
+[1m--- /dev/null[m
+[1m+++ b/homeManagerModules/hyprland.nix[m
+[36m@@ -0,0 +1,262 @@[m
+[32m+[m[32m{ config, pkgs, ... }: {[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  wayland.windowManager.hyprland.enable = true; # enable Hyprland[m
+[32m+[m[32m  # Optional, hint Electron apps to use Wayland:[m
+[32m+[m[32m  home.sessionVariables.NIXOS_OZONE_WL = "1";[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m#  home.pointerCursor = {[m
+[32m+[m[32m#    gtk.enable = true;[m
+[32m+[m[32m#    x11.enable = true;[m
+[32m+[m[32m#    package = pkgs.bibata-cursors;[m
+[32m+[m[32m#    name = "Bibata-Modern-Classic";[m
+[32m+[m[32m#    size = 20;[m
+[32m+[m[32m#  };[m
+[32m+[m
+[32m+[m[32m gtk = {[m
+[32m+[m[32m   enable = true;[m
+[32m+[m
+[32m+[m[32m  theme = {[m
+[32m+[m[32m     package = pkgs.catppuccin-gtk;[m
+[32m+[m[32m     name = "catppuccin-gtk";[m
+[32m+[m[32m   };[m
+[32m+[m
+[32m+[m[32m   # iconTheme = {[m
+[32m+[m[32m   #   package = pkgs.gnome.adwaita-icon-theme;[m
+[32m+[m[32m   #   name = "Adwaita";[m
+[32m+[m[32m   # };[m
+[32m+[m
+[32m+[m[32m   font = {[m
+[32m+[m[32m     name = "Sans";[m
+[32m+[m[32m     size = 11;[m
+[32m+[m[32m   };[m
+[32m+[m[32m };[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  wayland.windowManager.hyprland.settings = {[m
+[32m+[m[32m    "$scrPath" = "~/.local/share/bin";[m
+[32m+[m
+[32m+[m[32m    "$moveactivewindow" = "grep -q 'true' <<< $(hyprctl activewindow -j | jq -r .floating) && hyprctl dispatch moveactive";[m
+[32m+[m[32m    exec = [[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface font-name 'Cantarell 10'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 10'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface monospace-font-name 'Mononoki Nerd Font Mono 9'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface font-antialiasing 'rgba'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface font-hinting 'full'"[m
+[32m+[m[32m      "hyprctl setcursor Bibata-Modern-Classic-Transparent 20"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic-Transparent'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface cursor-size 20"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dracula'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-macchiato-lavender-standard+default'"[m
+[32m+[m[32m      "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    exec-once = [[m
+[32m+[m[32m      "udiskie -a"[m
+[32m+[m[32m      "dunst"[m
+[32m+[m[32m      "hyprpaper"[m
+[32m+[m[32m      "walker --gapplication-service"[m
+[32m+[m[32m      "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"[m
+[32m+[m[32m      "steam -silent"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    monitor = [[m
+[32m+[m[32m      "DP-1, 2560x1440@165, 0x0, 1"[m
+[32m+[m[32m      "DP-3, 2560x1440@75, -2880x486, 1, transform, 3"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    env = [[m
+[32m+[m[32m      "PATH,$PATH:$scrPath"[m
+[32m+[m[32m      "XDG_CURRENT_DESKTOP,Hyprland"[m
+[32m+[m[32m      "XDG_SESSION_TYPE,wayland"[m
+[32m+[m[32m      "XDG_SESSION_DESKTOP,Hyprland"[m
+[32m+[m[32m      "QT_QPA_PLATFORM,wayland;xcb"[m
+[32m+[m[32m      "QT_QPA_PLATFORMTHEME,qt6ct"[m
+[32m+[m[32m      "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"[m
+[32m+[m[32m      "QT_AUTO_SCREEN_SCALE_FACTOR,1"[m
+[32m+[m[32m      "MOZ_ENABLE_WAYLAND,1"[m
+[32m+[m[32m      "GDK_SCALE,1"[m
+[32m+[m[32m      "XCURSOR_SIZE,20"[m
+[32m+[m[32m      #"MANGOHUD,1"[m
+[32m+[m[32m      "QT_WAYLAND_DISABLE_WINDOWDECORATION=1"[m
+[32m+[m[32m      "QT_AUTO_SCREEN_SCALE_FACTOR=1"[m
+[32m+[m[32m      "QT_QPA_PLATFORM=wayland;xcb"[m
+[32m+[m[32m      "XDG_CURRENT_DESKTOP=Hyprland"[m
+[32m+[m[32m      "XDG_SESSION_TYPE=wayland"[m
+[32m+[m[32m      "XDG_SESSION_DESKTOP=Hyprland"[m
+[32m+[m[32m      "GDK_BACKEND=wayland,x11"[m
+[32m+[m[32m      "QT_QPA_PLATFORM=wayland,xcb"[m
+[32m+[m[32m      "SDL_VIDEODRIVER=wayland"[m
+[32m+[m[32m      "CLUTTER_BACKEND=wayland"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    input = {[m
+[32m+[m[32m      follow_mouse = "1";[m
+[32m+[m[32m      numlock_by_default = "true";[m
+[32m+[m[32m      #scroll_factor = "1.5";[m
+[32m+[m[32m      repeat_delay = "15000"; # delay before a held-down key is repeated, in milliseconds[m
+[32m+[m[32m      repeat_rate = "20";  # repeat rate for held-down keys, in repeats per seconds[m
+[32m+[m[32m      sensitivity = "0";[m
+[32m+[m[32m      force_no_accel = "1";[m
+[32m+[m[32m    };[m
+[32m+[m[32m    cursor = {[m
+[32m+[m[32m      hide_on_key_press = "true";[m
+[32m+[m[32m      inactive_timeout = "1";[m
+[32m+[m[32m    };[m
+[32m+[m[32m    xwayland = {[m
+[32m+[m[32m      force_zero_scaling = "true";[m
+[32m+[m[32m    };[m
+[32m+[m[32m    general = {[m
+[32m+[m[32m      allow_tearing = "true";[m
+[32m+[m[32m      resize_on_border = "false";[m
+[32m+[m[32m      gaps_in = "0";[m
+[32m+[m[32m      gaps_out = "0";[m
+[32m+[m[32m      border_size = "2";[m
+[32m+[m[32m      "col.active_border" = "rgba(b7bdf8ff)";[m
+[32m+[m[32m      "col.inactive_border" = "rgba(24273aff)";[m
+[32m+[m[32m      layout = "dwindle";[m
+[32m+[m[32m    };[m
+[32m+[m[32m    dwindle = {[m
+[32m+[m[32m      preserve_split = "true";[m
+[32m+[m[32m    };[m
+[32m+[m[32m    decoration = {[m
+[32m+[m[32m      dim_special = "0";[m
+[32m+[m[32m      rounding = "0";[m
+[32m+[m[32m      shadow = {[m
+[32m+[m[32m        enabled = "false";[m
+[32m+[m[32m      };[m
+[32m+[m[32m      blur = {[m
+[32m+[m[32m        enabled = "false";[m
+[32m+[m[32m        special = "true";[m
+[32m+[m[32m        size = "6";[m
+[32m+[m[32m        passes = "3";[m
+[32m+[m[32m        new_optimizations = "on";[m
+[32m+[m[32m        ignore_opacity = "on";[m
+[32m+[m[32m        xray = "false";[m
+[32m+[m[32m      };[m
+[32m+[m[32m    };[m
+[32m+[m
+[32m+[m[32m    animations.enabled = "false";[m
+[32m+[m[32m    bind = [[m
+[32m+[m[41m      [m
+[32m+[m[32m      "SUPER CTRL SHIFT,   Delete, exit"  # kill hyprland session[m
+[32m+[m[32m      "SUPER SHIFT,  Return, fullscreen"[m
+[32m+[m[32m      # "SUPER,       r, exec, $scrPath/dontkillsteam.sh"[m
+[32m+[m[32m      "SUPER,       r, exec, hyprctl dispatch killactive ''"[m
+[32m+[m[32m      "SUPER CTRL,  r, exec, hyprctl kill"[m
+[32m+[m[32m      "SUPER CTRL SHIFT, r, exec, hyprctl dispatch killactive ''"  # bypass dontkillsteam exceptions"[m
+[32m+[m[32m      "SUPER,       n, exec, $scrPath/swap.sh"[m
+[32m+[m[32m      "SUPER, k, togglesplit"[m
+[32m+[m[32m      # "SUPER,       p, togglefloating"[m
+[32m+[m[32m      # "SUPER SHIFT, p, exec, hyprctl dispatch centerwindow"[m
+[32m+[m[32m      "SUPER,       2, exec, foot --hold hyprprop"[m
+[32m+[m[32m      "SUPER SHIFT, 2, exec, foot --hold hyprctl clients"[m
+[32m+[m[32m      "SUPER CTRL,  2, exec, notify-send $(hyprctl cursorpos)"[m
+[32m+[m[32m      "SUPER,       4, exec, /home/rain/bin/hextoimg.sh"  # hyprpicker[m
+[32m+[m[32m      "SUPER,       3, exec, $scrPath/screenshot.sh s"  # screenshot capture[m
+[32m+[m[32m      "SUPER CTRL,  3, exec, $scrPath/screenshot.sh sf"  # screenshot capture (frozen screen)[m
+[32m+[m
+[32m+[m[32m      "SUPER,       t, exec, foot"[m
+[32m+[m[32m      "SUPER,       s, exec, foot fish -c yazi" # launch yazi from fish to get correct fzf theme[m
+[32m+[m
+[32m+[m[32m      "SUPER, f, exec, firefox"[m
+[32m+[m[32m      # "SUPER,       f, exec, zen-browser -p rain"[m
+[32m+[m[32m      # "SUPER SHIFT, f, exec, zen-browser -p rain2"[m
+[32m+[m[32m      "SUPER,       c, exec, foot nvim"[m
+[32m+[m[32m      "SUPER SHIFT, c, exec, foot nvim -c 'lua require('persistence').load()'"[m
+[32m+[m[32m      "SUPER CTRL,  c, exec, ~/bin/open-recent-dl.sh" # open most recently downloaded file with nvim[m
+[32m+[m[32m      "SUPER,  return, exec, walker -s 3 -m applications,calc"[m
+[32m+[m[32m      "SUPER,  apostrophe, exec, walker -s 3 -m catppuccin"[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      ", XF86AudioMute,        exec, $scrPath/volumecontrol.sh -o m"[m
+[32m+[m[32m      ", XF86AudioMicMute,     exec $scrPath/volumecontrol.sh -i m"[m
+[32m+[m[32m      ", XF86AudioPlay,        exec, $scrPath/playpause.sh"[m
+[32m+[m[32m      ", XF86AudioPause,       exec, $scrPath/playpause.sh"[m
+[32m+[m[32m      ", XF86AudioNext,        exec, playerctl next"[m
+[32m+[m[32m      ", XF86AudioPrev,        exec, playerctl previous"[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      "SUPER, V, exec, pkill -x rofi || $scrPath/cliphist.sh c" # launch clipboard[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      "SUPER, 0,      workspace,                 3"[m
+[32m+[m[32m      "SUPER, Tab,    workspace,                 4"[m
+[32m+[m[32m      "SUPER, b,      workspace,                 5"[m
+[32m+[m[32m      "SUPER, w,      workspace,                 6"[m
+[32m+[m[32m      "SUPER, comma,  togglespecialworkspace,    2"[m
+[32m+[m[32m      "SUPER, period, togglespecialworkspace"[m
+[32m+[m[32m      "SUPER, m,      togglespecialworkspace,    music"[m
+[32m+[m[32m      "SUPER, l,      workspace,                 8"[m
+[32m+[m[32m      "SUPER, d,      workspace,                 9"[m
+[32m+[m[32m      "SUPER SHIFT, minus, workspace,            10"[m
+[32m+[m
+[32m+[m[32m      "SUPER SHIFT, n,          movetoworkspacesilent,   1"[m
+[32m+[m[32m      "SUPER SHIFT, Tab,        movetoworkspacesilent,   4"[m
+[32m+[m[32m      "SUPER SHIFT, b,          movetoworkspacesilent,   5"[m
+[32m+[m[32m      "SUPER SHIFT, w,          movetoworkspacesilent,   6"[m
+[32m+[m[32m      "SUPER SHIFT, comma,      movetoworkspacesilent,   special:2"[m
+[32m+[m[32m      "SUPER SHIFT, period,     movetoworkspacesilent,   special"[m
+[32m+[m[32m      "SUPER SHIFT, m,          movetoworkspacesilent,   special:music"[m
+[32m+[m[32m      "SUPER SHIFT, l,          movetoworkspacesilent,   8"[m
+[32m+[m[32m      "SUPER SHIFT, d,          movetoworkspacesilent,   9"[m
+[32m+[m[32m      "SUPER SHIFT, z,          movetoworkspacesilent,   10"[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      "SUPER, h, movefocus, l"[m
+[32m+[m[32m      "SUPER, a, movefocus, d"[m
+[32m+[m[32m      "SUPER, e, movefocus, u"[m
+[32m+[m[32m      "SUPER, i, movefocus, r"[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    bindm = [[m
+[32m+[m[32m      "SUPER, mouse:272, movewindow"[m
+[32m+[m[32m      "SUPER, mouse:273, resizewindow"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    binde = [[m
+[32m+[m[32m      ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"[m
+[32m+[m[32m      ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"[m
+[32m+[m
+[32m+[m[32m      "SUPER CTRL, h, resizeactive, -50 0"     # left[m
+[32m+[m[32m      "SUPER CTRL, a, resizeactive, 0 50"      # down[m
+[32m+[m[32m      "SUPER CTRL, e, resizeactive, 0 -50"     # up[m
+[32m+[m[32m      "SUPER CTRL, i, resizeactive, 50 0"      # right[m
+[32m+[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    bindel = [[m
+[32m+[m[32m      ", XF86AudioNext, exec, ddcutil setvcp 10 + 5"[m
+[32m+[m[32m      ", XF86AudioPrev, exec, ddcutil setvcp 10 - 5"[m
+[32m+[m
+[32m+[m[32m      # ", XF86AudioLowerVolume, exec, $scrPath/volumecontrol.sh -o d"[m
+[32m+[m[32m      # ", XF86AudioRaiseVolume, exec, $scrPath/volumecontrol.sh -o i"[m
+[32m+[m[32m    ];[m
+[32m+[m[32m    binded = [[m
+[32m+[m
+[32m+[m[32m      "SUPER SHIFT, h,Move activewindow to the right,exec, $moveactivewindow -30 0 || hyprctl dispatch movewindow l"[m
+[32m+[m[32m      "SUPER SHIFT, a,Move activewindow to the right,exec, $moveactivewindow 0 30 || hyprctl dispatch movewindow d"[m
+[32m+[m[32m      "SUPER SHIFT, e,Move activewindow to the right,exec, $moveactivewindow  0 -30 || hyprctl dispatch movewindow u"[m
+[32m+[m[32m      "SUPER SHIFT, i,Move activewindow to the right,exec, $moveactivewindow 30 0 || hyprctl dispatch movewindow r"[m
+[32m+[m[32m      ];[m
+[32m+[m
+[32m+[m[32m  };[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m}[m

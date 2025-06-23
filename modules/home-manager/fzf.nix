@@ -1,10 +1,10 @@
-{ lib, ... }: {
+{
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
 
       # TODO move this to themes/*
-    colors = lib.mkForce {
+    colors = {
       fg = "#A4A0E8";
       hl = "#DBBFEF";
       "fg+" = "#A4A0E8";
@@ -17,6 +17,7 @@
       gutter = "-1";
       border = "-1";
     };
+    defaultCommand = "";
     defaultOptions = [
       "--margin=1"
       # "--layout=reverse"
