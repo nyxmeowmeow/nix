@@ -32,7 +32,7 @@
         ./zoxide.nix
         ./home.nix
         inputs.nixvim.homeModules.nixvim
-        # ./bash.nix
+        ./bash.nix
         # ./hyprland.nix
       ];
     };
