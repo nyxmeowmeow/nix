@@ -12,11 +12,23 @@
       "hl+" = "#DBBFEF";
       info = "#886C9C";
       prompt = "#DBBFEF";
-      spinner = "#3B224C";
-      pointer = "#3B224C";
-      gutter = "#3B224C";
-      border = "#3B224C";
+      spinner = "-1";
+      pointer = "-1";
+      gutter = "-1";
+      border = "-1";
     };
+    defaultOptions = [
+      "--margin=1"
+      # "--layout=reverse"
+      "--border=none"
+      "--info='hidden'"
+      "--header=''"
+      "--prompt='󰘧 '"
+      "-i"
+      "--no-bold"
+      # "--bind='enter:execute(nvim {})'"
+      # "--preview='bat --style=numbers --color=always --line-range :500 {}'"
+    ];
   };
 }
 
