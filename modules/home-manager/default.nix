@@ -13,6 +13,7 @@
         ../../themes/macchiato/default.nix
         ../../themes/ocean/default.nix
         ./btop.nix
+        ./obs.nix
         ./clipse.nix
         ./dunst.nix
         ./emacs/emacs.nix

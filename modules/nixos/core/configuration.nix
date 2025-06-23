@@ -28,7 +28,6 @@
 
 
   programs.firefox.enable = true;
-  programs.obs-studio.enable = true;
 
   programs.appimage = {
     enable = true;
