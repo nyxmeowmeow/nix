@@ -1,10 +1,10 @@
-{
+{ lib, ... }: {
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
 
       # TODO move this to themes/*
-    colors = {
+    colors = lib.mkForce {
       fg = "#A4A0E8";
       hl = "#DBBFEF";
       "fg+" = "#A4A0E8";
@@ -19,3 +19,4 @@
     };
   };
 }
+
