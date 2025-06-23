@@ -10,6 +10,7 @@
     ./startup.nix
     ./window_rules.nix
     ./input.nix
+    ./layer_rules.nix
   ];
 
   home.packages = with pkgs; [
