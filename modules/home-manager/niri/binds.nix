@@ -9,8 +9,8 @@
     "Mod+L".action = sh "~/misc/wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
 
     "Mod+T".action = spawn "footclient";
-    "Mod+C".action = sh "footclient yazi";
-    "Mod+S".action = sh "footclient nvim";
+    "Mod+C".action = spawn "footclient" "yazi";
+    "Mod+S".action = spawn "footclient" "nvim";
 
 
     "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
