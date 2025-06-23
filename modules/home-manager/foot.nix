@@ -7,7 +7,7 @@
         font = "Mononoki Nerd Font Mono:size=26";
         dpi-aware = false;
         shell = "nu";
-        pad = "6x6";
+        pad = "10x6";
 
 
         box-drawings-uses-font-glyphs = false;
