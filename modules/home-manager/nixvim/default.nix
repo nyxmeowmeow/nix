@@ -9,6 +9,7 @@
     ./themes/everforest/hard/hard.nix
     ./themes/everforest/hard/lualine.nix
     ./themes/black.nix
+    ./themes/lix.nix
     ./themes/macchiato.nix
 
     # ./utils/picker.nix
