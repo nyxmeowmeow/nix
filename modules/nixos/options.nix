@@ -1,6 +1,6 @@
 { lib, ... }: {
 
-  config.theme = "black";
+  config.theme = "lix";
   # config.wm = "niri";
   # TODO font
 
