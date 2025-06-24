@@ -4,8 +4,6 @@
   # config.wm = "niri";
   # TODO font
 
-
-
   options.theme = lib.mkOption {
     type = lib.types.enum [
       "black"
