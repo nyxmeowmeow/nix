@@ -259,7 +259,7 @@ bspc @rpeat
 
   (l o    ) S-' 15 all-released (typing over sup)
   (  o u  ) + 15 all-released (typing over sup)
-  (    u j) S-. 15 all-released (typing over sup)
+  (    u j) S-4 15 all-released (typing over sup)
 
   (n s    ) S-, 15 all-released (typing over sup)
   (  s t  ) S-[ 15 all-released (typing over sup)
@@ -278,7 +278,7 @@ bspc @rpeat
   (f15 f16      ) S-3 15 all-released (typing over sup)
   (f15     f17  ) S-5 15 all-released (typing over sup)
   (    f16 f17  ) S-/ 15 all-released (typing over sup)
-  (        f17 ;) S-7 15 all-released (typing over sup)
+  (        f17 ;) S-2 15 all-released (typing over sup)
 )
 
 
