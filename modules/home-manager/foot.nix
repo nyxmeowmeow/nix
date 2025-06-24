@@ -1,10 +1,10 @@
-{
+{ config, ... }: {
   programs.foot = {
     enable = true;
     settings = {
       main = {
         term = "foot";
-        font = "Mononoki Nerd Font Mono:size=26";
+        font = "${config.stylix.fonts.monospace.name}:size=26";
         dpi-aware = false;
         shell = "nu";
         pad = "12x6";

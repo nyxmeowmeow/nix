@@ -10,6 +10,7 @@
     ./core/security.nix
     ./core/services.nix
     ./font.nix
+    ./font2.nix
     ./kanata.nix
     ./languages.nix
     ./misc.nix
