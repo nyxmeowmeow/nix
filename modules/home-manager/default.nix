@@ -7,11 +7,12 @@
 
     users.meow = {
       imports = [
-        ../../themes/black/default.nix
-        ../../themes/everforest/default.nix
-        ../../themes/lix/default.nix
-        ../../themes/macchiato/default.nix
-        ../../themes/ocean/default.nix
+        ../../themes/black/home-manager/default.nix
+        ../../themes/everforest/home-manager/default.nix
+        ../../themes/lix/home-manager/default.nix
+        ../../themes/macchiato/home-manager/default.nix
+        ../../themes/ocean/home-manager/default.nix
+
         ./btop.nix
         ./obs.nix
         ./clipse.nix
