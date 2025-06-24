@@ -9,6 +9,7 @@
     ./core/packages.nix
     ./core/security.nix
     ./core/services.nix
+    ./font.nix
     ./kanata.nix
     ./languages.nix
     ./misc.nix

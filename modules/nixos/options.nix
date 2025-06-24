@@ -2,7 +2,7 @@
 
   config.theme = "lix";
   # config.wm = "niri";
-  # TODO font
+  config.font = "iosevka";
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
@@ -25,5 +25,11 @@
   #   default = "niri";
   # };
 
-}
+  options.font = lib.mkOption {
+    type = lib.types.enum [
+      "mononoki"
+      "iosevka"
+    ];
+  };
 
+}
