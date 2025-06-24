@@ -1,9 +1,9 @@
 {
   imports = [
-    ../macchiato/btop_macchiato.nix
-    ../macchiato/fastfetch_macchiato.nix
-    ../macchiato/ncmpcpp_macchiato.nix
-    ../macchiato/starship_macchiato.nix
+    ../../macchiato/home-manager/btop_macchiato.nix
+    ../../macchiato/home-manager/fastfetch_macchiato.nix
+    ../../macchiato/home-manager/ncmpcpp_macchiato.nix
+    ../../macchiato/home-manager/starship_macchiato.nix
     ./foot_black.nix
     ./gtk_black.nix
     ./hyprland_black.nix
