@@ -16,3 +16,4 @@
     base0E = "#E3C0A8"; # yellow
     base0F = "#A5E07F"; # green
 }
+# modified version of https://github.com/foxoman/vim-helix

@@ -55,7 +55,8 @@
       }
 
 
-      def ng [...msg: string] {
+      # nix flake git commit
+      def ngc [...msg: string] {
         cd ~/nix
         git add .
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
@@ -65,6 +66,19 @@
           $"($timestamp) ($msg | str join ' ')"
         }
         git commit -m $full_msg
+      }
+
+      # nix flake git commit amend
+      def nga [...msg: string] {
+        cd ~/nix
+        git add .
+        let timestamp = (date now | format date '%d/%m %H:%M:%S')
+        let full_msg = if ($msg | is-empty) {
+          $timestamp
+        } else {
+          $"($timestamp) ($msg | str join ' ')"
+        }
+        git commit --amend -m $full_msg
       }
 
       def gcm [...msg: string] {
@@ -144,6 +158,8 @@
       gcl = "git clone";
       gd = "git diff HEAD^";
       gs = "git status";
+      gps = "git push";
+      gpl = "git pull";
 
       cr = "cargo run";
 
