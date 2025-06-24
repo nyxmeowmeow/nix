@@ -254,24 +254,25 @@ bspc @rpeat
 (defchordsv2
 
   (b f    ) S-7 15 all-released (typing over sup)
-  (  f d  ) = 15 all-released (typing over sup)
+  (  f d  ) =   15 all-released (typing over sup)
+  (  f   w) `   15 all-released (typing over sup)
   (    d w) S-8 15 all-released (typing over sup)
 
   (l o    ) S-' 15 all-released (typing over sup)
-  (  o u  ) + 15 all-released (typing over sup)
+  (  o u  ) +   15 all-released (typing over sup)
   (    u j) S-4 15 all-released (typing over sup)
 
   (n s    ) S-, 15 all-released (typing over sup)
   (  s t  ) S-[ 15 all-released (typing over sup)
   (  s   c) S-` 15 all-released (typing over sup)
-  (    t c) [ 15 all-released (typing over sup)
+  (    t c) [   15 all-released (typing over sup)
 
-  (h a    ) ] 15 all-released (typing over sup)
+  (h a    ) ]   15 all-released (typing over sup)
   (h   e  ) del 15 all-released (typing over sup)
   (  a e  ) S-] 15 all-released (typing over sup)
   (    e i) S-. 15 all-released (typing over sup)
 
-  (, .    ) \ 15 all-released (typing over sup)
+  (, .    ) \   15 all-released (typing over sup)
   (  . k  ) S-\ 15 all-released (typing over sup)
   (    k g) S-1 15 all-released (typing over sup)
 
