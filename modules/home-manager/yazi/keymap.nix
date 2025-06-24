@@ -434,39 +434,15 @@
       }
 
       {
-        on = [ "<Space>" "r" ];
-        run = "cd /";
-        desc = "root";
-      }
-
-      {
-        on = [ "<Space>" "h" ];
-        run = "cd ~";
-        desc = "home";
-      }
-
-      {
-        on = [ "<Space>" "n" ];
-        run = "cd ~/nix";
-        desc = "nix";
-      }
-
-      {
-        on = [ "<Space>" "f" ];
-        run = "cd ~/.config";
-        desc = "~/.config";
-      }
-
-      {
-        on = [ "<Space>" "l" ];
-        run = "cd ~/.local";
-        desc = "~/.local";
-      }
-
-      {
         on = [ "<Space>" "a" ];
         run = "cd ~/art";
         desc = "art";
+      }
+
+      {
+        on = [ "<Space>" "c" ];
+        run = "cd ~/.config";
+        desc = ".config";
       }
 
       {
@@ -488,9 +464,33 @@
       }
 
       {
-        on = [ "<Space>" "m" "u" ];
-        run = "cd ~/Music";
-        desc = "music";
+        on = [ "<Space>" "f" ];
+        run = "cd ~/.config";
+        desc = "~/.config";
+      }
+
+      {
+        on = [ "<Space>" "g" ];
+        run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
+        desc = "GD songs";
+      }
+
+      {
+        on = [ "<Space>" "h" ];
+        run = "cd ~";
+        desc = "home";
+      }
+
+      {
+        on = [ "<Space>" "l" ];
+        run = "cd ~/.local";
+        desc = "~/.local";
+      }
+
+      {
+        on = [ "<Space>" "m" "e" ];
+        run = "cd ~/melee";
+        desc = "melee";
       }
 
       {
@@ -500,33 +500,15 @@
       }
 
       {
-        on = [ "<Space>" "i" ];
-        run = "cd ~/Pictures";
-        desc = "pictures";
+        on = [ "<Space>" "m" "u" ];
+        run = "cd ~/Music";
+        desc = "music";
       }
 
       {
-        on = [ "<Space>" "t" ];
-        run = "cd ~/.local/share/Trash/files";
-        desc = "trash";
-      }
-
-      {
-        on = [ "<Space>" "p" "r" ];
-        run = "cd ~/projects";
-        desc = "projects";
-      }
-
-      {
-        on = [ "<Space>" "p" "i" ];
-        run = "cd ~/Pictures";
-        desc = "pictures";
-      }
-
-      {
-        on = [ "<Space>" "v" ];
-        run = "cd ~/Videos";
-        desc = "videos";
+        on = [ "<Space>" "n" ];
+        run = "cd ~/nix";
+        desc = "nix";
       }
 
       {
@@ -542,6 +524,24 @@
       }
 
       {
+        on = [ "<Space>" "p" "i" ];
+        run = "cd ~/Pictures";
+        desc = "pictures";
+      }
+
+      {
+        on = [ "<Space>" "p" "r" ];
+        run = "cd ~/projects";
+        desc = "projects";
+      }
+
+      {
+        on = [ "<Space>" "r" ];
+        run = "cd /";
+        desc = "root";
+      }
+
+      {
         on = [ "<Space>" "s" "t" ];
         run = "cd ~/.local/share/Steam/steamapps/common";
         desc = "steamapps";
@@ -554,9 +554,15 @@
       }
 
       {
-        on = [ "<Space>" "g" ];
-        run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
-        desc = "GD songs";
+        on = [ "<Space>" "t" ];
+        run = "cd ~/.local/share/Trash/files";
+        desc = "trash";
+      }
+
+      {
+        on = [ "<Space>" "v" ];
+        run = "cd ~/Videos";
+        desc = "videos";
       }
 
       {
