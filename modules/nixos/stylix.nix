@@ -18,10 +18,6 @@
   };
 
   stylix.fonts = {
-    monospace = {
-      package = pkgs.nerd-fonts.mononoki;
-      name = "Mononoki Nerd Font Mono";
-    };
     sansSerif = {
       package = pkgs.sn-pro;
       name = "sn pro";
