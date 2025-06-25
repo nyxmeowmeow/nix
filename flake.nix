@@ -30,6 +30,7 @@
         ./modules/nixos/default.nix
         ./modules/home-manager/default.nix
         ./modules/nixos/options.nix
+        ./overlays/default.nix
 
 {
   nixpkgs.overlays = [
@@ -48,6 +49,11 @@
         inputs.stylix.nixosModules.stylix
 
         home-manager.nixosModules.home-manager
+        ({ pkgs, ... }: {
+          nixpkgs.overlays = [
+            (import ./overlays/default.nix)
+          ];
+        })
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

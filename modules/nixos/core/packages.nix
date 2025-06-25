@@ -3,14 +3,9 @@
   environment.systemPackages = with pkgs; [
     quickshell
 
-
     # bash-completion
     # nix-bash-completions
     expect
-
-
-    # wev
-    # lutris
 
     # gimp
     krita
@@ -24,15 +19,12 @@
     # davinci-resolve
     vulkan-tools
     trash-cli
+    unzip
     btop
     # zenity
     # xdg-desktop-portal-termfilechooser
     xdg-utils
     nushell
-
-
-
-    unzip
 
     termdown
     tty-clock
@@ -62,8 +54,6 @@
     git
     dbus
     vesktop
-    foot
-    hyprpaper
     polkit_gnome
     # grimblast
     # slurp
