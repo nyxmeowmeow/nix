@@ -56,7 +56,6 @@ ralt tab
 
 
 (deflayermap over
-esc (layer-switch base)
 
 
 f18 tab
