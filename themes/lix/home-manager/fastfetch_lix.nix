@@ -33,6 +33,7 @@
         {
           type = "kernel";
           key = "  kernel";
+          format = "= \"{0}\",";
           keyColor = "magenta";
         }
         {
