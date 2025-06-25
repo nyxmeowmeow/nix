@@ -14,7 +14,7 @@
     # lutris
     # gimp
     krita
-    # osu-lazer
+    osu-lazer
 
     tt # typing
     vitetris
