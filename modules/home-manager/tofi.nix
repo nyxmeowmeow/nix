@@ -8,8 +8,8 @@
       height = "50%";
       num-results = 5;
       outline-width = 0;
-      padding-left = "35%";
-      padding-top = "35%";
+      # padding-left = "35%";
+      # padding-top = "35%";
       result-spacing = 25;
       width = "20%";
     };
