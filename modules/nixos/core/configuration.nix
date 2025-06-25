@@ -29,15 +29,16 @@
   programs.firefox.enable = true;
 
   programs.appimage = {
-    enable = true;
-    binfmt = true;
-
-    # This is needed for Slippi to run.
-    package = pkgs.appimage-run.override {
-      extraPkgs = pkgs: [
-        pkgs.curl
-        pkgs.libmpg123
-      ];
-    };
+    enable = false;
+    # binfmt = true;
+    #
+    # # This is needed for Slippi to run.
+    # package = pkgs.appimage-run.override {
+    #   extraPkgs = pkgs: [
+    #     pkgs.curl
+    #     pkgs.libmpg123
+    #   ];
+    # };
   };
+
 }
