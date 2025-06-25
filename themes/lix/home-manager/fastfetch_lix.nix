@@ -20,23 +20,23 @@
         modules = [
         {
           type = "command";
-          key = "let";
+          key = "let meow";
           keyColor = "magenta";
-          text = "echo 'meow = {'";
+          text = "echo '= {'";
         }
         {
           type = "os";
-          key = "  os";
+          key = "  distro";
           keyColor = "magenta";
         }
         {
           type = "kernel";
-          key = "  kn";
+          key = "  kernel";
           keyColor = "magenta";
         }
         {
           type = "packages";
-          key = "pk";
+          key = "pkgs";
           keyColor = "magenta";
         }
 # {
@@ -63,7 +63,7 @@
 # }
         {
           type = "command";
-          key = "tm";
+          key = "  term";
           keyColor = "magenta";
           text = "echo foot";
         }
@@ -74,30 +74,30 @@
 # }
         {
           type = "command";
-          key = "sh";
+          key = "  shell";
           keyColor = "magenta";
-          text = "echo nushell";
+          text = "echo '= \"nushell\"'";
         }
         "break"
 
         {
           type = "cpu";
-          format = "meow {1}";
-          key = "cpu";
+          format = "= \"{1}\"";
+          key = "  cpu";
           keyColor = "magenta";
         }
         {
           type = "gpu";
-          format = "{2}";
-          key = "gpu";
+          format = "= \"{2}\"";
+          key = "  gpu";
           keyColor = "magenta";
         }
-        {
-          type = "gpu";
-          format = "{3}";
-          key = "drv";
-          keyColor = "magenta";
-        }
+        # {
+        #   type = "gpu";
+        #   format = "{3}";
+        #   key = "drv";
+        #   keyColor = "magenta";
+        # }
         {
           type = "memory";
           key = "mem";
