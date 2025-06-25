@@ -31,13 +31,31 @@ in {
           bg = col.red;
         };
 
+        # visual select
         marker_marked = {
           fg = col.violet;
           bg = col.violet;
         };
 
+        # one at a time
         marker_selected = {
           fg = col.blue;
+          bg = col.blue;
+        };
+
+
+        count_copied = {
+          fg = col.bg;
+          bg = col.green;
+        };
+
+        count_cut = {
+          fg = col.bg;
+          bg = col.red;
+        };
+
+        count_selected = {
+          fg = col.bg;
           bg = col.blue;
         };
 

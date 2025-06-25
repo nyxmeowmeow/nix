@@ -40,7 +40,7 @@ in {
           RenderMarkdownCodeInline.bg = col.base00;
 #TermCursor.bg = col.text
           Character.fg = col.base01;
-          String.fg = "#A5E07F";
+          String.fg = col.mint;
           Constant.fg = "#C78DFC";
 #FunctionBuiltIn.fg = col.green
 #Number.fg = col.peach
@@ -81,7 +81,7 @@ in {
           "@parameter".fg = col.base0A;
           "@property".fg = "#D5E7FF";
 #"@lsp.type.property".fg = "";
-          "@lsp.type.string".fg = "#A5E07F";
+          "@lsp.type.string".fg = col.mint;
           "@lsp.type.struct".fg = "#D5E7FF";
           "@lsp.type.type".fg = "#D5E7FF";
 #"@lsp.type.typeParameter".fg = "";
