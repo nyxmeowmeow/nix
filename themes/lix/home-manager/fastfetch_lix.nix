@@ -113,12 +113,12 @@
         {
           type = "uptime";
           key = "  uptime";
-          format = "= \"{0}\",";
+          format = "= \"{1}\",";
           keyColor = "magenta";
         }
         {
           type = "command";
-          key = "theme";
+          key = "  theme";
           keyColor = "magenta";
           # text = "echo ${config.theme}";
           text = "echo '= \"lix\"'";
@@ -128,6 +128,11 @@
         #   paddingLeft = 0;
         #   symbol = "circle";
         # }
+        {
+          type = "command";
+          key = "";
+          text = "echo '};'";
+        }
         ];
       };
     };
