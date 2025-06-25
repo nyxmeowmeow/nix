@@ -46,7 +46,7 @@ in {
 
         count_copied = {
           fg = col.bg;
-          bg = col.green;
+          bg = col.mint;
         };
 
         count_cut = {
@@ -59,6 +59,27 @@ in {
           bg = col.blue;
         };
 
+# TODO
+# Highlighting
+# syntect_theme = ""
+      };
+      status = {
+
+        progress_label.bold = true;
+        progress_normal = {
+          fg = col.pink;
+          bg = col.bg;
+        };
+        progress_error = {
+          fg = col.red;
+          bg = col.bg;
+        };
+
+        perm_sep.fg = col.bg_fade;
+        perm_typef.fg = col.mint;
+        perm_readf.fg = col.gold;
+        perm_writef.fg = col.bubblegum;
+        perm_execf.fg = col.mint;
       };
     };
   };
