@@ -39,7 +39,7 @@
         {
           type = "packages";
           key = "  pkgs";
-          format = "= \"{0}\",";
+          format = "= \"{1}\",";
           keyColor = "magenta";
         }
 # {
@@ -68,7 +68,7 @@
           type = "command";
           key = "  term";
           keyColor = "magenta";
-          text = "echo foot";
+          text = "echo '= \"foot\",'";
         }
 # {
 #   type = "shell";
