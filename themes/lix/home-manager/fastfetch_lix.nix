@@ -8,13 +8,13 @@
         logo = {
           source = "nixos_small";
           padding = {
-            left = 1;
+            left = 0;
             right = 2;
           };
         };
 
         display = {
-          separator = "  ";
+          separator = " ";
         };
 
         modules = [
@@ -79,9 +79,10 @@
           text = "echo nushell";
         }
         "break"
+
         {
           type = "cpu";
-          format = "{1}";
+          format = "meow {1}";
           key = "cpu";
           keyColor = "magenta";
         }
