@@ -1,22 +1,33 @@
-self: super: {
-  clipse = super.buildGoModule rec {
-    pname = "clipse";
-    version = "1.1.0";
+{ pkgs, lib, ... }:
 
-    src = super.fetchFromGitHub {
-      owner = "savedra1";
-      repo = "clipse";
-      rev = "ebb2810812aad967e86d269cf14d413eb5f2dc9e";
-      hash = "sha256-..."; # updated hash
-    };
+{
+  nixpkgs.overlays = [
+    (final: prev: {
+      # Define the 'clipse' package using buildGoModule
+      clipse = prev.buildGoModule { # <--- Use prev.buildGoModule here
+        pname = "clipse";
+        version = "1.1.0";
 
-    vendorHash = "sha256-...";
+        src = prev.fetchFromGitHub {
+          owner = "savedra1";
+          repo = "clipse";
+          rev = "ebb2810812aad967e86d269cf14d413eb5f2dc9e";
+          hash = "sha256-6UqdhWvitfHSDmiBa98Sn4PDvbH9shugjc0o4pyU52w=";
+        };
 
-    meta = {
-      description = "Useful clipboard manager TUI for Unix";
-      homepage = "https://github.com/savedra1/clipse";
-      license = super.lib.licenses.mit;
-      mainProgram = "clipse";
-    };
-  };
+        vendorHash = "sha256-ANMeYiN+66F8EF7dB8+zuQyuT3moSuNxX8+vQ9GH2w4=";
+
+        meta = {
+          description = "Configurable TUI clipboard manager for Unix ";
+          homepage = "https://github.com/savedra1/clipse";
+          license = lib.licenses.mit;
+          maintainers = [ lib.maintainers.savedra1 ];
+        };
+      };
+    })
+  ];
+
+  environment.systemPackages = with pkgs; [
+    clipse
+  ];
 }
