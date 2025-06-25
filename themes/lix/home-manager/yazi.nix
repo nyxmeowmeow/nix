@@ -239,19 +239,19 @@ in {
 
         conds = [
 # Special files
-#           { if = "orphan"; text = ""; }
-#           { if = "link"; text = ""; }
-#           { if = "block"; text = ""; }
-#           { if = "char"; text = ""; }
-#           { if = "fifo"; text = ""; }
-#           { if = "sock"; text = ""; }
-#           { if = "sticky"; text = ""; }
-#           { if = "dummy"; text = ""; }
-#
-# # Fallback
-#           { if = "dir"; text = ""; }
-#           { if = "exec"; text = ""; }
-#           { if = "!dir"; text = ""; }
+          { "orphan" = ""; }
+          { "link" = ""; }
+          { "block" = ""; }
+          { "char" = ""; }
+          { "fifo" = ""; }
+          { "sock" = ""; }
+          { "sticky" = ""; }
+          { "dummy" = ""; }
+
+# Fallback
+          { "dir" = ""; }
+          { "exec" = ""; }
+          { "!dir" = ""; }
         ];
       };
     };
