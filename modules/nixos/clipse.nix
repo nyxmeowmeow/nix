@@ -1,12 +1,9 @@
-{ pkgs, lib, ... }:
-
-{
+{ pkgs, lib, ... }: {
   nixpkgs.overlays = [
     (final: prev: {
-      # Define the 'clipse' package using buildGoModule
-      clipse = prev.buildGoModule { # <--- Use prev.buildGoModule here
+      clipse = prev.buildGoModule {
         pname = "clipse";
-        version = "1.1.0";
+        version = "9.9.9";
 
         src = prev.fetchFromGitHub {
           owner = "savedra1";
