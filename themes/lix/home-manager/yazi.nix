@@ -163,6 +163,25 @@ in {
           { name = "Videos"; text = ""; }
         ];
 
+        files = [
+          { name = ".bash_profile"; text = ""; fg = col.fg; }
+          { name = ".bashrc"; text = ""; fg = col.fg; }
+          { name = ".gtkrc-2.0"; text = ""; fg = col.fg; }
+          { name = ".Xresources"; text = ""; fg = col.fg; }
+          { name = "license"; text = ""; fg = col.gold; }
+          # { name = "LICENSE"; text = ""; fg = col.gold; }
+          { name = "license.md"; text = ""; fg = col.gold; }
+          # { name = "LICENSE.md"; text = ""; fg = col.gold; }
+          { name = "readme"; text = "󰂺"; fg = col.fg; }
+          { name = "readme.md"; text = "󰂺"; fg = col.fg; }
+          # { name = "README"; text = "󰂺"; fg = col.fg; }
+          # { name = "README.md"; text = "󰂺"; fg = col.fg; }
+          { name = ".git-blame-ignore-revs"; text = ""; fg = col.bubblegum; } #TODO orange
+          { name = ".gitattributes"; text = ""; fg = col.bubblegum; } #TODO orange
+          { name = ".gitignore"; text = ""; fg = col.bubblegum; } #TODO orange
+          { name = ".gitmodules"; text = ""; fg = col.bubblegum; } #TODO orange
+        ];
+
         exts = [
           { name = "nix"; text = "󱄅"; fg = col.blue; }
           { name = "css"; text = ""; fg = col.blue; }
@@ -181,10 +200,6 @@ in {
           { name = "zig"; text = ""; fg = col.peach; }
           { name = "hs"; text = ""; fg = col.violet; }
           { name = "git"; text = ""; fg = col.peach; } #TODO orange
-          { name = ".git-blame-ignore-revs"; text = ""; fg = col.bubblegum; } #TODO orange
-          { name = ".gitattributes"; text = ""; fg = col.bubblegum; } #TODO orange
-          { name = ".gitignore"; text = ""; fg = col.bubblegum; } #TODO orange
-          { name = ".gitmodules"; text = ""; fg = col.bubblegum; } #TODO orange
           { name = "lock"; text = ""; fg = col.fg; }
           { name = "txt"; text = ""; fg = col.fg; }
           { name = "png"; text = ""; fg = col.gold; }
@@ -217,8 +232,6 @@ in {
           { name = "kra~"; text = ""; fg = col.fg; }
           { name = "xml"; text = "󰗀"; fg = col.fg; }
           { name = "md"; text = ""; fg = col.fg; }
-          { name = "license"; text = ""; fg = col.gold; }
-          { name = "license.md"; text = ""; fg = col.gold; }
           { name = "org"; text = ""; fg = col.mint; }
           { name = "gz"; text = "󰗄"; fg = col.gold; }
           { name = "xz"; text = "󰗄"; fg = col.gold; }
