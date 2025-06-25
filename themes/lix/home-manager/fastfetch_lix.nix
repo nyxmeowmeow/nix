@@ -27,7 +27,7 @@
         {
           type = "os";
           key = "  distro";
-          format = "= \"{1}\",";
+          format = "= \"{0}\",";
           keyColor = "magenta";
         }
         {
