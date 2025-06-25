@@ -442,6 +442,7 @@ bspc @rpeat
 
   ;; // normal rpt except for syms
   rpeat (switch
+  ;; TODO tr -> ue
     ((key-history , 1)) (macro S-,) break
     ((key-history \ 1)) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break

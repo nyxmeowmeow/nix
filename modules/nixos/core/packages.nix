@@ -9,13 +9,13 @@
     expect
 
 
-    # socat
     # wev
     # lutris
+
     # gimp
     krita
-    osu-lazer
 
+    osu-lazer
     tt # typing
     vitetris
     cl-wordle
@@ -24,13 +24,11 @@
     # davinci-resolve
     vulkan-tools
     trash-cli
-    tldr
     btop
     # zenity
     # xdg-desktop-portal-termfilechooser
     xdg-utils
     nushell
-    godot
 
 
 
@@ -39,12 +37,12 @@
     termdown
     tty-clock
 
-    qview
+    # qview
     mpc
     # nix-inspect
     mpv
     obs-studio
-    fuse
+    # fuse
     libevdev
     libqalculate
     gh
@@ -56,7 +54,6 @@
     eza
     fzf
     zoxide
-    waybar
     walker
     udiskie
     udisks2
@@ -64,20 +61,16 @@
     wget
     git
     dbus
-    # firefox
     vesktop
     foot
     hyprpaper
     polkit_gnome
-    grimblast
-    slurp
-    # catppuccin-kvantum
-    # catppuccin-gtk
+    # grimblast
+    # slurp
     dunst
     libnotify
     playerctl
     yazi
-    #neovim
     stylua
     fastfetch
     kanata
