@@ -26,12 +26,12 @@
         }
         {
           type = "os";
-          key = "os";
+          key = "  os";
           keyColor = "magenta";
         }
         {
           type = "kernel";
-          key = "kn";
+          key = "  kn";
           keyColor = "magenta";
         }
         {
@@ -51,7 +51,7 @@
 # }
         {
           type = "command";
-          key = "wm";
+          key = "  wm";
           keyColor = "magenta";
           # text = "echo ${config.wm}";
           text = "echo a";
