@@ -83,13 +83,13 @@
         }
         {
           type = "cpu";
-          format = "= \"{1}\"";
+          format = "= \"{1}\",";
           key = "  cpu";
           keyColor = "magenta";
         }
         {
           type = "gpu";
-          format = "= \"{2}\"";
+          format = "= \"{2}\",";
           key = "  gpu";
           keyColor = "magenta";
         }
@@ -113,7 +113,7 @@
         {
           type = "uptime";
           key = "  uptime";
-          format = "= \"{2}\",";
+          format = "= \"{3}\",";
           keyColor = "magenta";
         }
         {
