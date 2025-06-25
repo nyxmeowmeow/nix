@@ -104,7 +104,7 @@ in {
 
 # Documents
         {
-          mime = "application/{pdf,doc,rtf}";
+          mime = "application/{pdf,doc;rtf}";
           fg = col.blue;
         }
 
@@ -193,6 +193,7 @@ in {
           { name = "jpeg"; text = ""; fg = col.gold; }
           { name = "gif"; text = ""; fg = col.gold; }
           { name = "ico"; text = ""; fg = col.gold; }
+          { name = "svg"; text = "󰜡"; fg = col.gold; }
           { name = "vtf"; text = ""; fg = col.gold; }
           { name = "vmt"; text = ""; fg = col.fg; }
           { name = "mp4"; text = ""; fg = col.violet; }
@@ -222,8 +223,8 @@ in {
           { name = "gz"; text = "󰗄"; fg = col.gold; }
           { name = "xz"; text = "󰗄"; fg = col.gold; }
           { name = "zip"; text = "󰗄"; fg = col.gold; }
-          # { name = "swift", text = ""; fg = "#e37933"; } #TODO orange
-          # { name = "svelte", text = ""; fg = "#ff3e00"; } #TODO orange
+          # { name = "swift"; text = ""; fg = "#e37933"; } #TODO orange
+          # { name = "svelte"; text = ""; fg = "#ff3e00"; } #TODO orange
           { name = "db"; text = ""; fg = col.fg; }
           { name = "sql"; text = ""; fg = col.fg; }
           { name = "sqlite"; text = ""; fg = col.fg; }
@@ -234,6 +235,23 @@ in {
           { name = "vmx"; text = ""; fg = col.fg; }
 
 
+        ];
+
+        conds = [
+# Special files
+#           { if = "orphan"; text = ""; }
+#           { if = "link"; text = ""; }
+#           { if = "block"; text = ""; }
+#           { if = "char"; text = ""; }
+#           { if = "fifo"; text = ""; }
+#           { if = "sock"; text = ""; }
+#           { if = "sticky"; text = ""; }
+#           { if = "dummy"; text = ""; }
+#
+# # Fallback
+#           { if = "dir"; text = ""; }
+#           { if = "exec"; text = ""; }
+#           { if = "!dir"; text = ""; }
         ];
       };
     };
