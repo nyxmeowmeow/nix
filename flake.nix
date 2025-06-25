@@ -1,7 +1,6 @@
 {
   description = "meow meow meow meow :3";
 
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
@@ -22,7 +21,13 @@
     mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }: {
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }:
+  let
+    pkgs = import nixpkgs {
+    overlays = [ (import ./modules/nixos/clipse.nix) ];
+    };
+    in {
+
 
 
 
