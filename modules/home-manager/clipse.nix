@@ -1,5 +1,4 @@
 {
-
   services.clipse = {
     imageDisplay = {
       type = "sixel";

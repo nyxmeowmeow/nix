@@ -51,7 +51,6 @@
     netcat
     jq
     wl-clipboard
-    clipse
     ripgrep
     fd
     eza
