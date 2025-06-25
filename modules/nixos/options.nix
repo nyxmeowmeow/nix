@@ -1,7 +1,7 @@
 { lib, ... }: {
 
   config.theme = "lix";
-  # config.wm = "niri";
+  config.wm = "niri";
   config.font = "iosevka";
 
   options.theme = lib.mkOption {
@@ -17,19 +17,20 @@
     default = "black";
   };
 
-  # options.wm = lib.mkOption {
-  #   type = lib.types.enum [
-  #     "niri"
-  #     "hyprland"
-  #   ];
-  #   default = "niri";
-  # };
+  options.wm = lib.mkOption {
+    type = lib.types.enum [
+      "niri"
+      "hyprland"
+    ];
+    default = "niri";
+  };
 
   options.font = lib.mkOption {
     type = lib.types.enum [
       "mononoki"
       "iosevka"
     ];
+    default = "mononoki";
   };
 
 }

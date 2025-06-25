@@ -1,4 +1,4 @@
-{ lib, theme, ... }: {
+{ lib, theme, config, ... }: {
   config = lib.mkIf (theme == "lix") {
 
     programs.fastfetch = {
@@ -18,6 +18,12 @@
         };
 
         modules = [
+        {
+          type = "command";
+          key = "let";
+          keyColor = "magenta";
+          text = "echo 'meow = {'";
+        }
         {
           type = "os";
           key = "os";
@@ -47,7 +53,8 @@
           type = "command";
           key = "wm";
           keyColor = "magenta";
-          text = "echo hyprland";
+          # text = "echo ${config.wm}";
+          text = "echo a";
         }
 # {
 #   type = "terminal";
@@ -118,8 +125,8 @@
           symbol = "circle";
         }
         "break"
-          ];
+        ];
       };
     };
   };
-                     }
+}
