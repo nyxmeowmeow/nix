@@ -15,5 +15,24 @@
     base0D = "#EFBA5D"; # peach
     base0E = "#E3C0A8"; # yellow
     base0F = "#A5E07F"; # green
+
+
+    bg = "#3B224C";
+    fg = "#A4A0E8";
+    bg_saturated = "#2B1C3D";
+    bg_dim = "#47345E";
+    white = "#D5E7FF";
+    bg_fade = "#5A3D6E";
+    lilac = "#C7B8E0";
+    bg_desaturated = "#886C9C";
+    pink = "#DBBFEF";
+    blue = "#79adf5";
+    violet = "#C78DFC";
+    bubblegum = "#D678B5";
+    red = "#F22C86";
+    peach = "#EFBA5D";
+    gold = "#E3C0A8";
+    green = "#A5E07F";
+    mint = "#7fc9ab";
 }
 # modified version of https://github.com/foxoman/vim-helix
