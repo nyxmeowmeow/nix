@@ -5,7 +5,7 @@
       background-color = "#000000";
       border-width = 0;
       font = "${config.stylix.fonts.monospace.name}";
-      height = "100%";
+      height = "20%";
       num-results = 5;
       outline-width = 0;
       padding-left = "35%";
