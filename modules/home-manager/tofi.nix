@@ -1,10 +1,10 @@
-{
+{ config, ... }: {
   programs.tofi = {
     enable = true;
     settings = {
       background-color = "#000000";
       border-width = 0;
-      font = "mononoki nerd font mono";
+      font = "${config.stylix.fonts.monospace.name}";
       height = "100%";
       num-results = 5;
       outline-width = 0;
