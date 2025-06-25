@@ -113,7 +113,7 @@
         {
           type = "uptime";
           key = "  uptime";
-          format = "= \"{3}\",";
+          format = "= {3},";
           keyColor = "magenta";
         }
         {
