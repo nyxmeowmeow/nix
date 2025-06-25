@@ -20,7 +20,7 @@
         modules = [
         {
           type = "command";
-          key = "let meow";
+          key = "let meow: Host";
           keyColor = "magenta";
           text = "echo '= {'";
         }
@@ -108,7 +108,7 @@
           type = "command";
           key = "  age";
           keyColor = "magenta";
-          text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo '= $(days_difference)'";
+          text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo '= '; echo $days_difference; echo '\",'";
         }
         {
           type = "uptime";
