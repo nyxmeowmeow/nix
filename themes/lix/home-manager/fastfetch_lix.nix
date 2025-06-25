@@ -33,12 +33,13 @@
         {
           type = "kernel";
           key = "  kernel";
-          format = "= \"{1}\",";
+          format = "= \"{2}\",";
           keyColor = "magenta";
         }
         {
           type = "packages";
           key = "  pkgs";
+          format = "= \"{0}\",";
           keyColor = "magenta";
         }
 # {
@@ -56,7 +57,7 @@
           key = "  wm";
           keyColor = "magenta";
           # text = "echo ${config.wm}";
-          text = "echo a";
+          text = "echo '= \"niri\",";
         }
 # {
 #   type = "terminal";
