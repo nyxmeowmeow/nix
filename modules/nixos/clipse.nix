@@ -1,7 +1,7 @@
 { pkgs, lib, ... }: {
   nixpkgs.overlays = [
     (final: prev: {
-      clipse = prev.buildGoModule {
+      my-clipse = prev.buildGoModule {
         pname = "clipse";
         version = "9.9.9";
 
