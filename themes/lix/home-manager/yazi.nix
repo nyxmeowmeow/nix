@@ -163,7 +163,7 @@ in {
           { name = "Videos"; text = ""; }
         ];
 
-        files = [
+        exts = [
           { name = "nix"; text = "󱄅"; fg = col.blue; }
           { name = "css"; text = ""; fg = col.blue; }
           { name = "html"; text = ""; fg = col.bubblegum; } #TODO orange
