@@ -27,6 +27,7 @@
         {
           type = "os";
           key = "  distro";
+          format = "= \"{1}\",";
           keyColor = "magenta";
         }
         {
@@ -36,7 +37,7 @@
         }
         {
           type = "packages";
-          key = "pkgs";
+          key = "  pkgs";
           keyColor = "magenta";
         }
 # {
