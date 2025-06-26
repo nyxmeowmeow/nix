@@ -30,17 +30,20 @@
         ./modules/nixos/default.nix
         ./modules/home-manager/default.nix
         ./modules/nixos/options.nix
-        ./overlays/default.nix
 
-{
-  nixpkgs.overlays = [
-    (final: prev: {
-      mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
-      rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
-    })
-  ];
-}
-
+        {
+          nixpkgs.overlays = [
+            (final: prev: {
+             mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
+             rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
+             })
+          ];
+        }
+        {
+          nixpkgs.overlays = [
+            (import ./overlays/foot.nix)
+          ];
+        }
 
 
 
@@ -49,11 +52,11 @@
         inputs.stylix.nixosModules.stylix
 
         home-manager.nixosModules.home-manager
-        ({ pkgs, ... }: {
+        {
           nixpkgs.overlays = [
-            (import ./overlays/default.nix)
+            (import ./overlays/foot.nix)
           ];
-        })
+        }
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
