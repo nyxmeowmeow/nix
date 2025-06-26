@@ -1,5 +1,7 @@
 self: super: {
   luajit = super.luajit.overrideAttrs (old: {
-    NIX_CFLAGS_COMPILE = "-O3 -march=native -pipe -flto";
+    env = (old.env or {}) // {
+      CFLAGS = "-O3 -march=native -pipe";
+    };
   });
 }
