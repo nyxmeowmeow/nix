@@ -1,4 +1,4 @@
 [
-  (import ./overlays/foot.nix)
-  (import ./overlays/nvim.nix)
+  (import ./foot.nix)
+  (import ./nvim.nix)
 ]
