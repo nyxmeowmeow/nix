@@ -40,8 +40,7 @@
           ];
         }
         {
-          nixpkgs.overlays = [
-          ];
+          nixpkgs.overlays = import ./overlays/default.nix;
         }
 
 
