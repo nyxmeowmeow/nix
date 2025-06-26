@@ -27,7 +27,11 @@
         format = "[$duration]($style) ";
       };
 
-      hostname.ssh_only = true;
+      hostname = {
+      ssh_only = true;
+      ssh_symbol = "󰣀";
+      format = "[$ssh_symbol$hostname]($style) at ";
+      };
 
       # rust.symbol = " ";
       rust.disabled = true;
