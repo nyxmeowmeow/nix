@@ -1,7 +1,9 @@
 { pkgs, ... }: {
 
   services = {
-    flatpak.enable = true;
+    flatpak.enable = true; # TODO install olympus some other way and disable this
+
+    openssh.enable = true;
 
     xserver = {
       videoDrivers = [
