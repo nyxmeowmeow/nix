@@ -41,7 +41,6 @@
         }
         {
           nixpkgs.overlays = [
-            (import ./overlays/foot.nix)
           ];
         }
 
@@ -55,6 +54,7 @@
         {
           nixpkgs.overlays = [
             (import ./overlays/foot.nix)
+            (import ./overlays/nvim.nix)
           ];
         }
         {
