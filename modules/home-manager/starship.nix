@@ -28,9 +28,9 @@
       };
 
       hostname = {
-      ssh_only = true;
-      ssh_symbol = "󰣀";
-      format = "[$ssh_symbol$hostname]($style) at ";
+        ssh_only = true;
+        ssh_symbol = "";
+        format = "[$ssh_symbol$hostname]($style) at ";
       };
 
       # rust.symbol = " ";

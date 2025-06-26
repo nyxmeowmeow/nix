@@ -16,6 +16,9 @@
           style = "bold #DBBFEF";
         };
 
+        hostname.style = "bold blue";
+        username.style = "bold blue";
+
         git_metrics.disabled = false;
         git_status = {
           format = "(\[$all_status$ahead_behind\]($style) )";
