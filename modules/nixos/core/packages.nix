@@ -18,8 +18,14 @@
     ffmpeg
     # davinci-resolve
     vulkan-tools
+
+    coreutils
+    moreutils
     trash-cli
+    file
+    zip
     unzip
+
     btop
     # zenity
     # xdg-desktop-portal-termfilechooser
