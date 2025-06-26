@@ -17,7 +17,7 @@
         };
 
         hostname.style = "bold blue";
-        username.style = "bold blue";
+        username.style_user = "bold blue";
 
         git_metrics.disabled = false;
         git_status = {

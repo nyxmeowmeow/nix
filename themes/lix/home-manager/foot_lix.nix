@@ -13,14 +13,14 @@
         foreground = "A4A0E8";
 
         ## Normal/regular colors (color palette 0-7)
-        regular0 = "281733";  # black
-        regular1 = "F22C86";  # red
-        regular2 = "A5E07F";  # green
-        regular3 = "EFBA5D";  # yellow
-        regular4 = "9466ff";  # blue
-        regular5 = "DBBFEF";  # magenta
-        regular6 = "8bd5ca";  # cyan
-        regular7 = "d5e7ff";  # white
+        regular0 = "281733";  #281733 black
+        regular1 = "F22C86";  #F22C86 red
+        regular2 = "A5E07F";  #A5E07F green
+        regular3 = "EFBA5D";  #EFBA5D yellow
+        regular4 = "9466ff";  #9466ff blue
+        regular5 = "DBBFEF";  #DBBFEF magenta
+        regular6 = "8bd5ca";  #8bd5ca cyan
+        regular7 = "d5e7ff";  #d5e7ff white
 
         ## Bright colors (color palette 8-15)
         bright0 = "616161";   # bright black
