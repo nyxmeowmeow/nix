@@ -51,10 +51,7 @@
 
         home-manager.nixosModules.home-manager
         {
-          nixpkgs.overlays = [
-            (import ./overlays/foot.nix)
-            (import ./overlays/nvim.nix)
-          ];
+          nixpkgs.overlays = import ./overlays/default.nix;
         }
         {
           home-manager.useGlobalPkgs = true;
