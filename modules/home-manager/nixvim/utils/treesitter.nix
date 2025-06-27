@@ -27,6 +27,7 @@
     # ];
 
     settings = {
+      highlight.enable = true;
       textobject.enable = true;
       incremental_selection.enable = true;
       # indent.enable = true;
