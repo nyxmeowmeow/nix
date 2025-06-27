@@ -84,7 +84,7 @@
 
 
 
-
+(require 'vterm)
 
 (use-package vterm
   :bind
@@ -99,4 +99,3 @@
   (vterm-send-string "yazi")
   (vterm-send-return))
 
-(add-hook 'vterm-mode-hook #'meow-disable)
