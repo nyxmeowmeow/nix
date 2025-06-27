@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
   services = {
-    flatpak.enable = true; # TODO install olympus some other way and disable this
+    flatpak.enable = false;
 
     openssh.enable = true;
 
