@@ -61,7 +61,6 @@
           };
           "im" = {
             query = "@function.inner";
-            mode = "o";
             desc = "Select the [i]nner part of a [m]ethod or function";
           };
           "ac" = {
