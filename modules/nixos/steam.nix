@@ -18,9 +18,9 @@
       enable = true;
       args = [
         "-w 2560"
-          "-h 1440"
-          "-r 165"
-          "--expose-wayland"
+        "-h 1440"
+        "-r 165"
+        "--expose-wayland"
       ];
     };
   };
