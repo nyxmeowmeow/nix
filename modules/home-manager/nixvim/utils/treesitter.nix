@@ -1,7 +1,7 @@
 { pkgs, ... }: {
     programs.nixvim.plugins.treesitter = {
     enable = true;
-    autoLoad = false;
+    # autoLoad = false;
 
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       bash
@@ -27,8 +27,8 @@
       incremental_selection.enable = true;
     };
 
-    lazyLoad.settings.event = [
-     "BufRead"
-    ];
+    # lazyLoad.settings.event = [
+    #  "BufRead"
+    # ];
     };
 }
