@@ -3,6 +3,10 @@
     enable = true;
     autoLoad = false;
 
+    lazyLoad.settings.event = [
+      "BufRead"
+    ];
+
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       bash
       json
@@ -21,14 +25,11 @@
       rust
       python
     ];
-    #
-    # settings = {
-    #   textobject.enable = true;
-    #   incremental_selection.enable = true;
-    # };
 
-    lazyLoad.settings.event = [
-      "BufRead"
-    ];
+    settings = {
+      textobject.enable = true;
+      incremental_selection.enable = true;
+      indent = true;
+    };
   };
 }
