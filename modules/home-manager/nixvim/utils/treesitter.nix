@@ -29,7 +29,7 @@
     settings = {
       textobject.enable = true;
       incremental_selection.enable = true;
-      indent = true;
+      # indent.enable = true;
     };
   };
 }
