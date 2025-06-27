@@ -29,8 +29,7 @@
   programs.nixvim = {
     extraPlugins = [ pkgs.vimPlugins.nvim-treesitter-textobjects ];
     extraConfigLua = ''
-      require('nvim-treesitter-textobjects').setup()
-      require'nvim-treesitter.configs'.setup {
+      require('nvim-treesitter-textobjects').setup({
   textobjects = {
     select = {
       enable = true,
@@ -72,7 +71,7 @@
       include_surrounding_whitespace = true,
     },
   },
-}
+})
     '';
   };
 }
