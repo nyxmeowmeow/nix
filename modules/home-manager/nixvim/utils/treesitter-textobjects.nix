@@ -29,6 +29,7 @@
   programs.nixvim = {
     extraPlugins = [ pkgs.vimPlugins.nvim-treesitter-textobjects ];
     extraConfigLua = ''
+      require('nvim-treesitter.configs').setup()
       require'nvim-treesitter.configs'.setup {
   textobjects = {
     select = {
