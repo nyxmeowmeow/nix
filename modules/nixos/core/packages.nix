@@ -10,6 +10,7 @@
     # gimp
     krita
 
+    olympus
     osu-lazer
     tt # typing
     vitetris
