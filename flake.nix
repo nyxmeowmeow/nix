@@ -8,8 +8,6 @@
     stylix.url = "github:danth/stylix";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
-      # IMPORTANT: we're using "libgbm" and is only available in unstable so ensure
-      # to have it up to date or simply don't specify the nixpkgs input  
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim = {
@@ -17,6 +15,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     slippi.url = "github:lytedev/slippi-nix";
+    nix-gaming.url = "github:fufexan/nix-gaming";
 
     mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
   };
@@ -26,6 +25,9 @@
 
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      specialArgs = {
+        inherit inputs zen-browser nixvim niri;
+      };
       modules = [
         ./modules/nixos/default.nix
         ./modules/home-manager/default.nix
@@ -78,9 +80,6 @@
         }
 
       ];
-      specialArgs = {
-        inherit inputs zen-browser nixvim niri;
-      };
     };
   };
 }
