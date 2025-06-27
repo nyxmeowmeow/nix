@@ -1,7 +1,8 @@
 { pkgs, ... }: {
     programs.nixvim.plugins.treesitter = {
     enable = true;
-    # ensureInstalled = [ "c" "cpp" "haskell" "go" "rust" "python" ];
+    autoLoad = false;
+
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
       bash
       json
@@ -21,8 +22,8 @@
       python
     ];
 
-    #lazyLoad.settings.event = [
-    #  "BufRead"
-    #];
+    lazyLoad.settings.event = [
+     "BufRead"
+    ];
     };
 }
