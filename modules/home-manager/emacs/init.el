@@ -65,37 +65,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(require 'vterm)
-
-(use-package vterm
-  :bind
-  ("C-c y" . myyazi)
-  :ensure t)
-
-
-(defun myyazi ()
-  "Open Yazi in vterm."
-  (interactive)
-  (vterm)
-  (vterm-send-string "yazi")
-  (vterm-send-return))
-

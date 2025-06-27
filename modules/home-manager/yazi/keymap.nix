@@ -3,12 +3,6 @@
     keymap = {
       mgr.keymap = [
       {
-      on = "z";
-      run = "shell -- env DISPLAY=:0 emacsclient -nw -e \"(progn (require 'vterm) (vterm) (find-file \"$1\"))\"";
-      desc = "open file in emacs";
-      }
-
-      {
         on = "<Esc>";
         run = "escape";
         desc = "Exit visual mode, clear selected; or cancel search";
