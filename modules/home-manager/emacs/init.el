@@ -38,10 +38,11 @@
 
 (blink-cursor-mode 0)
 
-(load-file "~/nix/emacs/meow.el")
-(load-file "~/nix/emacs/theme.el")
-(load-file "~/nix/emacs/dirvish.el")
-(load-file "~/nix/emacs/line.el")
+; FIXME find out why `load` isnt working
+(load-file "~/nix/modules/home-manager/emacs/meow.el")
+(load-file "~/nix/modules/home-manager/emacs/theme.el")
+(load-file "~/nix/modules/home-manager/emacs/dirvish.el")
+(load-file "~/nix/modules/home-manager/emacs/line.el")
 
 (setq initial-frame-alist default-frame-alist)
 (setq default-frame-alist default-frame-alist)
@@ -86,12 +87,16 @@
 
 
 (use-package vterm
+  :bind
+  ("C-c y" . myyazi)
   :ensure t)
 
 
-(defun my/yazi ()
+(defun myyazi ()
   "Open Yazi in vterm."
   (interactive)
   (vterm)
   (vterm-send-string "yazi")
   (vterm-send-return))
+
+(add-hook 'vterm-mode-hook #'meow-disable)

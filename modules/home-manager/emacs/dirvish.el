@@ -6,7 +6,7 @@
         '(nerd-icons vc-state))
   (dirvish-override-dired-mode)
   :bind
-  ("C-c y" . dirvish)
+  ; ("C-c y" . dirvish)
 
 
 
