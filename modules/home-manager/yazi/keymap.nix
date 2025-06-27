@@ -4,7 +4,7 @@
       mgr.keymap = [
       {
       on = "z";
-      run = "shell -- emacsclient -e '(progn (vterm) (find-file \"$1\"))'";
+      run = "shell -- env DISPLAY=:0 emacs -e '(progn (vterm) (find-file \"$1\"))'";
       desc = "open file in emacs";
       }
 
