@@ -22,6 +22,11 @@
       python
     ];
 
+    settings = {
+      textobject.enable = true;
+      incremental_selection.enable = true;
+    };
+
     lazyLoad.settings.event = [
      "BufRead"
     ];
