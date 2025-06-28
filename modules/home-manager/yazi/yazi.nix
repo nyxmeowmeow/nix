@@ -29,7 +29,7 @@
       piper = pkgs.yaziPlugins.piper;
       mount = pkgs.yaziPlugins.mount;
       jump-to-char = pkgs.yaziPlugins.jump-to-char;
-      compress = ./plugins/compress.lua;
+      compress = ./plugins/compress.yazi;
     };
 
       # require("git"):setup()
