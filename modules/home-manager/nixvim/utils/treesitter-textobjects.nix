@@ -15,11 +15,11 @@
             query = "@assignment.inner";
             desc = "Select [i]nner part of an [=] assignment";
           };
-          "l=" = {
+          "[=" = {
             query = "@assignment.lhs";
             desc = "Select [l]eft hand side of an [=] assignment";
           };
-          "r=" = {
+          "]=" = {
             query = "@assignment.rhs";
             desc = "Select [r]ight hand side of an [=] assignment";
           };
@@ -38,6 +38,14 @@
           "ii" = {
             query = "@conditional.inner";
             desc = "Select the [i]nner part of a cond[i]tional";
+          };
+          "[i" = {
+            query = "@conditional.lhs";
+            desc = "Select left hand side of a cond[i]tional";
+          };
+          "]i" = {
+            query = "@conditional.rhs";
+            desc = "Select right hand side of a cond[i]tional";
           };
           "al" = {
             query = "@loop.outer";
