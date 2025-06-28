@@ -23,6 +23,8 @@
     # davinci-resolve
     vulkan-tools
 
+    dash
+
     coreutils
     moreutils
     trash-cli

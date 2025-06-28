@@ -16,4 +16,6 @@
     LC_TELEPHONE = "en_AU.UTF-8";
     LC_TIME = "en_AU.UTF-8";
   };
+  # some games require random locales to run
+  i18n.supportedLocales = ["all"];
 }
