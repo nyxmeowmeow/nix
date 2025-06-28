@@ -8,6 +8,12 @@
         desc = "Exit visual mode, clear selected; or cancel search";
       }
 
+      {
+        on = [ "g" "M" ];
+        run = "plugin gvfs -- jump-to-device";
+        desc = "Select device then jump to its mount point";
+      }
+
       { # TODO compression level?
         on = [ "g" "a" "<Space>" ];
         run = "plugin compress";
