@@ -190,16 +190,16 @@ in {
           { name = "json"; text = ""; fg = col.fg; }
           { name = "toml"; text = ""; fg = col.bubblegum; }
           { name = "desktop"; text = ""; fg = col.violet; }
-          { name = "js"; text = ""; fg = col.peach; }
+          { name = "js"; text = ""; fg = col.honey; }
           { name = "rs"; text = ""; fg = col.red; }
-          { name = "py"; text = ""; fg = col.peach; }
+          { name = "py"; text = ""; fg = col.honey; }
           { name = "c"; text = ""; fg = col.blue; }
           { name = "c++"; text = ""; fg = col.violet; }
           { name = "cpp"; text = ""; fg = col.violet; }
           { name = "cp"; text = ""; fg = col.violet; }
-          { name = "zig"; text = ""; fg = col.peach; }
+          { name = "zig"; text = ""; fg = col.honey; }
           { name = "hs"; text = ""; fg = col.violet; }
-          { name = "git"; text = ""; fg = col.peach; } #TODO orange
+          { name = "git"; text = ""; fg = col.peach; }
           { name = "lock"; text = ""; fg = col.fg; }
           { name = "txt"; text = ""; fg = col.fg; }
           { name = "png"; text = ""; fg = col.gold; }
@@ -236,8 +236,8 @@ in {
           { name = "gz"; text = "󰗄"; fg = col.gold; }
           { name = "xz"; text = "󰗄"; fg = col.gold; }
           { name = "zip"; text = "󰗄"; fg = col.gold; }
-          # { name = "swift"; text = ""; fg = "#e37933"; } #TODO orange
-          # { name = "svelte"; text = ""; fg = "#ff3e00"; } #TODO orange
+          { name = "swift"; text = ""; fg = col.peach; }
+          { name = "svelte"; text = ""; fg = col.peach; }
           { name = "db"; text = ""; fg = col.fg; }
           { name = "sql"; text = ""; fg = col.fg; }
           { name = "sqlite"; text = ""; fg = col.fg; }
@@ -246,7 +246,7 @@ in {
           { name = "bsp"; text = ""; fg = col.fg; }
           { name = "vmf"; text = ""; fg = col.fg; }
           { name = "vmx"; text = ""; fg = col.fg; }
-
+          { name = "el"; text = ""; fg = col.violet; }
 
         ];
 

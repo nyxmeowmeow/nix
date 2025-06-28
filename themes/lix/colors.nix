@@ -30,7 +30,8 @@
     violet = "#C78DFC";
     bubblegum = "#D678B5";
     red = "#F22C86";
-    peach = "#EFBA5D";
+    peach = "#f5a97f";
+    honey = "#EFBA5D";
     gold = "#E3C0A8";
     green = "#A5E07F";
     mint = "#7fc9ab";
