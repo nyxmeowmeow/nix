@@ -44,7 +44,6 @@
 
   { # ubisoft connect little white window
     matches = [ { 
-      app-id = "steam_app_2225070";
       title = "^$";
     } ];
     opacity = 0.0;
