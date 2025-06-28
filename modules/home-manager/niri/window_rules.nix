@@ -40,14 +40,15 @@
         bottom-right = 0.0;
       };
     variable-refresh-rate = false;
+    open-floating = false;
   }
 
-  { # ubisoft connect little white window
-    matches = [ { 
-      title = "^$";
-    } ];
-    opacity = 0.0;
-  }
+  # { # ubisoft connect little white window
+  #   matches = [ { 
+  #     title = "^$";
+  #   } ];
+  #   opacity = 0.0;
+  # }
 
 # {
 #   matches = [ { title = "mail"; } ];
