@@ -26,6 +26,8 @@
     file
     zip
     unzip
+    rar
+    unrar
 
     btop
     # zenity

@@ -8,6 +8,22 @@
         desc = "Exit visual mode, clear selected; or cancel search";
       }
 
+      { # TODO compression level?
+        on = [ "g" "a" "<Space>" ];
+        run = "plugin compress";
+        desc = "Archive";
+      }
+      {
+        on = [ "g" "a" "p" ];
+        run = "plugin compress -p";
+        desc = "Archive (password)";
+      }
+      {
+        on = [ "g" "a" "P" ];
+        run = "plugin compress -ph";
+        desc = "Archive (pw + header)";
+      }
+
       {
         on = "<C-z>";
         run = "suspend";
