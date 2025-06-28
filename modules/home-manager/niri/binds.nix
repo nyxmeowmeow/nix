@@ -2,7 +2,7 @@
 
   programs.niri.settings.binds = with config.lib.niri.actions; 
   let
-    sh = spawn "sh" "-c";
+    sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
   in
   {
     "Mod+G".action = spawn "~/misc/wlr-which-key";
