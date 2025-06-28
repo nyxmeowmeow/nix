@@ -247,6 +247,7 @@ in {
           { name = "vmf"; text = ""; fg = col.fg; }
           { name = "vmx"; text = ""; fg = col.fg; }
           { name = "el"; text = ""; fg = col.violet; }
+          { name = "gpg"; text = "󱕴"; fg = col.gold; }
 
         ];
 

@@ -23,11 +23,11 @@
     bg_dim = "#47345E";
     white = "#D5E7FF";
     bg_fade = "#5A3D6E";
-    lilac = "#C7B8E0";
     bg_desaturated = "#886C9C";
-    pink = "#DBBFEF";
     blue = "#79adf5";
+    ourple = "#9466ff";
     violet = "#C78DFC";
+    pink = "#DBBFEF";
     bubblegum = "#D678B5";
     red = "#F22C86";
     peach = "#f5a97f";
