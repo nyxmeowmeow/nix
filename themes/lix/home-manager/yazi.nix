@@ -233,9 +233,17 @@ in {
           { name = "xml"; text = "󰗀"; fg = col.fg; }
           { name = "md"; text = ""; fg = col.fg; }
           { name = "org"; text = ""; fg = col.mint; }
+
           { name = "gz"; text = "󰗄"; fg = col.gold; }
           { name = "xz"; text = "󰗄"; fg = col.gold; }
+          { name = "bz2"; text = "󰗄"; fg = col.gold; }
+          { name = "zst"; text = "󰗄"; fg = col.gold; }
+          { name = "lz4"; text = "󰗄"; fg = col.gold; }
+          { name = "lha"; text = "󰗄"; fg = col.gold; }
           { name = "zip"; text = "󰗄"; fg = col.gold; }
+          { name = "7z"; text = "󰗄"; fg = col.gold; }
+          { name = "rar"; text = "󰗄"; fg = col.gold; }
+
           { name = "swift"; text = ""; fg = col.peach; }
           { name = "svelte"; text = ""; fg = col.peach; }
           { name = "db"; text = ""; fg = col.fg; }
