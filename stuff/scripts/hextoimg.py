@@ -11,9 +11,7 @@ def create_ppm_from_hex(hex_code, width, height, output_file):
     try:
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'wb') as f:
-            # Write PPM header (binary P6 format)
             f.write(f'P6\n{width} {height}\n255\n'.encode())
-            # Write pixel data (R, G, B for each pixel)
             f.write(bytes(rgb) * width * height)
         print(f"PPM image saved as {output_file}")
     except Exception as e:
