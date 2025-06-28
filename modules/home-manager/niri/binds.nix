@@ -18,6 +18,7 @@
 
     "Mod+N".action = focus-monitor-next;
     "Mod+3".action = screenshot;
+    "Mod+4".action = sh "hex=$(niri msg pick-color | grep -o '#.*') && echo -n \"$hex\" | wl-copy && notify-send \"$hex\"";
     "Mod+O".action = close-window;
     "Mod+Return".action = toggle-overview;
 
