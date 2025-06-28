@@ -31,6 +31,7 @@
       mount = pkgs.yaziPlugins.mount;
       jump-to-char = pkgs.yaziPlugins.jump-to-char;
       compress = ./plugins/compress.yazi;
+      gvfs = ./plugins/gvfs.yazi;
     };
 
       # require("git"):setup()
