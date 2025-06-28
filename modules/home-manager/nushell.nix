@@ -158,8 +158,10 @@
       gcl = "git clone";
       gd = "git diff HEAD^";
       gs = "git status";
+      gsw = "git switch";
       gps = "git push";
       gpl = "git pull";
+      gb = "git branch";
 
       cr = "cargo run";
 

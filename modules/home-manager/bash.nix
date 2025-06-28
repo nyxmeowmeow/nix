@@ -2,7 +2,7 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
-    historyFile = "~/.config";
+    historyFile = "/home/meow/.config/.bash_history";
     historyIgnore = [
       "ls"
       "nr"
