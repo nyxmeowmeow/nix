@@ -1,5 +1,4 @@
 { pkgs, ... }: {
-
   environment.systemPackages = with pkgs; [
     gnome-online-accounts
     gnome-control-center

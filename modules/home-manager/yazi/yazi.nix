@@ -17,6 +17,7 @@
       -- require("simple-tag"):setup()
       require("git"):setup()
       require("starship"):setup()
+      require("gvfs"):setup()
     '';
 
     plugins = {
