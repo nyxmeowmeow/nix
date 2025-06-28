@@ -27,7 +27,6 @@
       app-id = "steam_app_2225070";
       title = "Trackmania";
     } ];
-    opacity = 0.0;
     open-on-workspace = "game";
     min-width = 2560;
     max-width = 2560;
@@ -43,12 +42,13 @@
     open-floating = false;
   }
 
-  # { # ubisoft connect little white window
-  #   matches = [ { 
-  #     title = "^$";
-  #   } ];
-  #   opacity = 0.0;
-  # }
+  { # ubisoft connect little white window
+    matches = [ { 
+      title = "^$";
+      app-id = "steam_app_2225070";
+    } ];
+    opacity = 0.0;
+  }
 
 # {
 #   matches = [ { title = "mail"; } ];
