@@ -33,14 +33,19 @@
     max-width = 2560;
     min-height = 1080;
     max-height = 1080;
-    # geometry-corner-radius = 0;
+    geometry-corner-radius = {
+        top-left = 0.0;
+        top-right = 0.0;
+        bottom-left = 0.0;
+        bottom-right = 0.0;
+      };
     variable-refresh-rate = false;
   }
 
   { # ubisoft connect little white window
     matches = [ { 
       app-id = "steam_app_2225070";
-      title = "";
+      title = "^$";
     } ];
     opacity = 0.0;
   }
