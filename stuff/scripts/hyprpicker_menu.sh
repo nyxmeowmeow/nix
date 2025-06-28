@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Directory containing the images
-IMAGE_DIR="/home/rain/.config/dunst/icons/hyprpicker"
+IMAGE_DIR="/home/meow/.config/dunst/icons/hyprpicker"
 
 # Create a temporary directory for symlinks
 TMP_DIR=$(mktemp -d)

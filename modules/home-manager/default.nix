@@ -13,6 +13,7 @@
         ../../themes/macchiato/home-manager/default.nix
         ../../themes/ocean/home-manager/default.nix
 
+        ./desktop.nix
         ./btop.nix
         ./obs.nix
         ./clipse.nix
