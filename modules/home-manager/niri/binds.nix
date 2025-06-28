@@ -61,6 +61,8 @@
     "Mod+Shift+0".action = switch-preset-window-height;
 
     "Mod+M".action = maximize-column;
+    "Mod+Shift+M".action = fullscreen-window;
+    "Mod+Ctrl+M".action = fullscreen-window;
     "Mod+Shift+minus".action = toggle-column-tabbed-display;
 
 
