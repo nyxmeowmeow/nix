@@ -1,5 +1,8 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    nix-output-monitor
+
+
     gnome-online-accounts
     gnome-control-center
     glib
