@@ -41,7 +41,8 @@
       }
 
       def nr [...msg: string] {
-        sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+        # sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+        nh os switch ~/nix
         cd ~/nix
         git add .
         let timestamp = (date now | format date '%d/%m %H:%M:%S')

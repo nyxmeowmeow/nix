@@ -190,10 +190,10 @@
       mode = "n";
     }
 
-    { key = "<left>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
-    { key = "<down>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
-    { key = "<up>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
-    { key = "<right>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
+    # { key = "<left>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
+    # { key = "<down>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
+    # { key = "<up>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
+    # { key = "<right>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
 
 
     ];

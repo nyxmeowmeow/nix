@@ -10,12 +10,16 @@
           command = "/run/current-system/sw/bin/nixos-rebuild";
           options = [ "NOPASSWD" ];
         }
+        { # rebuild no passwd
+          command = "/run/current-system/sw/bin/nh";
+          options = [ "NOPASSWD" ];
+        }
         { # kanata no passwd
           command = "/run/current-system/sw/bin/kanata";
           options = [ "NOPASSWD" ];
         }
         { # keyb0xx no passwd
-          command = "/run/current-system/sw/bin/steam-run /home/meow/misc/keyb0xx";
+          command = "/run/current-system/sw/bin/steam-run /home/meow/melee/keyb0xx";
           options = [ "NOPASSWD" ];
         }
       ];
