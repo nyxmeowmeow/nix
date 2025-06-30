@@ -41,7 +41,7 @@
       }
 
       def nrun [...msg: string] {
-        nix run nixpkgs\#$msg
+        nix run nixpkgs#$msg
       }
 
 
