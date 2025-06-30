@@ -3,6 +3,7 @@
     enable = true;
     autoLoad = false;
 
+    lazyLoad.enable = true;
     lazyLoad.settings.event = [
       "BufRead"
     ];
