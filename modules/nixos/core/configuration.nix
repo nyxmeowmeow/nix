@@ -1,11 +1,11 @@
-{ pkgs, ... }: {
+{ pkgs, username, ... }: {
 
 
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
-  users.users.meow = {
+  users.users.${username} = {
     isNormalUser = true;
     description = "colon three";
     extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" "input" "uinput" ];

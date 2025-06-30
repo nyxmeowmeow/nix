@@ -1,5 +1,5 @@
-{
-  home.username = "meow";
-  home.homeDirectory = "/home/meow";
+{ username, ... }: {
+  home.username = "${username}";
+  home.homeDirectory = "/home/${username}";
   home.stateVersion = "24.11";
 }

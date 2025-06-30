@@ -20,14 +20,13 @@
     mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }: {
-
-
-
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }:
+let
+  username = "meow";
+in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      # username = "meow";
       specialArgs = {
-        inherit inputs zen-browser nixvim niri;
+        inherit username inputs zen-browser nixvim niri;
       };
       modules = [
         ./modules/nixos/default.nix
@@ -59,7 +58,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs; };
+          home-manager.extraSpecialArgs = { inherit inputs username; };
         }
 
         slippi.nixosModules.default
