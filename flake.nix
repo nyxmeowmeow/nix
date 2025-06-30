@@ -25,9 +25,9 @@
 
 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      username = "meow";
+      # username = "meow";
       specialArgs = {
-        inherit inputs username zen-browser nixvim niri;
+        inherit inputs zen-browser nixvim niri;
       };
       modules = [
         ./modules/nixos/default.nix

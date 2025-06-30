@@ -1,6 +1,6 @@
 { lib, theme, ... }: 
 let
-  col = import ../../../../themes/lix/colors.nix;
+  col = import ../../../../../themes/lix/colors.nix;
 in {
   config = lib.mkIf (theme == "lix") {
 
