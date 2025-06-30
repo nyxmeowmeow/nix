@@ -51,6 +51,7 @@
     # nix-inspect
     mpv
     obs-studio
+    wf-recorder
     # fuse
     libevdev
     libqalculate
