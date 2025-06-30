@@ -3,10 +3,10 @@
     enable = true;
     autoLoad = false;
 
-    lazyLoad.enable = true;
-    lazyLoad.settings.event = [
-      "BufRead"
-    ];
+    # lazyLoad.enable = true;
+    # lazyLoad.settings.event = [
+    #   "BufRead"
+    # ];
 
     # grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
     #   bash
