@@ -1,7 +1,12 @@
 {
   programs.nixvim.plugins.mini.modules.completion = {
     enable = true;
+
     settings = {
+      lspCompletion = {
+        sourceFunc = "omnifunc";
+        autoSetup = true;
+      };
       window = {
         info = {
           height = 20;
