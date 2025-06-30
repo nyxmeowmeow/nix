@@ -12,32 +12,33 @@
         ../../themes/lix/home-manager/default.nix
         ../../themes/macchiato/home-manager/default.nix
         ../../themes/ocean/home-manager/default.nix
-
-        ./nh.nix
-        ./navi.nix
         ./desktop.nix
-        ./btop.nix
-        ./obs.nix
-        ./clipse.nix
-        ./dunst.nix
-        ./emacs/emacs.nix
-        ./foot.nix
-        ./fzf.nix
-        ./git.nix
-        ./mpv.nix
-        ./ncmpcpp.nix
-        ./niri/niri.nix
-        ./nixvim/default.nix
-        ./nushell.nix
-        ./starship.nix
-        ./tofi.nix
-        ./vesktop.nix
-        ./yazi/yazi.nix
-        ./zen.nix
-        ./zoxide.nix
         ./home.nix
+
         inputs.nixvim.homeModules.nixvim
-        ./bash.nix
+        ./tui/nixvim/default.nix
+
+        ./tui/nh.nix
+        ./tui/navi.nix
+        ./tui/btop.nix
+        ./gui/obs.nix
+        ./tui/clipse.nix
+        ./gui/dunst.nix
+        ./gui/emacs/emacs.nix
+        ./gui/foot.nix
+        ./tui/fzf.nix
+        ./tui/git.nix
+        ./gui/mpv.nix
+        ./tui/ncmpcpp.nix
+        ./gui/niri/niri.nix
+        ./tui/nushell.nix
+        ./tui/starship.nix
+        ./gui/tofi.nix
+        ./gui/vesktop.nix
+        ./tui/yazi/yazi.nix
+        ./gui/zen.nix
+        ./tui/zoxide.nix
+        ./tui/bash.nix
         # ./hyprland.nix
       ];
     };
