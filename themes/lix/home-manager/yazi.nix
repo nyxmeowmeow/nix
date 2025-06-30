@@ -174,6 +174,7 @@ in {
           # { name = "LICENSE.md"; text = ""; fg = col.gold; }
           { name = "readme"; text = "󰂺"; fg = col.fg; }
           { name = "readme.md"; text = "󰂺"; fg = col.fg; }
+          { name = "readme.txt"; text = "󰂺"; fg = col.fg; }
           # { name = "README"; text = "󰂺"; fg = col.fg; }
           # { name = "README.md"; text = "󰂺"; fg = col.fg; }
           { name = ".git-blame-ignore-revs"; text = ""; fg = col.bubblegum; } #TODO orange
