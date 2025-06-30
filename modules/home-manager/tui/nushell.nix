@@ -40,6 +40,11 @@
           ^ffmpeg -i $input -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p $output
       }
 
+      def nrun [...msg: string] {
+        nix run nixpkgs#$msg
+      }
+
+
       def nr [...msg: string] {
         # sudo nixos-rebuild switch --flake /home/meow/nix#nixos
         nh os switch ~/nix

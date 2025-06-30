@@ -3,7 +3,7 @@
   services = {
     flatpak.enable = false;
 
-    openssh.enable = true;
+    openssh.enable = false;
 
     xserver = {
       videoDrivers = [
