@@ -1,11 +1,11 @@
-{ inputs, config, ... }: {
+{ inputs, config, username, ... }: {
   home-manager = {
     extraSpecialArgs = {
       theme = config.theme;
       zen-browser = inputs.zen-browser;
     };
 
-    users.meow = {
+    users.${username} = {
       imports = [
         ../../themes/black/home-manager/default.nix
         ../../themes/everforest/home-manager/default.nix

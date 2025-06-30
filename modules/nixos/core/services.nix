@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, username, ... }: {
 
   services = {
     flatpak.enable = false;
@@ -23,9 +23,9 @@
 
     mpd = {
       enable = true;
-      user = "meow";
-      musicDirectory = "/home/meow/Music/";
-      dataDir = "/home/meow/misc/mpd";
+      user = username;
+      musicDirectory = "/home/${username}/Music/";
+      dataDir = "/home/${username}/misc/mpd";
       extraConfig = ''
         port "6669"
         audio_output {

@@ -65,12 +65,12 @@ in {
         {
           home-manager = {
             # ... snip -- see Home Manager's documentation for details
-            users.meow = {
+            users.${username} = {
               imports = [
                 slippi.homeManagerModules.default
                 {
                   # use your path
-                  slippi-launcher.isoPath = "/home/meow/melee/meow.iso";
+                  slippi-launcher.isoPath = "/home/${username}/melee/meow.iso";
                   slippi-launcher.launchMeleeOnPlay = false;
                   slippi-launcher.enableJukebox = false;
                 }
