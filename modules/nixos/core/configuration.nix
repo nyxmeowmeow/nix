@@ -1,4 +1,5 @@
 { pkgs, ... }: {
+console.font = "Mononoki Nerd Font Mono";
 
 
 
