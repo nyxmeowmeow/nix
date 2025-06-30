@@ -1,10 +1,10 @@
-{
+{ username, ... }: {
 
   security.rtkit.enable = true;
 
   security.sudo.extraRules = [
     {
-      users = [ "meow" ];
+      users = [ username ];
       commands = [
         { # rebuild no passwd
           command = "/run/current-system/sw/bin/nixos-rebuild";
@@ -19,7 +19,7 @@
           options = [ "NOPASSWD" ];
         }
         { # keyb0xx no passwd
-          command = "/run/current-system/sw/bin/steam-run /home/meow/melee/keyb0xx";
+          command = "/run/current-system/sw/bin/steam-run /home/${username}/melee/keyb0xx";
           options = [ "NOPASSWD" ];
         }
       ];

@@ -1,4 +1,4 @@
-{ lib, theme, config, ... }: {
+{ lib, theme, username, ... }: {
   config = lib.mkIf (theme == "lix") {
 
     programs.fastfetch = {
@@ -20,7 +20,7 @@
         modules = [
         {
           type = "command";
-          key = "let meow: Host";
+          key = "let ${username}: Host";
           keyColor = "magenta";
           text = "echo '= {'";
         }

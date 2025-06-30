@@ -1,8 +1,8 @@
-{ pkgs, ... }: {
+{ pkgs, username, ... }: {
   programs.bash = {
     enable = true;
     enableCompletion = true;
-    historyFile = "/home/meow/.config/.bash_history";
+    historyFile = "/home/${username}/.config/.bash_history";
     historyIgnore = [
       "ls"
       "nr"
