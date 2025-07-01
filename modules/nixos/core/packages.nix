@@ -90,11 +90,4 @@
     wine
     wine64
   ];
-
-  fonts.packages = with pkgs; [
-    nerd-fonts.mononoki
-    nerd-fonts.iosevka
-    spleen
-    sn-pro
-  ];
 }
