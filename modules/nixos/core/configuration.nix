@@ -1,4 +1,5 @@
 { pkgs, username, ... }: {
+console.font = "spleen-16x32";
 
 
 

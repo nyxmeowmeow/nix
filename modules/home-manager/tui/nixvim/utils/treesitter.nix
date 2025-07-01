@@ -1,7 +1,7 @@
 { pkgs, ... }: {
     programs.nixvim.plugins.treesitter = {
     enable = true;
-    # autoLoad = false;
+    autoLoad = false;
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
