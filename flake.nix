@@ -16,11 +16,12 @@
     };
     slippi.url = "github:lytedev/slippi-nix";
     nix-gaming.url = "github:fufexan/nix-gaming";
+    nuhxboard.url = "github:justDeeevin/NuhxBoard";
 
     mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, ... }:
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, nuhxboard, ... }:
 let
   username = "meow";
 in {

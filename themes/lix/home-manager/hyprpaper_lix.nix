@@ -9,14 +9,14 @@
         splash_offset = 2.0;
 
         preload = [
-          "~/nix/themes/lix/wallpapers/2_hor.png" 
+          "~/nix/stuff/wallpapers/outskirts.png" 
         ];
 
         wallpaper = [
-          "DP-1, ~/nix/themes/lix/wallpapers/2_hor.png"
-            "DP-3, ~/nix/themes/lix/wallpapers/2_hor.png"
+          "DP-1, ~/nix/stuff/wallpapers/outskirts.png"
+          "DP-3, ~/nix/stuff/wallpapers/outskirts.png"
         ];
       };
     };
   };
-                     }
+}

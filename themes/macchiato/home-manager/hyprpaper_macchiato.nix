@@ -9,13 +9,13 @@
         splash_offset = 2.0;
 
         preload = [
-          "~/nix/themes/macchiato/wallpapers/4_hor.jpg" 
-          "~/nix/themes/macchiato/wallpapers/1_vert.png" 
+          "~/nix/stuff/wallpapers/pixel7.jpg" 
+          "~/nix/stuff/wallpapers/pixel7.jpg" 
         ];
 
         wallpaper = [
-          "DP-1, ~/nix/themes/macchiato/wallpapers/4_hor.jpg"
-          "DP-3, ~/nix/themes/macchiato/wallpapers/1_vert.png"
+          "DP-1, ~/nix/stuff/wallpapers/pixel7.jpg"
+          "DP-3, ~/nix/stuff/wallpapers/pixel7.jpg"
         ];
       };
     };

@@ -1,7 +1,4 @@
 { pkgs, username, ... }: {
-console.font = "spleen-16x32";
-
-
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;

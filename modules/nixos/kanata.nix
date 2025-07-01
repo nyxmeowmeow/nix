@@ -382,7 +382,7 @@ bspc @rpeat
   magic (switch
 
   ;; // query
-    ((key-history q 1)) (macro u e r y) break
+    ((key-history q 1)) (macro u) break
 
   ;; // #include
     ((key-history 3 1)) (macro i n c l u d e) break

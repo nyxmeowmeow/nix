@@ -9,12 +9,12 @@
         splash_offset = 2.0;
 
         preload = [
-          "~/nix/themes/black/wallpapers/1_hor.png" 
+          "~/nix/stuff/wallpapers/shaded_citadel.png" 
         ];
 
         wallpaper = [
-          "DP-1, ~/nix/themes/black/wallpapers/1_hor.png" 
-          "DP-3, ~/nix/themes/black/wallpapers/1_hor.png" 
+          "DP-1, ~/nix/stuff/wallpapers/shaded_citadel.png" 
+          "DP-3, ~/nix/stuff/wallpapers/shaded_citadel.png" 
         ];
       };
     };

@@ -3,10 +3,11 @@
   stylix.enable = true;
   stylix.autoEnable = false; # manually specify which to enable
 
-  # stylix.targets = {
-  #   gtk.enable = true;
-  #   qt.enable = true;
-  # };
+  stylix.targets = {
+#   gtk.enable = true;
+#   qt.enable = true;
+    tty.enable = true;
+  };
 
 
   stylix.image = ../../themes/macchiato/wallpapers/1_hor.png; # must be set for some reason
