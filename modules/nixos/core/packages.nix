@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+
     nix-output-monitor
 
 
@@ -87,7 +88,10 @@
     libGL
     libdrm
     xwayland
+
     wine
     wine64
+    bottles
+    mono
   ];
 }
