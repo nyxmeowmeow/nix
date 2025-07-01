@@ -6,15 +6,15 @@
         spleen
         sn-pro
     ];
-  };
-  fontconfig = {
-    enable = true;
-    antialias = true;
-    subpixel.rgba = "none";
-    hinting = {
-    enable = true;
-    style = "medium";
+    fontconfig = {
+      enable = true;
+      antialias = true;
+      subpixel.rgba = "none";
+      hinting = {
+        enable = true;
+        style = "medium";
 
+      };
     };
   };
 }

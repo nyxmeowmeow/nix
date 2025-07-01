@@ -13,6 +13,7 @@
     ./nix-gaming.nix
     ./clipse.nix
     ./font.nix
+    ./fontconfig.nix
     ./kanata.nix
     ./languages.nix
     ./misc.nix
