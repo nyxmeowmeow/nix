@@ -12,7 +12,7 @@
       subpixel.rgba = "none";
       hinting = {
         enable = true;
-        style = "medium";
+        style = "full";
 
       };
     };
