@@ -1,8 +1,9 @@
-{
+{ pkgs, ... }: {
   nixpkgs = {
     config = {
       allowUnfree = true;
-      permittedInsecurePackages = [
+      permittedInsecurePackages = with pkgs; [
+        dotnet-sdk_6
       ];
     };
   };
