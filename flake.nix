@@ -62,23 +62,23 @@ in {
           home-manager.extraSpecialArgs = { inherit inputs username; };
         }
 
-        # slippi.nixosModules.default
-        # {
-        #   home-manager = {
-        #     # ... snip -- see Home Manager's documentation for details
-        #     users.${username} = {
-        #       imports = [
-        #         slippi.homeManagerModules.default
-        #         {
-        #           # use your path
-        #           slippi-launcher.isoPath = "/home/${username}/melee/meow.iso";
-        #           slippi-launcher.launchMeleeOnPlay = false;
-        #           slippi-launcher.enableJukebox = false;
-        #         }
-        #       ];
-        #     };
-        #   };
-        # }
+        slippi.nixosModules.default
+        {
+          home-manager = {
+            # ... snip -- see Home Manager's documentation for details
+            users.${username} = {
+              imports = [
+                slippi.homeManagerModules.default
+                {
+                  # use your path
+                  slippi-launcher.isoPath = "/home/${username}/melee/meow.iso";
+                  slippi-launcher.launchMeleeOnPlay = false;
+                  slippi-launcher.enableJukebox = false;
+                }
+              ];
+            };
+          };
+        }
 
       ];
     };
