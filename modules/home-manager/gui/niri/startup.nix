@@ -1,6 +1,8 @@
 {
   programs.niri.settings.spawn-at-startup = [
     { command = [ "foot" "--server" ]; }
+    # { command = [ "foot" "xwayland-satellite" ]; }
+    # { command = [ "foot" "~/.config/kanata/hyprkan -d" ]; }
     { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }
     { command = [ "dunst" ]; }
