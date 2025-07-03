@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    qemu_kvm
 
     nix-output-monitor
 
