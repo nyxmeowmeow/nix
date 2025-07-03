@@ -6,6 +6,7 @@
     ./hardware-configuration.nix
     ./configuration.nix
     ./packages.nix
+    ./services.nix
     ../../modules/nixos/audio.nix
     ../../modules/nixos/core/hardware.nix
     ../../modules/nixos/core/nix.nix
