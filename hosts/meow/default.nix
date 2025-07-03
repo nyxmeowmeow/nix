@@ -2,11 +2,11 @@
   imports = [
 
 
-    ./audio.nix
     ./boot.nix
     ./hardware-configuration.nix
     ./configuration.nix
     ./packages.nix
+    ../../modules/nixos/audio.nix
     ../../modules/nixos/core/hardware.nix
     ../../modules/nixos/core/nix.nix
     ../../modules/nixos/core/nixpkgs.nix

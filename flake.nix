@@ -32,7 +32,7 @@ in {
         inherit username inputs zen-browser nixvim niri;
       };
       modules = [
-        ./modules/nixos/default.nix
+        ./hosts/meow/default.nix
         ./modules/home-manager/default.nix
         ./modules/nixos/options.nix
 
@@ -81,9 +81,9 @@ in {
       ];
     };
 
-    mrrow = nixpkgs.lib.nixosSystem {
-
-    };
+    # mrrow = nixpkgs.lib.nixosSystem {
+    #
+    # };
 
 
   };
