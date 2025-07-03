@@ -18,7 +18,6 @@
       options = "--delete-older-than 10d";
     };
   };
-  system.stateVersion = "24.11";
   environment.systemPackages = with pkgs; [
     cachix
   ];

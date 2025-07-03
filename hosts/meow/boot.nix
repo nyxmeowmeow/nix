@@ -24,8 +24,13 @@
       "btbcm"
       "btusb"
 
-      "vivaldi_fmap"
       "battery"
+
+      "vivaldi_fmap"
+      # "libps2"
+      # "atkbd"
+      # "serio"
+
     ];
   };
 }

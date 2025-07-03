@@ -25,7 +25,9 @@
 let
   username = "meow";
 in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations = {
+
+    nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {
         inherit username inputs zen-browser nixvim niri;
       };
@@ -45,10 +47,6 @@ in {
         {
           nixpkgs.overlays = import ./overlays/default.nix;
         }
-
-
-
-
 
         inputs.stylix.nixosModules.stylix
 
@@ -82,5 +80,12 @@ in {
 
       ];
     };
+
+    mrrow = nixpkgs.lib.nixosSystem {
+
+    };
+
+
+  };
   };
 }
