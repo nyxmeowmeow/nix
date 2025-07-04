@@ -28,6 +28,7 @@ in {
         highlight_overrides.all = {
 
           Visual.bg = col.bg_desaturated;
+          VisualNOS.bg = col.bg_desaturated;
 
           FlashCurrent.fg = col.base0B;
           FlashLabel.fg = col.red;
