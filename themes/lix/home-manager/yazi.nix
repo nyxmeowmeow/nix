@@ -229,6 +229,7 @@ in {
           { name = "exe"; text = ""; fg = col.bubblegum; }
           { name = "dll"; text = "󱉟"; fg = col.bubblegum; }
           { name = "iso"; text = ""; fg = col.fg; }
+          { name = "qcow2"; text = ""; fg = col.fg; }
           { name = "kra"; text = ""; fg = col.pink; }
           { name = "kra~"; text = ""; fg = col.fg; }
           { name = "xml"; text = "󰗀"; fg = col.fg; }

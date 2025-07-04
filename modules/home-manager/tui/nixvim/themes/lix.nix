@@ -27,17 +27,19 @@ in {
 
         highlight_overrides.all = {
 
+          Visual.bg = col.bg_desaturated;
+
           FlashCurrent.fg = col.base0B;
-          FlashLabel.fg = "#F22C86";
-          TelescopeSelection = { fg = col.base00; bg = "#DBBFEF"; };
-          TelescopeSelectionCaret.fg = col.base00;
-          TelescopePromptPrefix.fg = col.base00;
-          TelescopePromptCounter.fg = col.base00;
-          TelescopePrevieHyphen.fg = col.base00;
-          MatchParen = { fg = "#F22C86"; bg = "none"; };
-          CursorLine.bg = "#47345E";
+          FlashLabel.fg = col.red;
+          TelescopeSelection = { fg = col.bg; bg = "#DBBFEF"; };
+          TelescopeSelectionCaret.fg = col.bg;
+          TelescopePromptPrefix.fg = col.bg;
+          TelescopePromptCounter.fg = col.bg;
+          TelescopePrevieHyphen.fg = col.bg;
+          MatchParen = { fg = col.red; bg = "none"; };
+
           RenderMarkdownBullet.fg = col.base01;
-          RenderMarkdownCodeInline.bg = col.base00;
+          RenderMarkdownCodeInline.bg = col.bg;
 #TermCursor.bg = col.text
           Character.fg = col.base01;
           String.fg = col.mint;
@@ -106,7 +108,7 @@ in {
           TelescopeTitle.fg = col.base08;
           SnacksIndentChunk.fg = col.base08;
           SnacksIndentScope.fg = col.base08;
-          RenderMarkdownCode.bg = col.base00;
+          RenderMarkdownCode.bg = col.bg;
           RenderMarkdownInlineHighlight.fg = col.base08;
           RenderMarkdownTableHead.fg = col.base08;
           RenderMarkdownTableRow.fg = col.base08;
