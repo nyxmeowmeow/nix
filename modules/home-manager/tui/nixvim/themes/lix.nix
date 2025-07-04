@@ -17,7 +17,7 @@ in {
           noice = true;
           mini = {
             enable = true;
-            indentscope_color = "#a5adcb";
+            indentscope_color = col.bg_desaturated;
           };
 
         };
@@ -27,8 +27,14 @@ in {
 
         highlight_overrides.all = {
 
-          Visual.bg = col.bg_desaturated;
-          VisualNOS.bg = col.bg_desaturated;
+          Visual.bg = col.bg_fade;
+          VisualNOS.bg = col.bg_fade;
+
+
+          # IncSearch = { fg = };
+          Search = { bg = col.bg_desaturated; fg = col.bubblegum; };
+          CurSearch = { bg = col.bubblegum; fg = col.bg; };
+
 
           FlashCurrent.fg = col.base0B;
           FlashLabel.fg = col.red;
