@@ -5,9 +5,8 @@
 
     { # put cursor at top of screen
       key = "gt";
-      action = "vim.lsp.buf.definition()";
+      action = "<cmd> lua vim.lsp.buf.definition()<CR>";
       mode = "n";
-      lua = true;
     }
 
     { # put cursor at top of screen
