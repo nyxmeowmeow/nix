@@ -3,6 +3,12 @@
     globals.mapleader = " ";
     keymaps = [
 
+    { # put cursor at top of screen
+      key = "gt";
+      action = "vim.lsp.buf.definition()";
+      mode = "n";
+      lua = true;
+    }
 
     { # put cursor at top of screen
       key = "Zz";

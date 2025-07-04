@@ -9,13 +9,11 @@
     ./services.nix
 
 
-        ./modules/home-manager/default.nix
 
     ../../modules/nixos/core/hardware.nix
     ../../modules/nixos/core/nix.nix
     ../../modules/nixos/core/nixpkgs.nix
     ../../modules/nixos/core/security.nix
-    ../../modules/nixos/core/services.nix
     ../../modules/nixos/audio.nix
     ../../modules/nixos/clipse.nix
     ../../modules/nixos/font.nix
