@@ -4,37 +4,39 @@
     keymaps = [
 
     { # put cursor at top of screen
-      key = "gt";
-      action = "<cmd> lua vim.lsp.buf.definition()<CR>";
+      key = "gd";
+      # action = "<cmd> lua vim.lsp.buf.definition()<CR>";
+      action = "vim.lsp.buf.definition()";
       mode = "n";
+      lua = true;
     }
 
-    { # put cursor at top of screen
+    { # write & quit
       key = "Zz";
       action = "ZZ";
       mode = "n";
     }
 
     { # put cursor at top of screen
-      key = "zA";
+      key = "zK";
       action = "z<cr>";
       mode = "n";
     }
 
     { # put cursor at bottom of screen
-      key = "zE";
+      key = "zJ";
       action = "z-";
       mode = "n";
     }
 
     { # put top of screen at cursor
-      key = "ze";
+      key = "zk";
       action = "zt";
       mode = "n";
     }
 
     { # put bottom of screen at cursor
-      key = "za";
+      key = "zj";
       action = "zb";
       mode = "n";
     }
