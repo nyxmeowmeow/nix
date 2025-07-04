@@ -33,8 +33,7 @@ in {
       };
       modules = [
         ./hosts/meow/default.nix
-        ./modules/home-manager/default.nix
-        ./modules/nixos/options.nix
+        ./hosts/meow/home-manager.nix
 
         {
           nixpkgs.overlays = [
@@ -81,9 +80,11 @@ in {
       ];
     };
 
-    # mrrow = nixpkgs.lib.nixosSystem {
-    #
-    # };
+    mrrow = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./hosts/mrrow/default.nix
+      ];
+    };
 
 
   };
