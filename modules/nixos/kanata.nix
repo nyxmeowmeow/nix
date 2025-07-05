@@ -38,6 +38,11 @@ spc (switch
 () spc break
 )
 
+
+3 S-[
+8 S-]
+
+
 f18 S-;
 lctrl -
 bspc @rpeat
@@ -222,7 +227,7 @@ spc r
  w (multi (unshift w) (layer-switch base))
  x (multi (unshift x) (layer-switch base))
  y (multi (unshift y) (layer-switch base))
- z (multi (unshift z)  (layer-switch base))
+ z (multi (unshift z) (layer-switch base))
  ent (unshift ent)
 
  a (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
@@ -252,14 +257,14 @@ bspc @rpeat
 
 (defchordsv2
 
-  (b f    ) S-7 15 all-released (typing over sup)
-  (  f d  ) =   15 all-released (typing over sup)
+  (b f    ) S-6 15 all-released (typing over sup)
+  (  f d  ) S-7 15 all-released (typing over sup)
   (  f   w) `   15 all-released (typing over sup)
   (    d w) S-8 15 all-released (typing over sup)
 
   (l o    ) S-' 15 all-released (typing over sup)
-  (  o u  ) +   15 all-released (typing over sup)
-  (    u j) S-4 15 all-released (typing over sup)
+  (  o u  ) S-\ 15 all-released (typing over sup)
+  (    u j) S-1 15 all-released (typing over sup)
 
   (n s    ) S-, 15 all-released (typing over sup)
   (  s t  ) S-[ 15 all-released (typing over sup)
@@ -268,12 +273,12 @@ bspc @rpeat
 
   (h a    ) ]   15 all-released (typing over sup)
   (h   e  ) del 15 all-released (typing over sup)
-  (  a e  ) S-] 15 all-released (typing over sup)
+  (  a e  ) +   15 all-released (typing over sup)
   (    e i) S-. 15 all-released (typing over sup)
 
   (, .    ) \   15 all-released (typing over sup)
-  (  . k  ) S-\ 15 all-released (typing over sup)
-  (    k g) S-1 15 all-released (typing over sup)
+  (  . k  ) S-2 15 all-released (typing over sup)
+  (    k g) S-4 15 all-released (typing over sup)
 
   (f15 f16      ) S-3 15 all-released (typing over sup)
   (f15     f17  ) S-5 15 all-released (typing over sup)
@@ -451,18 +456,14 @@ bspc @rpeat
     ((key-history 0 1)) (macro S-0) break
     () rpt break
   )
-
 )
         '';
       };
 
     };
-
   };
-  # Enable the uinput module
-  boot.kernelModules = [ "uinput" ];
 
-  # Enable uinput
+  boot.kernelModules = [ "uinput" ];
   hardware.uinput.enable = true;
 
   # Set up udev rules for uinput
