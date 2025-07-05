@@ -247,6 +247,12 @@ f18 S-;
 lctrl -
 bspc @rpeat
 
+
+
+
+3 S-[
+8 S-]
+
  ;;caps XX ;; 5. key deactivations of caps, numbers, ... are optional
 )
 
