@@ -7,6 +7,7 @@
     ./configuration.nix
     ./packages.nix
     ./services.nix
+    ./kanata.nix
 
 
 
@@ -18,7 +19,6 @@
     ../../modules/nixos/clipse.nix
     ../../modules/nixos/font.nix
     ../../modules/nixos/fontconfig.nix
-    ../../modules/nixos/kanata.nix
     ../../modules/nixos/languages.nix
     ../../modules/nixos/misc.nix
     ../../modules/nixos/nix-gaming.nix
