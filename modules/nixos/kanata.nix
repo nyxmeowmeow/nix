@@ -267,7 +267,7 @@ bspc @rpeat
   (    u j) S-1 15 all-released (typing over sup)
 
   (n s    ) S-, 15 all-released (typing over sup)
-  (  s t  ) S-[ 15 all-released (typing over sup)
+  (  s t  ) = 15 all-released (typing over sup)
   (  s   c) S-` 15 all-released (typing over sup)
   (    t c) [   15 all-released (typing over sup)
 
