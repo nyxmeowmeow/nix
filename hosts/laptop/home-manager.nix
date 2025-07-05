@@ -21,6 +21,7 @@
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/navi.nix
         ../../modules/home-manager/tui/btop.nix
+        ../../modules/home-manager/tui/git.nix
 #        ../../modules/home-manager/gui/obs.nix
         ../../modules/home-manager/tui/clipse.nix
         ../../modules/home-manager/gui/dunst.nix
