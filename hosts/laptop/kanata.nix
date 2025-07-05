@@ -5,10 +5,6 @@
     keyboards = {
       lily58 = {
         port = 10000;
-        devices = [
-          "/dev/input/by-id/usb-liliums_Lily58-event-kbd"
-          "/dev/input/by-id/usb-liliums_Lily58-event-if02"
-        ];
 
         extraDefCfg = ''
           process-unmapped-keys yes
@@ -16,43 +12,41 @@
           chords-v2-min-idle 40
           danger-enable-cmd yes
         '';
-
+#TODO up = z
         config = /* scheme */ ''
 (defsrc)
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- t (t! homerowmod $tot 110 t lsft)
- a (t! homerowmod $tot 110 a rsft)
- c (t! homerowmod $tot 110 c lctl)
- h (t! homerowmod $tot 110 h rctl)
- n (t! homerowmodfiltered $tot 200 n lsft (n))
- i (t! homerowmod $tot 150 i rsft)
- s (t! homerowmod $tot 120 s (layer-while-held syms))
- e (t! homerowmod $tot 120 e (layer-while-held syms))
+ e (t! homerowmod $tot 110 t lsft)
+ l (t! homerowmod $tot 110 a rsft)
+ r (t! homerowmod $tot 110 c lctl)
+ k (t! homerowmod $tot 110 h rctl)
+ q (t! homerowmodfiltered $tot 200 n lsft (n))
+ ' (t! homerowmod $tot 150 i rsft)
+ w (t! homerowmod $tot 120 s (layer-while-held syms))
+ ; (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
- g (multi g @.tp) r (multi r @.tp) q (multi q @.tp) w (multi w @.tp) j (multi j @.tp) f (multi f @.tp) y (multi y @.tp) u (multi u @.tp) k (multi k @.tp) o (multi o @.tp) p (multi p @.tp)  l (multi l @.tp) z (multi z @.tp) x (multi x @.tp) d (multi d @.tp) v (multi v @.tp) b (multi b @.tp) m (multi m @.tp) 
+ g (multi v @.tp) j (multi m @.tp) f (multi g @.tp) y (multi y @.tp) u (multi ' @.tp) o (multi o @.tp) p (multi u @.tp) z (multi , @.tp) c (multi r @.tp) up (multi z @.tp) 1 (multi b @.tp) 2 (multi f @.tp) 3 (multi d @.tp) 4 (multi w @.tp) 5 (multi p @.tp) t (multi y @.tp) d (multi k @.tp) s (multi . @.tp) a (multi , @.tp) caps (multi q @.tp) i (multi l @.tp)
 
-esc (layer-switch over)
-spc (switch
-() spc break
-)
+m /
 
-
-3 S-[
-8 S-]
+tab -
+` S-;
+spc ent
 
 
-f18 S-;
-lctrl -
-bspc @rpeat
-f15 S--
-f16 S-9
-f17 S-0
-lmet (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
-f19 @magic
-rsft bspc
-ralt tab
+f3 S-[
+f4 S-[
+9 S-]
+
+
+;; ent @rpeat
+x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
+v @magic
+ralt spc
+rctl bspc
+
 ;;, (tap-hold-press 110 110 , lsft)
 ;;. @per?
 
@@ -100,70 +94,55 @@ i (multi i (layer-switch over))
 
 (deflayermap syms
 esc f1
-1 f2
-2 f3
-3 f4
-4 f5
-5 f6
-6 f7
-7 home
-8 pgdn
-9 pgup
-0 end
-b ,
-f .
-d ` 
-w `
-l left
+1 ,
+2 .
+3 ` 
+4 `
+i left
 o down
-u up
-j right
-n 1
-s 2
-t 3
-c 4
-h 7
-a 8
-e 9
-i 0
-bspc rpt
-, 0
-. 9
-k 8
-g 5
-f15 6
-f16 3
-f17 2
-; 1
-r @cw
+p up
+[ right
+q 1
+w 2
+e 3
+r 4
+k 7
+l 8
+; 9
+' 0
+ent rpt
+a 0
+s 9
+d 8
+f 5
+, 6
+. 3
+/ 2
+rsft 1
+c @cw
 
 )
 
 (deflayermap sup
-rsft rsft
-- lctl
-b b
-f f
-d d
-w w
-n n
-s s
-t t
-c c
-h h
-a a
-e e
-i i
+;; rsft rsft
+;; - lctl
+;; b b
+;; f f
+;; d d
+;; w w
+;; n n
+;; s s
+;; t t
+;; c c
+;; h h
+;; a a
+;; e e
+;; i i
 
 
 )
 
-(deflayermap krita
-lsft lsft
-lctl lctl
-r spc
-spc r
-)
+
 
 (defvirtualkeys
   to-base (layer-switch base)
@@ -208,52 +187,55 @@ spc r
 
 
 (deflayermap (typing) 
- h (multi (unshift h) (layer-switch base))
- b (multi (unshift b) (layer-switch base))
- d (multi (unshift d) (layer-switch base))
- f (multi (unshift f) (layer-switch base))
- g (multi (unshift g) (layer-switch base))
- j (multi (unshift j) (layer-switch base))
- k (multi (unshift k) (layer-switch base))
- l (multi (unshift l) (layer-switch base))
- m (multi (unshift m) (layer-switch base))
+ 1 (multi (unshift b) (layer-switch base))
+ 2 (multi (unshift f) (layer-switch base))
+ 3 (multi (unshift d) (layer-switch base))
+ 4 (multi (unshift w) (layer-switch base))
+ 5 (multi (unshift p) (layer-switch base))
+ u (multi (unshift ') (layer-switch base))
+ i (multi (unshift l) (layer-switch base))
  o (multi (unshift o) (layer-switch base))
- p (multi (unshift p) (layer-switch base))
- q (multi (unshift q) (layer-switch base))
- r (multi (unshift r) (layer-switch base))
- c (multi (unshift c) (layer-switch base))
- u (multi (unshift u) (layer-switch base))
- v (multi (unshift v) (layer-switch base))
- w (multi (unshift w) (layer-switch base))
- x (multi (unshift x) (layer-switch base))
- y (multi (unshift y) (layer-switch base))
- z (multi (unshift z) (layer-switch base))
- ent (unshift ent)
+ p (multi (unshift u) (layer-switch base))
+ [ (multi (unshift j) (layer-switch base))
+ r (multi (unshift c) (layer-switch base))
+ t (multi (unshift y) (layer-switch base))
+ k (multi (unshift h) (layer-switch base))
+ a (multi (unshift ,) (layer-switch base))
+ s (multi (unshift .) (layer-switch base))
+ d (multi (unshift k) (layer-switch base))
+ f (multi (unshift g) (layer-switch base))
+ g (multi (unshift v) (layer-switch base))
+ m (multi (unshift /) (layer-switch base))
+ , (multi S-- (layer-switch base))
+ . (multi S-9 (layer-switch base))
+ / (multi S-0 (layer-switch base))
+ rsft (multi (unshift ;) (layer-switch base))
+ up (multi z (layer-switch base))
+ c (multi (unshift r) (layer-switch base))
+ caps (multi (unshift q) (layer-switch base))
+ spc (unshift ent)
 
- a (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
- t (multi (t! homerowmod $tot 110 (unshift t) lsft) (layer-switch base))
- s (t! homerowmod $tot 120 (unshift s) (layer-while-held syms))
- e (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
- i (multi (t! homerowmod $tot 140 (unshift i) rsft) (layer-switch base))
- n (multi (t! homerowmod $tot 140 (unshift n) lsft) (layer-switch base))
-f15 S--
-f16 S-9
-f17 S-0
-lmet (multi nop1 (tap-hold-press 120 120 esc lmet))
-f19 @magic
-rsft bspc
-ralt tab
-f18 S-;
-lctrl -
-bspc @rpeat
+ l (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
+ e (multi (t! homerowmod $tot 110 (unshift t) lsft) (layer-switch base))
+ w (t! homerowmod $tot 120 (unshift s) (layer-while-held syms))
+ ; (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
+ ' (multi (t! homerowmod $tot 140 (unshift i) rsft) (layer-switch base))
+ q (multi (t! homerowmod $tot 140 (unshift n) lsft) (layer-switch base))
 
 
+tab -
+` S-;
+
+f3 S-[
+f4 S-[
+9 S-]
 
 
-3 S-[
-8 S-]
-
- ;;caps XX ;; 5. key deactivations of caps, numbers, ... are optional
+;; ent @rpeat
+x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
+v @magic
+ralt spc
+rctl bspc
 )
 
 
@@ -263,33 +245,33 @@ bspc @rpeat
 
 (defchordsv2
 
-  (b f    ) S-6 15 all-released (typing over sup)
-  (  f d  ) S-7 15 all-released (typing over sup)
-  (  f   w) `   15 all-released (typing over sup)
-  (    d w) S-8 15 all-released (typing over sup)
+  (1 2    ) S-6 15 all-released (typing over sup)
+  (  2 3  ) S-7 15 all-released (typing over sup)
+  (  2   4) `   15 all-released (typing over sup)
+  (    3 4) S-8 15 all-released (typing over sup)
 
-  (l o    ) S-' 15 all-released (typing over sup)
-  (  o u  ) S-\ 15 all-released (typing over sup)
-  (    u j) S-1 15 all-released (typing over sup)
+  (i o    ) S-' 15 all-released (typing over sup)
+  (  o p  ) S-\ 15 all-released (typing over sup)
+  (    p [) S-1 15 all-released (typing over sup)
 
-  (n s    ) S-, 15 all-released (typing over sup)
-  (  s t  ) = 15 all-released (typing over sup)
-  (  s   c) S-` 15 all-released (typing over sup)
-  (    t c) [   15 all-released (typing over sup)
+  (q w    ) S-, 15 all-released (typing over sup)
+  (  w e  ) = 15 all-released (typing over sup)
+  (  w   r) S-` 15 all-released (typing over sup)
+  (    e r) [   15 all-released (typing over sup)
 
-  (h a    ) ]   15 all-released (typing over sup)
-  (h   e  ) del 15 all-released (typing over sup)
-  (  a e  ) +   15 all-released (typing over sup)
-  (    e i) S-. 15 all-released (typing over sup)
+  (k l    ) ]   15 all-released (typing over sup)
+  (k   ;  ) del 15 all-released (typing over sup)
+  (  l ;  ) +   15 all-released (typing over sup)
+  (    ; ') S-. 15 all-released (typing over sup)
 
-  (, .    ) \   15 all-released (typing over sup)
-  (  . k  ) S-2 15 all-released (typing over sup)
-  (    k g) S-4 15 all-released (typing over sup)
+  (a s    ) \   15 all-released (typing over sup)
+  (  s d  ) S-2 15 all-released (typing over sup)
+  (    d f) S-4 15 all-released (typing over sup)
 
-  (f15 f16      ) S-3 15 all-released (typing over sup)
-  (f15     f17  ) S-5 15 all-released (typing over sup)
-  (    f16 f17  ) S-/ 15 all-released (typing over sup)
-  (        f17 ;) S-2 15 all-released (typing over sup)
+  (, .    ) S-3 15 all-released (typing over sup)
+  (,   /  ) S-5 15 all-released (typing over sup)
+  (  . /  ) S-/ 15 all-released (typing over sup)
+  (    / rsft) S-2 15 all-released (typing over sup)
 )
 
 
