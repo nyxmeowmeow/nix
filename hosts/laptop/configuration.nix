@@ -4,7 +4,7 @@
 # desktop: meow
 # laptop: mrrp
 
-  networking.hostName = "nixos";
+  networking.hostName = "laptop";
   networking.networkmanager.enable = true;
 
   users.users.${username} = {

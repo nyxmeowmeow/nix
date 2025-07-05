@@ -32,8 +32,8 @@ in {
         inherit username inputs zen-browser nixvim niri;
       };
       modules = [
-        ./hosts/meow/default.nix
-        ./hosts/meow/home-manager.nix
+        ./hosts/nixos/default.nix
+        ./hosts/nixos/home-manager.nix
 
         {
           nixpkgs.overlays = [
@@ -80,9 +80,29 @@ in {
       ];
     };
 
-    mrrow = nixpkgs.lib.nixosSystem {
+    laptop = nixpkgs.lib.nixosSystem {
+      specialArgs = {
+        inherit username inputs;
+      };
       modules = [
-        ./hosts/mrrow/default.nix
+
+        ./hosts/laptop/default.nix
+
+
+
+
+        home-manager.nixosModules.home-manager
+#        {
+#          nixpkgs.overlays = import ./overlays/default.nix;
+#        }
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit inputs username; };
+        }
+        inputs.stylix.nixosModules.stylix
+
+
       ];
     };
 
