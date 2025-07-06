@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    hyprpaper
     qemu_kvm
 
     gnome-online-accounts

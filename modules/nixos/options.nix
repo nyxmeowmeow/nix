@@ -32,5 +32,4 @@
     ];
     default = "mononoki";
   };
-
 }
