@@ -3,13 +3,12 @@
     globals.mapleader = " ";
     keymaps = [
 
-    # { # put cursor at top of screen
-    #   key = "gd";
-    #   # action = "<cmd> lua vim.lsp.buf.definition()<CR>";
-    #   action = "vim.lsp.buf.definition()";
-    #   mode = "n";
-    #   lua = true;
-    # }
+    {
+      key = "gd";
+      # action = "<cmd> lua vim.lsp.buf.definition()<CR>";
+      action = "<cmd>vim.lsp.buf.definition()<CR>";
+      mode = "n";
+    }
 
     { # write & quit
       key = "Zz";
