@@ -60,9 +60,10 @@ in {
           # "@lsp.type.type".fg = "#D5E7FF";
           # #"@lsp.type.typeParameter".fg = "";
           # "@lsp.type.variable".fg = col.base01;
+          "@punctuation.bracket".fg = col.text;
 
 
-          MatchParen = { fg = col.red; bg = "None"; };
+          MatchParen = { fg = col.red; bg = col.mantle; };
           Conditional.fg = col.mauve;
           Keyword.fg = col.mauve;
           "@lsp.type.keyword".fg = col.mauve;
@@ -104,9 +105,9 @@ in {
           "@module".fg = col.base08;
           TelescopeResultsDiffUntracked.fg = col.base07;
           MiniIndentscopeSymbol.fg = col.base07;
-          Comment.fg = col.base07;
-          SpecialComment.fg = col.base07;
-          String.fg = col.base0F;
+          Comment.fg = col.overlay;
+          SpecialComment.fg = col.overlay;
+          String.fg = col.green;
         };
       };
     };
