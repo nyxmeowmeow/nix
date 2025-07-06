@@ -37,6 +37,7 @@ in {
           RenderMarkdownCodeInline.bg = "#3B224C";
           #TermCursor.bg = col.text
           Character.fg = col.text;
+          Delimiter.fg = col.text;
           Constant.fg = "#C78DFC";
           #FunctionBuiltIn.fg = col.green
           #Number.fg = col.peach
@@ -70,6 +71,7 @@ in {
           FlashCurrent.fg = col.mauve;
 
           CursorLineNr.fg = col.lavender;
+          LineNr.fg = col.lavender;
           LineNrAbove.fg = col.surface1;
           LineNrBelow.fg = col.surface1;
 
