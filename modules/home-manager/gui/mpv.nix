@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
 
   programs.mpv = {
     enable = true;
@@ -14,7 +14,8 @@
       osd-border-color = "#181926";
       osd-color = "#cad3f5";
       osd-shadow-color = "#24273a";
-      osd-font = "mononoki nerd font mono";
+      # osd-font = "mononoki nerd font mono";
+      osd-font = config.stylix.fonts.monospace.name;
 
       script-opts-append = [
         "stats-border_color=30201e"
