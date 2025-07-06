@@ -1,6 +1,6 @@
 { lib, theme, ... }:
 let
-col = import ../../../../../themes/macchiato/colors.nix;
+col = import ../../../../../themes/black/colors.nix;
 in {
   config = lib.mkIf (theme == "black") {
 
@@ -25,19 +25,18 @@ in {
         no_underline = true;
 
         highlight_overrides.all = {
-          FlashMatch.fg = col.base0F;
-          FlashLabel.fg = "#F22C86";
-          FlashBackdrop.fg = "#886C9C";
+          FlashMatch.fg = col.green;
+          FlashLabel.fg = col.red;
+          FlashBackdrop.fg = col.surface1;
           TelescopeSelection = {
-            fg = col.base00;
-            bg = col.base08;
+            fg = col.base;
+            bg = col.lavender;
           };
-          CursorLine.bg = "#47345E";
           RenderMarkdownCode.bg = "#3B224C";
           RenderMarkdownBullet.fg = col.base01;
           RenderMarkdownCodeInline.bg = "#3B224C";
           #TermCursor.bg = col.text
-          Character.fg = col.base01;
+          Character.fg = col.text;
           Constant.fg = "#C78DFC";
           #FunctionBuiltIn.fg = col.green
           #Number.fg = col.peach
@@ -45,30 +44,34 @@ in {
           #Float.fg = col.peach
           # Repeat.fg = col.base08";
           # Type.fg = "#D5E7FF";
-          "@lsp.type.class".fg = "#D5E7FF";
-          "@lsp.type.comment".fg = col.base07;
-          "@lsp.type.enum".fg = "#D5E7FF";
-          "@lsp.type.enumMember".fg = col.base01;
-          "@lsp.type.function".fg = "#D5E7FF";
-          "@lsp.type.method".fg = "#D5E7FF";
-          "@lsp.type.number".fg = "#EFBA5D";
-          "Delimiter".fg = col.base01;
-          "@paramater".fg = col.base01;
-          "@property".fg = "#D5E7FF";
-          #"@lsp.type.property".fg = "";
-          "@lsp.type.string".fg = "#A5E07F";
-          "@lsp.type.struct".fg = "#D5E7FF";
-          "@lsp.type.type".fg = "#D5E7FF";
-          #"@lsp.type.typeParameter".fg = "";
-          "@lsp.type.variable".fg = col.base01;
+          # "@lsp.type.class".fg = "#D5E7FF";
+          # "@lsp.type.comment".fg = col.base07;
+          # "@lsp.type.enum".fg = "#D5E7FF";
+          # "@lsp.type.enumMember".fg = col.base01;
+          # "@lsp.type.function".fg = "#D5E7FF";
+          # "@lsp.type.method".fg = "#D5E7FF";
+          # "@lsp.type.number".fg = "#EFBA5D";
+          # "Delimiter".fg = col.base01;
+          # "@paramater".fg = col.base01;
+          # "@property".fg = "#D5E7FF";
+          # #"@lsp.type.property".fg = "";
+          # "@lsp.type.string".fg = "#A5E07F";
+          # "@lsp.type.struct".fg = "#D5E7FF";
+          # "@lsp.type.type".fg = "#D5E7FF";
+          # #"@lsp.type.typeParameter".fg = "";
+          # "@lsp.type.variable".fg = col.base01;
 
 
-          MatchParen = { fg = col.base0C; bg = "None"; };
-          Conditional.fg = col.base0A;
-          Keyword.fg = col.base0A;
-          "@lsp.type.keyword".fg = col.base0A;
-          FlashCurrent.fg = col.base0A;
-          CursorLineNr.fg = col.base08;
+          MatchParen = { fg = col.red; bg = "None"; };
+          Conditional.fg = col.mauve;
+          Keyword.fg = col.mauve;
+          "@lsp.type.keyword".fg = col.mauve;
+          FlashCurrent.fg = col.mauve;
+
+          CursorLineNr.fg = col.lavender;
+          LineNrAbove.fg = col.surface1;
+          LineNrBelow.fg = col.surface1;
+
           NoiceCmdlinePopupTitleSearch.fg = col.base08;
           NoiceCmdlinePopupBorderHelp.fg = col.base08;
           NoiceCmdlinePopupTitleHelp.fg = col.base08;
@@ -101,8 +104,6 @@ in {
           "@module".fg = col.base08;
           TelescopeResultsDiffUntracked.fg = col.base07;
           MiniIndentscopeSymbol.fg = col.base07;
-          LineNrAbove.fg = col.base07;
-          LineNrBelow.fg = col.base07;
           Comment.fg = col.base07;
           SpecialComment.fg = col.base07;
           String.fg = col.base0F;
