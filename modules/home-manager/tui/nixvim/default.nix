@@ -32,7 +32,7 @@
     ./utils/harpoon.nix
     ./utils/indentscope.nix
     ./utils/lsp.nix
-    ./utils/pairs.nix
+    # ./utils/pairs.nix
     ./utils/splitjoin.nix
     ./utils/surround.nix
     ./utils/telescope.nix

@@ -2,9 +2,9 @@
   programs.nixvim.plugins.tiny-inline-diagnostic = {
     enable = true;
 
-    lazyLoad.settings.event = [
-      "DeferredUIEnter"
-    ];
+    # lazyLoad.settings.event = [
+    #   "DeferredUIEnter"
+    # ];
 
     settings = {
       preset = "modern";
