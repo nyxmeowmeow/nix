@@ -2,9 +2,9 @@
   programs.tofi = {
     enable = true;
     settings = {
-      background-color = "#000000";
-      border-width = 0;
+      border-width = 2;
       font = "${config.stylix.fonts.monospace.name}";
+      font-size = 26;
       height = "50%";
       num-results = 5;
       outline-width = 0;
