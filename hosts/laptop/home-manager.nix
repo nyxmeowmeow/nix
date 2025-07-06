@@ -33,6 +33,7 @@
 #        ../../modules/home-manager/gui/mpv.nix
 #        ../../modules/home-manager/tui/ncmpcpp.nix
         ../../modules/home-manager/gui/niri/niri.nix
+        ./niri.nix
         ../../modules/home-manager/tui/nushell.nix
         ../../modules/home-manager/tui/starship.nix
         ../../modules/home-manager/gui/tofi.nix
