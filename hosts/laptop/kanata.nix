@@ -19,33 +19,54 @@
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
  e (t! homerowmod $tot 110 t lsft)
- l (t! homerowmod $tot 110 a rsft)
+ o (t! homerowmod $tot 110 a rsft)
  r (t! homerowmod $tot 110 c lctl)
- k (t! homerowmod $tot 110 h rctl)
+ i (t! homerowmod $tot 110 h rctl)
  q (t! homerowmodfiltered $tot 200 n lsft (n))
- ' (t! homerowmod $tot 150 i rsft)
+ [ (t! homerowmod $tot 150 i rsft)
  w (t! homerowmod $tot 120 s (layer-while-held syms))
- ; (t! homerowmod $tot 120 e (layer-while-held syms))
+ p (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
- g (multi v @.tp) j (multi m @.tp) f (multi g @.tp) y (multi y @.tp) u (multi ' @.tp) o (multi o @.tp) p (multi u @.tp) z (multi , @.tp) c (multi r @.tp) up (multi z @.tp) 1 (multi b @.tp) 2 (multi f @.tp) 3 (multi d @.tp) 4 (multi w @.tp) 5 (multi p @.tp) t (multi y @.tp) d (multi k @.tp) s (multi . @.tp) a (multi , @.tp) caps (multi q @.tp) i (multi l @.tp)
+ 
+ g (multi v @.tp)
+ u (multi m @.tp)
+ f (multi g @.tp)
+ 7 (multi ' @.tp)
+ 8 (multi l @.tp)
+ 9 (multi o @.tp)
+ 0 (multi u @.tp)
+ c (multi r @.tp)
+ ent (multi z @.tp)
+ = (multi x @.tp)
+ - (multi j @.tp)
+ 1 (multi b @.tp)
+ 2 (multi f @.tp)
+ 3 (multi d @.tp)
+ 4 (multi w @.tp)
+ 5 (multi p @.tp)
+ t (multi y @.tp)
+ d (multi k @.tp)
+ s (multi . @.tp)
+ a (multi , @.tp)
+ caps (multi q @.tp)
 
-m /
 
 tab -
 ` S-;
 spc ent
-
+m ent
+, spc
+. bspc
 
 f3 S-[
 f4 S-[
-9 S-]
+f10 S-]
 
 
 ;; ent @rpeat
 x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
 v @magic
-ralt spc
-rctl bspc
+] @rpeat
 
 ;;, (tap-hold-press 110 110 , lsft)
 ;;. @per?
@@ -192,34 +213,30 @@ c @cw
  3 (multi (unshift d) (layer-switch base))
  4 (multi (unshift w) (layer-switch base))
  5 (multi (unshift p) (layer-switch base))
- u (multi (unshift ') (layer-switch base))
- i (multi (unshift l) (layer-switch base))
- o (multi (unshift o) (layer-switch base))
- p (multi (unshift u) (layer-switch base))
- [ (multi (unshift j) (layer-switch base))
+ u (multi (unshift m) (layer-switch base))
+ i (multi (unshift h) (layer-switch base))
  r (multi (unshift c) (layer-switch base))
  t (multi (unshift y) (layer-switch base))
- k (multi (unshift h) (layer-switch base))
+ k (multi S-- (layer-switch base))
  a (multi (unshift ,) (layer-switch base))
  s (multi (unshift .) (layer-switch base))
  d (multi (unshift k) (layer-switch base))
  f (multi (unshift g) (layer-switch base))
  g (multi (unshift v) (layer-switch base))
- m (multi (unshift /) (layer-switch base))
- , (multi S-- (layer-switch base))
- . (multi S-9 (layer-switch base))
- / (multi S-0 (layer-switch base))
- rsft (multi (unshift ;) (layer-switch base))
- up (multi z (layer-switch base))
+ m (multi (unshift ent) (layer-switch base))
+ , spc
+ . bspc
+ ' (multi (unshift ;) (layer-switch base))
+ ent (multi z (layer-switch base))
  c (multi (unshift r) (layer-switch base))
  caps (multi (unshift q) (layer-switch base))
  spc (unshift ent)
 
- l (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
+ o (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
  e (multi (t! homerowmod $tot 110 (unshift t) lsft) (layer-switch base))
  w (t! homerowmod $tot 120 (unshift s) (layer-while-held syms))
- ; (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
- ' (multi (t! homerowmod $tot 140 (unshift i) rsft) (layer-switch base))
+ p (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
+ [ (multi (t! homerowmod $tot 140 (unshift i) rsft) (layer-switch base))
  q (multi (t! homerowmod $tot 140 (unshift n) lsft) (layer-switch base))
 
 
@@ -250,28 +267,28 @@ rctl bspc
   (  2   4) `   15 all-released (typing over sup)
   (    3 4) S-8 15 all-released (typing over sup)
 
-  (i o    ) S-' 15 all-released (typing over sup)
-  (  o p  ) S-\ 15 all-released (typing over sup)
-  (    p [) S-1 15 all-released (typing over sup)
+  (8 9    ) S-' 15 all-released (typing over sup)
+  (  9 0  ) S-\ 15 all-released (typing over sup)
+  (    0 -) S-1 15 all-released (typing over sup)
 
   (q w    ) S-, 15 all-released (typing over sup)
   (  w e  ) = 15 all-released (typing over sup)
   (  w   r) S-` 15 all-released (typing over sup)
   (    e r) [   15 all-released (typing over sup)
 
-  (k l    ) ]   15 all-released (typing over sup)
-  (k   ;  ) del 15 all-released (typing over sup)
-  (  l ;  ) +   15 all-released (typing over sup)
-  (    ; ') S-. 15 all-released (typing over sup)
+  (i o    ) ]   15 all-released (typing over sup)
+  (i   p  ) del 15 all-released (typing over sup)
+  (  o p  ) +   15 all-released (typing over sup)
+  (    p [) S-. 15 all-released (typing over sup)
 
   (a s    ) \   15 all-released (typing over sup)
   (  s d  ) S-2 15 all-released (typing over sup)
   (    d f) S-4 15 all-released (typing over sup)
 
-  (, .    ) S-3 15 all-released (typing over sup)
-  (,   /  ) S-5 15 all-released (typing over sup)
-  (  . /  ) S-/ 15 all-released (typing over sup)
-  (    / rsft) S-2 15 all-released (typing over sup)
+  (k l    ) S-3 15 all-released (typing over sup)
+  (k   ;  ) S-5 15 all-released (typing over sup)
+  (  l ;  ) S-/ 15 all-released (typing over sup)
+  (    ; ') S-2 15 all-released (typing over sup)
 )
 
 
