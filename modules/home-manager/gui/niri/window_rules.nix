@@ -50,16 +50,24 @@
     opacity = 0.0;
   }
 
+  {
+    matches = [ { 
+      title = "Krita";
+      app-id = "krita";
+    } ];
+    open-maximized = true;
+  }
+
 # {
 #   matches = [ { title = "mail"; } ];
 #   block-out-from = [ "screen-capture" "screencast" ];
 # }
 # {
-#   matches = [ { title = "bitwarden"; } ];
+#   matches = [ { title = "itwarden"; } ];
   #   block-out-from = [ "screen-capture" "screencast" ];
   # }
   # {
-  #   matches = [ { title = "password"; } ];
+  #   matches = [ { title = "assword"; } ];
   #   block-out-from = [ "screen-capture" "screencast" ];
   # }
   ];

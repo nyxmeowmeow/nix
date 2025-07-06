@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
 
   services.dunst = {
     enable = true;
@@ -64,7 +64,8 @@
         sort = true;
 
 
-        font = "mononoki Nerd Font mono 8";
+        # font = "mononoki Nerd Font mono 8";
+        font = "${config.stylix.fonts.monospace.name} 8";
 
         line_height = 3;
 
