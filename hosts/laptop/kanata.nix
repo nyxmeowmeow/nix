@@ -48,6 +48,11 @@
  d (multi k @.tp)
  s (multi . @.tp)
  a (multi , @.tp)
+ j (multi / @.tp)
+ k (multi S-- @.tp)
+ l (multi S-9 @.tp)
+ ; (multi S-0 @.tp)
+ ' (multi ; @.tp)
  caps (multi q @.tp)
 
 
@@ -78,39 +83,6 @@ v @magic
 (deflayermap over
 
 
-f18 tab
-f15 8
-f16 9
-f17 0
-f19 lsft
-
-b (multi b (layer-switch over))
-f (multi f (layer-switch over))
-d (multi d (layer-switch over))
-w (multi w (layer-switch over))
-p (multi p (layer-switch over))
-n (multi n (layer-switch over))
-s (multi s (layer-switch over))
-t (multi t (layer-switch over))
-c (multi c (layer-switch over))
-y (multi y (layer-switch over))
-, (multi , (layer-switch over))
-. (multi . (layer-switch over))
-k (multi k (layer-switch over))
-g (multi g (layer-switch over))
-v (multi v (layer-switch over))
-' (multi ' (layer-switch over))
-l (multi l (layer-switch over))
-o (multi o (layer-switch over))
-u (multi u (layer-switch over))
-j (multi j (layer-switch over))
-x (multi x (layer-switch over))
-m (multi m (layer-switch over))
-h (multi h (layer-switch over))
-a (multi a (layer-switch over))
-e (multi e (layer-switch over))
-i (multi i (layer-switch over))
-
 )
 
 (deflayermap syms
@@ -119,27 +91,27 @@ esc f1
 2 .
 3 ` 
 4 `
-i left
-o down
-p up
-[ right
+8 left
+9 down
+0 up
+- right
 q 1
 w 2
 e 3
 r 4
-k 7
-l 8
-; 9
-' 0
+i 7
+o 8
+p 9
+[ 0
 ent rpt
 a 0
 s 9
 d 8
 f 5
-, 6
-. 3
-/ 2
-rsft 1
+k 6
+l 3
+; 2
+' 1
 c @cw
 
 )
@@ -218,6 +190,10 @@ c @cw
  r (multi (unshift c) (layer-switch base))
  t (multi (unshift y) (layer-switch base))
  k (multi S-- (layer-switch base))
+ j (multi / (layer-switch base))
+ l (multi S-9 (layer-switch base))
+ ; (multi S-0 (layer-switch base))
+ ' (multi ; (layer-switch base))
  a (multi (unshift ,) (layer-switch base))
  s (multi (unshift .) (layer-switch base))
  d (multi (unshift k) (layer-switch base))
@@ -226,7 +202,6 @@ c @cw
  m (multi (unshift ent) (layer-switch base))
  , spc
  . bspc
- ' (multi (unshift ;) (layer-switch base))
  ent (multi z (layer-switch base))
  c (multi (unshift r) (layer-switch base))
  caps (multi (unshift q) (layer-switch base))
