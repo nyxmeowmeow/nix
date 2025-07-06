@@ -4,7 +4,6 @@
     inputs.niri.homeModules.niri 
     ./settings.nix 
     ./binds.nix 
-    ./outputs.nix
     ./layout.nix
     ./animations.nix
     ./startup.nix
