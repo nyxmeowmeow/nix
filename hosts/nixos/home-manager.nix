@@ -2,6 +2,7 @@
   home-manager = {
     extraSpecialArgs = {
       theme = config.theme;
+      host = config.networking.hostName;
       zen-browser = inputs.zen-browser;
     };
 

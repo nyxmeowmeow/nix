@@ -1,6 +1,4 @@
 {
-
-  home-manager.backupFileExtension = "backup";
   xdg.portal.config.common.default = "*";
 
   time.timeZone = "Australia/Brisbane";

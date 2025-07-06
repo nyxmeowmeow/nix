@@ -1,4 +1,4 @@
-{
+{ host, ... }: {
   programs.nushell = {
     enable = true;
 
@@ -47,7 +47,7 @@
 
       def nr [...msg: string] {
         # sudo nixos-rebuild switch --flake /home/meow/nix#nixos
-        nh os switch ~/nix -H $(hostname)
+        nh os switch ~/nix -H ${host}
         cd ~/nix
         git add .
         let timestamp = (date now | format date '%d/%m %H:%M:%S')

@@ -22,27 +22,27 @@
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, nuhxboard, ... }:
-let
-  username = "meow";
-in {
+    let
+    username = "meow";
+  in {
     nixosConfigurations = {
 
-    nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = {
-        inherit username inputs zen-browser nixvim niri;
-      };
-      modules = [
-        ./hosts/nixos/default.nix
-        ./hosts/nixos/home-manager.nix
+      nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit username inputs zen-browser nixvim niri;
+        };
+        modules = [
+          ./hosts/nixos/default.nix
+          ./hosts/nixos/home-manager.nix
 
-        {
-          nixpkgs.overlays = [
-            (final: prev: {
-             mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
-             rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
-             })
-          ];
-        }
+            {
+              nixpkgs.overlays = [
+                (final: prev: {
+                 mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
+                 rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
+                 })
+              ];
+            }
         {
           nixpkgs.overlays = import ./overlays/default.nix;
         }
@@ -56,18 +56,19 @@ in {
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "bak";
           home-manager.extraSpecialArgs = { inherit inputs username; };
         }
 
         slippi.nixosModules.default
         {
           home-manager = {
-            # ... snip -- see Home Manager's documentation for details
+# ... snip -- see Home Manager's documentation for details
             users.${username} = {
               imports = [
                 slippi.homeManagerModules.default
                 {
-                  # use your path
+# use your path
                   slippi-launcher.isoPath = "/home/${username}/melee/meow.iso";
                   slippi-launcher.launchMeleeOnPlay = false;
                   slippi-launcher.enableJukebox = false;
@@ -77,36 +78,37 @@ in {
           };
         }
 
-      ];
-    };
-
-    laptop = nixpkgs.lib.nixosSystem {
-      specialArgs = {
-        inherit username inputs;
+        ];
       };
-      modules = [
 
-        ./hosts/laptop/default.nix
+      laptop = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit username inputs;
+        };
+        modules = [
+
+          ./hosts/laptop/default.nix
 
 
 
 
-        home-manager.nixosModules.home-manager
+            home-manager.nixosModules.home-manager
 #        {
 #          nixpkgs.overlays = import ./overlays/default.nix;
 #        }
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs username; };
-        }
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "bak";
+              home-manager.extraSpecialArgs = { inherit inputs username; };
+            }
         inputs.stylix.nixosModules.stylix
 
 
-      ];
+        ];
+      };
+
+
     };
-
-
-  };
   };
 }

@@ -1,8 +1,4 @@
 { pkgs, username, ... }: {
-# TODO
-# username: nyx
-# desktop: meow
-# laptop: mrrp
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
