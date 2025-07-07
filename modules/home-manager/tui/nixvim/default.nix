@@ -39,5 +39,6 @@
     ./utils/treesitter-textobjects.nix
     ./utils/treesitter.nix
     ./utils/yazi.nix
+    ./utils/luasnip.nix
   ];
 }
