@@ -1,5 +1,9 @@
 { inputs, config, username, ... }: {
   home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "bak";
+    extraSpecialArgs = { inherit inputs username; };
     extraSpecialArgs = {
       theme = config.theme;
       host = config.networking.hostName;

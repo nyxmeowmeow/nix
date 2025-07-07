@@ -71,13 +71,7 @@
 #        {
 #          nixpkgs.overlays = import ./overlays/default.nix;
 #        }
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.backupFileExtension = "bak";
-              home-manager.extraSpecialArgs = { inherit inputs username; };
-            }
-        inputs.stylix.nixosModules.stylix
+            inputs.stylix.nixosModules.stylix
 
 
         ];
