@@ -27,7 +27,7 @@ programs.nixvim.plugins.cmp = {
         "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})  ";
       "<C-u>" = # lua
         "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
-      "<C-Space>" = # lua
+      "<C-h>" = # lua
         "cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Replace })";
     };
 
