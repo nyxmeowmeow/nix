@@ -1,6 +1,11 @@
 { inputs, config, username, ... }: {
   home-manager = {
+
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "bak";
     extraSpecialArgs = {
+      inherit inputs username;
       theme = config.theme;
       host = config.networking.hostName;
       zen-browser = inputs.zen-browser;
