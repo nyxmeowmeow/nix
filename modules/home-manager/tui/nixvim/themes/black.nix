@@ -25,6 +25,10 @@ in {
         no_underline = true;
 
         highlight_overrides.all = {
+          TinyInlineDiagnosticVivtualTextArrow.bg = "None";
+
+
+
           FlashMatch.fg = col.green;
           FlashLabel.fg = col.red;
           FlashBackdrop.fg = col.surface1;
