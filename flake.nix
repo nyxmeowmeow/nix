@@ -21,7 +21,7 @@
     walker.url = "github:abenz1267/walker";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, nuhxboard, ... }:
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
   let
     username = "meow";
   in {
@@ -34,15 +34,16 @@
         modules = [
           ./hosts/nixos/default.nix
           ./hosts/nixos/home-manager.nix
-          ./hosts/nixos/slippi.nix
 
         {
           nixpkgs.overlays = import ./overlays/default.nix;
         }
-        slippi.nixosModules.default
-        {
-        home-manager = import ./modules/nixos/slippi.nix;
-        }
+
+        inputs.slippi.nixosModules.default
+          ./modules/nixos/slippi.nix
+        # {
+        #   home-manager = import ./modules/nixos/slippi.nix;
+        # }
 
         inputs.stylix.nixosModules.stylix
 
