@@ -22,10 +22,6 @@
           '';
 
         config = /* scheme */ ''
-(defcfg
- concurrent-tap-hold no
-)
-
 (defsrc
  f j u 
 )
@@ -40,33 +36,35 @@
  tp (hold-for-duration  55 typingmode)
 
 
- t (t! homerowmod $tot 110 t lsft)
- a (t! homerowmod $tot 110 a rsft)
- c (t! homerowmod $tot 110 c lctl)
- h (t! homerowmod $tot 110 h rctl)
- n (t! homerowmodfiltered $tot 200 n lsft (n))
- i (t! homerowmod $tot 150 i rsft)
- s (t! homerowmod $tot 120 s (layer-while-held syms))
- e (t! homerowmod $tot 120 e (layer-while-held syms))
+ t (t! homerowmod 110 110 t lsft)
+ a (t! homerowmod 110 110 a rsft)
+ c (t! homerowmod 110 110 c lctl)
+ h (t! homerowmod 110 110 h rctl)
+ n (t! homerowmod 150 150 n lsft)
+ i (t! homerowmod 150 150 i rsft)
+ ;; s (t! homerowmod 120 120 s (layer-while-held syms))
+ ;; e (t! homerowmod 120 120 e (layer-while-held syms))
+ s (t! homerowmod 120 120 s rsft)
+ e (t! homerowmod 120 120 e rsft)
  ;; define each letter as typing-layer trigger
  g (t! letter 200 200 g)
- r (t! lmulti 200 200 r)
- q (t! lmulti 200 200 q)
- w (t! lmulti 200 200 w)
- j (t! lmulti 200 200 j)
- f (t! lmulti 200 200 f)
- y (t! lmulti 200 200 y)
- u (t! lmulti 200 200 u)
- k (t! lmulti 200 200 k)
- o (t! lmulti 200 200 o)
- p (t! lmulti 200 200 p)
- l (t! lmulti 200 200 l)
- z (t! lmulti 200 200 z)
- x (t! lmulti 200 200 x)
- d (t! lmulti 200 200 d)
- v (t! lmulti 200 200 v)
- b (t! lmulti 200 200 b)
- m (t! lmulti 200 200 m) 
+ r (t! letter 200 200 r)
+ q (t! letter 200 200 q)
+ w (t! letter 200 200 w)
+ j (t! letter 200 200 j)
+ f (t! letter 200 200 f)
+ y (t! letter 200 200 y)
+ u (t! letter 200 200 u)
+ k (t! letter 200 200 k)
+ o (t! letter 200 200 o)
+ p (t! letter 200 200 p)
+ l (t! letter 200 200 l)
+ z (t! letter 200 200 z)
+ x (t! letter 200 200 x)
+ d (t! letter 200 200 d)
+ v (t! letter 200 200 v)
+ b (t! letter 200 200 b)
+ m (t! letter 200 200 m) 
 )
 
 (deftemplate homerowmod (timeouttap timeouthold keytap keyhold)

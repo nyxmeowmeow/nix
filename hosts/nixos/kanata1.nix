@@ -26,7 +26,7 @@
  a (t! homerowmod $tot 110 a rsft)
  c (t! homerowmod $tot 110 c lctl)
  h (t! homerowmod $tot 110 h rctl)
- n (t! homerowmodfiltered $tot 200 n lsft (n))
+ n (t! homerowmod $tot 200 n lsft (n))
  i (t! homerowmod $tot 150 i rsft)
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
