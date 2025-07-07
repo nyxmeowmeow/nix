@@ -34,9 +34,10 @@
   magic (switch
   ;; query
     ((and (key-history nop1 1) (key-history q 2))) (macro u) break
+    ((key-history q 1)) (macro u) break
 
   ;; #include
-    ((and (key-history 3 2))) (macro i n c l u d e) break
+    ((key-history 3 1)) (macro i n c l u d e) break
 
   ;; sfb
     ((and (key-history nop1 1) (key-history o 2))) (macro a) break
@@ -44,55 +45,6 @@
     ((and (key-history nop1 1) (key-history u 2))) (macro e) break
     ((and (key-history nop1 1) (key-history e 2))) (macro u) break
     ((and (key-history nop1 1) (key-history i 2))) (macro x) break
-
-  ;; sfs
-    ;;((and(key-history e 2) (key-history s 1))) (macro e) break
-    ((and(key-history e 2) (key-history y 1))) (macro e) break
-    ((and(key-history e 2) (key-history v 1))) (macro e) break
-
-    ((and(key-history n 2) (key-history i 1))) (macro x) break
-  ;; sfb
-    ((and (key-history nop1 1) (key-history w 2))) (macro y) break
-    ((and (key-history nop1 1) (key-history c 2))) (macro y) break
-    ((and (key-history nop1 1) (key-history p 2))) (macro y) break
-
-    ((and (key-history nop1 1) (key-history j 2))) (macro u s t) break
-
-    ((and (key-history nop1 1) (key-history \ 2))) (macro n) break
-
-
-    ((and (key-history nop1 1) (key-history 1 2))) (macro [) break
-
-  ;; non-sfb for >>
-    ((and (key-history nop1 1) (key-history . 2))) (macro S-.) break
-  ;; non-sfb for <=
-    ((and (key-history nop1 1) (key-history , 2))) (macro =) break
-  ;; non-sfb ; for ]
-    ((and (key-history nop1 1) (key-history ] 2))) (macro ;) break
-  ;; auto ; for {}
-    ((and (key-history nop1 1) (key-history { 2))) (macro S-] ; left left) break
-
-
-    ((and (key-history nop1 1) (key-history x 2))) (macro p k g s) break
-
-
-    ((and (key-history nop1 1) (key-history 7 2))) (macro S-7) break
-    ((and (key-history nop1 1) (key-history ; 2))) (macro S-;) break
-    ((and (key-history nop1 1) (key-history = 2))) (macro S-.) break
-    ((and (key-history nop1 1) (key-history - 2))) (macro S-.) break
-    ((and (key-history nop1 1) (key-history 9 2))) (macro S-') break
-    ((and (key-history nop1 1) (key-history 0 2))) (macro S-0) break
-
-
-
-
-  ;; query
-    ((key-history q 1)) (macro u) break
-
-  ;; #include
-    ((key-history 3 1)) (macro i n c l u d e) break
-
-  ;; sfb
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
@@ -103,42 +55,72 @@
     ;;((and(key-history e 2) (key-history s 1))) (macro e) break
     ((and(key-history e 2) (key-history y 1))) (macro e) break
     ((and(key-history e 2) (key-history v 1))) (macro e) break
+    ((and(key-history e 2) (key-history y 1))) (macro e) break
+    ((and(key-history e 2) (key-history v 1))) (macro e) break
 
     ((and(key-history n 2) (key-history i 1))) (macro x) break
+    ((and(key-history n 2) (key-history i 1))) (macro x) break
   ;; sfb
+    ((and (key-history nop1 1) (key-history w 2))) (macro y) break
+    ((and (key-history nop1 1) (key-history c 2))) (macro y) break
+    ((and (key-history nop1 1) (key-history p 2))) (macro y) break
     ((key-history w 1)) (macro y) break
     ((key-history c 1)) (macro y) break
     ((key-history p 1)) (macro y) break
 
+
+    ((and (key-history nop1 1) (key-history j 2))) (macro u s t) break
     ((key-history j 1)) (macro u s t) break
 
+    ((and (key-history nop1 1) (key-history \ 2))) (macro n) break
     ((key-history \ 1)) (macro n) break
 
-    ;; non-sfb for !=
-    ;;((and(key-history spc 2) (key-history 1 1))) (macro =) break
 
-    ;; non-sfb for vec![]
-    ;;((and(key-history c 2) (key-history 1 1))) (macro [) break
-
+    ((and (key-history nop1 1) (key-history 1 2))) (macro [) break
     ((key-history 1 1)) (macro [) break
 
   ;; non-sfb for >>
+    ((and (key-history nop1 1) (key-history . 2))) (macro S-.) break
     ((key-history . 1)) (macro S-.) break
   ;; non-sfb for <=
+    ((and (key-history nop1 1) (key-history , 2))) (macro =) break
     ((key-history , 1)) (macro =) break
   ;; non-sfb ; for ]
+    ((and (key-history nop1 1) (key-history ] 2))) (macro ;) break
     ((key-history ] 1)) (macro ;) break
   ;; auto ; for {}
+    ((and (key-history nop1 1) (key-history { 2))) (macro S-] ; left left) break
     ((key-history { 1)) (macro S-] ; left left) break
 
+
+
+    ((and (key-history nop1 1) (key-history x 2))) (macro p k g s) break
     ((key-history x 1)) (macro p k g s) break
 
+
+    ((and (key-history nop1 1) (key-history 7 2))) (macro S-7) break
+    ((and (key-history nop1 1) (key-history ; 2))) (macro S-;) break
+    ((and (key-history nop1 1) (key-history = 2))) (macro S-.) break
+    ((and (key-history nop1 1) (key-history - 2))) (macro S-.) break
+    ((and (key-history nop1 1) (key-history 9 2))) (macro S-') break
+    ((and (key-history nop1 1) (key-history 0 2))) (macro S-0) break
     ((key-history 7 1)) (macro S-7) break
     ((key-history ; 1)) (macro S-;) break
     ((key-history = 1)) (macro S-.) break
     ((key-history - 1)) (macro S-.) break
     ((key-history 9 1)) (macro S-') break
     ((key-history 0 1)) (macro S-0) break
+
+
+
+
+
+
+
+
+
+
+
     () rpt break
   )
 
@@ -146,11 +128,19 @@
   rpeat (switch
   ;; TODO tr -> ue
     ((key-history , 1)) (macro S-,) break
+    ((and (key-history nop1 1) (key-history , 1))) (macro S-,) break
     ((key-history \ 1)) (macro S-\) break
+    ((and (key-history nop1 1) (key-history \ 1))) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break
+    ((and (key-history nop1 1) (key-history ; 1))) (macro S-;) break
     ((key-history 7 1)) (macro S-7) break
+    ((and (key-history nop1 1) (key-history 7 1))) (macro S-7) break
     ((key-history 9 1)) (macro S-9) break
+    ((and (key-history nop1 1) (key-history 9 1))) (macro S-9) break
     ((key-history 0 1)) (macro S-0) break
+    ((and (key-history nop1 1) (key-history 0 1))) (macro S-0) break
+
+
     () rpt break
   )
 )
