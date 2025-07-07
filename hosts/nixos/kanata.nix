@@ -116,7 +116,7 @@
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
- q lrld
+ q ( t! letter 200 200 q)
  w ( t! letter 200 200 w)
  f ( t! letter 200 200 f)
  l ( t! letter 200 200 l)
@@ -138,7 +138,7 @@
 f15 S--
 f16 S-9
 f17 S-0
-lmet (tap-hold-press 120 120 esc lmet)
+lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 f19 @magic
 rsft bspc
 ralt tab
@@ -195,6 +195,43 @@ h (multi h (layer-switch over))
 a (multi a (layer-switch over))
 e (multi e (layer-switch over))
 i (multi i (layer-switch over))
+)
+
+(deflayermap sup
+
+
+f18 tab
+f15 8
+f16 9
+f17 0
+f19 lsft
+
+b b
+f f
+d d
+w w
+p p
+n n
+s s
+t t
+c c
+y y
+, ,
+. .
+k k
+g g
+v v
+' '
+l l
+o o
+u u
+j j
+x x
+m m
+h h
+a a
+e e
+i i
 
 )
 (deflayermap syms
