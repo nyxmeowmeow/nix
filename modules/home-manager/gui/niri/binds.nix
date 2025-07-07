@@ -17,8 +17,8 @@
     "XF86AudioLowerVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
 
     "Mod+N".action = focus-monitor-next;
-    "Mod+3".action = screenshot;
-    "Mod+4".action = sh "hex=$(niri msg pick-color | grep -o '#.*') && echo -n \"$hex\" | wl-copy && notify-send \"$hex\"";
+    # "Mod+3".action = screenshot;
+    # "Mod+4".action = sh "hex=$(niri msg pick-color | grep -o '#.*') && echo -n \"$hex\" | wl-copy && notify-send \"$hex\"";
     "Mod+O".action = close-window;
     "Mod+Return".action = toggle-overview;
 
@@ -27,6 +27,7 @@
     "Mod+Z".action = sh "zen -p misc";
     "Mod+Shift+Z".action = sh "zen -p rain";
 
+    "Mod+V".action = sh "clipse";
 
     "Mod+Shift+Semicolon".action = focus-workspace "one";
     "Mod+B".action = focus-workspace "browser";

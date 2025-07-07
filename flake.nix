@@ -4,8 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
-    niri.url = "github:sodiboo/niri-flake";
+    nix-gaming.url = "github:fufexan/nix-gaming";
     stylix.url = "github:danth/stylix";
+
+    niri.url = "github:sodiboo/niri-flake";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,34 +17,34 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     slippi.url = "github:lytedev/slippi-nix";
-    nix-gaming.url = "github:fufexan/nix-gaming";
     nuhxboard.url = "github:justDeeevin/NuhxBoard";
+    walker.url = "github:abenz1267/walker";
 
-    mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
+    # mpdfix.url = "github:NixOS/nixpkgs/061295ff547b7d5c3b489076546550e61f509991";
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, slippi, nuhxboard, ... }:
-    let
+  let
     username = "meow";
   in {
     nixosConfigurations = {
 
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {
-          inherit username inputs zen-browser nixvim niri;
+          inherit inputs username zen-browser nixvim niri;
         };
         modules = [
           ./hosts/nixos/default.nix
           ./hosts/nixos/home-manager.nix
 
-            {
-              nixpkgs.overlays = [
-                (final: prev: {
-                 mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
-                 rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
-                 })
-              ];
-            }
+            # {
+            #   nixpkgs.overlays = [
+            #     (final: prev: {
+            #      mpd = inputs.mpdfix.legacyPackages.${final.system}.mpd;
+            #      rocmPackages.clr = inputs.mpdfix.legacyPackages.${final.system}.rocmPackages.clr;
+            #      })
+            #   ];
+            # }
         {
           nixpkgs.overlays = import ./overlays/default.nix;
         }

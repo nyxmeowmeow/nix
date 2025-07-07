@@ -20,6 +20,7 @@
   {
     matches = [ { app-id = "^vesktop$"; } ];
     block-out-from = "screen-capture";
+    open-on-workspace = "discord";
   }
 
   {
