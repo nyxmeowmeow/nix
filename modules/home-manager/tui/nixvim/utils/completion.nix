@@ -8,22 +8,26 @@ programs.nixvim.plugins.cmp = {
     { name = "buffer"; }
     { name = "path"; }
     ];
+
+    preselect = # Lua
+      "cmp.PreselectMode.Item";
+
     mapping = {
       "<C-j>" = # Lua
         "cmp.mapping.scroll_docs(-4)";
       "<C-u>" = # Lua
         "cmp.mapping.scroll_docs(4)";
       # "<C-Space>" = # Lua
-      #   "cmp.mapping.complete()";
+        # "cmp.mapping.complete()";
       # "<C-h>" = # Lua
       #   "cmp.mapping.close()";
       # "<Tab>" = # Lua
       #   "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
-      "<C-Space>" = # Lua
-        "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'}),  cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace })";
+      "<Tab>" = # Lua
+        "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})  ";
       "<S-Tab>" = # Lua
         "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
-      "<CR>" = # Lua
+      "<C-Space>" = # Lua
         "cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace })";
     };
 

@@ -10,7 +10,7 @@
     enable = true;
     # enableFishIntegration = true;
     enableNushellIntegration = true;
-    initLua = ''
+    initLua = /* lua */ ''
       -- require("folder-rules"):setup()
       require("no-status"):setup()
       -- require("mime-preview"):setup()
