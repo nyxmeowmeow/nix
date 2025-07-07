@@ -13,12 +13,14 @@ programs.nixvim.plugins.cmp = {
         "cmp.mapping.scroll_docs(-4)";
       "<C-u>" = # Lua
         "cmp.mapping.scroll_docs(4)";
+      # "<C-Space>" = # Lua
+      #   "cmp.mapping.complete()";
+      # "<C-h>" = # Lua
+      #   "cmp.mapping.close()";
+      # "<Tab>" = # Lua
+      #   "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
       "<C-Space>" = # Lua
-        "cmp.mapping.complete()";
-      "<C-h>" = # Lua
-        "cmp.mapping.close()";
-      "<Tab>" = # Lua
-        "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+        "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'}),  cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace })";
       "<S-Tab>" = # Lua
         "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
       "<CR>" = # Lua
