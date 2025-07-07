@@ -63,6 +63,7 @@
         modules = [
 
           ./hosts/laptop/default.nix
+          ./hosts/laptop/home-manager.nix
 
 
 
@@ -76,8 +77,6 @@
 
         ];
       };
-
-
     };
   };
 }

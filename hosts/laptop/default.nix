@@ -8,7 +8,6 @@
     ./kanata.nix
     ./packages.nix
     ./services.nix
-    ./home-manager.nix
     ../../modules/nixos/options.nix
     ../../modules/nixos/shared.nix
     ../../modules/nixos/stylix.nix
