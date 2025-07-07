@@ -23,13 +23,13 @@
 )
 
 (defvar
-  tot 220  ;; tot=time out tap
+  tot 150  ;; tot=time out tap
 )
 
 (defvirtualkeys typingmode nop1)
 
 (defalias
- .tp (hold-for-duration  355 typingmode)
+ .tp (hold-for-duration  150 typingmode)
 
   magic (switch
 
@@ -277,33 +277,33 @@ f17 2
 
 (defchordsv2
 
-  (b f    ) S-6 15 all-released ( over)
-  (  f d  ) S-7 15 all-released ( over)
-  (  f   w) `   15 all-released ( over)
-  (    d w) S-8 15 all-released ( over)
+  (b f    ) S-6 15 all-released (over sup)
+  (  f d  ) S-7 15 all-released (over sup)
+  (  f   w) `   15 all-released (over sup)
+  (    d w) S-8 15 all-released (over sup)
   
-  (l o    ) S-' 15 all-released ( over)
-  (  o u  ) S-\ 15 all-released ( over)
-  (    u j) S-1 15 all-released ( over)
+  (l o    ) S-' 15 all-released (over sup)
+  (  o u  ) S-\ 15 all-released (over sup)
+  (    u j) S-1 15 all-released (over sup)
 
-  (n s    ) S-, 15 all-released ( over)
-  (  s t  ) = 15 all-released ( over)
-  (  s   c) S-` 15 all-released ( over)
-  (    t c) [   15 all-released ( over)
+  (n s    ) S-, 15 all-released (over sup)
+  (  s t  ) = 15 all-released (over sup)
+  (  s   c) S-` 15 all-released (over sup)
+  (    t c) [   15 all-released (over sup)
 
-  (h a    ) ]   15 all-released ( over)
-  (h   e  ) del 15 all-released ( over)
-  (  a e  ) +   15 all-released ( over)
-  (    e i) S-. 15 all-released ( over)
+  (h a    ) ]   15 all-released (over sup)
+  (h   e  ) del 15 all-released (over sup)
+  (  a e  ) +   15 all-released (over sup)
+  (    e i) S-. 15 all-released (over sup)
 
-  (, .    ) \   15 all-released ( over)
-  (  . k  ) S-\ 15 all-released ( over)
-  (    k g) S-4 15 all-released ( over)
+  (, .    ) \   15 all-released (over sup)
+  (  . k  ) S-\ 15 all-released (over sup)
+  (    k g) S-4 15 all-released (over sup)
 
-  (f15 f16      ) S-3 15 all-released ( over)
-  (f15     f17  ) S-5 15 all-released ( over)
-  (    f16 f17  ) S-/ 15 all-released ( over)
-  (        f17 ;) S-2 15 all-released ( over)
+  (f15 f16      ) S-3 15 all-released (over sup)
+  (f15     f17  ) S-5 15 all-released (over sup)
+  (    f16 f17  ) S-/ 15 all-released (over sup)
+  (        f17 ;) S-2 15 all-released (over sup)
 )
 
 
