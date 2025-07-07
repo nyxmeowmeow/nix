@@ -25,8 +25,8 @@
         warn = "DiagnosticWarn";
         info = "DiagnosticInfo";
         hint = "DiagnosticHint";
-        arrow = "NonText";
-        background = "CursorLine";
+        arrow = "None";
+        background = "None";
         mixing_color = "None";
       };
 
