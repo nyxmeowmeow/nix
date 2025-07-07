@@ -25,7 +25,7 @@ in {
         no_underline = true;
 
         highlight_overrides.all = {
-          TinyInlineDiagnosticVivtualTextArrow.bg = "None";
+          TinyInlineDiagnosticVirtualTextArrow = { fg = "None"; bg = "None"; };
 
 
 
