@@ -69,13 +69,13 @@
     ((input-history real 1 2)) (macro [) break
 
   ;; non-sfb for >>
-    ((input-history real . 2)) (macro S-.) break
+    ((input-history real . 3)) (macro S-.) break
   ;; non-sfb for <=
-    ((input-history real , 2)) (macro =) break
+    ((input-history real , 3)) (macro =) break
   ;; non-sfb ; for ]
-    ((input-history real ] 2)) (macro ;) break
+    ((input-history real ] 3)) (macro ;) break
   ;; auto ; for {}
-    ((input-history real { 2)) (macro S-] ; left left) break
+    ((input-history real { 3)) (macro S-] ; left left) break
 
 
 
