@@ -41,7 +41,12 @@
       }
 
       def nrun [...msg: string] {
-        nix run nixpkgs#($msg)
+        nix run nixpkgs\#($msg)
+      }
+
+      def mkcd [...msg: string] {
+        mkdir ($msg)
+        cd ($msg)
       }
 
 
