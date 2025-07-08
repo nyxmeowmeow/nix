@@ -1,7 +1,7 @@
 {
   programs.niri.settings.layer-rules = [
   {
-    matches = [ { namespace = "^wallpaper$"; } ];
+    matches = [ { namespace = "^quickshell$"; } ];
     place-within-backdrop = true;
   }
   ];
