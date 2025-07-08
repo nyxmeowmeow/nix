@@ -44,10 +44,6 @@
         nix run nixpkgs\#($msg)
       }
 
-      def mkcd [...msg: string] {
-        mkdir ($msg)
-        cd ($msg)
-      }
 
 
       def nr [...msg: string] {
