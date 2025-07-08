@@ -301,12 +301,12 @@ f17 2
   (    d w) S-8 15 all-released (over sup)
   
   (l o    ) S-' 15 all-released (over sup)
-  (  o u  ) (caps-word-toggle 1000) 15 all-released (over sup)
-  (    u j) S-1 15 all-released (over sup)
+  (  o u  ) caps 13 all-released (over sup)
+  (    u j) S-1 17 all-released (over sup)
 
   (n s    ) S-, 15 all-released (over sup)
   (  s t  ) =   15 all-released (over sup)
-  (  s   c) S-` 20 all-released (over sup)
+  (  s   c) S-` 17 all-released (over sup)
   (    t c) [   15 all-released (over sup)
 
   (h a    ) ]   15 all-released (over sup)
