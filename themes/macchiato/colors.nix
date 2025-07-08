@@ -15,4 +15,22 @@
   base0D = "#f5a97f"; # peach
   base0E = "#eed49f"; # yellow
   base0F = "#a6da95"; # green
+
+
+  base = "#24273a";
+  crust = "#181926";
+  mantle = "#1e2030";
+  surface0 = "#363a4f";
+  surface1 = "#494d64";
+  overlay = "#6e738d";
+  subtext = "#a5adcb";
+  text = "#cad3f5";
+  lavender = "#b7bdf8";
+  blue = "#8aadf4";
+  mauve = "#c6a0f6";
+  pink = "#f5bde6";
+  red = "#ed8796";
+  peach = "#f5a97f";
+  yellow = "#eed49f";
+  green = "#a6da95";
 }

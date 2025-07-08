@@ -7,5 +7,6 @@
     ./foot_macchiato.nix
     ./hyprpaper_macchiato.nix
     ./starship_macchiato.nix
+    ./nushell_macchiato.nix
   ];
 }
