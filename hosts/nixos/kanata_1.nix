@@ -33,53 +33,83 @@
 
   magic (switch
   ;; query
-    ((input-history real q 2)) (macro u) break
+    ((and (input-history nop1 2) (input-history q 3))) (macro u) break
+    ((input-history q 2)) (macro u) break
 
   ;; #include
-    ((input-history real 3 2)) (macro i n c l u d e) break
+    ((input-history 3 2)) (macro i n c l u d e) break
 
   ;; sfb
-    ((input-history real o 2)) (macro a) break
-    ((input-history real a 2)) (macro o) break
-    ((input-history real u 2)) (macro e) break
-    ((input-history real e 2)) (macro u) break
-    ((input-history real i 2)) (macro x) break
+    ((and (input-history nop1 2) (input-history o 3))) (macro a) break
+    ((and (input-history nop1 2) (input-history a 3))) (macro o) break
+    ((and (input-history nop1 2) (input-history u 3))) (macro e) break
+    ((and (input-history nop1 2) (input-history e 3))) (macro u) break
+    ((and (input-history nop1 2) (input-history i 3))) (macro x) break
+    ((input-history o 2)) (macro a) break
+    ((input-history a 2)) (macro o) break
+    ((input-history u 2)) (macro e) break
+    ((input-history e 2)) (macro u) break
+    ((input-history i 2)) (macro x) break
 
   ;; sfs
-    ;;((and(input-history real e 2) (input-history s 1))) (macro e) break
+    ;;((and(input-history e 2) (input-history s 1))) (macro e) break
+    ((and(input-history e 3) (input-history y 2))) (macro e) break
+    ((and(input-history e 3) (input-history v 2))) (macro e) break
+    ((and(input-history e 3) (input-history y 2))) (macro e) break
+    ((and(input-history e 3) (input-history v 2))) (macro e) break
+
+    ((and(input-history n 3) (input-history i 2))) (macro x) break
+    ((and(input-history n 3) (input-history i 2))) (macro x) break
   ;; sfb
-    ((input-history real w 2)) (macro y) break
-    ((input-history real c 2)) (macro y) break
-    ((input-history real p 2)) (macro y) break
+    ((and (input-history nop1 2) (input-history w 3))) (macro y) break
+    ((and (input-history nop1 2) (input-history c 3))) (macro y) break
+    ((and (input-history nop1 2) (input-history p 3))) (macro y) break
+    ((input-history w 2)) (macro y) break
+    ((input-history c 2)) (macro y) break
+    ((input-history p 2)) (macro y) break
 
 
-    ((input-history real j 2)) (macro u s t) break
+    ((and (input-history nop1 2) (input-history j 3))) (macro u s t) break
+    ((input-history j 2)) (macro u s t) break
 
-    ((input-history real \ 2)) (macro n) break
+    ((and (input-history nop1 2) (input-history \ 3))) (macro n) break
+    ((input-history \ 2)) (macro n) break
 
 
-    ((input-history real 1 2)) (macro [) break
+    ((and (input-history nop1 2) (input-history 1 3))) (macro [) break
+    ((input-history 1 2)) (macro [) break
 
   ;; non-sfb for >>
-    ((input-history real . 2)) (macro S-.) break
+    ((and (input-history nop1 2) (input-history . 3))) (macro S-.) break
+    ((input-history . 2)) (macro S-.) break
   ;; non-sfb for <=
-    ((input-history real , 2)) (macro =) break
+    ((and (input-history nop1 2) (input-history , 3))) (macro =) break
+    ((input-history , 2)) (macro =) break
   ;; non-sfb ; for ]
-    ((input-history real ] 2)) (macro ;) break
+    ((and (input-history nop1 2) (input-history ] 3))) (macro ;) break
+    ((input-history ] 2)) (macro ;) break
   ;; auto ; for {}
-    ((input-history real { 2)) (macro S-] ; left left) break
+    ((and (input-history nop1 2) (input-history { 3))) (macro S-] ; left left) break
+    ((input-history { 2)) (macro S-] ; left left) break
 
 
 
-    ((input-history real x 2)) (macro p k g s) break
+    ((and (input-history nop1 2) (input-history x 3))) (macro p k g s) break
+    ((input-history x 2)) (macro p k g s) break
 
 
-    ((input-history real 7 2)) (macro S-7) break
-    ((input-history real ; 2)) (macro S-;) break
-    ((input-history real = 2)) (macro S-.) break
-    ((input-history real - 2)) (macro S-.) break
-    ((input-history real 9 2)) (macro S-') break
-    ((input-history real 0 2)) (macro S-0) break
+    ((and (input-history nop1 2) (input-history 7 3))) (macro S-7) break
+    ((and (input-history nop1 2) (input-history ; 3))) (macro S-;) break
+    ((and (input-history nop1 2) (input-history = 3))) (macro S-.) break
+    ((and (input-history nop1 2) (input-history - 3))) (macro S-.) break
+    ((and (input-history nop1 2) (input-history 9 3))) (macro S-') break
+    ((and (input-history nop1 2) (input-history 0 3))) (macro S-0) break
+    ((input-history 7 2)) (macro S-7) break
+    ((input-history ; 2)) (macro S-;) break
+    ((input-history = 2)) (macro S-.) break
+    ((input-history - 2)) (macro S-.) break
+    ((input-history 9 2)) (macro S-') break
+    ((input-history 0 2)) (macro S-0) break
 
 
 
