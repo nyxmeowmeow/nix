@@ -238,19 +238,19 @@
       }
 
       {
-        on = [ "g" "s" "l" ];
+        on = [ "g" "l" "l" ];
         run = "link";
         desc = "Symlink absolute";
       }
 
       {
-        on = [ "g" "s" "r" ];
+        on = [ "g" "l" "r" ];
         run = "link --relative";
         desc = "Symlink relative";
       }
 
       {
-        on = [ "g" "s" "h" ];
+        on = [ "g" "l" "h" ];
         run = "hardlink";
         desc = "Hardlink";
       }
@@ -325,8 +325,8 @@
 
 
       {
-        on   = ["g" "f"];
-        run  = "shell 'fish' --block";
+        on   = ["g" "s"];
+        run  = "shell 'nu' --block";
         desc = "Open shell here";
       }
 
