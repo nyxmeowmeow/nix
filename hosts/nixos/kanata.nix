@@ -295,18 +295,18 @@ f17 2
 
 (defchordsv2
 
-  (b f    ) S-6 15 all-released (over sup)
+  (b f    ) S-6 20 all-released (over sup)
   (  f d  ) S-7 15 all-released (over sup)
-  (  f   w) `   15 all-released (over sup)
+  (  f   w) `   20 all-released (over sup)
   (    d w) S-8 15 all-released (over sup)
   
   (l o    ) S-' 15 all-released (over sup)
-  (  o u  ) S-\ 15 all-released (over sup)
+  (  o u  ) (caps-word-toggle 1000) 15 all-released (over sup)
   (    u j) S-1 15 all-released (over sup)
 
   (n s    ) S-, 15 all-released (over sup)
-  (  s t  ) = 15 all-released (over sup)
-  (  s   c) S-` 15 all-released (over sup)
+  (  s t  ) =   15 all-released (over sup)
+  (  s   c) S-` 20 all-released (over sup)
   (    t c) [   15 all-released (over sup)
 
   (h a    ) ]   15 all-released (over sup)
@@ -314,12 +314,12 @@ f17 2
   (  a e  ) +   15 all-released (over sup)
   (    e i) S-. 15 all-released (over sup)
 
-  (, .    ) \   15 all-released (over sup)
-  (  . k  ) S-\ 15 all-released (over sup)
-  (    k g) S-4 15 all-released (over sup)
+  (, .    ) \   20 all-released (over sup)
+  (  . k  ) S-\ 20 all-released (over sup)
+  (    k g) S-4 20 all-released (over sup)
 
-  (f15 f16      ) S-3 15 all-released (over sup)
-  (f15     f17  ) S-5 15 all-released (over sup)
+  (f15 f16      ) S-3 20 all-released (over sup)
+  (f15     f17  ) S-5 20 all-released (over sup)
   (    f16 f17  ) S-/ 15 all-released (over sup)
   (        f17 ;) S-2 15 all-released (over sup)
 )
