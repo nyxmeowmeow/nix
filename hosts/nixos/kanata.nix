@@ -266,7 +266,7 @@ esc f1
 0 end
 b ,
 f .
-d ` 
+d (caps-word 1000)
 w `
 l left
 o down
