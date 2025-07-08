@@ -47,6 +47,14 @@
 
   ;; sfs
     ;;((and(input-history real e 2) (input-history s 1))) (macro e) break
+
+    ((and(input-history real e 3) (input-history real y 2))) (macro e) break
+    ((and(input-history real e 3) (input-history real v 2))) (macro e) break
+    ((and(input-history real e 3) (input-history real y 2))) (macro e) break
+    ((and(input-history real e 3) (input-history real v 2))) (macro e) break
+
+    ((and(input-history real n 3) (input-history real i 2))) (macro x) break
+    ((and(input-history real n 3) (input-history real i 2))) (macro x) break
   ;; sfb
     ((input-history real w 2)) (macro y) break
     ((input-history real c 2)) (macro y) break
@@ -97,17 +105,17 @@
   ;; normal rpt except for syms
   rpeat (switch
   ;; TODO tr -> ue
-    ((key-history , 1)) (macro S-,) break
+    ((input-history real , 2)) (macro S-,) break
     ;;((and (key-history nop1 1) (key-history , 1))) (macro S-,) break
-    ((key-history \ 1)) (macro S-\) break
+    ((input-history real \ 2)) (macro S-\) break
     ;;((and (key-history nop1 1) (key-history \ 1))) (macro S-\) break
-    ((key-history ; 1)) (macro S-;) break
+    ((input-history real ; 2)) (macro S-;) break
     ;;((and (key-history nop1 1) (key-history ; 1))) (macro S-;) break
-    ((key-history 7 1)) (macro S-7) break
+    ((input-history real 7 2)) (macro S-7) break
     ;;((and (key-history nop1 1) (key-history 7 1))) (macro S-7) break
-    ((key-history 9 1)) (macro S-9) break
+    ((input-history real 9 2)) (macro S-9) break
     ;;((and (key-history nop1 1) (key-history 9 1))) (macro S-9) break
-    ((key-history 0 1)) (macro S-0) break
+    ((input-history real 0 2)) (macro S-0) break
     ;;((and (key-history nop1 1) (key-history 0 1))) (macro S-0) break
 
 
