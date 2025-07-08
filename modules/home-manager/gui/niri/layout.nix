@@ -6,6 +6,7 @@
     always-center-single-column = true;
 
 
+
     focus-ring = {
       enable = true;
       width = 2;

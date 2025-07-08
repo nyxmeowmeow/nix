@@ -5,6 +5,12 @@
     hotkey-overlay.skip-at-startup = true;
     gestures.hot-corners.enable = false;
 
+
+    overview = {
+      # backdrop-color = 
+      workspace-shadow.enable = false;
+    };
+
     workspaces = {
       "1" = {
         name = "one";
