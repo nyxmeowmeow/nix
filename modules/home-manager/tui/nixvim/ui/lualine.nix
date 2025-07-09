@@ -10,6 +10,7 @@
     settings = {
       icons_enabled = true;
       always_show_tabline = true;
+      theme = "none";
 
       options = {
         component_separators = "";
