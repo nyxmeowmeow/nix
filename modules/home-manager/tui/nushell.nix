@@ -83,11 +83,18 @@
         termdown -s $full_msg
       }
 
-      # pwd relative to git root
+      # copy pwd
+      def jj [] {
+        pwd | str trim | wl-copy
+        echo "path copied to clipboard"
+      }
+
+      # copy pwd relative to git root
       def jg [] {
         let root = (git rev-parse --show-toplevel | str trim)
         let rel = (realpath . | path relative-to $root)
         $rel | wl-copy
+        echo "path relative to git root copied to clipboard"
       }
 
       $env.path ++= ["~/go/bin"]
@@ -132,8 +139,6 @@
       "..." = "cd ../..";
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
-
-      jj = "pwd | wl-copy"; # prompt every time
 
       # hist="history | lines | fzf | read -l command; eval $command";
       fg = "job unfreeze";
