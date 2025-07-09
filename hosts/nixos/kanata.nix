@@ -129,8 +129,8 @@
  a (t! homerowmod $tot 110 a rsft)
  c (t! homerowmod $tot 110 c lctl)
  h (t! homerowmod $tot 110 h rctl)
- n (t! homerowmod $tot 150 n lsft)
- i (t! homerowmod $tot 150 i rsft)
+ n (t! homerowmod $tot 130 n lsft)
+ i (t! homerowmod $tot 130 i rsft)
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
