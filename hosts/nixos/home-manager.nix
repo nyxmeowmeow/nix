@@ -42,7 +42,7 @@
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop.nix
         ../../modules/home-manager/tui/yazi/yazi.nix
-        ../../modules/home-manager/gui/zen.nix
+        ../../modules/home-manager/gui/zen/zen.nix
         ../../modules/home-manager/tui/zoxide.nix
         ../../modules/home-manager/tui/bash.nix
         # ../../modules/home-manager/gui/hyprland.nix
