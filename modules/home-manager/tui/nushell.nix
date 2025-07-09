@@ -83,6 +83,11 @@
         termdown -s $full_msg
       }
 
+      # search for process
+      def lsproc [msg: string] {
+      ps | where name =~ $"($msg)"
+      }
+
       # copy path
       def jj [] {
         let path = pwd | str trim | wl-copy
