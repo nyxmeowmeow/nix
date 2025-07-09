@@ -18,7 +18,7 @@
         blink = true;
         unfocused-style = "unchanged";
       };
-      tweak.box-drawing-base-thickness = "0.05";
+      tweak.box-drawing-base-thickness = "0.04";
       key-bindings = {
         scrollback-up-half-page = "Control+Shift+e";
         scrollback-down-half-page = "Control+Shift+a";
