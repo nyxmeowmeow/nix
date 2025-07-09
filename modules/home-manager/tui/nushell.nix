@@ -83,6 +83,13 @@
         termdown -s $full_msg
       }
 
+      # pwd relative to git root
+      def jg [] {
+        let root = (git rev-parse --show-toplevel | str trim)
+        let rel = (realpath . | path relative-to $root)
+        $rel | wl-copy
+      }
+
       $env.path ++= ["~/go/bin"]
 
       $env.config = {
@@ -126,8 +133,10 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
+      jj = "pwd | wl-copy"; # prompt every time
+
       # hist="history | lines | fzf | read -l command; eval $command";
-      fg = "job unfreeze"; # prompt every time
+      fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time
       s = "sudo -k"; # prompt every time
