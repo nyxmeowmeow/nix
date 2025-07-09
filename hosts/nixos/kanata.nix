@@ -181,10 +181,10 @@ f16 S-9
 f17 S-0
 lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 f19 @magic
-rsft rsft
+rsft bspc
 ralt tab
 f18 S-;
-lctrl lctrl
+lctrl -
 bspc @rpeat
 
 
@@ -239,6 +239,8 @@ i (multi i (layer-switch over))
 )
 
 (deflayermap sup
+lctl lctl
+rsft rsft
 
 
 f18 tab
