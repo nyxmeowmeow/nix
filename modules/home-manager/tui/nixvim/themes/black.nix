@@ -34,6 +34,12 @@ in {
           lualine_a_command = { fg = col.base; bg = col.lavender; };
           lualine_a_terminal = { fg = col.base; bg = col.lavender; };
 
+
+          lualine_a_buffers_active_terminal = { fg = col.base; bg = col.lavender; };
+          lualine_a_buffers_active_inactive = { fg = col.base; bg = col.lavender; };
+          lualine_a_buffers_active_visual = { fg = col.base; bg = col.lavender; };
+          lualine_a_buffers_active_normal = { fg = col.base; bg = col.lavender; };
+
           YaziFloatBorder.fg = col.lavender;
 
           FlashMatch.fg = col.green;
