@@ -90,7 +90,7 @@
       }
 
       # copy file path
-      def jj [...msg: string] {
+      def jf [...msg: string] {
         realpath $msg | str trim| wl-copy
         echo "path of $msg copied to clipboard"
       }
