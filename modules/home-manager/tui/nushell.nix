@@ -83,10 +83,16 @@
         termdown -s $full_msg
       }
 
-      # copy pwd
+      # copy path
       def jj [] {
         pwd | str trim | wl-copy
         echo "path copied to clipboard"
+      }
+
+      # copy file path
+      def jj [...msg: string] {
+        realpath $msg | str trim| wl-copy
+        echo "path of $msg copied to clipboard"
       }
 
       # copy pwd relative to git root
