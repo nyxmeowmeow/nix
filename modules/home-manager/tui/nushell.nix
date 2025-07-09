@@ -85,15 +85,14 @@
 
       # copy path
       def jj [] {
-        pwd | str trim | wl-copy
-        let path = pwd
+        let path = pwd | str trim | wl-copy
         echo $"copied ($path)"
       }
 
       # copy file path
       def jf [...msg: string] {
-        realpath ...$msg | str trim | wl-copy
-        echo $"copied ($msg)"
+        let path = realpath ...$msg | str trim | wl-copy
+        echo $"copied ($path)"
       }
 
       # copy pwd relative to git root
