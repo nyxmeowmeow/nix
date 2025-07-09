@@ -92,7 +92,6 @@
               vi_normal: block
           }
 
-          color_config: $color_scheme
           show_banner: false
           table: {
               mode: none

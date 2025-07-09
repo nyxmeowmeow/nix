@@ -14,5 +14,10 @@ in {
       shape_flag: "${col.text}"
       shape_keyword: "${col.lavender}"
       shape_pipe: "${col.lavender}"
+    }
+
+    $env.config = {
+      color_config: $color_scheme
+    }
     '';
 }

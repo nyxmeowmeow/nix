@@ -29,7 +29,7 @@
 (defvirtualkeys typingmode nop1)
 
 (defalias
- .tp (hold-for-duration  150 typingmode)
+ .tp (hold-for-duration 50 typingmode)
 
   magic (switch
   ;; query

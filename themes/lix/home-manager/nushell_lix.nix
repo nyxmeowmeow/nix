@@ -12,5 +12,11 @@
       shape_flag: "#A4A0E8"
       shape_keyword: "#A4A0E8"
       shape_pipe: purple
+    }
+
+    $env.config = {
+      color_config: $color_scheme
+    }
+
     '';
 }
