@@ -14,6 +14,7 @@ in {
           treesitter = true;
           gitsigns = true;
           noice = true;
+          lualine = false;
           mini = {
             enable = true;
             indentscope_color = "#a5adcb";

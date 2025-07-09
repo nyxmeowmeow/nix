@@ -27,7 +27,7 @@
           };
           max_length = 1000000;
 
-          # use_mode_colors = true;
+          use_mode_colors = true;
         }
         ];
         lualine_b = [ "none" ];
