@@ -86,13 +86,14 @@
       # copy path
       def jj [] {
         pwd | str trim | wl-copy
-        echo "path copied to clipboard"
+        let path = pwd
+        echo $"copied ($path)"
       }
 
       # copy file path
       def jf [...msg: string] {
         realpath ...$msg | str trim | wl-copy
-        echo $"path of (msg) copied to clipboard"
+        echo $"copied ($msg)"
       }
 
       # copy pwd relative to git root
@@ -100,7 +101,7 @@
         let root = (git rev-parse --show-toplevel | str trim)
         let rel = (realpath . | path relative-to $root)
         $rel | wl-copy
-        echo "path relative to git root copied to clipboard"
+        echo $"copied ($rel)"
       }
 
       $env.path ++= ["~/go/bin"]
