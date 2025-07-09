@@ -12,7 +12,7 @@
       always_show_tabline = true;
 
       options = {
-        theme = "nil";
+        theme = null;
         component_separators = "";
         section_separators = "";
       };
