@@ -130,6 +130,18 @@
     ((input-history real e 2)) (macro e) break
     ((input-history real m 2)) (macro m) break
 
+    ((key-history o 2)) (macro o) break
+    ((key-history t 2)) (macro t) break
+    ((key-history d 2)) (macro d) break
+    ((key-history s 2)) (macro s) break
+    ((key-history c 2)) (macro c) break
+    ((key-history b 2)) (macro b) break
+    ((key-history f 2)) (macro f) break
+    ((key-history l 2)) (macro l) break
+    ((key-history g 2)) (macro g) break
+    ((key-history e 2)) (macro e) break
+    ((key-history m 2)) (macro m) break
+
     () rpt break
   )
 )

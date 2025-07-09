@@ -45,7 +45,7 @@
         ../../modules/home-manager/gui/zen.nix
         ../../modules/home-manager/tui/zoxide.nix
         ../../modules/home-manager/tui/bash.nix
-        # ./hyprland.nix
+        ../../modules/home-manager/gui/hyprland.nix
       ];
     };
   };
