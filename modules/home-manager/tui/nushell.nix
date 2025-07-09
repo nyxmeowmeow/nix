@@ -91,8 +91,8 @@
 
       # copy file path
       def jf [...msg: string] {
-        realpath ...$msg | str trim| wl-copy
-        echo "path of $msg copied to clipboard"
+        realpath ...$msg | str trim | wl-copy
+        echo $"path of (msg) copied to clipboard"
       }
 
       # copy pwd relative to git root
@@ -145,12 +145,15 @@
       "..." = "cd ../..";
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
+      "......" = "cd ../../../../..";
+      "......." = "cd ../../../../../..";
+
+      back = "cd -";
 
       # hist="history | lines | fzf | read -l command; eval $command";
       fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time
-      s = "sudo -k"; # prompt every time
       rm = "rm -i"; # prompt every time
       mv = "mv -i"; # prompt every time
       ln = "ln -i"; # prompt every time
