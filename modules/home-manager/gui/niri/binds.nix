@@ -27,9 +27,8 @@
     "Mod+Z".action = sh "zen -p misc";
     "Mod+Shift+Z".action = sh "zen -p rain";
 
-    "Mod+V".action = sh "clipse";
 
-    "Mod+Shift+Semicolon".action = focus-workspace "one";
+    "Mod+Tab".action = focus-workspace "one";
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
     "Mod+D".action = focus-workspace "discord";
