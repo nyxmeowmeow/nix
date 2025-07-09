@@ -27,7 +27,14 @@ in {
         highlight_overrides.all = {
           TinyInlineDiagnosticVirtualTextArrow = { fg = "None"; bg = "None"; };
 
+          lualine_a_normal = { fg = col.base; bg = col.lavender; };
+          lualine_a_insert = { fg = col.base; bg = col.mauve; };
+          lualine_a_visual = { fg = col.base; bg = col.mauve; };
+          lualine_a_replace = { fg = col.base; bg = col.red; };
+          lualine_a_command = { fg = col.base; bg = col.lavender; };
+          lualine_a_terminal = { fg = col.base; bg = col.lavender; };
 
+          YaziFloatBorder.fg = col.lavender;
 
           FlashMatch.fg = col.green;
           FlashLabel.fg = col.red;
