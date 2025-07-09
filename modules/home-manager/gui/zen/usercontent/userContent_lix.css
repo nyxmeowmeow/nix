@@ -1,0 +1,52 @@
+*{ scrollbar-width: none }
+
+:root {
+  --tridactyl-bg: #3B224C !important;
+  --tridactyl-fg: #A4A0E8 !important;
+  --tridactyl-cmdl-bg: #3B224C !important;
+  --tridactyl-photon-colours-warning-background-color: #DBBFEF !important;
+  --tridactyl-photon-colours-theme-highlight-lightorange: #3B224C !important;
+  --tridactyl-url-fg: #DBBFEF !important;
+  --tridactyl-photon-colours-accent-1: # !important;
+  --tridactyl-of-fg: #3B224C !important;
+  --tridactyl-hintspan-fg: transparent !important;
+  --tridactyl-photon-colours-cm-cursor: transparent !important;
+}
+
+#completions {
+  font-family: mononoki nerd font mono !important;
+  font-size: 20px !important;
+
+}
+
+#completions .sectionHeader {
+  backgroup: transparent !important;
+  height: 0px !important;
+  font-size: 0px !important;
+
+}
+
+input {
+  font-size: 20px !important;
+  color: var(--tridactyl-fg) !important;
+}
+
+#command-line-holder {
+  font-size: 0px !important;
+}
+
+
+span.TridactylHint {
+  font-family: mononoki nerd font mono !important;
+  font-weight: bold !important;
+  color: var(--tridactyl-bg) !important;
+  background-color: #DBBFEF !important;
+  border-color: none !important;
+  border-width: none !important;
+  border-radius: 3px !important;
+
+}
+
+.TridactylStatusIndicator {
+  display: none !important;
+}

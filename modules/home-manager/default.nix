@@ -36,7 +36,7 @@
         ./gui/tofi.nix
         ./gui/vesktop.nix
         ./tui/yazi/yazi.nix
-        ./gui/zen.nix
+        ./gui/zen/zen.nix
         ./tui/zoxide.nix
         ./tui/bash.nix
         # ./hyprland.nix
