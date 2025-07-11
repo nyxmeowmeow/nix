@@ -106,9 +106,12 @@
 
     ((input-history real 7 2)) (macro S-7) break
     ((input-history real ; 2)) (macro S-;) break
+
     ((key-history = 2)) (macro S-.) break
+    ((and (input-history fake typingmode 2) (input-history real = 3))) (macro S-.) break
 
     ((key-history - 2)) (macro S-.) break
+    ((and (input-history fake typingmode 2) (input-history real - 3))) (macro S-.) break
 
     ((input-history real 9 2)) (macro S-') break
     ((input-history real 0 2)) (macro S-0) break
