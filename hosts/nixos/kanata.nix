@@ -101,7 +101,7 @@
 
 
 
-    ((input-history real x 2)) (macro p k g s) break
+    ((key-history x 1)) (macro p k g s) break
 
 
     ((input-history real 7 2)) (macro S-7) break
@@ -115,6 +115,7 @@
 
     ((input-history real f16 2)) (macro S-') break
     ((input-history real f17 2)) (macro S-0) break
+    ((input-history real lctl 2)) (macro S-0) break
 
 
 
