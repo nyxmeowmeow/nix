@@ -181,6 +181,10 @@
     ((key-history e 1)) (macro e) break
     ((key-history m 1)) (macro m) break
 
+    ((input-history real f16 2)) (macro S-9) break
+
+
+
     () rpt break
   )
 )
