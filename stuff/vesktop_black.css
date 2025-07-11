@@ -4,10 +4,13 @@
 }
 
 .visual-refresh.theme-dark {
-  --font-primary: mononoki nerd font;
-  --font-display: mononoki nerd font;
-  --font-code: mononoki nerd font, 'iosevka nerd font', monospace;
-  /* --font-code: mononoki nerd font, 'IosevkaCustom', monospace; */
+  /* --font-primary: iosevka nerd font; */
+  /* --font-display: iosevka nerd font; */
+  /* --font-code: mononoki nerd font, 'iosevka nerd font', monospace; */
+
+  --font-primary: /home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf;
+  --font-display: /home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf;
+  --font-code: /home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf;
   --bg-brand: var(--lavender);
   --background-primary: var(--bg) !important;
   --background-secondary: var(--bg) !important;
