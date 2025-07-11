@@ -6,8 +6,8 @@
 .visual-refresh.theme-dark {
   --font-primary: mononoki nerd font;
   --font-display: mononoki nerd font;
-  /* --font-code: mononoki nerd font, 'mononoki nerd font', monospace; */
-  --font-code: mononoki nerd font, 'IosevkaCustom', monospace;
+  --font-code: mononoki nerd font, 'iosevka nerd font', monospace;
+  /* --font-code: mononoki nerd font, 'IosevkaCustom', monospace; */
   --bg-brand: var(--lavender);
   --background-primary: var(--bg) !important;
   --background-secondary: var(--bg) !important;
