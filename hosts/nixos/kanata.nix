@@ -34,40 +34,52 @@
   magic (switch
   ;; query
     ((input-history real q 2)) (macro u) break
+    ((and (input-history fake typingmode 2) (input-history real q 3))) (macro u) break
 
   ;; #include
-    ((input-history real 3 2)) (macro i n c l u d e) break
+    ;; ((input-history real 3 2)) (macro i n c l u d e) break
 
   ;; sfb
     ((input-history real o 2)) (macro a) break
     ((input-history real a 2)) (macro o) break
     ((input-history real u 2)) (macro e) break
     ((input-history real e 2)) (macro u) break
-    ((input-history real i 2)) (macro x) break
+    ((input-history real i 2)) (macro z) break
 
     ((and (input-history fake typingmode 2) (input-history real o 3))) (macro a) break
     ((and (input-history fake typingmode 2) (input-history real a 3))) (macro o) break
     ((and (input-history fake typingmode 2) (input-history real u 3))) (macro e) break
     ((and (input-history fake typingmode 2) (input-history real e 3))) (macro u) break
-    ((and (input-history fake typingmode 2) (input-history real i 3))) (macro x) break
+    ((and (input-history fake typingmode 2) (input-history real i 3))) (macro z) break
 
   ;; sfs
     ;;((and(input-history real e 2) (input-history s 1))) (macro e) break
 
-    ((and(input-history real e 3) (input-history real y 2))) (macro e) break
-    ((and(input-history real e 3) (input-history real v 2))) (macro e) break
-    ((and(input-history real e 3) (input-history real y 2))) (macro e) break
-    ((and(input-history real e 3) (input-history real v 2))) (macro e) break
+    ((and (input-history real e 3) (input-history real y 2))) (macro e) break
+    ((and (input-history real e 4) (input-history real y 3) (input-history fake typingmode 2))) (macro e) break
+    ((and (input-history real e 4) (input-history fake typingmode 3) (input-history real y 2))) (macro e) break
 
-    ((and(input-history real n 3) (input-history real i 2))) (macro x) break
-    ((and(input-history real n 3) (input-history real i 2))) (macro x) break
+    ((and (input-history real e 3) (input-history real v 2))) (macro e) break
+    ((and (input-history real e 4) (input-history real v 3) (input-history fake typingmode 2))) (macro e) break
+    ((and (input-history real e 4) (input-history fake typingmode 3) (input-history real v 2))) (macro e) break
+
+    ((and (input-history real n 3) (input-history real i 2))) (macro x) break
+    ((and (input-history real n 4) (input-history real i 3) (input-history fake typingmode 2))) (macro x) break
+    ((and (input-history real n 4) (input-history fake typingmode 3) (input-history real i 2))) (macro x) break
+
   ;; sfb
     ((input-history real w 2)) (macro y) break
+    ((and (input-history fake typingmode 2) (input-history real w 3))) (macro y) break
+
     ((input-history real c 2)) (macro y) break
+    ((and (input-history fake typingmode 2) (input-history real c 3))) (macro y) break
+
     ((input-history real p 2)) (macro y) break
+    ((and (input-history fake typingmode 2) (input-history real p 3))) (macro y) break
 
 
     ((input-history real j 2)) (macro u s t) break
+    ((and (input-history fake typingmode 2) (input-history real j 3))) (macro u s t) break
 
     ((input-history real \ 2)) (macro n) break
 
