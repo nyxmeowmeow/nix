@@ -25,7 +25,7 @@ require('kanso').setup({
     end,
     theme = "mist",              -- Load "zen" theme
     background = {               -- map the value of 'background' option to a theme
-        dark = "zen",           -- try "ink" !
+        dark = "mist",           -- try "ink" !
         light = "pearl"         -- try "mist" !
     },
 })
