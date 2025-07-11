@@ -34,4 +34,4 @@ require('kanso').setup({
 vim.cmd("colorscheme kanso")
        '';
        };
-       }
+}
