@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    glfw
 
     hyprpaper
     qemu_kvm
