@@ -82,10 +82,10 @@
     ((input-history real j 2)) (macro u s t) break
     ((and (input-history fake typingmode 2) (input-history real j 3))) (macro u s t) break
 
-    ((input-history real \ 2)) (macro n) break
+    ((key-history \ 1)) (macro n) break
 
 
-    ((input-history real 1 2)) (macro [) break
+    ((key-history 1 1)) (macro [) break
 
   ;; non-sfb for >>
     ((key-history . 1)) (macro S-.) break
