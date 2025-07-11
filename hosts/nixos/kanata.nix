@@ -33,8 +33,8 @@
 
   magic (switch
   ;; query
-    ((input-history real q 2)) (macro u) break
-    ((and (input-history fake typingmode 2) (input-history real q 3))) (macro u) break
+    ((input-history real q 2)) (macro u e r y) break
+    ((and (input-history fake typingmode 2) (input-history real q 3))) (macro u e r y) break
 
   ;; #include
     ;; ((input-history real 3 2)) (macro i n c l u d e) break
@@ -151,17 +151,17 @@
     ((and (input-history real e 3) (input-history fake typingmode 2))) (macro e) break
     ((and (input-history real m 3) (input-history fake typingmode 2))) (macro m) break
 
-    ((key-history o 2)) (macro o) break
-    ((key-history t 2)) (macro t) break
-    ((key-history d 2)) (macro d) break
-    ((key-history s 2)) (macro s) break
-    ((key-history c 2)) (macro c) break
-    ((key-history b 2)) (macro b) break
-    ((key-history f 2)) (macro f) break
-    ((key-history l 2)) (macro l) break
-    ((key-history g 2)) (macro g) break
-    ((key-history e 2)) (macro e) break
-    ((key-history m 2)) (macro m) break
+    ((key-history o 1)) (macro o) break
+    ((key-history t 1)) (macro t) break
+    ((key-history d 1)) (macro d) break
+    ((key-history s 1)) (macro s) break
+    ((key-history c 1)) (macro c) break
+    ((key-history b 1)) (macro b) break
+    ((key-history f 1)) (macro f) break
+    ((key-history l 1)) (macro l) break
+    ((key-history g 1)) (macro g) break
+    ((key-history e 1)) (macro e) break
+    ((key-history m 1)) (macro m) break
 
     () rpt break
   )
