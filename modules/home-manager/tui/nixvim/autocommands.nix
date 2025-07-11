@@ -1,8 +1,11 @@
 {
-  programs.nixvim.autocmds = [
+  programs.nixvim.autoCmd = [
   {
-    event = "FileType";
-    pattern = "markdown";
+    event = [
+      "BufEnter"
+      "BufWinEnter"
+    ];
+    pattern = "*.md";
     command = "setlocal nonumber norelativenumber";
   }
   ];
