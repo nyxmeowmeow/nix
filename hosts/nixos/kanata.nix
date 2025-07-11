@@ -89,10 +89,13 @@
 
   ;; non-sfb for >>
     ((key-history . 1)) (macro S-.) break
+
   ;; non-sfb for <=
     ((key-history , 1)) (macro =) break
+
   ;; non-sfb ; for ]
     ((key-history ] 1)) (macro ;) break
+
   ;; auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
 
@@ -124,12 +127,12 @@
   ;; normal rpt except for syms
   rpeat (switch
   ;; TODO tr -> ue
-    ((key-history , 2)) (macro S-,) break
-    ((key-history \ 2)) (macro S-\) break
-    ((key-history ; 2)) (macro S-;) break
-    ((key-history 7 2)) (macro S-7) break
-    ((key-history 9 2)) (macro S-9) break
-    ((key-history 0 2)) (macro S-0) break
+    ((key-history , 1)) (macro S-,) break
+    ((key-history \ 1)) (macro S-\) break
+    ((key-history ; 1)) (macro S-;) break
+    ((key-history 7 1)) (macro S-7) break
+    ((key-history 9 1)) (macro S-9) break
+    ((key-history 0 1)) (macro S-0) break
 
     ((and (key-history , 2) (key-history nop1 1))) (macro S-,) break
     ((and (key-history \ 2) (key-history nop1 1))) (macro S-\) break
@@ -140,6 +143,7 @@
 
 
     ((and (input-history real o 3) (input-history fake typingmode 2))) (macro o) break
+    ((and (input-history real p 3) (input-history fake typingmode 2))) (macro p) break
     ((and (input-history real t 3) (input-history fake typingmode 2))) (macro t) break
     ((and (input-history real d 3) (input-history fake typingmode 2))) (macro d) break
     ((and (input-history real s 3) (input-history fake typingmode 2))) (macro s) break
@@ -152,6 +156,7 @@
     ((and (input-history real m 3) (input-history fake typingmode 2))) (macro m) break
 
     ((key-history o 1)) (macro o) break
+    ((key-history p 1)) (macro p) break
     ((key-history t 1)) (macro t) break
     ((key-history d 1)) (macro d) break
     ((key-history s 1)) (macro s) break
@@ -196,7 +201,7 @@
  b ( t! letter 200 200 b)
  k ( t! letter 200 200 k)
  m ( t! letter 200 200 m)
- 
+
 f15 S--
 f16 S-9
 f17 S-0
@@ -215,6 +220,7 @@ bspc @rpeat
 
 
 )
+
 (deflayermap krita
 lsft lsft
 lctl lctl
