@@ -107,14 +107,14 @@
     ((input-history real 7 2)) (macro S-7) break
     ((input-history real ; 2)) (macro S-;) break
 
-    ((key-history = 2)) (macro S-.) break
+    ((key-history = 1)) (macro S-.) break
     ((and (key-history nop1 1) (key-history = 2))) (macro S-.) break
 
-    ((key-history - 2)) (macro S-.) break
+    ((key-history - 1)) (macro S-.) break
     ((and (key-history nop1 1) (key-history - 2))) (macro S-.) break
 
-    ((input-history real 9 2)) (macro S-') break
-    ((input-history real 0 2)) (macro S-0) break
+    ((input-history real f16 2)) (macro S-') break
+    ((input-history real f17 2)) (macro S-0) break
 
 
 
