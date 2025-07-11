@@ -1,6 +1,10 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
+    gdb
+
+
+
     go
 
     nixd
