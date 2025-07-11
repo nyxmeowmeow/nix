@@ -5,12 +5,12 @@
 -- Default options:
 require('kanso').setup({
     bold = true,                 -- enable bold fonts
-    italics = true,             -- enable italics
+    italics = false,             -- enable italics
     compile = false,             -- enable compiling the colorscheme
-    undercurl = true,            -- enable undercurls
+    undercurl = false,            -- enable undercurls
     commentStyle = { italic = true },
     functionStyle = {},
-    keywordStyle = { italic = true},
+    keywordStyle = { italic = false},
     statementStyle = {},
     typeStyle = {},
     transparent = false,         -- do not set background color
@@ -23,7 +23,7 @@ require('kanso').setup({
     overrides = function(colors) -- add/modify highlights
         return {}
     end,
-    theme = "zen",              -- Load "zen" theme
+    theme = "mist",              -- Load "zen" theme
     background = {               -- map the value of 'background' option to a theme
         dark = "zen",           -- try "ink" !
         light = "pearl"         -- try "mist" !
