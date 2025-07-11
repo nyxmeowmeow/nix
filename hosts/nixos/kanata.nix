@@ -108,10 +108,10 @@
     ((input-history real ; 2)) (macro S-;) break
 
     ((key-history = 2)) (macro S-.) break
-    ((and (key-history nop1 2) (key-history = 3))) (macro S-.) break
+    ((and (key-history nop1 1) (key-history = 2))) (macro S-.) break
 
     ((key-history - 2)) (macro S-.) break
-    ((and (key-history nop1 2) (key-history - 3))) (macro S-.) break
+    ((and (key-history nop1 1) (key-history - 2))) (macro S-.) break
 
     ((input-history real 9 2)) (macro S-') break
     ((input-history real 0 2)) (macro S-0) break
