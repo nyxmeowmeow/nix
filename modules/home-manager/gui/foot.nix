@@ -4,7 +4,8 @@
     settings = {
       main = {
         term = "foot";
-        font = "${config.stylix.fonts.monospace.name}:size=26";
+        # font = "${config.stylix.fonts.monospace.name}:size=26";
+        font = "/home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf:size=26";
         # font = "Mononoki Nerd Font Mono:size=26";
         dpi-aware = false;
         shell = "nu";
