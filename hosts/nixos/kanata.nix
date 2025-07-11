@@ -53,6 +53,9 @@
     ((input-history real l 2)) (macro l) break
     ((and (input-history fake typingmode 2) (input-history real l 3))) (macro l) break
 
+    ((input-history real f 2)) (macro f) break
+    ((and (input-history fake typingmode 2) (input-history real f 3))) (macro f) break
+
 
   ;; sfs
     ;;((and(input-history real e 2) (input-history s 1))) (macro e) break
