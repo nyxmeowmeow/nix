@@ -155,18 +155,31 @@
     ((and (key-history 0 2) (key-history nop1 1))) (macro S-0) break
 
 
-    ((and (input-history real o 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real p 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real t 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real d 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real s 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real c 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real b 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real f 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real l 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real g 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real e 3) (input-history fake typingmode 2))) rpt break
-    ((and (input-history real m 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real o 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real p 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real t 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real d 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real s 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real c 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real b 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real f 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real l 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real g 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real e 3) (input-history fake typingmode 2))) rpt break
+    ;; ((and (input-history real m 3) (input-history fake typingmode 2))) rpt break
+
+    ((and (key-history o 2) (key-history nop1 1))) rpt break
+    ((and (key-history p 2) (key-history nop1 1))) rpt break
+    ((and (key-history t 2) (key-history nop1 1))) rpt break
+    ((and (key-history d 2) (key-history nop1 1))) rpt break
+    ((and (key-history s 2) (key-history nop1 1))) rpt break
+    ((and (key-history c 2) (key-history nop1 1))) rpt break
+    ((and (key-history b 2) (key-history nop1 1))) rpt break
+    ((and (key-history f 2) (key-history nop1 1))) rpt break
+    ((and (key-history l 2) (key-history nop1 1))) rpt break
+    ((and (key-history g 2) (key-history nop1 1))) rpt break
+    ((and (key-history e 2) (key-history nop1 1))) rpt break
+    ((and (key-history m 2) (key-history nop1 1))) rpt break
 
     ((key-history o 1)) rpt break
     ((key-history p 1)) rpt break
