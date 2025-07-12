@@ -244,7 +244,8 @@ rsft bspc
 ralt tab
 f18 S-;
 lctrl -
-bspc @rpeat
+;;bspc @rpeat
+bspc rpt
 
 
 
