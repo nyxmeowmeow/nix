@@ -1,8 +1,12 @@
 {
   programs.niri.settings.spawn-at-startup = [
-    { command = [ "foot" "--server" ]; }
-    { command = [ "foot" "-H" "xwayland-satellite" ]; }
-    { command = [ "foot" "-H" "~/.config/kanata/hyprkan -d" ]; }
+    { command = [ "kitty" "-1" ]; }
+    { command = [ "kitty" "-1" "xwayland-satellite" ]; }
+    { command = [ "kitty" "-1" "~/.config/kanata/hyprkan -d" ]; }
+    # { command = [ "foot" "--server" ]; }
+    # { command = [ "foot" "-H" "xwayland-satellite" ]; }
+    # { command = [ "foot" "-H" "~/.config/kanata/hyprkan -d" ]; }
+
     { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }
     { command = [ "dunst" ]; }

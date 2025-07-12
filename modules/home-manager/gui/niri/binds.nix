@@ -8,9 +8,9 @@
     "Mod+G".action = spawn "~/misc/wlr-which-key";
     "Mod+L".action = sh "~/misc/wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
 
-    "Mod+T".action = spawn "footclient";
-    "Mod+C".action = spawn "footclient" "yazi";
-    "Mod+S".action = spawn "footclient" "nvim";
+    "Mod+T".action = spawn "kitty" "-1";
+    "Mod+C".action = spawn "kitty" "-1" "yazi";
+    "Mod+S".action = spawn "kitty" "-1" "nvim";
 
 
     "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
@@ -28,7 +28,7 @@
     "Mod+Shift+Z".action = sh "zen -p rain";
 
 
-    "Mod+Tab".action = focus-workspace "one";
+    "Mod+Shift+Semicolon".action = focus-workspace "one";
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
     "Mod+D".action = focus-workspace "discord";
