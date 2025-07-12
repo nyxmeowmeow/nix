@@ -129,6 +129,9 @@
 
 
 
+    ((key-history t 1)) (macro t) break
+    ((and (key-history t 2) (key-history nop1 1))) (macro t) break
+    ((and (input-history real t 3) (input-history fake typingmode 2))) (macro t) break
 
 
 
