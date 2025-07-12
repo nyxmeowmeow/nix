@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    kitty
 
     hyprpaper
     qemu_kvm

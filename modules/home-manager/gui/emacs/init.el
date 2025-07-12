@@ -39,10 +39,10 @@
 (blink-cursor-mode 0)
 
 ; FIXME find out why `load` isnt working
-(load-file "~/nix/modules/home-manager/emacs/meow.el")
-(load-file "~/nix/modules/home-manager/emacs/theme.el")
-(load-file "~/nix/modules/home-manager/emacs/dirvish.el")
-(load-file "~/nix/modules/home-manager/emacs/line.el")
+(load-file "~/nix/modules/home-manager/gui/emacs/meow.el")
+(load-file "~/nix/modules/home-manager/gui/emacs/theme.el")
+(load-file "~/nix/modules/home-manager/gui/emacs/dirvish.el")
+(load-file "~/nix/modules/home-manager/gui/emacs/line.el")
 
 (setq initial-frame-alist default-frame-alist)
 (setq default-frame-alist default-frame-alist)
