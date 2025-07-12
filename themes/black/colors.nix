@@ -33,4 +33,6 @@
   peach = "#f5a97f";
   yellow = "#eed49f";
   green = "#a6da95";
+
+  basetrans = "#000000cc";
 }

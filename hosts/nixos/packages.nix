@@ -48,6 +48,7 @@
     wget
     dbus
     vesktop
+    moonlight
     polkit_gnome
     dunst
     libnotify
