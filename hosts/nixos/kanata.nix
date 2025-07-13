@@ -133,6 +133,9 @@
     ((and (key-history t 2) (key-history nop1 1))) (macro t) break
     ((and (input-history real t 3) (input-history fake typingmode 2))) (macro t) break
 
+    ((key-history d 1)) (macro d) break
+    ((and (key-history d 2) (key-history nop1 1))) (macro d) break
+    ((and (input-history real d 3) (input-history fake typingmode 2))) (macro d) break
 
 
 
