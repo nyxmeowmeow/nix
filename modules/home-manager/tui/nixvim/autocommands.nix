@@ -6,7 +6,7 @@
       "BufWinEnter"
     ];
     pattern = "*.md";
-    command = "setlocal nonumber norelativenumber";
+    command = "setlocal nonumber norelativenumber signcolumn=no";
   }
   ];
 }
