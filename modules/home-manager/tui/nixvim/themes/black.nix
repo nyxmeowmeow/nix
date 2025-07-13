@@ -54,6 +54,14 @@ in {
           "@markup.heading.1.markdown" = { fg = col.base; bg = col.text; };
           "@markup.heading.2.markdown" = { fg = col.base; bg = col.subtext; };
           "@markup.heading.3.markdown" = { fg = col.base; bg = col.overlay; };
+          RenderMarkdownH1Bg.bg = col.text;
+          RenderMarkdownH2Bg.bg = col.subtext;
+          RenderMarkdownH3Bg.bg = col.overlay;
+
+
+          RenderMarkdown_RenderMarkdownH1_RenderMarkdownSign.fg = "none";
+          RenderMarkdown_RenderMarkdownH2_RenderMarkdownSign.fg = "none";
+          RenderMarkdown_RenderMarkdownH3_RenderMarkdownSign.fg = "none";
           RenderMarkdownCode.bg = "none";
           RenderMarkdownBullet.fg = col.text;
           RenderMarkdownCodeInline.bg = col.crust;
