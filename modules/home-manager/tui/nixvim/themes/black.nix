@@ -50,9 +50,15 @@ in {
             fg = col.base;
             bg = col.lavender;
           };
-          RenderMarkdownCode.bg = "#3B224C";
-          RenderMarkdownBullet.fg = col.base01;
-          RenderMarkdownCodeInline.bg = "#3B224C";
+
+          "markup.heading.1.markdown" = { fg = col.base; bg = col.text; };
+          "markup.heading.2.markdown" = { fg = col.base; bg = col.subtext; };
+          "markup.heading.3.markdown" = { fg = col.base; bg = col.overlay; };
+          RenderMarkdownCode.bg = "none";
+          RenderMarkdownBullet.fg = col.text;
+          RenderMarkdownCodeInline.bg = col.crust;
+
+
           #TermCursor.bg = col.text
           Character.fg = col.text;
           Delimiter.fg = col.text;
