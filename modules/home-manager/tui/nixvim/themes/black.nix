@@ -51,9 +51,9 @@ in {
             bg = col.lavender;
           };
 
-          "markup.heading.1.markdown" = { fg = col.base; bg = col.text; };
-          "markup.heading.2.markdown" = { fg = col.base; bg = col.subtext; };
-          "markup.heading.3.markdown" = { fg = col.base; bg = col.overlay; };
+          "@markup.heading.1.markdown" = { fg = col.base; bg = col.text; };
+          "@markup.heading.2.markdown" = { fg = col.base; bg = col.subtext; };
+          "@markup.heading.3.markdown" = { fg = col.base; bg = col.overlay; };
           RenderMarkdownCode.bg = "none";
           RenderMarkdownBullet.fg = col.text;
           RenderMarkdownCodeInline.bg = col.crust;
