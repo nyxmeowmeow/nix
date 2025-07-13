@@ -57,8 +57,6 @@ in {
           RenderMarkdownH1Bg.bg = col.text;
           RenderMarkdownH2Bg.bg = col.subtext;
           RenderMarkdownH3Bg.bg = col.overlay;
-
-
           RenderMarkdown_RenderMarkdownH1_RenderMarkdownSign.fg = "none";
           RenderMarkdown_RenderMarkdownH2_RenderMarkdownSign.fg = "none";
           RenderMarkdown_RenderMarkdownH3_RenderMarkdownSign.fg = "none";
