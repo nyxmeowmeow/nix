@@ -29,10 +29,10 @@
     ./ui/zen-mode.nix
     ./utils/bracketed.nix
     ./utils/completion.nix
-    ./utils/diagnostic.nix
+    ./ui/diagnostic.nix
     ./utils/flash.nix
     ./utils/harpoon.nix
-    ./utils/indentscope.nix
+    ./ui/indentscope.nix
     ./utils/lsp.nix
     # ./utils/pairs.nix
     ./utils/splitjoin.nix
@@ -40,7 +40,7 @@
     ./utils/telescope.nix
     ./utils/treesitter-textobjects.nix
     ./utils/treesitter.nix
-    ./utils/yazi.nix
+    ./ui/yazi.nix
     ./utils/luasnip.nix
   ];
 }

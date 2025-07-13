@@ -66,7 +66,7 @@
     wine64
     bottles
     mono
-  ] ++ [
-  (pkgs.discord.override { withMoonlight = true; })
+  # ] ++ [
+  # (pkgs.discord.override { withMoonlight = true; })
   ];
 }
