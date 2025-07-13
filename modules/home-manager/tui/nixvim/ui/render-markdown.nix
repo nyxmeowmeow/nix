@@ -13,8 +13,7 @@
         sign = false;
         # width = "block";
         disable_background = true;
-        # left_pad = 2;
-        left_margin = 2;
+        left_pad = 2;
         border = "none";
         language_border = " ";
         language_left = "|";
