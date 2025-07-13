@@ -41,6 +41,7 @@
     ./utils/treesitter-textobjects.nix
     ./utils/treesitter.nix
     ./ui/yazi.nix
+    ./ui/render-markdown.nix
     ./utils/luasnip.nix
   ];
 }
