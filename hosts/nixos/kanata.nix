@@ -29,7 +29,7 @@
 (defvirtualkeys typingmode nop1)
 
 (defalias
- .tp (hold-for-duration 80 typingmode)
+ .tp (hold-for-duration 30 typingmode)
 
   magic (switch
   ;; query
@@ -136,6 +136,10 @@
     ((key-history d 1)) (macro d) break
     ((and (key-history d 2) (key-history nop1 1))) (macro d) break
     ((and (input-history real d 3) (input-history fake typingmode 2))) (macro d) break
+
+    ((key-history s 1)) (macro s) break
+    ((and (key-history s 2) (key-history nop1 1))) (macro s) break
+    ((and (input-history real s 3) (input-history fake typingmode 2))) (macro s) break
 
 
 
