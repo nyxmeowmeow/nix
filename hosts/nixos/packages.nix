@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
     kitty
 
@@ -67,7 +67,9 @@
     bottles
     lutris
     mono
-  # ] ++ [
+  ] ++ [
   # (pkgs.discord.override { withMoonlight = true; })
+  inputs.pollymc.packages."x86_64-linux".default
+
   ];
 }

@@ -19,6 +19,7 @@
     slippi.url = "github:lytedev/slippi-nix";
     nuhxboard.url = "github:justDeeevin/NuhxBoard";
     walker.url = "github:abenz1267/walker";
+    pollymc.url = "github:fn2006/PollyMC";
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
