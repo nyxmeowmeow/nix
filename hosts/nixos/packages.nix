@@ -65,6 +65,7 @@
     wine
     wine64
     bottles
+    lutris
     mono
   # ] ++ [
   # (pkgs.discord.override { withMoonlight = true; })
