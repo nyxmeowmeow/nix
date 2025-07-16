@@ -36,6 +36,15 @@
     ((input-history real q 2)) (macro u e r y) break
     ((and (input-history fake typingmode 2) (input-history real q 3))) (macro u e r y) break
 
+
+    ((and (key-history s 3) (key-history t 2) (key-history nop1 1))) (macro d) break
+    ((and (key-history s 3) (key-history nop1 2) (key-history t 1))) (macro d) break
+    ((and (input-history real t 4) (input-history real r 3) (input-history fake typingmode 2))) (macro m) break
+    ((and (input-history real s 4) (input-history fake typingmode 3) (input-history real t 2))) (macro d) break
+
+
+
+
   ;; #include
     ;; ((input-history real 3 2)) (macro i n c l u d e) break
 
