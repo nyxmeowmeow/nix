@@ -155,7 +155,7 @@
     ((key-history \ 1)) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break
     ((key-history 7 1)) (macro S-7) break
-    ((key-history 9 1)) (macro S-') break
+    ((key-history 9 1)) (macro S-9) break
     ((key-history 0 1)) (macro S-0) break
 
     ((and (key-history , 2) (key-history nop1 1))) (macro S-,) break
