@@ -166,6 +166,8 @@
     ((and (key-history 0 2) (key-history nop1 1))) (macro S-0) break
 
     ((and (key-history t 3) (key-history r 2) (key-history nop1 1))) (macro u e) break
+    ((and (key-history t 3) (key-history r 2) (key-history nop1 1))) (macro m) break
+    ((and (input-history real t 4) (input-history real r 3) (input-history fake typingmode 2))) (macro m) break
 
 
 
@@ -196,7 +198,6 @@
     ((and (key-history e 2) (key-history nop1 1))) (macro e) break
     ((and (key-history m 2) (key-history nop1 1))) (macro m) break
 
-    ((and (key-history t 3) (key-history r 2) (key-history nop1 1))) (macro m) break
 
 
     ((and (input-history real o 3) (input-history fake typingmode 2))) (macro o) break
@@ -214,7 +215,6 @@
 
 
 
-    ((and (input-history real t 4) (input-history real r 3) (input-history fake typingmode 2))) (macro m) break
 
 
     ((input-history real f16 2)) (macro S-9) break
