@@ -9,9 +9,9 @@
     hyprpaper
     qemu_kvm
 
-    gnome-online-accounts
-    gnome-control-center
-    glib
+    # gnome-online-accounts
+    # gnome-control-center
+    # glib
 
     quickshell
 
