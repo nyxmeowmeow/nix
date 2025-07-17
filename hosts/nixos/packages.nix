@@ -4,6 +4,7 @@
     zulu
 
     kitty
+    ghostty
 
     hyprpaper
     qemu_kvm
