@@ -5,6 +5,11 @@
 
     configFile.text = /* nu */ ''
 
+      # cd && ls
+      def cs [msg: string] {
+        cd $msg
+        ls
+      }
 
       def gl [] {
         let selection = (git log --oneline | lines | fzf)
