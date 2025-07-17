@@ -42,6 +42,7 @@
     ./utils/treesitter.nix
     ./ui/yazi.nix
     ./ui/render-markdown.nix
+    ./ui/smear-cursor.nix
     ./utils/luasnip.nix
   ];
 }
