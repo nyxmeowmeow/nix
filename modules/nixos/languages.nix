@@ -4,6 +4,7 @@
     gdb
 
 
+    zig
 
     go
 
