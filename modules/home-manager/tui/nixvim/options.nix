@@ -4,6 +4,7 @@
 
     number = true;
     relativenumber = true;
+    signcolumn = "number";
 
     shiftwidth = 2;
     tabstop = 2;
