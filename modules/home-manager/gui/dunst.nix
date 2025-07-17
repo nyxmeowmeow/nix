@@ -5,7 +5,7 @@
     settings = {
 
       global = {
-        monitor = 1;
+        monitor = 0;
         width = 300;
         height = 300;
         origin = "top-right";
