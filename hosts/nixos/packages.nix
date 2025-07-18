@@ -4,10 +4,10 @@
     zulu
 
     kitty
-    ghostty
+    # ghostty
 
     hyprpaper
-    qemu_kvm
+    # qemu_kvm
 
     # gnome-online-accounts
     # gnome-control-center
@@ -15,7 +15,7 @@
 
     quickshell
 
-    expect
+    # expect
 
     # gimp
     krita
@@ -52,7 +52,7 @@
     wget
     dbus
     vesktop
-    moonlight
+    # moonlight
     polkit_gnome
     dunst
     libnotify
@@ -68,9 +68,9 @@
 
     wine
     wine64
-    bottles
-    lutris
-    mono
+    # bottles
+    # lutris
+    # mono
   ] ++ [
   # (pkgs.discord.override { withMoonlight = true; })
   inputs.pollymc.packages."x86_64-linux".default

@@ -43,6 +43,18 @@
       }
 
       {
+        on = "<C-c>";
+        run = "quit";
+        desc = "Suspend the process";
+      }
+
+      {
+        on = "<C-d>";
+        run = "quit";
+        desc = "Suspend the process";
+      }
+
+      {
         on = "f";
         run = "plugin jump-to-char";
         desc = "Jump to char";

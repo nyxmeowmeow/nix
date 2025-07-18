@@ -4,7 +4,7 @@
     gdb
 
 
-    zig
+    # zig
 
     go
 
