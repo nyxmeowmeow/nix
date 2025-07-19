@@ -12,420 +12,146 @@
           chords-v2-min-idle 40
           danger-enable-cmd yes
         '';
-#TODO up = z
         config = /* scheme */ ''
-(defsrc)
-
-(deflayermap (base)
- ;; define home row mods (they act as typing-layer triggers, too )
- e (t! homerowmod $tot 110 t lsft)
- o (t! homerowmod $tot 110 a rsft)
- r (t! homerowmod $tot 110 c lctl)
- i (t! homerowmod $tot 110 h rctl)
- q (t! homerowmodfiltered $tot 200 n lsft (n))
- [ (t! homerowmod $tot 150 i rsft)
- w (t! homerowmod $tot 120 s (layer-while-held syms))
- p (t! homerowmod $tot 120 e (layer-while-held syms))
- ;; define each letter as typing-layer trigger
- 
- g (multi v @.tp)
- u (multi m @.tp)
- f (multi g @.tp)
- 7 (multi ' @.tp)
- 8 (multi l @.tp)
- 9 (multi o @.tp)
- 0 (multi u @.tp)
- c (multi r @.tp)
- ent (multi z @.tp)
- = (multi x @.tp)
- - (multi j @.tp)
- 1 (multi b @.tp)
- 2 (multi f @.tp)
- 3 (multi d @.tp)
- 4 (multi w @.tp)
- 5 (multi p @.tp)
- t (multi y @.tp)
- d (multi k @.tp)
- s (multi . @.tp)
- a (multi , @.tp)
- j (multi / @.tp)
- k (multi S-- @.tp)
- l (multi S-9 @.tp)
- ; (multi S-0 @.tp)
- ' (multi ; @.tp)
- caps (multi q @.tp)
-
-
-tab -
-` S-;
-spc ent
-m ent
-, spc
-. bspc
-
-f3 S-[
-f4 S-[
-f10 S-]
-
-
-;; ent @rpeat
-x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
-v @magic
-] @rpeat
-
-;;, (tap-hold-press 110 110 , lsft)
-;;. @per?
-
-
+(defsrc
 )
-
-
-(deflayermap over
-
-
-)
-
-(deflayermap syms
-esc f1
-1 ,
-2 .
-3 ` 
-4 `
-8 left
-9 down
-0 up
-- right
-q 1
-w 2
-e 3
-r 4
-i 7
-o 8
-p 9
-[ 0
-ent rpt
-a 0
-s 9
-d 8
-f 5
-k 6
-l 3
-; 2
-' 1
-c @cw
-
-)
-
-(deflayermap sup
-;; rsft rsft
-;; - lctl
-;; b b
-;; f f
-;; d d
-;; w w
-;; n n
-;; s s
-;; t t
-;; c c
-;; h h
-;; a a
-;; e e
-;; i i
-
-
-)
-
-
-
-(defvirtualkeys
-  to-base (layer-switch base)
-  to-over (layer-switch over)
-)
-
-
 
 (defvar
-  tot 80 ;; tot=timeouttap
+  tot 150  ;; tot=time out tap
 )
 
-
-(deftemplate homerowmod (timeouttap timeouthold keytap keyhold)
-	(tap-hold $timeouttap $timeouthold 
-		(multi $keytap  @.tp) 
-		$keyhold
-	)
-)
-
-;; homerowmodfiltered: include a way to fix problematic bigrams
-(deftemplate homerowmodfiltered (timeouttap timeouthold keytap keyhold typinglist)
-  (tap-hold-release-keys $timeouttap $timeouthold
-    (multi $keytap  @.tp)
-    $keyhold
-    $typinglist ;; Activates $keytap early if a key within $typinglist is pressed before hold activates.
-  )
-)
+(defvirtualkeys typingmode nop1)
 
 (defalias
-  ;; call @.tp whenever you want to enter typing-layer
-  .tp (switch
-        ;;(lsft rsft) XX break ;; skip typing-layer activation for upper case keys might this solves some FJ problems
-        ()  (multi
-              (layer-switch typing)
-              (on-idle 1 tap-vkey to-base )
-            ) break
-      )
-  .spc-typing   (multi (layer-switch base) spc) ;; expilcitly leave typing-layer when hitting `space` - this allows experimenting with higher idle timeouts
-)
-
-
-
-(deflayermap (typing) 
- 1 (multi (unshift b) (layer-switch base))
- 2 (multi (unshift f) (layer-switch base))
- 3 (multi (unshift d) (layer-switch base))
- 4 (multi (unshift w) (layer-switch base))
- 5 (multi (unshift p) (layer-switch base))
- u (multi (unshift m) (layer-switch base))
- i (multi (unshift h) (layer-switch base))
- r (multi (unshift c) (layer-switch base))
- t (multi (unshift y) (layer-switch base))
- k (multi S-- (layer-switch base))
- j (multi / (layer-switch base))
- l (multi S-9 (layer-switch base))
- ; (multi S-0 (layer-switch base))
- ' (multi ; (layer-switch base))
- a (multi (unshift ,) (layer-switch base))
- s (multi (unshift .) (layer-switch base))
- d (multi (unshift k) (layer-switch base))
- f (multi (unshift g) (layer-switch base))
- g (multi (unshift v) (layer-switch base))
- m (multi (unshift ent) (layer-switch base))
- , spc
- . bspc
- ent (multi z (layer-switch base))
- c (multi (unshift r) (layer-switch base))
- caps (multi (unshift q) (layer-switch base))
- spc (unshift ent)
-
- o (multi (t! homerowmod $tot 110 (unshift a) rsft) (layer-switch base))
- e (multi (t! homerowmod $tot 110 (unshift t) lsft) (layer-switch base))
- w (t! homerowmod $tot 120 (unshift s) (layer-while-held syms))
- p (t! homerowmod $tot 120 (unshift e) (layer-while-held syms))
- [ (multi (t! homerowmod $tot 140 (unshift i) rsft) (layer-switch base))
- q (multi (t! homerowmod $tot 140 (unshift n) lsft) (layer-switch base))
-
-
-tab -
-` S-;
-
-f3 S-[
-f4 S-[
-9 S-]
-
-
-;; ent @rpeat
-x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
-v @magic
-ralt spc
-rctl bspc
-)
-
-
-
-
-
-
-(defchordsv2
-
-  (1 2    ) S-6 15 all-released (typing over sup)
-  (  2 3  ) S-7 15 all-released (typing over sup)
-  (  2   4) `   15 all-released (typing over sup)
-  (    3 4) S-8 15 all-released (typing over sup)
-
-  (8 9    ) S-' 15 all-released (typing over sup)
-  (  9 0  ) S-\ 15 all-released (typing over sup)
-  (    0 -) S-1 15 all-released (typing over sup)
-
-  (q w    ) S-, 15 all-released (typing over sup)
-  (  w e  ) = 15 all-released (typing over sup)
-  (  w   r) S-` 15 all-released (typing over sup)
-  (    e r) [   15 all-released (typing over sup)
-
-  (i o    ) ]   15 all-released (typing over sup)
-  (i   p  ) del 15 all-released (typing over sup)
-  (  o p  ) +   15 all-released (typing over sup)
-  (    p [) S-. 15 all-released (typing over sup)
-
-  (a s    ) \   15 all-released (typing over sup)
-  (  s d  ) S-2 15 all-released (typing over sup)
-  (    d f) S-4 15 all-released (typing over sup)
-
-  (k l    ) S-3 15 all-released (typing over sup)
-  (k   ;  ) S-5 15 all-released (typing over sup)
-  (  l ;  ) S-/ 15 all-released (typing over sup)
-  (    ; ') S-2 15 all-released (typing over sup)
-)
-
-
-
-(defalias
-  ;;sym (tap-hold-press 120 120 enter (layer-toggle syms))
-  ;;wi (tap-hold-press 120 120 enter (layer-toggle win))
-  lc (tap-hold-press 120 120 - lctl)
-  lm (tap-hold-press 120 120 esc lmet)
-  rs (tap-hold-press 120 120 bspc lsft)
-  ;;col (tap-hold-press 120 120 S-; lctl)
-
-  ;;dr (dynamic-macro-record 0)
-  ;;dp (dynamic-macro-play 0)
-  ;;ds dynamic-macro-record-stop
-  ;;dst (dynamic-macro-record-stop-truncate 1)
-
-
-  cw (caps-word-custom 1000
-    (q b f d w p l o u j x n s t c y m h a e i k g v)
-    (lsft -)
-  )
-
-
-
-  ;; easier (); roll
-  semi? (switch
-    ((and
-      (or
-      (key-history ] 1)
-      (key-history . 1) 
-      (key-history 0 1)) 
-    (key-timing 1 less-than 120))) _ break
-    () (tap-hold-press 110 110 ; rsft) break)
-
-
-  ;; easier ); roll
-   close (switch
-     (rctl) (macro S-((unmod (rctl) 0)) (unmod (rctl) ;)) break
-     () @semi? break
-   )
-
-
-  rp? (switch
-    ((and
-    (key-history 9 1) 
-    (key-timing 1 less-than 120))) (macro S-0) break
-    () (tap-hold-press 110 110 S-0 rctl) break
-  )
-
-  per? (switch
-    ((key-timing 1 less-than 120)) _ break ()
-    (tap-hold-press 110 110 . lctl) break
-  )
-
-
-  ;; easier `, `
-  sc (switch
-    (lsft) (multi (release-key lsft) (macro , spc)) break
-    () spc break
-  )
-
-
-
-
-
-
-
-
-
-  ;; magic keys:
-  ;; a -> o
-  ;; o -> a
-  ;; e -> u
-  ;; u -> e
-  ;; i -> x
-  ;;
-  ;; c -> y
-  ;; p -> y
-
-  ;; ( -> "
-  ;; ! -> [
-  ;; = -> >
-  ;; - -> >
-  ;; { -> };
-  ;; < -> =
-  ;; > -> >
-  ;; # -> include
-  ;; \ -> n
-
-  ;; TODO: 
-  ;; us -> e
-  ;; st -> d
-  ;;  ! -> =
-  ;; degrees -> sym
-  ;; euro -> sym
-  ;; pound -> sym
-
-
+ .tp (hold-for-duration 30 typingmode)
 
   magic (switch
+  ;; query
+    ((input-history real q 2)) (macro u e r y) break
+    ((and (input-history fake typingmode 2) (input-history real q 3))) (macro u e r y) break
 
-  ;; // query
-    ((key-history q 1)) (macro u) break
 
-  ;; // #include
-    ((key-history 3 1)) (macro i n c l u d e) break
+    ((and (key-history s 3) (key-history t 2) (key-history nop1 1))) (macro d) break
+    ((and (key-history s 3) (key-history nop1 2) (key-history t 1))) (macro d) break
+    ((and (input-history real t 4) (input-history real r 3) (input-history fake typingmode 2))) (macro m) break
+    ((and (input-history real s 4) (input-history fake typingmode 3) (input-history real t 2))) (macro d) break
 
-  ;; // sfb
-    ((key-history o 1)) (macro a) break
-    ((key-history a 1)) (macro o) break
-    ((key-history u 1)) (macro e) break
-    ((key-history e 1)) (macro u) break
-    ((key-history i 1)) (macro x) break
 
-  ;; // sfs
-    ;;((and(key-history e 2) (key-history s 1))) (macro e) break
-    ((and(key-history e 2) (key-history y 1))) (macro e) break
-    ((and(key-history e 2) (key-history v 1))) (macro e) break
 
-    ((and(key-history n 2) (key-history i 1))) (macro x) break
-  ;; // sfb
-    ((key-history w 1)) (macro y) break
-    ((key-history c 1)) (macro y) break
-    ((key-history p 1)) (macro y) break
 
-    ((key-history j 1)) (macro u s t) break
+  ;; #include
+    ;; ((input-history real 3 2)) (macro i n c l u d e) break
+
+  ;; sfb
+    ((input-history real o 2)) (macro a) break
+    ((input-history real a 2)) (macro o) break
+    ((input-history real u 2)) (macro e) break
+    ((input-history real e 2)) (macro u) break
+
+    ((and (input-history fake typingmode 2) (input-history real o 3))) (macro a) break
+    ((and (input-history fake typingmode 2) (input-history real a 3))) (macro o) break
+    ((and (input-history fake typingmode 2) (input-history real u 3))) (macro e) break
+    ((and (input-history fake typingmode 2) (input-history real e 3))) (macro u) break
+
+    ((input-history real l 2)) (macro l) break
+    ((and (input-history fake typingmode 2) (input-history real l 3))) (macro l) break
+
+    ((input-history real f 2)) (macro f) break
+    ((and (input-history fake typingmode 2) (input-history real f 3))) (macro f) break
+
+
+  ;; sfs
+    ;;((and(input-history real e 2) (input-history s 1))) (macro e) break
+
+    ((and (input-history real e 3) (input-history real y 2))) (macro e) break
+    ((and (input-history real e 4) (input-history real y 3) (input-history fake typingmode 2))) (macro e) break
+    ((and (input-history real e 4) (input-history fake typingmode 3) (input-history real y 2))) (macro e) break
+
+    ((and (input-history real e 3) (input-history real v 2))) (macro e) break
+    ((and (input-history real e 4) (input-history real v 3) (input-history fake typingmode 2))) (macro e) break
+    ((and (input-history real e 4) (input-history fake typingmode 3) (input-history real v 2))) (macro e) break
+
+    ((and (input-history real n 3) (input-history real i 2))) (macro x) break
+    ((and (input-history real n 4) (input-history real i 3) (input-history fake typingmode 2))) (macro x) break
+    ((and (input-history real n 4) (input-history fake typingmode 3) (input-history real i 2))) (macro x) break
+
+    ((input-history real i 2)) (macro z) break
+    ((and (input-history fake typingmode 2) (input-history real i 3))) (macro z) break
+
+  ;; sfb
+    ((input-history real w 2)) (macro y) break
+    ((and (input-history fake typingmode 2) (input-history real w 3))) (macro y) break
+
+    ((input-history real c 2)) (macro y) break
+    ((and (input-history fake typingmode 2) (input-history real c 3))) (macro y) break
+
+    ((input-history real p 2)) (macro y) break
+    ((and (input-history fake typingmode 2) (input-history real p 3))) (macro y) break
+
+
+    ((input-history real j 2)) (macro u s t) break
+    ((and (input-history fake typingmode 2) (input-history real j 3))) (macro u s t) break
 
     ((key-history \ 1)) (macro n) break
 
 
-    ;; non-sfb for !=
-    ;;((and(key-history spc 2) (key-history 1 1))) (macro =) break
-
-    ;; non-sfb for vec![]
-    ;;((and(key-history c 2) (key-history 1 1))) (macro [) break
-
     ((key-history 1 1)) (macro [) break
 
-  ;; // non-sfb for >>
+  ;; non-sfb for >>
     ((key-history . 1)) (macro S-.) break
-  ;; // non-sfb for <=
+
+  ;; non-sfb for <=
     ((key-history , 1)) (macro =) break
-  ;; // non-sfb ; for ]
+
+  ;; non-sfb ; for ]
     ((key-history ] 1)) (macro ;) break
-  ;; // auto ; for {}
+
+  ;; auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
+
 
 
     ((key-history x 1)) (macro p k g s) break
 
 
-    ((key-history 7 1)) (macro S-7) break
-    ((key-history ; 1)) (macro S-;) break
+    ((input-history real 7 2)) (macro S-7) break
+    ((input-history real ; 2)) (macro S-;) break
+
     ((key-history = 1)) (macro S-.) break
+    ((and (key-history nop1 1) (key-history = 2))) (macro S-.) break
+
     ((key-history - 1)) (macro S-.) break
-    ((key-history 9 1)) (macro S-') break
-    ((key-history 0 1)) (macro S-0) break
+    ((and (key-history nop1 1) (key-history - 2))) (macro S-.) break
+
+    ((input-history real f16 2)) (macro S-') break
+    ((input-history real f17 2)) (macro S-0) break
+    ((input-history real lctl 2)) (macro S-0) break
+
+
+
+
+
+
+    ((key-history t 1)) (macro t) break
+    ((and (key-history t 2) (key-history nop1 1))) (macro t) break
+    ((and (input-history real t 3) (input-history fake typingmode 2))) (macro t) break
+
+    ((key-history d 1)) (macro d) break
+    ((and (key-history d 2) (key-history nop1 1))) (macro d) break
+    ((and (input-history real d 3) (input-history fake typingmode 2))) (macro d) break
+
+    ((key-history s 1)) (macro s) break
+    ((and (key-history s 2) (key-history nop1 1))) (macro s) break
+    ((and (input-history real s 3) (input-history fake typingmode 2))) (macro s) break
+
+
+
+
     () rpt break
   )
 
-  ;; // normal rpt except for syms
+  ;; normal rpt except for syms
+  ;; FIXME
   rpeat (switch
   ;; TODO tr -> ue
     ((key-history , 1)) (macro S-,) break
@@ -434,8 +160,295 @@ rctl bspc
     ((key-history 7 1)) (macro S-7) break
     ((key-history 9 1)) (macro S-9) break
     ((key-history 0 1)) (macro S-0) break
+
+    ((and (key-history , 2) (key-history nop1 1))) (macro S-,) break
+    ((and (key-history \ 2) (key-history nop1 1))) (macro S-\) break
+    ((and (key-history ; 2) (key-history nop1 1))) (macro S-;) break
+    ((and (key-history 7 2) (key-history nop1 1))) (macro S-7) break
+    ((and (key-history 9 2) (key-history nop1 1))) (macro S-9) break
+    ((and (key-history 0 2) (key-history nop1 1))) (macro S-0) break
+
+    ((and (key-history t 3) (key-history r 2) (key-history nop1 1))) (macro u e) break
+    ((and (key-history t 3) (key-history nop1 2) (key-history r 1))) (macro u e) break
+    ((and (input-history real t 4) (input-history real r 3) (input-history fake typingmode 2))) (macro m) break
+    ((and (input-history real t 4) (input-history fake typingmode 3) (input-history real r 2))) (macro m) break
+
+
+
+    ((key-history o 1)) (macro o) break
+    ((key-history p 1)) (macro p) break
+    ((key-history t 1)) (macro t) break
+    ((key-history d 1)) (macro d) break
+    ((key-history s 1)) (macro s) break
+    ((key-history c 1)) (macro c) break
+    ((key-history b 1)) (macro b) break
+    ((key-history f 1)) (macro f) break
+    ((key-history l 1)) (macro l) break
+    ((key-history g 1)) (macro g) break
+    ((key-history e 1)) (macro e) break
+    ((key-history m 1)) (macro m) break
+
+
+    ((and (key-history o 2) (key-history nop1 1))) (macro o) break
+    ((and (key-history p 2) (key-history nop1 1))) (macro p) break
+    ((and (key-history t 2) (key-history nop1 1))) (macro t) break
+    ((and (key-history d 2) (key-history nop1 1))) (macro d) break
+    ((and (key-history s 2) (key-history nop1 1))) (macro s) break
+    ((and (key-history c 2) (key-history nop1 1))) (macro c) break
+    ((and (key-history b 2) (key-history nop1 1))) (macro b) break
+    ((and (key-history f 2) (key-history nop1 1))) (macro f) break
+    ((and (key-history l 2) (key-history nop1 1))) (macro l) break
+    ((and (key-history g 2) (key-history nop1 1))) (macro g) break
+    ((and (key-history e 2) (key-history nop1 1))) (macro e) break
+    ((and (key-history m 2) (key-history nop1 1))) (macro m) break
+
+
+
+    ((and (input-history real o 3) (input-history fake typingmode 2))) (macro o) break
+    ((and (input-history real p 3) (input-history fake typingmode 2))) (macro p) break
+    ((and (input-history real t 3) (input-history fake typingmode 2))) (macro t) break
+    ((and (input-history real d 3) (input-history fake typingmode 2))) (macro d) break
+    ((and (input-history real s 3) (input-history fake typingmode 2))) (macro s) break
+    ((and (input-history real c 3) (input-history fake typingmode 2))) (macro c) break
+    ((and (input-history real b 3) (input-history fake typingmode 2))) (macro b) break
+    ((and (input-history real f 3) (input-history fake typingmode 2))) (macro f) break
+    ((and (input-history real l 3) (input-history fake typingmode 2))) (macro l) break
+    ((and (input-history real g 3) (input-history fake typingmode 2))) (macro g) break
+    ((and (input-history real e 3) (input-history fake typingmode 2))) (macro e) break
+    ((and (input-history real m 3) (input-history fake typingmode 2))) (macro m) break
+
+
+
+
+
+    ((input-history real f16 2)) (macro S-9) break
+
+
+
     () rpt break
   )
+)
+
+(deflayermap (base)
+ ;; define home row mods (they act as typing-layer triggers, too )
+ t (t! homerowmod $tot 110 t lsft)
+ a (t! homerowmod $tot 110 a rsft)
+ c (t! homerowmod $tot 110 c lctl)
+ h (t! homerowmod $tot 110 h rctl)
+ n (t! homerowmod $tot 130 n lsft)
+ i (t! homerowmod $tot 130 i rsft)
+ s (t! homerowmod $tot 120 s (layer-while-held syms))
+ e (t! homerowmod $tot 120 e (layer-while-held syms))
+ ;; define each letter as typing-layer trigger
+ q ( t! letter 200 200 q)
+ w ( t! letter 200 200 w)
+ f ( t! letter 200 200 f)
+ l ( t! letter 200 200 l)
+ j ( t! letter 200 200 j)
+ y ( t! letter 200 200 y)
+ u ( t! letter 200 200 u)
+ d ( t! letter 200 200 d)
+ o ( t! letter 200 200 o)
+ p ( t! letter 200 200 p)
+ g ( t! letter 200 200 g)
+ ; ( t! letter 200 200 ;)
+ z ( t! letter 200 200 z)
+ x ( t! letter 200 200 x)
+ v ( t! letter 200 200 v)
+ b ( t! letter 200 200 b)
+ k ( t! letter 200 200 k)
+ m ( t! letter 200 200 m)
+
+f15 S--
+f16 S-9
+f17 S-0
+lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
+f19 @magic
+rsft bspc
+ralt tab
+f18 S-;
+lctrl -
+bspc @rpeat
+
+
+
+3 S-[
+8 S-]
+
+
+)
+
+(deflayermap krita
+lsft lsft
+lctl lctl
+r spc
+spc r
+)
+
+(deflayermap over
+
+
+f18 tab
+f15 8
+f16 9
+f17 0
+f19 lsft
+
+b (multi b (layer-switch over))
+f (multi f (layer-switch over))
+d (multi d (layer-switch over))
+w (multi w (layer-switch over))
+p (multi p (layer-switch over))
+n (multi n (layer-switch over))
+s (multi s (layer-switch over))
+t (multi t (layer-switch over))
+c (multi c (layer-switch over))
+y (multi y (layer-switch over))
+, (multi , (layer-switch over))
+. (multi . (layer-switch over))
+k (multi k (layer-switch over))
+g (multi g (layer-switch over))
+v (multi v (layer-switch over))
+' (multi ' (layer-switch over))
+l (multi l (layer-switch over))
+o (multi o (layer-switch over))
+u (multi u (layer-switch over))
+j (multi j (layer-switch over))
+x (multi x (layer-switch over))
+m (multi m (layer-switch over))
+h (multi h (layer-switch over))
+a (multi a (layer-switch over))
+e (multi e (layer-switch over))
+i (multi i (layer-switch over))
+)
+
+(deflayermap sup
+lctl lctl
+rsft rsft
+
+
+f18 tab
+f15 S--
+f16 S-9
+f17 S-0
+f19 lsft
+
+b b
+f f
+d d
+w w
+p p
+n n
+s s
+t t
+c c
+y y
+, ,
+. .
+k k
+g g
+v v
+' '
+l l
+o o
+u u
+j j
+x x
+m m
+h h
+a a
+e e
+i i
+
+)
+(deflayermap syms
+esc f1
+1 f2
+2 f3
+3 f4
+4 f5
+5 f6
+6 f7
+7 home
+8 pgdn
+9 pgup
+0 end
+b ,
+f .
+d (caps-word-toggle 1000)
+w `
+l left
+o down
+u up
+j right
+n 1
+s 2
+t 3
+c 4
+h 7
+a 8
+e 9
+i 0
+bspc rpt
+, 0
+. 9
+k 8
+g 5
+f15 6
+f16 3
+f17 2
+; 1
+
+)
+
+
+(defchordsv2
+
+  (1 2    ) S-6 20 all-released (over sup)
+  (  2 3  ) S-7 15 all-released (over sup)
+  (  2   4) `   20 all-released (over sup)
+  (    3 4) S-8 15 all-released (over sup)
+  
+  (l o    ) S-' 15 all-released (over sup)
+  (  o u  ) caps 13 all-released (over sup)
+  (    u j) S-1 17 all-released (over sup)
+
+  (q w    ) S-, 15 all-released (over sup)
+  (  w e  ) =   15 all-released (over sup)
+  (  w   r) S-` 17 all-released (over sup)
+  (    e r) [   15 all-released (over sup)
+
+  (h a    ) ]   15 all-released (over sup)
+  (h   e  ) del 15 all-released (over sup)
+  (  a e  ) +   15 all-released (over sup)
+  (    e i) S-. 15 all-released (over sup)
+
+  (a s    ) \   20 all-released (over sup)
+  (  s d  ) S-\ 20 all-released (over sup)
+  (    d f) S-4 20 all-released (over sup)
+
+  (f15 f16      ) S-3 20 all-released (over sup)
+  (f15     f17  ) S-5 20 all-released (over sup)
+  (    f16 f17  ) S-/ 15 all-released (over sup)
+  (        f17 ;) S-2 15 all-released (over sup)
+)
+
+
+
+(deftemplate homerowmod (timeouttap timeouthold keytap keyhold)
+   (switch
+   (nop1) $keytap break ;;check for typing mode
+  () (tap-hold $timeouttap $timeouthold
+      (multi $keytap  @.tp)
+      $keyhold
+  ) break
+))
+
+(deftemplate letter (timeouttap timeouthold keytap)
+      (switch 
+            (nop1) (multi (unmod $keytap)  @.tp) break  ;;check for typing mode
+            () (multi                $keytap  @.tp) break
+    )
 )
         '';
       };
