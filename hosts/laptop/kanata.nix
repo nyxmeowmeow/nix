@@ -5,6 +5,10 @@
     keyboards = {
       lily58 = {
         port = 10000;
+        devices = [
+          "/dev/input/by-id/usb-liliums_Lily58-event-kbd"
+          "/dev/input/by-id/usb-liliums_Lily58-event-if02"
+        ];
 
         extraDefCfg = ''
           process-unmapped-keys yes
@@ -12,7 +16,9 @@
           chords-v2-min-idle 40
           danger-enable-cmd yes
         '';
+
         config = /* scheme */ ''
+
 (defsrc
 )
 
@@ -27,8 +33,8 @@
 
   magic (switch
   ;; query
-    ((input-history real q 2)) (macro u e r y) break
-    ((and (input-history fake typingmode 2) (input-history real q 3))) (macro u e r y) break
+    ((key-history q 1)) (macro u e r y) break
+    ((and (input-history fake typingmode 2) (input-history real tab 3))) (macro u e r y) break
 
 
     ((and (key-history s 3) (key-history t 2) (key-history nop1 1))) (macro d) break
@@ -144,6 +150,10 @@
     ((and (key-history s 2) (key-history nop1 1))) (macro s) break
     ((and (input-history real s 3) (input-history fake typingmode 2))) (macro s) break
 
+    ((key-history m 1)) (macro m) break
+    ((and (key-history m 2) (key-history nop1 1))) (macro m) break
+    ((and (input-history real m 3) (input-history fake typingmode 2))) (macro m) break
+
 
 
 
@@ -231,201 +241,126 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- t (t! homerowmod $tot 110 t lsft)
- a (t! homerowmod $tot 110 a rsft)
- c (t! homerowmod $tot 110 c lctl)
- h (t! homerowmod $tot 110 h rctl)
- n (t! homerowmod $tot 130 n lsft)
- i (t! homerowmod $tot 130 i rsft)
- s (t! homerowmod $tot 120 s (layer-while-held syms))
- e (t! homerowmod $tot 120 e (layer-while-held syms))
+ e (t! homerowmod $tot 110 t lsft)
+ o (t! homerowmod $tot 110 a rsft)
+ r (t! homerowmod $tot 110 c lctl)
+ i (t! homerowmod $tot 110 h rctl)
+ q (t! homerowmod $tot 130 n lsft)
+ [ (t! homerowmod $tot 130 i rsft)
+ w (t! homerowmod $tot 120 s (layer-while-held syms))
+ p (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
- q ( t! letter 200 200 q)
- w ( t! letter 200 200 w)
- f ( t! letter 200 200 f)
- l ( t! letter 200 200 l)
- j ( t! letter 200 200 j)
- y ( t! letter 200 200 y)
- u ( t! letter 200 200 u)
- d ( t! letter 200 200 d)
- o ( t! letter 200 200 o)
- p ( t! letter 200 200 p)
- g ( t! letter 200 200 g)
- ; ( t! letter 200 200 ;)
- z ( t! letter 200 200 z)
- x ( t! letter 200 200 x)
- v ( t! letter 200 200 v)
- b ( t! letter 200 200 b)
- k ( t! letter 200 200 k)
- m ( t! letter 200 200 m)
 
-f15 S--
-f16 S-9
-f17 S-0
-lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
-f19 @magic
-rsft bspc
-ralt tab
-f18 S-;
-lctrl -
-bspc @rpeat
+ g ( t! letter 200 200 v)
+ u ( t! letter 200 200 m)
+ f ( t! letter 200 200 g)
+ 7 ( t! letter 200 200 ')
+ 8 ( t! letter 200 200 l)
+ 9 ( t! letter 200 200 o)
+ 0 ( t! letter 200 200 u)
+ c ( t! letter 200 200 r)
+ ent ( t! letter 200 200 z)
+ = ( t! letter 200 200 x)
+ _ ( t! letter 200 200 j)
+ 1 ( t! letter 200 200 b)
+ 2 ( t! letter 200 200 f)
+ 3 ( t! letter 200 200 d)
+ 4 ( t! letter 200 200 w)
+ 5 ( t! letter 200 200 p)
+ t ( t! letter 200 200 y)
+ d ( t! letter 200 200 k)
+ s ( t! letter 200 200 .)
+ a ( t! letter 200 200 ,)
+ j ( t! letter 200 200 /)
+ k ( t! letter 200 200 S--)
+ l ( t! letter 200 200 S-9)
+ ; ( t! letter 200 200 S-0)
+ ' ( t! letter 200 200 ;)
+ caps ( t! letter 200 200 q)
 
 
 
-3 S-[
-8 S-]
+tab -
+` S-;
+spc ent
+m ent
+, spc
+. bspc
+
+f3 S-[
+f4 S-[
+f10 S-]
 
 
-)
 
-(deflayermap krita
-lsft lsft
-lctl lctl
-r spc
-spc r
-)
+x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
+v @magic
+] @rpeat
 
-(deflayermap over
-
-
-f18 tab
-f15 8
-f16 9
-f17 0
-f19 lsft
-
-b (multi b (layer-switch over))
-f (multi f (layer-switch over))
-d (multi d (layer-switch over))
-w (multi w (layer-switch over))
-p (multi p (layer-switch over))
-n (multi n (layer-switch over))
-s (multi s (layer-switch over))
-t (multi t (layer-switch over))
-c (multi c (layer-switch over))
-y (multi y (layer-switch over))
-, (multi , (layer-switch over))
-. (multi . (layer-switch over))
-k (multi k (layer-switch over))
-g (multi g (layer-switch over))
-v (multi v (layer-switch over))
-' (multi ' (layer-switch over))
-l (multi l (layer-switch over))
-o (multi o (layer-switch over))
-u (multi u (layer-switch over))
-j (multi j (layer-switch over))
-x (multi x (layer-switch over))
-m (multi m (layer-switch over))
-h (multi h (layer-switch over))
-a (multi a (layer-switch over))
-e (multi e (layer-switch over))
-i (multi i (layer-switch over))
 )
 
 (deflayermap sup
-lctl lctl
-rsft rsft
-
-
-f18 tab
-f15 S--
-f16 S-9
-f17 S-0
-f19 lsft
-
-b b
-f f
-d d
-w w
-p p
-n n
-s s
-t t
-c c
-y y
-, ,
-. .
-k k
-g g
-v v
-' '
-l l
-o o
-u u
-j j
-x x
-m m
-h h
-a a
-e e
-i i
-
+tab lctl
+. rsft
 )
+
+
 (deflayermap syms
 esc f1
-1 f2
-2 f3
-3 f4
-4 f5
-5 f6
-6 f7
-7 home
-8 pgdn
-9 pgup
-0 end
-b ,
-f .
-d (caps-word-toggle 1000)
-w `
-l left
-o down
-u up
-j right
-n 1
-s 2
-t 3
-c 4
-h 7
-a 8
-e 9
-i 0
-bspc rpt
-, 0
-. 9
-k 8
-g 5
-f15 6
-f16 3
-f17 2
-; 1
+1 ,
+2 .
+3 ` 
+4 `
+8 left
+9 down
+0 up
+- right
+q 1
+w 2
+e 3
+r 4
+i 7
+o 8
+p 9
+[ 0
+ent rpt
+a 0
+s 9
+d 8
+f 5
+k 6
+l 3
+; 2
+' 1
+c @cw
 
 )
 
 
 (defchordsv2
 
-  (1 2    ) S-6 20 all-released (over sup)
-  (  2 3  ) S-7 15 all-released (over sup)
-  (  2   4) `   20 all-released (over sup)
-  (    3 4) S-8 15 all-released (over sup)
+  (b f    ) S-6 20 all-released (over sup)
+  (  f d  ) S-7 15 all-released (over sup)
+  (  f   w) `   20 all-released (over sup)
+  (    d w) S-8 15 all-released (over sup)
   
   (l o    ) S-' 15 all-released (over sup)
   (  o u  ) caps 13 all-released (over sup)
   (    u j) S-1 17 all-released (over sup)
 
-  (q w    ) S-, 15 all-released (over sup)
-  (  w e  ) =   15 all-released (over sup)
-  (  w   r) S-` 17 all-released (over sup)
-  (    e r) [   15 all-released (over sup)
+  (n s    ) S-, 15 all-released (over sup)
+  (  s t  ) =   15 all-released (over sup)
+  (  s   c) S-` 17 all-released (over sup)
+  (    t c) [   15 all-released (over sup)
 
   (h a    ) ]   15 all-released (over sup)
   (h   e  ) del 15 all-released (over sup)
   (  a e  ) +   15 all-released (over sup)
   (    e i) S-. 15 all-released (over sup)
 
-  (a s    ) \   20 all-released (over sup)
-  (  s d  ) S-\ 20 all-released (over sup)
-  (    d f) S-4 20 all-released (over sup)
+  (, .    ) \   20 all-released (over sup)
+  (  . k  ) S-\ 20 all-released (over sup)
+  (    k g) S-4 20 all-released (over sup)
 
   (f15 f16      ) S-3 20 all-released (over sup)
   (f15     f17  ) S-5 20 all-released (over sup)
@@ -474,5 +409,4 @@ f17 2
       "uinput"
     ];
   };
-
 }
