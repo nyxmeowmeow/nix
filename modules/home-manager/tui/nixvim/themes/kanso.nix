@@ -23,9 +23,9 @@ require('kanso').setup({
     overrides = function(colors) -- add/modify highlights
         return {}
     end,
-    theme = "mist",              -- Load "zen" theme
+    theme = "ink",              -- Load "zen" theme
     background = {               -- map the value of 'background' option to a theme
-        dark = "mist",           -- try "ink" !
+        dark = "ink",           -- try "ink" !
         light = "pearl"         -- try "mist" !
     },
 })
