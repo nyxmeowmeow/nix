@@ -105,6 +105,7 @@
 
   ;; non-sfb for >>
     ((key-history . 1)) (macro S-.) break
+    ((and (key-history . 2) (key-history nop1 1))) (macro S-.) break
 
   ;; non-sfb for <=
     ((key-history , 1)) (macro =) break

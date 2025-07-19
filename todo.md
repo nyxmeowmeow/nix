@@ -1,0 +1,4 @@
+- theme specific dunst theme
+- fix btop theme
+- get zen flake home manager options working
+- zen and vesktop themes
