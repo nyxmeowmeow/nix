@@ -385,7 +385,7 @@ esc f1
 9 pgup
 0 end
 b ,
-f .
+;; f .
 d (caps-word-toggle 1000)
 w `
 l left
@@ -409,6 +409,7 @@ f15 6
 f16 3
 f17 2
 ; 1
+r .
 
 )
 
