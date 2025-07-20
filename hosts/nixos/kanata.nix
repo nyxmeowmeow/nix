@@ -443,6 +443,8 @@ r .
   (f15     f17  ) S-5 20 all-released (over sup)
   (    f16 f17  ) S-/ 15 all-released (over sup)
   (        f17 ;) S-2 15 all-released (over sup)
+
+  (h spc) \ 15 all-released (over sup)
 )
 
 
