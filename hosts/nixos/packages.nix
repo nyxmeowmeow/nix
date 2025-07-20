@@ -72,9 +72,14 @@
     # bottles
     # lutris
     # mono
-  ] ++ [
-  # (pkgs.discord.override { withMoonlight = true; })
-  inputs.pollymc.packages."x86_64-linux".default
 
+
+    (discord.override {
+     withMoonlight = true;
+     moonlight = inputs.moonlight.packages.${pkgs.system}.moonlight-mod;
+     })
+
+  ] ++ [
+    inputs.pollymc.packages."x86_64-linux".default
   ];
 }
