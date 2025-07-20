@@ -5,6 +5,18 @@
 
     configFile.text = /* nu */ ''
 
+      def rerun-with [new_cmd: string] {
+        let hist = history | get command | last
+          let parsed = parse $hist
+
+          let args = $parsed.pipeline.commands.0.parts | skip 1
+
+          do {
+            ^$new_cmd ...$args
+          }
+      }
+
+
       # cd && ls
       def cs [msg: string] {
         cd $msg

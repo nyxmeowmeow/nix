@@ -145,6 +145,7 @@ in {
           cBlock.fg = col.base01;
           cParen.fg = col.base01;
           cBracket.fg = col.base01;
+          "@punctuation.bracket".fg = col.base01;
           "@lsp.mod.paramater.c".fg = col.base0A;
           "@lsp.type.paramater.c".fg = col.base0A;
 
