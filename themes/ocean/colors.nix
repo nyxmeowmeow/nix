@@ -1,3 +1,4 @@
+# TODO
 {
     base00 = "#0C1228"; # base
     base01 = "#a0b8e6"; # text
