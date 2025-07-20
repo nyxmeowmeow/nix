@@ -1,8 +1,8 @@
 { lib, ... }: {
 
-  config.theme = "black";
+  config.theme = "lix";
   config.wm = "niri";
-  config.font = "iosevka";
+  config.font = "mononoki";
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
