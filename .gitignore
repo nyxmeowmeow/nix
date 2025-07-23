@@ -4,7 +4,7 @@ modules/home-manager/emacs/eln-cache/
 modules/home-manager/emacs/elpa/
 modules/home-manager/emacs/games/
 modules/home-manager/emacs/url/
-modules/home-manager/emacs/dirvish/thumbnails
+modules/home-manager/emacs/dirvish/thumbnails/
 
 # emacs backup files
 modules/home-manager/emacs/*~
