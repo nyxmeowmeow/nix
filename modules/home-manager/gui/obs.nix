@@ -1,8 +1,9 @@
 { pkgs, ... }: {
   programs.obs-studio = {
     enable = true;
-    plugins = [
-      pkgs.obs-studio-plugins.wlrobs
+    plugins = with pkgs.obs-studio-plugins; [
+      # wlrobs
+      obs-vkcapture
     ];
   };
 }
