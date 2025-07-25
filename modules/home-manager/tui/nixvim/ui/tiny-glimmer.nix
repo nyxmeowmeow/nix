@@ -8,7 +8,7 @@
           owner = "rachartier";
           repo = "tiny-glimmer.nvim";
           rev = "60a632536e0741c9cecb892f89fbe65a270dc7c7";
-          sha256 = "";
+          sha256 = "sha256-OjLX1J1CcmnLWdZTapLFNyO+DtMzihWNOQUHfY2qQ3U=";
         };
       })
     ];
