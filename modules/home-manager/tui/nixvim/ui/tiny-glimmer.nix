@@ -151,7 +151,7 @@ require('tiny-glimmer').setup({
             easing = "outQuad",
             chars_for_max_duration = 10,
             from_color = "Visual", -- Highlight group or hex color
-            to_color = "none", -- Same as above
+            to_color = "00000000", -- Same as above
         },
         reverse_fade = {
             max_duration = 380,
@@ -159,7 +159,7 @@ require('tiny-glimmer').setup({
             easing = "outBack",
             chars_for_max_duration = 10,
             from_color = "Visual",
-            to_color = "none",
+            to_color = "00000000",
         },
         bounce = {
             max_duration = 500,
@@ -167,7 +167,7 @@ require('tiny-glimmer').setup({
             chars_for_max_duration = 20,
             oscillation_count = 1,
             from_color = "Visual",
-            to_color = "none",
+            to_color = "00000000",
         },
         left_to_right = {
             max_duration = 350,
@@ -176,7 +176,7 @@ require('tiny-glimmer').setup({
             chars_for_max_duration = 25,
             lingering_time = 50,
             from_color = "Visual",
-            to_color = "none",
+            to_color = "00000000",
         },
         pulse = {
             max_duration = 600,
@@ -185,7 +185,7 @@ require('tiny-glimmer').setup({
             pulse_count = 2,
             intensity = 1.2,
             from_color = "Visual",
-            to_color = "none",
+            to_color = "00000000",
         },
         rainbow = {
             max_duration = 600,
