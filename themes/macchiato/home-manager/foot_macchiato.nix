@@ -4,10 +4,10 @@
     programs.foot = {
       enable = true;
       settings = {
-        cursor.color = "24273a cad3f5";
-
         colors = {
           alpha = "0.5";
+
+          cursor = "24273a cad3f5";
 
           background = "24273a";
           foreground = "cad3f5";
