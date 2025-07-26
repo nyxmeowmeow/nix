@@ -8,5 +8,6 @@
     ./hyprpaper_kanso.nix
     ./starship_kanso.nix
     ./nushell_kanso.nix
+    ./yazi.nix
   ];
 }
