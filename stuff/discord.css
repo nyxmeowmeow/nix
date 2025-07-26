@@ -1,0 +1,581 @@
+
+* {
+  scrollbar-width: none;
+  /* box-shadow: none; */
+}
+
+:root,
+.theme-dark,
+.visual-refresh .theme-dark,
+.visual-refresh.theme-dark,
+.custom-theme-background {
+  --bg-overlay-opacity-1: 0.9 !important;
+  --bg-overlay-opacity-2: 0.85 !important;
+  --bg-overlay-opacity-3: 0.8 !important;
+  --bg-overlay-opacity-4: 0.75 !important;
+  --bg-overlay-opacity-5: 0.7 !important;
+  --bg-overlay-opacity-6: 0.15 !important;
+  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5) !important;
+  --bg-overlay-app-frame: transparent !important;
+
+  --custom-theme-background: transparent !important;
+
+  --background-base-lowest: transparent;
+  --theme-base-color: transparent;
+  --theme-base-color-amount: 50%;
+
+  --chat-background-default: transparent !important;
+  --custom-channel-members-bg: transparent !important;
+
+
+  --font-primary: iosevka nerd font;
+  --font-display: iosevka nerd font;
+  --font-code: iosevka nerd font, 'iosevka nerd font', monospace;
+
+  /* --font-primary: /home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf; */
+  /* --font-display: /home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf; */
+  /* --font-code: /home/meow/iosevka/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf; */
+  --bg-brand: var(--lavender);
+  --background-primary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-tertiary: transparent !important;
+  --background-accent: transparent !important;
+  --background-bg: transparent !important;
+  --background-bg-low: transparent !important;
+  --background-bg-lower: transparent !important;
+  --background-bg-lowest: transparent !important;
+  --background-code: #24273a !important;
+  --background-surface: transparent !important;
+  --background-surface-high: #363a4f !important;
+  --background-surface-higher: #363a4f !important;
+  --modal-background: transparent !important;
+  --chat-background-default: transparent !important;
+  --base-overlay-chat: transparent !important;
+  --base-bg-primary: transparent !important;
+  --base-bg-secondary: transparent !important;
+  --base-bg-tertiary: transparent !important;
+  --base-mod-normal: transparent !important;
+  --base-mod-faint: transparent !important;
+  --base-mod-subtle: transparent !important;
+  --base-mod-strong: transparent !important;
+  --background-mod-normal: transparent !important;
+  --background-mod-subtle: transparent !important;
+  --background-mod-hover: transparent !important;
+  --background-mentioned: transparent !important;
+  --background-mentioned-hover: transparent !important;
+  --mention-foreground: var(--lavender) !important;
+  --mention-background: var(--lavender-trans) !important;
+  --border-faint: transparent !important;
+  --border-subtle: transparent !important;
+  --border-strong: transparent !important;
+  --input-border: transparent !important;
+  --header-primary: var(--text) !important;
+  --header-secondary: var(--subtext) !important;
+  --text-normal: var(--text) !important;
+  --text-muted: var(--subtext) !important;
+  --chat-text-muted: var(--subtext) !important;
+  --text-default: var(--text) !important;
+  --text-primary: var(--text) !important;
+  --text-secondary: var(--subtext) !important;
+  --text-tertiary: var(--subtext) !important;
+  --icon-primary: var(--text) !important;
+  --icon-secondary: var(--subtext) !important;
+  --icon-tertiary: var(--subtext) !important;
+  --channels-default: #8e9297 !important;
+  --channeltextarea-background: transparent !important;
+  --channeltextarea-background-hover: transparent !important;
+  --interactive-normal: var(--subtext) !important;
+  --interactive-hover: var(--text) !important;
+  --interactive-active: var(--text) !important;
+  --interactive-muted: #4f545c !important;
+  --card-primary-bg: transparent !important;
+  --card-secondary-bg: transparent !important;
+  --message-reacted-background: var(--lavender-trans) !important;
+  --message-reacted-border: var(--lavender-trans) !important;
+  --message-reacted-text: var(--lavender) !important;
+  --background-modifier-selected: transparent !important;
+  --background-message-hover: transparent !important;
+}
+
+.visual-refresh .wrapper_ef3116 {
+    background-color: transparent !important;
+}
+.theme-dark .container__37e49 {
+    background: transparent !important;
+}
+.visual-refresh .scroller__99e7c {
+    background: transparent !important;
+}
+.visual-refresh .privateChannels__35e86 {
+    background: transparent;
+}
+.visual-refresh .sidebar_c48ade:after {
+    background: transparent;
+}
+
+
+
+
+
+
+/* top right search bar */
+.searchBar__97492 {
+    border: none;
+}
+
+/* hide youtube watch together thing */
+.itemContainer__675e5 {
+  display: none;
+}
+
+/* remove border at top of homepage */
+.container__9293f {
+  border-bottom: none !important;
+}
+
+/* old messages divider */
+.visual-refresh.divider__908e2 {
+  border-top: thin solid --text-muted;
+}
+
+.visual-refresh .content__908e2 {
+  color: --text-muted;
+  background: transparent;
+}
+
+/* change reply mention colour */
+.hasReply_c19a55::before {
+  background: #b7bdf8;
+}
+
+/* change replying colour */
+.replying__5126c::before {
+  background: #b7bdf8;
+}
+
+.replying__5126c {
+  background: transparent;
+}
+
+
+/* make "replying to" popup appear to be floating */
+.floatingBars__74017:empty+.visual-refresh .stackedBars__74017:nth-child(2),
+.visual-refresh .stackedBars__74017:first-child {
+  border-radius: 8px;
+}
+
+/* hide replying to x button */
+.closeButton_e876a8 {
+  visibility: hidden;
+}
+
+.mentioned__5126c::before {
+  background: #b7bdf8;
+}
+
+/* hide weird gradient in top right of homepage */
+.theme-dark .children__9293f:after {
+  background: transparent;
+}
+
+/* hide group dm button in top right of homepage */
+.icon__9293f {
+  display: none;
+}
+
+/* remove stuff from friend bar in homepage */
+.title__9293f {
+  display: none;
+}
+
+.visual-refresh .iconWrapper__9293f {
+  display: none;
+}
+
+.visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026,
+.visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
+  background-color: transparent;
+}
+
+.visual-refresh .selected_b3f026.item_b3f026,
+.visual-refresh .selected_b3f026.item_b3f026:hover {
+  color: var(--text) !important;
+}
+
+.dot__9293f {
+  display: none;
+}
+
+.children__9293f {
+  margin-left: -28px;
+}
+
+/* remove text below the friend bar */
+.container__13cf1 {
+  display: none;
+}
+
+.header__7d20c {
+  display: none;
+}
+
+/* remove the buttons to the right of items in online friends list on homepage */
+.actions_fc004c {
+  display: none;
+}
+
+/* remove message hover popup thing */
+.message__5126c>.buttonContainer_c19a55 {
+  display: none !important;
+}
+
+/* transparent chat area */
+.visual-refresh .chatContent_f75fb0,
+.visual-refresh.channelTextArea_f75fb0 {
+  background: transparent !important;
+}
+
+/* transparent homepage */
+.visual-refresh .tabBody__133bf {
+  background-color: transparent;
+}
+
+.theme-dark .themed__9293f {
+  background: transparent !important;
+}
+
+/* remove top bar */
+/* .subtitleContainer_f75fb0 { */
+/* 	visibility: hidden; */
+/* } */
+
+/* hide avatar in top bar */
+.wrapper__44b0c.pointer__44b0c.avatar_f75fb0 {
+  display: none;
+}
+
+/* anchor top bar search bar to right side */
+.search__49676 {
+  position: absolute;
+  right: 0;
+}
+
+.icon__97492.iconLayout_fea832.small_fea832 {
+  display: none;
+}
+
+
+.visual-refresh {
+  div[class^="bg_"] {
+    &>div[class^="bar_"] {
+      display: none;
+    }
+  }
+
+  ul[data-list-id="guildsnav"]>div[class^="itemsContainer_"] {
+    margin-top: 6px;
+  }
+}
+
+/* ctrl k menu */
+.visual-refresh .quickswitcher_ac6cb0 {
+  background-color: transparent;
+  backdrop-filter: blur(10px) !important;
+}
+
+.visual-refresh .scroller_ac6cb0 {
+  background-color: transparent;
+}
+
+.backdrop__78332 {
+  background: transparent !important;
+}
+
+/* transparent ctrl k input bar */
+.input_ac6cb0 {
+  background-color: transparent;
+}
+
+.header__71961 {
+  display: none;
+}
+
+/* hide ctrl k tip */
+.protip_ac6cb0 {
+  display: none
+}
+
+/* remove ctrl k border */
+.visual-refresh .quickswitcher_ac6cb0 {
+  border: none;
+}
+
+[aria-label="Add a Server"] {
+  display: none;
+}
+
+[aria-label="Discover"] {
+  display: none;
+}
+
+[aria-label="Download Apps"] {
+  display: none;
+}
+
+[aria-label="New Group DM"] {
+  display: none;
+}
+
+
+
+/* hide the silly ; */
+.app_a3002d {
+  color: transparent;
+}
+
+.app_a3002d>.app__160d8 {
+  color: initial;
+}
+
+
+/* hide the buttons on the right of the input bar */
+.buttons__74017 {
+  display: none;
+}
+
+
+
+/* hide the ctrl k menu button */
+.searchBar__35e86 {
+  display: none;
+}
+
+
+/* transparent bottom left profile panel */
+.visual-refresh .panels_c48ade {
+  background: transparent !important;
+}
+
+
+/* remove bottom left profile button */
+.avatarWrapper__37e49 {
+  visibility: hidden;
+}
+
+/* hide thing above dms list */
+.privateChannelsHeaderContainer__99e7c.container__13cf1 {
+  display: none;
+}
+
+
+/* hide nitro and shop buttons on homepage */
+[href="/store"],
+[href='/shop'] {
+  display: none;
+}
+
+/* pad top of server list */
+/* .guilds_c48ade { */
+/*   padding-top: 12px; */
+/* } */
+
+
+/* remove react border */
+.visual-refresh .reaction__23977.reactionMe__23977 {
+  border-color: transparent;
+}
+
+
+/* remove add reaction button background */
+.visual-refresh .reactionBtn__23977 {
+  background-color: transparent;
+}
+
+
+/* remove border on active now elements */
+.wrapper__00943 {
+  border: none;
+}
+
+.visual-refresh .outer_bf1984 {
+  background-color: transparent;
+}
+
+
+/* change new message pill colour */
+.item__58105 {
+  background-color: #b7bdf8;
+}
+
+/* remove homepage search bar */
+.searchBar__5ec2f {
+  display: none;
+}
+
+/* make non-hovered discord logo background transparent */
+.visual-refresh .childWrapperNoHoverBg__6e9f8 {
+  background-color: transparent;
+}
+
+.sidebarList_c48ade {
+  border: none !important;
+}
+
+/* remove server list divider */
+.guildSeparator__252b6 {
+  visibility: hidden;
+}
+
+/* remove border between friends in homepage */
+.peopleListItem_cc6179 {
+  border-top: none;
+}
+
+/* remove friends list divider */
+.sectionDivider__35e86 {
+  display: none;
+}
+
+/* add padding to friends button on homepage */
+.friendsButtonContainer__35e86 {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+
+
+
+:root {
+  --rosewater: #f4dbd6;
+  --flamingo: #f0c6c6;
+  --pink: #f5bde6;
+  --mauve: #c6a0f6;
+  --red: #ed8796;
+  --maroon: #ee99a0;
+  --peach: #f5a97f;
+  --yellow: #eed49f;
+  --green: #a6da95;
+  --teal: #8bd5ca;
+  --sky: #91d7e3;
+  --sapphire: #7dc4e4;
+  --blue: #8aadf4;
+  --lavender: #b7bdf8;
+  --lavender-trans: #b7bdf833;
+  --text: #cad3f5;
+  --subtext1: #b8c0e0;
+  --subtext0: #a5adcb;
+  --subtext: #a5adcb;
+  --overlay2: #939ab7;
+  --overlay1: #8087a2;
+  --overlay0: #6e738d;
+  --overlay: #6e738d;
+  --surface2: #5b6078;
+  --surface1: #494d64;
+  --surface0: #363a4f;
+  --surface: #363a4f;
+  --bg: #000000;
+  --mantle: #1e2030;
+  --crust: #181926;
+}
+body,
+.visual-refresh body {
+  /* change this to another color, its only transparent cause of how i have transparency on windows */
+  background: #000000cc !important;
+}
+#app-mount,
+.visual-refresh #app-mount,
+[class^="app_"] > [class^="app_"],
+[class^="layer_"]:not([class*="baseLayer_"]) {
+  background: transparent !important;
+}
+
+[class^="chatContent_"],
+[class^="sidebar_"],
+nav[class*="guilds_"],
+[class^="chat_"] > [class^="content_"] > [class^="container_"],
+[class^="members_"],
+[class^="channelTextArea_"],
+[class^="chatContent_"] > form[class^="form_"],
+[class^="chat_"] > [class^="subtitleContainer_"] > [class^="title_"],
+[class^="contentRegion_"],
+[class^="contentRegionScroller_"],
+[class^="replyBar_"],
+[class^="stackedBars_"],
+[class^="callContainer_"],
+[class^="callContainer_"] > [class^="root_"] {
+  background: var(--background-base-lowest) !important;
+}
+
+[class^="chat_"] > [class^="subtitleContainer_"] > [class^="title_"] [class^="children"]::after {
+  display: none;
+}
+
+
+
+.visual-refresh {
+  --vr-header-snippet-top: 0px;
+  --vr-header-snippet-server-padding: 16px;
+  --vr-header-snippet-space: 100px;
+  --vr-header-snippet-button-padding: 10px;
+
+  div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
+  main.container__133bf,
+  div.chatLayerWrapper__01ae2 {
+    & section.container__9293f {
+      padding-right: var(--vr-header-snippet-space);
+    }
+  }
+
+  div.headerBar__8a7fc.overlay__8a7fc {
+    padding-right: var(--vr-header-snippet-space);
+  }
+
+  div.videoControls_bfe55a div.subtitleContainer__49508 {
+    padding-right: calc(var(--vr-header-snippet-space) - 20px);
+  }
+
+  div.base_c48ade {
+    grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
+
+    & > div.bar_c38106 {
+      position: absolute;
+      position-anchor: --vr-header-snippet;
+      top: var(--vr-header-snippet-top);
+      right: anchor(right);
+      width: anchor-size(width);
+      padding: 0 var(--vr-header-snippet-button-padding) 0 0;
+
+      & > .title_c38106 {
+        display: none;
+      }
+    }
+
+    &:has(> .notice__6e2b9) {
+      & > div.bar_c38106 {
+        top: anchor(top);
+      }
+    }
+
+    & div.trailing_c38106 {
+      background: none;
+      border: none;
+      height: var(--custom-channel-header-height);
+    }
+
+    & > div.content_c48ade {
+      z-index: 0;
+    }
+
+    &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
+      z-index: 0;
+    }
+  }
+
+  :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
+    right: 0 !important;
+  }
+
+  ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+    margin-top: var(--vr-header-snippet-server-padding);
+  }
+}
