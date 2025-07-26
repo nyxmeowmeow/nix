@@ -11,7 +11,7 @@
     ./themes/black.nix
     ./themes/lix.nix
     ./themes/macchiato.nix
-    # ./themes/kanso.nix
+    ./themes/kanso.nix
 
     # ./utils/picker.nix
     # ./utils/firenvim.nix

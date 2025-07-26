@@ -1,5 +1,5 @@
 { pkgs, lib, theme, ... }: {
-  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme || "kanso_zen") {
+  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
 
     programs.nixvim = {
       extraPlugins = [ pkgs.vimPlugins.kanso-nvim ];
