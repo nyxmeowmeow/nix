@@ -2,7 +2,7 @@
   programs.nixvim = {
     extraPlugins = [ pkgs.vimPlugins.smear-cursor-nvim ];
     extraConfigLua = ''
-      require('smear-cursor-nvim').setup({
+      require('smear-cursor').setup({
 
 
           -- -- How fast the smear's head moves towards the target.
