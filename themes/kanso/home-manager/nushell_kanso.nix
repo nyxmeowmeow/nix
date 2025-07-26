@@ -1,6 +1,9 @@
+{ lib, theme, ... }:
 let
 col = import ../colors.nix;
 in {
+  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
+
   programs.nushell.extraConfig = /* nu */ ''
     let color_scheme = {
       hints: "${col.gray4}"
@@ -20,4 +23,5 @@ in {
       color_config: $color_scheme
     }
     '';
+  };
 }
