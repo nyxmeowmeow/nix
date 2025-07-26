@@ -3,17 +3,17 @@ col = import ../colors.nix;
 in {
   programs.nushell.extraConfig = /* nu */ ''
     let color_scheme = {
-      hints: "${col.surface1}"
-      search_result: { bg: cyan fg: "#cad3f5" }
-      shape_garbage: { fg: "${col.base}" bg: "${col.red}" attr: b}
-      shape_filepath: "${col.green}"
-      shape_directory: "${col.green}"
-      shape_internalcall: "${col.text}"
-      shape_external: "${col.text}"
-      shape_externalarg: "${col.text}"
-      shape_flag: "${col.text}"
-      shape_keyword: "${col.lavender}"
-      shape_pipe: "${col.lavender}"
+      hints: "${col.gray4}"
+      search_result: { bg: "${col.altBlue2} fg: "${col.fg}" }
+      shape_garbage: { fg: "${col.zen_bg0}" bg: "${col.red}" attr: b}
+      shape_filepath: "${col.yellow}"
+      shape_directory: "${col.yellow}"
+      shape_internalcall: "${col.fg}"
+      shape_external: "${col.fg}"
+      shape_externalarg: "${col.fg}"
+      shape_flag: "${col.fg}"
+      shape_keyword: "${col.fg}"
+      shape_pipe: "${col.fg}"
     }
 
     $env.config = {
