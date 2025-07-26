@@ -8,6 +8,7 @@
     # ghostty
 
     hyprpaper
+    hyprpicker
     # qemu_kvm
 
     # gnome-online-accounts
