@@ -347,37 +347,37 @@
       {
         on = [ "m" "s" ];
         run = "linemode size";
-        desc = "Linemode: size";
+        desc = "size";
       }
 
       {
         on = [ "m" "p" ];
         run = "linemode permissions";
-        desc = "Linemode: permissions";
+        desc = "permissions";
       }
 
       {
         on = [ "m" "b" ];
         run = "linemode btime";
-        desc = "Linemode: btime";
+        desc = "btime";
       }
 
       {
         on = [ "m" "m" ];
         run = "linemode mtime";
-        desc = "Linemode: mtime";
+        desc = "mtime";
       }
 
       {
         on = [ "m" "o" ];
         run = "linemode owner";
-        desc = "Linemode: owner";
+        desc = "owner";
       }
 
       {
         on = [ "m" "n" ];
         run = "linemode none";
-        desc = "Linemode: none";
+        desc = "none";
       }
 
 # Copy
