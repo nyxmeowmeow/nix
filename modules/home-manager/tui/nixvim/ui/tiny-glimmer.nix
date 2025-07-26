@@ -142,7 +142,7 @@ require('tiny-glimmer').setup({
 
     -- Only use if you have a transparent background
     -- It will override the highlight group background color for `to_color` in all animations
-    transparency_color = "none",
+    transparency_color = "090E1311",
      -- Animation configurations
     animations = {
         fade = {
