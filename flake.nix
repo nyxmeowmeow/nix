@@ -29,12 +29,13 @@
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
   let
     username = "meow";
+    flake_dir = "/home/${username}/nix";
   in {
     nixosConfigurations = {
 
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {
-          inherit inputs username zen-browser nixvim niri;
+          inherit inputs username flake_dir zen-browser nixvim niri;
         };
         modules = [
           ./hosts/nixos/default.nix
@@ -64,7 +65,7 @@
 
       laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {
-          inherit username inputs;
+          inherit username flake_dir inputs;
         };
         modules = [
 

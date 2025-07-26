@@ -1,9 +1,9 @@
-{ inputs, config, username, ... }: {
+{ username, flake_dir, inputs, config, ... }: {
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "bak";
-    extraSpecialArgs = { inherit inputs username; };
+    extraSpecialArgs = { inherit username flake_dir inputs; };
     extraSpecialArgs = {
       theme = config.theme;
       host = config.networking.hostName;

@@ -1,5 +1,5 @@
 { flake_dir, lib, theme, ... }: {
-  config = lib.mkIf (theme == "macchiato") {
+  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
 
     services.hyprpaper = {
       enable = true;

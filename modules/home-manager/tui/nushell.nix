@@ -1,4 +1,4 @@
-{ host, ... }: {
+{ flake_dir, host, ... }: {
   programs.nushell = {
     enable = true;
 
@@ -57,7 +57,7 @@
 
 
       def nr [...msg: string] {
-        # sudo nixos-rebuild switch --flake /home/meow/nix#nixos
+        # sudo nixos-rebuild switch --flake ${flake_dir}#nixos
         nh os switch ~/nix -H ${host}
         cd ~/nix
         git add .

@@ -1,4 +1,4 @@
-{ lib, theme, ... }: {
+{ flake_dir, lib, theme, ... }: {
   config = lib.mkIf (theme == "black") {
 
     services.hyprpaper = {
@@ -9,12 +9,12 @@
         splash_offset = 2.0;
 
         preload = [
-          "~/nix/stuff/wallpapers/shaded_citadel.png" 
+          "${flake_dir}/stuff/wallpapers/shaded_citadel.png" 
         ];
 
         wallpaper = [
-          "DP-1, ~/nix/stuff/wallpapers/shaded_citadel.png" 
-          "DP-3, ~/nix/stuff/wallpapers/shaded_citadel.png" 
+          "DP-1, ${flake_dir}/stuff/wallpapers/shaded_citadel.png" 
+          "DP-3, ${flake_dir}/stuff/wallpapers/shaded_citadel.png" 
         ];
       };
     };

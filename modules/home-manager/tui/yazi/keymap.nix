@@ -1,4 +1,4 @@
-{
+{ flake_dir, ... }: {
   programs.yazi = {
     keymap = {
       mgr.keymap = [
@@ -541,7 +541,7 @@
 
       {
         on = [ "<Space>" "n" ];
-        run = "cd ~/nix";
+        run = "cd ${flake_dir}";
         desc = "nix";
       }
 

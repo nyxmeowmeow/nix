@@ -1,4 +1,4 @@
-{ lib, theme, ... }: {
+{ flake_dir, lib, theme, ... }: {
   config = lib.mkIf (theme == "lix") {
 
     services.hyprpaper = {
@@ -13,8 +13,8 @@
         ];
 
         wallpaper = [
-          "DP-1, ~/nix/stuff/wallpapers/outskirts.png"
-          "DP-3, ~/nix/stuff/wallpapers/outskirts.png"
+          "DP-1, ${flake_dir}/stuff/wallpapers/outskirts.png"
+          "DP-3, ${flake_dir}/stuff/wallpapers/outskirts.png"
         ];
       };
     };
