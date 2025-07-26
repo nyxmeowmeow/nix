@@ -87,7 +87,7 @@ in {
 # Images
         {
           mime = "image/*";
-          fg = col.yellow;
+          fg = col.yellow2;
         }
 
 # Media
