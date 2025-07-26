@@ -61,7 +61,7 @@ require('tiny-glimmer').setup({
         },
         paste = {
             enabled = true,
-            default_animation = "reverse_fade",
+            default_animation = "fade",
 
             -- Keys to paste
             paste_mapping = "p",
@@ -70,7 +70,7 @@ require('tiny-glimmer').setup({
             Paste_mapping = "P",
         },
         undo = {
-            enabled = false,
+            enabled = true,
 
             default_animation = {
                 name = "fade",
@@ -85,7 +85,7 @@ require('tiny-glimmer').setup({
             undo_mapping = "u",
         },
         redo = {
-            enabled = false,
+            enabled = true,
 
             default_animation = {
                 name = "fade",
