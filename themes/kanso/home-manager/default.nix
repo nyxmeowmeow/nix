@@ -7,6 +7,6 @@
     ./foot_kanso_zen.nix
     ./hyprpaper_kanso.nix
     ./starship_kanso.nix
-    ./nushell_kanso.nix
+    # ./nushell_kanso.nix
   ];
 }
