@@ -9,13 +9,13 @@
         splash_offset = 2.0;
 
         preload = [
-          "${flake_dir}/stuff/wallpapers/pixel7.jpg" 
-          "${flake_dir}/stuff/wallpapers/pixel7.jpg" 
+          "${flake_dir}/stuff/wallpapers/sea-rocks.png" 
+          "${flake_dir}/stuff/wallpapers/sea-rocks.png" 
         ];
 
         wallpaper = [
-          "DP-1, ${flake_dir}/stuff/wallpapers/pixel7.jpg"
-          "DP-3, ${flake_dir}/stuff/wallpapers/pixel7.jpg"
+          "DP-1, ${flake_dir}/stuff/wallpapers/sea-rocks.png"
+          "DP-3, ${flake_dir}/stuff/wallpapers/sea-rocks.png"
         ];
       };
     };
