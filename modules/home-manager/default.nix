@@ -11,7 +11,6 @@
         ../../themes/everforest/home-manager/default.nix
         ../../themes/lix/home-manager/default.nix
         ../../themes/macchiato/home-manager/default.nix
-        ../../themes/ocean/home-manager/default.nix
         ./desktop.nix
         ./home.nix
 

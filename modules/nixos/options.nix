@@ -1,6 +1,6 @@
 { lib, ... }: {
 
-  config.theme = "kanso";
+  config.theme = "kanso_zen";
   config.wm = "niri";
   config.font = "mononoki";
 

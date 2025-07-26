@@ -40,6 +40,5 @@
     ../../themes/everforest/nixos/default.nix
     ../../themes/lix/nixos/default.nix
     ../../themes/macchiato/nixos/default.nix
-    ../../themes/ocean/nixos/default.nix
   ];
 }
