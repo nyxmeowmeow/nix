@@ -19,7 +19,7 @@ require('tiny-glimmer').setup({
     -- Disable this if you wants to debug highlighting issues
     disable_warnings = true,
 
-    refresh_interval_ms = 8,
+    refresh_interval_ms = 6,
 
     overwrite = {
         -- Automatically map keys to overwrite operations
@@ -142,7 +142,7 @@ require('tiny-glimmer').setup({
 
     -- Only use if you have a transparent background
     -- It will override the highlight group background color for `to_color` in all animations
-    transparency_color = "#00000000",
+    transparency_color = none,
      -- Animation configurations
     animations = {
         fade = {
