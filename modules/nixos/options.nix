@@ -1,6 +1,6 @@
 { lib, ... }: {
 
-  config.theme = "black";
+  config.theme = "kanso";
   config.wm = "niri";
   config.font = "mononoki";
 
@@ -13,6 +13,9 @@
       "everforest_hard"
       "everforest_medium"
       "everforest_soft"
+      "kanso_mist"
+      "kanso_ink"
+      "kanso_zen"
     ];
     default = "black";
   };
