@@ -68,14 +68,14 @@ in {
         progress_label.bold = true;
         progress_normal = {
           fg = col.fg;
-          bg = col.bg;
+          bg = col.zen_bg0;
         };
         progress_error = {
           fg = col.red;
-          bg = col.bg;
+          bg = col.zen_bg0;
         };
 
-        perm_sep.fg = col.zen_bg3 ;
+        perm_sep.fg = col.zen_bg3;
         perm_typef.fg = col.green;
         perm_readf.fg = col.yellow;
         perm_writef.fg = col.red2;
