@@ -7,7 +7,7 @@
         cursor.color = "090E13 C5C9C7";
 
         colors = {
-          alpha = "0.5";
+          alpha = "0.8";
 
           background = "090E13";
           foreground = "C5C9C7";
