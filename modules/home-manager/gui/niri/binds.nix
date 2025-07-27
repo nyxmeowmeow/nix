@@ -5,8 +5,8 @@
     sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
   in
   {
-    "Mod+G".action = spawn "~/misc/wlr-which-key";
-    "Mod+L".action = sh "~/misc/wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
+    "Mod+G".action = spawn "wlr-which-key";
+    "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
 
     # "Mod+T".action = spawn "kitty" "-1";
     # "Mod+C".action = spawn "kitty" "-1" "yazi";
