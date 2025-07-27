@@ -1,6 +1,5 @@
-{ lib, theme, ... }: {
+{ lib, theme, username, ... }: {
   config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
-
 
     programs.fastfetch = {
       enable = true;
@@ -9,29 +8,38 @@
         logo = {
           source = "nixos_small";
           padding = {
-            left = 1;
+            left = 0;
             right = 2;
           };
         };
 
         display = {
-          separator = "  ";
+          separator = " ";
         };
 
         modules = [
         {
+          type = "command";
+          key = "let ${username}: Host";
+          keyColor = "blue";
+          text = "echo '= {'";
+        }
+        {
           type = "os";
-          key = "os";
+          key = "  distro";
+          format = "= \"{2}\",";
           keyColor = "blue";
         }
         {
           type = "kernel";
-          key = "kn";
+          key = "  kernel";
+          format = "= \"{2}\",";
           keyColor = "blue";
         }
         {
           type = "packages";
-          key = "pk";
+          key = "  pkgs";
+          format = "= {1},";
           keyColor = "blue";
         }
 # {
@@ -46,9 +54,10 @@
 # }
         {
           type = "command";
-          key = "wm";
+          key = "  wm";
           keyColor = "blue";
-          text = "echo hyprland";
+          # text = "echo ${config.wm}";
+          text = "echo '= \"niri\",";
         }
 # {
 #   type = "terminal";
@@ -57,9 +66,9 @@
 # }
         {
           type = "command";
-          key = "tm";
+          key = "  term";
           keyColor = "blue";
-          text = "echo foot";
+          text = "echo '= \"foot\",'";
         }
 # {
 #   type = "shell";
@@ -68,58 +77,64 @@
 # }
         {
           type = "command";
-          key = "sh";
+          key = "  shell";
           keyColor = "blue";
-          text = "echo nushell";
+          text = "echo '= \"nushell\",'";
         }
-        "break"
         {
           type = "cpu";
-          format = "{1}";
-          key = "cpu";
-          keyColor = "magenta";
+          format = "= \"{1}\",";
+          key = "  cpu";
+          keyColor = "blue";
         }
         {
           type = "gpu";
-          format = "{2}";
-          key = "gpu";
-          keyColor = "magenta";
+          format = "= \"{2}\",";
+          key = "  gpu";
+          keyColor = "blue";
         }
-        {
-          type = "gpu";
-          format = "{3}";
-          key = "drv";
-          keyColor = "magenta";
-        }
-        {
-          type = "memory";
-          key = "mem";
-          keyColor = "magenta";
-        }
+        # {
+        #   type = "gpu";
+        #   format = "{3}";
+        #   key = "drv";
+        #   keyColor = "blue";
+        # }
+        # {
+        #   type = "memory";
+        #   key = "  memory";
+        #   keyColor = "blue";
+        # }
         {
           type = "command";
-          key = "age";
-          keyColor = "magenta";
-          text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days";
+          key = "  age";
+          keyColor = "blue";
+          text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo -n '= '; echo -n $days_difference; echo ','";
         }
         {
           type = "uptime";
-          key = "utm";
-          keyColor = "magenta";
+          key = "  uptime";
+          format = "= {3},";
+          keyColor = "blue";
         }
         {
           type = "command";
-          key = "col";
-          keyColor = "magenta";
-          text = "echo Catppuccin Macchiato";
+          key = "  theme";
+          keyColor = "blue";
+          # text = "echo ${config.theme}";
+          text = "echo '= \"lix\"'";
         }
+        # {
+        #   type = "colors";
+        #   paddingLeft = 0;
+        #   symbol = "circle";
+        # }
         {
-          type = "colors";
-          paddingLeft = 0;
-          symbol = "circle";
+          type = "command";
+          key = " ";
+          padding.left = -2;
+          text = "echo '};'";
         }
-        "break"
-          ];
+        ];
       };
     };
   };
