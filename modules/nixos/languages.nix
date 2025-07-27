@@ -2,6 +2,8 @@
 
   environment.systemPackages = with pkgs; [
     gdb
+    xorg.libX11
+
 
 
     # zig
