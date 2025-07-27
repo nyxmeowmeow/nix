@@ -4,7 +4,7 @@
     enable = true;
 
     settings = {
-      color_theme = "catppuccinmacchiato";
+      color_theme = "btop.theme";
       theme_background = false;
       truecolor = true;
       force_tty = false;

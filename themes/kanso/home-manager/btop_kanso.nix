@@ -1,4 +1,9 @@
-{ lib, theme, ... }: {
+# TODO
+{ lib, theme, ... }:
+let
+  col = import ../colors.nix;
+in
+{
   config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
 
   home.file.".config/btop/themes/btop.theme".text = /* ini */ ''
@@ -7,28 +12,28 @@
     theme[main_bg]=""
 
     # Main text color
-    theme[main_fg]="#cad3f5"
+    theme[main_fg]="${col.fg}"
 
     # Title color for boxes
-    theme[title]="#b7bdf8"
+    theme[title]="${col.blue}"
 
     # Highlight color for keyboard shortcuts
-    theme[hi_fg]="#8aadf4"
+    theme[hi_fg]="${col.green2}"
 
     # Background color of selected item in processes box
-    theme[selected_bg]="#363a4f"
+    theme[selected_bg]="${col.blue}"
 
     # Foreground color of selected item in processes box
-    theme[selected_fg]="#cad3f5"
+    theme[selected_fg]="${col.zen_bg0}"
 
     # Color of inactive/disabled text
-    theme[inactive_fg]="#6e738d"
+    theme[inactive_fg]="${col.gray5}"
 
     # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
     theme[graph_text]="#b7bdf8"
 
     # Background color of the percentage meters
-    theme[meter_bg]="#363a4f"
+    theme[meter_bg]="${col.zen_bg2}"
 
     # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
     theme[proc_misc]="#c6a0f6"
@@ -46,7 +51,7 @@
     theme[proc_box]="#b7bdf8"
 
     # Box divider line and small boxes line color
-    theme[div_line]="#494d64"
+    theme[div_line]=""
 
     # Temperature graph colors
     theme[temp_start]="#bd93f9"
