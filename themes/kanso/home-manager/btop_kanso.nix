@@ -54,9 +54,9 @@ in
     theme[div_line]=""
 
     # Temperature graph colors
-    theme[temp_start]="#bd93f9"
-    theme[temp_mid]="#ff79c6"
-    theme[temp_end]="#ff33a8"
+    theme[temp_start]="${col.violet}"
+    theme[temp_mid]="#BC7990"
+    theme[temp_end]="${col.red2}"
 
     # CPU graph colors
     theme[cpu_start]="#c6a0f6"
@@ -64,24 +64,24 @@ in
     theme[cpu_end]="#a6da95"
 
     # Mem/Disk free meter
-    theme[free_start]="#ffa6d9"
-    theme[free_mid]="#ff79c6"
-    theme[free_end]="#ff33a8"
+    theme[free_start]="${col.violet}"
+    theme[free_mid]="${col.violet}"
+    theme[free_end]="${col.violet}"
 
     # Mem/Disk cached meter
-    theme[cached_start]="#b1f0fd"
-    theme[cached_mid]="#8be9fd"
-    theme[cached_end]="#26d7fd"
+    theme[cached_start]="${col.aqua}"
+    theme[cached_mid]="${col.aqua}"
+    theme[cached_end]="${col.aqua}"
 
     # Mem/Disk available meter
-    theme[available_start]="#ffd4a6"
-    theme[available_mid]="#ffb86c"
-    theme[available_end]="#ff9c33"
+    theme[available_start]="${col.yellow2}"
+    theme[available_mid]="${col.yellow2}"
+    theme[available_end]="${col.yellow2}"
 
     # Mem/Disk used meter
-    theme[used_start]="#96faaf"
-    theme[used_mid]="#50fa7b"
-    theme[used_end]="#0dfa49"
+    theme[used_start]="${col.green}"
+    theme[used_mid]="${col.green}"
+    theme[used_end]="${col.green}"
 
     # Download graph colors
     theme[download_start]="#bd93f9"
@@ -95,7 +95,7 @@ in
 
     # Process box color gradient for threads, mem and cpu usage
     theme[process_start]="${col.blue}"
-    theme[process_mid]="#6E8A98" # mid point of blue and grey5
+    theme[process_mid]="#6E8A98"
     theme[process_end]="${col.gray5}"
 
   '';
