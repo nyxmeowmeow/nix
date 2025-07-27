@@ -164,7 +164,6 @@
   ;; normal rpt except for syms
   ;; FIXME
   rpeat (switch
-  ;; TODO tr -> ue
     ((key-history , 1)) (macro S-,) break
     ((key-history \ 1)) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break
@@ -251,6 +250,10 @@
     ((key-history m 1)) (macro m) break
     ((and (key-history m 2) (key-history nop1 1))) (macro m) break
     ((and (input-history real m 3) (input-history fake typingmode 2))) (macro m) break
+
+    ((key-history o 1)) (macro o) break
+    ((and (key-history o 2) (key-history nop1 1))) (macro o) break
+    ((and (input-history real o 3) (input-history fake typingmode 2))) (macro o) break
 
 
 
