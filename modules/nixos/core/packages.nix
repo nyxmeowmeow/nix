@@ -1,5 +1,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    wlr-which-key
+
     nix-output-monitor
 
     dash
