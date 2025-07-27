@@ -121,7 +121,7 @@
           key = "  theme";
           keyColor = "blue";
           # text = "echo ${config.theme}";
-          text = "echo '= \"lix\"'";
+          text = "echo '= \"kanso\"'";
         }
         # {
         #   type = "colors";
