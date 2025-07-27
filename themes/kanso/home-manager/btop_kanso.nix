@@ -39,16 +39,16 @@ in
     theme[proc_misc]="#c6a0f6"
 
     # Cpu box outline color
-    theme[cpu_box]="#b7bdf8"
+    theme[cpu_box]="${col.blue}"
 
     # Memory/disks box outline color
-    theme[mem_box]="#b7bdf8"
+    theme[mem_box]="${col.blue}"
 
     # Net up/down box outline color
-    theme[net_box]="#b7bdf8"
+    theme[net_box]="${col.blue}"
 
     # Processes box outline color
-    theme[proc_box]="#b7bdf8"
+    theme[proc_box]="${col.blue}"
 
     # Box divider line and small boxes line color
     theme[div_line]=""
@@ -94,10 +94,10 @@ in
     theme[upload_end]="#ff33a8"
 
     # Process box color gradient for threads, mem and cpu usage
-    theme[process_start]="#91d7e3"
-    theme[process_mid]="#95c2c9"
-    theme[process_end]="#6e738d"
+    theme[process_start]="${col.blue}"
+    theme[process_mid]="#6E8A98" # mid point of blue and grey5
+    theme[process_end]="${col.gray5}"
 
   '';
   };
-  }
+}
