@@ -29,7 +29,7 @@
 (defvirtualkeys typingmode nop1)
 
 (defalias
- .tp (hold-for-duration 10 typingmode)
+ .tp (hold-for-duration 30 typingmode)
 
   magic (switch
   ;; TODO | -> & for closures
@@ -159,11 +159,12 @@
 
 
 
+    ((key-history f 1)) (macro f) break
+    ((and (key-history f 2) (key-history nop1 1))) (macro f) break
+
     ((input-history real f 2)) (macro f) break
     ((and (input-history fake typingmode 2) (input-history real f 3))) (macro f) break
 
-    ((key-history f 1)) (macro f) break
-    ((and (key-history f 2) (key-history nop1 1))) (macro f) break
 
 
     () rpt break
