@@ -60,6 +60,28 @@
 
 
 
-
+    # saturated variants (20% more saturation)
+    red_sat = "#C93134";
+    red2_sat = "#ED5965";
+    red3_sat = "#CA675F";
+    yellow_sat = "#E59F49";
+    yellow2_sat = "#EDC272";
+    yellow3_sat = "#CAAC7A";
+    green_sat = "#8FC055";
+    green2_sat = "#7CAF7C";
+    green3_sat = "#7F9F6E";
+    green4_sat = "#5B9A82";
+    green5_sat = "#6BAE97";
+    blue_sat = "#6EBBD4";
+    blue2_sat = "#568B8F";
+    blue3_sat = "#7EAABA";
+    blue4_sat = "#81AAA9";
+    violet_sat = "#8A88B0";
+    violet2_sat = "#7E91AF";
+    violet3_sat = "#8A9FBE";
+    pink_sat = "#A08AA2";
+    orange_sat = "#BC8A6C";
+    orange2_sat = "#BF856B";
+    aqua_sat = "#81AAA9";
 
 }

@@ -30,13 +30,13 @@ in
     theme[inactive_fg]="${col.gray5}"
 
     # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
-    theme[graph_text]="#b7bdf8"
+    theme[graph_text]="${col.fg}"
 
     # Background color of the percentage meters
     theme[meter_bg]="${col.zen_bg2}"
 
     # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-    theme[proc_misc]="#c6a0f6"
+    theme[proc_misc]="${col.blue}"
 
     # Cpu box outline color
     theme[cpu_box]="${col.blue}"
@@ -59,9 +59,9 @@ in
     theme[temp_end]="${col.red2}"
 
     # CPU graph colors
-    theme[cpu_start]="#c6a0f6"
-    theme[cpu_mid]="#7dc4e4"
-    theme[cpu_end]="#a6da95"
+    theme[cpu_start]="${col.blue}"
+    theme[cpu_mid]="#859EBD"
+    theme[cpu_end]="${col.violet_sat}"
 
     # Mem/Disk free meter
     theme[free_start]="${col.violet}"
@@ -84,14 +84,14 @@ in
     theme[used_end]="${col.green}"
 
     # Download graph colors
-    theme[download_start]="#bd93f9"
-    theme[download_mid]="#50fa7b"
-    theme[download_end]="#8be9fd"
+    theme[download_start]="${col.blue}"
+    theme[download_mid]="#859EBD"
+    theme[download_end]="${col.violet_sat}"
 
     # Upload graph colors
-    theme[upload_start]="#8c42ab"
-    theme[upload_mid]="#ff79c6"
-    theme[upload_end]="#ff33a8"
+    theme[upload_start]="${col.blue}"
+    theme[upload_mid]="#859EBD"
+    theme[upload_end]="${col.violet_sat}"
 
     # Process box color gradient for threads, mem and cpu usage
     theme[process_start]="${col.blue}"
