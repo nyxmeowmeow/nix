@@ -4,7 +4,7 @@
 
     zulu
 
-    kitty
+    # kitty
     # ghostty
 
     hyprpaper

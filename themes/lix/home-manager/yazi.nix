@@ -181,6 +181,7 @@ in {
           { name = ".gitattributes"; text = ""; fg = col.bubblegum; } #TODO orange
           { name = ".gitignore"; text = ""; fg = col.bubblegum; } #TODO orange
           { name = ".gitmodules"; text = ""; fg = col.bubblegum; } #TODO orange
+          { name = "makefile"; text = "󱌣"; fg = col.fg; }
         ];
 
         exts = [
