@@ -3,7 +3,7 @@
     termguicolors = true;
 
     number = true;
-    relativenumber = true;
+    relativenumber = false;
     signcolumn = "number";
 
     shiftwidth = 2;
