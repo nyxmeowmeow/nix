@@ -19,7 +19,7 @@
     ../../modules/nixos/clipse.nix
     ../../modules/nixos/font.nix
     ../../modules/nixos/fontconfig.nix
-    ../../modules/nixos/languages.nix
+    ../../modules/nixos/dev.nix
     ../../modules/nixos/misc.nix
     ../../modules/nixos/nix-gaming.nix
     ../../modules/nixos/options.nix
