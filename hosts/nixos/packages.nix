@@ -75,10 +75,10 @@
     # mono
 
 
-    (discord.override {
-     withMoonlight = true;
-     moonlight = inputs.moonlight.packages.${pkgs.system}.moonlight-mod;
-     })
+    # (discord.override {
+    #  withMoonlight = true;
+    #  moonlight = inputs.moonlight.packages.${pkgs.system}.moonlight-mod;
+    #  })
 
   ] ++ [
     inputs.pollymc.packages."x86_64-linux".default

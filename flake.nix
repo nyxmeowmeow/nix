@@ -20,10 +20,10 @@
     nuhxboard.url = "github:justDeeevin/NuhxBoard";
     walker.url = "github:abenz1267/walker";
     pollymc.url = "github:fn2006/PollyMC";
-    moonlight = {
-      url = "github:moonlight-mod/moonlight"; # Add `/develop` to the flake URL to use nightly.
-        inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # moonlight = {
+    #   url = "github:moonlight-mod/moonlight"; # Add `/develop` to the flake URL to use nightly.
+    #     inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
