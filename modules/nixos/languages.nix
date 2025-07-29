@@ -13,8 +13,8 @@
 
     python3
 
-    haskell-language-server
-    ghc
+    # haskell-language-server
+    # ghc
 
     gcc
     clang
