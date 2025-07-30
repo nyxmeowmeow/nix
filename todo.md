@@ -1,4 +1,4 @@
-- theme specific dunst theme
 - fix btop theme
-- get zen flake home manager options working
-- zen and vesktop themes
+- zen flake home manager
+- walker flake home-manager
+- zen, vesktop, dunst, and walker themes

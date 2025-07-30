@@ -5,8 +5,14 @@
 
     {
       key = "gd";
-      # action = "<cmd> lua vim.lsp.buf.definition()<CR>";
-      action = "<cmd>vim.lsp.buf.definition()<CR>";
+      action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+      # action = "<cmd>vim.lsp.buf.definition()<CR>";
+      mode = "n";
+    }
+
+    {
+      key = "gD";
+      action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
       mode = "n";
     }
 
