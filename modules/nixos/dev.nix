@@ -7,6 +7,7 @@
     kotlin
     kotlin-language-server
     kotlin-interactive-shell
+    gradle
 
     # zig
 
