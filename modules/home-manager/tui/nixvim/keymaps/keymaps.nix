@@ -6,7 +6,6 @@
     {
       key = "gd";
       action = "<cmd>lua vim.lsp.buf.definition()<CR>";
-      # action = "<cmd>vim.lsp.buf.definition()<CR>";
       mode = "n";
     }
 
