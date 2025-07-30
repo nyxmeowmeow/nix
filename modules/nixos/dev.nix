@@ -4,6 +4,9 @@
     gdb
 
 
+    kotlin
+    kotlin-language-server
+    kotlin-interactive-shell
 
     # zig
 
