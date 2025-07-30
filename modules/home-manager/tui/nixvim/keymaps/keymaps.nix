@@ -6,49 +6,51 @@
     {
       key = "gd";
       action = "<cmd>lua vim.lsp.buf.definition()<CR>";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
+      # lua = true;
     }
 
     {
       key = "gD";
       action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
+      # lua = true;
     }
 
     { # write & quit
       key = "Zz";
       action = "ZZ";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
     }
 
     { # put cursor at top of screen
       key = "zK";
       action = "z<cr>";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
     }
 
     { # put cursor at bottom of screen
       key = "zJ";
       action = "z-";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
     }
 
     { # put top of screen at cursor
       key = "zk";
       action = "zt";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
     }
 
     { # put bottom of screen at cursor
       key = "zj";
       action = "zb";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
     }
 
     { # append semicolon
       key = "<leader>;";
       action = "mzA;<esc>`z";
-      mode = "n";
+      mode = [ "n" "v" "x" ];
     }
 
     { # insert line below
