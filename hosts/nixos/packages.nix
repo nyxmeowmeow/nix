@@ -47,7 +47,7 @@
 
     libevdev
     wl-clipboard
-    walker
+    # walker
     udiskie
     udisks2
     gvfs
@@ -82,5 +82,6 @@
 
   ] ++ [
     inputs.pollymc.packages."x86_64-linux".default
+    # inputs.walker.packages."x86_64-linux".default
   ];
 }

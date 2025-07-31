@@ -18,6 +18,7 @@
         inputs.nixvim.homeModules.nixvim
         ./tui/nixvim/default.nix
 
+        ./gui/walker.nix
         ./tui/nh.nix
         ./tui/navi.nix
         ./tui/btop.nix
