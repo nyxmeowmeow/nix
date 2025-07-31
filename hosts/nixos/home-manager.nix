@@ -23,6 +23,9 @@
         inputs.nixvim.homeModules.nixvim
         ../../modules/home-manager/tui/nixvim/default.nix
 
+        inputs.walker.homeModules.walker
+        ../../modules/home-manager/gui/walker.nix
+
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/navi.nix
         ../../modules/home-manager/tui/btop.nix

@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }: {
 
-  imports = [
-    inputs.walker.homeModules.walker 
-  ];
+  programs.walker = {
+    enable = true;
+  };
 }
