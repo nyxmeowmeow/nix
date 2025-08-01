@@ -21,6 +21,7 @@
 
     # gimp
     krita
+    aseprite
 
     olympus
     osu-lazer
