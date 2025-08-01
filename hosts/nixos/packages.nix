@@ -48,7 +48,7 @@
 
     libevdev
     wl-clipboard
-    # walker
+    walker
     udiskie
     udisks2
     gvfs
