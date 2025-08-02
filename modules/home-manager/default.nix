@@ -18,29 +18,30 @@
         inputs.nixvim.homeModules.nixvim
         ./tui/nixvim/default.nix
 
-        ./gui/walker.nix
-        ./tui/nh.nix
-        ./tui/navi.nix
-        ./tui/btop.nix
-        ./gui/obs.nix
-        ./tui/clipse.nix
+        # ./hyprland.nix
         ./gui/dunst.nix
         ./gui/emacs/emacs.nix
         ./gui/foot.nix
-        ./tui/fzf.nix
-        ./tui/git.nix
         ./gui/mpv.nix
-        ./tui/ncmpcpp.nix
         ./gui/niri/niri.nix
-        ./tui/nushell.nix
-        ./tui/starship.nix
+        ./gui/obs.nix
         ./gui/tofi.nix
         ./gui/vesktop.nix
-        ./tui/yazi/yazi.nix
+        ./gui/walker.nix
         ./gui/zen/zen.nix
-        ./tui/zoxide.nix
         ./tui/bash.nix
-        # ./hyprland.nix
+        ./tui/btop.nix
+        ./tui/clipse.nix
+        ./tui/fzf.nix
+        ./tui/git.nix
+        ./tui/navi.nix
+        ./tui/ncmpcpp.nix
+        ./tui/nh.nix
+        ./tui/nushell.nix
+        ./tui/starship.nix
+        ./tui/yazi/yazi.nix
+        ./tui/zellij/default.nix
+        ./tui/zoxide.nix
       ];
     };
   };
