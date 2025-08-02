@@ -1,5 +1,7 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+    zellij
+
     # blender
 
     zulu
