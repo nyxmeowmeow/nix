@@ -2,8 +2,8 @@
   environment.systemPackages = with pkgs; [
     cryptsetup
 
-    nyaa # torrent
-    rqbit
+    # nyaa
+    # rqbit
 
     zellij
 
