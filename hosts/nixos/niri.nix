@@ -28,7 +28,7 @@
           # refresh = 75;
         };
 
-        position.x = -2560;
+        position.x = -5000;
         position.y = 0;
       };
     };
