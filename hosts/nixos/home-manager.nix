@@ -35,7 +35,7 @@
         # inputs.walker.modules.homeManager.default
         # ../../modules/home-manager/gui/walker.nix
 
-        ../../modules/home-manager/services/easyeffects.nix
+        # ../../modules/home-manager/services/easyeffects.nix
 
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/navi.nix
