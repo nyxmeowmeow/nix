@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+
+    nyaa # torrent
+
     zellij
 
     # blender
