@@ -1,18 +1,75 @@
 {
   services.easyeffects = {
     enable = true;
-    preset = ''
-      Preamp: -13.82 dB
-      Filter 1: ON LSC Fc 105.0 Hz Gain 2.0 dB Q 0.70
-      Filter 2: ON PK Fc 116.8 Hz Gain -4.4 dB Q 0.44
-      Filter 3: ON PK Fc 194.8 Hz Gain -1.4 dB Q 1.30
-      Filter 4: ON PK Fc 347.2 Hz Gain 3.0 dB Q 1.04
-      Filter 5: ON PK Fc 933.1 Hz Gain 1.1 dB Q 0.59
-      Filter 6: ON PK Fc 1771.8 Hz Gain 1.5 dB Q 2.33
-      Filter 7: ON PK Fc 1785.9 Hz Gain -1.6 dB Q 2.69
-      Filter 8: ON PK Fc 3858.0 Hz Gain 3.7 dB Q 6.00
-      Filter 9: ON PK Fc 7780.3 Hz Gain -3.0 dB Q 4.13
-      Filter 10: ON HSC Fc 10000.0 Hz Gain -7.0 dB Q 0.70
-    '';
+    preset = "my-preset";
+    extraPresets = {
+    my-preset = {
+      output = {
+        "equalizer#0" = {
+          output-gain = -20.0;
+          band0 = {
+            frequency = 105.0;
+            gain = 2.0;
+            mode = "LSC";
+            q = 0.7;
+          };
+          band1 = {
+            frequency = 116.8;
+            gain = -4.4;
+            mode = "PK";
+            q = 0.44;
+          };
+          band2 = {
+            frequency = 194.8;
+            gain = -1.4;
+            mode = "PK";
+            q = 1.3;
+          };
+          band3 = {
+            frequency = 347.2;
+            gain = 3.0;
+            mode = "PK";
+            q = 1.04;
+          };
+          band4 = {
+            frequency = 933.1;
+            gain = 1.1;
+            mode = "PK";
+            q = 0.59;
+          };
+          band5 = {
+            frequency = 1771.8;
+            gain = 1.5;
+            mode = "PK";
+            q = 2.33;
+          };
+          band6 = {
+            frequency = 1785.9;
+            gain = -1.6;
+            mode = "PK";
+            q = 2.69;
+          };
+          band7 = {
+            frequency = 3858.0;
+            gain = 3.7;
+            mode = "PK";
+            q = 6.0;
+          };
+          band8 = {
+            frequency = 7780.3;
+            gain = -3.0;
+            mode = "PK";
+            q = 4.13;
+          };
+          band9 = {
+            frequency = 10000.0;
+            gain = -7.0;
+            mode = "HSC";
+            q = 0.7;
+          };
+        };
+      };
+    };
+  };
   };
 }
