@@ -4,7 +4,8 @@
 
     # blender
 
-    zulu
+    zulu # java 21
+    zulu8 # java 8
 
     # kitty
     # ghostty

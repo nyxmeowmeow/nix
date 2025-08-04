@@ -107,6 +107,7 @@ in {
       def timer [...msg: string] {
         let full_msg = ($msg | str join " ") + "m"
         termdown -s $full_msg
+        notify-send -t 10000 timer up
       }
 
       # search for process
