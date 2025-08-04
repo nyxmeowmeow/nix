@@ -1,5 +1,6 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+    cryptsetup
 
     nyaa # torrent
     rqbit
