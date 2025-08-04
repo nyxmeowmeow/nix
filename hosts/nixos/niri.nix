@@ -28,6 +28,7 @@
           # refresh = 75;
         };
 
+        # dont move the mouse to the other monitor
         position.x = -5000;
         position.y = 5000;
       };

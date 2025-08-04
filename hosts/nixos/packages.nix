@@ -42,7 +42,7 @@
     termdown
     tty-clock
 
-    # qview
+    qview
     mpc
     mpv
     obs-studio
