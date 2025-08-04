@@ -1,12 +1,12 @@
 # FIXME disables for a second on every rebuild
 { config, ... }: {
 # from https://github.com/nix-community/home-manager/issues/5185
-systemd.user.services.easyeffects.Service.ExecStartPost = [
-  "${config.services.easyeffects.package}/bin/easyeffects --load-preset ${config.services.easyeffects.preset}"
-];
+# systemd.user.services.easyeffects.Service.ExecStartPost = [
+#   "${config.services.easyeffects.package}/bin/easyeffects --load-preset ${config.services.easyeffects.preset}"
+# ];
 
   services.easyeffects = {
-    enable = true;
+    enable = false;
     preset = "normal";
     extraPresets = {
       autoeq = { # hyperx cloud ii autoeq
