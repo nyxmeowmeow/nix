@@ -1,7 +1,10 @@
-{
+{ config, ... }: {
+systemd.user.services.easyeffects.Service.ExecStartPost = [
+  "${config.services.easyeffects.package}/bin/easyeffects --load-preset ${config.services.easyeffects.preset}"
+];
   services.easyeffects = {
     enable = true;
-    # preset = "normal"; # FIXME disables for a second on every rebuild
+    preset = "normal"; # FIXME disables for a second on every rebuild
     extraPresets = {
       autoeq = { # hyperx cloud ii autoeq
         output = {
