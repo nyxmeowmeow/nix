@@ -21,7 +21,7 @@ in {
 
 
       # cd && ls
-      def cs [msg: string] {
+      def cs [msg: string] { # FIXME doesnt stay in the dir
         cd $msg
         ls
       }

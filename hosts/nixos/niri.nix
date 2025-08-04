@@ -27,6 +27,9 @@
           height = 1440;
           # refresh = 75;
         };
+
+        position.x = -2560;
+        position.y = 0;
       };
     };
   };

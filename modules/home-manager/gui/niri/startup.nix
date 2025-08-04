@@ -5,7 +5,7 @@
     # { command = [ "kitty" "-1" "~/.config/kanata/hyprkan -d" ]; }
     { command = [ "foot" "--server" ]; }
     { command = [ "foot" "-H" "xwayland-satellite" ]; }
-    { command = [ "foot" "-H" "~/.config/kanata/hyprkan -d" ]; }
+    { command = [ "foot" "-H" "~/.config/kanata/hyprkan" "-d" ]; }
 
     { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }
