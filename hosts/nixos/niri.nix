@@ -29,7 +29,7 @@
         };
 
         position.x = -5000;
-        position.y = 0;
+        position.y = 5000;
       };
     };
   };
