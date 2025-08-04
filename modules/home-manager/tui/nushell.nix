@@ -1,4 +1,7 @@
-{ flake_dir, host, ... }: {
+{ flake_dir, host, wm, ... }:
+let
+  wm_launch_command = if (wm == "hyprland") then "Hyprland" else "niri-session";
+in {
   programs.nushell = {
     enable = true;
 
@@ -162,11 +165,11 @@
    #  envFile.text = /* nu */ ''
    #  '';
 
-    # loginFile.text = /* nu */ ''
-    #   if (tty) == "/dev/tty1" {
-    #     Hyprland
-    #   }
-    # '';
+    loginFile.text = /* nu */ ''
+      if (tty) == "/dev/tty1" {
+        ${wm_launch_command}
+      }
+    '';
 
 
     shellAliases = {

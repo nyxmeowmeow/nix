@@ -7,6 +7,7 @@
       inherit username flake_dir inputs;
       theme = config.theme;
       host = config.networking.hostName;
+      wm = config.wm;
       zen-browser = inputs.zen-browser;
     };
 
