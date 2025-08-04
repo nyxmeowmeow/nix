@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
 
     nyaa # torrent
+    rqbit
 
     zellij
 
