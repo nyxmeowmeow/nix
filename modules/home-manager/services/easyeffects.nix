@@ -1,7 +1,7 @@
 {
   services.easyeffects = {
     enable = true;
-    preset = "normal";
+    # preset = "normal"; # FIXME disables for a second on every rebuild
     extraPresets = {
       autoeq = { # hyperx cloud ii autoeq
         output = {
