@@ -181,6 +181,8 @@ in {
       "......" = "cd ../../../../..";
       "......." = "cd ../../../../../..";
 
+      ffmpreg = "ffmpeg";
+
       back = "cd -";
 
       # hist="history | lines | fzf | read -l command; eval $command";
