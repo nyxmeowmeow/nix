@@ -48,6 +48,13 @@
 
 
 
+    ((and (input-history real h 3) (input-history real t 2))) (macro t p s S-; / /) break
+    ((and (input-history real h 4) (input-history real t 3) (input-history fake typingmode 2))) (macro t p s S-; / /) break
+    ((and (input-history real h 4) (input-history fake typingmode 3) (input-history real t 2))) (macro t p s S-; / /) break
+
+
+
+
 
   ;; #include
     ;; ((input-history real 3 2)) (macro i n c l u d e) break

@@ -187,9 +187,11 @@ in {
       fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time
-      rm = "rm -i"; # prompt every time
+      rm = "trash -i"; # prompt every time
       mv = "mv -i"; # prompt every time
       ln = "ln -i"; # prompt every time
+
+      banish = "shred -u"; # shred and delete
 
       logout = "hyprctl dispatch exit 0";
       # l = "eza -lh  --icons=auto"; # long list
