@@ -1,4 +1,4 @@
 - fix btop theme
-- zen flake home manager
 - walker flake home-manager
 - zen, vesktop, dunst, and walker themes
+- make yazi text preview syntax highlighting match nvim
