@@ -35,6 +35,14 @@
   ;; TODO | -> & for closures
 
 
+    ((key-history tab 1)) (macro enter) break
+    ((and (key-history tab 2) (key-history nop1 1))) (macro enter) break
+
+    ((input-history real tab 2)) (macro enter) break
+    ((and (input-history fake typingmode 2) (input-history real tab 3))) (macro enter) break
+
+
+
 
   ;; query
     ((input-history real q 2)) (macro u e r y) break
