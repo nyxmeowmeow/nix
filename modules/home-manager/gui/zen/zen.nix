@@ -1,12 +1,12 @@
 { inputs, pkgs, ... }: {
-#
-#   imports = [
-#     inputs.zen-browser.homeModules.twilight
-#     ./userchrome/meow.nix
-#   ];
-#
-#   programs.zen-browser = {
-#     enable = true;
+
+  imports = [
+    inputs.zen-browser.homeModules.twilight
+    # ./userchrome/meow.nix
+  ];
+
+  programs.zen-browser = {
+    enable = true;
 #     nativeMessagingHosts = [ pkgs.firefoxpwa ];
 #     profiles = {
 #     meow = {
@@ -95,5 +95,5 @@
 #         };
 #       };
 #     };
-#   };
+  };
 }
