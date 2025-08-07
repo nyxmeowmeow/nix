@@ -33,7 +33,7 @@
 
     "Mod+Space".action = spawn "walker";
 
-    "Mod+Z".action = sh "zen -p misc";
+    "Mod+Z".action = sh "zen";
     "Mod+Shift+Z".action = sh "zen -p rain";
 
 
