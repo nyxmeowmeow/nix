@@ -34,7 +34,7 @@
     "Mod+Space".action = spawn "walker";
 
     "Mod+Z".action = sh "zen";
-    "Mod+Shift+Z".action = sh "zen -p rain";
+    "Mod+Shift+Z".action = sh "zen -p media";
 
 
     "Mod+Tab".action = focus-workspace "one";
