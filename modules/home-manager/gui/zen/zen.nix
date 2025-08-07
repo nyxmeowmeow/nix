@@ -10,8 +10,8 @@
     nativeMessagingHosts = [ pkgs.firefoxpwa ];
     profiles = {
     meow = {
-      name = "meow";
-      id = 0;
+      # name = "meow";
+      # id = 0;
       # preConfig = ''
       # '';
       settings = {
