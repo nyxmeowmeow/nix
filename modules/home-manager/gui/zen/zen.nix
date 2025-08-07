@@ -7,12 +7,12 @@
   programs.zen-browser = {
     enable = true;
     nativeMessagingHosts = [ pkgs.firefoxpwa ];
-    profiles = [
-    {
+    profiles = {
+    meow = {
       name = "meow";
-      id = 99;
-# preConfig = ''
-# '';
+      id = 0;
+      # preConfig = ''
+      # '';
       settings = {
         "browser.search.region" = "AU";
         "browser.search.isUS" = false;
@@ -22,8 +22,8 @@
       };
       userChrome = import ./userchrome/meow.nix;
       userContent = import ./usercontent/meow.nix;
-    }
-    ];
+    };
+    };
     policies = {
       AutofillAddressEnabled = false;
       AutofillCreditCardEnabled = false;
@@ -97,5 +97,4 @@
       };
     };
   };
-
-                       }
+}
