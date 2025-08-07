@@ -53,8 +53,8 @@ in {
           ^ffmpeg -i $input -c:v dnxhd -profile:v dnxhr_hq -c:a pcm_s16le -pix_fmt yuv422p $output
       }
 
-      def nrun [...msg: string] {
-        nix run nixpkgs\#($msg)
+      def , [msg: string] {
+        nix run nixpkgs#($msg)
       }
 
 
