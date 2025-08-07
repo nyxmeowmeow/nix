@@ -1,3 +1,8 @@
+* { font-family: iosevka nerd font mono; }
+/* remove annoying popup panel at top */
+#zen-appcontent-navbar-wrapper {
+  display: none;
+}
 
 /* background color of pinned tabs in a normal state (not hovered/selected) */
 .tabbrowser-tab[pinned] .tab-stack .tab-background {
@@ -17,8 +22,17 @@ background-color: #b7bdf8 !important;
 .tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background{
 background-color: #b7bdf8 !important;
 }
+.zen-essentials-container {
+  &:not(:empty) {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+}
 
-
+.tab-background {
+  border-radius: var(--tab-border-radius);
+  min-height: 32px !important;
+}
 
 .zen-current-workspace-indicator {
   display: none !important;
@@ -160,7 +174,7 @@ body {
 }
 
 .tab-label {
-  font-family: mononoki nerd font mono;
+  font-family: iosevka nerd font mono;
 }
 
 #urlbar-background {
