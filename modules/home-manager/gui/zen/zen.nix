@@ -21,6 +21,7 @@
         "browser.bookmarks.showMobileBookmarks" = false;
       };
       userChrome = import ./userchrome/meow.nix;
+      userContent = import ./usercontent/meow.nix;
     }
     ];
     policies = {
