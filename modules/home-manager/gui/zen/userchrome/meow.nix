@@ -1,4 +1,6 @@
-''
+{ inputs, pkgs, ... }: {
+
+  programs.zen-browser.profiles.meow.userChrome = ''
 * { font-family: iosevka nerd font mono; }
 /* remove annoying popup panel at top */
 #zen-appcontent-navbar-wrapper {
@@ -310,4 +312,5 @@ body {
 
 
 
-''
+'';
+}

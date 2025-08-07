@@ -2,6 +2,7 @@
 
   imports = [
     inputs.zen-browser.homeModules.twilight
+    ./userchrome/meow.nix
   ];
 
   programs.zen-browser = {
@@ -20,8 +21,6 @@
         "general.useragent.locale" = "en-AU";
         "browser.bookmarks.showMobileBookmarks" = false;
       };
-      userChrome = import ./userchrome/meow.nix;
-      userContent = import ./usercontent/meow.nix;
     };
     };
     policies = {
