@@ -3,7 +3,7 @@
     cryptsetup
 
     # nyaa
-    # rqbit
+    rqbit
 
     zellij
 

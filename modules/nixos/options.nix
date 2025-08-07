@@ -2,7 +2,7 @@
 
   config.theme = "kanso_zen";
   config.wm = "niri";
-  config.font = "mononoki";
+  config.font = "iosevka";
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
