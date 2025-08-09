@@ -1,25 +1,22 @@
 {
   programs.niri.settings.window-rules = [
   {
-
-
     draw-border-with-background = false;
+    clip-to-geometry = true;
     geometry-corner-radius =
       let
         r = 10.0;
-      in
-      {
+      in {
         top-left = r;
         top-right = r;
         bottom-left = r;
         bottom-right = r;
       };
-    clip-to-geometry = true;
   }
 
   {
     matches = [ { app-id = "^vesktop$"; } ];
-    block-out-from = "screen-capture";
+    block-out-from = "screencast";
     open-on-workspace = "discord";
   }
 
@@ -59,17 +56,17 @@
     open-maximized = true;
   }
 
-# {
-#   matches = [ { title = "mail"; } ];
-#   block-out-from = [ "screen-capture" "screencast" ];
-# }
-# {
-#   matches = [ { title = "itwarden"; } ];
-  #   block-out-from = [ "screen-capture" "screencast" ];
-  # }
-  # {
-  #   matches = [ { title = "assword"; } ];
-  #   block-out-from = [ "screen-capture" "screencast" ];
-  # }
+  {
+    matches = [ { title = "mail"; } ];
+    block-out-from = "screen-capture";
+  }
+  {
+    matches = [ { title = "itwarden"; } ];
+    block-out-from = "screen-capture";
+  }
+  {
+    matches = [ { title = "assword"; } ];
+    block-out-from = "screen-capture";
+  }
   ];
 }

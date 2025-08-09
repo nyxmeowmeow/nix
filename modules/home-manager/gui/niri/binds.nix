@@ -1,5 +1,4 @@
 { config, ... }: {
-
   programs.niri.settings.binds = with config.lib.niri.actions; 
   let
     sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
@@ -37,18 +36,19 @@
     "Mod+Shift+Z".action = sh "zen -p media";
 
 
-    "Mod+Tab".action = focus-workspace "one";
+    "Mod+Tab".action = focus-workspace "left";
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
     "Mod+D".action = focus-workspace "discord";
-    "Mod+W".action = focus-workspace "browser_2";
-    "Mod+P".action = focus-workspace "two";
+    "Mod+W".action = focus-workspace "media";
+    "Mod+P".action = focus-workspace "right";
 
+    "Mod+Shift+Tab".action.move-window-to-workspace = "left";
     "Mod+Shift+B".action.move-window-to-workspace = "browser";
     "Mod+Shift+F".action.move-window-to-workspace = "game";
     "Mod+Shift+D".action.move-window-to-workspace = "discord";
-    "Mod+Shift+W".action.move-window-to-workspace = "browser_2";
-    "Mod+Shift+P".action.move-window-to-workspace = "two";
+    "Mod+Shift+W".action.move-window-to-workspace = "media";
+    "Mod+Shift+P".action.move-window-to-workspace = "right";
 
 
     "Mod+H".action = focus-column-left;

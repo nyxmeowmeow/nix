@@ -13,30 +13,30 @@
 
     workspaces = {
       "1" = {
-        name = "one";
+        name = "left";
         open-on-output = "DP-1";
       };
       "2" = {
         name = "browser";
         open-on-output = "DP-1";
       };
-      "7" = {
+      "3" = {
         name = "game";
         open-on-output = "DP-1";
       };
-      "8" = {
+      "4" = {
         name = "discord";
         open-on-output = "DP-1";
       };
-      "4" = {
-        name = "browser_2";
-        open-on-output = "DP-1";
-      };
       "5" = {
-        name = "two";
+        name = "media";
         open-on-output = "DP-1";
       };
-      "9" = {
+      "6" = {
+        name = "right";
+        open-on-output = "DP-1";
+      };
+      "99" = {
         name = "alt";
         open-on-output = "DP-3";
       };
