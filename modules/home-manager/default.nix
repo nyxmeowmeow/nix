@@ -14,11 +14,12 @@
         ../../themes/kanso/home-manager/default.nix
         ./desktop.nix
         ./home.nix
+        ./mimetypes.nix
 
         inputs.nixvim.homeModules.nixvim
         ./tui/nixvim/default.nix
 
-        # ./hyprland.nix
+# ./hyprland.nix
         ./gui/dunst.nix
         ./gui/emacs/emacs.nix
         ./gui/foot.nix
@@ -42,7 +43,7 @@
         ./tui/yazi/yazi.nix
         ./tui/zellij/default.nix
         ./tui/zoxide.nix
-      ];
+        ];
     };
   };
 }
