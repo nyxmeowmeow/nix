@@ -44,11 +44,11 @@
     "Mod+W".action = focus-workspace "browser_2";
     "Mod+P".action = focus-workspace "two";
 
-    # "Mod+Shift+B".action = move-window-to-workspace "browser";
-    # "Mod+Shift+F".action = move-window-to-workspace "game";
-    # "Mod+Shift+D".action = move-window-to-workspace "discord";
-    # "Mod+Shift+W".action = move-window-to-workspace "browser_2";
-    # "Mod+Shift+P".action = move-window-to-workspace "two";
+    "Mod+Shift+B".action.move-window-to-workspace = "browser";
+    "Mod+Shift+F".action.move-window-to-workspace = "game";
+    "Mod+Shift+D".action.move-window-to-workspace = "discord";
+    "Mod+Shift+W".action.move-window-to-workspace = "browser_2";
+    "Mod+Shift+P".action.move-window-to-workspace = "two";
 
 
     "Mod+H".action = focus-column-left;

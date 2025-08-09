@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-    darkly
+    # darkly
     cryptsetup
 
     # nyaa
