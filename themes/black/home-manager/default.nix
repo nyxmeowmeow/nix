@@ -8,6 +8,7 @@
     ../../macchiato/home-manager/niri_macchiato.nix
     ./foot_black.nix
     ./gtk_black.nix
+    ./walker_black.nix
     ./hyprland_black.nix
     ./hyprpaper_black.nix
     ./fzf_black.nix
