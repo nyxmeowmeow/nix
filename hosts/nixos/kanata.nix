@@ -1,3 +1,16 @@
+# base:
+#          : b f d w p   ' l o u j x
+#          - n s t c y   m h a e i rpt
+#          q , . k g v   / _ ( ) ; z
+# alt esc/meta r magic   ent spc bspc tab
+#
+# sym:
+#                          l d u r
+#            1 2 3 4       7 8 9 0
+#            0 9 8 5       6 3 2 1
+#                  .       spc
+
+
 { pkgs, ... }: {
   services.kanata = {
     enable = true;
