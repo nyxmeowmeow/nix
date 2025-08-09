@@ -1,0 +1,403 @@
+app_launch_prefix = ""
+terminal_title_flag = ""
+locale = ""
+close_when_open = false
+theme = "meow"
+monitor = ""
+hotreload_theme = true
+as_window = false
+timeout = 0
+disable_click_to_close = false
+force_keyboard_focus = true
+
+[keys]
+accept_typeahead = ["tab"]
+trigger_labels = "lalt"
+next = ["down"]
+prev = ["up"]
+close = ["esc"]
+remove_from_history = ["shift backspace"]
+resume_query = ["ctrl r"]
+toggle_exact_search = ["ctrl m"]
+
+[keys.activation_modifiers]
+keep_open = "shift"
+alternate = "alt"
+
+[keys.ai]
+clear_session = ["ctrl x"]
+copy_last_response = ["ctrl c"]
+resume_session = ["ctrl r"]
+run_last_response = ["ctrl e"]
+
+[events]
+on_activate = ""
+on_selection = ""
+on_exit = ""
+on_launch = ""
+on_query_change = ""
+
+[list]
+dynamic_sub = true
+keyboard_scroll_style = "emacs"
+max_entries = 20
+show_initial_entries = false
+single_click = true
+visibility_threshold = 100
+placeholder = ""
+
+[search]
+argument_delimiter = "#"
+placeholder = "meow"
+delay = 0
+resume_last_query = false
+
+[activation_mode]
+disabled = true
+# labels = "shtareni"
+
+[builtins.applications]
+weight = 5
+name = "applications"
+placeholder = "Applications"
+prioritize_new = true
+hide_actions_with_empty_query = true
+context_aware = true
+refresh = true
+show_sub_when_single = true
+show_icon_when_single = true
+show_generic = true
+history = true
+
+[builtins.applications.actions]
+enabled = true
+hide_category = false
+hide_without_query = true
+
+[builtins.bookmarks]
+weight = 5
+placeholder = "Bookmarks"
+name = "bookmarks"
+icon = "bookmark"
+switcher_only = true
+
+[[builtins.bookmarks.entries]]
+label = "github"
+url = "https://github.com/notifications"
+keywords = ["github"]
+
+[[builtins.bookmarks.entries]]
+label = "nixpkgs search"
+url = "https://search.nixos.org/packages?channel=unstable"
+keywords = ["nix"]
+
+[[builtins.bookmarks.entries]]
+label = "home-manager search"
+url = "https://hm-search.kothavade.com/"
+keywords = ["nix"]
+
+[[builtins.bookmarks.entries]]
+label = "nixos option search"
+url = "https://search.nixos.org/options?channel=unstable"
+keywords = ["nix"]
+
+[[builtins.bookmarks.entries]]
+label = "nixvim search"
+url = "https://nix-community.github.io/nixvim/search"
+keywords = ["nix"]
+
+[builtins.xdph_picker]
+hidden = true
+weight = 5
+placeholder = "Screen/Window Picker"
+show_sub_when_single = true
+name = "xdphpicker"
+switcher_only = true
+
+[builtins.ai]
+weight = 5
+placeholder = "AI"
+name = "ai"
+icon = "help-browser"
+switcher_only = true
+
+[[builtins.ai.anthropic.prompts]]
+model = "claude-3-5-sonnet-20241022"
+temperature = 1
+max_tokens = 1_000
+label = "General Assistant"
+prompt = "You are a helpful general assistant. Keep your answers short and precise."
+
+[builtins.calc]
+require_number = true
+weight = 5
+name = "calc"
+icon = "accessories-calculator"
+placeholder = "Calculator"
+min_chars = 4
+
+[builtins.windows]
+weight = 5
+icon = "view-restore"
+name = "windows"
+placeholder = "Windows"
+show_icon_when_single = true
+
+[builtins.clipboard]
+always_put_new_on_top = true
+exec = "wl-copy"
+weight = 5
+name = "clipboard"
+avoid_line_breaks = true
+placeholder = "Clipboard"
+image_height = 300
+max_entries = 10
+switcher_only = true
+
+[builtins.commands]
+weight = 5
+icon = "utilities-terminal"
+switcher_only = true
+name = "commands"
+placeholder = "Commands"
+
+[builtins.custom_commands]
+weight = 5
+icon = "utilities-terminal"
+name = "custom_commands"
+placeholder = "Custom Commands"
+
+[builtins.emojis]
+exec = "wl-copy"
+weight = 5
+name = "emojis"
+placeholder = "Emojis"
+switcher_only = true
+history = true
+typeahead = true
+show_unqualified = false
+
+[builtins.symbols]
+after_copy = ""
+weight = 5
+name = "symbols"
+placeholder = "Symbols"
+switcher_only = true
+history = true
+typeahead = true
+
+[builtins.finder]
+use_fd = false
+weight = 5
+icon = "file"
+name = "finder"
+placeholder = "Finder"
+switcher_only = true
+ignore_gitignore = true
+refresh = true
+concurrency = 8
+show_icon_when_single = true
+preview_images = false
+
+[builtins.runner]
+eager_loading = true
+weight = 5
+icon = "utilities-terminal"
+name = "runner"
+placeholder = "Runner"
+typeahead = true
+history = true
+generic_entry = false
+refresh = true
+use_fd = false
+
+[builtins.ssh]
+weight = 5
+icon = "preferences-system-network"
+name = "ssh"
+placeholder = "SSH"
+switcher_only = true
+history = true
+refresh = true
+
+[builtins.switcher]
+weight = 5
+name = "switcher"
+placeholder = "Switcher"
+prefix = "/"
+
+[builtins.websearch]
+keep_selection = true
+weight = 5
+icon = "applications-internet"
+name = "websearch"
+placeholder = "Websearch"
+
+[[builtins.websearch.entries]]
+name = "Google"
+url = "https://www.google.com/search?q=%TERM%"
+
+[builtins.dmenu]
+hidden = true
+weight = 5
+name = "dmenu"
+placeholder = "Dmenu"
+switcher_only = true
+
+[builtins.translation]
+delay = 1000
+weight = 5
+name = "translation"
+icon = "accessories-dictionary"
+placeholder = "Translation"
+switcher_only = true
+provider = "googlefree"
+
+
+[[plugins]]
+keep_sort = false
+name = "catppuccin"
+placeholder = "catppuccin"
+recalculate_score = true
+show_icon_when_single = true
+switcher_only = true
+
+
+
+
+
+
+
+
+
+
+
+[[plugins.entries]]
+exec = "wl-copy '#181926'"
+icon = "/home/meow/Desktop/catppuccincolours/crust.svg"
+label = "Crust"
+
+[[plugins.entries]]
+exec = "wl-copy '#1e2030'"
+icon = "/home/meow/Desktop/catppuccincolours/mantle.svg"
+label = "Mantle"
+
+[[plugins.entries]]
+exec = "wl-copy '#24273a'"
+icon = "/home/meow/Desktop/catppuccincolours/base.svg"
+label = "Base"
+
+[[plugins.entries]]
+exec = "wl-copy '#363a4f'"
+icon = "/home/meow/Desktop/catppuccincolours/surface0.svg"
+label = "Surface 0"
+
+[[plugins.entries]]
+exec = "wl-copy '#494d64'"
+icon = "/home/meow/Desktop/catppuccincolours/surface1.svg"
+label = "Surface 1"
+
+[[plugins.entries]]
+exec = "wl-copy '#5b6078'"
+icon = "/home/meow/Desktop/catppuccincolours/surface2.svg"
+label = "Surface 2"
+
+[[plugins.entries]]
+exec = "wl-copy '#6e738d'"
+icon = "/home/meow/Desktop/catppuccincolours/overlay0.svg"
+label = "Overlay 0"
+
+[[plugins.entries]]
+exec = "wl-copy '#8087a2'"
+icon = "/home/meow/Desktop/catppuccincolours/overlay1.svg"
+label = "Overlay 1"
+
+[[plugins.entries]]
+exec = "wl-copy '#939ab7'"
+icon = "/home/meow/Desktop/catppuccincolours/overlay2.svg"
+label = "Overlay 2"
+
+[[plugins.entries]]
+exec = "wl-copy '#a5adcb'"
+icon = "/home/meow/Desktop/catppuccincolours/subtext0.svg"
+label = "Subtext 0"
+
+[[plugins.entries]]
+exec = "wl-copy '#b8c0e0'"
+icon = "/home/meow/Desktop/catppuccincolours/subtext1.svg"
+label = "Subtext 1"
+
+[[plugins.entries]]
+exec = "wl-copy '#cad3f5'"
+icon = "/home/meow/Desktop/catppuccincolours/text.svg"
+label = "Text"
+
+[[plugins.entries]]
+exec = "wl-copy '#b7bdf8'"
+icon = "/home/meow/Desktop/catppuccincolours/lavender.svg"
+label = "Lavender"
+
+[[plugins.entries]]
+exec = "wl-copy '#8aadf4'"
+icon = "/home/meow/Desktop/catppuccincolours/blue.svg"
+label = "Blue"
+
+[[plugins.entries]]
+exec = "wl-copy '#7dc4e4'"
+icon = "/home/meow/Desktop/catppuccincolours/sapphire.svg"
+label = "Sapphire"
+
+[[plugins.entries]]
+exec = "wl-copy '#91d7e3'"
+icon = "/home/meow/Desktop/catppuccincolours/sky.svg"
+label = "Sky"
+
+[[plugins.entries]]
+exec = "wl-copy '#8bd5ca'"
+icon = "/home/meow/Desktop/catppuccincolours/teal.svg"
+label = "Teal"
+
+[[plugins.entries]]
+exec = "wl-copy '#a6da95'"
+icon = "/home/meow/Desktop/catppuccincolours/green.svg"
+label = "Green"
+
+[[plugins.entries]]
+exec = "wl-copy '#eed49f'"
+icon = "/home/meow/Desktop/catppuccincolours/yellow.svg"
+label = "Yellow"
+
+[[plugins.entries]]
+exec = "wl-copy '#f5a97f'"
+icon = "/home/meow/Desktop/catppuccincolours/peach.svg"
+label = "Peach"
+
+[[plugins.entries]]
+exec = "wl-copy '#ee99a0'"
+icon = "/home/meow/Desktop/catppuccincolours/maroon.svg"
+label = "Maroon"
+
+[[plugins.entries]]
+exec = "wl-copy '#ed8796'"
+icon = "/home/meow/Desktop/catppuccincolours/red.svg"
+label = "Red"
+
+[[plugins.entries]]
+exec = "wl-copy '#c6a0f6'"
+icon = "/home/meow/Desktop/catppuccincolours/mauve.svg"
+label = "Mauve"
+
+[[plugins.entries]]
+exec = "wl-copy '#f5bde6'"
+icon = "/home/meow/Desktop/catppuccincolours/pink.svg"
+label = "Pink"
+
+[[plugins.entries]]
+exec = "wl-copy '#f0c6c6'"
+icon = "/home/meow/Desktop/catppuccincolours/flamingo.svg"
+label = "Flamingo"
+
+[[plugins.entries]]
+exec = "wl-copy '#f4dbd6'"
+icon = "/home/meow/Desktop/catppuccincolours/rosewater.svg"
+label = "Rosewater"
