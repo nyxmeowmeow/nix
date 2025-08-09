@@ -1,11 +1,16 @@
-{ lib, ... }: {
+{ lib, theme, ... }:
+let
+  col = import ../colors.nix;
+in {
+  config = lib.mkIf (theme == "black") {
+
   programs.walker.theme = {
     # name = "meow";
     layout = lib.trivial.importTOML ../../../stuff/walker/black.toml;
 
   style = ''
-@define-color foreground #cad3f5;
-@define-color background #000000;
+@define-color foreground ${col.text};
+@define-color background ${col.base};
 @define-color color1 #363a4f;
 @define-color subtext #a5adcb;
 
@@ -148,6 +153,7 @@ child:hover {
   opacity: 0.5;
 }
   '';
+  };
   };
 
 }
