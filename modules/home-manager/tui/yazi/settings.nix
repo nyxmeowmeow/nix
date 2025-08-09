@@ -24,7 +24,7 @@
         image_delay     = 0;
         image_filter    = "triangle";
         image_quality   = 85;
-        sixel_fraction  = 50;
+        sixel_fraction  = 500;
         ueberzug_scale  = 1;
         ueberzug_offset = [ 0 0 0 0 ];
       };
