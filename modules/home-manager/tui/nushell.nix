@@ -183,6 +183,8 @@ in {
 
       ffmpreg = "ffmpeg";
 
+      k = "pkill";
+
       back = "cd -";
 
       # hist="history | lines | fzf | read -l command; eval $command";
