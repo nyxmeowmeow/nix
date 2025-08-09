@@ -1,5 +1,5 @@
 let
-col = import ../colors.nix;
+  col = import ../colors.nix;
 in {
   programs.nushell.extraConfig = /* nu */ ''
     let color_scheme = {

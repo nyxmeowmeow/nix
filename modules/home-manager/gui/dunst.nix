@@ -13,6 +13,7 @@
         scale = 0;
         notification_limit = 20;
 
+        font = "${config.stylix.fonts.monospace.name} 8";
 
         progress_bar = true;
 
@@ -64,8 +65,6 @@
         sort = true;
 
 
-        # font = "mononoki Nerd Font mono 8";
-        font = "${config.stylix.fonts.monospace.name} 8";
 
         line_height = 3;
 
@@ -112,12 +111,6 @@
         sticky_history = true;
 
         history_length = 20;
-      };
-
-      urgency_normal = {
-        background = "#24273a80";
-        foreground = "#cad3f5ff";
-        frame_color = "#b7bdf8ff";
       };
     };
   };
