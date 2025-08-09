@@ -9,7 +9,7 @@
 
     focus-ring = {
       enable = true;
-      width = 2;
+      width = 3;
     };
     tab-indicator = {
       enable = true;

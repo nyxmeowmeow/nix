@@ -1,6 +1,7 @@
 {
   imports = [
     ./btop_kanso.nix
+    ./gtk_kanso.nix
     ./dunst_kanso.nix
     ./fastfetch_kanso.nix
     ./foot_kanso_ink.nix
