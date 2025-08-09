@@ -6,7 +6,7 @@
 
   programs.walker = {
     enable = true;
-    # runAsService = true;
+    runAsService = true;
     # theme = "nixos";
     config = lib.trivial.importTOML ../../../stuff/walker/config.toml;
   };

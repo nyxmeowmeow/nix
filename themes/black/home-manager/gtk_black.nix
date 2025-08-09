@@ -1,22 +1,21 @@
 { lib, theme, pkgs, ... }: {
   config = lib.mkIf (theme == "black") {
 
-
     gtk = {
       enable = true;
       theme = {
-        name = "Catppuccin-Macchiato-Standard-Lavender-Dark";
+        name = "catppuccin-macchiato-lavender-compact";
         package = pkgs.catppuccin-gtk.override {
           variant = "macchiato";
           accents = [ "lavender" ]; # can specify multiple accents
-            size = "standard"; # compact, standard, large
-# tweaks = [ "rimless" "black" ];
+            size = "compact"; # compact, standard, large
+            # tweaks = [ "rimless" "black" ];
             tweaks = [ "black" ];
         };
       };
 
       iconTheme = {
-# package = pkgs.gnome.adwaita-icon-theme;
+        # package = pkgs.gnome.adwaita-icon-theme;
         name = "Tela-circle-dracula";
       };
 
@@ -24,7 +23,6 @@
         name = "sn pro";
         size = 11;
       };
-
 
       gtk3.extraConfig.gtk-key-theme-name = "Emacs";
       gtk4.extraConfig.gtk-key-theme-name = "Emacs";
