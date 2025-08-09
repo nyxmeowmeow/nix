@@ -24,16 +24,7 @@
         inputs.nixvim.homeModules.nixvim
         ../../modules/home-manager/tui/nixvim/default.nix
 
-        # inputs.walker.homeModules.walker
-        # inputs.walker.homeModules.nixos
-        # inputs.walker.homeModules.default
-        # inputs.walker.modules.homeManager.default
-        # inputs.walker.modules.homeManager
-        # inputs.walker.modules.home-manager
-        # inputs.walker.modules
-        # inputs.walker.module
-        # inputs.walker.modules.homeManager.default
-        # ../../modules/home-manager/gui/walker.nix
+        ../../modules/home-manager/gui/walker.nix
 
         ../../modules/home-manager/services/easyeffects.nix
 
