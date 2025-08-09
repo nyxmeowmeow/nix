@@ -1,4 +1,4 @@
-{ inputs, lib, importTOML, ... }: {
+{ inputs, lib, ... }: {
 
   imports = [
     inputs.walker.homeManagerModules.default
@@ -8,6 +8,6 @@
     enable = true;
     # runAsService = true;
     # theme = "nixos";
-    config = importTOML ../../../stuff/config.toml;
+    config = lib.trivial.importTOML ../../../stuff/walker/config.toml;
   };
 }

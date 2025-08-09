@@ -1,12 +1,7 @@
-{ inputs, importTOML, ... }: {
-
-  # imports = [
-  #   inputs.walker.homeManagerModules.default
-  # ];
-
+{ lib, ... }: {
   programs.walker.theme = {
     # name = "meow";
-    layout = importTOML ../../../stuff/walker/black.toml;
+    layout = lib.trivial.importTOML ../../../stuff/walker/black.toml;
 
   style = ''
 @define-color foreground #cad3f5;
