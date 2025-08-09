@@ -22,9 +22,9 @@
         max_height      = 1440;
         cache_dir       = "";
         image_delay     = 0;
-        image_filter    = "catmull-rom";
-        image_quality   = 90;
-        sixel_fraction  = 15;
+        image_filter    = "triangle";
+        image_quality   = 85;
+        sixel_fraction  = 50;
         ueberzug_scale  = 1;
         ueberzug_offset = [ 0 0 0 0 ];
       };
