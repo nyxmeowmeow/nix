@@ -49,6 +49,7 @@
     "Mod+Shift+D".action.move-window-to-workspace = "discord";
     "Mod+Shift+W".action.move-window-to-workspace = "media";
     "Mod+Shift+P".action.move-window-to-workspace = "right";
+    "Mod+Shift+N".action.move-window-to-workspace = "alt";
 
 
     "Mod+H".action = focus-column-left;
