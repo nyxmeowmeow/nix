@@ -12,7 +12,7 @@
         show_hidden    = true;
         show_symlink   = true;
         scrolloff      = 5;
-        mouse_events   = [ "click" "scroll" ];
+        mouse_events   = [];
         title_format   = "Yazi: {cwd}";
       };
 
@@ -59,7 +59,7 @@
         find_offset = [ 0 0 50 3 ];
 
 # search
-        search_title  = " Search via {n} ";
+        search_title  = " {n} ";
         search_origin = "center";
         search_offset = [ 0 0 50 3 ];
 
