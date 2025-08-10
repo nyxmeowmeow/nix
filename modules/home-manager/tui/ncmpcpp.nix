@@ -1,5 +1,4 @@
 {
-
   programs.ncmpcpp = {
     enable = true;
     bindings = [

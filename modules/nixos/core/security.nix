@@ -1,7 +1,5 @@
 { username, ... }: {
-
   security.rtkit.enable = true;
-
   security.sudo.extraRules = [
     {
       users = [ username ];
@@ -25,7 +23,6 @@
       ];
     }
   ];
-
 
   security.polkit = {
     enable = true;

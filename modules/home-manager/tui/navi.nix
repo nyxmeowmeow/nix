@@ -1,6 +1,6 @@
 {
-programs.navi = {
-enable = true;
-enableBashIntegration = true;
-};
+  # programs.navi = {
+  #   enable = true;
+  #   enableBashIntegration = true;
+  # };
 }

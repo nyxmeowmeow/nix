@@ -1,43 +1,28 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-    # darkly
     cryptsetup
 
     # nyaa
     rqbit
 
-    zellij
-
-    # blender
-
-    zulu # java 21
-    zulu8 # java 8
-
-    # kitty
-    # ghostty
-
-    hyprpaper
-    hyprpicker
-    # qemu_kvm
-
-    # gnome-online-accounts
-    # gnome-control-center
-    # glib
-
-    quickshell
-
-    # expect
-
-    /* image editing */
+    /* image */
     # gimp
     krita
     # aseprite
+    qview
 
     /* video */
     ffmpeg
     mpv
     # davinci-resolve
     vulkan-tools
+    obs-studio
+    wf-recorder
+
+    /* graphics */
+    mesa
+    libGL
+    libdrm
 
     /* games */
     olympus
@@ -46,47 +31,47 @@
     vitetris
     cl-wordle
 
-    # zenity
-    # xdg-desktop-portal-termfilechooser
-    xdg-utils
-
     /* misc terminal stuff */
     termdown
     tty-clock
     fastfetch
+    zellij
+    # expect
 
-    qview
-    obs-studio
-    wf-recorder
+    /* audio */
     playerctl
     mpc
 
-    wl-clipboard
-
+    /* file */
     udiskie
     udisks2
     gvfs
+    # zenity
+    # xdg-desktop-portal-termfilechooser
+    xdg-utils
 
+    /* misc */
+    wl-clipboard
     wget
     dbus
+    dconf
     polkit_gnome
+    libevdev
+    # qemu_kvm
+    hyprpicker
+    quickshell
 
     dunst
     libnotify
 
-    dconf
-    mesa
-    libGL
-    libdrm
     xwayland
-    libevdev
 
+    /* wine */
     wine
     wine64
     # bottles
     # lutris
     # mono
-
 
     # (discord.override {
     #  withMoonlight = true;

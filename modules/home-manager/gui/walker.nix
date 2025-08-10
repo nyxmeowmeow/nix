@@ -1,5 +1,4 @@
 { inputs, lib, ... }: {
-
   imports = [
     inputs.walker.homeManagerModules.default
   ];

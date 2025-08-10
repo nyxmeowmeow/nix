@@ -1,5 +1,4 @@
 { pkgs, username, ... }: {
-
   virtualisation.docker.enable = true;
 
   services = {

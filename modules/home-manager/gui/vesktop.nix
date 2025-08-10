@@ -1,26 +1,15 @@
 {
-
   home.file.".config/vesktop/themes/vesktop_black.css".source = ../../../stuff/vesktop_black.css;
 
   programs.vesktop = {
     enable = true;
-
-
-
-
-
     settings = {
-
       discordBranch = "stable";
       minimizeToTray = false;
       arRPC = false;
       splashBackground = "#00000000";
       splashColor = "#00000000";
     };
-
-
-
-
 
     # vencord.settings = {
     #   enabledThemes = [
@@ -250,6 +239,5 @@
     #     WebContextMenus.enabled = true;
     #   };
     # };
-
   };
 }

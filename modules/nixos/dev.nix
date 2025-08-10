@@ -1,17 +1,14 @@
 { pkgs, ... }: {
-
   environment.systemPackages = with pkgs; [
-
-    libevdev
-
-
     gdb
-
 
     kotlin
     kotlin-language-server
     kotlin-interactive-shell
     gradle
+
+    zulu # java 21
+    zulu8 # java 8
 
     # zig
 

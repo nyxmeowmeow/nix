@@ -1,5 +1,4 @@
 { pkgs, ... }: {
-
   imports = [
   ./settings.nix
   ./keymap.nix

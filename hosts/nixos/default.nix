@@ -1,15 +1,11 @@
 {
   imports = [
-
-
     ./boot.nix
     ./hardware-configuration.nix
     ./configuration.nix
     ./packages.nix
     ./services.nix
     ./kanata.nix
-
-
 
     ../../modules/nixos/core/hardware.nix
     ../../modules/nixos/core/nix.nix
@@ -28,13 +24,6 @@
     ../../modules/nixos/stylix.nix
     # ./nixvim/default.nix
     # nixvim.nixosModules.nixvim
-
-
-
-
-
-
-
 
     ../../themes/black/nixos/default.nix
     ../../themes/everforest/nixos/default.nix

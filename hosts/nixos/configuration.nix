@@ -1,12 +1,20 @@
 { pkgs, username, ... }: {
-
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   users.users.${username} = {
     isNormalUser = true;
     description = "colon three";
-    extraGroups = [ "networkmanager" "wheel" "storage" "plugdev" "video" "audio" "input" "uinput" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "storage"
+      "plugdev"
+      "video"
+      "audio"
+      "input"
+      "uinput"
+    ];
     shell = pkgs.nushell;
   };
 
@@ -21,7 +29,10 @@
   };
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-gnome ];
+  xdg.portal.extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+  ];
 
 
   programs.firefox.enable = true;

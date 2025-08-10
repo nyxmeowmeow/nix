@@ -1,6 +1,6 @@
 {
-programs.nixvim.plugins.colorizer = {
-  enable = true;
+  programs.nixvim.plugins.colorizer = {
+    enable = true;
     settings = {
       RGB      = true;
       RRGGBB   = true;

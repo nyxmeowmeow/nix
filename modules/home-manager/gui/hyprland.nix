@@ -1,5 +1,4 @@
-{ pkgs, lib, wm, ... }: {
-
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     hyprprop
     hyprland

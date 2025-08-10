@@ -1,8 +1,6 @@
 {
-
   programs.btop = {
     enable = true;
-
     settings = {
       color_theme = "btop.theme";
       theme_background = false;
@@ -11,7 +9,7 @@
       vim_keys = false;
       rounded_corners = true;
 
-# "default", "braille", "block", "tty"
+      # "default", "braille", "block", "tty"
       graph_symbol = "braille";
       graph_symbol_cpu = "default";
       graph_symbol_gpu = "default";
@@ -19,46 +17,38 @@
       graph_symbol_net = "default";
       graph_symbol_proc = "default";
 
-# Manually set which boxes to show. Available values are "cpu mem net proc" and "gpu0" through "gpu5", separate values with whitespace.
+      # cpu mem net proc gpu0 .. gpu5
       shown_boxes = "cpu mem net proc";
 
-# Update time in milliseconds, recommended 2000 ms or above for better sample times for graphs.
       update_ms = 500;
 
       proc_sorting = "cpu lazy";
 
 
-#* Reverse sorting order, true or false.
       proc_reversed = false;
-
-#* Show processes as a tree.
       proc_tree = false;
-
-#* Use the cpu graph colors in the process list.
       proc_colors = true;
-
-#* Use a darkening gradient in the process list.
       proc_gradient = true;
 
-#* If process cpu usage should be of the core it's running on or usage of the total available cpu power.
+      # if process cpu usage should be of the core its running on or usage of the total available cpu power
       proc_per_core = false;
 
-#* Show process memory as bytes instead of percent.
+      # show process memory as bytes instead of percent
       proc_mem_bytes = true;
 
-#* Show cpu graph for each process.
+      # show cpu graph for each process
       proc_cpu_graphs = true;
 
-#* Use /proc/[pid]/smaps for memory information in the process info box (very slow but more accurate)
+      # use /proc/[pid]/smaps for memory information in the process info box (very slow but more accurate)
       proc_info_smaps = false;
 
-#* Show proc box on left side of screen instead of right.
+      # show proc box on left side of screen instead of right
       proc_left = false;
 
-#* (Linux) Filter processes tied to the Linux kernel(similar behavior to htop).
-      proc_filter_kernel = false;
+      # filter processes tied to the Linux kernel (similar behavior to htop)
+      proc_filter_kernel = true;
 
-#* In tree-view, always accumulate child process resources in the parent process.
+      # in tree-view, always accumulate child process resources in the parent process
       proc_aggregate = false;
 
 #* Sets the CPU stat shown in upper half of the CPU graph, "total" is always available.
