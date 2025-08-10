@@ -1,4 +1,4 @@
-{ flake_dir, username, ... }: {
+{ flake_dir, ... }: {
   xdg.desktopEntries = {
     melee = {
       name = "melee";

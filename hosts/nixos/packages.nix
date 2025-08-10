@@ -28,54 +28,58 @@
 
     # expect
 
+    /* image editing */
     # gimp
     krita
-    aseprite
+    # aseprite
 
-    olympus
-    osu-lazer
-    tt # typing
-    vitetris
-    cl-wordle
-
+    /* video */
     ffmpeg
+    mpv
     # davinci-resolve
     vulkan-tools
+
+    /* games */
+    olympus
+    osu-lazer
+    tt
+    vitetris
+    cl-wordle
 
     # zenity
     # xdg-desktop-portal-termfilechooser
     xdg-utils
 
+    /* misc terminal stuff */
     termdown
     tty-clock
+    fastfetch
 
     qview
-    mpc
-    mpv
     obs-studio
     wf-recorder
+    playerctl
+    mpc
 
-    libevdev
     wl-clipboard
+
     udiskie
     udisks2
     gvfs
+
     wget
     dbus
-    vesktop
-    # moonlight
     polkit_gnome
+
     dunst
     libnotify
-    playerctl
-    yazi
-    # stylua
-    fastfetch
+
     dconf
     mesa
     libGL
     libdrm
     xwayland
+    libevdev
 
     wine
     wine64
@@ -88,6 +92,7 @@
     #  withMoonlight = true;
     #  moonlight = inputs.moonlight.packages.${pkgs.system}.moonlight-mod;
     #  })
+    vesktop
 
   ] ++ [
     inputs.pollymc.packages."x86_64-linux".default
