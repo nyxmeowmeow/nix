@@ -9,8 +9,6 @@
 #            1 2 3 4       7 8 9 0
 #            0 9 8 5       6 3 2 1
 #                  .       spc
-
-
 { pkgs, ... }: {
   services.kanata = {
     enable = true;
@@ -310,24 +308,24 @@
  s (t! homerowmod $tot 120 s (layer-while-held syms))
  e (t! homerowmod $tot 120 e (layer-while-held syms))
  ;; define each letter as typing-layer trigger
- q ( t! letter 200 200 q)
- w ( t! letter 200 200 w)
- f ( t! letter 200 200 f)
- l ( t! letter 200 200 l)
- j ( t! letter 200 200 j)
- y ( t! letter 200 200 y)
- u ( t! letter 200 200 u)
- d ( t! letter 200 200 d)
- o ( t! letter 200 200 o)
- p ( t! letter 200 200 p)
- g ( t! letter 200 200 g)
- ; ( t! letter 200 200 ;)
- z ( t! letter 200 200 z)
- x ( t! letter 200 200 x)
- v ( t! letter 200 200 v)
- b ( t! letter 200 200 b)
- k ( t! letter 200 200 k)
- m ( t! letter 200 200 m)
+ q (t! letter 200 200 q)
+ w (t! letter 200 200 w)
+ f (t! letter 200 200 f)
+ l (t! letter 200 200 l)
+ j (t! letter 200 200 j)
+ y (t! letter 200 200 y)
+ u (t! letter 200 200 u)
+ d (t! letter 200 200 d)
+ o (t! letter 200 200 o)
+ p (t! letter 200 200 p)
+ g (t! letter 200 200 g)
+ ; (t! letter 200 200 ;)
+ z (t! letter 200 200 z)
+ x (t! letter 200 200 x)
+ v (t! letter 200 200 v)
+ b (t! letter 200 200 b)
+ k (t! letter 200 200 k)
+ m (t! letter 200 200 m)
 
 f15 S--
 f16 S-9
@@ -518,10 +516,10 @@ r .
 ))
 
 (deftemplate letter (timeouttap timeouthold keytap)
-      (switch 
-            (nop1) (multi (unmod $keytap)  @.tp) break  ;;check for typing mode
-            () (multi                $keytap  @.tp) break
-    )
+ (switch 
+  (nop1) (multi (unmod $keytap)  @.tp) break  ;;check for typing mode
+  () (multi                $keytap  @.tp) break
+ )
 )
         '';
       };

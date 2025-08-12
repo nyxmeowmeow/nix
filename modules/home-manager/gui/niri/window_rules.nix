@@ -19,6 +19,25 @@
     block-out-from = "screencast";
     open-on-workspace = "discord";
   }
+  
+  {
+    matches = [ { 
+      app-id = "chaos";
+    } ];
+    open-on-workspace = "game";
+    min-width = 2560;
+    max-width = 2560;
+    min-height = 1080;
+    max-height = 1080;
+    geometry-corner-radius = {
+        top-left = 0.0;
+        top-right = 0.0;
+        bottom-left = 0.0;
+        bottom-right = 0.0;
+      };
+    variable-refresh-rate = false;
+    open-floating = false;
+  }
 
   {
     matches = [ { 
