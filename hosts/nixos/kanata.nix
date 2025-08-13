@@ -479,8 +479,8 @@ r .
   (    d w) S-8 15 all-released (over sup)
   
   (l o    ) S-' 15 all-released (over sup)
-  (  o u  ) caps 13 all-released (over sup)
-  (    u j) S-1 17 all-released (over sup)
+  (  o u  ) S-1 13 all-released (over sup)
+  (    u j) caps 17 all-released (over sup)
 
   (n s    ) S-, 15 all-released (over sup)
   (  s t  ) =   15 all-released (over sup)

@@ -36,13 +36,13 @@
     }
 
     { # put top of screen at cursor
-      key = "zk";
+      key = "zj";
       action = "zt";
       mode = [ "n" "v" "x" ];
     }
 
     { # put bottom of screen at cursor
-      key = "zj";
+      key = "zk";
       action = "zb";
       mode = [ "n" "v" "x" ];
     }
