@@ -2,6 +2,10 @@
   programs.nixvim.plugins.cmp = {
     enable = true;
 
+    lazyLoad.settings.event = [
+      "DeferredUIEnter"
+    ];
+
     settings = {
       sources = [
       { name = "nvim_lsp"; }

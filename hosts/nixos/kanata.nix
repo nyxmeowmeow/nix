@@ -480,7 +480,7 @@ r .
   
   (l o    ) S-' 15 all-released (over sup)
   (  o u  ) S-1 13 all-released (over sup)
-  (    u j) caps 17 all-released (over sup)
+  (    u j) caps 15 all-released (over sup)
 
   (n s    ) S-, 15 all-released (over sup)
   (  s t  ) =   15 all-released (over sup)

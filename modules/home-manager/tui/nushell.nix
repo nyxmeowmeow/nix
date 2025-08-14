@@ -221,7 +221,7 @@ in {
 
       meow = "echo :3"; # so silly
 
-      na = "nvim ~/nix/packages.nix -c '/systemPackages'";
+      # na = "nvim ~/nix/packages.nix -c '/systemPackages'";
       ns = "nix-shell -p";
 
       n = "nvim";
