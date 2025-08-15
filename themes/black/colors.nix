@@ -18,6 +18,7 @@
 
 
   base = "#000000";
+  bg = "#000000";
   crust = "#181926";
   mantle = "#1e2030";
   surface0 = "#363a4f";
@@ -25,6 +26,7 @@
   overlay = "#6e738d";
   subtext = "#a5adcb";
   text = "#cad3f5";
+  fg = "#cad3f5";
   lavender = "#b7bdf8";
   blue = "#8aadf4";
   mauve = "#c6a0f6";

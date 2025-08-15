@@ -1,6 +1,7 @@
 {
   imports = [
     ./btop_kanso.nix
+    ./mpv_kanso.nix
     ./gtk_kanso.nix
     ./qt_kanso.nix
     ./dunst_kanso.nix

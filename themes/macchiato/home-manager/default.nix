@@ -1,6 +1,7 @@
 {
   imports = [
     ./btop_macchiato.nix
+    ./mpv_macchiato.nix
     ./dunst_macchiato.nix
     ./niri_macchiato.nix
     ./gtk_macchiato.nix
