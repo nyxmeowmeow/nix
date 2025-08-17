@@ -6,8 +6,9 @@ in {
 
     programs.niri.settings.layout = {
       focus-ring = {
-      active.color = col.blue;
-      inactive.color = col.blue;
+        active.color = col.blue;
+        # inactive.color = col.blue;
+        inactive.color = "#00000000";
       };
       tab-indicator = {
         active.color = col.blue;

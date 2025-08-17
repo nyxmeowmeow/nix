@@ -44,6 +44,7 @@
 
   magic (switch
   ;; TODO | -> & for closures
+  ;; TODO swap repeat and magic function for e
 
 
     ((and (key-history n 4) (key-history u 3) (key-history l 2) (key-history nop1 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
@@ -492,15 +493,15 @@ r .
   (  o u  ) S-1 13 all-released (over sup)
   (    u j) caps 15 all-released (over sup)
 
-  (n s    ) S-, 15 all-released (over sup)
+  (n s    ) S-, 14 all-released (over sup)
   (  s t  ) =   15 all-released (over sup)
   (  s   c) S-` 17 all-released (over sup)
-  (    t c) [   15 all-released (over sup)
+  (    t c) [   14 all-released (over sup)
 
-  (h a    ) ]   15 all-released (over sup)
+  (h a    ) ]   14 all-released (over sup)
   (h   e  ) del 15 all-released (over sup)
-  (  a e  ) +   15 all-released (over sup)
-  (    e i) S-. 15 all-released (over sup)
+  (  a e  ) +   14 all-released (over sup)
+  (    e i) S-. 14 all-released (over sup)
 
   (, .    ) \   20 all-released (over sup)
   (  . k  ) S-\ 20 all-released (over sup)
