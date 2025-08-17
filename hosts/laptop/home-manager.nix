@@ -7,6 +7,7 @@
     extraSpecialArgs = {
       theme = config.theme;
       host = config.networking.hostName;
+      wm = config.wm;
       zen-browser = inputs.zen-browser;
     };
 
@@ -24,6 +25,7 @@
         ../../modules/home-manager/tui/nixvim/default.nix
 
 
+        ../../modules/home-manager/gui/walker.nix
 
         # ./hyprland.nix
         ../../modules/home-manager/gui/dunst.nix
@@ -43,7 +45,7 @@
         ../../modules/home-manager/tui/nushell.nix
         ../../modules/home-manager/tui/starship.nix
         ../../modules/home-manager/tui/yazi/yazi.nix
-        ../../modules/home-manager/tui/zellij/default.nix.nix
+        ../../modules/home-manager/tui/zellij/default.nix
         ../../modules/home-manager/tui/zoxide.nix
         ./niri.nix
 #        ../../modules/home-manager/gui/emacs/emacs.nix

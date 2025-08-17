@@ -3,7 +3,7 @@
     ./boot.nix
     ./hardware-configuration.nix
     ./configuration.nix
-    ./kanata.nix
+    # ./kanata.nix
     ./packages.nix
     ./services.nix
     ../../modules/nixos/options.nix
