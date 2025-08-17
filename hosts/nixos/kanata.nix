@@ -45,6 +45,8 @@
   magic (switch
   ;; TODO | -> & for closures
   ;; TODO swap repeat and magic function for e
+  ;; TODO see -> m
+  ;; TODO us -> e
 
 
     ((and (key-history n 4) (key-history u 3) (key-history l 2) (key-history nop1 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
