@@ -47,6 +47,10 @@
   ;; TODO swap repeat and magic function for e
   ;; TODO see -> m
   ;; TODO us -> e
+  ;; TODO pln -> println!("
+  ;; TODO pf -> printf("
+  ;; TODO spc a -> spc
+  ;; TODO spc i -> spc
 
 
     ((and (key-history n 4) (key-history u 3) (key-history l 2) (key-history nop1 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
@@ -139,7 +143,7 @@
     ((input-history real j 2)) (macro u s t) break
     ((and (input-history fake typingmode 2) (input-history real j 3))) (macro u s t) break
 
-    ((key-history \ 1)) (macro n) break
+    ((key-history \ 1)) (macro S-7) break
 
 
     ((key-history 1 1)) (macro [) break
