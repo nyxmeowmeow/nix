@@ -1,7 +1,7 @@
 {
   programs.niri.settings = {
 
-  debug.preview-render = "screencast";
+  # debug.preview-render = "screencast";
   # debug.preview-render = "screen-capture";
 
   #   xwayland-satellite = {
