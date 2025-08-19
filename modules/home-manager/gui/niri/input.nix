@@ -4,6 +4,7 @@
       focus-follows-mouse.enable = true;
       mouse = {
         accel-profile = "flat";
+        accel-speed = 5.2;
       };
       # FIXME
       # tablet = {
@@ -11,6 +12,6 @@
       #   map-to-output = "DP-1";
       # };
     };
-    cursor.hide-after-inactive-ms = 1000;
+    cursor.hide-after-inactive-ms = 666;
   };
 }
