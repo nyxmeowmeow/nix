@@ -4,9 +4,8 @@
       focus-follows-mouse.enable = true;
       mouse = {
         accel-profile = "flat";
-        accel-speed = 5.2;
       };
-      # FIXME
+      # FIXME no worky
       # tablet = {
       #   enable = true;
       #   map-to-output = "DP-1";
