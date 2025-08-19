@@ -9,7 +9,7 @@ in {
         # active.color = col.blue;
         active.gradient = {
           angle = 45;
-          relative-to = "workspace-view";
+          # relative-to = "workspace-view";
           from = col.blue;
           to = col.violet_sat;
         };
