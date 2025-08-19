@@ -1,8 +1,8 @@
 {
   programs.niri.settings.layout = {
     gaps = 10;
-    # center-focused-column = "never";
-    center-focused-column = "on-overflow";
+    center-focused-column = "never";
+    # center-focused-column = "on-overflow";
     always-center-single-column = true;
 
 
