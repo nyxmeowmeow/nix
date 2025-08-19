@@ -2,6 +2,7 @@
   imports = [
     inputs.niri.homeModules.niri 
     ./settings.nix 
+    ./env.nix
     ./binds.nix 
     ./layout.nix
     ./animations.nix
