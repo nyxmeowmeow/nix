@@ -4,7 +4,6 @@
       focus-follows-mouse.enable = true;
       mouse = {
         accel-profile = "flat";
-        accel-speed = 0.2;
       };
       # FIXME
       # tablet = {
