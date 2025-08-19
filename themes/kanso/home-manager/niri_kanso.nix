@@ -6,7 +6,13 @@ in {
 
     programs.niri.settings.layout = {
       focus-ring = {
-        active.color = col.blue;
+        # active.color = col.blue;
+        active.gradient = {
+          angle = 45;
+          relative-to = "workspace-view";
+          from = col.blue;
+          to = col.violet_sat;
+        };
         # inactive.color = col.blue;
         inactive.color = "#00000000";
       };
