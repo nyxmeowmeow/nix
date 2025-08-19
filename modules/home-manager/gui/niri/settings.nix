@@ -1,5 +1,15 @@
 {
   programs.niri.settings = {
+
+  debug.preview-render = "screencast";
+  # debug.preview-render = "screen-capture";
+
+  #   xwayland-satellite = {
+  #     enable = true;
+  #     path = "xwayland-satellite";
+  #   };
+
+
     prefer-no-csd = true;
     screenshot-path = "~/Pictures/Screenshots/%d/%m/%Y_%H-%M-%S.png";
     hotkey-overlay.skip-at-startup = true;
