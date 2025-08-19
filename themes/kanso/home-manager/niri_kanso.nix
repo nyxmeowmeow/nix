@@ -5,6 +5,7 @@ in {
   config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
 
     programs.niri.settings.layout = {
+    background-color = "#000000";
       focus-ring = {
         # active.color = col.blue;
         active.gradient = {
