@@ -27,7 +27,8 @@
     /* games */
     olympus
     osu-lazer
-    tt
+    # tt
+    ttyper
     vitetris
     cl-wordle
 
