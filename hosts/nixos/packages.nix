@@ -70,9 +70,9 @@
     /* wine */
     wine
     wine64
-    # bottles
-    # lutris
-    # mono
+    bottles
+    lutris
+    mono
 
     # (discord.override {
     #  withMoonlight = true;
