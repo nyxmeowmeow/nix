@@ -17,7 +17,8 @@
 
 
     overview = {
-      # backdrop-color = 
+      backdrop-color = "transparent";
+      # zoom = 0.70;
       workspace-shadow.enable = false;
     };
 
