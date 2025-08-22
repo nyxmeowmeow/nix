@@ -31,6 +31,7 @@
     ttyper
     vitetris
     cl-wordle
+    luanti
 
     /* misc terminal stuff */
     termdown
