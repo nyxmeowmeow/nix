@@ -8,16 +8,6 @@ in {
 
     configFile.text = /* nu */ ''
 
-      def rerun-with [new_cmd: string] {
-        let hist = history | get command | last
-          let parsed = parse $hist
-
-          let args = $parsed.pipeline.commands.0.parts | skip 1
-
-          do {
-            ^$new_cmd ...$args
-          }
-      }
 
 
       # cd && ls
@@ -39,13 +29,13 @@ in {
         }
       }
 
-      def record [] {
+      def record [] { # simple screen record without obs
         cd ~/Videos
         let date = date now | format date "%Y-%m-%d %H:%M:%S"
         wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
 
-      # convert .mp4 file to .mov
+      # convert .mp4 file to .mov for davinci resolve
       def movify [msg: string] {
           let input = $msg
           let base = (echo $msg | path parse | get stem)
@@ -57,6 +47,9 @@ in {
         nix run nixpkgs#($msg)
       }
 
+      def ,, [msg: string] {
+        nix-shell -p ($msg)
+      }
 
 
       def nr [...msg: string] {
@@ -184,10 +177,9 @@ in {
       ffmpreg = "ffmpeg";
 
       k = "pkill";
-
+      cl = "clipse -clear"; # clear clipboard history
       back = "cd -";
 
-      # hist="history | lines | fzf | read -l command; eval $command";
       fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time
