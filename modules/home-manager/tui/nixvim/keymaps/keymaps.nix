@@ -17,9 +17,15 @@
       # lua = true;
     }
 
+    # { # write & quit
+    #   key = "Zz";
+    #   action = "ZZ";
+    #   mode = [ "n" "v" "x" ];
+    # }
+
     { # write & quit
-      key = "Zz";
-      action = "ZZ";
+      key = "ZZ";
+      action = ":echo \"use :x\"";
       mode = [ "n" "v" "x" ];
     }
 
