@@ -366,6 +366,9 @@ ent (tap-hold-press 120 120 ent (layer-while-held mods))
 8 S-]
 
 
+, (tap-hold-press 120 120 , (layer-while-held syms))
+; (tap-hold-press 120 120 ; (layer-while-held syms))
+
 )
 
 (deflayermap mods
