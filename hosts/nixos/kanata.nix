@@ -47,6 +47,7 @@
   ;; TODO swap repeat and magic function for e
   ;; TODO : -> q
   ;; TODO convert rust ints to c99 ints
+  ;; TODO? fa -> lse
 
 
     ;; println!("
@@ -65,10 +66,15 @@
     
 
     ;; seem (yikes stretch)
+    ;; FIXME
     ((and (key-history s 3) (key-history e 2) (input-history real bspc 1))) (macro m) break
 
     ;; ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
     ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro C-w S-n S-u S-l S-l) break
+
+
+
+
 
 
 
@@ -106,6 +112,11 @@
 
 
 ;; sfb
+
+    ;; fix
+    ((and (key-history f 2) (key-history i 1))) (macro x) break
+    ;; six
+    ((and (key-history s 2) (key-history i 1))) (macro x) break
 
     ;; nix
     ((and(key-history n 2) (key-history i 1))) (macro x) break
@@ -191,6 +202,9 @@
     ((and (key-history t 2) (key-history r 1))) (macro u e) break
 
     ((input-history real f16 2)) (macro S-9) break
+
+    ;; repeat the magic key for "nixpkgs"
+    ((key-history x 1)) (macro p k g s) break
 
 
     () rpt break
