@@ -25,7 +25,7 @@
 
     { # write & quit
       key = "ZZ";
-      action = ":echo \"use :x\"";
+      action = ":echo \"use :x\"<cr>";
       mode = [ "n" "v" "x" ];
     }
 
