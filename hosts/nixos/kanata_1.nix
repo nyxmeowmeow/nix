@@ -318,33 +318,33 @@
 
 (deflayermap (base)
  ;; define home row mods (they act as typing-layer triggers, too )
- ;;t (t! homerowmod $tot 110 t lsft)
- ;;a (t! homerowmod $tot 110 a rsft)
- ;;c (t! homerowmod $tot 110 c lctl)
- ;;h (t! homerowmod $tot 110 h rctl)
- ;;n (t! homerowmod $tot 130 n lsft)
- ;;i (t! homerowmod $tot 130 i rsft)
- ;;s (t! homerowmod $tot 120 s (layer-while-held syms))
- ;;e (t! homerowmod $tot 120 e (layer-while-held syms))
- ;;;; define each letter as typing-layer trigger
- ;; q (t! letter 200 200 q)
- ;; w (t! letter 200 200 w)
- ;; f (t! letter 200 200 f)
- ;; l (t! letter 200 200 l)
- ;; j (t! letter 200 200 j)
- ;; y (t! letter 200 200 y)
- ;; u (t! letter 200 200 u)
- ;; d (t! letter 200 200 d)
- ;; o (t! letter 200 200 o)
- ;; p (t! letter 200 200 p)
- ;; g (t! letter 200 200 g)
- ;; ; (t! letter 200 200 ;)
- ;; z (t! letter 200 200 z)
- ;; x (t! letter 200 200 x)
- ;; v (t! letter 200 200 v)
- ;; b (t! letter 200 200 b)
- ;; k (t! letter 200 200 k)
- ;; m (t! letter 200 200 m)
+ t (t! homerowmod $tot 110 t lsft)
+ a (t! homerowmod $tot 110 a rsft)
+ c (t! homerowmod $tot 110 c lctl)
+ h (t! homerowmod $tot 110 h rctl)
+ n (t! homerowmod $tot 130 n lsft)
+ i (t! homerowmod $tot 130 i rsft)
+ s (t! homerowmod $tot 120 s (layer-while-held syms))
+ e (t! homerowmod $tot 120 e (layer-while-held syms))
+ ;; define each letter as typing-layer trigger
+ q (t! letter 200 200 q)
+ w (t! letter 200 200 w)
+ f (t! letter 200 200 f)
+ l (t! letter 200 200 l)
+ j (t! letter 200 200 j)
+ y (t! letter 200 200 y)
+ u (t! letter 200 200 u)
+ d (t! letter 200 200 d)
+ o (t! letter 200 200 o)
+ p (t! letter 200 200 p)
+ g (t! letter 200 200 g)
+ ; (t! letter 200 200 ;)
+ z (t! letter 200 200 z)
+ x (t! letter 200 200 x)
+ v (t! letter 200 200 v)
+ b (t! letter 200 200 b)
+ k (t! letter 200 200 k)
+ m (t! letter 200 200 m)
 
 f15 S--
 f16 S-9
@@ -357,8 +357,6 @@ f18 S-;
 lctrl =
 bspc @rpeat
 
-ent (tap-hold-press 120 120 ent (layer-while-held mods))
-
 ' -
 
 
@@ -366,18 +364,6 @@ ent (tap-hold-press 120 120 ent (layer-while-held mods))
 8 S-]
 
 
-)
-
-(deflayermap mods
-n lsft
-s lsft
-t lsft
-c lctl
-
-h lctl
-a lsft
-e lsft
-i lsft
 )
 
 (deflayermap krita
@@ -388,38 +374,40 @@ spc r
 )
 
 (deflayermap over
+
+
 f18 tab
 f15 8
 f16 9
 f17 0
 f19 lsft
 
-;; b (multi b (layer-switch over))
-;; f (multi f (layer-switch over))
-;; d (multi d (layer-switch over))
-;; w (multi w (layer-switch over))
-;; p (multi p (layer-switch over))
-;; n (multi n (layer-switch over))
-;; s (multi s (layer-switch over))
-;; t (multi t (layer-switch over))
-;; c (multi c (layer-switch over))
-;; y (multi y (layer-switch over))
-;; , (multi , (layer-switch over))
-;; . (multi . (layer-switch over))
-;; k (multi k (layer-switch over))
-;; g (multi g (layer-switch over))
-;; v (multi v (layer-switch over))
-;; ' (multi ' (layer-switch over))
-;; l (multi l (layer-switch over))
-;; o (multi o (layer-switch over))
-;; u (multi u (layer-switch over))
-;; j (multi j (layer-switch over))
-;; x (multi x (layer-switch over))
-;; m (multi m (layer-switch over))
-;; h (multi h (layer-switch over))
-;; a (multi a (layer-switch over))
-;; e (multi e (layer-switch over))
-;; i (multi i (layer-switch over))
+b (multi b (layer-switch over))
+f (multi f (layer-switch over))
+d (multi d (layer-switch over))
+w (multi w (layer-switch over))
+p (multi p (layer-switch over))
+n (multi n (layer-switch over))
+s (multi s (layer-switch over))
+t (multi t (layer-switch over))
+c (multi c (layer-switch over))
+y (multi y (layer-switch over))
+, (multi , (layer-switch over))
+. (multi . (layer-switch over))
+k (multi k (layer-switch over))
+g (multi g (layer-switch over))
+v (multi v (layer-switch over))
+' (multi ' (layer-switch over))
+l (multi l (layer-switch over))
+o (multi o (layer-switch over))
+u (multi u (layer-switch over))
+j (multi j (layer-switch over))
+x (multi x (layer-switch over))
+m (multi m (layer-switch over))
+h (multi h (layer-switch over))
+a (multi a (layer-switch over))
+e (multi e (layer-switch over))
+i (multi i (layer-switch over))
 )
 
 (deflayermap sup
@@ -548,9 +536,24 @@ i end
   (        f17 ;) S-2 15 all-released (over sup)
 
   (h spc) \ 15 all-released (over sup)
+)
 
 
 
+(deftemplate homerowmod (timeouttap timeouthold keytap keyhold)
+   (switch
+   (nop1) $keytap break ;;check for typing mode
+  () (tap-hold $timeouttap $timeouthold
+      (multi $keytap  @.tp)
+      $keyhold
+  ) break
+))
+
+(deftemplate letter (timeouttap timeouthold keytap)
+ (switch 
+  (nop1) (multi (unmod $keytap)  @.tp) break  ;;check for typing mode
+  () (multi                $keytap  @.tp) break
+ )
 )
         '';
       };
