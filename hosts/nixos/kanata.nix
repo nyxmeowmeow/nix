@@ -51,6 +51,7 @@
   ;; TODO pf -> printf("
   ;; TODO spc a -> spc
   ;; TODO spc i -> spc
+  ;; TODO ! -> (
 
 
     ((and (key-history n 4) (key-history u 3) (key-history l 2) (key-history nop1 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
@@ -352,7 +353,7 @@ f19 @magic
 rsft bspc
 ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
-lctrl -
+lctrl =
 bspc @rpeat
 
 
@@ -495,11 +496,15 @@ c f8
 . f10
 k f11
 g f12
+
+h home
+a pgup
+e pgdn
+i end
 )
 
 
 (defchordsv2
-
   (b f    ) S-6 20 all-released (over sup)
   (  f d  ) S-7 15 all-released (over sup)
   (  f   w) `   20 all-released (over sup)
@@ -510,7 +515,7 @@ g f12
   (    u j) caps 15 all-released (over sup)
 
   (n s    ) S-, 14 all-released (over sup)
-  (  s t  ) =   15 all-released (over sup)
+  (  s t  ) -   15 all-released (over sup)
   (  s   c) S-` 17 all-released (over sup)
   (    t c) [   14 all-released (over sup)
 
