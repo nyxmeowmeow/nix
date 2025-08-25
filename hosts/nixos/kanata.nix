@@ -44,20 +44,31 @@
  .tp (hold-for-duration 30 typingmode)
 
   magic (switch
-  ;; TODO | -> & for closures
   ;; TODO swap repeat and magic function for e
-  ;; TODO see -> m
-  ;; TODO us -> e
-  ;; TODO pln -> println!("
-  ;; TODO pf -> printf("
-  ;; TODO spc a -> spc
-  ;; TODO spc i -> spc
-  ;; TODO ! -> (
   ;; TODO : -> q
+  ;; TODO convert rust ints to c99 ints
 
 
-    ;; ((and (key-history n 3) (key-history u 2) (key-history l 1) )) (macro bspc bspc bspc S-n S-u S-l S-l) break
-    ((and (key-history n 3) (key-history u 2) (key-history l 1) )) (macro C-w S-n S-u S-l S-l) break
+    ;; println!("
+    ((and (key-history p 3) (key-history l 2) (key-history n 1))) (macro bspc bspc r i n t l n S-1 S-9 S-') break
+
+    ;; printf("
+    ((and (key-history p 2) (key-history f 1))) (macro bspc r i n t f S-9 S-') break
+    
+
+    ;; faster space for shorter words
+    ((and (key-history spc 2) (key-history a 1))) (macro spc) break
+    ((and (key-history spc 2) (key-history i 1))) (macro spc) break
+
+
+    ((and (key-history u 2) (key-history s 1))) (macro e) break
+    
+
+    ;; seem (yikes stretch)
+    ((and (key-history s 3) (key-history e 2) (key-history e 1))) (macro m) break
+
+    ;; ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
+    ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro C-w S-n S-u S-l S-l) break
 
 
 
@@ -71,8 +82,10 @@
     ((and (key-history s 2) (key-history t 1))) (macro d) break
 
   ;; https://
-    ((and (input-history real h 3) (input-history real t 2))) (macro t p s S-; / /) break
+    ((and (key-history h 2) (key-history t 1))) (macro t p s S-; / /) break
 
+  ;; https://www.
+    ((and (key-history h 3) (key-history t 2) (key-history w 1))) (macro t p s S-; / / w w w .) break
 
 
 
@@ -117,7 +130,7 @@
     ((key-history \ 1)) (macro S-7) break
 
 
-    ((key-history 1 1)) (macro [) break
+    ((key-history 1 1)) (macro S-9) break
 
   ;; >>
     ((key-history . 1)) (macro S-.) break
