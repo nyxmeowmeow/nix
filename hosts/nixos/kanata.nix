@@ -53,13 +53,10 @@
   ;; TODO spc a -> spc
   ;; TODO spc i -> spc
   ;; TODO ! -> (
+  ;; TODO : -> q
 
 
-    ((and (key-history n 4) (key-history u 3) (key-history l 2) (key-history nop1 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
-    ((and (key-history n 4) (key-history u 3) (key-history nop1 2) (key-history l 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
-    ((and (key-history n 4) (key-history nop1 3) (key-history u 2) (key-history l 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
-    ((and (input-history real n 5) (input-history real u 4) (input-history real l 3) (input-history fake typingmode 2))) (macro bspc bspc bspc S-n S-u S-l S-l) break
-    ((and (input-history real n 5) (input-history real u 4) (input-history fake typingmode 3) (input-history real l 2))) (macro bspc bspc bspc S-n S-u S-l S-l) break
+    ((and (key-history n 3) (key-history u 2) (key-history l 1) )) (macro bspc bspc bspc S-n S-u S-l S-l) break
 
 
 

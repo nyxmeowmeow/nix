@@ -176,14 +176,15 @@ in {
 
       ffmpreg = "ffmpeg";
 
-      k = "pkill";
+      # k = "pkill";
       cl = "clipse -clear"; # clear clipboard history
       back = "cd -";
-
       fg = "job unfreeze";
 
       sudo = "sudo -k"; # prompt every time
-      rm = "trash -i"; # prompt every time
+      # rm = "trash -i"; # prompt every time
+      tr = "trash -i"; # prompt every time
+      rm = "rm -i"; # prompt every time
       mv = "mv -i"; # prompt every time
       ln = "ln -i"; # prompt every time
 
