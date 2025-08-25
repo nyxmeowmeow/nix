@@ -140,8 +140,8 @@
     ((and (input-history fake typingmode 2) (input-history real p 3))) (macro y) break
 
 
-    ((input-history real j 2)) (macro u s t) break
-    ((and (input-history fake typingmode 2) (input-history real j 3))) (macro u s t) break
+    ((input-history real j 2)) (macro i) break
+    ((and (input-history fake typingmode 2) (input-history real j 3))) (macro i) break
 
     ((key-history \ 1)) (macro S-7) break
 
