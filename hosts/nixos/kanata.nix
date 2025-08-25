@@ -65,7 +65,7 @@
     
 
     ;; seem (yikes stretch)
-    ((and (key-history s 3) (key-history e 2) (key-history e 1))) (macro m) break
+    ((and (key-history s 3) (key-history e 2) (input-history real bspc 1))) (macro m) break
 
     ;; ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
     ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro C-w S-n S-u S-l S-l) break
@@ -114,17 +114,6 @@
 
 
 
-    ((key-history i 1)) (macro z) break
-
-    ;; wget
-    ((key-history w 1)) (macro g) break
-
-    ((key-history c 1)) (macro y) break
-
-    ((key-history p 1)) (macro y) break
-
-
-    ((key-history j 1)) (macro i) break
 
     ;; |& closures with references
     ((key-history \ 1)) (macro S-7) break
@@ -165,6 +154,20 @@
 
 
 ;; sfb
+    ((key-history g 1)) (macro y) break
+
+    ((key-history i 1)) (macro z) break
+
+    ;; wget
+    ((key-history w 1)) (macro g) break
+
+    ((key-history c 1)) (macro y) break
+
+    ((key-history p 1)) (macro y) break
+
+
+    ((key-history j 1)) (macro i) break
+
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
