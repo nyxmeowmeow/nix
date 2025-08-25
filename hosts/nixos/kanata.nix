@@ -356,6 +356,7 @@ f18 S-;
 lctrl =
 bspc @rpeat
 
+' -
 
 
 3 S-[
@@ -510,12 +511,12 @@ i end
   (  f   w) `   20 all-released (over sup)
   (    d w) S-8 15 all-released (over sup)
   
-  (l o    ) S-' 15 all-released (over sup)
+  (l o    ) S-' 14 all-released (over sup)
   (  o u  ) S-1 13 all-released (over sup)
   (    u j) caps 15 all-released (over sup)
 
   (n s    ) S-, 14 all-released (over sup)
-  (  s t  ) -   15 all-released (over sup)
+  (  s t  ) '   14 all-released (over sup)
   (  s   c) S-` 17 all-released (over sup)
   (    t c) [   14 all-released (over sup)
 
