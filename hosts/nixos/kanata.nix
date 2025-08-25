@@ -350,7 +350,7 @@ f17 S-0
 lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 f19 @magic
 rsft bspc
-ralt tab
+ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
 lctrl -
 bspc @rpeat
@@ -446,14 +446,9 @@ e e
 i i
 
 )
+
 (deflayermap syms
 esc f1
-1 f2
-2 f3
-3 f4
-4 f5
-5 f6
-6 f7
 7 home
 8 pgdn
 9 pgup
@@ -485,6 +480,21 @@ f17 2
 ; 1
 r .
 
+)
+
+(deflayermap fn
+b f1
+f f2
+d f3
+w f4
+n f5
+s f6
+t f7
+c f8
+, f9
+. f10
+k f11
+g f12
 )
 
 
