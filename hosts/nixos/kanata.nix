@@ -366,8 +366,6 @@ i i
 
 (deflayermap syms
 
-3 (macro ent S-[)
-8 (macro ent S-])
 
 b ,
 ;; f .
@@ -416,6 +414,11 @@ h home
 a pgup
 e pgdn
 i end
+
+3 (macro ent S-[)
+8 (macro ent S-])
+
+
 )
 
 
