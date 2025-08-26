@@ -365,11 +365,10 @@ i i
 )
 
 (deflayermap syms
-esc f1
-7 home
-8 pgdn
-9 pgup
-0 end
+
+3 (macro ent S-[)
+8 (macro ent S-])
+
 b ,
 ;; f .
 d (caps-word-toggle 1000)
