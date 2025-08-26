@@ -53,6 +53,8 @@
   ;; TODO let ->  mut
 
 
+    ((key-history ' 1)) (macro S-0) break
+
     ;; println!("
     ((and (key-history p 3) (key-history l 2) (key-history n 1))) (macro bspc bspc r i n t l n S-1 S-9 S-') break
     ;; printf("
