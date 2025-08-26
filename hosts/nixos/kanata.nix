@@ -41,6 +41,12 @@
 (defvirtualkeys typingmode nop1)
 
 (defalias
+
+  cw (caps-word-custom
+    2000
+    (a b c d e f g h i j k l m n o p q r s t u v w x y z)
+    (bspc del up down left rght - 0 1 2 3 4 5 6 7 8 9)
+  )
  .tp (hold-for-duration 30 typingmode)
 
   magic (switch
@@ -97,7 +103,7 @@
     ((and (key-history h 2) (key-history t 1))) (macro t p s S-; / /) break
 
   ;; https://www.
-    ((and (key-history h 3) (key-history t 2) (key-history w 1))) (macro t p s S-; / / w w w .) break
+    ((and (key-history h 3) (key-history t 2) (key-history w 1))) (macro bspc t p s S-; / / w w w .) break
 
 
 
@@ -172,19 +178,12 @@
 
 ;; sfb
     ((key-history g 1)) (macro y) break
-
     ((key-history i 1)) (macro z) break
-
-    ;; wget
-    ((key-history w 1)) (macro g) break
-
+    ((key-history w 1)) (macro g) break ;; wget
     ((key-history c 1)) (macro y) break
-
     ((key-history p 1)) (macro y) break
-
-
+    ((key-history y 1)) (macro p) break
     ((key-history j 1)) (macro i) break
-
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
@@ -427,6 +426,10 @@ i end
 
 
 (defchordsv2
+
+  (f15 a) @cw 16 all-released (over sup)
+
+
   (b f    ) S-6 20 all-released (over sup)
   (  f d  ) S-7 15 all-released (over sup)
   (  f   w) `   20 all-released (over sup)
