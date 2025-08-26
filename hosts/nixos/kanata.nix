@@ -48,18 +48,21 @@
   ;; TODO : -> q
   ;; TODO convert rust ints to c99 ints
   ;; TODO? fa -> lse
+  ;; TODO fm -> format!("
+  ;; TODO sg -> String
 
 
     ;; println!("
     ((and (key-history p 3) (key-history l 2) (key-history n 1))) (macro bspc bspc r i n t l n S-1 S-9 S-') break
-
     ;; printf("
     ((and (key-history p 2) (key-history f 1))) (macro bspc r i n t f S-9 S-') break
+    ;; format!("
+    ((and (key-history f 3) (key-history m 2) (key-history t 1))) (macro bspc bspc o r m a t S-1 S-9 S-') break
     
-
     ;; faster space for shorter words
     ((and (key-history spc 2) (key-history a 1))) (macro spc) break
     ((and (key-history spc 2) (key-history i 1))) (macro spc) break
+    ((and (key-history spc 4) (key-history t 3) (key-history h 2) (key-history e 1))) (macro spc) break
 
 
     ((and (key-history u 2) (key-history s 1))) (macro e) break

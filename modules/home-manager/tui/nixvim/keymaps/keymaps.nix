@@ -59,6 +59,12 @@
       mode = [ "n" "v" "x" ];
     }
 
+    { # append comma
+      key = "<leader>,";
+      action = "mzA,<esc>`z";
+      mode = [ "n" "v" "x" ];
+    }
+
     { # insert line below
       key = "<C-k>";
       action = "o<esc>";
