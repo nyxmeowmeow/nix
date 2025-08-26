@@ -280,6 +280,9 @@ h lctl
 a lsft
 e lsft
 i lsft
+
+3 (macro ent S-[)
+8 (macro ent S-])
 )
 
 (deflayermap krita
@@ -415,8 +418,6 @@ a pgup
 e pgdn
 i end
 
-3 (macro ent S-[)
-8 (macro ent S-])
 
 
 )
