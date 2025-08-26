@@ -47,9 +47,10 @@
   ;; TODO swap repeat and magic function for e
   ;; TODO : -> q
   ;; TODO convert rust ints to c99 ints
-  ;; TODO? fa -> lse
+  ;; TODO? fl -> false
   ;; TODO fm -> format!("
   ;; TODO sg -> String
+  ;; TODO let ->  mut
 
 
     ;; println!("
@@ -185,7 +186,6 @@
     ((key-history o 1)) (macro a) break
     ((key-history a 1)) (macro o) break
     ((key-history u 1)) (macro e) break
-    ((key-history e 1)) (macro u) break
 
 
     () rpt break
@@ -201,6 +201,7 @@
     ((key-history 9 1)) (macro S-9) break
     ((key-history 0 1)) (macro S-0) break
 
+    ((key-history e 1)) (macro u) break
 
     ((and (key-history t 2) (key-history r 1))) (macro u e) break
 
