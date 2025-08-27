@@ -18,7 +18,7 @@
     };
     slippi.url = "github:lytedev/slippi-nix";
     nuhxboard.url = "github:justDeeevin/NuhxBoard";
-    walker.url = "github:abenz1267/walker";
+    # walker.url = "github:abenz1267/walker";
     pollymc.url = "github:fn2006/PollyMC";
     # moonlight = {
     #   url = "github:moonlight-mod/moonlight"; # Add `/develop` to the flake URL to use nightly.
