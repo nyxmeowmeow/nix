@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+    fuzzel
+
+
     cryptsetup
 
     # nyaa
