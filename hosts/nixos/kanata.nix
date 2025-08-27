@@ -59,6 +59,9 @@
   ;; TODO let ->  mut
 
 
+    ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
+
+
     ((key-history ' 1)) (macro S-0) break
 
     ;; println!("
