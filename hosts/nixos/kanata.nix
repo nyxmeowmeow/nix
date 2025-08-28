@@ -215,6 +215,7 @@
     ;; repeat the magic key for "nixpkgs"
     ((key-history x 1)) (macro p k g s) break
 
+    ((key-history spc 1)) (one-shot-press 2000 lsft) break
 
     () rpt break
   )
