@@ -199,7 +199,7 @@
   ;; FIXME
   rpeat (switch
     ((key-history , 1)) (macro S-,) break
-    ((key-history . 1)) (macro S-.) break
+    ;; ((key-history . 1)) (macro S-.) break
     ((key-history \ 1)) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break
     ((key-history 7 1)) (macro S-7) break
