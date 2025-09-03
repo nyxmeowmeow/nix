@@ -132,6 +132,8 @@
     ((and (key-history f 2) (key-history i 1))) (macro x) break
     ;; six
     ((and (key-history s 2) (key-history i 1))) (macro x) break
+    ;; mix
+    ((and (key-history m 2) (key-history i 1))) (macro x) break
 
     ;; nix
     ((and(key-history n 2) (key-history i 1))) (macro x) break

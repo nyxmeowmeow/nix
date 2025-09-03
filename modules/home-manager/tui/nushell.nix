@@ -218,6 +218,13 @@ in {
       ns = "nix-shell -p";
 
       n = "nvim";
+      y = "yazi";
+
+      chomd = "chmod";
+      dc = "cd";
+      sl = "ls";
+      igt = "git";
+      gti = "git";
     };
 
 
