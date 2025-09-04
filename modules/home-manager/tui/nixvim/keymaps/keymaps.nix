@@ -4,6 +4,12 @@
     keymaps = [
 
     {
+      key = "dc";
+      action = "dd";
+      mode = "n";
+    }
+
+    { # avoid sfb for cc
       key = "cd";
       action = "cc";
       mode = "n";
