@@ -4,6 +4,12 @@
     keymaps = [
 
     {
+      key = "cd";
+      action = "cc";
+      mode = "n";
+    }
+
+    {
       key = "gd";
       action = "<cmd>lua vim.lsp.buf.definition()<CR>";
       mode = [ "n" "v" "x" ];
