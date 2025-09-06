@@ -42,6 +42,20 @@
 
 (defalias
 
+  space (switch
+    ((input-history real , 2)) (multi (layer-switch base) (macro , spc)) break
+    ((input-history real ; 2)) (multi (layer-switch base) (macro ; spc)) break
+
+    () spc break
+  )
+
+  enter (switch
+    ((input-history real , 2)) (multi (layer-switch base) (macro , ent)) break
+    ((input-history real ; 2)) (multi (layer-switch base) (macro ; ent)) break
+
+    () ent break
+  )
+
   cw (caps-word-custom
     2000
     (a b c d e f g h i j k l m n o p q r s t u v w x y z)
@@ -59,7 +73,13 @@
   ;; TODO let ->  mut
 
 
+
+
+
+
+
     ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
+
 
 
     ((key-history ' 1)) (macro S-0) break
@@ -379,9 +399,9 @@ i i
 
 
 b ,
-;; f .
-d (caps-word-toggle 1000)
-w `
+f ,
+d ,
+w ,
 l left
 o down
 u up
@@ -404,6 +424,9 @@ f16 0
 f17 4
 ; 8
 r .
+
+spc @space
+ent @enter
 
 )
 
