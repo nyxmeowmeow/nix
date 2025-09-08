@@ -4,13 +4,13 @@
     keymaps = [
 
     {
-      key = "<pgdn>";
+      key = "<PageDown>";
       action = "<C-d>";
       mode = [ "n" "i" "x" ];
     }
 
     {
-      key = "<pgup>";
+      key = "<PageUp>";
       action = "<C-u>";
       mode = [ "n" "i" "x" ];
     }
