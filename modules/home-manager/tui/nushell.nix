@@ -178,6 +178,7 @@ in {
 
 
       ":q" = "exit";
+      q = "exit";
 
       # k = "pkill";
       cl = "clipse -clear"; # clear clipboard history

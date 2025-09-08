@@ -4,6 +4,18 @@
     keymaps = [
 
     {
+      key = "<pgdn>";
+      action = "<C-d>";
+      mode = [ "n" "i" "x" ];
+    }
+
+    {
+      key = "<pgup>";
+      action = "<C-u>";
+      mode = [ "n" "i" "x" ];
+    }
+
+    {
       key = "dc";
       action = "dd";
       mode = "n";
