@@ -173,6 +173,17 @@
     { key = ")"; action = "{"; mode = [ "n" "v" "x" ]; }
 
     {
+      key = "<C-d>";
+      action = ":echo \"use mods layer and pgup pgdn\"<cr>";
+      mode = [ "n" "v" "x" ];
+    }
+    {
+      key = "<C-u>";
+      action = ":echo \"use mods layer and pgup pgdn\"<cr>";
+      mode = [ "n" "v" "x" ];
+    }
+
+    {
       key = "<C-t>";
       action = "<C-o>";
       mode = [ "n" "v" "x" ];
