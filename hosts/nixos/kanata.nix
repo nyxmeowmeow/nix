@@ -309,6 +309,16 @@ a lsft
 e lsft
 i lsft
 
+l left
+o down
+u up
+j right
+
+f15 home
+f16 pgdn
+f17 pgup
+; end
+
 3 (macro ent S-[)
 8 (macro ent S-])
 )

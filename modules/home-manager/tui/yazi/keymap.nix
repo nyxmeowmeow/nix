@@ -540,21 +540,15 @@
       }
 
       {
-        on = [ "<Space>" "n" ];
+        on = [ "<Space>" "n" "i" ];
         run = "cd ${flake_dir}";
         desc = "nix";
       }
 
       {
-        on = [ "<Space>" "o" "r" ];
-        run = "cd ~/Documents/Obsidian_Vault/Rust/Book_notes";
-        desc = "obsidian rust";
-      }
-
-      {
-        on = [ "<Space>" "o" "n" ];
-        run = "cd ~/Documents/Obsidian_Vault/NixOS";
-        desc = "obsidian nix";
+        on = [ "<Space>" "n" "o" ];
+        run = "cd ~/notes";
+        desc = "nix";
       }
 
       {
