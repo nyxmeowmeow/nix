@@ -471,6 +471,9 @@ i end
 
   (f15 a) @cw 16 all-released (over sup)
 
+  (, ;) (macro S-; q) 20 all-released (over sup)
+  (q z) (macro q S-;) 20 all-released (over sup)
+
 
   (b f    ) S-6 20 all-released (over sup)
   (  f d  ) S-7 15 all-released (over sup)

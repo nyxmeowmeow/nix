@@ -208,6 +208,7 @@ in {
       gsw = "git switch";
       gps = "git push";
       gpl = "git pull";
+      gpr = "git pull --rebase";
       gb = "git branch";
 
       cr = "cargo run";
