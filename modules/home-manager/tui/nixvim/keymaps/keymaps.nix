@@ -169,8 +169,8 @@
 
     { key = "{"; action = "("; mode = [ "n" "v" "x" ]; }
     { key = "}"; action = ")"; mode = [ "n" "v" "x" ]; }
-    { key = "("; action = "{"; mode = [ "n" "v" "x" ]; }
-    { key = ")"; action = "}"; mode = [ "n" "v" "x" ]; }
+    { key = "("; action = "}"; mode = [ "n" "v" "x" ]; }
+    { key = ")"; action = "{"; mode = [ "n" "v" "x" ]; }
 
     {
       key = "<C-t>";
