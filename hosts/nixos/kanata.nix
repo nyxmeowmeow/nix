@@ -319,6 +319,9 @@ f16 pgdn
 f17 pgup
 ; end
 
+w (macro C-w)
+d (macro C-u)
+
 3 (macro ent S-[)
 8 (macro ent S-])
 )
