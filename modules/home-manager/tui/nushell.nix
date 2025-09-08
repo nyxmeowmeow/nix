@@ -176,6 +176,9 @@ in {
 
       ffmpreg = "ffmpeg";
 
+
+      ":q" = "exit";
+
       # k = "pkill";
       cl = "clipse -clear"; # clear clipboard history
       back = "cd -";
