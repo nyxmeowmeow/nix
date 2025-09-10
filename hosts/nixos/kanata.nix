@@ -44,7 +44,7 @@
   eqsft (switch
     ((or (key-history + 1) (key-history 1 1))) (macro =) break
 
-  () (tap-hold-press 120 120 = lsft) break
+    () (tap-hold-press 120 120 = lsft) break
 )
 
 
@@ -195,6 +195,7 @@
     ((key-history ; 1)) (macro S-;) break
 
     ((key-history = 1)) (macro S-.) break
+    ((input-history real lctl 2)) (macro S-.) break
 
     ((key-history - 1)) (macro S-.) break
 
@@ -226,6 +227,9 @@
   ;; normal rpt except for syms
   ;; FIXME
   rpeat (switch
+
+    ((input-history real lctl 2)) (macro =) break
+
     ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
     ((key-history \ 1)) (macro S-\) break
