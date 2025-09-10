@@ -281,7 +281,7 @@ f19 @magic
 rsft bspc
 ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
-lctrl =
+lctrl (tap-hold-press 120 120 = lsft)
 bspc @rpeat
 
 ent (tap-hold-press 120 120 ent (layer-while-held mods))
