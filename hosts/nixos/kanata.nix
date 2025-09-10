@@ -194,7 +194,8 @@
     ((key-history 7 1)) (macro S-7) break
     ((key-history ; 1)) (macro S-;) break
 
-    ((key-history = 1)) (macro S-.) break
+    ;; =>
+    ((key-history = 1)) (macro = S-.) break
     ((input-history real lctl 2)) (macro S-.) break
 
     ((key-history - 1)) (macro S-.) break
@@ -228,7 +229,7 @@
   ;; FIXME
   rpeat (switch
 
-    ((input-history real lctl 2)) (macro =) break
+    ((input-history real lctl 2)) (macro = =) break
 
     ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
