@@ -42,7 +42,7 @@
 
 (defalias
   eqsft (switch
-    ((or (key-history = 1) (key-history 1 1))) (macro =) break
+    ((or (key-history + 1) (key-history 1 1))) (macro =) break
 
   () (tap-hold-press 120 120 = lsft) break
 )
