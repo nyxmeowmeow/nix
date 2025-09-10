@@ -41,6 +41,12 @@
 (defvirtualkeys typingmode nop1)
 
 (defalias
+  eqsft (switch
+    ((or (key-history = 1) (key-history 1 1))) (macro =) break
+
+  () (tap-hold-press 120 120 = lsft) break
+)
+
 
   space (switch
     ((input-history real , 2)) (multi (layer-switch base) (macro , spc)) break
