@@ -229,7 +229,7 @@
   ;; FIXME
   rpeat (switch
 
-    ((key-history lsft 1)) (macro (unmod = =)) break
+    ((key-history lsft 1)) (macro = =) break
 
     ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
