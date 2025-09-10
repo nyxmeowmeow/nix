@@ -195,8 +195,7 @@
     ((key-history ; 1)) (macro S-;) break
 
     ;; =>
-    ((key-history = 1)) (macro (unmod =) S-.) break
-    ((input-history real lctl 2)) (macro S-.) break
+    ((input-history real lctl 2)) (macro (unmod =) S-.) break
 
     ((key-history - 1)) (macro S-.) break
 
