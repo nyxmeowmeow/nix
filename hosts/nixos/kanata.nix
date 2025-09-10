@@ -38,17 +38,19 @@
   tot 150  ;; tot=time out tap
 )
 
-(defvirtualkeys typingmode nop1)
 
 (defalias
   eqsft (switch
     ((or (key-history + 1) (key-history 1 1))) (macro =) break
-
     () (tap-hold-press 120 120 = lsft) break
 )
 
-
   space (switch
+    ((input-history real lctl 2)) (macro (unmod =) spc) break
+    () spc break
+)
+
+  space2 (switch
     ((input-history real , 2)) (multi (layer-switch base) (macro , spc)) break
     ((input-history real ; 2)) (multi (layer-switch base) (macro ; spc)) break
 
@@ -67,7 +69,6 @@
     (a b c d e f g h i j k l m n o p q r s t u v w x y z)
     (bspc del up down left rght - 0 1 2 3 4 5 6 7 8 9 lsft rsft)
   )
- .tp (hold-for-duration 30 typingmode)
 
   magic (switch
   ;; TODO swap repeat and magic function for e
@@ -254,35 +255,6 @@
 )
 
 (deflayermap (base)
- ;; define home row mods (they act as typing-layer triggers, too )
- ;;t (t! homerowmod $tot 110 t lsft)
- ;;a (t! homerowmod $tot 110 a rsft)
- ;;c (t! homerowmod $tot 110 c lctl)
- ;;h (t! homerowmod $tot 110 h rctl)
- ;;n (t! homerowmod $tot 130 n lsft)
- ;;i (t! homerowmod $tot 130 i rsft)
- ;;s (t! homerowmod $tot 120 s (layer-while-held syms))
- ;;e (t! homerowmod $tot 120 e (layer-while-held syms))
- ;;;; define each letter as typing-layer trigger
- ;; q (t! letter 200 200 q)
- ;; w (t! letter 200 200 w)
- ;; f (t! letter 200 200 f)
- ;; l (t! letter 200 200 l)
- ;; j (t! letter 200 200 j)
- ;; y (t! letter 200 200 y)
- ;; u (t! letter 200 200 u)
- ;; d (t! letter 200 200 d)
- ;; o (t! letter 200 200 o)
- ;; p (t! letter 200 200 p)
- ;; g (t! letter 200 200 g)
- ;; ; (t! letter 200 200 ;)
- ;; z (t! letter 200 200 z)
- ;; x (t! letter 200 200 x)
- ;; v (t! letter 200 200 v)
- ;; b (t! letter 200 200 b)
- ;; k (t! letter 200 200 k)
- ;; m (t! letter 200 200 m)
-
 f15 S--
 f16 S-9
 f17 S-0
@@ -295,6 +267,9 @@ lctrl @eqsft
 bspc @rpeat
 
 ent (tap-hold-press 120 120 ent (layer-while-held mods))
+
+
+spc @space
 
 ' -
 
@@ -448,7 +423,7 @@ f17 4
 ; 8
 r .
 
-spc @space
+spc @space2
 ent @enter
 
 )
