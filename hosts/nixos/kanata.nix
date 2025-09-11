@@ -2,7 +2,7 @@
 #          : b f d w p   ' l o u j x
 #          - n s t c y   m h a e i rpt
 #          q , . k g v   / _ ( ) ; z
-# alt esc/meta r magic   ent spc bspc tab
+# alt esc/meta r magic   ent/mods spc bspc/ctrl tab
 #
 # sym:
 #                          l d u r
@@ -261,7 +261,7 @@ f16 S-9
 f17 S-0
 lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 f19 @magic
-rsft bspc
+rsft (tap-hold-press 120 120 bspc rctl)
 ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
 lctrl @eqsft
