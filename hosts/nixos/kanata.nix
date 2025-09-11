@@ -43,13 +43,13 @@
   eqsft (switch
     ((or (key-history + 1) (key-history 1 1))) (macro =) break
     () (tap-hold-press 120 120 = lsft) break
-)
+  )
 
   space (switch
-    ((input-history real bspc 2)) spc break
+    ((input-history real bspc 2)) spc break ;; dont = after a ==
     ((key-history lsft 1)) (macro (unmod =) spc) break
     () spc break
-)
+  )
 
   space2 (switch
     ((input-history real , 2)) (multi (layer-switch base) (macro , spc)) break
@@ -456,6 +456,7 @@ i end
 (defchordsv2
 
   (f15 a) @cw 16 all-released (over sup)
+  (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup)
 
   (, ;) (macro S-; q) 20 all-released (over sup)
   (q z) (macro q S-;) 20 all-released (over sup)
