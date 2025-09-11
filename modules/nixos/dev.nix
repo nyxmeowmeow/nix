@@ -1,12 +1,14 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+
+
+    arduino-cli
     gdb
 
     kotlin
     kotlin-language-server
     kotlin-interactive-shell
     gradle
-
     zulu # java 21
     zulu8 # java 8
 
