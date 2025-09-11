@@ -16,7 +16,7 @@
     "Mod+S".action = spawn "footclient" "nvim";
 
 
-    "Mod+J".action = sh "footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
+    "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
     "Mod+U".action = sh "footclient btop && niri msg action switch-preset-window-width;"; # TODO window rule for size
     "Mod+K".action = sh "footclient ncmpcpp && niri msg action switch-preset-window-width && niri msg action switch-preset-window-width"; # TODO window rule for size
 

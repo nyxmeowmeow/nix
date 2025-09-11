@@ -2,3 +2,4 @@
 - zen, vesktop, dunst, and walker themes
 - make yazi text preview syntax highlighting match nvim
 - theme-specific mpv theme
+- do i need xwayland on laptop
