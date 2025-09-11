@@ -19,7 +19,7 @@
       # tweak.box-drawing-base-thickness = "0.04";
 
       key-bindings = {
-        scrollback-up-half-page = "Page-Up";
+        scrollback-up-half-page = "Page_Up";
         scrollback-down-half-page = "Page_Down";
         scrollback-home = "Home";
         scrollback-end = "End";
