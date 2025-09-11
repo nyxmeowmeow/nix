@@ -19,10 +19,10 @@
       # tweak.box-drawing-base-thickness = "0.04";
 
       key-bindings = {
-        scrollback-up-half-page = "Control+Shift+e";
-        scrollback-down-half-page = "Control+Shift+a";
-        scrollback-home = "Control+Shift+h";
-        scrollback-end = "Control+Shift+i";
+        scrollback-up-half-page = "pageup";
+        scrollback-down-half-page = "pageup";
+        scrollback-home = "home";
+        scrollback-end = "end";
         # search-start = "Control+/";
         # find-prev = "Control+h";
         # find-next = "Control+i";
