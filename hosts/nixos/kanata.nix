@@ -46,6 +46,7 @@
 )
 
   space (switch
+    ((input-history real bspc 2)) spc break
     ((key-history lsft 1)) (macro (unmod =) spc) break
     () spc break
 )
