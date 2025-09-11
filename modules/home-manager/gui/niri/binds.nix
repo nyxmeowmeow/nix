@@ -31,7 +31,7 @@
     "Mod+Return".action = toggle-overview;
 
     # "Mod+Space".action = spawn "walker";
-    "Mod+Space".action = spawn "fuzzel";
+    "Mod+Space".action = spawn "pkill fuzzel || fuzzel";
 
     "Mod+Z".action = sh "zen";
     "Mod+Shift+Z".action = sh "zen -p media";
