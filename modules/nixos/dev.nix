@@ -3,6 +3,8 @@
 
 
     arduino-cli
+    arduino-ide
+
     gdb
 
     kotlin
