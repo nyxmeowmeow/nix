@@ -177,8 +177,9 @@ in {
       ffmpreg = "ffmpeg";
 
 
-      ":q" = "exit";
       q = "exit";
+      ":q" = "exit";
+      ":x" = "exit";
 
       # k = "pkill";
       cl = "clipse -clear"; # clear clipboard history

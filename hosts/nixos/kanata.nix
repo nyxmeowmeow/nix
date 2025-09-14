@@ -79,10 +79,12 @@
   ;; TODO fm -> format!("
   ;; TODO sg -> String
   ;; TODO let ->  mut
+  ;; TODO :: -> one-shot lsft
 
 
 
 
+    ((and (key-history s 2) (key-history z 1))) (macro bspc i z e) break
 
 
 

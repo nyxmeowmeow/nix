@@ -10,7 +10,6 @@
 
         preload = [
           "${flake_dir}/stuff/wallpapers/clouds.jpg" 
-          "${flake_dir}/stuff/wallpapers/clouds.jpg" 
         ];
 
         wallpaper = [
