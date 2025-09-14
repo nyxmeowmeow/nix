@@ -72,21 +72,16 @@
   )
 
   magic (switch
-  ;; TODO swap repeat and magic function for e
-  ;; TODO : -> q
   ;; TODO convert rust ints to c99 ints
   ;; TODO? fl -> false
-  ;; TODO fm -> format!("
   ;; TODO sg -> String
-  ;; TODO let ->  mut
   ;; TODO :: -> one-shot lsft
 
 
 
+    ((and (key-history ; 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
 
     ((and (key-history s 2) (key-history z 1))) (macro bspc i z e) break
-
-
 
     ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
 
