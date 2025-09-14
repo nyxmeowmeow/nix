@@ -79,7 +79,8 @@
 
 
 
-    ((and (key-history ; 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
+    ;; ((and (key-history ; 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
+    ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
 
     ((and (key-history s 2) (key-history z 1))) (macro bspc i z e) break
 
