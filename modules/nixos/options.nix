@@ -1,7 +1,7 @@
 { lib, ... }: {
   config.theme = "kanso_zen";
   config.wm = "niri";
-  config.font = "iosevka";
+  config.font = "mononoki";
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
