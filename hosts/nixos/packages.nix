@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-    reaper
+    # reaper // borken
+    # zrythm // borken
+    # lmms // borken
 
     yt-dlp
     fuzzel
