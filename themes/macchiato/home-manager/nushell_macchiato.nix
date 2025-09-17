@@ -1,6 +1,9 @@
+{ lib, theme, ... }:
 let
   col = import ../colors.nix;
 in {
+  config = lib.mkIf (theme == "macchiato" || theme == "black") {
+
   programs.nushell.extraConfig = /* nu */ ''
     let color_scheme = {
       hints: "${col.surface1}"
@@ -20,4 +23,5 @@ in {
       color_config: $color_scheme
     }
     '';
+    };
 }
