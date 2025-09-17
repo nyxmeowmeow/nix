@@ -164,7 +164,7 @@
     ;; nix
     ((and(key-history n 2) (key-history i 1))) (macro x) break
     ;; nixpkgs
-    ((and(key-history n 3) (key-history i 2) (key-history x 1))) (macro p k g s) break
+    ((and(key-history n 3) (key-history i 2) (key-history x 1) (input-history real lsft 2))) (macro p k g s) break
 
 
 
