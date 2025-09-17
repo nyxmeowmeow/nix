@@ -75,7 +75,6 @@
   ;; TODO convert rust ints to c99 ints
   ;; TODO? fl -> false
   ;; TODO sg -> String
-  ;; TODO :: -> one-shot lsft
 
     ((key-history 3 1)) (macro S-1) break
 
