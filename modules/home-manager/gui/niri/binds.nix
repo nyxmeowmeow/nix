@@ -41,8 +41,8 @@
     "Mod+B".action = focus-workspace "browser";
     "Mod+F".action = focus-workspace "game";
     "Mod+D".action = focus-workspace "discord";
-    "Mod+W".action = focus-workspace "media";
-    "Mod+P".action = focus-workspace "right";
+    "Mod+P".action = focus-workspace "media";
+    "Mod+W".action = focus-workspace "right";
 
     "Mod+Shift+Tab".action.move-window-to-workspace = "left";
     "Mod+Shift+B".action.move-window-to-workspace = "browser";
