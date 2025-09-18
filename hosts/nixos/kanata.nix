@@ -358,9 +358,9 @@ rsft rsft
 
 
 f18 tab
-f15 S--
-f16 S-9
-f17 S-0
+f15 -
+f16 9
+f17 0
 f19 lsft
 
 b b

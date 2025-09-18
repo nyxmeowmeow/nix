@@ -68,13 +68,15 @@
     "Alt+A".action = move-window-down;
     "Alt+E".action = move-window-up;
 
-    "Mod+Shift+9".action = switch-preset-window-width;
-    "Mod+Shift+0".action = switch-preset-window-height;
+    "Mod+9".action = switch-preset-window-width;
+    "Mod+0".action = switch-preset-window-height;
+    "Mod+Shift+9".action = switch-preset-window-width-back;
+    "Mod+Shift+0".action = switch-preset-window-height-back;
 
     "Mod+M".action = maximize-column;
     "Mod+Shift+M".action = fullscreen-window;
     "Mod+Ctrl+M".action = fullscreen-window;
-    "Mod+Shift+minus".action = toggle-column-tabbed-display;
+    "Mod+minus".action = toggle-column-tabbed-display;
 
 
 
