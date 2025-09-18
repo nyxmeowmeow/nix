@@ -30,7 +30,7 @@
     "Mod+O".action = close-window;
     "Mod+Return".action = toggle-overview;
 
-    "Mod+Space".action = spawn "walker";
+    "Mod+Space".action = sh "walker --theme min";
     # "Mod+Space".action = spawn "fuzzel";
 
     "Mod+Z".action = sh "zen";
