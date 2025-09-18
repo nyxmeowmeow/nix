@@ -3,6 +3,7 @@
     # reaper // borken
     # zrythm // borken
     # lmms // borken
+    gnome-calendar
 
     yt-dlp
     fuzzel
