@@ -5,6 +5,8 @@
     # lmms // borken
     walker
 
+    zoom
+
     yt-dlp
     fuzzel
 
