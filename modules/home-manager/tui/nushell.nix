@@ -227,6 +227,11 @@ in {
       n = "nvim";
       y = "yazi";
 
+      "n," = "nvim";
+      "bn" = "nvim";
+      "nb" = "nvim";
+      "t!ch" = "touch";
+      mkidr = "mkdir";
       chomd = "chmod";
       dc = "cd";
       sl = "ls";
