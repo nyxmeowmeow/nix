@@ -470,7 +470,7 @@ i end
   (    u j) caps 15 all-released (over sup)
 
   (n s    ) S-, 14 all-released (over sup)
-  (  s t  ) '   14 all-released (over sup)
+  (  s t  ) '   13 all-released (over sup)
   (  s   c) S-` 16 all-released (over sup)
   (    t c) [   14 all-released (over sup)
 
