@@ -2,6 +2,7 @@
   home-manager = {
     extraSpecialArgs = {
       theme = config.theme;
+      font_size = config.font_size;
       zen-browser = inputs.zen-browser;
     };
 

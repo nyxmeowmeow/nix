@@ -2,6 +2,7 @@
   config.theme = "kanso_zen";
   config.wm = "niri";
   config.font = "mononoki";
+  config.font_size = "small";
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
@@ -33,5 +34,14 @@
       "iosevka"
     ];
     default = "mononoki";
+  };
+
+  options.font_size = lib.mkOption {
+    type = lib.types.enum [
+      "small"
+      "medium"
+      "large"
+    ];
+    default = "medium";
   };
 }
