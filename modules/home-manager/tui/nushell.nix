@@ -177,6 +177,8 @@ in {
 
       ffmpreg = "ffmpeg";
 
+      woman = "man";
+
 
       q = "exit";
       ":q" = "exit";
