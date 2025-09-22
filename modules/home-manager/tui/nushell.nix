@@ -211,7 +211,7 @@ in {
       ga = "git add .";
       # gl = "git log --oneline | lines | fzf";
       gcl = "git clone";
-      gd = "echo 'git diff HEAD^'; git diff HEAD^";
+      gd = "git diff HEAD^";
       gs = "git status";
       gsw = "git switch";
       gps = "git push";
