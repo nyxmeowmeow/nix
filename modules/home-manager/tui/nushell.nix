@@ -5,7 +5,6 @@ in {
   programs.nushell = {
     enable = true;
 
-
     configFile.text = /* nu */ ''
 
 

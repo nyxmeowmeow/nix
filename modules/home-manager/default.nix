@@ -40,7 +40,6 @@
         ./tui/ncmpcpp.nix
         ./tui/nh.nix
         ./tui/nushell.nix
-        ./tui/nushell/completions/niri.nix
         ./tui/starship.nix
         ./tui/yazi/yazi.nix
         ./tui/zellij/default.nix
