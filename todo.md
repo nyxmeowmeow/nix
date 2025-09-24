@@ -3,3 +3,4 @@
 - make yazi text preview syntax highlighting match nvim
 - theme-specific mpv theme
 - do i need xwayland on laptop
+- image to text screenshot thing

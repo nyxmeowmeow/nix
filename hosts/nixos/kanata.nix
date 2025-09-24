@@ -442,8 +442,8 @@ k f11
 g f12
 
 h home
-a pgup
-e pgdn
+a pgdn
+e pgup
 i end
 
 

@@ -75,7 +75,7 @@
           trash_offset	= [ 0 0 70 20 ];
 
 # delete
-          delete_title 	= "PERMANENTLY delete {n} selected file{s}?";
+          delete_title 	= " PERMANENTLY delete {n} selected file{s}? ";
           delete_origin	= "center";
           delete_offset	= [ 0 0 70 20 ];
 

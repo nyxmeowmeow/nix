@@ -22,8 +22,13 @@
             palette = {},
             theme = { zen = {}, pearl = {}, ink = {}, all = {} },
             },
-            overrides = function(colors) -- add/modify highlights
-            return {}
+            overrides = function(colors)
+            return {
+            -- Assign a static color to strings
+            LineNR = { fg = "#7FB4CA" },
+            -- theme colors will update dynamically when you change theme!
+              SomePluginHl = { fg = colors.theme.syn.type, bold = true },
+            }
             end,
             theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme
               -- background = {               -- map the value of 'background' option to a theme
