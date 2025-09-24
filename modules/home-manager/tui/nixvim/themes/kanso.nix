@@ -27,6 +27,7 @@
             -- Assign a static color to strings
             CursorLineNr = { fg = "#7FB4CA" },
             CursorLine = { bg = "NONE" },
+            TelescopeSelection = { fg = "#7FB4CA" },
             -- LineNrBelow = { fg = "#393B44" },
             -- LineNrAbove = { fg = "#393B44" },
             LineNr = { fg = "#393B44" },
