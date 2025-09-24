@@ -1,6 +1,6 @@
 {
   programs.nh = {
     enable = true;
-    flake = ../..;
+    flake = ../../..;
   };
 }
