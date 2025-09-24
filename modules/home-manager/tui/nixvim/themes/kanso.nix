@@ -25,11 +25,9 @@
             overrides = function(colors)
             return {
             -- Assign a static color to strings
-            LineNr = { fg = "#7FB4CA" },
-            LineNrBelow = { fg = "#5C6066" },
-            LineNrAbove = { fg = "#5C6066" },
-            -- theme colors will update dynamically when you change theme!
-              SomePluginHl = { fg = colors.theme.syn.type, bold = true },
+            CursorLineNr = { fg = "#7FB4CA" },
+            -- LineNrBelow = { fg = "#5C6066" },
+            -- LineNrAbove = { fg = "#5C6066" },
             }
             end,
             theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme
