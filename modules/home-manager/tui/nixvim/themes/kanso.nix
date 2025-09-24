@@ -25,7 +25,9 @@
             overrides = function(colors)
             return {
             -- Assign a static color to strings
-            LineNR = { fg = "#7FB4CA" },
+            LineNr = { fg = "#7FB4CA" },
+            LineNrBelow = { fg = "#5C6066" },
+            LineNrAbove = { fg = "#5C6066" },
             -- theme colors will update dynamically when you change theme!
               SomePluginHl = { fg = colors.theme.syn.type, bold = true },
             }
