@@ -6,6 +6,8 @@
     relativenumber = false;
     signcolumn = "number";
 
+    cursorline = true;
+
     shiftwidth = 2;
     tabstop = 2;
     expandtab = true;
