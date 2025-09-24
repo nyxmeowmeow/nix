@@ -27,8 +27,8 @@
             -- Assign a static color to strings
             CursorLineNr = { fg = "#7FB4CA" },
             CursorLine = { bg = "NONE" },
-            -- LineNrBelow = { fg = "#5C6066" },
-            -- LineNrAbove = { fg = "#5C6066" },
+            LineNrBelow = { fg = "#393B44" },
+            LineNrAbove = { fg = "#393B44" },
             }
             end,
             theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme
