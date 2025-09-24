@@ -25,7 +25,7 @@
             overrides = function(colors)
             return {
             -- Assign a static color to strings
-            CursorLineNr = { fg = "#7FB4CA" },
+            CursorLineNr = { fg = "#7FB4CA", bg = "#000000" },
             -- LineNrBelow = { fg = "#5C6066" },
             -- LineNrAbove = { fg = "#5C6066" },
             }
