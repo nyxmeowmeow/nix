@@ -4,6 +4,7 @@
     # zrythm // borken
     # lmms // borken
     walker
+    google-chrome
 
     zoom-us
 
