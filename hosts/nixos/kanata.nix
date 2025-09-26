@@ -108,12 +108,9 @@
     ((and (key-history u 2) (key-history s 1))) (macro e) break
     
 
-    ;; seem (yikes stretch)
-    ;; FIXME
-    ((and (key-history s 3) (key-history e 2) (input-history real bspc 1))) (macro m) break
 
-    ;; ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro bspc bspc bspc S-n S-u S-l S-l) break
-    ((and (key-history n 3) (key-history u 2) (key-history l 1))) (macro C-w S-n S-u S-l S-l) break
+  ;; NULL
+    ((and (key-history n 2) (key-history l 1))) (macro C-w S-n S-u S-l S-l) break
 
 
 
@@ -175,6 +172,8 @@
     ((key-history \ 1)) (macro S-7) break
 
 
+  ;; rust macros
+  ;; !(
     ((key-history 1 1)) (macro S-9) break
 
   ;; >>
@@ -193,7 +192,9 @@
 
 
 
+  ;; &&
     ((key-history 7 1)) (macro S-7) break
+  ;; ::
     ((key-history ; 1)) (macro S-;) break
 
     ;; =>
