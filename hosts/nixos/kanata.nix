@@ -76,6 +76,8 @@
   ;; TODO? fl -> false
   ;; TODO sg -> String
 
+    ((input-history real lsft 2)) (macro lctl ent) break
+
     ((key-history 3 1)) (macro S-1) break
 
 
