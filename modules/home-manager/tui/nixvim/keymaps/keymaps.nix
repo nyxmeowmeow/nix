@@ -120,21 +120,16 @@
     }
 
     {
+      key = "x";
+      action = "\"_x";
+      mode = "n";
+    }
+
+
+    {
       key = "<C-backspace>";
       action = "<C-w>";
       mode = [ "i" "c" "t" ];
-    }
-
-    {
-      key = "<c-s-k>";
-      action = "gk";
-      mode = "n";
-    }
-
-    {
-      key = "<c-s-j>";
-      action = "gj";
-      mode = "n";
     }
 
     {
@@ -155,33 +150,10 @@
       mode = "n";
     }
 
-    {
-      key = "gJ";
-      action = "gj";
-      mode = "n";
-    }
-
-    {
-      key = "gK";
-      action = "gk";
-      mode = "n";
-    }
-
     { key = "{"; action = "("; mode = [ "n" "v" "x" ]; }
     { key = "}"; action = ")"; mode = [ "n" "v" "x" ]; }
     { key = "("; action = "}"; mode = [ "n" "v" "x" ]; }
     { key = ")"; action = "{"; mode = [ "n" "v" "x" ]; }
-
-    {
-      key = "<C-a>";
-      action = ":echo \"use mods layer and pgup pgdn\"<cr>";
-      mode = [ "n" "v" "x" ];
-    }
-    {
-      key = "<C-e>";
-      action = ":echo \"use mods layer and pgup pgdn\"<cr>";
-      mode = [ "n" "v" "x" ];
-    }
 
     {
       key = "<C-t>";
@@ -216,6 +188,12 @@
     {
       key = "<C-a>";
       action = "<C-d>";
+      mode = [ "n" "v" "x" ];
+    }
+
+    {
+      key = "<C-j>";
+      action = "<C-a>";
       mode = [ "n" "v" "x" ];
     }
 
