@@ -474,7 +474,8 @@ i end
   (  s   c) S-` 16 all-released (over sup)
   (    t c) [   14 all-released (over sup)
 
-  (h a    ) ]   14 all-released (over sup)
+  ;; (h a    ) ]   14 all-released (over sup)
+  (h a    ) (tap-hold-press 120 120 ] rsft)    14 all-released (over sup)
   (h   e  ) del 15 all-released (over sup)
   (  a e  ) +   14 all-released (over sup)
   (    e i) S-. 14 all-released (over sup)

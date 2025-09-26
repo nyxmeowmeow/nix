@@ -4,3 +4,5 @@
 - theme-specific mpv theme
 - do i need xwayland on laptop
 - image to text screenshot thing
+
+- super g m -> mono audio toggle + notification
