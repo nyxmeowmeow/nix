@@ -1,0 +1,344 @@
+# Theming
+font: mononoki nerd font mono 16
+background: "#00000000"
+color: "#cad3f500"
+border: "#b7bdf800"
+separator: " ➜ "
+
+border_width: 2
+corner_r: 10
+padding: 15 # Defaults to corner_r
+rows_per_column: 5 # No limit by default
+column_padding: 25 # Defaults to padding
+
+# Anchor and margin
+anchor: center # One of center, left, right, top, bottom, bottom-left, top-left, etc.
+# Only relevant when anchor is not center
+margin_right: 0
+margin_bottom: 0
+margin_left: 0
+margin_top: 0
+
+# Permits key bindings that conflict with compositor key bindings.
+# Default is `false`.
+inhibit_compositor_keyboard_shortcuts: true
+
+
+# TODO p for show quickshell playlist
+
+menu:
+
+  - key: [ "s", "Mod4+s" ]
+    desc: restart song
+    cmd: mpc -p 6669 prev && mpc -p 6669 next
+
+  - key: [ "t", "Mod4+t" ]
+    desc: toggle player
+    cmd: playerctl play-pause
+
+  - key: [ "c", "Mod4+c" ]
+    desc: toggle music
+    cmd: mpc -p 6669 toggle
+
+  - key: [ "h", "Mod4+h" ]
+    desc: prev song
+    cmd: mpc -p 6669 prev
+
+  - key: [ "i", "Mod4+i" ]
+    desc: next song
+    cmd: mpc -p 6669 next
+
+  - key: [ "a", "Mod4+a" ]
+    desc: mpd -vol
+    cmd: mpc -p 6669 volume -5
+    keep_open: true
+
+  - key: [ "e", "Mod4+e" ]
+    desc: mpd +vol
+    cmd: mpc -p 6669 volume +5
+    keep_open: true
+
+  - key: [ "o", "Mod4+o" ]
+    desc: clear playlist
+    cmd: mpc -p 6669 clear
+
+  - key: [ "u", "Mod4+u" ]
+    desc: clear all but current song
+    cmd: mpc -p 6669 crop
+
+
+
+
+  - key: [ "l", "Mod4+l", "space", "Mod4+space" ]
+    desc: play song
+    submenu:
+
+
+      - key: [ "a", "Mod4+a" ]
+        desc: 
+        submenu:
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'abyss angel'
+
+          - key: [ "b", "Mod4+b" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'absolute in doubt'
+
+          - key: [ "l", "Mod4+l" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'alchemist'
+
+          - key: [ "s", "Mod4+s" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'ascension to heaven'
+
+          - key: [ "t", "Mod4+t" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'atlas'
+
+
+      - key: [ "b", "Mod4+b" ]
+        desc: 
+        submenu:
+
+          - key: [ "r", "Mod4+r" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'break'
+
+          - key: [ "u", "Mod4+u" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'bubbly'
+
+
+      - key: [ "c", "Mod4+c" ]
+        desc: 
+        submenu:
+
+          - key: [ "i", "Mod4+i" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'the cia'
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'commatose'
+
+          - key: [ "w", "Mod4+w" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'cold weather'
+
+
+      - key: [ "d", "Mod4+d" ]
+        desc: 
+        submenu:
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'daydreamer'
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'downfall'
+
+          - key: [ "s", "Mod4+s" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'darkside'
+
+          - key: [ "u", "Mod4+u" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'dumbest girl alive'
+
+
+      - key: [ "e", "Mod4+e" ]
+        desc: 
+        submenu:
+
+          - key: [ "v", "Mod4+v" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'everything everything'
+
+
+      - key: [ "f", "Mod4+f" ]
+        desc: 
+        submenu:
+
+          - key: [ "r", "Mod4+r" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'from the start'
+
+          - key: [ "i", "Mod4+i" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'first rate town'
+
+
+      - key: [ "h", "Mod4+h" ]
+        desc: 
+        submenu:
+
+          - key: [ "s", "Mod4+s" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'homeswitcher'
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'how to save a life'
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'haunted'
+
+
+      - key: [ "i", "Mod4+i" ]
+        desc: 
+        submenu:
+
+          - key: [ "h", "Mod4+h" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'i hate everything about you'
+
+
+      - key: [ "j", "Mod4+j" ]
+        desc: 
+        submenu:
+
+          - key: [ "d", "Mod4+d" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'classic j dies and goes to hell part 1'
+
+
+      - key: [ "m", "Mod4+m" ]
+        desc: 
+        submenu:
+
+          - key: [ "i", "Mod4+i" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 's delivery service'
+
+          - key: [ "k", "Mod4+k" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'mr. kill myself'
+
+          - key: [ "n", "Mod4+n" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'midnight'
+
+          - key: [ "y", "Mod4+y" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'miss you'
+
+
+      - key: [ "n", "Mod4+n" ]
+        desc: 
+        submenu:
+
+          - key: [ "e", "Mod4+e" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'newlove'
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'nothing nothing nothing'
+
+      - key: [ "p", "Mod4+p" ]
+        desc: 
+        submenu:
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'patience'
+
+          - key: [ "h", "Mod4+h" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'phoenix'
+
+          - key: [ "r", "Mod4+r" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'premier inn'
+
+
+      - key: [ "r", "Mod4+r" ]
+        desc: 
+        submenu:
+
+          - key: [ "i", "Mod4+i" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'r.i.p.'
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'rose at nightfall'
+
+
+      - key: [ "s", "Mod4+s" ]
+        desc: 
+        submenu:
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'salt'
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'so stressed!'
+
+          - key: [ "u", "Mod4+u" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'summer'
+
+
+      - key: [ "t", "Mod4+t" ]
+        desc: 
+        submenu:
+
+          - key: [ "e", "Mod4+e" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'tell me you know'
+
+          - key: [ "h", "Mod4+h" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'throne'
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'ta1lsd004'
+
+
+      - key: [ "w", "Mod4+w" ]
+        desc: 
+        submenu:
+
+          - key: [ "a", "Mod4+a" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'wave goodbye'
+
+          - key: [ "i", "Mod4+i" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'witches'
+
+
+      - key: [ "y", "Mod4+y" ]
+        desc: 
+        submenu:
+
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'yoshi'
+
+
+
+      - key: [ "l", "Mod4+l" ]
+        desc: 
+        cmd: ~/nix/stuff/scripts/mpc.sh 'lost'
+
+      - key: [ "v", "Mod4+v" ]
+        desc: 
+        cmd: ~/nix/stuff/scripts/mpc.sh 'violet'
+
+      - key: [ "z", "Mod4+z" ]
+        desc: 
+        cmd: ~/nix/stuff/scripts/mpc.sh 'zen garden'
+
+      - key: [ "3", "Mod4+3" ]
+        desc: 
+        cmd: ~/nix/stuff/scripts/mpc.sh '3 nights'

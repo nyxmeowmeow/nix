@@ -22,9 +22,9 @@
   
   {
     matches = [ { 
-      app-id = "chaos";
+      app-id = "steam_app_1802710";
     } ];
-    open-on-workspace = "game";
+    open-on-workspace = "one";
     min-width = 2560;
     max-width = 2560;
     min-height = 1080;
@@ -44,7 +44,7 @@
       app-id = "steam_app_2225070";
       title = "Trackmania";
     } ];
-    open-on-workspace = "game";
+    open-on-workspace = "one";
     min-width = 2560;
     max-width = 2560;
     min-height = 1080;
