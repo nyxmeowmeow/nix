@@ -54,6 +54,18 @@
     }
 
     { # put cursor at top of screen
+      key = "zh";
+      action = "zo";
+      mode = [ "n" "v" "x" ];
+    }
+
+    { # put cursor at top of screen
+      key = "zw";
+      action = "zc";
+      mode = [ "n" "v" "x" ];
+    }
+
+    { # put cursor at top of screen
       key = "zK";
       action = "z<cr>";
       mode = [ "n" "v" "x" ];
@@ -119,11 +131,11 @@
       mode = "n";
     }
 
-    # {
-    #   key = "x";
-    #   action = "\"_x";
-    #   mode = "n";
-    # }
+    {
+      key = "x";
+      action = "\"_x";
+      mode = "n";
+    }
 
     {
       key = "<C-backspace>";
