@@ -5,6 +5,8 @@
     # lmms // borken
     walker
 
+    tldr
+
     zoom-us
 
     yt-dlp
@@ -70,7 +72,7 @@
     dconf
     polkit_gnome
     libevdev
-    # qemu_kvm
+    qemu_kvm
     hyprpicker
     quickshell
 

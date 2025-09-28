@@ -32,6 +32,10 @@ menu:
     desc: float active
     cmd: niri msg action screenshot -p false
 
+  - key: [ "o", "Mod4+o" ]
+    desc: kill window
+    cmd: nu -e "let pid = niri msg --json pick-window | jq '.pid' | into int; kill \$pid"
+
   # - key: [ "p", "Mod4+p" ]
   #   desc: float active
   #   cmd: hex=$(niri msg pick-color | grep -o '#.*') && echo -n "$hex" | wl-copy && notify-send "$hex"
