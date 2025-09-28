@@ -457,6 +457,7 @@ i end
 (defchordsv2
 
   (f15 a) @cw 16 all-released (over sup)
+  (t g) caps 16 all-released (over sup)
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup)
 
   (, ;) (macro S-; q) 20 all-released (over sup)
@@ -470,7 +471,7 @@ i end
   
   (l o    ) S-' 14 all-released (over sup)
   (  o u  ) S-1 13 all-released (over sup)
-  (    u j) caps 15 all-released (over sup)
+  ;; (    u j) caps 15 all-released (over sup)
 
   (n s    ) S-, 14 all-released (over sup)
   (  s t  ) '   13 all-released (over sup)
