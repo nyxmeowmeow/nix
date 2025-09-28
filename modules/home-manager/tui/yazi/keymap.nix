@@ -9,6 +9,12 @@
       }
 
       {
+        on = [ "g" "r" ];
+        run = "shell -- ya emit cd '$(git rev-parse --show-toplevel)'";
+        desc = "go to git root";
+      }
+
+      {
         on = [ "g" "M" ];
         run = "plugin gvfs -- jump-to-device";
         desc = "Select device then jump to its mount point";
