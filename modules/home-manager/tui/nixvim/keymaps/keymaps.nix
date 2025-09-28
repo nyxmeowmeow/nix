@@ -119,12 +119,11 @@
       mode = "n";
     }
 
-    {
-      key = "x";
-      action = "\"_x";
-      mode = "n";
-    }
-
+    # {
+    #   key = "x";
+    #   action = "\"_x";
+    #   mode = "n";
+    # }
 
     {
       key = "<C-backspace>";
