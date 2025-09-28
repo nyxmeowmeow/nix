@@ -464,14 +464,14 @@ i end
   (q z) (macro q S-;) 20 all-released (over sup)
 
 
-  (b f    ) S-6 20 all-released (over sup)
+  (b f    ) S-/ 20 all-released (over sup)
   (  f d  ) S-7 15 all-released (over sup)
   (  f   w) `   20 all-released (over sup)
   (    d w) S-8 15 all-released (over sup)
   
   (l o    ) S-' 14 all-released (over sup)
   (  o u  ) S-1 13 all-released (over sup)
-  ;; (    u j) caps 15 all-released (over sup)
+  (    u j) S-6 15 all-released (over sup)
 
   (n s    ) S-, 14 all-released (over sup)
   (  s t  ) '   13 all-released (over sup)
