@@ -1,7 +1,7 @@
 { lib, ... }: {
   config.theme = "kanso_zen";
   config.wm = "niri";
-  config.font = "mononoki";
+  config.font = "iosevka";
   config.font_size = "small";
 
   options.theme = lib.mkOption {
