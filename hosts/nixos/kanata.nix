@@ -68,7 +68,7 @@
   cw (caps-word-custom
     2000
     (a b c d e f g h i j k l m n o p q r s t u v w x y z)
-    (bspc del up down left rght - 0 1 2 3 4 5 6 7 8 9 lsft rsft)
+    (bspc del up down left right - 0 1 2 3 4 5 6 7 8 9 lsft rsft)
   )
 
   magic (switch
@@ -110,7 +110,7 @@
 
 
   ;; NULL
-    ((and (key-history n 2) (key-history l 1))) (macro C-w S-n S-u S-l S-l) break
+    ((and (key-history n 2) (key-history l 1))) (multi (release-key n) (release-key l) (macro C-w S-n S-u S-l S-l)) break
 
 
 
