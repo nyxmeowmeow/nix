@@ -47,7 +47,7 @@
 
   space (switch
     ((input-history real bspc 2)) spc break ;; dont = after a ==
-    ((key-history lsft 1)) (multi (release-key lsft) (macro spc)) break
+    ((key-history lsft 1)) (multi (release-key lsft) (macro = spc)) break
     () spc break
   )
 
