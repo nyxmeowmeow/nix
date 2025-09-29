@@ -84,20 +84,21 @@
     ;; shift after ::
     ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
 
-    ((and (key-history s 2) (key-history z 1))) (macro bspc i z e) break
+    ((and (key-history s 2) (key-history z 1))) (multi (release-key s) (release-key z) (macro bspc i z e)) break
 
     ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
 
+    ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
 
 
     ((key-history ' 1)) (macro S-0) break
 
     ;; println!("
-    ((and (key-history p 3) (key-history l 2) (key-history n 1))) (macro bspc bspc r i n t l n S-1 S-9 S-') break
+    ((and (key-history p 3) (key-history l 2) (key-history n 1))) (multi (release-key p) (release-key l) (release-key n) (macro bspc bspc r i n t l n S-1 S-9 S-')) break
     ;; printf("
-    ((and (key-history p 2) (key-history f 1))) (macro bspc r i n t f S-9 S-') break
+    ((and (key-history p 2) (key-history f 1))) (multi (release-key p) (release-key f) (macro bspc r i n t f S-9 S-')) break
     ;; format!("
-    ((and (key-history f 3) (key-history m 2) (key-history t 1))) (macro bspc bspc o r m a t S-1 S-9 S-') break
+    ((and (key-history f 3) (key-history m 2) (key-history t 1))) (multi (release-key f) (release-key m) (release-key t)(macro bspc bspc o r m a t S-1 S-9 S-')) break
     
     ;; faster space for shorter words
     ((and (key-history spc 2) (key-history a 1))) (macro spc) break
@@ -145,10 +146,10 @@
 
 ;; sfs
     ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
-    ((and(key-history e 2) (key-history y 1))) (macro e) break
-    ((and(key-history e 2) (key-history v 1))) (macro e) break
+    ((and(key-history e 2) (key-history y 1))) (multi (release-key e) (macro e)) break
+    ((and(key-history e 2) (key-history v 1))) (multi (release-key e) (macro e)) break
     ;; sys
-    ((and(key-history s 2) (key-history y 1))) (macro s) break
+    ((and(key-history s 2) (key-history y 1))) (multi (release-key s) (macro s)) break
 
 
 ;; sfb
