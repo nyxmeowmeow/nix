@@ -2,6 +2,11 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
+    {
+      key = "<Leader>b";
+      action = "<cmd>:%s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>";
+      mode = [ "n" "x" ];
+    }
 
     {
       key = "<C-n>";
