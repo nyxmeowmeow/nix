@@ -4,6 +4,18 @@
     keymaps = [
 
     {
+      key = "<C-n>";
+      action = "I";
+      mode = [ "n" "x" ];
+    }
+
+    {
+      key = "<C-s>";
+      action = "A";
+      mode = [ "n" "x" ];
+    }
+
+    {
       key = "<PageDown>";
       action = "<C-d>";
       mode = [ "n" "i" "x" ];
