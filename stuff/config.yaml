@@ -34,7 +34,7 @@ menu:
 
   - key: [ "o", "Mod4+o" ]
     desc: kill window
-    cmd: nu -e "let pid = niri msg --json pick-window | jq '.pid' | into int; kill \$pid"
+    cmd: niri msg --json pick-window | jq '.pid' | xargs kill
 
   # - key: [ "p", "Mod4+p" ]
   #   desc: float active
