@@ -3,7 +3,7 @@
     globals.mapleader = " ";
     keymaps = [
     {
-      key = "<Leader>b";
+      key = "<Leader>r";
       action = "<cmd>:%s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>";
       mode = [ "n" "x" ];
     }
