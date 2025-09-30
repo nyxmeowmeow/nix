@@ -232,13 +232,6 @@
     }
 
     {
-      key = "<C-S>";
-      action = "<cmd>w<cr>";
-      mode = [ "i" "n" "v" "x" ];
-      options.silent = true;
-    }
-
-    {
       key = "<leader>d";
       action = "<cmd>bp<cr>";
       mode = [ "n" "v" "x" ];
