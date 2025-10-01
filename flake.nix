@@ -17,7 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     slippi.url = "github:lytedev/slippi-nix";
-    nuhxboard.url = "github:justDeeevin/NuhxBoard";
+    # nuhxboard.url = "github:justDeeevin/NuhxBoard";
     # walker.url = "github:abenz1267/walker";
     pollymc.url = "github:fn2006/PollyMC";
     # moonlight = {
