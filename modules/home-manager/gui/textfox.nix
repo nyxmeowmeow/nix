@@ -3,7 +3,7 @@
 
   textfox = {
     enable = true;
-      profile = "default";
+      profile = "meow";
       config = {
         background = {
           color = "#090E13";
