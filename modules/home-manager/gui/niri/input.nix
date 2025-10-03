@@ -10,6 +10,10 @@
       #   enable = true;
       #   map-to-output = "DP-1";
       # };
+      keyboard = {
+      repeat-delay = 300;
+      repeat-rate = 25;
+      };
     };
     cursor.hide-after-inactive-ms = 666;
   };
