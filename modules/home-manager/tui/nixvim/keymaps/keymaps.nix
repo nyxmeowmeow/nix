@@ -4,7 +4,7 @@
     keymaps = [
     {
       key = "<Leader>r";
-      action = "<cmd>:s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>";
+      action = "<cmd>:s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr><cmd>nohlsearch<cr>";
       mode = [ "n" "x" ];
     }
 
