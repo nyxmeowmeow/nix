@@ -461,7 +461,8 @@
   --blue: #8aadf4;
   --lavender: #b7bdf8;
   --lavender-trans: #b7bdf833;
-  --text: #cad3f5;
+  --text: #C5C9C7;
+  /* --text: #cad3f5; */
   --subtext1: #b8c0e0;
   --subtext0: #a5adcb;
   --subtext: #a5adcb;
@@ -473,14 +474,16 @@
   --surface1: #494d64;
   --surface0: #363a4f;
   --surface: #363a4f;
-  --bg: #000000;
+  --bg: #090E13;
+  /* --bg: #000000; */
   --mantle: #1e2030;
   --crust: #181926;
 }
 body,
 .visual-refresh body {
   /* change this to another color, its only transparent cause of how i have transparency on windows */
-  background: #000000cc !important;
+  background: #090E13cc !important;
+  /* background: #000000cc !important; */
 }
 #app-mount,
 .visual-refresh #app-mount,
