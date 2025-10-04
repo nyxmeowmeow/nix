@@ -1,8 +1,8 @@
-{
+{ inputs, pkgs, ... }: {
   imports = [ inputs.textfox.homeManagerModules.default ];
 
   programs.firefox.enable = true;
-  programs.firefox.nativeMessagingHosts.tridactyl = true;
+  programs.firefox.nativeMessagingHosts = [ pkgs.tridactyl-native ];
 
   textfox = {
     enable = true;
@@ -34,5 +34,4 @@
       };
     };
   };
-};
 }
