@@ -1,6 +1,9 @@
 {
   imports = [ inputs.textfox.homeManagerModules.default ];
 
+  programs.firefox.enable = true;
+  programs.firefox.nativeMessagingHosts.tridactyl = true;
+
   textfox = {
     enable = true;
     profile = "meow";

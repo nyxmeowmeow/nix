@@ -4,6 +4,7 @@
     # zrythm // borken
     # lmms // borken
     walker
+    tridactyl-native
 
     tldr
 
