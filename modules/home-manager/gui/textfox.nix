@@ -9,7 +9,7 @@
     profile = "meow";
     config = {
       background = {
-        color = "#090E13";
+        color = "#090E1300";
       };
       border = {
         color = "#7FB4CA";
