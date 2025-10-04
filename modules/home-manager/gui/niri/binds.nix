@@ -15,6 +15,8 @@
     "Mod+C".action = spawn "footclient" "yazi";
     "Mod+S".action = spawn "footclient" "nvim";
 
+"Mod+X".action = sh "niri msg action expand-column-to-available-width";
+
 
     "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
     "Mod+U".action = sh "pkill btop || footclient btop"; # TODO window rule for size
