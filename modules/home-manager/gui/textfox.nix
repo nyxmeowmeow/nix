@@ -17,7 +17,7 @@
         transition = "1.0s ease";
         radius = "3px";
       };
-      displayHorizontalTabs = false;
+      displayHorizontalTabs = true;
       displayWindowControls = false;
       displayNavButtons = false;
       displayUrlbarIcons = true;
