@@ -22,7 +22,7 @@
       displayNavButtons = false;
       displayUrlbarIcons = true;
       displaySidebarTools = false;
-      displayTitles = false;
+      displayTitles = true;
       newtabLogo = "   __            __  ____          \A   / /____  _  __/ /_/ __/___  _  __\A  / __/ _ \\| |/_/ __/ /_/ __ \\| |/_/\A / /_/  __/>  </ /_/ __/ /_/ />  <  \A \\__/\\___/_/|_|\\__/_/  \\____/_/|_|  ";
       font = { 
         family = "Iosevka Nerd Font Mono";
