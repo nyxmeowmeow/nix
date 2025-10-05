@@ -10,7 +10,12 @@ in {
 
       def ce [] {
         let d = pwd
-        niri msg action spawn-sh -- "foot -e nvim $d/src/main.rs"
+        let n = foot -e nvim
+
+          # let output = ($base | str join "") + ".mov"
+
+        # niri msg action spawn-sh -- $n $d | str join "" + /src/main.rs
+        niri msg action spawn-sh -- ($n | str join "") + ($d | str join "") + /src/main.rs
         sleep 0.1sec
         niri msg action focus-column-right
         niri msg action toggle-column-tabbed-display
