@@ -9,10 +9,10 @@ in {
 
 
       def ce [] {
-        foot -e nvim src/main.rs
-        niri msg action toggle-column-tabbed-display
+        foot -e nvim src/main.rs &
+        niri msg action toggle-column-tabbed-display &
         let d = pwd
-        foot -e cd $d
+        foot -e cd $d &
       }
 
 
