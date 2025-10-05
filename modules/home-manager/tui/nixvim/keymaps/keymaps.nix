@@ -3,6 +3,24 @@
     globals.mapleader = " ";
     keymaps = [
     {
+      key = "<Leader>be"; # tw
+      action = "<cmd>lua vim.o.wrap = not vim.o.wrap<CR>";
+      mode = [ "n" "x" ];
+    }
+
+    {
+      key = "<Leader>bv"; # tr
+      action = "<cmd>lua vim.o.relativenumber = not vim.o.relativenumber<CR>";
+      mode = [ "n" "x" ];
+    }
+
+    {
+      key = "<Leader>bi"; # tn
+      action = "<cmd>lua vim.o.number = not vim.o.number<CR>";
+      mode = [ "n" "x" ];
+    }
+
+    {
       key = "<Leader>r";
       action = "mz<cmd>s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z<cmd>nohlsearch<cr>";
       mode = [ "n" "x" ];
