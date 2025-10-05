@@ -2,21 +2,36 @@
   programs.nixvim = {
     globals.mapleader = " ";
     keymaps = [
-    {
+    { # toggle wrap
       key = "<Leader>be"; # tw
       action = "<cmd>lua vim.o.wrap = not vim.o.wrap<CR>";
       mode = [ "n" "x" ];
     }
+    { # toggle wrap for buffer
+      key = "<Leader>bE"; # tw
+      action = "<cmd>lua vim.bo.wrap = not vim.bo.wrap<CR>";
+      mode = [ "n" "x" ];
+    }
 
-    {
+    { # toggle rnu
       key = "<Leader>bv"; # tr
       action = "<cmd>lua vim.o.relativenumber = not vim.o.relativenumber<CR>";
       mode = [ "n" "x" ];
     }
+    { # toggle rnu for buffer
+      key = "<Leader>bV"; # tr
+      action = "<cmd>lua vim.bo.relativenumber = not vim.bo.relativenumber<CR>";
+      mode = [ "n" "x" ];
+    }
 
-    {
+    { # toggle num
       key = "<Leader>bi"; # tn
       action = "<cmd>lua vim.o.number = not vim.o.number<CR>";
+      mode = [ "n" "x" ];
+    }
+    { # toggle num for buffer
+      key = "<Leader>bI"; # tn
+      action = "<cmd>lua vim.bo.number = not vim.bo.number<CR>";
       mode = [ "n" "x" ];
     }
 
