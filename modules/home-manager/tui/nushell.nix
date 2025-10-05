@@ -8,17 +8,24 @@ in {
     configFile.text = /* nu */ ''
 
 
+      def ce [] {
+        foot -e nvim src/main.rs
+        niri msg action toggle-column-tabbed-display
+        let d = pwd
+        foot -e cd $d
+      }
+
 
       # cd && ls
-      def cs [msg: string] { # FIXME doesnt stay in the dir
-        cd $msg
-        ls
-      }
+      # def cs [msg: string] { # FIXME doesnt stay in the dir
+      #   cd $msg
+      #   ls
+      # }
 
       def gl [] {
         let selection = (git log --oneline | lines | fzf)
         let hash = ($selection | split row " " | get 0)
-        $hash | wl-copy
+        wl-copy $hash
       }
 
       def hist [] {

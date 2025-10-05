@@ -6,6 +6,8 @@
     relativenumber = false;
     signcolumn = "number";
 
+    scrolloff = 10;
+
     cursorline = true;
 
     shiftwidth = 2;
@@ -17,12 +19,12 @@
 
     autochdir = true; # auto cd into current buffers dir
 
-    guifont = "mononoki:h25";
+    # guifont = "mononoki:h25";
 
     wrap = true;
     linebreak = true; # only wrap at whitespace
-      breakindent = true; # indent wrap
-      breakindentopt = "shift:2";
+    breakindent = true; # indent wrap
+    breakindentopt = "shift:2";
     showbreak = "↪ "; 
 
     #"vim.diagnostic.severity.ERROR".icon = " ";
