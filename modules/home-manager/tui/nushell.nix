@@ -9,10 +9,13 @@ in {
 
 
       def ce [] {
-        niri msg action toggle-column-tabbed-display
         let d = pwd
-        foot -e cd $d
         niri msg action spawn-sh -- "foot -e nvim $d/src/main.rs"
+        sleep 0.1sec
+        niri msg action focus-column-right
+        niri msg action toggle-column-tabbed-display
+        niri msg action focus-column-left
+        niri msg action consume-or-expel-window-right
       }
 
 
