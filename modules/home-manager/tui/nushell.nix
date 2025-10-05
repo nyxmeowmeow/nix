@@ -8,20 +8,20 @@ in {
     configFile.text = /* nu */ ''
 
 
-      def ce [] {
-        let d = pwd
-        let n = foot -e nvim
-
-          # let output = ($base | str join "") + ".mov"
-
-        # niri msg action spawn-sh -- $n $d | str join "" + /src/main.rs
-        niri msg action spawn-sh -- ([ $n, $d ] | str join "") + /src/main.rs
-        sleep 0.1sec
-        niri msg action focus-column-right
-        niri msg action toggle-column-tabbed-display
-        niri msg action focus-column-left
-        niri msg action consume-or-expel-window-right
-      }
+      # def ce [] {
+      #   let d = pwd
+      #   let n = foot -e nvim
+      #
+      #     # let output = ($base | str join "") + ".mov"
+      #
+      #   # niri msg action spawn-sh -- $n $d | str join "" + /src/main.rs
+      #   niri msg action spawn-sh -- "bash -e 'foot -e nvim $(pwd)/src/main.rs'"
+      #   sleep 0.1sec
+      #   niri msg action focus-column-right
+      #   niri msg action toggle-column-tabbed-display
+      #   niri msg action focus-column-left
+      #   niri msg action consume-or-expel-window-right
+      # }
 
 
       # cd && ls

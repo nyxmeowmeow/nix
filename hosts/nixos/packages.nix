@@ -4,6 +4,7 @@
     # zrythm // borken
     # lmms // borken
     walker
+    rofi
     tridactyl-native
 
     tldr
