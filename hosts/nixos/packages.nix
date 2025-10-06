@@ -23,6 +23,7 @@
     /* image */
     # gimp
     krita
+    inkscape
     # aseprite
     qview
 
