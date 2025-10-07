@@ -1,8 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-    # reaper // borken
-    # zrythm // borken
-    # lmms // borken
+    # reaper # borken
+    # zrythm # borken
+    # lmms # borken
     walker
     rofi
     tridactyl-native
@@ -88,7 +88,7 @@
     wine
     wine64
     bottles
-    lutris
+    # lutris
     mono
 
     # (discord.override {
