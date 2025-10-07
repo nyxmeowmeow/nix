@@ -4,8 +4,8 @@ self: super: {
       "-Dc_args=-O3 -march=native -pipe"
     ];
 
-    waylandSupport = true;
-    x11Support = false;
+    waylandSupport = false;
+    x11Support = true;
     sixelSupport = false;
     bluraySupport = false;
     pipewireSupport = true;
