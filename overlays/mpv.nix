@@ -1,16 +1,16 @@
-self: super: {
-  mpv = super.mpv.overrideAttrs {
-    mesonBuildFlags = [
+final: prev: {
+  mpv = prev.mpv.overrideAttrs {
+    mesonFlags = [
       "-Dc_args=-O3 -march=native -pipe"
     ];
 
-    waylandSupport = true;
-    x11Support = false;
-    sixelSupport = false;
-    bluraySupport = false;
-    pipewireSupport = true;
-    alsaSupport = false;
-    pulseSupport = false;
-    jackaudioSupport = false;
+    # waylandSupport = true;
+    # x11Support = false;
+    # sixelSupport = false;
+    # bluraySupport = false;
+    # pipewireSupport = true;
+    # alsaSupport = false;
+    # pulseSupport = false;
+    # jackaudioSupport = false;
   };
 }
