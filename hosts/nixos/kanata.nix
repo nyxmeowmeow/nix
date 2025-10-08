@@ -455,7 +455,8 @@ i end
   (t g) caps 16 all-released (over sup)
   (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup)
   (a f17) S-5 15 all-released (over sup)
-  (h l) S-5 15 all-released (over sup)
+  (h l) ' 15 all-released (over sup)
+  (a o) S-5 15 all-released (over sup)
 
   (, ;) (macro S-; q) 20 all-released (over sup)
   (q z) (macro q S-;) 20 all-released (over sup)

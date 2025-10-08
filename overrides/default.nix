@@ -1,3 +1,0 @@
-[
-  (import ./mpv.nix)
-]
