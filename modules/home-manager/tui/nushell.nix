@@ -8,6 +8,8 @@ in {
     configFile.text = /* nu */ ''
 
 
+
+
       # def ce [] {
       #   let d = pwd
       #   let n = foot -e nvim
@@ -29,6 +31,10 @@ in {
       #   cd $msg
       #   ls
       # }
+
+      def rgb [ msg: string ] {
+        pastel format rgb "$msg" | wl-copy
+      }
 
       def gl [] {
         let selection = (git log --oneline | lines | fzf)

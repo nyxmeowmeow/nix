@@ -26,6 +26,7 @@
     inkscape
     # aseprite
     qview
+    pastel
 
     /* video */
     ffmpeg
