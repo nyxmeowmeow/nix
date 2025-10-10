@@ -1,5 +1,5 @@
 { lib, ... }: {
-  config.theme = "kanso_zen";
+  config.theme = "kantsi";
   config.wm = "niri";
   config.font = "iosevka";
   config.font_size = "small";
@@ -15,6 +15,7 @@
       "kanso_mist"
       "kanso_ink"
       "kanso_zen"
+      "kantsi"
     ];
     default = "blacchiato";
   };
