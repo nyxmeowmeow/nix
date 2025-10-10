@@ -18,6 +18,7 @@
         ../../themes/lix/home-manager/default.nix
         ../../themes/macchiato/home-manager/default.nix
         ../../themes/kanso/home-manager/default.nix
+        ../../themes/kantsi/home-manager/default.nix
         ../../modules/home-manager/desktop.nix
         ../../modules/home-manager/home.nix
 
