@@ -14,6 +14,6 @@
     ./nushell_kanso.nix
     ./starship_kanso.nix
     ./walker_kanso.nix
-    ./yazi.nix
+    ./yazi_kanso.nix
   ];
 }

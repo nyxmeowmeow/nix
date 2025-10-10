@@ -10,6 +10,7 @@
     ../../kanso/home-manager/ncmpcpp_kanso.nix
     ../../kanso/home-manager/starship_kanso.nix
     ../../kanso/home-manager/nushell_kanso.nix
+    ../../kanso/home-manager/yazi_kanso.nix
     ../../kanso/home-manager/niri_kanso.nix
   ];
 }
