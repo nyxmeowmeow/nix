@@ -13,6 +13,7 @@
         ../../themes/lix/home-manager/default.nix
         ../../themes/macchiato/home-manager/default.nix
         ../../themes/kanso/home-manager/default.nix
+        ../../themes/kantsi/home-manager/default.nix
         ./desktop.nix
         ./home.nix
         ./mimetypes.nix
