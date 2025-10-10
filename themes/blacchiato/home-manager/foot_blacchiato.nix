@@ -1,5 +1,5 @@
 { lib, theme, ... }: {
-  config = lib.mkIf (theme == "black") {
+  config = lib.mkIf (theme == "blacchiato") {
 
     programs.foot = {
       enable = true;

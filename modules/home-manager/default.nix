@@ -8,7 +8,7 @@
 
     users.${username} = {
       imports = [
-        ../../themes/black/home-manager/default.nix
+        ../../themes/blacchiato/home-manager/default.nix
         ../../themes/everforest/home-manager/default.nix
         ../../themes/lix/home-manager/default.nix
         ../../themes/macchiato/home-manager/default.nix

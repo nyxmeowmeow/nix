@@ -1,5 +1,5 @@
 { flake_dir, lib, theme, ... }: {
-  config = lib.mkIf (theme == "black") {
+  config = lib.mkIf (theme == "blacchiato") {
 
     services.hyprpaper = {
       enable = true;

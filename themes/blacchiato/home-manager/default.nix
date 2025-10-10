@@ -6,11 +6,11 @@
     ../../macchiato/home-manager/starship_macchiato.nix
     ../../macchiato/home-manager/nushell_macchiato.nix
     ../../macchiato/home-manager/niri_macchiato.nix
-    ./foot_black.nix
-    ./gtk_black.nix
-    ./walker_black.nix
-    ./hyprland_black.nix
-    ./hyprpaper_black.nix
-    ./fzf_black.nix
+    ./foot_blacchiato.nix
+    ./gtk_blacchiato.nix
+    ./walker_blacchiato.nix
+    ./hyprland_blacchiato.nix
+    ./hyprpaper_blacchiato.nix
+    ./fzf_blacchiato.nix
   ];
 }

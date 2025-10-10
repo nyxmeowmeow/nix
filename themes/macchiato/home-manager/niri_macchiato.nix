@@ -1,5 +1,5 @@
 { lib, theme, ... }: {
-  config = lib.mkIf (theme == "macchiato" || theme == "black") {
+  config = lib.mkIf (theme == "macchiato" || theme == "blacchiato") {
 
     programs.niri.settings.layout = {
       focus-ring = {

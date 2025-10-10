@@ -6,10 +6,9 @@
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
-      "black"
+      "blacchiato"
       "lix"
       "macchiato"
-      "ocean"
       "everforest_hard"
       "everforest_medium"
       "everforest_soft"
@@ -17,7 +16,7 @@
       "kanso_ink"
       "kanso_zen"
     ];
-    default = "black";
+    default = "blacchiato";
   };
 
   options.wm = lib.mkOption {

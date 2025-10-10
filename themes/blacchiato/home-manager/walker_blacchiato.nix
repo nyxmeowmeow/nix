@@ -2,7 +2,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (theme == "black") {
+  config = lib.mkIf (theme == "blacchiato") {
 
 #   programs.walker.theme = {
 #     # name = "meow";

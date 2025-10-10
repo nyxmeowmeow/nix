@@ -1,5 +1,5 @@
 { lib, theme, pkgs, ... }: {
-  config = lib.mkIf (theme == "black") {
+  config = lib.mkIf (theme == "blacchiato") {
 
     gtk = {
       enable = true;
