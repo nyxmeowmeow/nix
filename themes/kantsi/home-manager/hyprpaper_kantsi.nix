@@ -9,12 +9,12 @@
         splash_offset = 2.0;
 
         preload = [
-          "${flake_dir}/stuff/wallpapers/rocks_blur.png" 
+          "${flake_dir}/stuff/wallpapers/topo_1.jpg" 
         ];
 
         wallpaper = [
-          "DP-1, ${flake_dir}/stuff/wallpapers/rocks_blur.png"
-          "DP-3, ${flake_dir}/stuff/wallpapers/rocks_blur.png"
+          "DP-1, ${flake_dir}/stuff/wallpapers/topo_1.jpg"
+          "DP-3, ${flake_dir}/stuff/wallpapers/topo_1.jpg"
         ];
       };
     };
