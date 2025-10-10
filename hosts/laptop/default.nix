@@ -9,7 +9,7 @@
     ../../modules/nixos/options.nix
     ../../modules/nixos/shared.nix
     ../../modules/nixos/stylix.nix
-#    ../../themes/black/nixos/default.nix
+#    ../../themes/blacchiato/nixos/default.nix
 #    ../../themes/everforest/nixos/default.nix
 #    ../../themes/lix/nixos/default.nix
 #    ../../themes/macchiato/nixos/default.nix

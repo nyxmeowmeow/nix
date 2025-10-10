@@ -25,7 +25,7 @@
     # ./nixvim/default.nix
     # nixvim.nixosModules.nixvim
 
-    ../../themes/black/nixos/default.nix
+    ../../themes/blacchiato/nixos/default.nix
     ../../themes/everforest/nixos/default.nix
     ../../themes/lix/nixos/default.nix
     ../../themes/macchiato/nixos/default.nix

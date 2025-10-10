@@ -4,18 +4,6 @@
     {
       users = [ username ];
       commands = [
-        { # rebuild no passwd
-          command = "/run/current-system/sw/bin/nixos-rebuild";
-          options = [ "NOPASSWD" ];
-        }
-        { # rebuild no passwd
-          command = "/run/current-system/sw/bin/nh";
-          options = [ "NOPASSWD" ];
-        }
-        { # kanata no passwd
-          command = "/run/current-system/sw/bin/kanata";
-          options = [ "NOPASSWD" ];
-        }
         { # keyb0xx no passwd
           command = "/run/current-system/sw/bin/steam-run /home/${username}/melee/keyb0xx";
           options = [ "NOPASSWD" ];
