@@ -1,0 +1,88 @@
+(defcfg
+process-unmapped-keys yes
+)
+
+(defsrc
+)
+
+(deflayermap base
+1 q
+2 w
+3 e
+4 r
+5 t
+
+8 y
+9 u
+0 i
+- o
+= p
+
+q a
+w s
+e d
+r f
+t g
+
+i h
+o j
+p k
+[ l
+] ;
+\ '
+
+a z
+s x
+d c
+f v
+g b
+
+k n
+l m
+; ,
+' .
+ent /
+
+
+
+c spc
+x lmet
+v lctl
+
+m ent
+, (layer-while-held syms)
+. rsft
+
+tab esc
+)
+
+(deflayermap syms
+v lsft
+
+q -
+w =
+
+a _
+s +
+
+o S-9
+p S-0
+
+d [
+f ]
+
+e S-[
+r S-]
+
+1 1
+2 2
+3 3
+4 4
+5 5
+
+8 6
+9 7
+0 8
+- 9
+= 0
+)
