@@ -241,7 +241,7 @@ in {
 
       cr = "cargo run";
 
-      meow = "echo :3"; # so silly
+      # meow = "echo :3"; # so silly
 
       # na = "nvim ~/nix/packages.nix -c '/systemPackages'";
       ns = "nix-shell -p";

@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    meow
     wlr-which-key
 
     nix-output-monitor
