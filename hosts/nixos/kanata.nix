@@ -70,6 +70,10 @@
   ;; TODO? fl -> false
   ;; TODO sg -> String
 
+    
+    ;; insert current date
+    ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd date) break
+
     ((input-history real lsft 2)) (macro lctl ent) break
 
     ((key-history 3 1)) (macro S-1) break
