@@ -72,7 +72,7 @@
 
     
     ;; insert current date
-    ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd "date | wl-copy && wl-paste") break
+    ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (macro bspc bspc bspc bspc (cmd-output-keys "date")) break
 
     ((input-history real lsft 2)) (macro lctl ent) break
 
