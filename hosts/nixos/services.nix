@@ -4,8 +4,6 @@
   services = {
     flatpak.enable = false;
 
-    openssh.enable = false;
-
     xserver = {
       videoDrivers = [
         "amdgpu"
