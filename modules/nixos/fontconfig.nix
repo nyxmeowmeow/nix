@@ -4,6 +4,7 @@
       nerd-fonts.mononoki
       nerd-fonts.iosevka
       sn-pro
+      noto-fonts-cjk-sans
     ];
     fontconfig = {
       enable = true;
