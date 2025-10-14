@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
   programs.nixvim.lsp = {
     # enable = true;
     inlayHints.enable = true;
@@ -16,5 +16,36 @@
         # installCargo = false;
       };
     };
+
+    keymaps = [
+    {
+      key = "gt";
+      lspBufAction = "definition";
+    }
+    {
+      key = "gT";
+      lspBufAction = "references";
+    }
+    {
+      key = "gb";
+      lspBufAction = "type_definition";
+    }
+    {
+      key = "gm";
+      lspBufAction = "implementation";
+    }
+    {
+      key = "K";
+      lspBufAction = "hover";
+    }
+    {
+      action = ":lua require('telescope.builtin').lsp_definitions<cr>";
+      key = "<Leader>t";
+    }
+    # {
+    #   action = "<CMD>Lspsaga hover_doc<Enter>";
+    #   key = "K";
+    # }
+    ];
   };
 }

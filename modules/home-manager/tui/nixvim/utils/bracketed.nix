@@ -11,7 +11,7 @@
       { buffer = "r"; }
       { comment = "w"; }
       { conflict = "x"; }
-      { diagnostic = "s"; }
+      { diagnostic = "t"; }
       { file = "m"; }
       { indent = "l"; }
       { jump = "y"; }
