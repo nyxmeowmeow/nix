@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
     qutebrowser
+    python313Packages.adblock
+    python312Packages.adblock
 
 
     # reaper # borken
