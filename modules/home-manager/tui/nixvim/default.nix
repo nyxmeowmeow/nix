@@ -33,6 +33,7 @@
     ./utils/flash.nix
     ./ui/indentscope.nix
     ./utils/lsp.nix
+    ./utils/lspconfig.nix
     # ./utils/pairs.nix
     ./utils/splitjoin.nix
     ./utils/surround.nix
