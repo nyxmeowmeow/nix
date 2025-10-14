@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+    qutebrowser
+
+
     # reaper # borken
     # zrythm # borken
     # lmms # borken
