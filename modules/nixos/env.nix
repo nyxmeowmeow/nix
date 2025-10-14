@@ -1,5 +1,9 @@
 {
   environment.sessionVariables = {
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME = "$HOME/.local/share";
+    XDG_CACHE_HOME = "$HOME/.cache";
+
     CALCHISTFILE = "$XDG_CACHE_HOME/calc_history";
     CARGO_HOME = "$XDG_DATA_HOME/cargo";
     DOCKER_CONFIG = "$XDG_CONFIG_HOME/docker";
