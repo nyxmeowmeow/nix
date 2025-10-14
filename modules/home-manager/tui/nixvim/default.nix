@@ -31,7 +31,6 @@
     ./utils/completion.nix
     ./ui/diagnostic.nix
     ./utils/flash.nix
-    ./utils/harpoon.nix
     ./ui/indentscope.nix
     ./utils/lsp.nix
     # ./utils/pairs.nix
