@@ -8,6 +8,8 @@
     # reaper # borken
     # zrythm # borken
     # lmms # borken
+    ardour
+
     walker
     rofi
     tridactyl-native

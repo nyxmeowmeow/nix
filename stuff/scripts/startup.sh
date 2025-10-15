@@ -2,4 +2,5 @@
 
 foot nu -e "walker --gapplication-service" &
 foot ~/nix/stuff/scripts/hydrate.sh &
-foot ~/.config/kanata/hyprkan -d
+foot ~/nix/stuff/scripts/retry.sh &
+foot foot --server

@@ -12,6 +12,7 @@
     # "Mod+S".action = spawn "kitty" "-1" "nvim";
 
     "Mod+T".action = spawn "footclient";
+    "Mod+Shift+T".action = spawn "foot";
     "Mod+C".action = spawn "footclient" "yazi";
     "Mod+S".action = spawn "footclient" "nvim";
 
