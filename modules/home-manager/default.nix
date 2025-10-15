@@ -26,6 +26,7 @@
         ./gui/emacs/emacs.nix
         ./gui/foot.nix
         # ./gui/textfox.nix
+        ./gui/firefox.nix
         ./gui/mpv.nix
         ./gui/niri/niri.nix
         ./gui/obs.nix
