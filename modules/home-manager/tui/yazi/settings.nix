@@ -11,7 +11,7 @@
         linemode       = "none";
         show_hidden    = true;
         show_symlink   = true;
-        scrolloff      = 5;
+        scrolloff      = 10;
         mouse_events   = [];
         title_format   = "Yazi: {cwd}";
       };

@@ -23,6 +23,10 @@
     }
     {
       key = "gT";
+      lspBufAction = "declaration";
+    }
+    {
+      key = "gV";
       lspBufAction = "references";
     }
     {
@@ -30,7 +34,7 @@
       lspBufAction = "type_definition";
     }
     {
-      key = "gm";
+      key = "gn";
       lspBufAction = "implementation";
     }
     {
@@ -38,7 +42,7 @@
       lspBufAction = "hover";
     }
     {
-      action = ":lua require('telescope.builtin').lsp_definitions<cr>";
+      action = ":Telescope lsp_definitions<cr>"; # TODO
       key = "<Leader>t";
     }
     # {

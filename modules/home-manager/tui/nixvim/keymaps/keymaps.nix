@@ -282,6 +282,28 @@
       mode = "n";
     }
 
+    {
+      key = "<C-S-a>";
+      action = ":m .+1<CR>==";
+      mode = "n";
+    }
+    {
+      key = "<C-S-e>";
+      action = ":m .-2<CR>==";
+      mode = "n";
+    }
+
+    {
+      key = "<C-S-a>";
+      action = ":'<,'>m .+1<CR>==";
+      mode = "v";
+    }
+    {
+      key = "<C-S-e>";
+      action = ":'<,'>m .-2<CR>==";
+      mode = "v";
+    }
+
     # { key = "<left>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
     # { key = "<down>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
     # { key = "<up>"; action = ""; mode = [ "i" "n" "v" "x" ]; }
