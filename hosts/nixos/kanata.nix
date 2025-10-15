@@ -80,6 +80,7 @@
     ((key-history 3 1)) (macro S-1) break
 
 
+
     ;; shift after ::
     ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
 
