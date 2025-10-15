@@ -19,6 +19,10 @@
 
     autochdir = true; # auto cd into current buffers dir
 
+    autoindent = true;
+    smartindent = true;
+    smarttab = true;
+
     # guifont = "mononoki:h25";
 
     wrap = true;
@@ -26,6 +30,11 @@
     breakindent = true; # indent wrap
     breakindentopt = "shift:2";
     showbreak = "↪ "; 
+
+
+    splitbelow = true;
+    splitright = true;
+    undofile = true;
 
     #"vim.diagnostic.severity.ERROR".icon = " ";
     #"vim.diagnostic.severity.HINT".icon = " ";

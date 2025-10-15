@@ -228,11 +228,11 @@
       mode = [ "n" "v" "x" ];
     }
 
-    {
-      key = "<tab>";
-      action = "%";
-      mode = [ "n" "v" "x" ];
-    }
+    # {
+    #   key = "<tab>";
+    #   action = "%";
+    #   mode = [ "n" "v" "x" ];
+    # }
 
     {
       key = "<C-r>";
