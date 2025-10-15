@@ -119,6 +119,8 @@
 
 
     ((key-history tab 1)) (macro enter) break
+    ((key-history up 1)) (macro enter) break
+    ((key-history down 1)) (macro enter) break
 
 
   ;; query
