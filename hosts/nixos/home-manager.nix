@@ -50,6 +50,7 @@
         ../../modules/home-manager/tui/yazi/yazi.nix
         ../../modules/home-manager/gui/zen/zen.nix
         ../../modules/home-manager/gui/textfox.nix
+        ../../modules/home-manager/gui/firefox.nix
         ../../modules/home-manager/tui/zoxide.nix
         ../../modules/home-manager/tui/bash.nix
         # ../../modules/home-manager/gui/hyprland.nix
