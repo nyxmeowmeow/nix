@@ -1,18 +1,29 @@
-{
+{ lib, config, ... }: {
   programs.niri.settings.window-rules = [
   {
     draw-border-with-background = false;
     clip-to-geometry = true;
-    geometry-corner-radius =
-      let
-        r = 10.0;
-      in {
-        top-left = r;
-        top-right = r;
-        bottom-left = r;
-        bottom-right = r;
-      };
+    geometry-corner-radius = {
+      top-left = 10.0;
+      top-right = 10.0;
+      bottom-left = 10.0;
+      bottom-right = 10.0;
+    };
+
+    # FIXME
+    # geometry-corner-radius = lib.mkIf (config.rounding == false) {
+    #   top-left = 0.0;
+    #   top-right = 0.0;
+    #   bottom-left = 0.0;
+    #   bottom-right = 0.0;
+    # } ++ lib.mkIf (config.rounding == true) {
+    #   top-left = 10.0;
+    #   top-right = 10.0;
+    #   bottom-left = 10.0;
+    #   bottom-right = 10.0;
+    # };
   }
+
 
   {
     matches = [ { app-id = "^vesktop$"; } ];
@@ -30,11 +41,11 @@
     min-height = 1080;
     max-height = 1080;
     geometry-corner-radius = {
-        top-left = 0.0;
-        top-right = 0.0;
-        bottom-left = 0.0;
-        bottom-right = 0.0;
-      };
+      top-left = 0.0;
+      top-right = 0.0;
+      bottom-left = 0.0;
+      bottom-right = 0.0;
+    };
     variable-refresh-rate = false;
     open-floating = false;
   }

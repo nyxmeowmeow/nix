@@ -3,6 +3,7 @@
   config.wm = "niri";
   config.font = "iosevka";
   config.font_size = "small";
+  config.rounding = true;
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
