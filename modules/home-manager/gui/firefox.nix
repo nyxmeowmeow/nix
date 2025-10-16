@@ -5,7 +5,7 @@
     profiles = {
       meow = {
         isDefault = true;
-        name = "meow";
+        name = "xgfqkd74.meow";
         id = 0;
 # preConfig = ''
 # '';
