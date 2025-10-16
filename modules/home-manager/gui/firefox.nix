@@ -5,8 +5,9 @@
     profiles = {
       "xgfqkd74.meow" = {
         isDefault = true;
-        name = "xgfqkd74.meow";
-        id = 0;
+        name = "meow";
+        path = "xgfqkd74.meow";
+        id = 1;
 # preConfig = ''
 # '';
         search = {
