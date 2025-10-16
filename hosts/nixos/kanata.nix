@@ -69,6 +69,7 @@
   ;; TODO convert rust ints to c99 ints
   ;; TODO? fl -> false
   ;; TODO sg -> String
+  ;; TODO als -> o
 
     
     ;; insert current date

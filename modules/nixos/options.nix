@@ -20,6 +20,11 @@
     default = "blacchiato";
   };
 
+  options.rounding = lib.mkOption {
+    type = lib.types.boolean;
+    default = true;
+  };
+
   options.wm = lib.mkOption {
     type = lib.types.enum [
       "niri"
