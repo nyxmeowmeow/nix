@@ -211,10 +211,10 @@
       mode = "n";
     }
 
-    { key = "{"; action = "("; mode = [ "n" "v" "x" ]; }
-    { key = "}"; action = ")"; mode = [ "n" "v" "x" ]; }
-    { key = "("; action = "}"; mode = [ "n" "v" "x" ]; }
-    { key = ")"; action = "{"; mode = [ "n" "v" "x" ]; }
+    { key = "{"; action = "("; mode = [ "n" "v" "x" "o" ]; }
+    { key = "}"; action = ")"; mode = [ "n" "v" "x" "o" ]; }
+    { key = "("; action = "}"; mode = [ "n" "v" "x" "o" ]; }
+    { key = ")"; action = "{"; mode = [ "n" "v" "x" "o" ]; }
 
     {
       key = "<C-t>";

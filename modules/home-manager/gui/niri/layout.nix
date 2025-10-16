@@ -3,6 +3,7 @@
     gaps = 10;
     center-focused-column = "never";
     # center-focused-column = "on-overflow";
+    # background-color = "transparent";
     always-center-single-column = true;
 
 
