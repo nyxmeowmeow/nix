@@ -3,9 +3,9 @@
     enable = true;
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
     profiles = {
-      meow = {
+      "xgfqkd74.meow" = {
         isDefault = true;
-        name = "xgfqkd74.meow";
+        name = "meow";
         id = 0;
 # preConfig = ''
 # '';
