@@ -35,6 +35,17 @@
       mode = [ "n" "x" ];
     }
 
+    { # toggle inlay hints
+      key = "<Leader>bh"; # tn
+      action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>";
+      mode = [ "n" "x" ];
+    }
+    # { # toggle inlay hints for buffer
+    #   key = "<Leader>bH"; # tn
+    #   action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>";
+    #   mode = [ "n" "x" ];
+    # }
+
     {
       key = "<Leader>r";
       action = "mz<cmd>s/\\v(true|false)/\\={'true':'false','false':'true'}[submatch(0)]/g<cr>`z<cmd>nohlsearch<cr>";
