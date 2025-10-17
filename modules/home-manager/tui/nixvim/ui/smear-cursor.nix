@@ -6,5 +6,9 @@
       "DeferredUIEnter"
     ];
 
+    settings = {
+      legacy_computing_symbols_support = true;
+    };
+
   };
 }
