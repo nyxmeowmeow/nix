@@ -55,7 +55,7 @@
         # }
 
         inputs.mango.nixosModules.mango
-        ./modules/home-manager/gui/mango/mango.nix
+        # ./modules/home-manager/gui/mango/mango.nix
         {
           programs.mango.enable = true;
         }
