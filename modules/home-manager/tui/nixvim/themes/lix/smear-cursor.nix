@@ -1,0 +1,6 @@
+{
+  programs.nixvim.plugins.smear-cursor.settings = {
+      cursor_color = "#A4A0E8";
+      normal_bg = "#3B224C";
+  };
+}

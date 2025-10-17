@@ -7,6 +7,7 @@
     ./hyprland_lix.nix
     ./hyprpaper_lix.nix
     ./starship_lix.nix
-    ./yazi.nix
+    ./niri_lix.nix
+    ./yazi_lix.nix
   ];
 }

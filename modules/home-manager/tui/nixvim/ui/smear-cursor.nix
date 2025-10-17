@@ -8,7 +8,8 @@
 
     settings = {
       legacy_computing_symbols_support = true;
-      cursor_color = "#C5C9C7";
+      legacy_computing_symbols_support_vertical_bars = false;
+      # cursor_color = "#C5C9C7";
       time_interval = 6;
     };
 

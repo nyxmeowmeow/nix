@@ -9,7 +9,7 @@
     ./themes/everforest/hard/hard.nix
     ./themes/everforest/hard/lualine.nix
     ./themes/blacchiato.nix
-    ./themes/lix.nix
+    ./themes/lix/lix.nix
     ./themes/macchiato.nix
     ./themes/kanso.nix
 
