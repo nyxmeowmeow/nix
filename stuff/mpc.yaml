@@ -171,6 +171,10 @@ menu:
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'first rate town'
 
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh '(forever?'
+
 
       - key: [ "h", "Mod4+h" ]
         desc: 
@@ -223,6 +227,10 @@ menu:
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'midnight'
 
+          - key: [ "o", "Mod4+o" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'motions'
+
           - key: [ "y", "Mod4+y" ]
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'miss you'
@@ -239,6 +247,16 @@ menu:
           - key: [ "o", "Mod4+o" ]
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'nothing nothing nothing'
+
+
+      - key: [ "o", "Mod4+o" ]
+        desc: 
+        submenu:
+
+          - key: [ "r", "Mod4+r" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'orchids'
+
 
       - key: [ "p", "Mod4+p" ]
         desc: 
@@ -285,6 +303,10 @@ menu:
           - key: [ "u", "Mod4+u" ]
             desc: 
             cmd: ~/nix/stuff/scripts/mpc.sh 'summer'
+
+          - key: [ "e", "Mod4+e" ]
+            desc: 
+            cmd: ~/nix/stuff/scripts/mpc.sh 'sense of nostalgia'
 
 
       - key: [ "t", "Mod4+t" ]
