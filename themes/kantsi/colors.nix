@@ -3,6 +3,7 @@
   # kanso but u cant see
 
 
+  accent    = "#7FB4CA";
   bg = "#000000";
 
 

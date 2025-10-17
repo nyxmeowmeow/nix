@@ -16,6 +16,7 @@
     base0E = "#E3C0A8"; # yellow
     base0F = "#A5E07F"; # green
 
+    accent = "#DBBFEF";
 
     bg = "#3B224C";
     fg = "#A4A0E8";

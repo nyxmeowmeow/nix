@@ -1,4 +1,6 @@
 {
+  accent = "#b7bdf8"; # lavender
+
   base00 = "#24273a";
   base01 = "#cad3f5"; # text
   base02 = "#181926"; # crust

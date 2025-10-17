@@ -1,4 +1,5 @@
 {
+  accent    = "#7FB4CA";
 
     # zen bg shades
     zen_bg0 = "#090E13";

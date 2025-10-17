@@ -1,4 +1,6 @@
 {
+  accent = "#b7bdf8"; # lavender
+
   base00 = "#000000"; # base
   base01 = "#181926"; # crust
   base02 = "#1e2030"; # mantle
