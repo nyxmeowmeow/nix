@@ -7,9 +7,9 @@
 
   options.theme = lib.mkOption {
     type = lib.types.enum [
+      "macchiato"
       "blacchiato"
       "lix"
-      "macchiato"
       "everforest_hard"
       "everforest_medium"
       "everforest_soft"
@@ -28,8 +28,9 @@
 
   options.wm = lib.mkOption {
     type = lib.types.enum [
-      "niri"
       "hyprland"
+      "niri"
+      # "mango" TODO
     ];
     default = "niri";
   };

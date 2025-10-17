@@ -3,6 +3,9 @@
     extraSpecialArgs = {
       theme = config.theme;
       font_size = config.font_size;
+      rounding = config.rounding;
+
+
       zen-browser = inputs.zen-browser;
     };
 
@@ -21,7 +24,7 @@
         inputs.nixvim.homeModules.nixvim
         ./tui/nixvim/default.nix
 
-# ./hyprland.nix
+        ./hyprland.nix
         ./gui/dunst.nix
         ./gui/emacs/emacs.nix
         ./gui/foot.nix
