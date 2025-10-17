@@ -35,6 +35,7 @@
 
     # "Mod+Space".action = sh "walker --theme min";
     "Mod+Space".action = spawn "fuzzel";
+    "Mod+Slash".action = sh "rofi -show window";
 
     "Mod+Z".action = sh "zen";
     "Mod+Shift+Z".action = sh "zen -p media";
