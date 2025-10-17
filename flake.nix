@@ -25,10 +25,10 @@
     #   url = "github:moonlight-mod/moonlight"; # Add `/develop` to the flake URL to use nightly.
     #     inputs.nixpkgs.follows = "nixpkgs";
     # };
-    mango = {
-      url = "github:DreamMaoMao/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # mango = {
+    #   url = "github:DreamMaoMao/mango";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
@@ -57,11 +57,11 @@
         #   home-manager = import ./modules/nixos/slippi.nix;
         # }
 
-        inputs.mango.nixosModules.mango
-        # ./modules/home-manager/gui/mango/mango.nix
-        {
-          programs.mango.enable = true;
-        }
+        # inputs.mango.nixosModules.mango
+        # # ./modules/home-manager/gui/mango/mango.nix
+        # {
+        #   programs.mango.enable = true;
+        # }
 
         inputs.stylix.nixosModules.stylix
 
