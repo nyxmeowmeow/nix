@@ -6,6 +6,7 @@
 
 
     reaper # borken
+    gtk3
     # zrythm # borken
     # lmms # borken
     ardour
