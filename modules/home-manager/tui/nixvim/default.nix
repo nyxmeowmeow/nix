@@ -10,6 +10,7 @@
     ./themes/everforest/hard/lualine.nix
     ./themes/blacchiato.nix
     ./themes/lix/lix.nix
+    ./themes/lix/smear-cursor_lix.nix
     ./themes/macchiato.nix
     ./themes/kanso.nix
 
