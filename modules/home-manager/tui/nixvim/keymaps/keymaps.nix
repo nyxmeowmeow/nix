@@ -35,11 +35,12 @@
       mode = [ "n" "x" ];
     }
 
-    { # toggle inlay hints
-      key = "<Leader>bh"; # th
-      action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
-      mode = [ "n" "x" ];
-    }
+    # FIXME
+    # { # toggle inlay hints
+    #   key = "<Leader>bh"; # th
+    #   action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
+    #   mode = [ "n" "x" ];
+    # }
     # { # toggle inlay hints for buffer
     #   key = "<Leader>bH"; # th
     #   action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";

@@ -5,7 +5,7 @@
     python312Packages.adblock
 
 
-    # reaper # borken
+    reaper # borken
     # zrythm # borken
     # lmms # borken
     ardour
