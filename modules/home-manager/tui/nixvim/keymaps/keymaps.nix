@@ -4,45 +4,45 @@
     keymaps = [
     { # toggle wrap
       key = "<Leader>be"; # tw
-      action = "<cmd>lua vim.o.wrap = not vim.o.wrap<CR>";
+      action = "<cmd>lua vim.o.wrap = not vim.o.wrap<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle wrap for buffer
       key = "<Leader>bE"; # tw
-      action = "<cmd>lua vim.bo.wrap = not vim.bo.wrap<CR>";
+      action = "<cmd>lua vim.bo.wrap = not vim.bo.wrap<cr>";
       mode = [ "n" "x" ];
     }
 
     { # toggle rnu
       key = "<Leader>bv"; # tr
-      action = "<cmd>lua vim.o.relativenumber = not vim.o.relativenumber<CR>";
+      action = "<cmd>lua vim.o.relativenumber = not vim.o.relativenumber<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle rnu for buffer
       key = "<Leader>bV"; # tr
-      action = "<cmd>lua vim.bo.relativenumber = not vim.bo.relativenumber<CR>";
+      action = "<cmd>lua vim.bo.relativenumber = not vim.bo.relativenumber<cr>";
       mode = [ "n" "x" ];
     }
 
     { # toggle num
       key = "<Leader>bi"; # tn
-      action = "<cmd>lua vim.o.number = not vim.o.number<CR>";
+      action = "<cmd>lua vim.o.number = not vim.o.number<cr>";
       mode = [ "n" "x" ];
     }
     { # toggle num for buffer
       key = "<Leader>bI"; # tn
-      action = "<cmd>lua vim.bo.number = not vim.bo.number<CR>";
+      action = "<cmd>lua vim.bo.number = not vim.bo.number<cr>";
       mode = [ "n" "x" ];
     }
 
     { # toggle inlay hints
-      key = "<Leader>bh"; # tn
-      action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>";
+      key = "<Leader>bh"; # th
+      action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
       mode = [ "n" "x" ];
     }
     # { # toggle inlay hints for buffer
-    #   key = "<Leader>bH"; # tn
-    #   action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<CR>";
+    #   key = "<Leader>bH"; # th
+    #   action = "<cmd>lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())<cr>";
     #   mode = [ "n" "x" ];
     # }
 
@@ -76,7 +76,7 @@
       mode = [ "n" "i" "x" ];
     }
 
-    {
+    { # avoid sfb/lsb for dd
       key = "dc";
       action = "dd";
       mode = "n";
@@ -90,14 +90,14 @@
 
     {
       key = "gd";
-      action = "<cmd>lua vim.lsp.buf.definition()<CR>";
+      action = "<cmd>lua vim.lsp.buf.definition()<cr>";
       mode = [ "n" "v" "x" ];
       # lua = true;
     }
 
     {
       key = "gD";
-      action = "<cmd>lua vim.lsp.buf.declaration()<CR>";
+      action = "<cmd>lua vim.lsp.buf.declaration()<cr>";
       mode = [ "n" "v" "x" ];
       # lua = true;
     }
