@@ -9,6 +9,7 @@
     settings = {
       legacy_computing_symbols_support = true;
       cursor_color = "#C5C9C7";
+      time_interval = 6;
     };
 
   };
