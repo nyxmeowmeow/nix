@@ -29,5 +29,7 @@
     ../../themes/everforest/nixos/default.nix
     ../../themes/lix/nixos/default.nix
     ../../themes/macchiato/nixos/default.nix
+    ../../themes/kanso/nixos/default.nix
+    ../../themes/kantsi/nixos/default.nix
   ];
 }
