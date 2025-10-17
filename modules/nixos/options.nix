@@ -1,5 +1,5 @@
 { lib, ... }: {
-  config.theme = "kantsi";
+  config.theme = "lix";
   config.wm = "niri";
   config.font = "iosevka";
   config.font_size = "small";

@@ -11,6 +11,5 @@
     ./walker_blacchiato.nix
     ./hyprland_blacchiato.nix
     ./hyprpaper_blacchiato.nix
-    ./fzf_blacchiato.nix
   ];
 }
