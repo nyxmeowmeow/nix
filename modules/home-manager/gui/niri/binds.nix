@@ -3,7 +3,6 @@
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
       sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
-      sha = spawn "dash" "-c" "niri" "msg" "action"; # TODO change back to sh if something breaks
       in
       {
         "Mod+G".action = spawn "wlr-which-key";
@@ -52,15 +51,15 @@
         "Mod+W".action = focus-workspace "three";
         "Mod+P".action = focus-workspace "four";
 
-        "Mod+Shift+comma".action = sha "move-window-to-workspace --focus false left";
-        "Mod+Shift+period".action = sha "move-window-to-workspace --focus false right";
-        "Mod+Shift+Tab".action = sha "move-window-to-workspace --focus false media";
-        "Mod+Shift+B".action = sha "move-window-to-workspace --focus false discord";
-        "Mod+Shift+F".action = sha "move-window-to-workspace --focus false one";
-        "Mod+Shift+D".action = sha "move-window-to-workspace --focus false two";
-        "Mod+Shift+W".action = sha "move-window-to-workspace --focus false three";
-        "Mod+Shift+P".action = sha "move-window-to-workspace --focus false four";
-        "Mod+Shift+N".action = sha "move-window-to-workspace --focus false alt";
+        "Mod+Shift+comma".action = sh "niri msg action move-window-to-workspace --focus=false left";
+        "Mod+Shift+period".action = sh "niri msg action move-window-to-workspace --focus=false right";
+        "Mod+Shift+Tab".action = sh "niri msg action move-window-to-workspace --focus=false media";
+        "Mod+Shift+B".action = sh "niri msg action move-window-to-workspace --focus=false discord";
+        "Mod+Shift+F".action = sh "niri msg action move-window-to-workspace --focus=false one";
+        "Mod+Shift+D".action = sh "niri msg action move-window-to-workspace --focus=false two";
+        "Mod+Shift+W".action = sh "niri msg action move-window-to-workspace --focus=false three";
+        "Mod+Shift+P".action = sh "niri msg action move-window-to-workspace --focus=false four";
+        "Mod+Shift+N".action = sh "niri msg action move-window-to-workspace --focus=false alt";
 
 
         "Mod+H".action = focus-column-left;
