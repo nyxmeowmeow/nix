@@ -60,27 +60,27 @@
           name = "spacer4";
           open-on-output = "DP-1";
         };
-        "10" = {
+        "a" = {
           name = "two";
           open-on-output = "DP-1";
         };
-        "11" = {
+        "b" = {
           name = "spacer5";
           open-on-output = "DP-1";
         };
-        "12" = {
+        "c" = {
           name = "three";
           open-on-output = "DP-1";
         };
-        "13" = {
+        "d" = {
           name = "spacer6";
           open-on-output = "DP-1";
         };
-        "14" = {
+        "e" = {
           name = "four";
           open-on-output = "DP-1";
         };
-        "99" = {
+        "zzz" = {
           name = "alt";
           open-on-output = "DP-3";
         };
