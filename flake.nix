@@ -29,6 +29,7 @@
     #   url = "github:DreamMaoMao/mango";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    ags.url = "github:aylur/ags";
     shell.url = "github:nyxmeowmeow/shell";
   };
 

@@ -5,7 +5,7 @@
     enable = true;
     configDir = null;  # Don't symlink since we're using the bundled version
     extraPackages = with pkgs; [
-      inputs.astal-shell.packages.${pkgs.system}.default
+      inputs.shell.packages.${pkgs.system}.default
     ];
   };
 }
