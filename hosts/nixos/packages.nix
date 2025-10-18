@@ -86,6 +86,7 @@
     libevdev
     qemu_kvm
     hyprpicker
+    hyprpaper
     quickshell
 
     dunst
