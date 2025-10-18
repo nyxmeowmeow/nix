@@ -46,6 +46,7 @@
         ../../modules/home-manager/gui/mango/mango.nix
         ../../modules/home-manager/tui/nushell.nix
         ../../modules/home-manager/gui/shell.nix
+        ../../modules/home-manager/gui/ghostty.nix
         ../../modules/home-manager/tui/starship.nix
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop.nix
