@@ -45,6 +45,7 @@
         ./niri.nix
         ../../modules/home-manager/gui/mango/mango.nix
         ../../modules/home-manager/tui/nushell.nix
+        ../../modules/home-manager/services/hyprkan.nix
         ../../modules/home-manager/gui/shell.nix
         ../../modules/home-manager/gui/ghostty.nix
         ../../modules/home-manager/tui/starship.nix

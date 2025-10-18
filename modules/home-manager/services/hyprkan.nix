@@ -7,7 +7,7 @@
     };
     Service = {
       Type = "simple";
-      ExecStart = "~/.config/kanata/hyprkan";
+      ExecStart = "/home/meow/.config/kanata/hyprkan";
       Restart = "on-failure";
       RestartSec = 3;
     };
