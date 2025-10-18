@@ -8,3 +8,6 @@
 
 - super g m -> mono audio toggle + notification
 
+
+- rofi wallpaper switcher
+  - keep wallpaper path in a file so i dont have to rebuild to change it
