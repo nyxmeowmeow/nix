@@ -53,6 +53,31 @@
       mode = [ "n" "x" ];
     }
 
+    { # angle brackets
+      key = "cij";
+      action = "ci<";
+      mode = "n";
+    }
+    { # angle brackets
+      key = "dij";
+      action = "di<";
+      mode = "n";
+    }
+    { # angle brackets
+      key = "vij";
+      action = "vi<";
+      mode = "n";
+    }
+    { # angle brackets
+      key = "yij";
+      action = "yi<";
+      mode = "n";
+    }
+
+
+
+
+
     {
       key = "<C-n>";
       action = "I";
