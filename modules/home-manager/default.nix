@@ -24,21 +24,22 @@
         inputs.nixvim.homeModules.nixvim
         ./tui/nixvim/default.nix
 
-        ./hyprland.nix
+        # ./gui/textfox.nix
         ./gui/dunst.nix
         ./gui/emacs/emacs.nix
-        ./gui/foot.nix
-        # ./gui/textfox.nix
         ./gui/firefox.nix
+        ./gui/foot.nix
+        ./gui/ghostty.nix
         ./gui/mpv.nix
         ./gui/niri/niri.nix
         ./gui/obs.nix
+        ./gui/shell.nix
         ./gui/tofi.nix
         ./gui/vesktop.nix
         ./gui/walker.nix
-        ./gui/shell.nix
-        ./gui/ghostty.nix
         ./gui/zen/zen.nix
+        ./hyprland.nix
+        ./services/hyprkan.nix
         ./tui/bash.nix
         ./tui/btop.nix
         ./tui/clipse.nix
