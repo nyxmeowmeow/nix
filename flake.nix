@@ -29,6 +29,7 @@
     #   url = "github:DreamMaoMao/mango";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    shell.url = "github:nyxmeowmeow/shell";
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
