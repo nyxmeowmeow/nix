@@ -10,7 +10,7 @@ do
         echo "hyprkan started successfully"
         break
     fi
-    echo "Download failed. Retrying in $delay seconds..."
+    echo "failed. Retrying in $delay seconds..."
     attempt=$((attempt + 1))
     sleep $delay
 done

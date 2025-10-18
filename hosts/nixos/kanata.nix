@@ -70,6 +70,7 @@
   ;; TODO? fl -> false
   ;; TODO sg -> String
   ;; TODO als -> o
+  ;; TODO sta -> t
 
     
     ;; insert current date

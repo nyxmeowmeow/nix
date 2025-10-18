@@ -20,7 +20,7 @@
         "Mod+X".action = sh "niri msg action expand-column-to-available-width";
 
 
-        "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
+        # "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
           "Mod+U".action = sh "pkill btop || footclient btop"; # TODO window rule for size
           "Mod+K".action = sh "pkill ncmpcpp || footclient ncmpcpp"; # TODO window rule for size
 

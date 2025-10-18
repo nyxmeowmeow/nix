@@ -33,26 +33,50 @@
           open-on-output = "DP-1";
         };
         "3" = {
-          name = "media";
+          name = "spacer1";
           open-on-output = "DP-1";
         };
         "4" = {
-          name = "discord";
+          name = "media";
           open-on-output = "DP-1";
         };
         "5" = {
-          name = "one";
+          name = "spacer2";
           open-on-output = "DP-1";
         };
         "6" = {
-          name = "two";
+          name = "discord";
           open-on-output = "DP-1";
         };
         "7" = {
-          name = "three";
+          name = "spacer3";
           open-on-output = "DP-1";
         };
         "8" = {
+          name = "one";
+          open-on-output = "DP-1";
+        };
+        "9" = {
+          name = "spacer4";
+          open-on-output = "DP-1";
+        };
+        "10" = {
+          name = "two";
+          open-on-output = "DP-1";
+        };
+        "11" = {
+          name = "spacer5";
+          open-on-output = "DP-1";
+        };
+        "12" = {
+          name = "three";
+          open-on-output = "DP-1";
+        };
+        "13" = {
+          name = "spacer6";
+          open-on-output = "DP-1";
+        };
+        "14" = {
           name = "four";
           open-on-output = "DP-1";
         };
