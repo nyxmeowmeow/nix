@@ -3,8 +3,7 @@
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let
       sh = spawn "dash" "-c"; # TODO change back to sh if something breaks
-      in
-      {
+    in {
         "Mod+G".action = spawn "wlr-which-key";
         "Mod+L".action = sh "wlr-which-key ~/.config/wlr-which-key/mpc.yaml";
 
