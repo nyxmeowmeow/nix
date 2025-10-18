@@ -73,6 +73,26 @@
       action = "yi<";
       mode = "n";
     }
+    { # angle brackets
+      key = "caj";
+      action = "ca<";
+      mode = "n";
+    }
+    { # angle brackets
+      key = "daj";
+      action = "da<";
+      mode = "n";
+    }
+    { # angle brackets
+      key = "vaj";
+      action = "va<";
+      mode = "n";
+    }
+    { # angle brackets
+      key = "yaj";
+      action = "ya<";
+      mode = "n";
+    }
 
 
 
