@@ -69,8 +69,6 @@
   ;; TODO convert rust ints to c99 ints
   ;; TODO? fl -> false
   ;; TODO sg -> String
-  ;; TODO als -> o
-  ;; TODO sta -> t
 
     
     ;; insert current date
@@ -82,6 +80,8 @@
     ((key-history 3 1)) (macro S-1) break
 
 
+    ((and (key-history a 3) (key-history l 2) (key-history o 1))) (macro o) break
+    ((and (key-history s 3) (key-history t 2) (key-history a 1))) (macro t) break
 
     ;; shift after ::
     ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
