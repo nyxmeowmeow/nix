@@ -80,7 +80,7 @@
     ((key-history 3 1)) (macro S-1) break
 
 
-    ((and (key-history a 3) (key-history l 2) (key-history o 1))) (macro o) break
+    ((and (key-history a 3) (key-history l 2) (key-history s 1))) (macro o) break
     ((and (key-history s 3) (key-history t 2) (key-history a 1))) (macro t) break
 
     ;; shift after ::
