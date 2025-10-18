@@ -36,6 +36,7 @@
         ./gui/tofi.nix
         ./gui/vesktop.nix
         ./gui/walker.nix
+        ./gui/shell.nix
         ./gui/zen/zen.nix
         ./tui/bash.nix
         ./tui/btop.nix
