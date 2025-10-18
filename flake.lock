@@ -23,7 +23,7 @@
       "inputs": {
         "astal": "astal_2",
         "nixpkgs": [
-          "shell",
+          "meow-shell",
           "nixpkgs"
         ]
       },
@@ -65,7 +65,7 @@
     "astal_2": {
       "inputs": {
         "nixpkgs": [
-          "shell",
+          "meow-shell",
           "ags",
           "nixpkgs"
         ]
@@ -540,11 +540,30 @@
         "type": "github"
       }
     },
+    "meow-shell": {
+      "inputs": {
+        "ags": "ags_2",
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1760767419,
+        "narHash": "sha256-fRNfBtHVINej7kEneCz7YZloMG974Q09W/ZystV/Jfc=",
+        "owner": "nyxmeowmeow",
+        "repo": "shell",
+        "rev": "971e69c9470a555474c7e9d316ec17c479d8590e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nyxmeowmeow",
+        "repo": "shell",
+        "type": "github"
+      }
+    },
     "niri": {
       "inputs": {
         "niri-stable": "niri-stable",
         "niri-unstable": "niri-unstable",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "nixpkgs-stable": "nixpkgs-stable",
         "xwayland-satellite-stable": "xwayland-satellite-stable",
         "xwayland-satellite-unstable": "xwayland-satellite-unstable"
@@ -614,7 +633,7 @@
     "nix-gaming": {
       "inputs": {
         "flake-parts": "flake-parts",
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "lastModified": 1760234031,
@@ -729,6 +748,22 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1758035966,
+        "narHash": "sha256-qqIJ3yxPiB0ZQTT9//nFGQYn8X/PBoJbofA7hRKZnmE=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1760038930,
         "narHash": "sha256-Oncbh0UmHjSlxO7ErQDM3KM0A5/Znfofj2BSzlHLeVw=",
         "owner": "NixOS",
@@ -743,7 +778,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "locked": {
         "lastModified": 1760103332,
         "narHash": "sha256-BMsGVfKl4Q80Pr9T1AkCRljO1bpwCmY8rTBVj8XGuhA=",
@@ -759,7 +794,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_6": {
       "locked": {
         "lastModified": 1760038930,
         "narHash": "sha256-Oncbh0UmHjSlxO7ErQDM3KM0A5/Znfofj2BSzlHLeVw=",
@@ -775,7 +810,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_6": {
+    "nixpkgs_7": {
       "locked": {
         "lastModified": 1700856099,
         "narHash": "sha256-RnEA7iJ36Ay9jI0WwP+/y4zjEhmeN6Cjs9VOFBH7eVQ=",
@@ -787,22 +822,6 @@
       "original": {
         "owner": "nixos",
         "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_7": {
-      "locked": {
-        "lastModified": 1758035966,
-        "narHash": "sha256-qqIJ3yxPiB0ZQTT9//nFGQYn8X/PBoJbofA7hRKZnmE=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -916,7 +935,7 @@
         "flake-parts": "flake-parts_3",
         "libnbtplusplus": "libnbtplusplus",
         "nix-filter": "nix-filter",
-        "nixpkgs": "nixpkgs_6",
+        "nixpkgs": "nixpkgs_7",
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
@@ -968,35 +987,16 @@
       "inputs": {
         "ags": "ags",
         "home-manager": "home-manager",
+        "meow-shell": "meow-shell",
         "niri": "niri",
         "nix-gaming": "nix-gaming",
-        "nixpkgs": "nixpkgs_5",
+        "nixpkgs": "nixpkgs_6",
         "nixvim": "nixvim",
         "pollymc": "pollymc",
-        "shell": "shell",
         "slippi": "slippi",
         "stylix": "stylix",
         "textfox": "textfox",
         "zen-browser": "zen-browser"
-      }
-    },
-    "shell": {
-      "inputs": {
-        "ags": "ags_2",
-        "nixpkgs": "nixpkgs_7"
-      },
-      "locked": {
-        "lastModified": 1760767419,
-        "narHash": "sha256-fRNfBtHVINej7kEneCz7YZloMG974Q09W/ZystV/Jfc=",
-        "owner": "nyxmeowmeow",
-        "repo": "shell",
-        "rev": "971e69c9470a555474c7e9d316ec17c479d8590e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nyxmeowmeow",
-        "repo": "shell",
-        "type": "github"
       }
     },
     "slippi": {

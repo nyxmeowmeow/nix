@@ -30,7 +30,7 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
     ags.url = "github:aylur/ags";
-    shell.url = "github:nyxmeowmeow/shell";
+    meow-shell.url = "github:nyxmeowmeow/shell";
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
