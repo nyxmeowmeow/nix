@@ -10,7 +10,7 @@ find "$wall_dir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' 
 	filename="$(basename "$imagen")"
 	thumb="$cache_dir/$filename"
 	if [ ! -f "$thumb" ]; then
-		magick convert -strip "$imagen" -thumbnail x540^ -gravity center -extent 262x540 "$thumb"
+		magick -strip "$imagen" -thumbnail x540^ -gravity center -extent 262x540 "$thumb"
 	fi
 done
 

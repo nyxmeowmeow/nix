@@ -28,6 +28,7 @@
         ../../modules/home-manager/gui/walker.nix
 
         ../../modules/home-manager/services/easyeffects.nix
+        ../../modules/home-manager/services/swww.nix
 
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/navi.nix
