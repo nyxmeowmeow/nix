@@ -35,6 +35,7 @@
     # aseprite
     qview
     pastel
+    imagemagick
 
     /* video */
     ffmpeg
@@ -86,7 +87,7 @@
     libevdev
     qemu_kvm
     hyprpicker
-    hyprpaper
+    swww
     quickshell
 
     dunst

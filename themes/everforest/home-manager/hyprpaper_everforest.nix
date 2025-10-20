@@ -9,7 +9,7 @@
         splash_offset = 2.0;
 
         preload = [
-          "${flake_dir}/stuff/wallpapers/pixel1.png" 
+          "${flake_dir}/stuff/wallpapers/pixel1.jpg" 
         ];
 
         wallpaper = [
