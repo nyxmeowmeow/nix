@@ -17,6 +17,17 @@ configuration {
   '';
 
   home.file.".config/rofi/bgselector2.rasi".text = ''
+// Global
+* {
+    background-color: transparent;
+}
+
+// Window
+window {
+    background-color: rgba(0,0,0,0.5);
+    fullscreen: true;    
+}
+
 // Main Box
 mainbox {
     children: [listview];
@@ -36,7 +47,7 @@ element {
 }
 element.selected {
     border: 3px;
-    border-color: ${accent};
+    border-color: #7FB4CA;
 }
 element-icon {
     size: 229px 720px;
