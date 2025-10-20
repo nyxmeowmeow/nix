@@ -51,4 +51,17 @@
     ];
     default = "medium";
   };
+
+  options.palette.bg = lib.mkOption {
+    type = lib.types.str;
+    default = "#000000";
+  };
+  options.palette.fg = lib.mkOption {
+    type = lib.types.str;
+    default = "#ffffff";
+  };
+  options.palette.accent = lib.mkOption {
+    type = lib.types.str;
+    default = "#aa00ff";
+  };
 }

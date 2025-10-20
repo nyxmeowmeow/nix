@@ -1,5 +1,7 @@
 {
   imports = [
+    # ../palette.nix
+
     ./btop_kanso.nix
     ./mpv_kanso.nix
     ./gtk_kanso.nix
@@ -9,7 +11,7 @@
     ./foot_kanso_ink.nix
     ./foot_kanso_mist.nix
     ./foot_kanso_zen.nix
-    # ./hyprpaper_kanso.nix
+    # ./home-manager/hyprpaper_kanso.nix
     ./niri_kanso.nix
     ./nushell_kanso.nix
     ./starship_kanso.nix

@@ -1,27 +1,28 @@
 {
-  accent    = "#7FB4CA";
+    accent = "#7FB4CA";
+    bg = "#090E13";
 
-    # zen bg shades
+# zen bg shades
     zen_bg0 = "#090E13";
     zen_bg1 = "#1C1E25";
     zen_bg2 = "#22262D";
     zen_bg3 = "#393B44";
 
-    # ink bg shades
+# ink bg shades
     ink_bg0 = "#14171d";
     ink_bg1 = "#1f1f26";
     ink_bg2 = "#22262D";
     ink_bg3 = "#393B44";
     ink_bg4 = "#4b4e57";
 
-    # mist bg shades
+# mist bg shades
     mist_bg0 = "#22262D";
     mist_bg1 = "#2a2c35";
     mist_bg2 = "#393B44";
     mist_bg3 = "#5C6066";
 
 
-    # fg
+# fg
     fg    = "#C5C9C7";
     fg2   = "#f2f1ef";
     gray  = "#717C7C";
@@ -35,7 +36,7 @@
     altBlue2 = "#2D4F67";
 
 
-    # main colors
+# main colors
     red     = "#C34043";
     red2    = "#E46876";
     red3    = "#c4746e";
@@ -61,7 +62,7 @@
 
 
 
-    # saturated variants (20% more saturation)
+# saturated variants (20% more saturation)
     red_sat = "#C93134";
     red2_sat = "#ED5965";
     red3_sat = "#CA675F";
