@@ -5,10 +5,9 @@ let
   (theme == "lix") then "#DBBFEF" else if
   (theme == "everforest_hard" || theme == "everforest_medium" || theme == "everforest_soft") then "#9DA9A0"
   else "#ff0000";
-  in
+in
 {
-
-  home.file.".config/rofi/bgselector.rasi".text = ''
+  home.file.".config/rofi/bgselector.rasi".text = /* rasi */ ''
 configuration {
     show-icons: true;
 }
@@ -16,7 +15,9 @@ configuration {
 @theme "bgselector2.rasi"
   '';
 
-  home.file.".config/rofi/bgselector2.rasi".text = ''
+
+
+  home.file.".config/rofi/bgselector2.rasi".text = /* rasi */ ''
 // Global
 * {
     background-color: transparent;

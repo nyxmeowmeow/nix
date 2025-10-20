@@ -28,6 +28,7 @@
 
 
         ../../modules/home-manager/gui/dunst.nix
+        ../../modules/home-manager/gui/wlr-which-key.nix
         ../../modules/home-manager/gui/emacs/emacs.nix
         ../../modules/home-manager/gui/firefox.nix
         ../../modules/home-manager/gui/foot.nix

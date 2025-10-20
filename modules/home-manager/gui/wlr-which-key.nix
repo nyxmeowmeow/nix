@@ -1,3 +1,12 @@
+{ config, ... }:
+let
+  # quit = if (config.wm == "niri") then "niri msg action quit"
+  # else if (config.wm == "hyprland") then "hyprctl dispatch exit"
+  #   else "error";
+  # TODO: float, screenshot, kill window, center
+in
+{
+  home.file.".config/wlr-which-key/config.yaml".text = /* yaml */ ''
 font: none
 background: "#00000000"
 color: "#cad3f500"
@@ -68,3 +77,5 @@ menu:
     desc: last col
     cmd: niri msg action toggle-column-tabbed-display
 
+  '';
+}
