@@ -26,71 +26,71 @@
         }
         {
           type = "os";
-          key = "  distro";
-          format = "= \"{2}\",";
+          key = "  distro:";
+          format = "\"{2}\",";
           keyColor = "blue";
         }
         {
           type = "kernel";
-          key = "  kernel";
-          format = "= \"{2}\",";
+          key = "  kernel:";
+          format = "\"{2}\",";
           keyColor = "blue";
         }
         {
           type = "packages";
-          key = "  pkgs";
+          key = "  pkgs:";
           format = "= {1},";
           keyColor = "blue";
         }
 # {
 #   type = "display";
-#   key = "   ds";
+#   key = "   ds:";
 #   keyColor = "green";
 # }
 # {
 #   type = "wm";
-#   key = "wm";
+#   key = "wm:";
 #   keyColor = "blue";
 # }
         {
           type = "command";
-          key = "  wm";
+          key = "  wm:";
           keyColor = "blue";
           # text = "echo ${config.wm}";
-          text = "echo '= \"niri\",";
+          text = "echo '\"niri\",";
         }
 # {
 #   type = "terminal";
-#   key = "tm";
+#   key = "tm:";
 #   keyColor = "blue";
 # }
         {
           type = "command";
-          key = "  term";
+          key = "  term:";
           keyColor = "blue";
-          text = "echo '= \"foot\",'";
+          text = "echo '\"foot\",'";
         }
 # {
 #   type = "shell";
-#   key = "sh";
+#   key = "sh:";
 #   keyColor = "blue";
 # }
         {
           type = "command";
-          key = "  shell";
+          key = "  shell:";
           keyColor = "blue";
-          text = "echo '= \"nushell\",'";
+          text = "echo '\"nushell\",'";
         }
         {
           type = "cpu";
           format = "= \"{1}\",";
-          key = "  cpu";
+          key = "  cpu:";
           keyColor = "blue";
         }
         {
           type = "gpu";
-          format = "= \"{2}\",";
-          key = "  gpu";
+          format = "\"{2}\",";
+          key = "  gpu:";
           keyColor = "blue";
         }
         # {
@@ -106,22 +106,22 @@
         # }
         {
           type = "command";
-          key = "  age";
+          key = "  age:";
           keyColor = "blue";
-          text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo -n '= '; echo -n $days_difference; echo ','";
+          text = "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo -n $days_difference; echo ','";
         }
         {
           type = "uptime";
-          key = "  uptime";
-          format = "= {3},";
+          key = "  uptime:";
+          format = "{3},";
           keyColor = "blue";
         }
         {
           type = "command";
-          key = "  theme";
+          key = "  theme:";
           keyColor = "blue";
           # text = "echo ${config.theme}";
-          text = "echo '= \"kanso\"'";
+          text = "echo '\"kanso\"'";
         }
         # {
         #   type = "colors";
