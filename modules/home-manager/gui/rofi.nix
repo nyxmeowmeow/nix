@@ -47,7 +47,7 @@ element {
 }
 element.selected {
     border: 3px;
-    border-color: #7FB4CA;
+    border-color: ${accent};
 }
 element-icon {
     size: 229px 720px;
