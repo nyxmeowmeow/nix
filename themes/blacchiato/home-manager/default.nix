@@ -10,6 +10,6 @@
     ./gtk_blacchiato.nix
     ./walker_blacchiato.nix
     ./hyprland_blacchiato.nix
-    ./hyprpaper_blacchiato.nix
+    # ./hyprpaper_blacchiato.nix
   ];
 }
