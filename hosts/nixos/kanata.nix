@@ -299,23 +299,27 @@ s lsft
 t lsft
 c lctl
 
-h lctl
-a lsft
-e lsft
-i lsft
+;; h lctl
+;; a lsft
+;; e lsft
+;; i lsft
+h left
+a down
+e up
+i right
 
-l left
-o down
-u up
-j right
+;; l left
+;; o down
+;; u up
+;; j right
 
 f15 home
 f16 pgdn
 f17 pgup
 ; end
 
-w (macro C-w)
-d (macro C-u)
+;;w (macro C-w)
+;;d (macro C-u)
 
 3 (macro ent S-[)
 8 (macro ent S-])
@@ -410,10 +414,10 @@ b ,
 f ,
 d ,
 w ,
-l left
-o down
-u up
-j right
+;;l left
+;;o down
+;;u up
+;;j right
 n 8
 s 4
 t 0
