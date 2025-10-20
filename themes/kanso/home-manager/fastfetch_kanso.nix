@@ -39,7 +39,7 @@
         {
           type = "packages";
           key = "  pkgs:";
-          format = "= {1},";
+          format = "{1},";
           keyColor = "blue";
         }
 # {
@@ -83,7 +83,7 @@
         }
         {
           type = "cpu";
-          format = "= \"{1}\",";
+          format = "\"{1}\",";
           key = "  cpu:";
           keyColor = "blue";
         }
