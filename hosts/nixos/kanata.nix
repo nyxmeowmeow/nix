@@ -1,3 +1,5 @@
+# TODO mouse keys
+
 # base:
 #          : b f d w p   ' l o u j x
 #          - n s t c y   m h a e i rpt
@@ -76,6 +78,8 @@
 
 
     ((and (key-history p 6) (key-history r 5) (key-history o 4) (key-history b 3) (key-history l 2) (key-history e 1))) (macro m) break
+
+    ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) (macro x) break
 
 
     ((input-history real lsft 2)) (macro lctl ent) break
