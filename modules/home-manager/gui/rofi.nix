@@ -17,14 +17,6 @@ configuration {
   '';
 
   home.file.".config/rofi/bgselector2.rasi".text = ''
-configuration {
-    show-icons: true;
-}
-
-@theme "themes/bgselector.rasi"   background-color: rgba(0,0,0,0.5);
-    fullscreen: true;    
-}
-
 // Main Box
 mainbox {
     children: [listview];
