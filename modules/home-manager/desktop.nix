@@ -7,5 +7,11 @@
       icon = "slippi";
       terminal = true;
     };
+    wallpapers = {
+      name = "wallpapers";
+      comment = "rofi wallpaper switcher";
+      exec = "${flake_dir}/stuff/scripts/bgselector";
+      icon = "wallpaper";
+    };
   };
 }
