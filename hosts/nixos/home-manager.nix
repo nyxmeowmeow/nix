@@ -43,6 +43,7 @@
         ../../modules/home-manager/gui/mpv.nix
         ../../modules/home-manager/tui/ncmpcpp.nix
         ../../modules/home-manager/gui/niri/niri.nix
+        ../../modules/home-manager/gui/rofi.nix
         ./niri.nix
         ../../modules/home-manager/gui/mango/mango.nix
         ../../modules/home-manager/tui/nushell.nix
