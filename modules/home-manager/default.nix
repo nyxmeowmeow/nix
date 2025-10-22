@@ -53,6 +53,7 @@
         ./tui/yazi/yazi.nix
         ./tui/zellij/default.nix
         ./tui/zoxide.nix
+        ./gui/swayimg.nix
         ];
     };
   };

@@ -177,18 +177,19 @@ in {
           { name = "readme.txt"; text = "󰂺"; fg = col.fg; }
           # { name = "README"; text = "󰂺"; fg = col.fg; }
           # { name = "README.md"; text = "󰂺"; fg = col.fg; }
-          { name = ".git-blame-ignore-revs"; text = ""; fg = col.red; } #TODO orange
-          { name = ".gitattributes"; text = ""; fg = col.red; } #TODO orange
-          { name = ".gitignore"; text = ""; fg = col.red; } #TODO orange
-          { name = ".gitmodules"; text = ""; fg = col.red; } #TODO orange
+          { name = ".git-blame-ignore-revs"; text = ""; fg = col.orange; }
+          { name = ".gitattributes"; text = ""; fg = col.orange; }
+          { name = ".gitignore"; text = ""; fg = col.orange; }
+          { name = ".gitmodules"; text = ""; fg = col.orange; }
           { name = "makefile"; text = "󱌣"; fg = col.fg; }
         ];
 
         exts = [
           { name = "nix"; text = "󱄅"; fg = col.blue; }
           { name = "css"; text = ""; fg = col.blue; }
-          { name = "html"; text = ""; fg = col.red; } #TODO orange
+          { name = "html"; text = ""; fg = col.orange; }
           { name = "yaml"; text = ""; fg = col.fg; }
+          { name = "yml"; text = ""; fg = col.fg; }
           { name = "json"; text = ""; fg = col.fg; }
           { name = "toml"; text = ""; fg = col.red; }
           { name = "desktop"; text = ""; fg = col.violet; }
@@ -247,6 +248,7 @@ in {
           { name = "7z"; text = "󰗄"; fg = col.yellow; }
           { name = "rar"; text = "󰗄"; fg = col.yellow; }
 
+          { name = "jar"; text = ""; fg = col.orange; }
           { name = "swift"; text = ""; fg = col.red2; }
           { name = "svelte"; text = ""; fg = col.red2; }
           { name = "db"; text = ""; fg = col.fg; }
@@ -259,6 +261,8 @@ in {
           { name = "vmx"; text = ""; fg = col.fg; }
           { name = "el"; text = ""; fg = col.violet; }
           { name = "gpg"; text = "󱕴"; fg = col.yellow; }
+
+          { name = "celeste"; text = ""; fg = col.yellow; }
 
         ];
 

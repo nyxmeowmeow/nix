@@ -44,6 +44,7 @@
         ../../modules/home-manager/gui/vesktop.nix
         ../../modules/home-manager/gui/walker.nix
         ../../modules/home-manager/gui/zen/zen.nix
+        ../../modules/home-manager/gui/swayimg.nix
         ../../modules/home-manager/services/easyeffects.nix
         ../../modules/home-manager/services/hyprkan.nix
         ../../modules/home-manager/services/swww.nix
