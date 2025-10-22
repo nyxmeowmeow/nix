@@ -7,13 +7,50 @@ green = "#98BB6C"
 violet = "#938AA9"
 yellow = "#E6C384"
 
+c.aliases = {
+    "o": "open",
+    "on": "open -t",
+    "tab": "tab-focus"
+}
+
+
+config.unbind("gt")
+
+config.bind("p", "undo")
+config.bind("o", "tab-close -n")
+config.bind("O", "tab-close -o")
+config.bind("go", "cmd-set-text -s :tab-close")
+
+config.bind("gi", "tab -1")
+config.bind("ga", "tab -1")
+config.bind("gh", "tab 1")
+config.bind("ge", "tab 1")
+config.bind("gc", "tab-clone")
+config.bind("gr", "navigate strip")
+config.bind("gR", "navigate strip -t")
+config.bind("gm", "cmd-set-text -s :tab-move")
+
+
+config.bind("<Ctrl-h>", "tab-move -")
+config.bind("<Ctrl-i>", "tab-move +")
+config.bind("<Ctrl-Shift-H>", "tab-move 1")
+config.bind("<Ctrl-Shift-I>", "tab-move -1")
+
+config.bind("m", "next")
+config.bind("v", "quickmark-save")
+config.bind("r", "mode-enter caret")
 
 
 config.bind("<Enter>", "hint")
 
+config.bind("<Ctrl-t>", ":back")
+config.bind("<Ctrl-c>", ":forward")
+config.bind("<Ctrl-T>", ":back -t")
+config.bind("<Ctrl-C>", ":forward -t")
 
-config.bind("t", "cmd-set-text -s :tab-select")
-config.bind("s", "cmd-set-text -s :open")
+config.bind("s", "cmd-set-text -s :o")
+config.bind("t", "cmd-set-text -s :tab")
+config.bind("c", "cmd-set-text -s :on")
 
 config.bind("a", "scroll-page 0 0.5")
 config.bind("e", "scroll-page 0 -0.5")
@@ -171,7 +208,12 @@ config.set('content.local_content_can_access_file_urls', False, 'file:///home/me
 config.set('content.plugins', True, '*://start.duckduckgo.com/*')
 
 c.window.transparent = True
+c.completion.cmd_history_max_items = -1
+c.completion.height = "33%"
 
+
+# c.confirm_quit = "downloads"
+c.content.blocking.method = "both"
 
 c.tabs.position = 'left'
 c.tabs.wrap = True

@@ -1,5 +1,7 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+    papirus-icon-theme
+
     qutebrowser
     python313Packages.adblock
     python312Packages.adblock
