@@ -151,6 +151,7 @@ in {
       }
 
       # goto git root
+# FIXME
       def gr [] {
         cd $"(git rev-parse --show-toplevel)"
       }

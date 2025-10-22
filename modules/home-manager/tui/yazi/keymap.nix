@@ -8,7 +8,7 @@
         desc = "Exit visual mode, clear selected; or cancel search";
       }
 
-      {
+      { # FIXME
         on = [ "g" "r" ];
         run = "shell -- ya emit cd '$(git rev-parse --show-toplevel)'";
         desc = "go to git root";
@@ -510,15 +510,32 @@
       }
 
       {
-        on = [ "<Space>" "g" ];
+        on = [ "<Space>" "g" "d" ];
         run = "cd ~/.local/share/Steam/steamapps/compatdata/322170/pfx/drive_c/users/steamuser/AppData/Local/GeometryDash/";
         desc = "GD songs";
       }
 
       {
-        on = [ "<Space>" "h" ];
+        on = [ "<Space>" "g" "a" ];
+        run = "cd ~/game";
+        desc = "game repo";
+      }
+
+      {
+        on = [ "<Space>" "h" "o" ];
         run = "cd ~";
         desc = "home";
+      }
+      {
+        on = [ "<Space>" "~" ];
+        run = "cd ~";
+        desc = "home";
+      }
+
+      {
+        on = [ "<Space>" "h" "a" ];
+        run = "cd ~/hammer";
+        desc = "hammer repo";
       }
 
       {
@@ -588,9 +605,15 @@
       }
 
       {
-        on = [ "<Space>" "t" ];
+        on = [ "<Space>" "t" "r" ];
         run = "cd ~/.local/share/Trash/files";
         desc = "trash";
+      }
+
+      {
+        on = [ "<Space>" "t" "e" ];
+        run = "cd ~/textures";
+        desc = "textures repo";
       }
 
       {
