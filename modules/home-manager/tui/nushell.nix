@@ -152,8 +152,7 @@ in {
 
       # goto git root
       def gr [] {
-        let root = git rev-parse --show-toplevel;
-        cd $root
+        cd $"(git rev-parse --show-toplevel)"
       }
 
       # $env.path ++= ["/xyz/meow"]
