@@ -132,7 +132,7 @@ in {
       # copy path
       def jj [] {
         let path = pwd | str trim | wl-copy
-        echo $"copied ($path)"
+        echo $"copied (pwd)"
       }
 
       # copy file path
@@ -150,7 +150,13 @@ in {
         echo $"copied ($rel)"
       }
 
-      $env.path ++= ["~/go/bin"]
+      # goto git root
+      def gr [] {
+        let root = git rev-parse --show-toplevel;
+        cd $root
+      }
+
+      # $env.path ++= ["/xyz/meow"]
 
       $env.config = {
           cursor_shape: {
