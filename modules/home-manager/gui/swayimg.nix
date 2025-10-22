@@ -4,7 +4,7 @@
     settings = {
       viewer = {
         window = "#090E13cc";
-        scale = "fill";
+        scale = "fit";
       };
       "info.viewer" = {
         top_left = "none";
