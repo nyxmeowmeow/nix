@@ -156,6 +156,17 @@ in {
         cd $"(git rev-parse --show-toplevel)"
       }
 
+      #  clear clipboard
+      def cl [] {
+        clipse -clear
+        rm -f ~/.config/clipse/tmp_files/*
+        rm -rf ~/.cache/thumbnails/*
+        rm -f /tmp/yazi-1000/*
+        rm -f ~/.local/share/recently-used.xbel
+        # TODO
+      }
+
+
       # $env.path ++= ["/xyz/meow"]
 
       $env.config = {
@@ -207,7 +218,6 @@ in {
       ":x" = "exit";
 
       # k = "pkill";
-      cl = "clipse -clear"; # clear clipboard history
       back = "cd -";
       fg = "job unfreeze";
 
@@ -261,6 +271,9 @@ in {
       sl = "ls";
       igt = "git";
       gti = "git";
+
+
+      h = "!! --help";
     };
 
 
