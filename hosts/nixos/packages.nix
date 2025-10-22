@@ -74,8 +74,8 @@
     udiskie
     udisks2
     gvfs
-    # zenity
-    # xdg-desktop-portal-termfilechooser
+    zenity
+    xdg-desktop-portal-termfilechooser
     xdg-utils
 
     /* misc */
