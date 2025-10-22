@@ -4,7 +4,7 @@
     settings = {
       viewer = {
         window = "#090E13cc";
-        transparency = "#00000000";
+        transparency = "#090E13cc";
         scale = "fit";
       };
       "info.viewer" = {
