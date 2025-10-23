@@ -1,4 +1,4 @@
-{
+{ flake_dir, ... }: {
   programs.nixvim.plugins.telescope = {
     enable = true;
 
@@ -33,10 +33,10 @@
       "<leader><leader>" = "buffers";
       "<leader>gw" = "git_commits";
       "<leader>ga" = "git_status";
-      # "<leader>f" = "live_grep { cwd = '/home/meow/nix' }";
+      # "<leader>f" = "live_grep { cwd = '${flake_dir}' }";
       "<leader>/" = "current_buffer_fuzzy_find";
 
-      # "<leader>i" = "oldfiles { cwd = '/home/meow/nix' }";
+      # "<leader>i" = "oldfiles { cwd = '${flake_dir}' }";
     };
   };
 }

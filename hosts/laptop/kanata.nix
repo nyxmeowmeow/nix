@@ -5,10 +5,6 @@
     keyboards = {
       lily58 = {
         port = 10000;
-        devices = [
-          "/dev/input/by-id/usb-liliums_Lily58-event-kbd"
-          "/dev/input/by-id/usb-liliums_Lily58-event-if02"
-        ];
 
         extraDefCfg = ''
           process-unmapped-keys yes
@@ -22,15 +18,7 @@
 (defsrc
 )
 
-(defvar
-  tot 150  ;; tot=time out tap
-)
-
-(defvirtualkeys typingmode nop1)
-
 (defalias
- .tp (hold-for-duration 30 typingmode)
-
   magic (switch
   ;; query
     ((key-history q 1)) (macro u e r y) break
@@ -298,7 +286,7 @@ f10 S-]
 
 
 
-x (tap-hold-press 120 120 esc (multi (layer-while-held sup) lmet))
+x (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 v @magic
 ] @rpeat
 
@@ -389,7 +377,7 @@ c @cw
   # Ensure the uinput group exists
   users.groups.uinput = { };
 
-  systemd.services.kanata-lily58.serviceConfig = {
+  systemd.services.kanata.serviceConfig = {
     # User = "root";
     SupplementaryGroups = [
       "input"

@@ -1,7 +1,7 @@
 #!/usr/bin/env expect
 
 
-spawn sudo steam-run /home/meow/misc/keyb0xx
+spawn sudo steam-run $HOME/misc/keyb0xx
 
 expect "Enter a number (or 'a' to show all devices):"
 send -- "a\r"
