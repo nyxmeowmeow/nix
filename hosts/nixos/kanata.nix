@@ -346,6 +346,18 @@ f19 lsft
 )
 
 (deflayermap melee
+b n
+f s
+d t
+w c
+
+n b
+s f
+t d
+c w
+
+y v
+
 f18 tab
 f15 8
 f16 9
