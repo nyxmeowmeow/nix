@@ -240,55 +240,60 @@
 )
 
 (deflayermap (base)
- ;; define home row mods (they act as typing-layer triggers, too )
- e (t! homerowmod $tot 110 t lsft)
- o (t! homerowmod $tot 110 a rsft)
- r (t! homerowmod $tot 110 c lctl)
- i (t! homerowmod $tot 110 h rctl)
- q (t! homerowmod $tot 130 n lsft)
- [ (t! homerowmod $tot 130 i rsft)
- w (t! homerowmod $tot 120 s (layer-while-held syms))
- p (t! homerowmod $tot 120 e (layer-while-held syms))
- ;; define each letter as typing-layer trigger
 
- g ( t! letter 200 200 v)
- u ( t! letter 200 200 m)
- f ( t! letter 200 200 g)
- 7 ( t! letter 200 200 ')
- 8 ( t! letter 200 200 l)
- 9 ( t! letter 200 200 o)
- 0 ( t! letter 200 200 u)
- c ( t! letter 200 200 r)
- ent ( t! letter 200 200 z)
- = ( t! letter 200 200 x)
- _ ( t! letter 200 200 j)
- 1 ( t! letter 200 200 b)
- 2 ( t! letter 200 200 f)
- 3 ( t! letter 200 200 d)
- 4 ( t! letter 200 200 w)
- 5 ( t! letter 200 200 p)
- t ( t! letter 200 200 y)
- d ( t! letter 200 200 k)
- s ( t! letter 200 200 .)
- a ( t! letter 200 200 ,)
- j ( t! letter 200 200 /)
- k ( t! letter 200 200 S--)
- l ( t! letter 200 200 S-9)
- ; ( t! letter 200 200 S-0)
- ' ( t! letter 200 200 ;)
- caps ( t! letter 200 200 q)
+1 b
+2 f
+3 d
+4 w
+5 p
+q n
+w s
+e t
+r c
+t y
+a ,
+s .
+d k
+f g
+g v
 
+7 -
+8 l
+9 o
+0 u
+- j
+= x
+
+u m
+i h
+o a
+p e
+[ i
+] @rpeat
+j /
+k S--
+l S-9
+; S-0
+' ;
+ent z
 
 
-tab -
+tab (tap-hold-press 200 200 = lsft)
 ` S-;
+caps q
+
+
 spc ent
 m ent
 , spc
 . bspc
 
+c r
+v @magic
+
 f3 S-[
 f4 S-[
+f10 S-]
 f10 S-]
 
 
@@ -366,24 +371,6 @@ c @cw
   (f15     f17  ) S-5 20 all-released (over sup)
   (    f16 f17  ) S-/ 15 all-released (over sup)
   (        f17 ;) S-2 15 all-released (over sup)
-)
-
-
-
-(deftemplate homerowmod (timeouttap timeouthold keytap keyhold)
-   (switch
-   (nop1) $keytap break ;;check for typing mode
-  () (tap-hold $timeouttap $timeouthold
-      (multi $keytap  @.tp)
-      $keyhold
-  ) break
-))
-
-(deftemplate letter (timeouttap timeouthold keytap)
-      (switch 
-            (nop1) (multi (unmod $keytap)  @.tp) break  ;;check for typing mode
-            () (multi                $keytap  @.tp) break
-    )
 )
         '';
       };
