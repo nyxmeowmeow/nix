@@ -6,9 +6,7 @@
     relativenumber = false;
     signcolumn = "number";
     foldcolumn = "auto";
-    foldtext = ''
-    substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=',\'\','g')
-    '';
+    foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')";
 
     scrolloff = 10;
 
