@@ -5,6 +5,10 @@
     number = true;
     relativenumber = false;
     signcolumn = "number";
+    foldcolumn = "auto";
+    foldtext = ''
+    substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=',\'\','g')
+    '';
 
     scrolloff = 10;
 
@@ -30,6 +34,8 @@
     breakindent = true; # indent wrap
     breakindentopt = "shift:2";
     showbreak = "↪ "; 
+
+    confirm = true; # confirm for :q with unsaved changes instead of failing
 
 
     splitbelow = true;

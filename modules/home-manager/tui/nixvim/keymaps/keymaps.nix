@@ -12,6 +12,17 @@
       action = "<cmd>lua vim.bo.wrap = not vim.bo.wrap<cr>";
       mode = [ "n" "x" ];
     }
+    { # toggle breakindent
+      key = "<Leader>br"; # tw
+      action = "<cmd>lua vim.o.breakindent = not vim.o.breakindent<cr>";
+      mode = [ "n" "x" ];
+    }
+    { # toggle breakindent for buffer
+      key = "<Leader>bR"; # tw
+      action = "<cmd>lua vim.bo.breakindent = not vim.bo.breakindent<cr>";
+      mode = [ "n" "x" ];
+    }
+
 
     { # toggle rnu
       key = "<Leader>bv"; # tr
@@ -160,41 +171,41 @@
       mode = [ "n" "v" "x" ];
     }
 
-    { # put cursor at top of screen
-      key = "zh";
-      action = "zo";
-      mode = [ "n" "v" "x" ];
-    }
-
-    { # put cursor at top of screen
-      key = "zw";
-      action = "zc";
-      mode = [ "n" "v" "x" ];
-    }
-
-    { # put cursor at top of screen
-      key = "zK";
-      action = "z<cr>";
-      mode = [ "n" "v" "x" ];
-    }
-
-    { # put cursor at bottom of screen
-      key = "zJ";
-      action = "z-";
-      mode = [ "n" "v" "x" ];
-    }
-
-    { # put top of screen at cursor
-      key = "zj";
-      action = "zt";
-      mode = [ "n" "v" "x" ];
-    }
-
-    { # put bottom of screen at cursor
-      key = "zk";
-      action = "zb";
-      mode = [ "n" "v" "x" ];
-    }
+    # { # put cursor at top of screen
+    #   key = "zh";
+    #   action = "zo";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    #
+    # { # put cursor at top of screen
+    #   key = "zw";
+    #   action = "zc";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    #
+    # { # put cursor at top of screen
+    #   key = "zK";
+    #   action = "z<cr>";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    #
+    # { # put cursor at bottom of screen
+    #   key = "zJ";
+    #   action = "z-";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    #
+    # { # put top of screen at cursor
+    #   key = "zj";
+    #   action = "zt";
+    #   mode = [ "n" "v" "x" ];
+    # }
+    #
+    # { # put bottom of screen at cursor
+    #   key = "zk";
+    #   action = "zb";
+    #   mode = [ "n" "v" "x" ];
+    # }
 
     { # append semicolon
       key = "<leader>;";
