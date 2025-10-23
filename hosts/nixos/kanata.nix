@@ -343,32 +343,16 @@ f16 9
 f17 0
 f19 lsft
 
-;; b (multi b (layer-switch over))
-;; f (multi f (layer-switch over))
-;; d (multi d (layer-switch over))
-;; w (multi w (layer-switch over))
-;; p (multi p (layer-switch over))
-;; n (multi n (layer-switch over))
-;; s (multi s (layer-switch over))
-;; t (multi t (layer-switch over))
-;; c (multi c (layer-switch over))
-;; y (multi y (layer-switch over))
-;; , (multi , (layer-switch over))
-;; . (multi . (layer-switch over))
-;; k (multi k (layer-switch over))
-;; g (multi g (layer-switch over))
-;; v (multi v (layer-switch over))
-;; ' (multi ' (layer-switch over))
-;; l (multi l (layer-switch over))
-;; o (multi o (layer-switch over))
-;; u (multi u (layer-switch over))
-;; j (multi j (layer-switch over))
-;; x (multi x (layer-switch over))
-;; m (multi m (layer-switch over))
-;; h (multi h (layer-switch over))
-;; a (multi a (layer-switch over))
-;; e (multi e (layer-switch over))
-;; i (multi i (layer-switch over))
+)
+
+(deflayermap melee
+f18 tab
+f15 8
+f16 9
+f17 0
+f19 lsft
+h `
+
 )
 
 (deflayermap sup
