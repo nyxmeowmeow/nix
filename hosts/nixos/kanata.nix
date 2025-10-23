@@ -456,47 +456,47 @@ i end
 
 (defchordsv2
 
-  (f15 a) @cw 16 all-released (over sup)
-  (t g) caps 16 all-released (over sup)
-  (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup)
-  (a f17) S-5 15 all-released (over sup)
-  (h l) ' 15 all-released (over sup)
-  (a o) S-5 15 all-released (over sup)
+  (f15 a) @cw 16 all-released (over sup melee)
+  (t g) caps 16 all-released (over sup melee)
+  (u i) (macro S-[ S-; S-/ S-]) 16 all-released (over sup melee)
+  (a f17) S-5 15 all-released (over sup melee)
+  (h l) ' 15 all-released (over sup melee)
+  (a o) S-5 15 all-released (over sup melee)
 
-  (, ;) (macro S-; q) 20 all-released (over sup)
-  (q z) (macro q S-;) 20 all-released (over sup)
+  (, ;) (macro S-; q) 20 all-released (over sup melee)
+  (q z) (macro q S-;) 20 all-released (over sup melee)
 
 
-  (b f    ) S-/ 20 all-released (over sup)
-  (  f d  ) S-7 15 all-released (over sup)
-  (  f   w) `   20 all-released (over sup)
-  (    d w) S-8 15 all-released (over sup)
+  (b f    ) S-/ 20 all-released (over sup melee)
+  (  f d  ) S-7 15 all-released (over sup melee)
+  (  f   w) `   20 all-released (over sup melee)
+  (    d w) S-8 15 all-released (over sup melee)
   
-  (l o    ) S-' 14 all-released (over sup)
-  (  o u  ) S-1 13 all-released (over sup)
-  (    u j) S-6 15 all-released (over sup)
+  (l o    ) S-' 14 all-released (over sup melee)
+  (  o u  ) S-1 13 all-released (over sup melee)
+  (    u j) S-6 15 all-released (over sup melee)
 
-  (n s    ) S-, 14 all-released (over sup)
-  (  s t  ) '   13 all-released (over sup)
-  (  s   c) S-` 16 all-released (over sup)
-  (    t c) [   14 all-released (over sup)
+  (n s    ) S-, 14 all-released (over sup melee)
+  (  s t  ) '   13 all-released (over sup melee)
+  (  s   c) S-` 16 all-released (over sup melee)
+  (    t c) [   14 all-released (over sup melee)
 
-  ;; (h a    ) ]   14 all-released (over sup)
-  (h a    ) ]   14 all-released (over sup)
-  (h   e  ) del 15 all-released (over sup)
-  (  a e  ) +   14 all-released (over sup)
-  (    e i) S-. 14 all-released (over sup)
+  ;; (h a    ) ]   14 all-released (over sup melee)
+  (h a    ) ]   14 all-released (over sup melee)
+  (h   e  ) del 15 all-released (over sup melee)
+  (  a e  ) +   14 all-released (over sup melee)
+  (    e i) S-. 14 all-released (over sup melee)
 
-  (, .    ) \   20 all-released (over sup)
-  (  . k  ) S-\ 20 all-released (over sup)
-  (    k g) S-4 20 all-released (over sup)
+  (, .    ) \   20 all-released (over sup melee)
+  (  . k  ) S-\ 20 all-released (over sup melee)
+  (    k g) S-4 20 all-released (over sup melee)
 
-  (f15 f16      ) S-3 20 all-released (over sup)
-  ;; (f15     f17  ) S-5 20 all-released (over sup)
-  (    f16 f17  ) S-/ 15 all-released (over sup)
-  (        f17 ;) S-2 15 all-released (over sup)
+  (f15 f16      ) S-3 20 all-released (over sup melee)
+  ;; (f15     f17  ) S-5 20 all-released (over sup melee)
+  (    f16 f17  ) S-/ 15 all-released (over sup melee)
+  (        f17 ;) S-2 15 all-released (over sup melee)
 
-  (h spc) \ 15 all-released (over sup)
+  (h spc) \ 15 all-released (over sup melee)
 
 
 
