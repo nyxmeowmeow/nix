@@ -37,6 +37,7 @@
     ./utils/lspconfig.nix
     # ./utils/pairs.nix
     ./utils/splitjoin.nix
+    ./utils/matchup.nix
     ./utils/surround.nix
     ./utils/telescope.nix
     ./utils/treesitter-textobjects.nix
