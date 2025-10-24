@@ -35,6 +35,7 @@
     ./ui/indentscope.nix
     ./utils/lsp.nix
     ./utils/hardtime.nix
+    ./utils/neotest.nix
     ./utils/lspconfig.nix
     # ./utils/pairs.nix
     ./utils/splitjoin.nix
