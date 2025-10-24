@@ -79,8 +79,8 @@
             query = "@class.inner";
             desc = "Select the [i]nner part of a [c]lass";
           };
+        };
       };
     };
-  };
   };
 }

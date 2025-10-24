@@ -6,6 +6,7 @@
     lazyLoad.settings.event = [
       "BufRead"
     ];
+
     settings = {
       line_numbers = true;
       max_lines = 0;
