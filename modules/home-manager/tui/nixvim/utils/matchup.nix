@@ -13,7 +13,7 @@
       let g:matchup_matchparen_singleton = 0
       let g:matchup_matchparen_offscreen = {'method': 'popup'}
 
-      autocmd FileType rs let b:match_words = '=>:=>'`
+      autocmd FileType rs let b:match_words = '=>:=>'
     '';
   };
 }
