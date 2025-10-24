@@ -4,7 +4,7 @@ let
   col = import ../../../../themes/${theme_trimmed}/colors.nix;
 in {
   home.file.".config/usercontent/wikipedia.css".text = /* css */ ''
-@-moz-document domain("wikipedia.com") {
+@-moz-document domain("wikipedia.org") {
 root: {
   --font: ${config.stylix.fonts.monospace.name} !important;
   --bg-color: transparent !important;
