@@ -8,6 +8,7 @@ in
 @import "/home/${username}/.config/usercontent/monkeytype.css";
 @import "/home/${username}/.config/usercontent/github.css";
 @import "/home/${username}/.config/usercontent/wikipedia.css";
+@import "/home/${username}/.config/usercontent/duckduckgo.css";
 
 *{ scrollbar-width: none }
 
