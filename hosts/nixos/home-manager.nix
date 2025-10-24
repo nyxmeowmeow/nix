@@ -26,9 +26,12 @@
         ../../modules/home-manager/tui/nixvim/default.nix
 
 
+        ../../modules/home-manager/gui/browser_css/monkeytype.nix
+        ../../modules/home-manager/gui/browser_css/usercontent.nix
+        ../../modules/home-manager/gui/browser_css/wikipedia.nix
+        ../../modules/home-manager/gui/browser_css/github.nix
 
         ../../modules/home-manager/gui/dunst.nix
-        ../../modules/home-manager/gui/browser_css/monkeytype.nix
         ../../modules/home-manager/gui/wlr-which-key.nix
         ../../modules/home-manager/gui/emacs/emacs.nix
         ../../modules/home-manager/gui/firefox.nix
