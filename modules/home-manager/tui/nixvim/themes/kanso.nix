@@ -31,6 +31,8 @@
             -- LineNrBelow = { fg = "#393B44" },
             -- LineNrAbove = { fg = "#393B44" },
             LineNr = { fg = "#393B44" },
+            RenderMarkdownH1Bg = { fg = "#090E13", bg = "#f2f1ef" },
+            RenderMarkdownH2Bg = { fg = "#090E13", bg = "#C5C9C7" },
             }
             end,
             theme = ${lib.strings.removePrefix "kanso_" theme},              -- Load "zen" theme

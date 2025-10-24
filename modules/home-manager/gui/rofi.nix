@@ -10,6 +10,10 @@ in
   home.file.".config/rofi/bgselector.rasi".text = /* rasi */ ''
 configuration {
     show-icons: true;
+    kb-row-left: "h";
+    kb-row-right: "i";
+    kb-row-down: "a";
+    kb-row-up: "e";
 }
 
 @theme "bgselector2.rasi"
