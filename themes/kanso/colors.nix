@@ -1,6 +1,7 @@
 {
     accent = "#7FB4CA";
     bg = "#090E13";
+    grey = "#5C6066";
 
 # zen bg shades
     zen_bg0 = "#090E13";

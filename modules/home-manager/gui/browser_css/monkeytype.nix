@@ -2,8 +2,7 @@
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../themes/${theme_trimmed}/colors.nix;
-in
-{
+in {
   home.file.".config/usercontent/monkeytype.css".text = /* css */ ''
 @-moz-document domain("monkeytype.com") {
 root: {
@@ -12,39 +11,41 @@ root: {
   --sub-alt-color: transparent !important;
 
   --untyped-letter-color: ${col.fg} !important;
-  --sub-color: ${col.gray5} !important;
-  --error-color: ${col.red2} !important;
+  --sub-color: ${col.grey} !important;
+  --error-color: ${col.red} !important;
   --error-extra-color: ${col.red} !important;
 }
 
 body {
-    background: transparent !important;
+  background: transparent !important;
+  font-family: ${config.stylix.fonts.monospace.name};
+
 }
 
 
 #restartTestButton {
-    /*font-size: 0rem;*/
-    opacity: 0;
+  /*font-size: 0rem;*/
+  opacity: 0;
 }
 #contactPopupButton {
-    display: none;
+  display: none;
 }
 #supportMeButton {
-    display: none;
+  display: none;
 }
 
 
 
 footer .leftright .left .textButton, footer .leftright .right .textButton[aria-label="discord"] {
-    display: none;
+  display: none;
 }
 
 footer .leftright .left .textButton, footer .leftright .right .textButton {
-    display: none;
+  display: none;
 }
 
 #testConfig .puncAndNum {
-    display: none;
+  display: none;
 }
 
 header #logo {
