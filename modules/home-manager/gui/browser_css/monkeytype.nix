@@ -1,6 +1,7 @@
 { config, lib, theme, ... }:
 let
-  col_kanso = import ../../../../themes/kanso/colors.nix;
+  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
+  col = import ../../../../themes/${theme_trimmed}/colors.nix;
 in
 {
   home.file.".config/usercontent/monkeytype.css".text = /* css */ ''
@@ -9,6 +10,11 @@ root: {
   --font: ${config.stylix.fonts.monospace.name};
   --bg-color: transparent !important;
   --sub-alt-color: transparent !important;
+
+  --untyped-letter-color: ${col.fg} !important;
+  --sub-color: ${col.gray5} !important;
+  --error-color: ${col.red2} !important;
+  --error-extra-color: ${col.red} !important;
 }
 
 body {
@@ -49,11 +55,4 @@ header #logo {
 
 }
 '';
-# ++ lib.mkIf (theme == "kanso_zen" || theme == "kanso_ink" || theme == "kanso_mist" || theme == "kantsi") ''
-#   --untyped-letter-color: ${col_kanso.fg} !important;
-#   --sub-color: ${col_kanso.gray5} !important;
-#   --error-color: ${col_kanso.red2} !important;
-#   --error-extra-color: ${col_kanso.red} !important;
-#   ''
-#   ;
 }
