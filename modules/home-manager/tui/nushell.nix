@@ -159,10 +159,10 @@ in {
       #  clear clipboard
       def cl [] {
         clipse -clear
-        rm ~/.config/clipse/tmp_files/* 2> /dev/null
-        rm -r ~/.cache/thumbnails/* 2> /dev/null
-        rm /tmp/yazi-1000/* 2> /dev/null
-        rm ~/.local/share/recently-used.xbel 2> /dev/null
+        rm ~/.config/clipse/tmp_files/* err> /dev/null || true
+        rm -r ~/.cache/thumbnails/* err> /dev/null || true
+        rm /tmp/yazi-1000/* err> /dev/null || true
+        rm ~/.local/share/recently-used.xbel err> /dev/null || true
         ^find ~/.cache/zen -iname "*.png" | xargs rm
         ^find ~/.cache/mozilla/firefox -iname "*.png" | xargs rm
         # TODO
