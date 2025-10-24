@@ -2,7 +2,11 @@
   programs.nixvim = {
     extraPlugins = [ pkgs.vimPlugins.vim-matchup ];
     extraConfigLua = ''
-      require('match-up').setup()
+    require('match-up').setup({
+      treesitter = {
+        stopline = 500
+      }
+    })
     '';
   };
 }
