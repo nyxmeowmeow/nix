@@ -2,6 +2,7 @@
   programs.nixvim.plugins.mini.modules.bracketed = {
     enable = true;
 
+    lazyLoad.enable = true;
     lazyLoad.settings.event = [
       "DeferredUIEnter"
     ];

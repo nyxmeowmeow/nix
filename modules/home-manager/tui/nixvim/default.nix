@@ -41,6 +41,7 @@
     ./utils/surround.nix
     ./utils/telescope.nix
     ./utils/treesitter-textobjects.nix
+    ./utils/treesitter-context.nix
     ./utils/treesitter.nix
     ./ui/yazi.nix
     # ./ui/tiny-glimmer.nix

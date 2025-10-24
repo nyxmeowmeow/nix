@@ -2,6 +2,7 @@
   programs.nixvim.plugins.telescope = {
     enable = true;
 
+    lazyLoad.enable = true;
     lazyLoad.settings.event = [
       "DeferredUIEnter"
     ];

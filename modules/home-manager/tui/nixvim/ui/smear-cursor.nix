@@ -2,6 +2,7 @@
   programs.nixvim.plugins.smear-cursor = {
     enable = true;
 
+    lazyLoad.enable = true;
     lazyLoad.settings.event = [
       "DeferredUIEnter"
     ];
