@@ -6,7 +6,7 @@ in {
   home.file.".config/usercontent/monkeytype.css".text = /* css */ ''
 @-moz-document domain("monkeytype.com") {
 root: {
-  --font: ${config.stylix.fonts.monospace.name};
+  --font: ${config.stylix.fonts.monospace.name} !important;
   --bg-color: transparent !important;
   --sub-alt-color: transparent !important;
 
@@ -18,38 +18,44 @@ root: {
 
 body {
   background: transparent !important;
-  font-family: ${config.stylix.fonts.monospace.name};
+  font-family: ${config.stylix.fonts.monospace.name} !important;
 
 }
 
 
 #restartTestButton {
   /*font-size: 0rem;*/
-  opacity: 0;
+  opacity: 0 !important;
 }
 #contactPopupButton {
-  display: none;
+  display: none !important;
 }
 #supportMeButton {
-  display: none;
+  display: none !important;
 }
 
 
 
 footer .leftright .left .textButton, footer .leftright .right .textButton[aria-label="discord"] {
-  display: none;
+  display: none !important;
 }
 
 footer .leftright .left .textButton, footer .leftright .right .textButton {
-  display: none;
+  display: none !important;
 }
 
+footer .leftright {
+  display: none !important;
+}
+
+
+
 #testConfig .puncAndNum {
-  display: none;
+  display: none !important;
 }
 
 header #logo {
-  display: none;
+  display: none !important;
 }
 
 
