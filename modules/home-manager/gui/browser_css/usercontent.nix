@@ -6,6 +6,8 @@ in
 {
   home.file.".config/usercontent/userContent.css".text = /* css */ ''
 @import "/home/${username}/.config/usercontent/monkeytype.css";
+@import "/home/${username}/.config/usercontent/github.css";
+@import "/home/${username}/.config/usercontent/wikipedia.css";
 
 *{ scrollbar-width: none }
 
