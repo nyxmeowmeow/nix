@@ -3,7 +3,7 @@
 
 
     arduino-cli
-    arduino-ide
+    # arduino-ide
 
     gdb
 
