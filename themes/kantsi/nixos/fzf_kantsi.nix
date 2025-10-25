@@ -5,7 +5,7 @@ in {
   config = lib.mkIf (config.theme == "kantsi") {
 
     environment.variables = {
-      # FZF_DEFAULT_OPTS = "--color=fg:${col.fg},hl:${col.blue},fg+:#000000,bg+:${col.blue},hl+:#8bd5ca,info:#7f8c8d,prompt:${col.blue},spinner:-1,pointer:${col.blue},gutter:-1,info:#939ab7,border:-1 --border=none --info=hidden --header='' --prompt='󰘧 ' --no-bold -i --pointer=''";
+      FZF_DEFAULT_OPTS = "--color=fg:${col.fg},hl:${col.blue},fg+:#000000,bg+:${col.blue},hl+:#8bd5ca,info:#7f8c8d,prompt:${col.blue},spinner:-1,pointer:${col.blue},gutter:-1,info:#939ab7,border:-1 --border=none --info=hidden --header='' --prompt='󰘧 ' --no-bold -i --pointer=''";
     };
   };
 }
