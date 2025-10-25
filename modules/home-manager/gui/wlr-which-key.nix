@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, flake_dir, ... }:
 let
   # quit = if (config.wm == "niri") then "niri msg action quit"
   # else if (config.wm == "hyprland") then "hyprctl dispatch exit"
@@ -76,6 +76,10 @@ menu:
   - key: [ "t", "Mod4+t" ]
     desc: last col
     cmd: niri msg action toggle-column-tabbed-display
+
+  - key: [ "z", "Mod4+z" ]
+    desc: eep
+    cmd: ${flake_dir}/stuff/scripts/eep.sh
 
   '';
 }

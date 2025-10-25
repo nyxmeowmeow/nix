@@ -17,11 +17,21 @@ done
 # List wallpapers with icons for rofi
 wall_selection=$(ls "$wall_dir" | while read -r A; do echo -en "$A\x00icon\x1f$cache_dir/$A\n"; done | sort | rofi -dmenu -config "$HOME/.config/rofi/bgselector.rasi")
 
+
+# get current theme
+themeline="$(cat ~/nix/modules/nixos/options.nix | grep 'config.theme = ')"
+for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest}; do
+  if [[ $themeline == *"$name"* ]]; then 
+    theme=$name
+  fi
+done
+
+
 # set wallpaper and update wallpaper.json
 if [ -n "$wall_selection" ]; then
 	swww img "$wall_dir/$wall_selection" -t grow --transition-duration 1 --transition-fps 165
   cd $HOME/nix/themes
-  echo $(cat wallpaper.json | jq ".kanso = \"$wall_selection\"") > wallpaper.json
+  echo $(cat wallpaper.json | jq ".$theme = \"$wall_selection\"") > wallpaper.json
 	exit 0
 else
 	exit 1
