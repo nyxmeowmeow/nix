@@ -3,7 +3,6 @@
     extraSpecialArgs = {
       theme = config.theme;
       font_size = config.font_size;
-      rounding = config.rounding;
 
 
       zen-browser = inputs.zen-browser;

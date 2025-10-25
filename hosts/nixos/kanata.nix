@@ -112,6 +112,7 @@
     ((and (key-history f 3) (key-history m 2) (key-history t 1))) (multi (release-key f) (release-key m) (release-key t)(macro bspc bspc o r m a t S-1 S-9 S-')) break
     
     ;; faster space for shorter words
+    ((and (key-history spc 2) (key-history n 1))) (macro spc) break
     ((and (key-history spc 2) (key-history a 1))) (macro spc) break
     ((and (key-history spc 2) (key-history i 1))) (macro spc) break
     ((and (key-history spc 4) (key-history t 3) (key-history h 2) (key-history e 1))) (macro spc) break
