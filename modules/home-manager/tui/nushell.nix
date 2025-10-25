@@ -269,7 +269,7 @@ in {
 
 
       # h = "!! --help";
-      np = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";
+      np = "${flake_dir}/stuff/scripts/nixpkgs.sh";
 
     };
 
