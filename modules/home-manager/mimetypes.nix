@@ -2,9 +2,9 @@
   xdg.mimeApps = {
     enable = true;
     associations.added = {
-      "image/jpeg" = ["qview" "krita" "aseprite"];
-      "image/jpg" = ["qview" "krita" "aseprite"];
-      "image/png" = ["qview" "krita" "aseprite"];
+      "image/jpeg" = ["swayimg" "krita" "aseprite"];
+      "image/jpg" = ["swayimg" "krita" "aseprite"];
+      "image/png" = ["swayimg" "krita" "aseprite"];
       "audio/mpeg" = ["mpv"];
       "video/mp3" = ["mpv"];
       "video/mp4" = ["mpv"];
@@ -16,9 +16,9 @@
       "application/toml" = "nvim";
       "audio/*" = ["mpv"];
       "audio/mp3" = ["mpv"];
-      "image/*" = ["qview" "krita" "aseprite"];
-      "image/jpg" = ["qview" "krita" "aseprite"];
-      "image/png" = ["qview" "krita" "aseprite"];
+      "image/*" = ["swayimg" "krita" "aseprite"];
+      "image/jpg" = ["swayimg" "krita" "aseprite"];
+      "image/png" = ["swayimg" "krita" "aseprite"];
       "text/plain" = "nvim";
       "video/*" = ["mpv"];
       "video/mp4" = ["mpv"];

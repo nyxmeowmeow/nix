@@ -5,7 +5,7 @@
     XDG_CACHE_HOME = "$HOME/.cache";
 
     CALCHISTFILE = "$XDG_CACHE_HOME/calc_history";
-    CARGO_HOME = "$XDG_DATA_HOME/cargo";
+    CARGO_HOME = "$HOME/.local/share/cargo";
     DOCKER_CONFIG = "$XDG_CONFIG_HOME/docker";
     GNUPGHOME = "$XDG_DATA_HOME/gnupg";
     GTK2_RC_FILES = "$XDG_CONFIG_HOME/gtk-2.0/gtkrc";

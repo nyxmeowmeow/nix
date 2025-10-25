@@ -1,5 +1,7 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+  nix-search-tv
+
     papirus-icon-theme
 
     qutebrowser
@@ -35,7 +37,7 @@
     krita
     inkscape
     # aseprite
-    qview
+    # qview
     pastel
     imagemagick
 

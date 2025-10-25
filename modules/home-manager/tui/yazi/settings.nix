@@ -155,8 +155,8 @@
           }
           ];
 
-          qview = [ {
-            run = "qview \"$@\"";
+          swayimg = [ {
+            run = "swayimg \"$@\"";
             orphan = true;
             for = "unix";
           } ];
@@ -174,22 +174,22 @@
           rules = [
           {
             name = "*.gif";
-            use = [ "qview" "reveal" ];
+            use = [ "swayimg" "reveal" ];
           }
 
           {
             name = "*.png";
-            use = [ "qview" "reveal" ];
+            use = [ "swayimg" "reveal" ];
           }
 
           {
             name = "*.jpg";
-            use = [ "qview" "reveal" ];
+            use = [ "swayimg" "reveal" ];
           }
 
           {
             name = "*.jpeg";
-            use = [ "qview" "reveal" ];
+            use = [ "swayimg" "reveal" ];
           }
 
           {
