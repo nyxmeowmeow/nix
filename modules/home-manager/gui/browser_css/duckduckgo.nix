@@ -24,7 +24,9 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
   --theme-col-txt-card-body: ${col.gray} !important;
 }
 
-.header--aside__item, .TccjmKV6RraCaCw5L9gd  {
+.header--aside__item, .TccjmKV6RraCaCw5L9gd,
+.ph1UFslrkUMqoYJEtp3t.hnKIeVb9Fi3YMCZAeQvR::before,
+.ph1UFslrkUMqoYJEtp3t.hnKIeVb9Fi3YMCZAeQvR::after {
   display: none !important;
 }
 .jyBaPv1HPGOoWrXSAjiu .T265XEcezvjUhK71U8pN {

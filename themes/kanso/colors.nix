@@ -1,7 +1,7 @@
 {
     accent = "#7FB4CA";
     bg = "#090E13";
-    grey = "#5C6066";
+    gray = "#5C6066";
     purple  = "#938AA9"; # violet
 
 # zen bg shades
@@ -27,7 +27,7 @@
 # fg
     fg    = "#C5C9C7";
     fg2   = "#f2f1ef";
-    gray  = "#717C7C";
+    gray1 = "#717C7C";
     gray2 = "#A4A7A4";
     gray3 = "#909398";
     gray4 = "#75797f";
