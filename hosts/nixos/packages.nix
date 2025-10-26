@@ -87,7 +87,7 @@
     wget
     dbus
     dconf
-    polkit_gnome
+    # polkit_gnome
     libevdev
     qemu_kvm
     hyprpicker
