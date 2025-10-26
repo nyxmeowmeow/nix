@@ -8,27 +8,35 @@
     stylix.url = "github:danth/stylix";
 
     niri.url = "github:sodiboo/niri-flake";
+    # mango = {
+    #   url = "github:DreamMaoMao/mango";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     textfox.url = "github:adriankarlen/textfox";
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     slippi.url = "github:lytedev/slippi-nix";
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";
-    # walker.url = "github:abenz1267/walker";
     pollymc.url = "github:fn2006/PollyMC";
     # moonlight = {
     #   url = "github:moonlight-mod/moonlight"; # Add `/develop` to the flake URL to use nightly.
     #     inputs.nixpkgs.follows = "nixpkgs";
     # };
-    # mango = {
-    #   url = "github:DreamMaoMao/mango";
-    #   inputs.nixpkgs.follows = "nixpkgs";
+
+    # elephant.url = "github:abenz1267/elephant";
+    # walker = {
+    #   url = "github:abenz1267/walker";
+    #   inputs.elephant.follows = "elephant";
     # };
+
     # ags.url = "github:aylur/ags";
     # meow-shell.url = "github:nyxmeowmeow/shell";
   };

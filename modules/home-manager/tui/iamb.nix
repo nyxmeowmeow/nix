@@ -1,0 +1,5 @@
+{
+  programs.iamb = {
+    enable = true;
+  };
+}

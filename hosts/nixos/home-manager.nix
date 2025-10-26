@@ -32,6 +32,7 @@
         ../../modules/home-manager/gui/browser_css/github.nix
         ../../modules/home-manager/gui/browser_css/duckduckgo.nix
 
+        ../../modules/home-manager/tui/iamb.nix
         ../../modules/home-manager/gui/dunst.nix
         ../../modules/home-manager/gui/wlr-which-key.nix
         ../../modules/home-manager/gui/emacs/emacs.nix
