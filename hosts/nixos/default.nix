@@ -11,6 +11,7 @@
     ../../modules/nixos/core/nix.nix
     ../../modules/nixos/core/nixpkgs.nix
     ../../modules/nixos/core/security.nix
+    ../../modules/nixos/core/polkit.nix
     ../../modules/nixos/audio.nix
     ../../modules/nixos/clipse.nix
     ../../modules/nixos/font.nix
