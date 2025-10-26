@@ -10,7 +10,7 @@ root: {
   --bg-color: transparent !important;
   --sub-alt-color: transparent !important;
 
-  --correct-letter-color ${col.gray} !important;
+  --correct-letter-color: ${col.gray} !important;
   --untyped-letter-color: ${col.fg} !important;
   --sub-color: ${col.gray} !important;
   --error-color: ${col.red} !important;
