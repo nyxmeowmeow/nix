@@ -25,8 +25,9 @@
 
 
 # fg
-    fg    = "#C5C9C7";
-    fg2   = "#f2f1ef";
+    fg  = "#f2f1ef";
+    fg2 = "#C5C9C7";
+
     gray1 = "#717C7C";
     gray2 = "#A4A7A4";
     gray3 = "#909398";
