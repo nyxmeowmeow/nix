@@ -54,6 +54,7 @@
         ../../modules/home-manager/services/hyprkan.nix
         ../../modules/home-manager/services/swww.nix
         ../../modules/home-manager/tui/bash.nix
+        ../../modules/home-manager/tui/rust-fmt.nix
         ../../modules/home-manager/tui/btop.nix
         ../../modules/home-manager/tui/clipse.nix
         ../../modules/home-manager/tui/fzf.nix

@@ -243,7 +243,6 @@
   )
 
   ;; normal rpt except for syms
-  ;; FIXME
   rpeat (switch
 
     ;; oar trigram

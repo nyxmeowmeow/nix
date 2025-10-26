@@ -23,6 +23,7 @@
     gh
     git
     jq
+    yq
     ripgrep
     fd
     eza

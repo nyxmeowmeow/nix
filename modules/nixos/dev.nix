@@ -31,8 +31,9 @@
 
     rustc
     cargo
-    rust-analyzer
+    rustfmt
     clippy
+    rust-analyzer
     pkg-config
   ];
 }
