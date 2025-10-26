@@ -12,8 +12,8 @@
 
 
 
-  # security.soteria = {
-  #   enable = true;
-  # };
+  security.soteria = {
+    enable = true;
+  };
 
 }
