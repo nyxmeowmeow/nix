@@ -3,6 +3,17 @@
     keymap = {
       mgr.keymap = [
       {
+        desc = "Run dupes interactive";
+        on = [
+          "g"
+          "d"
+          "<Space>"
+        ];
+        run = "plugin dupes interactive";
+      }
+
+
+      {
         on = "<Esc>";
         run = "escape";
         desc = "Exit visual mode, clear selected; or cancel search";

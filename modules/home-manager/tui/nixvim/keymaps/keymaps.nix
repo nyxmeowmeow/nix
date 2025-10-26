@@ -114,9 +114,18 @@
       action = "I";
       mode = [ "n" "x" ];
     }
-
     {
       key = "<C-s>";
+      action = "A";
+      mode = [ "n" "x" ];
+    }
+    {
+      key = "gi";
+      action = "I";
+      mode = [ "n" "x" ];
+    }
+    {
+      key = "ga";
       action = "A";
       mode = [ "n" "x" ];
     }
