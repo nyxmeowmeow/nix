@@ -45,7 +45,7 @@ local options = {
 	strict_filesize_constraint = false,
 	strict_bitrate_multiplier = 0.95,
 	-- In kilobits.
-	strict_audio_bitrate = 128,
+	strict_audio_bitrate = 256,
 	-- Sets the output format, from a few predefined ones.
 	-- Currently we have:
 	-- av1
@@ -88,7 +88,7 @@ local options = {
 	-- On Windows, it shows a cmd popup. "auto" will display progress on non-Windows platforms.
 	display_progress = "yes",
 	-- The font size used in the menu. Isn't used for the notifications (started encode, finished encode etc)
-	font_size = 20,
+	font_size = 12,
 	margin = 10,
 	message_duration = 60,
 	-- gif dither mode, 0-5 for bayer w/ bayer_scale 0-5, 6 for paletteuse default (sierra2_4a)

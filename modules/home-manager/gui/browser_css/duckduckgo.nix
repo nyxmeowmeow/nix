@@ -20,6 +20,8 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
   --sds-color-text-accent-01: ${col.blue} !important;
   --sds-color-text-background-01: ${col.gray} !important;
   --sds-color-text-link-02-hover: ${col.gray} !important;
+
+  --theme-col-txt-card-body: ${col.gray} !important;
 }
 
 .header--aside__item, .TccjmKV6RraCaCw5L9gd  {
@@ -28,8 +30,13 @@ html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--car
 .jyBaPv1HPGOoWrXSAjiu .T265XEcezvjUhK71U8pN {
   box-shadow: none !important;
 }
-
-
+._2iQrmxmcSVuOHpCus2L._2iQrmxmcSVuOHpCus2L {
+  background-color: transparent !important;
+}
+.header-wrap {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
 
   }
   '';

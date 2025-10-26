@@ -1,7 +1,7 @@
 {
   home.file.".config/rustfmt.toml".text = ''
-    edition = 2024;
-    style_edition = 2024;
+    edition = "2024";
+    style_edition = "2024";
 
     # max_width
 
