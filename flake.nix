@@ -4,6 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-gaming.url = "github:fufexan/nix-gaming";
     stylix.url = "github:danth/stylix";
 
@@ -41,7 +46,7 @@
     # meow-shell.url = "github:nyxmeowmeow/shell";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, ... }:
+  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, nur, ... }:
   let
     username = "meow";
     flake_dir = "/home/${username}/nix";
@@ -59,7 +64,7 @@
         {
           nixpkgs.overlays = import ./overlays/default.nix;
         }
-
+        nur.modules.nixos.default
 
         inputs.slippi.nixosModules.default
           ./modules/nixos/slippi.nix
