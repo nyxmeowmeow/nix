@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    # search-engines.nix
+    ./search-engines.nix
     ./extensions.nix
 
   ];
