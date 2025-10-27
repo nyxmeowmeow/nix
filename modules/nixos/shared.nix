@@ -1,7 +1,7 @@
 {
   imports = [
   ./options.nix
-  ./env.nix
+  # ./env.nix
   ./core/networking.nix
   ./core/packages.nix
   ./misc.nix

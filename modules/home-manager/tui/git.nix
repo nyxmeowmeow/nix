@@ -1,8 +1,12 @@
 {
   programs.git = {
     enable = true;
-    userName = "nyxmeowmeow";
-    userEmail = "rraaiin@proton.me";
+    settings = {
+      user = {
+        name= "nyxmeowmeow";
+        email = "rraaiin@proton.me";
+      };
+    };
     extraConfig = {
       url = {
         "git@github.com:" = {
