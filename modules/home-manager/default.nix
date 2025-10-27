@@ -26,7 +26,7 @@
         # ./gui/textfox.nix
         ./gui/dunst.nix
         ./gui/emacs/emacs.nix
-        ./gui/firefox.nix
+        ./gui/firefox/firefox.nix
         ./gui/foot.nix
         ./gui/ghostty.nix
         ./gui/mpv.nix

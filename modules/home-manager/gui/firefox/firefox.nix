@@ -1,20 +1,24 @@
 { pkgs, ... }: {
+  imports = [
+    ./search-engines.nix
+  ];
+
   programs.firefox = {
     enable = true;
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
     profiles = {
-      "5f1jki3x.meow" = {
+      "meow" = {
         isDefault = true;
-        name = "meow";
-        path = "5f1jki3x.meow";
-        id = 1;
+        # name = "meow";
+        # path = "5f1jki3x.meow";
+        # id = 1;
 # preConfig = ''
 # '';
-        search = {
-          force = true;
-          default = "ddg";
-          order = ["ddg" "google"];
-        };
+        # search = {
+        #   force = true;
+        #   default = "ddg";
+        #   order = ["ddg" "google"];
+        # };
 #         settings = {
 #           "browser.search.region" = "AU";
 #           "browser.search.isUS" = false;
