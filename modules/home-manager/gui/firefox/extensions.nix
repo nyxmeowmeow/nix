@@ -12,19 +12,15 @@ let
     return-youtube-dislikes
     darkreader
     #bypass-paywalls-clean
-    plasma-integration
     indie-wiki-buddy
     stylus
     canvasblocker
+    fastforwardteam
+    tridactyl
   ];
 in
 {
-  hm.programs.floorp.profiles."${hm-config.home.username}".extensions = {
-    packages = extensions;
-    force = true;
-  };
-
-  hm.programs.firefox.profiles."${hm-config.home.username}".extensions = {
+  programs.firefox.profiles."meow".extensions = {
     packages = extensions;
     force = true;
   };
