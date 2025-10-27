@@ -67,11 +67,12 @@
     (bspc del up down left right - 0 1 2 3 4 5 6 7 8 9 lsft rsft)
   )
 
-  magic (switch
-
   ;; TODO convert rust ints to c99 ints
   ;; TODO sg -> String
+  magic (switch
 
+    ;; >w< -> ≥w≤
+    ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
     
     ;; insert current date
     ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date") break
@@ -118,16 +119,18 @@
     
     ;; faster space for shorter words
     ((and (key-history spc 2) (key-history n 1))) (macro spc) break
+    ((and (key-history spc 2) (key-history u 1))) (macro spc) break
     ((and (key-history spc 2) (key-history a 1))) (macro spc) break
     ((and (key-history spc 2) (key-history i 1))) (macro spc) break
     ((and (key-history spc 4) (key-history t 3) (key-history h 2) (key-history e 1))) (macro spc) break
 
 
+    ;; use
     ((and (key-history u 2) (key-history s 1))) (macro e) break
     
 
 
-  ;; NULL
+    ;; NULL
     ((and (key-history n 2) (key-history l 1))) (multi (release-key n) (release-key l) (macro C-w S-n S-u S-l S-l)) break
 
 
@@ -136,28 +139,24 @@
 
 
 
+    ;; enter sfb
     ((key-history tab 1)) (macro enter) break
     ((key-history up 1)) (macro enter) break
     ((key-history down 1)) (macro enter) break
 
 
-  ;; query
+    ;; query
     ((key-history q 1)) (macro u e r y) break
 
-  ;; std
+    ;; std
     ((and (key-history s 2) (key-history t 1))) (macro d) break
 
-  ;; https://
-    ((and (key-history h 2) (key-history t 1))) (macro t p s S-; / /) break
-
-  ;; https://www.
-    ((and (key-history h 3) (key-history t 2) (key-history w 1))) (macro bspc t p s S-; / / w w w .) break
-
+    ;; https://
+    ((and (key-history h 2) (key-history t 1))) (multi (release-key h) (release-key t) (macro t p s S-; / /)) break
+    ;; https://www.
+    ((and (key-history h 3) (key-history t 2) (key-history w 1))) (multi (release-key h) (release-key t) (release-key w)(macro bspc t p s S-; / / w w w .)) break
 
 
-
-  ;; #include
-    ;; ((input-history real 3 2)) (macro i n c l u d e) break
 
 
 
@@ -179,56 +178,41 @@
     ((and (key-history s 2) (key-history i 1))) (macro x) break
     ;; mix
     ((and (key-history m 2) (key-history i 1))) (macro x) break
-
     ;; nix
     ((and(key-history n 2) (key-history i 1))) (macro x) break
-    ;; nixpkgs
-    ;; ((and(key-history n 3) (key-history i 2) (key-history x 1) (input-history real lsft 2))) (macro p k g s) break
 
 
 
 
-    ;; |& closures with references
+    ;; |&   closures with references
     ((key-history \ 1)) (macro S-7) break
-
-
-  ;; rust macros
-  ;; !(
+    ;; !(   rust macros
     ((key-history 1 1)) (macro S-9) break
-
-  ;; >>
+    ;; >>
     ((key-history . 1)) (macro S-.) break
-
-  ;; <=
+    ;; <=
     ((key-history , 1)) (macro =) break
-
-  ;; ];
+    ;; ];
     ((key-history ] 1)) (macro ;) break
-
-  ;; auto ; for {}
+    ;; auto ; for {}
     ((key-history { 1)) (macro S-] ; left left) break
 
 
 
 
 
-  ;; &&
+    ;; &&
     ((key-history 7 1)) (macro S-7) break
-  ;; ::
+    ;; ::
     ((key-history ; 1)) (macro S-;) break
-
     ;; =>
     ((input-history real lctl 2)) (macro (unmod =) S-.) break
-
+    ;; ->
     ((key-history - 1)) (macro S-.) break
 
     ((input-history real f16 2)) (macro S-') break
     ((input-history real f17 2)) (macro S-0) break
     ((input-history real lctl 2)) (macro S-0) break
-
-
-
-
 
 
 ;; sfb
