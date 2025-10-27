@@ -1,7 +1,7 @@
 { pkgs, ... }: {
-  imports = [
-    ./search-engines.nix
-  ];
+  # imports = [
+  #   ./search-engines.nix
+  # ];
 
   programs.firefox = {
     enable = true;
