@@ -77,7 +77,7 @@ in {
 
         perm_sep.fg = col.zen_bg3;
         perm_typef.fg = col.green;
-        perm_readf.fg = col.yellow;
+        perm_readf.fg = col.yellow2;
         perm_writef.fg = col.red2;
         perm_execf.fg = col.green;
       };
@@ -168,10 +168,10 @@ in {
           { name = ".bashrc"; text = ""; fg = col.fg; }
           { name = ".gtkrc-2.0"; text = ""; fg = col.fg; }
           { name = ".Xresources"; text = ""; fg = col.fg; }
-          { name = "license"; text = ""; fg = col.yellow; }
-          # { name = "LICENSE"; text = ""; fg = col.yellow; }
-          { name = "license.md"; text = ""; fg = col.yellow; }
-          # { name = "LICENSE.md"; text = ""; fg = col.yellow; }
+          { name = "license"; text = ""; fg = col.yellow2; }
+          # { name = "LICENSE"; text = ""; fg = col.yellow2; }
+          { name = "license.md"; text = ""; fg = col.yellow2; }
+          # { name = "LICENSE.md"; text = ""; fg = col.yellow2; }
           { name = "readme"; text = "󰂺"; fg = col.fg; }
           { name = "readme.md"; text = "󰂺"; fg = col.fg; }
           { name = "readme.txt"; text = "󰂺"; fg = col.fg; }
@@ -200,19 +200,20 @@ in {
           { name = "c++"; text = ""; fg = col.violet; }
           { name = "cpp"; text = ""; fg = col.violet; }
           { name = "cp"; text = ""; fg = col.violet; }
+          { name = "lua"; text = "󰢱"; fg = col.blue; }
           { name = "zig"; text = ""; fg = col.yellow2; }
           { name = "hs"; text = ""; fg = col.violet; }
           { name = "git"; text = ""; fg = col.red2; }
           { name = "lock"; text = ""; fg = col.fg; }
           { name = "txt"; text = ""; fg = col.fg; }
-          { name = "png"; text = ""; fg = col.yellow; }
-          { name = "webp"; text = ""; fg = col.yellow; }
-          { name = "jpg"; text = ""; fg = col.yellow; }
-          { name = "jpeg"; text = ""; fg = col.yellow; }
-          { name = "gif"; text = ""; fg = col.yellow; }
-          { name = "ico"; text = ""; fg = col.yellow; }
-          { name = "svg"; text = "󰜡"; fg = col.yellow; }
-          { name = "vtf"; text = ""; fg = col.yellow; }
+          { name = "png"; text = ""; fg = col.yellow2; }
+          { name = "webp"; text = ""; fg = col.yellow2; }
+          { name = "jpg"; text = ""; fg = col.yellow2; }
+          { name = "jpeg"; text = ""; fg = col.yellow2; }
+          { name = "gif"; text = ""; fg = col.yellow2; }
+          { name = "ico"; text = ""; fg = col.yellow2; }
+          { name = "svg"; text = "󰜡"; fg = col.yellow2; }
+          { name = "vtf"; text = ""; fg = col.yellow2; }
           { name = "vmt"; text = ""; fg = col.fg; }
           { name = "mp4"; text = ""; fg = col.violet; }
           { name = "mkv"; text = ""; fg = col.violet; }
@@ -238,15 +239,15 @@ in {
           { name = "md"; text = ""; fg = col.fg; }
           { name = "org"; text = ""; fg = col.green; }
 
-          { name = "gz"; text = "󰗄"; fg = col.yellow; }
-          { name = "xz"; text = "󰗄"; fg = col.yellow; }
-          { name = "bz2"; text = "󰗄"; fg = col.yellow; }
-          { name = "zst"; text = "󰗄"; fg = col.yellow; }
-          { name = "lz4"; text = "󰗄"; fg = col.yellow; }
-          { name = "lha"; text = "󰗄"; fg = col.yellow; }
-          { name = "zip"; text = "󰗄"; fg = col.yellow; }
-          { name = "7z"; text = "󰗄"; fg = col.yellow; }
-          { name = "rar"; text = "󰗄"; fg = col.yellow; }
+          { name = "gz"; text = "󰗄"; fg = col.yellow2; }
+          { name = "xz"; text = "󰗄"; fg = col.yellow2; }
+          { name = "bz2"; text = "󰗄"; fg = col.yellow2; }
+          { name = "zst"; text = "󰗄"; fg = col.yellow2; }
+          { name = "lz4"; text = "󰗄"; fg = col.yellow2; }
+          { name = "lha"; text = "󰗄"; fg = col.yellow2; }
+          { name = "zip"; text = "󰗄"; fg = col.yellow2; }
+          { name = "7z"; text = "󰗄"; fg = col.yellow2; }
+          { name = "rar"; text = "󰗄"; fg = col.yellow2; }
 
           { name = "jar"; text = ""; fg = col.orange; }
           { name = "swift"; text = ""; fg = col.red2; }
@@ -260,9 +261,9 @@ in {
           { name = "vmf"; text = ""; fg = col.fg; }
           { name = "vmx"; text = ""; fg = col.fg; }
           { name = "el"; text = ""; fg = col.violet; }
-          { name = "gpg"; text = "󱕴"; fg = col.yellow; }
+          { name = "gpg"; text = "󱕴"; fg = col.yellow2; }
 
-          { name = "celeste"; text = ""; fg = col.yellow; }
+          { name = "celeste"; text = ""; fg = col.yellow2; }
 
         ];
 
