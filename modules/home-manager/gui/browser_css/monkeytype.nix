@@ -13,7 +13,7 @@ root: {
   --correct-letter-color: ${col.gray} !important;
   --untyped-letter-color: ${col.fg} !important;
   --sub-color: ${col.gray} !important;
-  --sub-alt-color: ${col.gray}aa;
+  --sub-alt-color: ${col.gray}aa !important;
   --error-color: ${col.red} !important;
   --error-extra-color: ${col.red} !important;
 }
