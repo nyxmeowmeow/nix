@@ -21,7 +21,7 @@
     ZDOTDIR = "$XDG_CONFIG_HOME/zsh";
     ZSH_DATA_PATH = "$XDG_DATA_HOME/zsh";
     _JAVA_OPTIONS = "-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java";
-    GOPATH = "$XDG_DATA_HOME/go";
-    GOMODCACHE = "$XDG_CACHE_HOME/go/mod";
+    GOPATH = "$HOME/.local/share/go";
+    GOMODCACHE = "$HOME/.local/share/go/mod";
   };
 }

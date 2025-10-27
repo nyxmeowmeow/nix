@@ -51,7 +51,7 @@ menu:
 
   - key: [ "x", "Mod4+x" ]
     desc: expand column
-    cmd: niri msg action expand-column-to-available-width
+    cmd: ${flake_dir}/stuff/scripts/clear.sh
 
   - key: [ "m", "Mod4+m" ]
     desc: maximise column
