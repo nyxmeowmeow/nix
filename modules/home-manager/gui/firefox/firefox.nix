@@ -38,6 +38,9 @@
         #   order = ["ddg" "google"];
         # };
         settings = {
+          "browser.tabs.allow_transparent_browser" = true;
+          "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+
           "browser.search.region" = "AU";
           "browser.search.isUS" = false;
           "browser.startup.homepage" = "duckduckgo.com";
