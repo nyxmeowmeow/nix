@@ -1,3 +1,5 @@
+# FIXME
+
 {
   config,
   lib,
@@ -137,13 +139,5 @@
   #     urls = lib.singleton { template = "https://www.ecosia.org/search?q={searchTerms}"; };
   #   };
   # };
-
-  programs.firefox.profiles."meow" = {
-    search = {
-      force = true;
-      default = "ddg";
-      order = ["ddg" "google"];
-    };
-  };
 
 }
