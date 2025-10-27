@@ -153,8 +153,8 @@
 # Toggle
       {
         on = [ "g" "i" ];
-        run = [ "toggle" "arrow 1" ];
-        desc = "Toggle the current selection state";
+        run = [ "toggle_all" ];
+        desc = "Invert selection";
       }
 
       {
@@ -170,16 +170,16 @@
       }
 
       {
-        on = "<C-v>";
+        on = "<C-r>";
         run = "toggle_all";
-        desc = "Invert selection of all files";
+        desc = "Invert selection";
       }
 
 # Visual mode
       {
         on = "r";
         run = "visual_mode";
-        desc = "Enter visual mode (selection mode)";
+        desc = "visual mode";
       }
 
       {

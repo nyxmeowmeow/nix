@@ -49,6 +49,7 @@ require("dupes"):setup {
 		},
 	},
 }
+
     '';
   };
 }

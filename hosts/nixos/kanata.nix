@@ -84,6 +84,11 @@
     ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) (macro x) break
 
 
+
+
+    ((and (key-history y 3) (key-history a 2) (key-history z 1))) (macro i) break
+
+
     ((input-history real lsft 2)) (macro lctl ent) break
 
     ((key-history 3 1)) (macro S-1) break
