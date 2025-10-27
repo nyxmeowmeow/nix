@@ -180,6 +180,17 @@
       mode = [ "n" "v" "x" ];
     }
 
+    {
+      key = "i(";
+      action = ":echo \"use b instead of ( or )\"<cr>";
+      mode = "o";
+    }
+    {
+      key = "i)";
+      action = ":echo \"use b instead of ( or )\"<cr>";
+      mode = "o";
+    }
+
     # { # put cursor at top of screen
     #   key = "zh";
     #   action = "zo";
