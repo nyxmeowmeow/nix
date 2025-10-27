@@ -183,12 +183,12 @@
     {
       key = "i(";
       action = ":echo \"use b instead of ( or )\"<cr>";
-      mode = "o";
+      mode = [ "o" "x" ];
     }
     {
       key = "i)";
       action = ":echo \"use b instead of ( or )\"<cr>";
-      mode = "o";
+      mode = [ "o" "x" ];
     }
 
     # { # put cursor at top of screen
