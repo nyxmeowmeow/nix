@@ -37,6 +37,13 @@
     }
 
     {
+      matches = [ { title = "^Dolphin$"; } ];
+      block-out-from = "screencast";
+      open-on-workspace = "one";
+      open-fullscreen = true;
+    }
+
+    {
       matches = [ { 
         app-id = "steam_app_1802710";
       } ];
