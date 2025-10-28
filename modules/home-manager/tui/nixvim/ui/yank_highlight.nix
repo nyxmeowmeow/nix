@@ -4,16 +4,15 @@
 
     lazyLoad.enable = true;
     lazyLoad.settings.event = [
-      "DeferredUIEnter"
+      "BufEnter"
     ];
 
     settings = {
       highlight = {
         on_yank = true;
         on_put = true;
+        timer = 200;
       };
-
     };
-
   };
 }
