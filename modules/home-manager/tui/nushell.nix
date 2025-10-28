@@ -1,36 +1,20 @@
-{ flake_dir, host, wm, ... }:
+{
+  flake_dir,
+  host,
+  wm,
+  ...
+}:
 let
-  wm_launch_command = if (wm == "hyprland") then "Hyprland" else "niri-session";
+  wm_launch_command =
+    if (wm == "hyprland") then "Hyprland"
+    else if (wm == "niri") then "niri-session"
+    else "echo config.wm is set incorrectly";
 in {
   programs.nushell = {
     enable = true;
 
     configFile.text = /* nu */ ''
 
-
-
-
-      # def ce [] {
-      #   let d = pwd
-      #   let n = foot -e nvim
-      #
-      #     # let output = ($base | str join "") + ".mov"
-      #
-      #   # niri msg action spawn-sh -- $n $d | str join "" + /src/main.rs
-      #   niri msg action spawn-sh -- "bash -e 'foot -e nvim $(pwd)/src/main.rs'"
-      #   sleep 0.1sec
-      #   niri msg action focus-column-right
-      #   niri msg action toggle-column-tabbed-display
-      #   niri msg action focus-column-left
-      #   niri msg action consume-or-expel-window-right
-      # }
-
-
-      # cd && ls
-      # def cs [msg: string] { # FIXME doesnt stay in the dir
-      #   cd $msg
-      #   ls
-      # }
 
       def rgb [ msg: string ] {
         pastel format rgb "$msg" | wl-copy

@@ -1,4 +1,8 @@
-{ pkgs, lib, ... }: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   nixpkgs.overlays = [
     (final: prev: {
       my-clipse = prev.buildGoModule {

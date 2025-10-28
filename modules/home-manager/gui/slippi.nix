@@ -1,4 +1,8 @@
-{ inputs, outputs, ... }: {
+{
+  inputs,
+  outputs,
+  ...
+}: {
   home-manager.users.meow = {
     imports = with outputs.homeManagerModules; [
       slippi.homeManagerModules.default

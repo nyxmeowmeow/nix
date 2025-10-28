@@ -19,19 +19,6 @@ in
         bottom-left = radius;
         bottom-right = radius;
       };
-
-# FIXME
-# geometry-corner-radius = lib.mkIf (config.rounding == false) {
-#   top-left = 0.0;
-#   top-right = 0.0;
-#   bottom-left = 0.0;
-#   bottom-right = 0.0;
-# } ++ lib.mkIf (config.rounding == true) {
-#   top-left = 10.0;
-#   top-right = 10.0;
-#   bottom-left = 10.0;
-#   bottom-right = 10.0;
-# };
     }
 
 

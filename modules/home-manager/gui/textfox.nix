@@ -1,4 +1,8 @@
-{ inputs, pkgs, ... }: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [ inputs.textfox.homeManagerModules.default ];
 
   programs.firefox.enable = true;

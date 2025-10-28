@@ -23,7 +23,6 @@
   programs.appimage = {
     enable = true;
     binfmt = true;
-
     # This is needed for Slippi to run.
     package = pkgs.appimage-run.override {
       extraPkgs = pkgs: [

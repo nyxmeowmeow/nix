@@ -1,4 +1,8 @@
-{ config, flake_dir, ... }:
+{
+  config,
+  flake_dir,
+  ...
+}:
 let
   # quit = if (config.wm == "niri") then "niri msg action quit"
   # else if (config.wm == "hyprland") then "hyprctl dispatch exit"

@@ -1,4 +1,9 @@
-{ inputs, config, username, ... }: {
+{
+  inputs,
+  config,
+  username,
+  ...
+}: {
   home-manager = {
     extraSpecialArgs = {
       theme = config.theme;
