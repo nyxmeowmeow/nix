@@ -30,7 +30,6 @@ in {
 #navigator-toolbox-background {
   appearance: none !important;
 }
-#main-window,
 #browser {
   background: ${col.bgtrans} !important;
 }
@@ -38,7 +37,7 @@ in {
 #nav-bar {
   border-top-color: transparent !important;
 }
-#tabbrowser-tabpanels {
+#tabbrowser-tabpanels, #main-window {
   background: transparent !important;
 }
 #tabbrowser-tabbox {
