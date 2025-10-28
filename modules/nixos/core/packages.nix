@@ -25,6 +25,7 @@
     jq
     yq
     ripgrep
+    wget
     fd
     eza
     fzf

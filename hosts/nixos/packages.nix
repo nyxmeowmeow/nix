@@ -1,16 +1,15 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-  nix-search-tv
+    nix-search-tv
 
-    papirus-icon-theme
 
     qutebrowser
     python313Packages.adblock
     python312Packages.adblock
 
 
-    reaper # borken
-    gtk3
+    # reaper # borken
+    # gtk3
     # zrythm # borken
     # lmms # borken
     ardour
@@ -56,18 +55,18 @@
 
     /* games */
     olympus
-    osu-lazer
+    # osu-lazer
     # tt
-    ttyper
+    # ttyper
     vitetris
     cl-wordle
     # luanti
 
     /* misc terminal stuff */
     termdown
-    tty-clock
+    # tty-clock
     fastfetch
-    zellij
+    # zellij
     # expect
 
     /* audio */
@@ -78,21 +77,20 @@
     udiskie
     udisks2
     gvfs
-    zenity
-    xdg-desktop-portal-termfilechooser
+    # zenity
+    # xdg-desktop-portal-termfilechooser
     xdg-utils
 
     /* misc */
     wl-clipboard
-    wget
     dbus
     dconf
     # polkit_gnome
     libevdev
-    qemu_kvm
+    # qemu_kvm
     hyprpicker
     swww
-    quickshell
+    # quickshell
 
     dunst
     libnotify
