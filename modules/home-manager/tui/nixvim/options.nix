@@ -1,6 +1,10 @@
-{
+let
+  rounding = if ((import ../../../nixos/config.nix).config.rounding) then "rounded" else "single";
+in {
   programs.nixvim.opts = {
     termguicolors = true;
+
+    winborder = rounding;
 
     number = true;
     relativenumber = false;
