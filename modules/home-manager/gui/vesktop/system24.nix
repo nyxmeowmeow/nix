@@ -6,7 +6,7 @@
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../themes/${theme_trimmed}/colors.nix;
-  rounding = if ((import ../../../nixos/config.nix).config.rounding) then "on" else "off";
+  unrounding = if ((import ../../../nixos/config.nix).config.rounding) then "off" else "on";
 in
 {
   home.file.".config/vesktop/themes/system24_1.css".text = ''
@@ -76,7 +76,7 @@ body {
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 
     /* unrounding options */
-    --unrounding: ${rounding}; /* off: default, on: remove rounded corners from panels */
+    --unrounding: ${unrounding}; /* off: default, on: remove rounded corners from panels */
 
     /* styling options */
     --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */
@@ -692,7 +692,7 @@ body {
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 
     /* unrounding options */
-    --unrounding: ${rounding}; /* off: default, on: remove rounded corners from panels */
+    --unrounding: ${unrounding}; /* off: default, on: remove rounded corners from panels */
 
     /* styling options */
     --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */
