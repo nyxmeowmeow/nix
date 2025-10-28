@@ -90,5 +90,33 @@
   
   #titlebar{ flex-direction: column }
 
+
+
+
+
+
+
+
+
+/* background color of pinned tabs in a normal state (not hovered/selected) */
+.tabbrowser-tab[pinned] .tab-stack .tab-background {
+background-color: #22262D !important;
+}
+/* background color when hovering */
+.tabbrowser-tab[pinned]:hover .tab-stack .tab-background{
+background-color: #22262D !important;
+}
+/* background color when selected */
+.tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background,
+.tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
+background-color: #7FB4CA !important;
+}
+/* background color when hovering and selected */
+.tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background,
+.tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background{
+background-color: #7FB4CA !important;
+}
+
+
   '';
 }

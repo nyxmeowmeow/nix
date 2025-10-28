@@ -41,6 +41,12 @@
           "browser.tabs.allow_transparent_browser" = true;
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
           "sidebar.verticalTabs" = true;
+          "browser.uiCustomization.navBarWhenVerticalTabs" = [
+            "urlbar-container"
+            "downloads-button"
+            "fxa-toolbar-menu-button"
+            "unified-extensions-button"
+          ];
 
           "browser.search.region" = "AU";
           "browser.search.isUS" = false;
