@@ -8,12 +8,12 @@ let
     "browser.tabs.inTitlebar" = 0; # needed for transparency
     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
     "sidebar.verticalTabs" = true;
-    "browser.uiCustomization.navBarWhenVerticalTabs" = [
-      "urlbar-container"
-        "downloads-button"
-        "fxa-toolbar-menu-button"
-        "unified-extensions-button"
-    ];
+    # "browser.uiCustomization.navBarWhenVerticalTabs" = [
+    #   "urlbar-container"
+    #   "downloads-button"
+    #   "fxa-toolbar-menu-button"
+    #   "unified-extensions-button"
+    # ];
     "devtools.chrome.enabled" = true;
     "devtools.debugger.remote-enabled" = true;
 
