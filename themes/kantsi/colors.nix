@@ -5,6 +5,7 @@
 
   accent    = "#7FB4CA";
   bg = "#000000";
+  bgtrans = "#000000cc";
 
 
   # fg

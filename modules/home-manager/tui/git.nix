@@ -7,7 +7,7 @@
         email = "rraaiin@proton.me";
       };
     };
-    extraConfig = {
+    settings = {
       url = {
         "git@github.com:" = {
           insteadOf = "gh:";
