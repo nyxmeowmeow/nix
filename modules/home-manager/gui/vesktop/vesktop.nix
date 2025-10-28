@@ -1,4 +1,6 @@
 {
+  imports = [ ./system24.nix ];
+
   programs.vesktop = {
     enable = true;
     settings = {

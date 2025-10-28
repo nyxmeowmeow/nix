@@ -39,7 +39,7 @@
         ./gui/obs.nix
         ./gui/shell.nix
         ./gui/tofi.nix
-        ./gui/vesktop.nix
+        ./gui/vesktop/vesktop.nix
         ./gui/walker.nix
         ./gui/zen/zen.nix
         ./hyprland.nix
