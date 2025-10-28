@@ -33,6 +33,7 @@
     ./ui/diagnostic.nix
     ./utils/flash.nix
     ./ui/indentscope.nix
+    ./ui/yank_highlight.nix
     ./utils/lsp.nix
     ./utils/hardtime.nix
     ./utils/neotest.nix
