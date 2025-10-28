@@ -19,6 +19,8 @@ in {
 
 
 :root {
+  --color-accent-primary: ${col.accent} !important;
+
   --tab-selected-bgcolor: ${col.accent} !important;
   --tab-selected-textcolor: ${col.bg} !important;
   --tab-selected-shadow: transparent !important;
@@ -27,7 +29,7 @@ in {
   /* --button-background-color */
   /* --button-background-color-hover */
   /* --button-background-color-active */
-
+--toolbox-bgcolor-inactive: transparent !important;
 
 }
 
@@ -62,9 +64,9 @@ in {
   background: transparent !important;
 }
 
-:root, body {
-  background-color: ${col.bgtrans} !important;
-}
+/* :root, body { */
+/*   background-color: ${col.bgtrans} !important; */
+/* } */
 
 
 
