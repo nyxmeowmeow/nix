@@ -53,7 +53,7 @@ in {
       def record [] { # simple screen record without obs
         cd ~/Videos
         let date = date now | format date "%Y-%m-%d %H:%M:%S"
-        wf-recorder -r 165 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
+        wf-recorder -r 60 -o DP-1 -f $"(date now | format date '%Y-%m-%d %H:%M:%S').mkv"
       }
 
       # convert .mp4 file to .mov for davinci resolve
