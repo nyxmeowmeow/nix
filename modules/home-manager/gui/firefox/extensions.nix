@@ -17,8 +17,7 @@ let
     fastforwardteam
     tridactyl
   ];
-in
-{
+in {
   programs.firefox.profiles."meow".extensions = {
     packages = extensions;
     force = true;

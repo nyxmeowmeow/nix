@@ -1,4 +1,9 @@
-{ lib, wm, ... }: {
+{
+  lib,
+  wm,
+  ...
+}:
+{
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings = {
       environment = {

@@ -1,4 +1,9 @@
-{ lib, config, wm, ... }:
+{
+  lib,
+  config,
+  wm,
+  ...
+}:
 let
 radius = if ((import ../../../nixos/config.nix).config.rounding) then 10.0 else 0.0;
 in

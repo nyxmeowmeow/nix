@@ -1,4 +1,10 @@
-{ config, lib, wm, ... }: {
+{
+  config,
+  lib,
+  wm,
+  ...
+}:
+{
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings.binds = with config.lib.niri.actions; 
     let

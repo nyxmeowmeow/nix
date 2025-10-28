@@ -1,4 +1,9 @@
-{ inputs, pkgs, ... }: {
+{
+  inputs,
+  pkgs,
+  ...
+}:
+{
 # imports = [
 #   inputs.zen-browser.homeModules.twilight
 #   ./userchrome/meow.nix
