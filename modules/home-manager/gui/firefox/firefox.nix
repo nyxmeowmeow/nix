@@ -47,6 +47,8 @@
             "fxa-toolbar-menu-button"
             "unified-extensions-button"
           ];
+          "devtools.chrome.enabled" = true;
+          "devtools.debugger.remote-enabled" = true;
 
           "browser.search.region" = "AU";
           "browser.search.isUS" = false;
