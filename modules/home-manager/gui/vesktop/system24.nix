@@ -6,7 +6,7 @@
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../themes/${theme_trimmed}/colors.nix;
-  radius = if ((import ../../../nixos/config.nix).config.rounding) then "10px" else "0px";
+  rounding = if ((import ../../../nixos/config.nix).config.rounding) then "on" else "off";
 in
 {
   home.file.".config/vesktop/themes/system24_1.css".text = ''
@@ -76,7 +76,7 @@ body {
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 
     /* unrounding options */
-    --unrounding: on; /* off: default, on: remove rounded corners from panels */
+    --unrounding: ${rounding}; /* off: default, on: remove rounded corners from panels */
 
     /* styling options */
     --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */
@@ -496,7 +496,7 @@ body {
     *,
     *::before,
     *::after {
-        border-radius: ${radius} !important;
+        border-radius: 0px !important;
     }
 
     .svg_cc5dd2 > mask,
@@ -569,7 +569,7 @@ body {
     }
 
     ::-webkit-scrollbar-thumb {
-        border-radius: ${radius} !important;
+        border-radius: 0px !important;
     }
 }
 
@@ -692,7 +692,7 @@ body {
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 
     /* unrounding options */
-    --unrounding: off; /* off: default, on: remove rounded corners from panels */
+    --unrounding: ${rounding}; /* off: default, on: remove rounded corners from panels */
 
     /* styling options */
     --custom-spotify-bar: on; /* off: default, on: custom text-like spotify progress bar */
