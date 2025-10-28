@@ -162,7 +162,10 @@ in {
   #titlebar{ flex-direction: column }
 
 
-
+.urlbarView {
+  position: absolute;
+  bottom: var(--urlbar-container-height);
+}
 
 
 
