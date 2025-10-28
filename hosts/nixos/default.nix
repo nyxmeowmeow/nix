@@ -21,6 +21,7 @@
     ../../modules/nixos/misc.nix
     ../../modules/nixos/nix-gaming.nix
     ../../modules/nixos/options.nix
+    ../../modules/nixos/config.nix
     ../../modules/nixos/shared.nix
     ../../modules/nixos/steam.nix
     ../../modules/nixos/stylix.nix

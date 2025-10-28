@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-themeline="$(cat ~/nix/modules/nixos/options.nix | grep 'config.theme = ')"
+themeline="$(cat ~/nix/modules/nixos/config.nix | grep 'config.theme = ')"
 
 for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest}; do
   if [[ $themeline == *"$name"* ]]; then 

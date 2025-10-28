@@ -1,7 +1,7 @@
-{ lib, config, rounding, wm, ... }:
-# let
-# radius = if (rounding == true) then 10.0 else 0.0;
-# in
+{ lib, config, wm, ... }:
+let
+radius = if ((import ../../../nixos/config.nix).config.rounding) then 10.0 else 0.0;
+in
 {
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings.window-rules = [
@@ -9,10 +9,10 @@
       draw-border-with-background = false;
       clip-to-geometry = true;
       geometry-corner-radius = {
-        top-left = 10.0;
-        top-right = 10.0;
-        bottom-left = 10.0;
-        bottom-right = 10.0;
+        top-left = radius;
+        top-right = radius;
+        bottom-left = radius;
+        bottom-right = radius;
       };
 
 # FIXME
