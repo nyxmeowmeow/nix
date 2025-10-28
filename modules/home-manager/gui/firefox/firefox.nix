@@ -5,6 +5,7 @@
 let
   settings = {
     "browser.tabs.allow_transparent_browser" = true;
+    "browser.tabs.inTitlebar" = 0; # needed for transparency
     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
     "sidebar.verticalTabs" = true;
     "browser.uiCustomization.navBarWhenVerticalTabs" = [

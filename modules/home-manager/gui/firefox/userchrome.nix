@@ -17,6 +17,39 @@ in {
 }
 
 
+:root {
+  --tab-selected-bgcolor: transparent !important;
+  --tab-selected-shadow: none !important;
+  --content-area-shadow: none !important;
+}
+
+#navigator-toolbox,
+#sidebar-main {
+  background-color: transparent !important;
+}
+#navigator-toolbox-background {
+  appearance: none !important;
+}
+#main-window,
+#browser {
+  background: ${col.bgtrans} !important;
+}
+
+#nav-bar {
+  border-top-color: transparent !important;
+}
+#tabbrowser-tabpanels {
+  background: transparent !important;
+}
+#tabbrowser-tabbox {
+  outline: none !important;
+}
+
+
+
+
+
+
 
 :root {
   --color-accent-primary: ${col.accent} !important;
@@ -69,10 +102,10 @@ in {
   text-align: right !important;
 }
 
-:root, body, #browser, #browser:not(.browser-toolbox-background), #navigator-toolbox, #tabbrowser-tabs, .urlbar-background, #searchbar {
-  background-color: transparent !important;
-  background: transparent !important;
-}
+/* :root, body, #browser, #browser:not(.browser-toolbox-background), #navigator-toolbox, #tabbrowser-tabs, .urlbar-background, #searchbar { */
+/*   background-color: transparent !important; */
+/*   background: transparent !important; */
+/* } */
 
 /* :root, body { */
 /*   background-color: ${col.bgtrans} !important; */
