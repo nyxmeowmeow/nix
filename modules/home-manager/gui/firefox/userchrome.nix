@@ -29,7 +29,17 @@ in {
   /* --button-background-color */
   /* --button-background-color-hover */
   /* --button-background-color-active */
---toolbox-bgcolor-inactive: transparent !important;
+
+
+  --toolbox-bgcolor: transparent !important;
+  --toolbox-bgcolor-inactive: transparent !important;
+  --toolbox-textcolor: ${col.fg} !important;
+  --toolbox-textcolor-inactive: ${col.fg} !important;
+
+  --sidebar-background-color: transparent !important;
+  --sidebar-text-color: ${col.fg} !important;
+  /* --sidebar-border-color: -moz-sidebarborder; */
+
 
 }
 
