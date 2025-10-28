@@ -16,6 +16,7 @@ let
     canvasblocker
     fastforwardteam
     tridactyl
+    bitwarden
   ];
 in {
   programs.firefox.profiles."meow".extensions = {

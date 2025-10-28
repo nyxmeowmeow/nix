@@ -30,14 +30,14 @@ in {
 #navigator-toolbox-background {
   appearance: none !important;
 }
-#browser {
+#main-window {
   background: ${col.bgtrans} !important;
 }
 
 #nav-bar {
   border-top-color: transparent !important;
 }
-#tabbrowser-tabpanels, #main-window {
+#tabbrowser-tabpanels, #browser {
   background: transparent !important;
 }
 #tabbrowser-tabbox {
