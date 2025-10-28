@@ -14,6 +14,7 @@
     ../../modules/nixos/core/polkit.nix
     ../../modules/nixos/audio.nix
     ../../modules/nixos/clipse.nix
+    ../../modules/nixos/ydotool.nix
     ../../modules/nixos/font.nix
     ../../modules/nixos/fontconfig.nix
     ../../modules/nixos/dev.nix
