@@ -1,26 +1,26 @@
 {
   bg_dim    = "#293136";
-  bg        = "#333C43";
-  bg1       = "#3A464C";
-  bg2       = "#434F55";
-  bg3       = "#4D5960";
-  bg4       = "#555F66";
-  bg5       = "#5D6B66";
-  bg_red    = "#5C3F4F";
-  bg_visual = "#59464C";
-  bg_yellow = "#55544A";
-  bg_green  = "#48584E";
-  bg_blue   = "#3F5865";
-  gray0     = "#7A8478";
+  bg        = "#333c43";
+  bg1       = "#3a464c";
+  bg2       = "#434f55";
+  bg3       = "#4d5960";
+  bg4       = "#555f66";
+  bg5       = "#5d6b66";
+  bg_red    = "#5c3f4f";
+  bg_visual = "#59464c";
+  bg_yellow = "#55544a";
+  bg_green  = "#48584e";
+  bg_blue   = "#3f5865";
+  gray0     = "#7a8478";
   gray1     = "#859289";
-  gray2     = "#9DA9A0";
+  gray2     = "#9da9a0";
 
-  fg     = "#D3C6AA";
-  red    = "#E67E80";
-  orange = "#E69875";
-  yellow = "#DBBC7F";
-  green  = "#A7C080";
-  blue   = "#7FBBB3";
-  aqua   = "#83C092";
-  purple = "#D699B6";
+  fg     = "#d3c6aa";
+  red    = "#e67e80";
+  orange = "#e69875";
+  yellow = "#dbbc7f";
+  green  = "#a7c080";
+  blue   = "#7fbbb3";
+  aqua   = "#83c092";
+  purple = "#d699b6";
 }

@@ -1,10 +1,37 @@
 {
-  programs.firefox.profiles."meow".userChrome = ''
+  lib,
+  theme,
+  config,
+  ...
+}:
+let
+  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
+  col = import ../../../../themes/${theme_trimmed}/colors.nix;
+in {
+
+  programs.firefox.profiles."meow".userChrome = /* css */ ''
 * {
   font-size: 16px;
-  font-family: Iosevka Nerd Font Bold;
+  font-family: ${config.stylix.fonts.monospace.name} Bold;
   scrollbar-width: none;
 }
+
+
+
+:root {
+  --tab-selected-bgcolor: ${col.accent} !important;
+  --tab-selected-textcolor: ${col.bg} !important;
+  --tab-selected-shadow: transparent !important;
+
+  /* --button-text-color */
+  /* --button-background-color */
+  /* --button-background-color-hover */
+  /* --button-background-color-active */
+
+
+}
+
+
 
 
 
@@ -36,7 +63,7 @@
 }
 
 :root, body {
-  background-color: 000000cc !important;
+  background-color: ${col.bgtrans} !important;
 }
 
 
@@ -97,25 +124,24 @@
 
 
 
-
-/* background color of pinned tabs in a normal state (not hovered/selected) */
-.tabbrowser-tab[pinned] .tab-stack .tab-background {
-background-color: #22262D !important;
-}
-/* background color when hovering */
-.tabbrowser-tab[pinned]:hover .tab-stack .tab-background{
-background-color: #22262D !important;
-}
-/* background color when selected */
-.tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background,
-.tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
-background-color: #7FB4CA !important;
-}
-/* background color when hovering and selected */
-.tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background,
-.tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background{
-background-color: #7FB4CA !important;
-}
+/* /* background color of pinned tabs in a normal state (not hovered/selected) */ */
+/* .tabbrowser-tab[pinned] .tab-stack .tab-background { */
+/* background-color: #22262D !important; */
+/* } */
+/* /* background color when hovering */ */
+/* .tabbrowser-tab[pinned]:hover .tab-stack .tab-background{ */
+/* background-color: #22262D !important; */
+/* } */
+/* /* background color when selected */ */
+/* .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background, */
+/* .tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background { */
+/* background-color: #7FB4CA !important; */
+/* } */
+/* /* background color when hovering and selected */ */
+/* .tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background, */
+/* .tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background{ */
+/* background-color: #7FB4CA !important; */
+/* } */
 
 
   '';
