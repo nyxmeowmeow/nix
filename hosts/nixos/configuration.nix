@@ -14,7 +14,6 @@
       "audio"
       "input"
       "uinput"
-      "ydotool"
     ];
     shell = pkgs.nushell;
   };
