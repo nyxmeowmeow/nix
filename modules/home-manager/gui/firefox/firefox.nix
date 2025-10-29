@@ -1,8 +1,24 @@
 {
   pkgs,
+  inputs,
   ...
 }:
 let
+  # Firefox Nightly with https://github.com/MrOtherGuy/fx-autoconfig
+  firefox-nightly = (
+    (inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin).override {
+      extraPrefsFiles = [
+        (builtins.fetchurl {
+          url = "https://raw.githubusercontent.com/MrOtherGuy/fx-autoconfig/master/program/config.js";
+          sha256 = "1mx679fbc4d9x4bnqajqx5a95y1lfasvf90pbqkh9sm3ch945p40";
+        })
+      ];
+    }
+  );
+
+
+
+
   settings = {
     "browser.tabs.allow_transparent_browser" = true;
     "browser.tabs.inTitlebar" = 0; # needed for transparency
@@ -143,10 +159,11 @@ in {
 
 
 
-
-
   programs.firefox = {
     enable = true;
+    package = firefox-nightly;
+
+
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
     policies = policies;
     profiles = {
