@@ -10,8 +10,10 @@ let
 in {
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
-
 *{
+  font-size: 16px;
+  font-family: ${config.stylix.fonts.monospace.name} Bold;
+
   scrollbar-width: none;
   box-shadow: none;
 }
@@ -34,11 +36,16 @@ in {
       background: transparent !important;
 }
 #main-window {
-  background: #000000cc !important;
+  background: ${col.bgtrans} !important;
 }
 
 
 :root {
+  --tab-selected-bgcolor: ${col.accent} !important;
+  --tab-selected-textcolor: ${col.bg} !important;
+
+  --toolbox-textcolor: ${col.fg} !important;
+
   --zen-primary-color: transparent !important;
   /* --zen-border-radius: 8px; */
   /* --zen-element-separation: 8px; */
