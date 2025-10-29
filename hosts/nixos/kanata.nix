@@ -242,8 +242,7 @@
 
     ((input-history real lctl 2)) (macro (unmod =) (unmod =)) break
 
-    ;; ((key-history , 1)) (macro S-,) break
-    ((key-history , 1)) (macro =) break
+    ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
     ((key-history \ 1)) (macro S-\) break
     ((key-history ; 1)) (macro S-;) break
