@@ -95,7 +95,7 @@ in {
 
 
 
-.urlbar:not([focused])[textoverflow="right"] > .urlbar-input-container > .urlbar-input-box > .urlbar-input {
+.urlbar > .urlbar-input-container > .urlbar-input-box > .urlbar-input {
   mask-image: none;
 }
 .urlbar-input {
@@ -168,7 +168,9 @@ in {
   bottom: var(--urlbar-container-height);
 }
 
-
+.urlbar-background {
+  background: transparent !important;
+}
 
 
 
