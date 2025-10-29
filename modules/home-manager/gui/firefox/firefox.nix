@@ -62,7 +62,7 @@ let
     "browser.ml.chat.menu" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
-    "ui.key.menuAccessKeyFocuses" = false; # disable <ALT> menu
+    "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
 
     "browser.startup.page" = 3; # restore previous session
     "browser.sessionstore.resume_from_crash" = true;
@@ -164,14 +164,14 @@ in {
     ./userchrome.nix
   ];
   xdg.mimeApps.defaultApplications = {
-    "default-web-browser" = [ "firefox.desktop" ];
-    # "text/html" = [ "firefox.desktop" ];
-    "x-scheme-handler/http" = [ "firefox.desktop" ];
-    "x-scheme-handler/https" = [ "firefox.desktop" ];
-    "x-scheme-handler/about" = [ "firefox.desktop" ];
-    "x-scheme-handler/unknown" = [ "firefox.desktop" ];
-    # "application/xhtml+xml" = [ "firefox.desktop" ];
-    # "text/xml" = [ "firefox.desktop" ];
+    "default-web-browser" = [ "floorp.desktop" ];
+    # "text/html" = [ "floorp.desktop" ];
+    "x-scheme-handler/http" = [ "floorp.desktop" ];
+    "x-scheme-handler/https" = [ "floorp.desktop" ];
+    "x-scheme-handler/about" = [ "floorp.desktop" ];
+    "x-scheme-handler/unknown" = [ "floorp.desktop" ];
+    # "application/xhtml+xml" = [ "floorp.desktop" ];
+    # "text/xml" = [ "floorp.desktop" ];
   };
 
 
