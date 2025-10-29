@@ -13,7 +13,7 @@ in {
 
 *{
   scrollbar-width: none;
-  drop-shadow: none;
+  box-shadow: none;
 }
 
 
