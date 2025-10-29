@@ -45,7 +45,7 @@ let
     "browser.ml.chat.menu" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
-    "ui.key.menuAccessKeyFocuses" = false; # disable <ALT> menu
+    "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
 
     "browser.startup.page" = 3; # restore previous session
     "browser.sessionstore.resume_from_crash" = true;
