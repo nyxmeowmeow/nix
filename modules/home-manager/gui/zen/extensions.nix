@@ -20,7 +20,7 @@ let
     clearurls
   ];
 in {
-  programs.floorp.profiles."meow".extensions = {
+  programs.zen-browser.profiles."meow".extensions = {
     packages = extensions;
     force = true;
   };
