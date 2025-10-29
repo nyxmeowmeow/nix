@@ -580,6 +580,30 @@
       }
 
       {
+        on = [ "<Space>" "n" "v" ];
+        run = "cd ${flake_dir}/modules/home-manager/tui/nixvim";
+        desc = "nixvim";
+      }
+
+      {
+        on = [ "<Space>" "n" "z" ];
+        run = "cd ${flake_dir}/modules/home-manager/gui/zen";
+        desc = "zen";
+      }
+
+      {
+        on = [ "<Space>" "n" "h" "n" ];
+        run = "cd ${flake_dir}/hosts/nixos";
+        desc = "hosts/nixos";
+      }
+
+      {
+        on = [ "<Space>" "n" "h" "l" ];
+        run = "cd ${flake_dir}/hosts/laptop";
+        desc = "hosts/laptop";
+      }
+
+      {
         on = [ "<Space>" "n" "o" ];
         run = "cd ~/notes";
         desc = "nix";
