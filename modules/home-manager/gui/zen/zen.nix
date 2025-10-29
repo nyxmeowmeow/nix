@@ -34,31 +34,46 @@ imports = [
         #   order = ["ddg" "google"];
         # };
         settings = {
+          "browser.tabs.allow_transparent_browser" = true;
+          "browser.tabs.inTitlebar" = 0; # needed for transparency
+            "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+          "sidebar.verticalTabs" = true;
+# "browser.uiCustomization.navBarWhenVerticalTabs" = [
+#   "urlbar-container"
+#   "downloads-button"
+#   "fxa-toolbar-menu-button"
+#   "unified-extensions-button"
+# ];
+          "devtools.chrome.enabled" = true;
+          "devtools.debugger.remote-enabled" = true;
+
           "browser.search.region" = "AU";
           "browser.search.isUS" = false;
           "browser.startup.homepage" = "duckduckgo.com";
           "general.useragent.locale" = "en-AU";
           "browser.bookmarks.showMobileBookmarks" = false;
+
 # meow >:(
     "browser.ml.chat.enabled" = false;
     "browser.ml.chat.hideLocalhost" = false;
     "browser.ml.chat.menu" = false;
+    "browser.ml.chat.sidebar" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
-    "ui.key.menuAccessKeyFocuses" = false; # disable <ALT> menu
+    "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
 
     "browser.startup.page" = 3; # restore previous session
     "browser.sessionstore.resume_from_crash" = true;
     "layout.css.grid-template-masonry-value.enabled" = true;
 
-   "browser.urlbar.trimHttps" = true;
-   "browser.urlbar.untrimOnUserInteraction.featureGate" = true;
-   "browser.search.separatePrivateDefault.ui.enabled" = true;
-   "browser.search.suggest.enabled" = false;
-   # "browser.urlbar.quicksuggest.enabled" = false;
-   # "browser.urlbar.groupLabels.enabled" = false;
-   "browser.formfill.enable" = false;
-   # "network.IDN_show_punycode" = true;
+    "browser.urlbar.trimHttps" = true;
+    "browser.urlbar.untrimOnUserInteraction.featureGate" = true;
+    "browser.search.separatePrivateDefault.ui.enabled" = true;
+    "browser.search.suggest.enabled" = false;
+# "browser.urlbar.quicksuggest.enabled" = false;
+# "browser.urlbar.groupLabels.enabled" = false;
+    "browser.formfill.enable" = false;
+# "network.IDN_show_punycode" = true;
 
     "datareporting.policy.dataSubmissionEnabled" = false;
     "datareporting.healthreport.uploadEnabled" = false;
@@ -79,8 +94,8 @@ imports = [
     "datareporting.usage.uploadEnabled" = false;
 
     "browser.privatebrowsing.vpnpromourl" = "";
-    # "extensions.getAddons.showPane" = false;
-    # "extensions.htmlaboutaddons.recommendations.enabled" = false;
+# "extensions.getAddons.showPane" = false;
+    "extensions.htmlaboutaddons.recommendations.enabled" = true;
     "browser.discovery.enabled" = false;
     "browser.shell.checkDefaultBrowser" = false;
     "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons" = false;
@@ -101,10 +116,6 @@ imports = [
 
     "extensions.pocket.enabled" = false;
     "browser.download.manager.addToRecentDocs" = false;
-
-
-
-
 
     };
     };
@@ -139,12 +150,6 @@ imports = [
       "browser.tabs.warnOnClose" = {
         "Value" = false;
         "Status" = "locked";
-      };
-      ExtensionSettings = {
-
-
-
-
       };
     };
     };
