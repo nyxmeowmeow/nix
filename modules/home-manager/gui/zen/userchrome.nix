@@ -18,7 +18,7 @@ in {
   box-shadow: none;
 }
 
-
+.tab-close-button,
 .urlbar-page-action, .urlbar-addon-page-action,
 #back-button,
 #forward-button {
