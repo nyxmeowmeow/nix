@@ -10,6 +10,13 @@ let
 in {
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
+
+*{
+  scrollbar-width: none;
+  drop-shadow: none;
+}
+
+
 .urlbar-page-action, .urlbar-addon-page-action,
 #back-button,
 #forward-button {

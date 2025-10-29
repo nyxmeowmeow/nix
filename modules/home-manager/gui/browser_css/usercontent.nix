@@ -10,7 +10,7 @@ in
 @import "/home/${username}/.config/usercontent/wikipedia.css";
 @import "/home/${username}/.config/usercontent/duckduckgo.css";
 
-*{ scrollbar-width: none }
+*{ scrollbar-width: none; }
 
 :root {
   --tridactyl-bg: ${col.bg} !important;
