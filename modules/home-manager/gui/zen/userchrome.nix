@@ -44,6 +44,7 @@ in {
   --zen-main-browser-background-toolbar-old: transparent !important;
 }
 
+* { background: transparent !important }
 
 
 
