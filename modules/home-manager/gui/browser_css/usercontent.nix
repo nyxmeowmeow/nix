@@ -4,7 +4,7 @@ let
   col = import ../../../../themes/${theme_trimmed}/colors.nix;
 in
 {
-  home.file.".floorp/meow/chrome/userContent.css".text = /* css */ ''
+  home.file.".zen/meow/chrome/userContent.css".text = /* css */ ''
 @import "/home/${username}/.config/usercontent/monkeytype.css";
 @import "/home/${username}/.config/usercontent/github.css";
 @import "/home/${username}/.config/usercontent/wikipedia.css";
