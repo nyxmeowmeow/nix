@@ -9,7 +9,7 @@ let
   col = import ../../../../themes/${theme_trimmed}/colors.nix;
 in {
 
-  programs.firefox.profiles."meow".userChrome = /* css */ ''
+  programs.floorp.profiles."meow".userChrome = /* css */ ''
 * {
   font-size: 16px;
   font-family: ${config.stylix.fonts.monospace.name} Bold;

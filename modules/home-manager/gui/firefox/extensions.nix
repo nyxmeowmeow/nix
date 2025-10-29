@@ -19,7 +19,7 @@ let
     bitwarden
   ];
 in {
-  programs.firefox.profiles."meow".extensions = {
+  programs.floorp.profiles."meow".extensions = {
     packages = extensions;
     force = true;
   };
