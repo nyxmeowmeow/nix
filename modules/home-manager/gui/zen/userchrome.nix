@@ -10,6 +10,26 @@ let
 in {
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
+
+
+
+
+#zen-appcontent-navbar-wrapper,
+#zen-appcontent-navbar-container,
+#nav-bar,
+#navigator-toolbox
+  #urlbar[breakout][breakout-extend]{
+    display: flex !important;
+    flex-direction: column-reverse;
+    bottom: 0px !important; /* Change to 3-5 px if using compact_urlbar_megabar.css depending on toolbar density */
+    top: auto !important;
+  }
+
+
+
+
+
+
 * {
   font-size: 16px;
   font-family: ${config.stylix.fonts.monospace.name} Bold;
@@ -127,6 +147,7 @@ in {
 
   #toolbar-menubar > spacer{ flex-grow: 1 }
 
+#zen-appcontent-navbar-wrapper,
   #urlbar[breakout][breakout-extend]{
     display: flex !important;
     flex-direction: column-reverse;

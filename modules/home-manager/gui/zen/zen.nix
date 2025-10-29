@@ -35,6 +35,7 @@ imports = [
         # };
         settings = {
           "browser.tabs.allow_transparent_browser" = true;
+          "zen.widget.linux.transparency" = true;
           "browser.tabs.inTitlebar" = 0; # needed for transparency
             "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
           "sidebar.verticalTabs" = true;
