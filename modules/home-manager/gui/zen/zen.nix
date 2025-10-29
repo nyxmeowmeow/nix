@@ -96,9 +96,9 @@ settings = {
 in {
   imports = [
     inputs.zen-browser.homeModules.twilight
-      ./search-engines.nix
-      ./extensions.nix
-      ./userchrome.nix
+    ./search-engines.nix
+    ./extensions.nix
+    ./userchrome.nix
   ];
 
   programs.zen-browser = {
