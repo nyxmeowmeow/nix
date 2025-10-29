@@ -118,5 +118,17 @@ in {
 }
 
 
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer, & #tabbrowser-tabpanels[dragging-split="true"] {
+    &.browserSidebarContainer {
+      & browser[type="content"] {
+        &[transparent="true"] {
+          background: transparent !important;
+        }
+      }
+    }
+  }
+}
+
   '';
 }
