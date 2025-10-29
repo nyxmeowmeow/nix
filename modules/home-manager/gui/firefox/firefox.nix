@@ -4,6 +4,35 @@
   ...
 }:
 let
+  # Firefox Nightly with https://github.com/MrOtherGuy/fx-autoconfig
+  firefox-nightly = (
+    (inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin).override {
+      extraPrefsFiles = [
+        (builtins.fetchurl {
+          url = "https://raw.githubusercontent.com/MrOtherGuy/fx-autoconfig/master/program/config.js";
+          sha256 = "1mx679fbc4d9x4bnqajqx5a95y1lfasvf90pbqkh9sm3ch945p40";
+        })
+      ];
+    }
+  ).overrideAttrs (oldAttrs: {
+    buildCommand = (oldAttrs.buildCommand or "") + ''
+      # Find firefox dir
+      firefoxDir=$(find "$out/lib/" -type d -name 'firefox*' -print -quit)
+
+      # Function to replace symlink with destination file
+      replaceSymlink() {
+        local symlink_path="$firefoxDir/$1"
+        local target_path=$(readlink -f "$symlink_path")
+        rm "$symlink_path"
+        cp "$target_path" "$symlink_path"
+      }
+
+      # Copy firefox binaries
+      replaceSymlink "firefox"
+      replaceSymlink "firefox-bin"
+    '';
+  });
+
 
 
 
@@ -33,7 +62,7 @@ let
     "browser.ml.chat.menu" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
-    "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
+    "ui.key.menuAccessKeyFocuses" = false; # disable <ALT> menu
 
     "browser.startup.page" = 3; # restore previous session
     "browser.sessionstore.resume_from_crash" = true;
@@ -147,16 +176,8 @@ in {
 
 
 
-  programs.firefox = {
+  programs.floorp = {
     enable = true;
-    # package = inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin;
-package = 
-  (pkgs.firefox.override {
-    extraPrefsFiles = [(builtins.fetchurl {  
-      url = "https://raw.githubusercontent.com/MrOtherGuy/fx-autoconfig/master/program/config.js";
-      sha256 = "1mx679fbc4d9x4bnqajqx5a95y1lfasvf90pbqkh9sm3ch945p40";
-    })];
-  });
 
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
     policies = policies;
