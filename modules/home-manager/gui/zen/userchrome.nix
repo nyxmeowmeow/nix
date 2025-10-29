@@ -41,11 +41,6 @@ in {
 
 
 :root {
-  --tab-selected-bgcolor: ${col.accent} !important;
-  --tab-selected-textcolor: ${col.bg} !important;
-
-  --toolbox-textcolor: ${col.fg} !important;
-
   --zen-primary-color: transparent !important;
   /* --zen-border-radius: 8px; */
   /* --zen-element-separation: 8px; */
@@ -59,7 +54,12 @@ in {
 }
 
 
-
+.tab-content {
+  &:is([selected], [multiselected]) {
+    color: ${col.bg} !important;
+    background: ${col.accent} !important;
+  }
+}
 
 
 
