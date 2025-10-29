@@ -124,5 +124,5 @@ let
   };
 in
 {
-  programs.zen-browser.profiles."meow".search.engines = searchEngines;
+  # programs.zen-browser.profiles."meow".search.engines = searchEngines;
 }
