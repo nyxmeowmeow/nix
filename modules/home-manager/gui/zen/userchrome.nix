@@ -54,7 +54,7 @@ in {
 }
 
 
-.tab-background {
+.tab-content {
   &:is([selected], [multiselected]) {
     color: ${col.bg} !important;
     background: ${col.accent} !important;
