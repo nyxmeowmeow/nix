@@ -3,56 +3,29 @@
   pkgs,
   ...
 }:
-{
-imports = [
-  inputs.zen-browser.homeModules.twilight
-  # ./userchrome/meow.nix
+let
 
-    ./search-engines.nix
-    ./extensions.nix
-    ./userchrome.nix
-];
+settings = {
 
-  # home.packages = [
-  #   inputs.zen-browser.packages."${pkgs.system}".beta
-  # ];
-
-  programs.zen-browser = {
-    enable = true;
-    nativeMessagingHosts = [ pkgs.firefoxpwa ];
-    profiles = {
-      "meow" = {
-        # isDefault = true;
-        # name = "meow";
-        # id = 0;
-# preConfig = ''
-# '';
-
-        # search = {
-        #   force = true;
-        #   default = "ddg";
-        #   order = ["ddg" "google"];
-        # };
-        settings = {
-          "browser.tabs.allow_transparent_browser" = true;
-          "zen.widget.linux.transparency" = true;
-          "browser.tabs.inTitlebar" = 0; # needed for transparency
-            "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
-          "sidebar.verticalTabs" = true;
+  "browser.tabs.allow_transparent_browser" = true;
+  "zen.widget.linux.transparency" = true;
+  "browser.tabs.inTitlebar" = 0; # needed for transparency
+    "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+  "sidebar.verticalTabs" = true;
 # "browser.uiCustomization.navBarWhenVerticalTabs" = [
 #   "urlbar-container"
 #   "downloads-button"
 #   "fxa-toolbar-menu-button"
 #   "unified-extensions-button"
 # ];
-          "devtools.chrome.enabled" = true;
-          "devtools.debugger.remote-enabled" = true;
+  "devtools.chrome.enabled" = true;
+  "devtools.debugger.remote-enabled" = true;
 
-          "browser.search.region" = "AU";
-          "browser.search.isUS" = false;
-          "browser.startup.homepage" = "duckduckgo.com";
-          "general.useragent.locale" = "en-AU";
-          "browser.bookmarks.showMobileBookmarks" = false;
+  "browser.search.region" = "AU";
+  "browser.search.isUS" = false;
+  "browser.startup.homepage" = "duckduckgo.com";
+  "general.useragent.locale" = "en-AU";
+  "browser.bookmarks.showMobileBookmarks" = false;
 
 # meow >:(
     "browser.ml.chat.enabled" = false;
@@ -117,42 +90,66 @@ imports = [
 
     "extensions.pocket.enabled" = false;
     "browser.download.manager.addToRecentDocs" = false;
+};
 
-    };
-    };
-    };
-    policies = {
-    AutofillAddressEnabled = false;
-    AutofillCreditCardEnabled = false;
-    DisableAppUpdate = true;
-    DisableFeedbackCommands = true;
-    DisableFirefoxStudies = true;
-    DisableFirefoxScreenshots = true;
-    DisablePocket = true;
-    DisableTelemetry = true;
-    DontCheckDefaultBrowser = true;
-    EnableTrackingProtection = {
-      Value = true;
-      Locked = true;
-      Cryptomining = true;
-      Fingerprinting = true;
-    };
-    UserMessaging = {
-      ExtensionRecommendations = false;
-      UrlbarInterventions = false;
-      SkipOnboarding = true;
-    };
-    HardwareAcceleration = true;
-    NoDefaultBookmarks = true;
-    OfferToSaveLogins = false;
-    OfferToSaveLoginsDefault = false;
 
-    Preferences = {
-      "browser.tabs.warnOnClose" = {
-        "Value" = false;
-        "Status" = "locked";
+in {
+  imports = [
+    inputs.zen-browser.homeModules.twilight
+      ./search-engines.nix
+      ./extensions.nix
+      ./userchrome.nix
+  ];
+
+  programs.zen-browser = {
+    enable = true;
+    nativeMessagingHosts = [ pkgs.firefoxpwa ];
+
+    profiles = {
+      "meow" = {
+        isDefault = true;
+        id = 0;
+        settings = settings;
+      };
+
+      "media" = {
+        id = 1;
+        settings = settings;
       };
     };
+
+    policies = {
+      AutofillAddressEnabled = false;
+      AutofillCreditCardEnabled = false;
+      DisableAppUpdate = true;
+      DisableFeedbackCommands = true;
+      DisableFirefoxStudies = true;
+      DisableFirefoxScreenshots = true;
+      DisablePocket = true;
+      DisableTelemetry = true;
+      DontCheckDefaultBrowser = true;
+      EnableTrackingProtection = {
+        Value = true;
+        Locked = true;
+        Cryptomining = true;
+        Fingerprinting = true;
+      };
+      UserMessaging = {
+        ExtensionRecommendations = false;
+        UrlbarInterventions = false;
+        SkipOnboarding = true;
+      };
+      HardwareAcceleration = true;
+      NoDefaultBookmarks = true;
+      OfferToSaveLogins = false;
+      OfferToSaveLoginsDefault = false;
+
+      Preferences = {
+        "browser.tabs.warnOnClose" = {
+          "Value" = false;
+          "Status" = "locked";
+        };
+      };
     };
   };
 }

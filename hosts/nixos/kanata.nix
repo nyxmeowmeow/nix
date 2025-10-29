@@ -492,9 +492,19 @@ i end
 
   (h spc) \ 15 all-released (over sup melee)
 
-
-
 )
+
+
+(deftemplate paste (text)
+ (macro
+  (clipboard-save 0)
+  20
+  (clipboard-set $text)
+  300
+  C-v
+  (clipboard-restore 0)
+ ))
+
         '';
       };
 
