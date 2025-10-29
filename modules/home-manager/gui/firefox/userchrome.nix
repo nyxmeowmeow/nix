@@ -95,8 +95,9 @@ in {
 
 
 
-
-
+.urlbar:not([focused])[textoverflow="right"] > .urlbar-input-container > .urlbar-input-box > .urlbar-input {
+  mask-image: none;
+}
 .urlbar-input {
   text-align: right !important;
 }
