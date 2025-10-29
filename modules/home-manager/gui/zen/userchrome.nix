@@ -127,7 +127,7 @@ in {
   }
 }
 #navigator-toolbox[zen-sidebar-expanded="true"] {
-  margin-top: -32px !important;
+  margin-top: -33px !important;
 }
 
 

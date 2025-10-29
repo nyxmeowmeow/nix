@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+    blender
+
+
     nix-search-tv
 
 
