@@ -7,7 +7,6 @@ let
 
 
 
-
   settings = {
     "browser.tabs.allow_transparent_browser" = true;
     "browser.tabs.inTitlebar" = 0; # needed for transparency
@@ -34,7 +33,7 @@ let
     "browser.ml.chat.menu" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
-    "ui.key.menuAccessKeyFocuses" = false; # disable <ALT> menu
+    "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
 
     "browser.startup.page" = 3; # restore previous session
     "browser.sessionstore.resume_from_crash" = true;
@@ -150,8 +149,14 @@ in {
 
   programs.firefox = {
     enable = true;
-    package = inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin;
-
+    # package = inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin;
+package = 
+  (pkgs.firefox.overrideAttrs {
+    extraPrefsFiles = [(builtins.fetchurl {  
+      url = "https://raw.githubusercontent.com/MrOtherGuy/fx-autoconfig/master/program/config.js";
+      sha256 = "1mx679fbc4d9x4bnqajqx5a95y1lfasvf90pbqkh9sm3ch945p40";
+    })];
+  });
 
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
     policies = policies;
