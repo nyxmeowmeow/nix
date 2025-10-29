@@ -37,6 +37,8 @@ let
 
 
   settings = {
+    "floorp.panelSidebar.enabled" = false;
+
     "browser.tabs.allow_transparent_browser" = true;
     "browser.tabs.inTitlebar" = 0; # needed for transparency
     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
@@ -60,6 +62,7 @@ let
     "browser.ml.chat.enabled" = false;
     "browser.ml.chat.hideLocalhost" = false;
     "browser.ml.chat.menu" = false;
+    "browser.ml.chat.sidebar" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
     "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
