@@ -4,17 +4,6 @@
   ...
 }:
 let
-  # Firefox Nightly with https://github.com/MrOtherGuy/fx-autoconfig
-  firefox-nightly = (
-    (inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin).override {
-      extraPrefsFiles = [
-        (builtins.fetchurl {
-          url = "https://raw.githubusercontent.com/MrOtherGuy/fx-autoconfig/master/program/config.js";
-          sha256 = "1mx679fbc4d9x4bnqajqx5a95y1lfasvf90pbqkh9sm3ch945p40";
-        })
-      ];
-    }
-  );
 
 
 
@@ -45,7 +34,7 @@ let
     "browser.ml.chat.menu" = false;
     "browser.tabs.groups.smart.enabled" = false;
 
-    "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
+    "ui.key.menuAccessKeyFocuses" = false; # disable <ALT> menu
 
     "browser.startup.page" = 3; # restore previous session
     "browser.sessionstore.resume_from_crash" = true;
@@ -161,7 +150,7 @@ in {
 
   programs.firefox = {
     enable = true;
-    package = firefox-nightly;
+    package = inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin;
 
 
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
