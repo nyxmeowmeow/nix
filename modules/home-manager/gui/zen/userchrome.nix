@@ -64,7 +64,12 @@ in {
 
 
 
-
+#tabbrowser-tabs,
+#tabbrowser-tabs > #tabbrowser-arrowscrollbox,
+.tabbrowser-tabs .tabbrowser-tab {
+  min-height: 24px !important;
+  max-height: 24px !important;
+}
 
 
 
