@@ -26,6 +26,7 @@ let
     github-issue-link-status
     github-file-icons
     user-agent-string-switcher
+    userchrome-toggle
   ];
 
   media_extensions = with pkgs.nur.repos.rycee.firefox-addons; [
@@ -48,6 +49,7 @@ let
     don-t-fuck-with-paste
     google-container
     user-agent-string-switcher
+    userchrome-toggle
   ];
 
 in {
