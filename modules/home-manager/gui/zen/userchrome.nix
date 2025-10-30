@@ -144,14 +144,14 @@ in {
 }
 
 
-/* make tabs height more compact */
+/* FIXME make tabs height more compact */
 #tabbrowser-tabs {
   & .tabbrowser-tab {
-    {
     /* max-width: unset; */
     padding: 0px !important;
     min-height: 28px !important;
-    }
+    max-height: 28px !important;
+    height: 28px !important;
   }
 }
 
