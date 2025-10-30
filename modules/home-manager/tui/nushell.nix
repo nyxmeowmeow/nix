@@ -14,15 +14,16 @@ in {
     enable = true;
 
     configFile.text = /* nu */ ''
-      def po [] {
-        niri msg action switch-preset-window-width
-        niri msg action toggle-column-tabbed-display
-        let dir = pwd
-        niri msg action spawn -- kitty -1 cd $dir -- &
-        nvim . -- &
-        sleep 0.1sec
-        niri msg action consume-or-expel-window-left
-      }
+      # FIXME
+      # def po [] {
+      #   niri msg action switch-preset-window-width
+      #   niri msg action toggle-column-tabbed-display
+      #   let dir = pwd
+      #   niri msg action spawn -- kitty -1 cd $dir -- &
+      #   nvim . -- &
+      #   sleep 0.1sec
+      #   niri msg action consume-or-expel-window-left
+      # }
 
       def rgb [ msg: string ] {
         pastel format rgb "$msg" | wl-copy

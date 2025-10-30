@@ -7,7 +7,10 @@
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings = {
       input = {
-        focus-follows-mouse.enable = true;
+        focus-follows-mouse = {
+          enable = true;
+          max-scroll-amount = "0%"; # only scroll if it wont move the screen
+        };
         mouse = {
           accel-profile = "flat";
         };
