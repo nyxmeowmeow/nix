@@ -10,7 +10,7 @@
     ./themes/everforest/hard/lualine.nix
     ./themes/blacchiato.nix
     ./themes/lix/lix.nix
-    ./themes/lix/smear-cursor_lix.nix
+    # ./themes/lix/smear-cursor_lix.nix
     ./themes/macchiato.nix
     ./themes/kanso.nix
 
@@ -49,7 +49,7 @@
     ./ui/yazi.nix
     # ./ui/tiny-glimmer.nix
     ./ui/render-markdown.nix
-    ./ui/smear-cursor.nix
+    # ./ui/smear-cursor.nix
     ./utils/luasnip.nix
   ];
 }

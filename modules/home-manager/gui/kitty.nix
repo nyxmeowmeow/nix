@@ -13,7 +13,9 @@
 
       cursor_shape_unfocused = "unchanged";
 
-      cursor_trail = "1";
+      cursor_trail = 1;
+
+      cursor_blink_interval = 0; # disable cursor blink
 
       sync_to_monitor = true;
 
