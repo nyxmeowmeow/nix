@@ -8,6 +8,8 @@
       libvdpau-va-gl
       vulkan-loader
       vulkan-validation-layers
+      vulkan-extension-layer
+      vulkan-tools
       mesa.opencl  # Enables Rusticl (OpenCL) support
       rocmPackages.clr.icd
     ];

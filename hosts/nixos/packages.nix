@@ -47,7 +47,6 @@
     ffmpeg
     mpv
     # davinci-resolve
-    vulkan-tools
     obs-studio
     wf-recorder
 
