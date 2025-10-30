@@ -9,7 +9,7 @@
     settings = {
       enable_audio_bell = false;
       disable_ligatures = true;
-      box_drawing_scale = "2.0 2.0 2.0 2.0";
+      box_drawing_scale = "2.0, 2.0, 2.0, 2.0";
 
       cursor_shape_unfocused = "unchanged";
 
