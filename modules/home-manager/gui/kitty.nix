@@ -23,6 +23,8 @@
       window_padding_width = "1 2";
       
       wayland_enable_ime = false;
+
+      confirm_os_window_close = 0;
     };
   };
 }
