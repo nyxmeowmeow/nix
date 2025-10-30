@@ -39,6 +39,7 @@
         ./gui/obs.nix
         ./gui/shell.nix
         ./gui/tofi.nix
+        ./gui/kitty.nix
         ./gui/vesktop/vesktop.nix
         ./gui/walker.nix
         ./gui/zen/zen.nix

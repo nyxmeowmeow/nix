@@ -45,6 +45,7 @@
         ../../modules/home-manager/gui/obs.nix
         ../../modules/home-manager/gui/rofi.nix
         ../../modules/home-manager/gui/shell.nix
+        ../../modules/home-manager/gui/kitty.nix
         ../../modules/home-manager/gui/textfox.nix
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop/vesktop.nix
