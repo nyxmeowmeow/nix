@@ -1,5 +1,6 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+  zenity
     blender
 
 

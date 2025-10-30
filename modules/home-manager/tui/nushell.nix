@@ -15,7 +15,6 @@ in {
 
     configFile.text = /* nu */ ''
 
-
       def rgb [ msg: string ] {
         pastel format rgb "$msg" | wl-copy
       }
