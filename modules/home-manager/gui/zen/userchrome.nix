@@ -153,8 +153,8 @@ in {
     min-height: 30px !important;
     max-height: 30px !important;
     margin-top: -8px !important;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
     /* height: 28px !important; */
   }
 }
