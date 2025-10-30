@@ -85,7 +85,7 @@ menu:
     desc: eep
     cmd: ${flake_dir}/stuff/scripts/eep.sh
 
-  - key: [ "<ent>", "Mod4+<enter>" ]
+  - key: [ "<enter>", "Mod4+<enter>" ]
     desc: float active
     cmd: ${flake_dir}/stuff/scripts/projectopen.nu
 
