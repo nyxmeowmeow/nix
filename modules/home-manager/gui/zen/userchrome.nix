@@ -150,9 +150,9 @@ in {
   & .tabbrowser-tab {
     /* max-width: unset; */
     padding: 0px !important;
-    min-height: 28px !important;
-    max-height: 28px !important;
-    margin-top: -10px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+    margin-top: -4px !important;
     /* height: 28px !important; */
   }
 }
