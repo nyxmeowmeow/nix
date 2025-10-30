@@ -12,8 +12,8 @@
       box_drawing_scale = "2.0, 2.0, 2.0, 2.0";
 
       cursor_shape_unfocused = "unchanged";
-
       cursor_trail = 1;
+      cursor_trail_start_threshold = 0;
 
       cursor_blink_interval = 0; # disable cursor blink
 
