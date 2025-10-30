@@ -147,7 +147,7 @@ in {
 
 /* FIXME make tabs height more compact */
 .tab-background {
-    min-height: 30px !important;
+    min-height: 28px !important;
 }
 
   '';
