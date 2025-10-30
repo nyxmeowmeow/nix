@@ -149,10 +149,12 @@ in {
 #tabbrowser-tabs {
   & .tabbrowser-tab {
     /* max-width: unset; */
-    padding: 0px !important;
+    /* padding: 0px !important; */
     min-height: 30px !important;
     max-height: 30px !important;
     margin-top: -8px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
     /* height: 28px !important; */
   }
 }
