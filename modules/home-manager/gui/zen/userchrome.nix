@@ -145,14 +145,16 @@ in {
 
 
 /* FIXME make tabs height more compact */
-#tabbrowser-tabs {
-  & .tabbrowser-tab {
+#tabbrowser-tabs,
+.tab-stack,
+.tab-background,
+.tab-content,
+.tabbrowser-tabs {
     /* max-width: unset; */
     padding: 0px !important;
     min-height: 32px !important;
     max-height: 32px !important;
     /* height: 32px !important; */
-  }
 }
 
   '';
