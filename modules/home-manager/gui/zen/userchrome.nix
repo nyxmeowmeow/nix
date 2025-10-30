@@ -147,9 +147,11 @@ in {
 /* make tabs height more compact */
 #tabbrowser-tabs {
   & .tabbrowser-tab {
+    {
     /* max-width: unset; */
     padding: 0px !important;
     min-height: 28px !important;
+    }
   }
 }
 
