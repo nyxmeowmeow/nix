@@ -149,9 +149,9 @@ in {
   & .tabbrowser-tab {
     /* max-width: unset; */
     padding: 0px !important;
-    min-height: 28px !important;
-    max-height: 28px !important;
-    height: 28px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    /* height: 32px !important; */
   }
 }
 
