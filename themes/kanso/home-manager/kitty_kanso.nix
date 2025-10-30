@@ -4,8 +4,10 @@ let
 in {
   config = lib.mkIf (theme == "kanso_zen") {
     programs.kitty.settings = {
+      background_opacity = 0.8;
+
       foreground = col.fg;
-      background = col.bgtrans;
+      background = col.bg;
       selection_foreground = col.bg;
       selection_background = col.blue;
 
