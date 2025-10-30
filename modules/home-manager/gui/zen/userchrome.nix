@@ -21,6 +21,7 @@ in {
 .tab-close-button,
 .urlbar-page-action, .urlbar-addon-page-action,
 #back-button,
+#tab-reset-button,
 #forward-button {
   display: none !important;
 }
@@ -149,10 +150,10 @@ in {
   & .tabbrowser-tab {
     /* max-width: unset; */
     padding: 0px !important;
-    min-height: 30px !important;
-    max-height: 30px !important;
-    margin-top: 6px !important;
-    /* height: 30px !important; */
+    min-height: 28px !important;
+    max-height: 28px !important;
+    margin-top: -10px !important;
+    /* height: 28px !important; */
   }
 }
 
