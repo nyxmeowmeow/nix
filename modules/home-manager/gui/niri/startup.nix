@@ -8,6 +8,7 @@
   config = lib.mkIf (wm == "niri") {
   programs.niri.settings.spawn-at-startup = [
     { command = [ "${flake_dir}/stuff/scripts/startup.sh" ]; }
+# TODO kitty -1
     { command = [ "${flake_dir}/stuff/scripts/swww.sh" ]; }
     { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }

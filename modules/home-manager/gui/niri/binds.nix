@@ -21,9 +21,9 @@
         # "Mod+Shift+T".action = spawn "foot";
         # "Mod+C".action = spawn "footclient" "yazi";
         # "Mod+S".action = spawn "footclient" "nvim";
-        "Mod+T".action = spawn "ghostty";
-        "Mod+C".action = spawn "ghostty" "-e" "yazi";
-        "Mod+S".action = spawn "ghostty" "-e" "nvim";
+        "Mod+T".action = spawn "kitty" "-1";
+        "Mod+C".action = spawn "kitty" "-1" "yazi";
+        "Mod+S".action = spawn "kitty" "-1" "nvim";
 
         "Mod+X".action = sh "niri msg action expand-column-to-available-width";
 
