@@ -5,7 +5,7 @@ in {
   config = lib.mkIf (theme == "kanso_zen") {
     programs.kitty.settings = {
       foreground = col.fg;
-      background = col.bg;
+      background = col.bgtrans;
       selection_foreground = col.bg;
       selection_background = col.blue;
 
