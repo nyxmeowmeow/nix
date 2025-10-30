@@ -27,7 +27,7 @@
             popups = true;
             new_optimizations = true;
             ignore_opacity = true;
-            xray = false;
+            xray = true;
           };
 
 

@@ -7,6 +7,7 @@
   config = lib.mkIf (wm == "niri") {
     programs.niri.settings = {
       input = {
+        # warp-mouse-to-focus
         workspace-auto-back-and-forth = true; # switch to previous workspace when pressing the same workspace key
         focus-follows-mouse = {
           enable = true;
