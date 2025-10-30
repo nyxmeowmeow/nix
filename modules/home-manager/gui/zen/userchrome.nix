@@ -147,8 +147,8 @@ in {
 /* FIXME make tabs height more compact */
 #tabbrowser-tabs,
 /* .tab-stack, */
-.tab-background,
-.tab-content,
+/* .tab-background, */
+/* .tab-content, */
 .tabbrowser-tabs {
     /* max-width: unset; */
     padding: 0px !important;
