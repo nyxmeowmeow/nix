@@ -148,7 +148,7 @@ in {
 #tabbrowser-tabs,
 .tab-stack,
 .tab-background,
-.tab-content,
+/* .tab-content, */
 .tabbrowser-tabs {
     /* max-width: unset; */
     padding: 0px !important;

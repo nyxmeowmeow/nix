@@ -22,7 +22,7 @@
       remember_window_size = false;
       remember_window_position = false;
 
-      window_padding_width = "1 2";
+      window_padding_width = "3 6";
       
       wayland_enable_ime = false;
 
