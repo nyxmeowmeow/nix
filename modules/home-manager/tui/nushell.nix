@@ -18,7 +18,7 @@ in {
         niri msg action switch-preset-window-width
         niri msg action toggle-column-tabbed-display
         let dir = pwd
-        niri msg action spawn kitty -1 cd $dir &
+        niri msg action spawn -- kitty -1 cd $dir &
         nvim . &
         sleep 0.1sec
         niri msg action consume-or-expel-window-left
