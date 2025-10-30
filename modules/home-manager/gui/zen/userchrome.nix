@@ -152,7 +152,7 @@ in {
     padding: 0px !important;
     min-height: 30px !important;
     max-height: 30px !important;
-    margin-top: -4px !important;
+    margin-top: -8px !important;
     /* height: 28px !important; */
   }
 }
