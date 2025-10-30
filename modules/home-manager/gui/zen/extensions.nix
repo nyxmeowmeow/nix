@@ -5,16 +5,19 @@
   ...
 }:
 let
+shared_extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+ublock-origin
+darkreader
+bitwarden
+];
+
   meow_extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-    ublock-origin
-    darkreader
     #bypass-paywalls-clean
     indie-wiki-buddy
     stylus
     canvasblocker
     fastforwardteam
     tridactyl
-    bitwarden
     clearurls
     shinigami-eyes
     pronoundb
@@ -27,19 +30,16 @@ let
     github-file-icons
     user-agent-string-switcher
     userchrome-toggle
-  ];
+  ] ++ shared_extensions;
 
   media_extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-    ublock-origin
     sponsorblock
     return-youtube-dislikes
-    darkreader
     #bypass-paywalls-clean
     stylus
     canvasblocker
     fastforwardteam
     tridactyl
-    bitwarden
     clearurls
     # "7tv"
     betterttv
@@ -50,7 +50,8 @@ let
     google-container
     user-agent-string-switcher
     userchrome-toggle
-  ];
+    # TODO alternate player for twitch
+  ] ++ shared_extensions;
 
 in {
   programs.zen-browser.profiles."meow".extensions = {
