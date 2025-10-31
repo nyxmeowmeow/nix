@@ -70,6 +70,7 @@
         "Mod+Shift+N".action = sh "niri msg action move-window-to-workspace --focus=false alt";
 
 
+
         "Mod+H".action = focus-column-left;
         "Mod+I".action = focus-column-right;
         "Mod+A".action = focus-window-down-or-top;
