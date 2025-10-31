@@ -145,10 +145,15 @@ in {
 }
 
 
-/* FIXME make tabs height more compact */
 .tab-background {
     min-height: 28px !important;
 }
+
+
+.urlbar-input {
+  margin-right: 24px !important;
+}
+
 
   '';
 }
