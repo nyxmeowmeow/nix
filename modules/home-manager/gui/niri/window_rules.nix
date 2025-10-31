@@ -25,14 +25,17 @@ in
     {
       matches = [ { title = "^ghostty_nvim$"; } ];
       open-on-workspace = "ghostty_nvim";
+      open-focused = false;
     }
     {
       matches = [ { title = "^ghostty$"; } ];
       open-on-workspace = "ghostty";
+      open-focused = false;
     }
     {
       matches = [ { title = "^ghostty_yazi$"; } ];
       open-on-workspace = "ghostty_yazi";
+      open-focused = false;
     }
 
     {
