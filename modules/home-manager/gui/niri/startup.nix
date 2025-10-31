@@ -13,13 +13,10 @@
     { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }
     { command = [ "dunst" ]; }
-    { command = [ "niriusd" ]; }
+    { command = [ "~/misc/niriusd" ]; }
     # { command = [ "hyprpaper" ]; }
     { command = [ "vesktop" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland" ]; }
     { command = [ "steam" "-silent" ]; }
-    { command =  [ "ghostty" "--title=\"ghostty_nvim\"" "-e" "nvim" ]; }
-    { command =  [ "ghostty" "--title=\"ghostty_term\"" ]; }
-    { command =  [ "ghostty" "--title=\"ghostty_yazi\"" "-e" "yazi" ]; }
   ];
   };
 }
