@@ -89,6 +89,19 @@
           name = "alt";
           open-on-output = "DP-3";
         };
+
+        "xxx" = {
+          name = "ghostty_nvim";
+          open-on-output = "DP-1";
+        };
+        "xxy" = {
+          name = "ghostty";
+          open-on-output = "DP-1";
+        };
+        "xxz" = {
+          name = "ghostty_yazi";
+          open-on-output = "DP-1";
+        };
       };
     };
   };

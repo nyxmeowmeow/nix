@@ -59,6 +59,16 @@
         "Mod+W".action = focus-workspace "three";
         "Mod+P".action = focus-workspace "four";
 
+
+        "Mod+2".action = focus-workspace "ghostty_nvim";
+        "Mod+bracketleft".action = focus-workspace "ghostty";
+        "Mod+4".action = focus-workspace "ghostty_yazi";
+
+        # "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-naame ghostty_nvim && ";
+        # "Mod+C".action = sh "kitty-1yazi";
+        # "Mod+S".action = sh "kitty-1nvim";
+
+
         "Mod+Shift+comma".action = sh "niri msg action move-window-to-workspace --focus=false left";
         "Mod+Shift+period".action = sh "niri msg action move-window-to-workspace --focus=false right";
         "Mod+Shift+Tab".action = sh "niri msg action move-window-to-workspace --focus=false media";
