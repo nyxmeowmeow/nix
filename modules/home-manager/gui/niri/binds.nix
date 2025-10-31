@@ -65,7 +65,7 @@
         "Mod+4".action = focus-workspace "ghostty_yazi";
 
         "Mod+S".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_nvim && ghostty --title=\"ghostty_nvim\" -e nvim";
-        "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty && ghostty --title=\"ghostty_term\"";
+        "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_term && ghostty --title=\"ghostty_term\"";
         "Mod+C".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_yazi && ghostty --title=\"ghostty_yazi\" -e yazi";
 
 

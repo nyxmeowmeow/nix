@@ -29,7 +29,7 @@ in
     }
     {
       matches = [ { title = "^ghostty_term$"; } ];
-      open-on-workspace = "ghostty";
+      open-on-workspace = "ghostty_term";
       open-focused = false;
     }
     {

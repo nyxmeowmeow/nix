@@ -95,7 +95,7 @@
           open-on-output = "DP-1";
         };
         "xxy" = {
-          name = "ghostty";
+          name = "ghostty_term";
           open-on-output = "DP-1";
         };
         "xxz" = {
