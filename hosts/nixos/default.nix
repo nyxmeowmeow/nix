@@ -17,6 +17,7 @@
     ../../modules/nixos/ydotool.nix
     ../../modules/nixos/font.nix
     ../../modules/nixos/fontconfig.nix
+    ../../modules/nixos/nirius.nix
     ../../modules/nixos/gamemode.nix
     ../../modules/nixos/dev.nix
     ../../modules/nixos/misc.nix
