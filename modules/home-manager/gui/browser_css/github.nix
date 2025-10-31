@@ -18,5 +18,10 @@ in {
   --bgColor-disabled: transparent !important;
   --bgColor-inset: transparent !important;
 }
+
+.AppHeader-CopilotChat /* hide gross smelly ai button */
+{
+  display: none !important;
+}
 '';
 }
