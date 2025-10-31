@@ -151,7 +151,7 @@ in {
 
 
 .urlbar-input {
-  margin-right: 24px !important;
+  margin-right: 28px !important;
 }
 
 
