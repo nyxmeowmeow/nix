@@ -1,5 +1,6 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
+  nirius
   zenity
     blender
 
