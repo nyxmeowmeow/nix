@@ -23,6 +23,19 @@ in
 
 
     {
+      matches = [ { title = "^ghostty_nvim$"; } ];
+      open-on-workspace = "ghostty_nvim";
+    }
+    {
+      matches = [ { title = "^ghostty$"; } ];
+      open-on-workspace = "ghostty";
+    }
+    {
+      matches = [ { title = "^ghostty_yazi$"; } ];
+      open-on-workspace = "ghostty_yazi";
+    }
+
+    {
       matches = [ { app-id = "^vesktop$"; } ];
       block-out-from = "screencast";
       open-on-workspace = "discord";

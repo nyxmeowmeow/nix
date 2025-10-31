@@ -21,9 +21,9 @@
         # "Mod+Shift+T".action = spawn "foot";
         # "Mod+C".action = spawn "footclient" "yazi";
         # "Mod+S".action = spawn "footclient" "nvim";
-        "Mod+T".action = spawn "kitty" "-1";
-        "Mod+C".action = spawn "kitty" "-1" "yazi";
-        "Mod+S".action = spawn "kitty" "-1" "nvim";
+        # "Mod+T".action = spawn "kitty" "-1";
+        # "Mod+C".action = spawn "kitty" "-1" "yazi";
+        # "Mod+S".action = spawn "kitty" "-1" "nvim";
 
         "Mod+X".action = sh "niri msg action expand-column-to-available-width";
 
@@ -61,12 +61,12 @@
 
 
         "Mod+2".action = focus-workspace "ghostty_nvim";
-        "Mod+bracketleft".action = focus-workspace "ghostty";
+        "Mod+1".action = focus-workspace "ghostty";
         "Mod+4".action = focus-workspace "ghostty_yazi";
 
-        # "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-naame ghostty_nvim && ";
-        # "Mod+C".action = sh "kitty-1yazi";
-        # "Mod+S".action = sh "kitty-1nvim";
+        "Mod+S".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_nvim && ghostty --title ghostty_nvim";
+        "Mod+T".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty && ghostty --title ghostty";
+        "Mod+C".action = sh "~/misc/nirius move-to-current-workspace -f --workspace-name ghostty_yazi && ghostty --title ghostty_yazi";
 
 
         "Mod+Shift+comma".action = sh "niri msg action move-window-to-workspace --focus=false left";
