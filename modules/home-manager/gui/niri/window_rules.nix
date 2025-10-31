@@ -28,7 +28,7 @@ in
       open-focused = false;
     }
     {
-      matches = [ { title = "^ghostty$"; } ];
+      matches = [ { title = "^ghostty_term$"; } ];
       open-on-workspace = "ghostty";
       open-focused = false;
     }
