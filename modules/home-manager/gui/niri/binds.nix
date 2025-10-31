@@ -29,11 +29,11 @@
 
 
         # "Mod+J".action = sh "pkill tty-clock || footclient tty-clock -cC 4 -f \"%a,\ %d\ %b\ %Y\""; # TODO per-theme colour
-          "Mod+U".action = sh "pkill btop || footclient btop"; # TODO window rule for size
-          "Mod+K".action = sh "pkill ncmpcpp || footclient ncmpcpp"; # TODO window rule for size
+        "Mod+U".action = sh "pkill btop || footclient btop"; # TODO window rule for size
+        "Mod+K".action = sh "pkill ncmpcpp || footclient ncmpcpp"; # TODO window rule for size
 
 
-          "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
+        "XF86AudioRaiseVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
         "XF86AudioLowerVolume".action = sh "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
 
         "Mod+N".action = focus-monitor-next;
