@@ -13,6 +13,7 @@
     { command = [ "clipse" "-listen" ]; }
     { command = [ "udiskie" "-a" ]; }
     { command = [ "dunst" ]; }
+    { command = [ "niriusd" ]; }
     # { command = [ "hyprpaper" ]; }
     { command = [ "vesktop" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland" ]; }
     { command = [ "steam" "-silent" ]; }
