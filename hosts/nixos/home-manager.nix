@@ -29,6 +29,7 @@
         ../../modules/home-manager/gui/browser_css/usercontent.nix
         ../../modules/home-manager/gui/browser_css/monkeytype.nix
         ../../modules/home-manager/gui/browser_css/wikipedia.nix
+        ../../modules/home-manager/gui/browser_css/nixos.nix
         ../../modules/home-manager/gui/browser_css/duckduckgo.nix
         ../../modules/home-manager/gui/browser_css/github.nix
         ../../modules/home-manager/gui/browser_css/sourcehut.nix
