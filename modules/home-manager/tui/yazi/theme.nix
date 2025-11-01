@@ -15,7 +15,7 @@ in {
         fg = col.bg;
       };
       inactive = {
-        bg = "none";
+        bg = col.bg;
         fg = col.accent;
       };
       sep_inner = {
