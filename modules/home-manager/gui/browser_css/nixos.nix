@@ -7,6 +7,7 @@ in {
 @-moz-document domain("wiki.nixos.org") {
 * {
   font-family: ${config.stylix.fonts.monospace.name} !important;
+  background: transparent !important;
 }
 
 root: {
