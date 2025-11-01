@@ -21,29 +21,24 @@ html {
 body {
   background: transparent !important;
   font-family: ${config.stylix.fonts.monospace.name} !important;
-
 }
 
 
 #restartTestButton {
-  /*font-size: 0rem;*/
-  opacity: 0 !important;
+  opacity: 0 !important; /* needs to still exist */
 }
 
 
 
-.levelAndBar,
-#contactPopupButton,
-#supportMeButton,
-#testConfig .puncAndNum,
-header #logo,
+.levelAndBar, /* level num on profile */
+#testConfig .puncAndNum, /* left side of top middle */
+header #logo, /* monkeytype logo */
+/* stuff at the bottom */
+#contactPopupButton, supportMeButton,
 footer .leftright .left .textButton, footer .leftright .right .textButton[aria-label="discord"],
 footer .leftright .left .textButton, footer .leftright .right .textButton {
   display: none !important;
 }
-
-
-
 
 
 

@@ -59,7 +59,7 @@
 
     /* games */
     olympus
-    # osu-lazer
+    osu-lazer
     # tt
     # ttyper
     vitetris
