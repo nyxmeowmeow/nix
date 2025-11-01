@@ -4,6 +4,8 @@
     bgtrans = "#090E13cc";
     gray = "#5C6066";
     purple  = "#938AA9"; # violet
+    black = "#090E13";
+    white = "#f2f1ef";
 
 # zen bg shades
     zen_bg0 = "#090E13";
