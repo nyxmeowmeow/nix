@@ -5,13 +5,12 @@ let
 in {
   home.file.".config/usercontent/nixos.css".text = /* css */ ''
 @-moz-document domain("wiki.nixos.org") {
-  * {
+* {
   font-family: ${config.stylix.fonts.monospace.name} !important;
-  }
+}
 
 root: {
-  --bg-color: transparent !important;
-  --background-color-base: transparent !important;
+	--font-size-medium: 20px !important;
 }
 
 body {
@@ -20,19 +19,15 @@ body {
 }
 
 @media screen {
-  html {
-    color-scheme: dark;
-       --background-color-base: transparent !important;
-    --color-base: ${col.fg} !important;
-    --color-base--hover:${col.fg} !important;
-    --color-emphasized:${col.fg} !important;
-    --color-inverted: transparent !important;
-    }
-    }
-
-
-
-
+  body {
+    --background-color: transparent !important;
+    --color: ${col.fg} !important;
   }
+}
+
+
+
+
+}
   '';
 }
