@@ -19,6 +19,10 @@ in {
   --bgColor-inset: transparent !important;
 }
 
+.search-suggestions {
+  background: ${col.bgtrans} !important;
+}
+
 .AppHeader-CopilotChat /* hide gross smelly ai button */
 {
   display: none !important;
