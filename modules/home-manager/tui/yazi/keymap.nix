@@ -12,10 +12,20 @@
         run = "plugin dupes interactive";
       }
 
+      # {
+      #   on = [ "g" "<Enter>" ];
+      #   run = "plugin file-actions -- --around ";
+      #   desc = "perform action on selected files";
+      # }
       {
         on = [ "g" "<Enter>" ];
-        run = "plugin file-actions -- --around ";
-        desc = "perform action on selected files";
+        run = "plugin open-with-cmd --args=block";
+        desc = "open with command";
+      }
+      {
+        on = [ "g" "<S-Enter>" ];
+        run = "plugin open-with-cmd";
+        desc = "open with command";
       }
 
       { # sort natural/none
@@ -866,6 +876,11 @@
 
       ];
       spot.keymap = [
+      {
+        on = "<Escape>";
+        run = "spot close";
+      }
+
       {
         on = "a";
         run = "arrow next";

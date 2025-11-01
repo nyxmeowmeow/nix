@@ -26,6 +26,7 @@
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
       pref-by-location = ./plugins/pref-by-location.yazi;
+      open-with-cmd = ./plugins/open-with-cmd.yazi;
     };
 
     initLua = /* lua */ ''
@@ -61,6 +62,22 @@ pref_by_location:setup({
         "btime",
         reverse = true,
         dir_first = true
+      }
+    },
+    {
+      location = ".*/Trash/files",
+      sort = {
+        "mtime",
+        reverse = true,
+        dir_first = false
+      }
+    },
+    {
+      location = ".*/Trash/info",
+      sort = {
+        "mtime",
+        reverse = true,
+        mir_first = false
       }
     },
   },

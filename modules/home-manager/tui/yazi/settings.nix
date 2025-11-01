@@ -155,7 +155,7 @@
           }
           ];
 
-          swayimg = [ {
+          image = [ {
             run = "swayimg \"$@\"";
             orphan = true;
             for = "unix";
@@ -174,22 +174,27 @@
           rules = [
           {
             name = "*.gif";
-            use = [ "swayimg" "reveal" ];
+            use = [ "image" "reveal" ];
           }
 
           {
             name = "*.png";
-            use = [ "swayimg" "reveal" ];
+            use = [ "image" "reveal" ];
           }
 
           {
             name = "*.jpg";
-            use = [ "swayimg" "reveal" ];
+            use = [ "image" "reveal" ];
           }
 
           {
             name = "*.jpeg";
-            use = [ "swayimg" "reveal" ];
+            use = [ "image" "reveal" ];
+          }
+
+          {
+            name = "*.svg";
+            use = [ "image" "edit" "reveal" ];
           }
 
           {
