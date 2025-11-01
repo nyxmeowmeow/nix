@@ -388,13 +388,13 @@
 
 # Image
             {
-              mime = "image/{avif,hei?,jxl,svg+xml}";
-              run = "magick";
+              url = "*.dds";
+              run = "piper -- kitten icat \"$1\"";
             }
 
             {
-              url = "*.dds";
-              run = "piper -- kitten icat \"$1\"";
+              mime = "image/{avif,hei?,jxl,svg+xml}";
+              run = "magick";
             }
 
             {
