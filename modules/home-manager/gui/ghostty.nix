@@ -26,7 +26,8 @@ in {
       foreground = lib.mkDefault col.fg;
       background = lib.mkDefault col.bg;
       background-opacity = lib.mkDefault 0.8;
-      cursor-color = lib.mkDefault col.fg;
+      # cursor-color = lib.mkDefault col.fg;
+      cursor-color = lib.mkDefault col.fg2;
       cursor-text = lib.mkDefault col.bg;
       selection-background = lib.mkDefault col.blue;
       selection-foreground = lib.mkDefault col.bg;
