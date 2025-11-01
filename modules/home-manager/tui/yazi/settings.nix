@@ -304,7 +304,7 @@
 
 # Image
             {
-              url = "*.dds";
+              name = "*.dds";
               run = ''piper -- kitten icat "$1"'';
             }
 
@@ -334,7 +334,7 @@
             preloaders = [
 # Image
             {
-              url = "*.dds";
+              name = "*.dds";
               run = ''piper -- kitten icat "$1"'';
             }
 
@@ -398,7 +398,7 @@
 
 # Image
             {
-              url = "*.dds";
+              name = "*.dds";
               run = ''piper -- kitten icat "$1"'';
             }
 
