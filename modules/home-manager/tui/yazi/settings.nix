@@ -256,7 +256,7 @@
             macro_workers    = 10;
             bizarre_retry    = 3;
             image_alloc      = 536870912; # 512MB
-              image_bound      = [ 0 0 ];
+            image_bound      = [ 0 0 ];
             suppress_preload = false;
           };
 
@@ -303,6 +303,11 @@
             }
 
 # Image
+            {
+              mime = "application/octet-stream";
+              run = "piper -- kitten icat \"$1\"";
+            }
+
             {
               mime = "image/{avif,hei?,jxl,svg+xml}";
               run = "magick";
