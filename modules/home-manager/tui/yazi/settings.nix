@@ -305,7 +305,7 @@
 # Image
             {
               name = "*.dds";
-              run = ''piper -- kitten icat "$1"'';
+              run = ''piper -- kitten icat $1'';
             }
 
             {
@@ -335,7 +335,7 @@
 # Image
             {
               name = "*.dds";
-              run = ''piper -- kitten icat "$1"'';
+              run = ''piper -- kitten icat $1'';
             }
 
             {
@@ -399,7 +399,7 @@
 # Image
             {
               name = "*.dds";
-              run = ''piper -- kitten icat "$1"'';
+              run = ''piper -- kitten icat $1'';
             }
 
             {
