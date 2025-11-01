@@ -1,8 +1,8 @@
 # TODO mouse keys
 
 # base:
-#          : b f d w p   ' l o u j x
-#          - n s t c y   m h a e i rpt
+#          : b f d w p   - l o u j x
+#          = n s t c y   m h a e i rpt
 #          q , . k g v   / _ ( ) ; z
 # alt esc/meta r magic   ent/mods spc bspc/ctrl tab
 #
