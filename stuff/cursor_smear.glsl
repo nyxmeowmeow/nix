@@ -106,7 +106,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
     vec4 trail = iCurrentCursorColor;
     trail = saturate(trail, 2.5);
     // Draw trail
-    newColor = mix(newColor, trail, antialising(sdfTrail));
+    // newColor = mix(newColor, trail, antialising(sdfTrail));
     // Draw current cursor
     newColor = mix(newColor, TRAIL_COLOR, antialising(sdfCurrentCursor));
     newColor = mix(newColor, fragColor, step(sdfCurrentCursor, 0.));
