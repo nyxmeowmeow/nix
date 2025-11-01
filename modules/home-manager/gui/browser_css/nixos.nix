@@ -18,6 +18,9 @@ in {
   --color-visited: ${col.purple} !important;
 }
 
+.vector-sticky-pinned-container::after { /* white gradient thing */
+  display: none !important;
+}
 
 }
   '';
