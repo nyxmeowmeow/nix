@@ -304,11 +304,6 @@
 
 # Image
             {
-              url = "*.dds";
-              run = "piper -- kitten icat \"$1\"";
-            }
-
-            {
               mime = "image/{avif,hei?,jxl,svg+xml}";
               run = "magick";
             }
@@ -334,7 +329,7 @@
             preloaders = [
 # Image
             {
-              url = "*.dds";
+              mime = "application/octet-stream";
               run = "piper -- kitten icat \"$1\"";
             }
 
@@ -398,7 +393,7 @@
 
 # Image
             {
-              url = "*.dds";
+              mime = "application/octet-stream";
               run = "piper -- kitten icat \"$1\"";
             }
 
