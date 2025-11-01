@@ -73,6 +73,10 @@
 
     ;; >w< -> ≥w≤
     ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
+
+    ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
+
+
     
     ;; insert current date
     ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date") break
