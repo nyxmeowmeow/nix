@@ -18,6 +18,12 @@
         desc = "perform action on selected files";
       }
 
+      { # sort natural/none
+        on = [ "g" "o" "n" ];
+        run = "sort natural";
+        desc = "sort natural/none";
+      }
+
       { # sort reverse (inverse)
         on = [ "g" "o" "i" ];
         run = "sort --reverse";
@@ -133,62 +139,49 @@
       {
         on = "<C-e>";
         run = "arrow -10";
-        desc = "Move cursor up half page";
       }
-
       {
         on = "<C-a>";
         run = "arrow 10";
-        desc = "Move cursor down half page";
       }
 
       {
         on = "<C-S-e>";
         run = "arrow -50%";
-        desc = "Move cursor up one page";
       }
-
       {
         on = "<C-S-a>";
         run = "arrow 50%";
-        desc = "Move cursor down one page";
       }
 
       {
         on = [ "g" "g" ];
         run = "arrow top";
-        desc = "Move cursor to the top";
       }
 
       {
         on = "G";
         run = "arrow bot";
-        desc = "Move cursor to the bottom";
       }
 
-# Navigation
       {
         on = "h";
         run = "leave";
-        desc = "Go back to the parent directory";
       }
 
       {
         on = "i";
         run = "enter";
-        desc = "Enter the child directory";
       }
 
       {
         on = "a";
         run = "arrow next";
-        desc = "";
       }
 
       {
         on = "e";
         run = "arrow prev";
-        desc = "";
       }
 
       {
@@ -835,49 +828,83 @@
 # sudo cp/mv --force
 # { on = ["S" "P"]; run = "plugin sudo -- paste --force"; desc = "sudo paste"; }
 
-# sudo mv
-      {
+      { # sudo mv
         on = ["S" "s"];
         run = "plugin sudo -- rename";
         desc = "sudo rename";
       }
 
-# sudo ln -s (absolute-path)
-      {
+      { # sudo ln -s (absolute-path)
         on = ["S" "n" "l"];
         run = "plugin sudo -- link";
         esc = "sudo link";
       }
 
-# sudo ln -s (relative-path)
-      {
+      { # sudo ln -s (relative-path)
         on = ["S" "n" "r"];
         run = "plugin sudo -- link --relative";
         desc = "sudo link relative path";
       }
 
-# sudo ln
-      {
+      { # sudo ln
         on = ["S" "n" "h"];
         run = "plugin sudo -- hardlink";
         desc = "sudo hardlink";
       }
 
-# sudo touch/mkdir
-      {
+      { # sudo touch/mkdir
         on = ["S" "t"];
         run = "plugin sudo -- create";
         desc = "sudo create";
       }
 
-# sudo trash
-      {
+      { # sudo trash
         on = ["S" "o"];
         run = "plugin sudo -- remove";
         desc = "sudo trash";
       }
 
       ];
+      spot.keymap = [
+      {
+        on = "a";
+        run = "arrow next";
+      }
+      {
+        on = "e";
+        run = "arrow prev";
+      }
+
+      {
+        on = "<C-e>";
+        run = "arrow -10";
+        desc = "Move cursor up half page";
+      }
+      {
+        on = "<C-a>";
+        run = "arrow 10";
+        desc = "Move cursor down half page";
+      }
+
+      {
+        on = [ "g" "g" ];
+        run = "arrow top";
+      }
+      {
+        on = "G";
+        run = "arrow bot";
+      }
+
+      {
+        on = "j";
+        run = "copy cell";
+      }
+      {
+        on = "<Enter>";
+        run = "copy cell";
+      }
+      ];
+
     };
   };
 }
