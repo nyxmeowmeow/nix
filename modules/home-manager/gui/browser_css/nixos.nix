@@ -10,8 +10,12 @@ in {
   background: transparent !important;
 }
 
-root: {
+:root {
 	--font-size-medium: 20px !important;
+
+    --color-base: ${col.fg} !important;
+    --color-progressive: ${col.blue} !important;
+    --color-visited: ${col.purple} !important;
 }
 
 body {
