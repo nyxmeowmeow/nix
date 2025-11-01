@@ -9,6 +9,8 @@ in
 @import "/home/${username}/.config/usercontent/github.css";
 @import "/home/${username}/.config/usercontent/wikipedia.css";
 @import "/home/${username}/.config/usercontent/duckduckgo.css";
+@import "/home/${username}/.config/usercontent/nixos.css";
+@import "/home/${username}/.config/usercontent/sourcehut.css";
 
 *{ scrollbar-width: none; }
 
