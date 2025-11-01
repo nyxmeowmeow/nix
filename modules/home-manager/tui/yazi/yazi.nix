@@ -21,8 +21,10 @@
       mount = pkgs.yaziPlugins.mount;
       dupes = pkgs.yaziPlugins.dupes;
       jump-to-char = pkgs.yaziPlugins.jump-to-char;
+      # duckdb = pkgs.yaziPlugins.duckdb;
       compress = ./plugins/compress.yazi;
       gvfs = ./plugins/gvfs.yazi;
+      file-actions = ./plugins/gvfs.yazi;
     };
 
     initLua = /* lua */ ''

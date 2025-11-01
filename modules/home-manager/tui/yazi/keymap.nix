@@ -12,6 +12,12 @@
         run = "plugin dupes interactive";
       }
 
+      {
+        on = [ "g" "<Enter>" ];
+        run = "plugin file-actions -- --around ";
+        desc = "perform action on selected files";
+      }
+
 
       {
         on = "<Esc>";
