@@ -15,10 +15,14 @@ in {
         fg = col.bg;
       };
       inactive = {
-        bg = col.bg;
+        bg = "none";
         fg = col.accent;
       };
       sep_inner = {
+        open = "";
+        close = "";
+      };
+      sep_outer = {
         open = "";
         close = "";
       };
