@@ -12,25 +12,11 @@ in {
 
 :root {
 	--font-size-medium: 20px !important;
-
-    --color-base: ${col.fg} !important;
-    --color-progressive: ${col.blue} !important;
-    --color-visited: ${col.purple} !important;
+  --color-base: ${col.fg} !important;
+  --color-emphasized: ${col.fg} !important;
+  --color-progressive: ${col.blue} !important;
+  --color-visited: ${col.purple} !important;
 }
-
-body {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-@media screen {
-  body {
-    --background-color: transparent !important;
-    --color: ${col.fg} !important;
-  }
-}
-
-
 
 
 }
