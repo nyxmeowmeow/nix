@@ -304,11 +304,6 @@
 
 # Image
             {
-              mime = "application/octet-stream";
-              run = "piper -- kitten icat \"$1\"";
-            }
-
-            {
               mime = "image/{avif,hei?,jxl,svg+xml}";
               run = "magick";
             }
@@ -333,11 +328,6 @@
 
             preloaders = [
 # Image
-            {
-              mime = "application/octet-stream";
-              run = "piper -- kitten icat \"$1\"";
-            }
-
             {
               mime = "image/{avif,hei?,jxl,svg+xml}";
               run = "magick";
@@ -399,7 +389,7 @@
 # Image
             {
               mime = "application/octet-stream";
-              run = "piper -- kitten icat \"$1\"";
+              run = ''piper -- kitten icat \"$1\"'';
             }
 
             {
