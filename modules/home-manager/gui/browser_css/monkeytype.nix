@@ -29,36 +29,21 @@ body {
   /*font-size: 0rem;*/
   opacity: 0 !important;
 }
-#contactPopupButton {
-  display: none !important;
-}
-#supportMeButton {
-  display: none !important;
-}
 
 
 
-footer .leftright .left .textButton, footer .leftright .right .textButton[aria-label="discord"] {
-  display: none !important;
-}
-
+.levelAndBar,
+#contactPopupButton,
+#supportMeButton,
+#testConfig .puncAndNum,
+header #logo,
+footer .leftright .left .textButton, footer .leftright .right .textButton[aria-label="discord"],
 footer .leftright .left .textButton, footer .leftright .right .textButton {
   display: none !important;
 }
 
-footer .leftright {
-  display: none !important;
-}
 
 
-
-#testConfig .puncAndNum {
-  display: none !important;
-}
-
-header #logo {
-  display: none !important;
-}
 
 
 
