@@ -18,6 +18,53 @@
         desc = "perform action on selected files";
       }
 
+      { # sort reverse (inverse)
+        on = [ "g" "o" "i" ];
+        run = "sort --reverse";
+        desc = "reverse/inverse sort";
+      }
+
+      { # sort dir first
+        on = [ "g" "o" "d" ];
+        run = "sort --dir-first";
+        desc = "sort directories first";
+      }
+      { # dont sort dir first
+        on = [ "g" "o" "D" ];
+        run = "sort --dir-first=no";
+        desc = "dont sort directories first";
+      }
+
+      { # sort by file size
+        on = [ "g" "o" "s" ];
+        run = "sort size";
+        desc = "sort by size";
+      }
+
+      { # sort randomly
+        on = [ "g" "o" "r" ];
+        run = "sort random";
+        desc = "sort randomly";
+      }
+
+      { # sort by extension
+        on = [ "g" "o" "e" ];
+        run = "sort extension";
+        desc = "sort by extension";
+      }
+
+      { # sort by btime
+        on = [ "g" "o" "b" ];
+        run = "sort extension";
+        desc = "sort by extension";
+      }
+      { # sort by mtime
+        on = [ "g" "o" "m" ];
+        run = "sort mtime";
+        desc = "sort by mtime";
+      }
+
+
 
       {
         on = "<Esc>";
@@ -427,6 +474,12 @@
         run = "copy name_without_ext";
         desc = "Copy the filename without extension";
       }
+
+      # {
+      #   on = [ "J" "g" ];
+      #   run = "shell -- ${flake_dir}/stuff/scripts/jg.sh";
+      #   desc = "Copy file path from git root";
+      # }
 
 
 # Filter
