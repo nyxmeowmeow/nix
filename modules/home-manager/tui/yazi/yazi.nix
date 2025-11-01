@@ -25,6 +25,7 @@
       compress = ./plugins/compress.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
+      pref-by-location = ./plugins/pref-by-location.yazi;
     };
 
     initLua = /* lua */ ''
@@ -37,20 +38,33 @@
       require("gvfs"):setup()
 
 require("dupes"):setup {
-	-- Global settings
-	save_op = false,        -- Save results to file by default
-	-- auto_confirm = true, -- Skip confirmation for apply (use with caution!)
-	
+	save_op = false, -- dont save results to file
 	profiles = {
 		interactive = {
 			args = { "-r" },
 		},
 		apply = {
 			args = { "-r", "-N", "-d" },
-			save_op = false,  -- Save results before deletion
+			save_op = false,  -- dont save results before deletion
 		},
 	},
 }
+
+
+
+local pref_by_location = require("pref-by-location")
+pref_by_location:setup({
+  prefs = {
+    {
+      location = ".*/Downloads",
+      sort = {
+        "btime",
+        reverse = true,
+        dir_first = true
+      }
+    },
+  },
+})
 
     '';
   };

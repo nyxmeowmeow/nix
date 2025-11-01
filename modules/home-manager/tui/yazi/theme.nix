@@ -32,7 +32,6 @@ in {
         fg = col.bg;
         bg = col.accent;
       };
-      title.bg = col.accent;
     };
   };
 }
