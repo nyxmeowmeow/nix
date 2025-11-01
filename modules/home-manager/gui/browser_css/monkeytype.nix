@@ -5,7 +5,7 @@ let
 in {
   home.file.".config/usercontent/monkeytype.css".text = /* css */ ''
 @-moz-document domain("monkeytype.com") {
-element {
+html {
   --font: ${config.stylix.fonts.monospace.name} !important;
   --bg-color: transparent !important;
   --sub-alt-color: transparent !important;
