@@ -5,8 +5,11 @@ let
 in {
   home.file.".config/usercontent/nixos.css".text = /* css */ ''
 @-moz-document domain("wiki.nixos.org") {
+  * {
+  font-family: ${config.stylix.fonts.monospace.name} !important;
+  }
+
 root: {
-  --font: ${config.stylix.fonts.monospace.name} !important;
   --bg-color: transparent !important;
   --background-color-base: transparent !important;
 }
@@ -14,12 +17,10 @@ root: {
 body {
   background: transparent !important;
   background-color: transparent !important;
-  font-family: ${config.stylix.fonts.monospace.name} !important;
-
 }
 
 @media screen {
-  html.skin-theme-clientpref-night {
+  html {
     color-scheme: dark;
        --background-color-base: transparent !important;
     --color-base: ${col.fg} !important;
