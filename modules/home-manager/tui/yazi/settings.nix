@@ -174,22 +174,22 @@
           rules = [
           {
             name = "*.gif";
-            use = [ "image" "reveal" ];
+            use = [ "image" "play" "reveal" ];
           }
 
           {
             name = "*.png";
-            use = [ "image" "reveal" ];
+            use = [ "image" "krita" "reveal" ];
           }
 
           {
             name = "*.jpg";
-            use = [ "image" "reveal" ];
+            use = [ "image" "krita" "reveal" ];
           }
 
           {
             name = "*.jpeg";
-            use = [ "image" "reveal" ];
+            use = [ "image" "krita" "reveal" ];
           }
 
           {
