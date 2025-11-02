@@ -32,6 +32,15 @@ in {
       selection-background = lib.mkDefault col.blue;
       selection-foreground = lib.mkDefault col.bg;
 
+      keybind = [
+        "page_up=scroll_page_up"
+        "page_down=scroll_page_down"
+        "home=scroll_to_top"
+        "end=scroll_to_bottom"
+      ];
+
+
+
       palette = lib.mkDefault [
         "0=${col.black}"
         "1=${col.red}"

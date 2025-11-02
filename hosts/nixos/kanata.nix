@@ -12,6 +12,11 @@
 #            0 9 8 5       6 3 2 1
 #                  .       spc
 
+# todo?:
+#          : b f d w p   j l o u . x
+#          = n s t c y   m h a e i rpt
+#          q , v k g -   / _ ( ) ; z
+
 { pkgs, ... }: {
   services.kanata = {
     enable = true;
@@ -74,6 +79,8 @@
     ;; >w< -> ≥w≤
     ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
 
+    ;; mkdir
+    ((and (key-history m 2) (key-history k 1))) (macro d) break
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
 
 
