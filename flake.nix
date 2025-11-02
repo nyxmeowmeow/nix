@@ -18,12 +18,12 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
+    # firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    textfox.url = "github:adriankarlen/textfox";
+    # textfox.url = "github:adriankarlen/textfox";
 
     nixvim = {
       url = "github:nix-community/nixvim";
