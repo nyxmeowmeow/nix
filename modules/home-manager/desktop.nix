@@ -1,5 +1,6 @@
 {
   flake_dir,
+  inputs,
   ...
 }: {
   xdg.desktopEntries = {
@@ -7,7 +8,7 @@
       name = "melee";
       comment = "melee bash script";
       exec = "${flake_dir}/stuff/scripts/melee.sh";
-      icon = "${../../stuff/slippi-launcher.png}";
+      icon = "${inputs.slippi}/usr/share/icons/hicolor/512x512/apps";
       terminal = true;
     };
 
