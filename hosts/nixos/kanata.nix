@@ -277,6 +277,17 @@
 )
 
 (deflayermap (base)
+. v
+j .
+v -
+' j
+
+
+
+
+
+
+' -
 f15 S--
 f16 S-9
 f17 S-0
@@ -293,7 +304,6 @@ ent (tap-hold-press 120 120 ent (layer-while-held mods))
 
 spc @space
 
-' -
 
 
 3 S-[
