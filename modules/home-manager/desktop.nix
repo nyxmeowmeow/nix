@@ -8,7 +8,7 @@
       name = "melee";
       comment = "melee bash script";
       exec = "${flake_dir}/stuff/scripts/melee.sh";
-      icon = "${inputs.slippi}/usr/share/icons/hicolor/512x512/apps";
+      icon = "${inputs.slippi}/usr/share/icons/hicolor/512x512/apps"; # FIXME
       terminal = true;
     };
 

@@ -161,34 +161,34 @@ let
 
 
 in {
-  imports = [
-    ./search-engines.nix
-    ./extensions.nix
-    ./userchrome.nix
-  ];
-  xdg.mimeApps.defaultApplications = {
-    "default-web-browser" = [ "floorp.desktop" ];
-    # "text/html" = [ "floorp.desktop" ];
-    "x-scheme-handler/http" = [ "floorp.desktop" ];
-    "x-scheme-handler/https" = [ "floorp.desktop" ];
-    "x-scheme-handler/about" = [ "floorp.desktop" ];
-    "x-scheme-handler/unknown" = [ "floorp.desktop" ];
-    # "application/xhtml+xml" = [ "floorp.desktop" ];
-    # "text/xml" = [ "floorp.desktop" ];
-  };
-
-
-
-  programs.floorp = {
-    enable = true;
-
-    nativeMessagingHosts = [ pkgs.tridactyl-native ];
-    policies = policies;
-    profiles = {
-      "meow" = {
-        isDefault = true;
-        settings = settings;
-      };
-    };
-  };
+  # imports = [
+  #   ./search-engines.nix
+  #   ./extensions.nix
+  #   ./userchrome.nix
+  # ];
+  # xdg.mimeApps.defaultApplications = {
+  #   "default-web-browser" = [ "floorp.desktop" ];
+  #   # "text/html" = [ "floorp.desktop" ];
+  #   "x-scheme-handler/http" = [ "floorp.desktop" ];
+  #   "x-scheme-handler/https" = [ "floorp.desktop" ];
+  #   "x-scheme-handler/about" = [ "floorp.desktop" ];
+  #   "x-scheme-handler/unknown" = [ "floorp.desktop" ];
+  #   # "application/xhtml+xml" = [ "floorp.desktop" ];
+  #   # "text/xml" = [ "floorp.desktop" ];
+  # };
+  #
+  #
+  #
+  # programs.floorp = {
+  #   enable = true;
+  #
+  #   nativeMessagingHosts = [ pkgs.tridactyl-native ];
+  #   policies = policies;
+  #   profiles = {
+  #     "meow" = {
+  #       isDefault = true;
+  #       settings = settings;
+  #     };
+  #   };
+  # };
 }
