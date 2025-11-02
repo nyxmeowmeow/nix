@@ -1,6 +1,7 @@
 {
   programs.fzf = {
     enable = true;
+# TODO nushell
     enableBashIntegration = true;
 
     #   # TODO move this to themes/*

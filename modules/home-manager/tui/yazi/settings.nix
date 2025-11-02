@@ -166,6 +166,11 @@
             orphan = true;
             for = "unix";
           } ];
+          inkscape = [ {
+            run = "inkscape \"$@\"";
+            orphan = true;
+            for = "unix";
+          } ];
         };
 
 
@@ -194,7 +199,7 @@
 
           {
             name = "*.svg";
-            use = [ "image" "edit" "reveal" ];
+            use = [ "image" "inkscape" "edit" "reveal" ];
           }
 
           {
