@@ -7,7 +7,7 @@
       name = "melee";
       comment = "melee bash script";
       exec = "${flake_dir}/stuff/scripts/melee.sh";
-      icon = "slippi-launcher";
+      icon = "${../../stuff/slippi-launcher.png}";
       terminal = true;
     };
 
