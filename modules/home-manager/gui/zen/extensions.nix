@@ -18,10 +18,13 @@ let
     fastforwardteam
     shinigami-eyes
     #bypass-paywalls-clean
+    unpaywall
     pronoundb
     don-t-fuck-with-paste
     google-container
     # containerise
+    i-dont-care-about-cookies
+    decentraleyes
   ];
 
   meow_extensions = with pkgs.nur.repos.rycee.firefox-addons; [

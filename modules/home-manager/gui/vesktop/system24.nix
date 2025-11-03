@@ -1,6 +1,7 @@
 {
   lib,
   theme,
+  config,
   ...
 }:
 let
@@ -9,7 +10,7 @@ let
   unrounding = if ((import ../../../nixos/config.nix).config.rounding) then "off" else "on";
 in
 {
-  home.file.".config/vesktop/themes/system24_1.css".text = ''
+  home.file.".config/vesktop/themes/system24_1.css".text = /* css */ ''
 /* main.css */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
@@ -639,7 +640,7 @@ body {
 /* @import url('https://refact0r.github.io/system24/build/system24.css'); */
 
 body {
-    --font: 'Iosevka Nerd Font Mono'; /* change to for default discord font */
+    --font: '${config.stylix.fonts.monospace.name}'; /* change to for default discord font */
     --code-font: 'Iosevka Nerd Font Mono'; /* change to for default discord font */
     /* font-weight: 300; /* text font weight. 300 is light, 400 is normal. DOES NOT AFFECT BOLD TEXT */ */
     letter-spacing: -0.05ch; /* decreases letter spacing for better readability. recommended on monospace fonts.*/

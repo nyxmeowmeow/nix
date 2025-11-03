@@ -6,6 +6,10 @@
 let
 
 settings = {
+  "gfx.webrender.all" = true;
+    "media.ffmpeg.vaapi.enabled" = true;
+  "widget.dmabuf.force-enabled" = true;
+
 
   "browser.tabs.allow_transparent_browser" = true;
   "zen.widget.linux.transparency" = true;
@@ -33,6 +37,9 @@ settings = {
     "browser.ml.chat.menu" = false;
     "browser.ml.chat.sidebar" = false;
     "browser.tabs.groups.smart.enabled" = false;
+
+
+    "middlemouse.paste" = false;
 
     "ui.key.menuAccessKeyFocuses" = true; # disable <ALT> menu
 
