@@ -20,12 +20,12 @@
       {
         on = [ "g" "<Enter>" ];
         run = "plugin open-with-cmd --args=block";
-        desc = "open with command";
+        # desc = "open with command";
       }
       {
         on = [ "g" "<S-Enter>" ];
         run = "plugin open-with-cmd";
-        desc = "open with command";
+        # desc = "open with command";
       }
 
       { # sort natural/none
@@ -291,7 +291,7 @@
       }
 
       {
-        on = "j";
+        on = "y";
         run = [ "shell -- for path in \"$@\"; do echo \"file://$path\"; done | wl-copy -t text/uri-list" "yank" ];
         desc = "Yank";
       }
@@ -455,31 +455,32 @@
 
 # Copy
       {
-        on = [ "J" "c" ];
+        on = [ "Y" "c" ];
         run = "copy path";
         desc = "Copy the file path";
       }
 
       {
-        on = [ "J" "d" ];
+        on = [ "Y" "d" ];
         run = "copy dirname";
         desc = "Copy the directory path";
       }
 
       {
-        on = [ "J" "f" ];
+        on = [ "Y" "f" ];
         run = "copy filename";
         desc = "Copy the filename";
       }
 
       {
-        on = [ "J" "n" ];
+        on = [ "Y" "n" ];
         run = "copy name_without_ext";
         desc = "Copy the filename without extension";
       }
 
+      # FIXME
       # {
-      #   on = [ "J" "g" ];
+      #   on = [ "Y" "g" ];
       #   run = "shell -- ${flake_dir}/stuff/scripts/jg.sh";
       #   desc = "Copy file path from git root";
       # }
@@ -679,7 +680,7 @@
 
       {
         on = [ "<Space>" "p" "r" ];
-        run = "cd ~/projects";
+        run = "cd ~/dev/projects";
         desc = "projects";
       }
 

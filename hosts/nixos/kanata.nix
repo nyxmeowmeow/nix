@@ -1,9 +1,9 @@
 # TODO mouse keys
 
 # base:
-#          : b f d w p   - l o u j x
+#          : b f d w p   j l o u . x
 #          = n s t c y   m h a e i rpt
-#          q , . k g v   / _ ( ) ; z
+#          q , v k g -   / _ ( ) ; z
 # alt esc/meta r magic   ent/mods spc bspc/ctrl tab
 #
 # sym:
@@ -11,11 +11,6 @@
 #            1 2 3 4       7 8 9 0
 #            0 9 8 5       6 3 2 1
 #                  .       spc
-
-# todo?:
-#          : b f d w p   j l o u . x
-#          = n s t c y   m h a e i rpt
-#          q , v k g -   / _ ( ) ; z
 
 { pkgs, ... }: {
   services.kanata = {
@@ -245,7 +240,7 @@
     () rpt break
   )
 
-  ;; normal rpt except for syms
+  ;; normal rpt with some exceptions
   rpeat (switch
 
     ;; oar trigram
@@ -518,16 +513,6 @@ i end
 
 )
 
-
-(deftemplate paste (text)
- (macro
-  (clipboard-save 0)
-  20
-  (clipboard-set $text)
-  300
-  C-v
-  (clipboard-restore 0)
- ))
 
         '';
       };
