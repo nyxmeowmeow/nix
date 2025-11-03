@@ -2,7 +2,6 @@
   config,
   lib,
   theme,
-  flake_dir,
   ...
 }:
 let
