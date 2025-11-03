@@ -10,10 +10,7 @@
     '';
   };
 
-
-
   security.soteria = {
     enable = true;
   };
-
 }

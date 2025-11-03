@@ -110,7 +110,7 @@ in {
 
   programs.zen-browser = {
     enable = true;
-    nativeMessagingHosts = [ pkgs.firefoxpwa ];
+    nativeMessagingHosts = [ pkgs.tridactyl-native ];
 
     profiles = {
       "meow" = {

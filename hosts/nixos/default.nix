@@ -21,6 +21,7 @@
     ../../modules/nixos/cleanup.nix
     ../../modules/nixos/dev.nix
     ../../modules/nixos/misc.nix
+    ../../modules/nixos/mpd.nix
     ../../modules/nixos/nix-gaming.nix
     ../../modules/nixos/options.nix
     ../../modules/nixos/config.nix

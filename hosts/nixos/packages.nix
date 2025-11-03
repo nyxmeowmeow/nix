@@ -8,9 +8,9 @@
     nix-search-tv
 
 
-    qutebrowser
-    python313Packages.adblock
-    python312Packages.adblock
+    # qutebrowser
+    # python313Packages.adblock
+    # python312Packages.adblock
 
 
     # reaper # borken
@@ -19,9 +19,9 @@
     # lmms # borken
     ardour
 
-    walker
+    # walker
     rofi
-    tridactyl-native
+    # tridactyl-native
 
     tldr
 
@@ -47,7 +47,6 @@
 
     /* video */
     ffmpeg
-    mpv
     # davinci-resolve
     obs-studio
     wf-recorder
@@ -75,7 +74,6 @@
 
     /* audio */
     playerctl
-    mpc
 
     /* file */
     udiskie
