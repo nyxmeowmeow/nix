@@ -18,6 +18,7 @@
     ../../modules/nixos/font.nix
     ../../modules/nixos/fontconfig.nix
     ../../modules/nixos/gamemode.nix
+    ../../modules/nixos/cleanup.nix
     ../../modules/nixos/dev.nix
     ../../modules/nixos/misc.nix
     ../../modules/nixos/nix-gaming.nix

@@ -47,13 +47,21 @@
     # meow-shell.url = "github:nyxmeowmeow/shell";
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, zen-browser, nixvim, niri, nur, ... }:
+  outputs = inputs @ {
+    self,
+    nixpkgs,
+    home-manager,
+    zen-browser,
+    nixvim,
+    niri,
+    nur,
+    ...
+  }:
   let
     username = "meow";
     flake_dir = "/home/${username}/nix";
   in {
     nixosConfigurations = {
-
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {
           inherit inputs username flake_dir zen-browser nixvim niri;
