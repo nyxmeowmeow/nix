@@ -20,67 +20,13 @@
       {
         on = [ "g" "<Enter>" ];
         run = "plugin open-with-cmd --args=block";
-        # desc = "open with command";
+        desc = "open with command";
       }
       {
         on = [ "g" "<S-Enter>" ];
         run = "plugin open-with-cmd";
-        # desc = "open with command";
+        desc = "open with command";
       }
-
-      { # sort natural/none
-        on = [ "g" "o" "n" ];
-        run = "sort natural";
-        desc = "sort natural/none";
-      }
-
-      { # sort reverse (inverse)
-        on = [ "g" "o" "i" ];
-        run = "sort --reverse";
-        desc = "reverse/inverse sort";
-      }
-
-      { # sort dir first
-        on = [ "g" "o" "d" ];
-        run = "sort --dir-first";
-        desc = "sort directories first";
-      }
-      { # dont sort dir first
-        on = [ "g" "o" "D" ];
-        run = "sort --dir-first=no";
-        desc = "dont sort directories first";
-      }
-
-      { # sort by file size
-        on = [ "g" "o" "s" ];
-        run = "sort size";
-        desc = "sort by size";
-      }
-
-      { # sort randomly
-        on = [ "g" "o" "r" ];
-        run = "sort random";
-        desc = "sort randomly";
-      }
-
-      { # sort by extension
-        on = [ "g" "o" "e" ];
-        run = "sort extension";
-        desc = "sort by extension";
-      }
-
-      { # sort by btime
-        on = [ "g" "o" "b" ];
-        run = "sort extension";
-        desc = "sort by extension";
-      }
-      { # sort by mtime
-        on = [ "g" "o" "m" ];
-        run = "sort mtime";
-        desc = "sort by mtime";
-      }
-
-
 
       {
         on = "<Esc>";
@@ -100,7 +46,9 @@
         desc = "Select device then jump to its mount point";
       }
 
-      { # TODO compression level?
+      /* archive */
+      # TODO compression level?
+      {
         on = [ "g" "a" "<Space>" ];
         run = "plugin compress";
         desc = "Archive";
@@ -206,7 +154,7 @@
         desc = "Go forward to the next directory";
       }
 
-# Toggle
+      /* selection */
       {
         on = [ "g" "i" ];
         run = [ "toggle_all" ];
@@ -231,7 +179,6 @@
         desc = "Invert selection";
       }
 
-# Visual mode
       {
         on = "r";
         run = "visual_mode";
@@ -247,32 +194,32 @@
       {
         on = "p";
         run = "plugin restore";
-        desc = "Restore files";
+        desc = "restore files";
       }
 
 # Seeking
       {
         on = "A";
         run = "seek 5";
-        desc = "Seek down 5 units in the preview";
+        desc = "down in preview";
       }
 
       {
         on = "E";
         run = "seek -5";
-        desc = "Seek up 5 units in the preview";
+        desc = "up in preview";
       }
 
 # Spotting
       {
         on = "<Tab>";
         run = "spot";
-        desc = "Spot hovered file";
+        desc = "spot";
       }
 
 # Tagging
       {
-        on = [ "~" ];
+        on = [ "`" ];
         run = "plugin simple-tag -- toggle-tag";
         desc = "Toggle tag with any key (press any key to toggle tag)";
       }
@@ -399,20 +346,20 @@
       {
         on = "c";
         run = "plugin zoxide";
-        desc = "Jump to a directory via zoxide";
+        desc = "jump to a directory via zoxide";
       }
 
       {
         on = "C";
         run = "plugin fzf";
-        desc = "Jump to a file/directory via fzf";
+        desc = "jump to a file/directory via fzf";
       }
 
 
       {
         on   = ["g" "s"];
         run  = "shell 'nu' --block";
-        desc = "Open shell here";
+        desc = "open shell here";
       }
 
 
@@ -453,7 +400,7 @@
         desc = "none";
       }
 
-# Copy
+      /* yank */
       {
         on = [ "Y" "c" ];
         run = "copy path";
@@ -513,38 +460,108 @@
         desc = "Find previous file";
       }
 
+      # {
+      #   on = "m";
+      #   run = "find_arrow";
+      #   desc = "Goto the next found";
+      # }
+      #
+      # {
+      #   on = "M";
+      #   run = "find_arrow --previous";
+      #   desc = "Goto the previous found";
+      # }
+
+      /* sort */
       {
-        on = "m";
-        run = "find_arrow";
-        desc = "Goto the next found";
+        on = [ ";" "m" ];
+        run = [ "sort mtime --reverse=no" "linemode mtime" ];
+        desc = "sort by modified time";
       }
 
       {
-        on = "M";
-        run = "find_arrow --previous";
-        desc = "Goto the previous found";
+        on = [ ";" "M" ];
+        run = [ "sort mtime --reverse" "linemode mtime" ];
+        desc = "Sort by modified time (reverse)";
       }
 
-# Sorting
-#{ on = [ ";" "m" ]; run = [ "sort mtime --reverse=no", "linemode mtime" ]; desc = "Sort by modified time"; }
-#{ on = [ ";" "M" ]; run = [ "sort mtime --reverse", "linemode mtime" ];    desc = "Sort by modified time (reverse)"; }
-#{ on = [ ";" "b" ]; run = [ "sort btime --reverse=no", "linemode btime" ]; desc = "Sort by birth time"; }
-#{ on = [ ";" "B" ]; run = [ "sort btime --reverse", "linemode btime" ];    desc = "Sort by birth time (reverse)"; }
-#{ on = [ ";" "v" ]; run = "sort extension --reverse=no",                   desc = "Sort by extension"; }
-#{ on = [ ";" "V" ]; run = "sort extension --reverse",                      desc = "Sort by extension (reverse)"; }
-#{ on = [ ";" "j" ]; run = "sort alphabetical --reverse=no",                desc = "Sort alphabetically"; }
-#{ on = [ ";" "J" ]; run = "sort alphabetical --reverse",                   desc = "Sort alphabetically (reverse)"; }
-#{ on = [ ";" "n" ]; run = "sort natural --reverse=no",                     desc = "Sort naturally"; }
-#{ on = [ ";" "N" ]; run = "sort natural --reverse",                        desc = "Sort naturally (reverse)"; }
-#{ on = [ ";" "s" ]; run = [ "sort size --reverse=no", "linemode size" ];   desc = "Sort by size"; }
-#{ on = [ ";" "S" ]; run = [ "sort size --reverse", "linemode size" ];      desc = "Sort by size (reverse)"; }
-#{ on = [ ";" "r" ]; run = "sort random --reverse=no";                      desc = "Sort randomly"; }
+      {
+        on = [ ";" "b" ];
+        run = [ "sort btime --reverse=no" "linemode btime" ];
+        desc = "Sort by birth time";
+      }
 
-# Goto
+      {
+        on = [ ";" "B" ];
+        run = [ "sort btime --reverse" "linemode btime" ];
+        desc = "Sort by birth time (reverse)";
+      }
+
+      {
+        on = [ ";" "v" ];
+        run = "sort extension --reverse=no";
+        desc = "Sort by extension";
+      }
+
+      {
+        on = [ ";" "V" ];
+        run = "sort extension --reverse";
+        desc = "Sort by extension (reverse)";
+      }
+
+      {
+        on = [ ";" "j" ];
+        run = "sort alphabetical --reverse=no";
+        desc = "Sort alphabetically";
+      }
+
+      {
+        on = [ ";" "J" ];
+        run = "sort alphabetical --reverse";
+        desc = "Sort alphabetically (reverse)";
+      }
+
+      {
+        on = [ ";" "n" ];
+        run = "sort natural --reverse=no";
+        desc = "Sort naturally";
+      }
+
+      {
+        on = [ ";" "N" ];
+        run = "sort natural --reverse";
+        desc = "Sort naturally (reverse)";
+      }
+
+      {
+        on = [ ";" "s" ];
+        run = [ "sort size --reverse=no" "linemode size" ];
+        desc = "Sort by size";
+      }
+
+      {
+        on = [ ";" "S" ];
+        run = [ "sort size --reverse" "linemode size" ];
+        desc = "Sort by size (reverse)";
+      }
+
+      {
+        on = [ ";" "r" ];
+        run = "sort random --reverse=no";
+        desc = "Sort randomly";
+      }
+
+      /* goto */
+      {
+        on = [ "~" ];
+        run = "cd ~";
+        desc = "home";
+      }
+
       {
         on = [ "<Space>" "<Space>" ];
         run = "cd --interactive";
-        desc = "Jump interactively";
+        desc = "cd";
       }
 
       {
@@ -722,12 +739,12 @@
 
       {
         on = [ "<space>" "1" ];
-        run = "cd /run/media/meow/66d7f84b-92ba-41dc-8847-b486ec0c3817";
+        run = "cd /run/media/meow/";
         desc = "drive #1";
       }
 
 
-# Tabs
+      /* tabs */
       {
         on = ",";
         run = "tab_create --current";
@@ -812,32 +829,21 @@
         desc = "Swap current tab with next tab";
       }
 
-# Tasks
       {
-        on = "f";
+        on = [ "g" "t" ];
         run = "tasks_show";
         desc = "Show task manager";
       }
 
 
-# Projects
-# { on = [ "p" "s" ]; run = "plugin projects save", desc = "Save current projects"; }
-# { on = [ "p" "l" ]; run = "plugin projects load", desc = "Load project"; }
-# { on = [ "p" "p" ]; run = "plugin projects load_last", desc = "Load last project"; }
-# { on = [ "p" "o" ]; run = "plugin projects delete", desc = "Delete project"; }
-# { on = [ "p" "O" ]; run = "plugin projects delete_all", desc = "Delete all projects"; }
-# { on = [ "p" "m" ]; run = "plugin projects 'merge current'", desc = "Merge current tab to other projects"; }
-
-# Sudo
-# sudo cp/mv
+      /* sudo */
       {
         on = ["S" "l" ];
         run = "plugin sudo -- paste";
         desc = "sudo paste";
       }
 
-# sudo cp/mv --force
-# { on = ["S" "P"]; run = "plugin sudo -- paste --force"; desc = "sudo paste"; }
+      # { on = ["S" "P"]; run = "plugin sudo -- paste --force"; desc = "sudo paste"; }
 
       { # sudo mv
         on = ["S" "s"];

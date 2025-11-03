@@ -69,6 +69,7 @@
 
   ;; TODO convert rust ints to c99 ints
   ;; TODO sg -> String
+  ;; TODO ; -> . (for vim)
   magic (switch
 
     ;; >w< -> ≥w≤
