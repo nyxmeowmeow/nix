@@ -2,11 +2,7 @@
   programs.nixvim = {
     extraConfigLua = /* lua */ ''
 
-
-
       vim.opt.shortmess:append("I")
-
-
 
       local function escape(str)
       -- You need to escape these characters to work correctly
@@ -15,10 +11,10 @@
       end
 
       -- Recommended to use lua template string
-      local en = [[qwfrtyuiopashgdjkczlebnmvsx]]
-      local ru = [[qcfbdjpnkls&oghaeizuwtmvryx]]
-      local en_shift = [[QWFRTYUIOPASDGDJKCZHEBNMVSX]]
-      local ru_shift = [[QCFBDJPNKLS&OGHAEIZUWTMVRYX]]
+      local en       = [[qwfrtuiopahgdjkczlebnmvyxs]]
+      local ru       = [[qcfbdpnklsoghaeizuwtm-ryxj]]
+      local en_shift = [[QWFRTUIOPAHGDJKCZLEBNVYXS]]
+      local ru_shift = [[QCFBDPNKLSOGHAEIZUWTMRYXJ]]
 
       vim.opt.langmap = vim.fn.join({
           -- | `to` should be first     | `from` should be second
