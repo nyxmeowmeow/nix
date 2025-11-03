@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-  # nirius
-  zenity
+    # nirius
+    zenity
     blender
 
 
@@ -23,13 +23,9 @@
     rofi
     # tridactyl-native
 
-    tldr
-
     zoom-us
 
-    yt-dlp
     fuzzel
-
 
     cryptsetup
 
@@ -71,14 +67,13 @@
     fastfetch
     # zellij
     # expect
+    yt-dlp
+    tldr
 
     /* audio */
     playerctl
 
     /* file */
-    udiskie
-    udisks2
-    gvfs
     # zenity
     # xdg-desktop-portal-termfilechooser
     xdg-utils
@@ -87,24 +82,14 @@
     wl-clipboard
     dbus
     dconf
-    # polkit_gnome
     libevdev
     # qemu_kvm
     hyprpicker
-    swww
     # quickshell
 
-    dunst
-    libnotify
+    # libnotify
 
     xwayland
-
-    /* wine */
-    wine
-    wine64
-    bottles
-    # lutris
-    mono
 
     # (discord.override {
     #  withMoonlight = true;

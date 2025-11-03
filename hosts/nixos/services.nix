@@ -11,26 +11,12 @@
       displayManager.lightdm.enable = false;
     };
 
-    udisks2.enable = true;
-    gvfs.enable = true;
 
     dbus.enable = true;
 
     printing.enable = false; # cups
-
-
-
-
   };
 
-  systemd.services = {
-    udiskie.enable = true;
-
-    mpd.environment = {
-      # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
-      XDG_RUNTIME_DIR = "/run/user/1000"; # only worked when i manually specified 1000
-    };
-  };
 
 
   systemd.user.services = {

@@ -1,9 +1,13 @@
 { pkgs, ... }: {
   imports = [
-  ./settings.nix
-  ./keymap.nix
-  ./theme.nix
+    ./settings.nix
+    ./keymap.nix
+    ./theme.nix
   ];
+
+  # home.packages = with pkgs; [
+  #   xdg-desktop-portal-termfilechooser
+  # ];
 
   programs.yazi = {
     enable = true;
@@ -30,13 +34,13 @@
     };
 
     initLua = /* lua */ ''
-      -- require("folder-rules"):setup()
-      require("no-status"):setup()
-      -- require("mime-preview"):setup()
-      -- require("simple-tag"):setup()
-      require("git"):setup()
-      require("starship"):setup()
-      require("gvfs"):setup()
+-- require("folder-rules"):setup()
+require("no-status"):setup()
+-- require("mime-preview"):setup()
+-- require("simple-tag"):setup()
+require("git"):setup()
+require("starship"):setup()
+require("gvfs"):setup()
 
 require("dupes"):setup {
 	save_op = false, -- dont save results to file
