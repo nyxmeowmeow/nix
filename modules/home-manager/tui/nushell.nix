@@ -224,7 +224,8 @@ in {
       lsl = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all
       # ld = "eza -lhD --icons=auto"; # long list dirs
       # lt = "eza --icons=auto --tree"; # list folder as tree
-      ff = "fastfetch --logo nixos_small --logo-color-2 magenta";
+      # ff = "fastfetch --logo nixos_small --logo-color-2 magenta";
+      meowfetch = "fastfetch -l ${flake_dir}/stuff/kitty_yarn";
 
 
 

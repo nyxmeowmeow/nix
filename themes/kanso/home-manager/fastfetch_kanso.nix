@@ -68,7 +68,7 @@
           type = "command";
           key = "  term:";
           keyColor = "blue";
-          text = "echo '\"foot\",'";
+          text = "echo '\"ghostty\",'";
         }
 # {
 #   type = "shell";
