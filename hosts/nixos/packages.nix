@@ -87,7 +87,6 @@
     hyprpicker
     # quickshell
 
-    # libnotify
 
     xwayland
 

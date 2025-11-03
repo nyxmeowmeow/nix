@@ -26,6 +26,7 @@
     ../../modules/nixos/options.nix
     ../../modules/nixos/shared.nix
     ../../modules/nixos/steam.nix
+    ../../modules/nixos/disk.nix
     ../../modules/nixos/stylix.nix
     ../../modules/nixos/wine.nix
     ../../modules/nixos/ydotool.nix
