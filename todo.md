@@ -1,3 +1,5 @@
+- use lib.hasPrefix instead of removing _zen
+- tesseract ocr keybind
 - make yazi text preview syntax highlighting match nvim
 - do i need xwayland on laptop
 - image to text screenshot thing

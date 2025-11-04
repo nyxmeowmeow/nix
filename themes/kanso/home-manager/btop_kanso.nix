@@ -4,7 +4,8 @@ let
   col = import ../colors.nix;
 in
 {
-  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen" || theme == "kantsi") {
+  # config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen" || theme == "kantsi") {
+  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
 
   home.file.".config/btop/themes/btop.theme".text = /* ini */ ''
 
