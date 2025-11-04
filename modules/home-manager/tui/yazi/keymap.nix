@@ -476,79 +476,79 @@
       {
         on = [ ";" "m" ];
         run = [ "sort mtime --reverse=no" "linemode mtime" ];
-        desc = "sort by modified time";
+        desc = "mtime";
       }
 
       {
         on = [ ";" "M" ];
         run = [ "sort mtime --reverse" "linemode mtime" ];
-        desc = "Sort by modified time (reverse)";
+        desc = "mtime (rev)";
       }
 
       {
         on = [ ";" "b" ];
         run = [ "sort btime --reverse=no" "linemode btime" ];
-        desc = "Sort by birth time";
+        desc = "btime";
       }
 
       {
         on = [ ";" "B" ];
         run = [ "sort btime --reverse" "linemode btime" ];
-        desc = "Sort by birth time (reverse)";
+        desc = "btime (rev)";
       }
 
       {
         on = [ ";" "v" ];
         run = "sort extension --reverse=no";
-        desc = "Sort by extension";
+        desc = "extension";
       }
 
       {
         on = [ ";" "V" ];
         run = "sort extension --reverse";
-        desc = "Sort by extension (reverse)";
+        desc = "extension (rev)";
       }
 
       {
         on = [ ";" "j" ];
         run = "sort alphabetical --reverse=no";
-        desc = "Sort alphabetically";
+        desc = "alphabetical";
       }
 
       {
         on = [ ";" "J" ];
         run = "sort alphabetical --reverse";
-        desc = "Sort alphabetically (reverse)";
+        desc = "alphabetical (rev)";
       }
 
       {
         on = [ ";" "n" ];
         run = "sort natural --reverse=no";
-        desc = "Sort naturally";
+        desc = "natural/none";
       }
 
       {
         on = [ ";" "N" ];
         run = "sort natural --reverse";
-        desc = "Sort naturally (reverse)";
+        desc = "natural (rev)";
       }
 
       {
         on = [ ";" "s" ];
         run = [ "sort size --reverse=no" "linemode size" ];
-        desc = "Sort by size";
+        desc = "size";
       }
 
       {
         on = [ ";" "S" ];
         run = [ "sort size --reverse" "linemode size" ];
-        desc = "Sort by size (reverse)";
+        desc = "size (rev)";
       }
 
       {
         on = [ ";" "r" ];
         run = "sort random --reverse=no";
-        desc = "Sort randomly";
+        desc = "random";
       }
 
       /* goto */
