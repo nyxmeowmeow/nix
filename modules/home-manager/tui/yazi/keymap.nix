@@ -12,11 +12,11 @@
         run = "plugin dupes interactive";
       }
 
-      # {
-      #   on = [ "g" "<Enter>" ];
-      #   run = "plugin file-actions -- --around ";
-      #   desc = "perform action on selected files";
-      # }
+      {
+        on = [ "g" "<Space>" ];
+        run = "plugin file-actions -- --around ";
+        desc = "perform action on selected files";
+      }
       {
         on = [ "g" "<Enter>" ];
         run = "plugin open-with-cmd --args=block";
