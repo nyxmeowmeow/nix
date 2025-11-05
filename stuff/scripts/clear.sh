@@ -1,6 +1,7 @@
 #!/usr/bin/env dash
 
 clipse -clear &
+wl-copy --clear &
 rm ~/.config/clipse/tmp_files/* &
 rm -r ~/.cache/thumbnails/* &
 rm /tmp/yazi-1000/* &

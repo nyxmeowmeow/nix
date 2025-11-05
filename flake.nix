@@ -43,6 +43,8 @@
       inputs.elephant.follows = "elephant";
     };
 
+    ytsub.url = "github:/sarowish/ytsub";
+
     # ags.url = "github:aylur/ags";
     # meow-shell.url = "github:nyxmeowmeow/shell";
   };

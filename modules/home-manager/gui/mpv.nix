@@ -11,6 +11,10 @@
       keep-open = true;
     };
 
+    scripts = with pkgs.mpvScripts; [
+      uosc
+    ];
+
     scriptOpts = {
       uosc = {
 
@@ -37,8 +41,8 @@
         progress_line_width = 20;
 
 
-
-        controls = "menu,gap,subtitles,<has_many_audio>audio,<has_many_video>video,<has_many_edition>editions,<stream>stream-quality,gap,space,speed,space,shuffle,loop-playlist,loop-file,gap,prev,items,next,gap,fullscreen";
+        # controls = "menu,gap,subtitles,<has_many_audio>audio,<has_many_video>video,<has_many_edition>editions,<stream>stream-quality,gap,space,speed,space,shuffle,loop-playlist,loop-file,gap,prev,items,next,gap,fullscreen";
+        controls = "menu,gap,<has_many_audio>audio,<has_many_video>video,<has_many_edition>editions,<stream>stream-quality,gap,space,speed,space,shuffle,loop-playlist,loop-file,gap,prev,items,next";
         controls_size = 32;
         controls_margin = 8;
         controls_spacing = 2;
@@ -210,9 +214,6 @@
         # osd-font, osd-playlist-entry, slang
       };
     };
-    scripts = [
-      pkgs.mpvScripts.uosc
-    ];
   };
 
   # cant customise keybinds without changing the .lua file
