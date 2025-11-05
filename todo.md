@@ -1,3 +1,5 @@
+- nord theme
+
 - use lib.hasPrefix instead of removing _zen
 - tesseract ocr keybind
 - make yazi text preview syntax highlighting match nvim
