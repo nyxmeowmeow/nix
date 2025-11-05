@@ -26,10 +26,11 @@
         };
       };
 
-      # iconTheme = {
-      #   package = pkgs.gnome.adwaita-icon-theme;
-      #   name = "Tela-circle-dracula";
-      # };
+      iconTheme = {
+        # package = pkgs.gnome.adwaita-icon-theme;
+        package = pkgs.fluent-icon-theme;
+        name = "Tela-circle-dracula";
+      };
 
       font = {
         name = config.stylix.fonts.monospace.name;
