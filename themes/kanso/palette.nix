@@ -3,7 +3,7 @@
   config,
   ...
 }: {
-  config = lib.mkIf (config.theme == "kanso_mist" || config.theme == "kanso_ink" || config.theme == "kanso_zen") {
+  config = lib.mkIf (lib.hasPrefix "kanso" config.theme) {
     config.palette = {
       accent = "#7fb4ca";
       bg = "#090e13";

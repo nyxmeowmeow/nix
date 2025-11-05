@@ -2,7 +2,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (theme == "kanso_zen") {
+  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
     programs.kitty.settings = {
       background_opacity = 0.8;
 

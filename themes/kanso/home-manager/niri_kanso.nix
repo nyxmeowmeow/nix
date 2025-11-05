@@ -2,7 +2,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen" || theme == "kantsi") {
+  config = lib.mkIf (lib.hasPrefix "kan" theme) {
 
     programs.niri.settings.layout = {
 

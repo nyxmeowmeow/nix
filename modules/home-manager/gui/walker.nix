@@ -12,6 +12,7 @@
     runAsService = true;
     config = {
       theme = "meow";
+
       # placeholders."default" = { input = "Search"; list = "Example"; };
       # providers.prefixes = [
       # {provider = "websearch"; prefix = "+";}

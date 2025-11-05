@@ -2,7 +2,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
+  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
 
 #   programs.walker.theme = {
 #     # name = "meow";

@@ -2,7 +2,7 @@
 let
   col = import ../colors.nix;
 in {
-  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
+  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
     programs.mpv.config = {
       background-color = col.zen_bg0;
       osd-back-color = col.zen_bg0;
