@@ -77,6 +77,9 @@
     ;; mkdir
     ((and (key-history m 2) (key-history k 1))) (macro d) break
 
+    ;; Ok(())
+    ((and (key-history lsft 3) (key-history o 2) (key-history k 1))) (macro S-9 S-9 S-0 S-0) break
+
     ;; leave
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
 
