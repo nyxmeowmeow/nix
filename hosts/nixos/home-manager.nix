@@ -11,7 +11,9 @@
       zen-browser = inputs.zen-browser;
     };
 
+
     users.${username} = {
+      home.stateVersion = "24.11";
       imports = [
         ../../themes/blacchiato/home-manager/default.nix
         ../../themes/everforest/home-manager/default.nix
