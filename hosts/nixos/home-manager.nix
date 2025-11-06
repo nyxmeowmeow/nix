@@ -4,7 +4,7 @@
     useUserPackages = true;
     backupFileExtension = "bak";
     extraSpecialArgs = {
-      inherit username flake_dir inputs;
+      inherit username flake_dir inputs ;
       theme = config.theme;
       host = config.networking.hostName;
       wm = config.wm;

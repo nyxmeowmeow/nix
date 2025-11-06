@@ -1,6 +1,8 @@
 {
   pkgs,
   inputs,
+  config,
+  lib,
   ...
 }:
 {
@@ -31,4 +33,5 @@
   # ];
 
   programs.niri.enable = true;
+    # lib.mkIf (config.wm == "niri") true;
 }

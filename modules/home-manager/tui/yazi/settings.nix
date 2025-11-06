@@ -155,6 +155,12 @@
           }
           ];
 
+          icat = [ {
+            run = "kitten icat \"$@\"";
+            orphan = true;
+            for = "unix";
+          } ];
+
           image = [ {
             run = "swayimg \"$@\"";
             orphan = true;
@@ -400,6 +406,12 @@
             {
               mime = "image/{avif,hei?,jxl,svg+xml}";
               run = "magick";
+            }
+
+            # FIXME
+            {
+              name = "*.dds";
+              run = "icat";
             }
 
             {
