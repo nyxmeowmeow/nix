@@ -5,6 +5,13 @@
       # auto-optimise-store = true; # optimise on every rebuild
       keep-derivations = false;
       keep-outputs = false;
+
+      substituters = [
+        "https://vicinae.cachix.org"
+      ];
+      trusted-public-keys = [
+        "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
+      ];
     };
 
     optimise = {
@@ -15,7 +22,7 @@
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 10d";
+      options = "--delete-older-than 7d";
     };
   };
   environment.systemPackages = with pkgs; [
