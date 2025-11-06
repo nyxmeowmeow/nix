@@ -52,6 +52,7 @@
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop/vesktop.nix
         ../../modules/home-manager/gui/walker.nix
+        ../../modules/home-manager/gui/vicinae.nix
         ../../modules/home-manager/gui/wlr-which-key.nix
         ../../modules/home-manager/gui/zen/zen.nix
         ../../modules/home-manager/services/easyeffects.nix
