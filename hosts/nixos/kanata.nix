@@ -68,7 +68,6 @@
   )
 
   ;; TODO convert rust ints to c99 ints
-  ;; TODO sg -> String
   ;; TODO ; -> . (for vim)
   magic (switch
 
@@ -77,8 +76,12 @@
 
     ;; mkdir
     ((and (key-history m 2) (key-history k 1))) (macro d) break
+
+    ;; leave
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
 
+    ;; sg -> String
+    ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro bspc bspc S-s t r i n g)) break
 
     
     ;; insert current date
