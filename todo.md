@@ -1,5 +1,6 @@
 - nord theme
 
+ytsub
 - yazi simple-tag
 
 - use lib.hasPrefix instead of removing _zen

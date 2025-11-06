@@ -43,7 +43,8 @@
         "Mod+Return".action = toggle-overview;
 
 # "Mod+Space".action = sh "walker --theme min";
-        "Mod+Space".action = spawn "fuzzel";
+        # "Mod+Space".action = spawn "fuzzel";
+        "Mod+Space".action = sh "vicinae vicinae://toggle";
         "Mod+Slash".action = sh "rofi -show window";
 
         "Mod+Z".action = sh "zen -p meow";

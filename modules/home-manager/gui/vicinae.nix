@@ -68,10 +68,9 @@
       } + "/case-converter";
       })
       
-      # FIXME
       # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
       #   inherit pkgs;
-      #   name = "unicode-symbols";
+      #   name = "firefox-symbols";
       #   src = pkgs.fetchFromGitHub {
       #     owner = "nyxmeowmeow";
       #     repo = "vicinae-extensions";
