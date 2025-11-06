@@ -42,6 +42,8 @@
       url = "github:abenz1267/walker";
       inputs.elephant.follows = "elephant";
     };
+    vicinae.url = "github:vicinaehq/vicinae";
+
 
     ytsub.url = "github:/sarowish/ytsub";
 
