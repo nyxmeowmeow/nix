@@ -75,7 +75,10 @@
     ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
 
     ;; mkdir
-    ((and (key-history m 2) (key-history k 1))) (macro d) break
+    ((and (key-history m 2) (key-history k 1))) d break
+
+    ;; ascii
+    ((and (key-history a 4) (key-history s 3) (key-history c 2) (key-history i 1))) i break
 
     ;; Ok(())
     ((and (key-history lsft 3) (key-history o 2) (key-history k 1))) (macro S-9 S-9 S-0 S-0) break
