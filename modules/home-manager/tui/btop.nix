@@ -1,6 +1,7 @@
-{
+{ pkgs, ... }: {
   programs.btop = {
     enable = true;
+    package = pkgs.btop-rocm;
     settings = {
       color_theme = "btop.theme";
       theme_background = false;
@@ -197,4 +198,4 @@
       custom_gpu_name5 = "";
     };
   };
-         }
+}

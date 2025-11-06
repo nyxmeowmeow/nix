@@ -8,7 +8,13 @@ imports = [
 ];
   wayland.windowManager.mango = {
     enable = true;
-    settings = ''
+    settings = /* toml */''
+
+monitorrule=DP-1,0.55,1,tile,0,1,0,0,2560,1440,165
+monitorrule=DP-3,0.55,1,tile,1,1,0,0,2560,1440,75
+
+
+
 # Window effect
 blur=1
 blur_layer=0
@@ -156,7 +162,7 @@ bind=SUPER,space,spawn,fuzzel
 bind=SUPER,t,spawn,foot
 
 # exit
-# bind=SUPER,m,quit
+bind=SUPER,q,quit
 bind=SUPER,o,killclient,
 
 # switch window focus

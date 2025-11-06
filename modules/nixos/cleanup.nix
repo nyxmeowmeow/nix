@@ -4,8 +4,8 @@
     "d /home/${username}/.local/share/Trash - - - 14d"
 
     # discord
-    "d /home/${username}/discord/Cache/Cache_Data - - - 10d"
-    "d /home/${username}/vesktop/sessionData/Cache/Cache_Data - - - 10d"
+    "d /home/${username}/.config/discord/Cache/Cache_Data - - - 10d"
+    "d /home/${username}/.config/vesktop/sessionData/Cache/Cache_Data - - - 10d"
 
     # thumbnails
     "d /home/${username}/.cache/thumbnails - - - 1d"
