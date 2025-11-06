@@ -1,5 +1,7 @@
-{
+{ inputs, ... }: {
   imports = [
+    inputs.nixvim.homeModules.nixvim
+
     ./themes/everforest/hard/hard.nix
     ./themes/everforest/medium/medium.nix
     ./themes/everforest/soft/soft.nix

@@ -22,7 +22,6 @@
         ../../modules/home-manager/desktop.nix
         ../../modules/home-manager/home.nix
 
-        inputs.nixvim.homeModules.nixvim
         ../../modules/home-manager/tui/nixvim/default.nix
 
 
