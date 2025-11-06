@@ -68,9 +68,9 @@ in {
 
       def nr [...msg: string] {
         # sudo nixos-rebuild switch --flake ${flake_dir}#nixos
-        sudo nh os switch -R ~/nix -H ${host}
         cd ~/nix
-        git add .
+        git add -a
+        sudo nh os switch -R ~/nix -H ${host}
         let timestamp = (date now | format date '%d/%m %H:%M:%S')
         let full_msg = if ($msg | is-empty) {
           $timestamp
