@@ -12,12 +12,17 @@
     runAsService = false;
     config = {
       theme = "meow";
+      force_keyboard_focus = true;
+      hide_quick_activation = true;
 
       # placeholders."default" = { input = "Search"; list = "Example"; };
-      # providers.prefixes = [
-      # {provider = "websearch"; prefix = "+";}
-      # {provider = "providerlist"; prefix = "_";}
-      # ];
+      providers.prefixes = [
+      { provider = "websearch"; prefix = "("; }
+      { provider = "clipboard"; prefix = ")"; }
+      { provider = "providerlist"; prefix = "*"; }
+      { provider = "runner"; prefix = "$"; }
+      { provider = "windows"; prefix = "_"; }
+      ];
       # keybinds.quick_activate = ["F1" "F2" "F3"];
     };
 #

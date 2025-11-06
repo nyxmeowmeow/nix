@@ -85,7 +85,7 @@
     libevdev
     # qemu_kvm
     hyprpicker
-    # quickshell
+    quickshell
 
 
     xwayland
