@@ -13,10 +13,10 @@
     stylix.url = "github:danth/stylix";
 
     niri.url = "github:sodiboo/niri-flake";
-    # mango = {
-    #   url = "github:DreamMaoMao/mango";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    mango = {
+      url = "github:DreamMaoMao/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     zen-browser = {
