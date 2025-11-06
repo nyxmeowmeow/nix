@@ -1,4 +1,9 @@
-{ lib, theme, username, ... }: {
+{
+  lib,
+  theme,
+  username,
+  ...
+}: {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
 
     programs.fastfetch = {

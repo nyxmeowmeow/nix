@@ -1,4 +1,9 @@
-{ lib, theme, pkgs, ... }: {
+{
+  lib,
+  theme,
+  pkgs,
+  ...
+}: {
   config = lib.mkIf (theme == "kantsi") {
 
     gtk = {

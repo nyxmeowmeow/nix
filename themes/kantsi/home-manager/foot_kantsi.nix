@@ -1,4 +1,8 @@
-{ lib, theme, ... }: {
+{
+  lib,
+  theme,
+  ...
+}: {
   config = lib.mkIf (theme == "kantsi") {
 
     programs.foot = {

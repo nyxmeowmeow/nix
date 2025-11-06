@@ -1,4 +1,8 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  ...
+}: {
+# TODO limine
   boot = {
     loader = {
       timeout = 2;
@@ -7,7 +11,7 @@
       efi.canTouchEfiVariables = true;
     };
 
-    kernelPackages = pkgs.linuxPackages_xanmod_latest; # pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_xanmod_latest;
     kernelParams = [
       "video=DP-1:2560x1440@165"
       "video=DP-3:2560x1440@75"

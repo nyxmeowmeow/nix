@@ -1,5 +1,11 @@
-{ lib, theme, pkgs, config, ... }: {
-  config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen") {
+{
+  lib,
+  theme,
+  pkgs,
+  config,
+  ...
+}: {
+  config = lib.mkIf (lib.hasPrefix "kanso" theme) {
 
     gtk = {
       enable = true;

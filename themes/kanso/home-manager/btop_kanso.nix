@@ -1,9 +1,12 @@
 # TODO
-{ lib, theme, ... }:
+{
+  lib,
+  theme,
+  ...
+}:
 let
   col = import ../colors.nix;
-in
-{
+in {
   # config = lib.mkIf (theme == "kanso_mist" || theme == "kanso_ink" || theme == "kanso_zen" || theme == "kantsi") {
   config = lib.mkIf (lib.hasPrefix "kanso" theme) {
 

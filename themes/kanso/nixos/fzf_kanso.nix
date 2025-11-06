@@ -1,4 +1,9 @@
-{ lib, config, theme, ... }:
+{
+  lib,
+  config,
+  theme,
+  ...
+}:
 let
   col = import ../colors.nix;
 in {
