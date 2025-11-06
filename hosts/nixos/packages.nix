@@ -14,6 +14,8 @@
 
 
     # reaper # borken
+    reaper-reapack-extension
+
     # gtk3
     # zrythm # borken
     # lmms # borken
