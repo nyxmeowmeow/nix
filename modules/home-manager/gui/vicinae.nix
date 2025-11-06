@@ -92,10 +92,16 @@ extensions = [
   #         + "/extensions/balatro-compendium";
   #
   # })
+  # (config.lib.vicinae.mkRayCastExtension {
+  # name = "balatro-compendium";
+  # sha256 = "sha256-FUunOa2cS4MXZTrQ9CxJA64bc7C4VLQRbrJ3p7mCDOU=";
+  # rev = "f4b1ca09af17e754f02437a3f6145f45327892bf";
+  # })
+
   (config.lib.vicinae.mkRayCastExtension {
-  name = "gif-search";
-  sha256 = "sha256-G7il8T1L+P/2mXWJsb68n4BCbVKcrrtK8GnBNxzt73Q=";
-  rev = "4d417c2dfd86a5b2bea202d4a7b48d8eb3dbaeb1";
+  name = "oklch-color-converter";
+  sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
+  rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
   })
 ];
   };
