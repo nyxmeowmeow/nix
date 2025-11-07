@@ -1,4 +1,8 @@
-{ inputs, ... }: {
+{
+  inputs,
+  username,
+  ...
+}: {
   home.packages = [
     inputs.ytsub.packages."x86_64-linux".default
   ];
@@ -6,8 +10,8 @@
   home.file.".config/ytsub/config.toml ".text = /* toml */ ''
 # Options
 
-database = "/home/username/.local/share/ytsub/videos.db"
-instances = "/home/username/.config/ytsub/instances"
+database = "/home/${username}/.local/share/ytsub/videos.db"
+instances = "/home/${username}/.config/ytsub/instances"
 tabs = ["videos"] # videos, shorts, streams
 hide_disabled_tabs = true
 api = "local" # invidious, local
@@ -70,7 +74,7 @@ fg = "blue"
 modifiers = "bold"
 # Watched videos
 [watched]
-fg = "DarkGray"
+fg = "Gray"
 # Selected watched video in inactive block
 # Overrides the modifiers of [selected]. If fg and bg are set, they are patched to [selected]
 [selected_watched]
@@ -114,13 +118,13 @@ fg = "Green"
 [key_bindings]
 "1" = "set_mode_subs" # Switch to subscriptions mode
 "2" = "set_mode_latest_videos" # Switch to latest videos mode
-"j down" = "on_down" # Go one line downward
-"k up" = "on_up" # Go one line upward
+"a down" = "on_down" # Go one line downward
+"e up" = "on_up" # Go one line upward
 "h left" = "on_left" # Switch to channels block
-"l right" = "on_right" # Switch to videos block
+"i right" = "on_right" # Switch to videos block
 "g" = "select_first" # Jump to the first line in the list
 "G" = "select_last" # Jump to the last line in the list
-"L" = "next_tab" # Select next video tab
+"I" = "next_tab" # Select next video tab
 "H" = "previous_tab" # Select previous video tab
 "c" = "jump_to_channel" # Jump to the channel of the selected video from latest videos mode
 "t" = "toggle_hide" # Hide/unhide watched videos
@@ -129,16 +133,16 @@ fg = "Green"
 "D" = "delete_video" # Delete the selected video from database
 "/" = "search_forward" # Enter editing mode to make a forward search
 "?" = "search_backward" # Enter editing mode to make a backward search
-"n" = "repeat_last_search" # Search with the latest pattern and direction
-"N" = "repeat_last_search_opposite" # Search with the latest pattern and opposite direction
+"m" = "repeat_last_search" # Search with the latest pattern and direction
+"M" = "repeat_last_search_opposite" # Search with the latest pattern and opposite direction
 "s" = "switch_api" # Switch between the available APIs
-"r" = "refresh_channel" # Refresh videos of the selected channel
+"r f5" = "refresh_channel" # Refresh videos of the selected channel
 "R" = "refresh_channels" # Refresh videos of every channel
-"J" = "load_more_videos" # Load more videos for the selected channel
+"A" = "load_more_videos" # Load more videos for the selected channel
 "F" = "refresh_failed_channels" # Refresh videos of channels which their latest refresh was a failure
 "o" = "open_in_youtube" # Open channel or video Youtube page in browser
 "O" = "open_in_invidious" # Open channel or video Invidious page in browser
-"p" = "play_from_formats" # Play selected video in a video player using stream formats
+"p enter" = "play_from_formats" # Play selected video in a video player using stream formats
 "P" = "play_using_ytdlp" # Play selected video in mpv using yt-dlp
 "f" = "select_formats" # Toggle format selection window
 "m" = "toggle_watched" # Mark/unmark selected video as watched
@@ -147,10 +151,10 @@ fg = "Green"
 "q ctrl-c" = "quit" # Quit application
 
 [key_bindings.help]
-"ctrl-y" = "scroll_up" #general "on_up" binding also applies
-"ctrl-e" = "scroll_down" # general "on_down" binding also applies
-"g" = "go_to_top" # general "select_first" binding also applies
-"G" = "go_to_bottom" # general "select_last" binding also applies
+"ctrl-e" = "scroll_up"
+"ctrl-a" = "scroll_down"
+"g" = "go_to_top"
+"G" = "go_to_bottom"
 "escape" = "abort"
 
 [key_bindings.import]
