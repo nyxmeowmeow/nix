@@ -1,9 +1,9 @@
 #!/usr/bin/env dash
 
-clipse -clear &
+# clipse -clear &
 wl-copy --clear &
 vicinae vicinae://extensions/vicinae/clipboard/clear &
-rm ~/.config/clipse/tmp_files/* &
+# rm ~/.config/clipse/tmp_files/* &
 rm -r ~/.cache/thumbnails/* &
 rm /tmp/yazi-1000/* &
 rm ~/.local/share/recently-used.xbel &

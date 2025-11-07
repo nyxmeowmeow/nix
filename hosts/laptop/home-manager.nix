@@ -29,25 +29,25 @@
 
         # ./hyprland.nix
         ../../modules/home-manager/gui/dunst.nix
-        ../../modules/home-manager/gui/foot.nix
+        ../../modules/home-manager/gui/terminal/foot.nix
         ../../modules/home-manager/gui/niri/niri.nix
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop.nix
         ../../modules/home-manager/gui/zen/zen.nix
         ../../modules/home-manager/tui/bash.nix
         ../../modules/home-manager/tui/btop.nix
-        ../../modules/home-manager/tui/clipse.nix
         ../../modules/home-manager/tui/fzf.nix
         ../../modules/home-manager/tui/git.nix
         ../../modules/home-manager/tui/git.nix
-        ../../modules/home-manager/tui/navi.nix
         ../../modules/home-manager/tui/nh.nix
         ../../modules/home-manager/tui/nushell.nix
         ../../modules/home-manager/tui/starship.nix
         ../../modules/home-manager/tui/yazi/yazi.nix
-        ../../modules/home-manager/tui/zellij/default.nix
         ../../modules/home-manager/tui/zoxide.nix
         ./niri.nix
+        # ../../modules/home-manager/tui/clipse.nix
+        # ../../modules/home-manager/tui/navi.nix
+        # ../../modules/home-manager/tui/zellij/default.nix
 #        ../../modules/home-manager/gui/emacs/emacs.nix
 #        ../../modules/home-manager/gui/mpv.nix
 #        ../../modules/home-manager/gui/obs.nix

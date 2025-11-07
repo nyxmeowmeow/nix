@@ -6,7 +6,7 @@
 }:
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
-  col = import ../../../themes/${theme_trimmed}/colors.nix;
+  col = import ../../../../themes/${theme_trimmed}/colors.nix;
 in {
   programs.ghostty = {
     enable = true;
@@ -67,5 +67,5 @@ in {
           custom-shader = "cursor_smear.glsl";
     };
   };
-  home.file.".config/ghostty/cursor_smear.glsl".source = ../../../stuff/cursor_smear.glsl;
+  home.file.".config/ghostty/cursor_smear.glsl".source = ../../../../stuff/cursor_smear.glsl;
 }

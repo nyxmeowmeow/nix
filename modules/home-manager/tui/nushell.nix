@@ -8,7 +8,7 @@ let
   wm_launch_command =
     if (wm == "hyprland") then "Hyprland"
     else if (wm == "niri") then "niri-session"
-    else "echo config.wm is set incorrectly";
+    else "echo 'cannot launch wm: config.wm is set incorrectly'";
 in {
   programs.nushell = {
     enable = true;
@@ -123,20 +123,20 @@ in {
       }
 
       # copy path
-      def jj [] {
+      def yj [] {
         let path = pwd | str trim | wl-copy
         echo $"copied (pwd)"
       }
 
       # copy file path
-      def jf [...msg: string] {
+      def yf [...msg: string] {
         realpath ...$msg | str trim | wl-copy
         let path = realpath ...$msg
         echo $"copied ($path)"
       }
 
       # copy pwd relative to git root
-      def jg [] {
+      def yg [] {
         let root = (git rev-parse --show-toplevel | str trim)
         let rel = (realpath . | path relative-to $root)
         $rel | wl-copy

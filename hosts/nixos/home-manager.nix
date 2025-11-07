@@ -38,9 +38,9 @@
         ../../modules/home-manager/gui/dunst.nix
         ../../modules/home-manager/gui/emacs/emacs.nix
         ../../modules/home-manager/gui/firefox/firefox.nix
-        ../../modules/home-manager/gui/foot.nix
-        ../../modules/home-manager/gui/ghostty.nix
-        ../../modules/home-manager/gui/kitty.nix
+        ../../modules/home-manager/gui/terminal/foot.nix
+        ../../modules/home-manager/gui/terminal/ghostty.nix
+        ../../modules/home-manager/gui/terminal/kitty.nix
         ../../modules/home-manager/gui/mango/mango.nix
         ../../modules/home-manager/gui/media/mpv.nix
         ../../modules/home-manager/gui/media/ytsub.nix
