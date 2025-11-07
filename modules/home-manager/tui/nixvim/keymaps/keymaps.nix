@@ -241,13 +241,13 @@
 
     { # insert line below
       key = "<C-k>";
-      action = "o<esc>";
+      action = "o<esc>k";
       mode = "n";
     }
 
     { # insert line above
       key = "<C-S-k>";
-      action = "O<esc>";
+      action = "O<esc>j";
       mode = "n";
     }
 

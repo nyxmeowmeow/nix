@@ -17,8 +17,8 @@
       # builtins.acompressor
       # eisa01.simplebookmark
       # eisa01.simplehistory
-      # quality-menu
-      # sponsorblock
+      quality-menu
+      sponsorblock
       # sponsorblock-minimal
       # thumbfast
       # thumbnail
@@ -226,5 +226,9 @@
   };
 
   # cant customise keybinds without changing the .lua file
-  home.file.".config/mpv/scripts/webm.lua".source = ../../../../stuff/webm.lua;
+  home.file.".config/mpv/scripts/webm.lua".source =
+    ../../../../stuff/webm.lua;
+
+  home.file.".config/mpv/scripts/auto-save-state.lua".source =
+    ../../../../stuff/auto-save-state.lua;
 }
