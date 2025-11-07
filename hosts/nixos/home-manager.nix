@@ -42,12 +42,13 @@
         ../../modules/home-manager/gui/ghostty.nix
         ../../modules/home-manager/gui/kitty.nix
         ../../modules/home-manager/gui/mango/mango.nix
-        ../../modules/home-manager/gui/mpv.nix
+        ../../modules/home-manager/gui/media/mpv.nix
+        ../../modules/home-manager/gui/media/ytsub.nix
         ../../modules/home-manager/gui/niri/niri.nix
-        ../../modules/home-manager/gui/obs.nix
+        ../../modules/home-manager/gui/media/obs.nix
         ../../modules/home-manager/gui/rofi.nix
         ../../modules/home-manager/gui/shell.nix
-        ../../modules/home-manager/gui/swayimg.nix
+        ../../modules/home-manager/gui/media/swayimg.nix
         ../../modules/home-manager/gui/textfox.nix
         ../../modules/home-manager/gui/tofi.nix
         ../../modules/home-manager/gui/vesktop/vesktop.nix

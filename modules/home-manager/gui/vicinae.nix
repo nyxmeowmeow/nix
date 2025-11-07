@@ -13,6 +13,7 @@ let
   nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
 in {
 
+    # install extensions from raycast
     lib.vicinae.mkRayCastExtension = (
       {
         name,
@@ -43,50 +44,50 @@ in {
       })
     );
 
-
-
   imports = [
     inputs.vicinae.homeManagerModules.default
   ];
+
   services.vicinae = {
     enable = true;
     autoStart = true;
-    settings = {
-      faviconService = "twenty"; # twenty | google | none
-      font = {
-        normal = config.stylix.fonts.monospace.name;
-        size = 12;
-      };
-      popToRootOnClose = false;
-      rootSearch.searchFiles = false;
-      theme.name = "meow";
-      themes = {
-        meow = {
-          version = "1.0.0";
-          appearance = "dark";
-          icon = nix-icon;
-          name = "meow";
-          description = "default nix theme";
-          palette = {
-            background = col.bg;
-            foreground = col.fg;
-            blue = col.blue;
-            green = col.green;
-            magenta = col.pink;
-            orange = col.orange;
-            purple = col.purple;
-            red = col.red;
-            yellow = col.yellow;
-            cyan = col.cyan;
-          };
-        };
-      };
-      window = {
-        csd = false;
-        opacity = 0.80;
-        rounding = rounding;
-      };
-    };
+    # FIXME
+    # settings = {
+    #   faviconService = "twenty"; # twenty | google | none
+    #   font = {
+    #     normal = config.stylix.fonts.monospace.name;
+    #     size = 12;
+    #   };
+    #   popToRootOnClose = false;
+    #   rootSearch.searchFiles = false;
+    #   theme.name = "meow";
+    #   themes = {
+    #     meow = {
+    #       version = "1.0.0";
+    #       appearance = "dark";
+    #       icon = nix-icon;
+    #       name = "meow";
+    #       description = "default nix theme";
+    #       palette = {
+    #         background = col.bg;
+    #         foreground = col.fg;
+    #         blue = col.blue;
+    #         green = col.green;
+    #         magenta = col.pink;
+    #         orange = col.orange;
+    #         purple = col.purple;
+    #         red = col.red;
+    #         yellow = col.yellow;
+    #         cyan = col.cyan;
+    #       };
+    #     };
+    #   };
+    #   window = {
+    #     csd = false;
+    #     opacity = 0.80;
+    #     rounding = rounding;
+    #   };
+    # };
     extensions = [
       # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
       (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
