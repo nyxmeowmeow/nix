@@ -7,7 +7,7 @@
     inputs.ytsub.packages."x86_64-linux".default
   ];
 
-  home.file.".config/ytsub/config.toml ".text = /* toml */ ''
+  home.file.".config/ytsub/config.toml".text = /* toml */ ''
 # Options
 
 database = "/home/${username}/.local/share/ytsub/videos.db"
@@ -145,7 +145,7 @@ fg = "Green"
 "p enter" = "play_from_formats" # Play selected video in a video player using stream formats
 "P" = "play_using_ytdlp" # Play selected video in mpv using yt-dlp
 "f" = "select_formats" # Toggle format selection window
-"m" = "toggle_watched" # Mark/unmark selected video as watched
+"w" = "toggle_watched" # Mark/unmark selected video as watched
 "ctrl-h" = "toggle_help" # Toggle help window
 "T" = "toggle_tag" # Toggle tag window
 "q ctrl-c" = "quit" # Quit application
