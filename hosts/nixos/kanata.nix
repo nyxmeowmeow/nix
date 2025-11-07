@@ -364,6 +364,7 @@ f19 lsft
 )
 
 (deflayermap melee
+. j
 f18 tab
 f15 8
 f16 9
@@ -434,7 +435,7 @@ e 5
 i 9
 bspc rpt
 , 9
-. 5
+v 5
 k 1
 g 6
 f15 7
