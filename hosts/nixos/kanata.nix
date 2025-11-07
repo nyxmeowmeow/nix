@@ -36,6 +36,7 @@
 )
 
 (defalias
+
   eqsft (switch
     ((or (key-history + 1) (key-history 1 1))) (macro =) break
     () (tap-hold-press 120 120 = lsft) break
@@ -287,7 +288,6 @@
 
 
 
-
 f15 S--
 f16 S-9
 f17 S-0
@@ -474,6 +474,7 @@ i end
 
 
 (defchordsv2
+  (r spc) rsft 15 all-released (over sup melee)
 
   (f15 a) @cw 16 all-released (over sup melee)
   (t g) caps 16 all-released (over sup melee)

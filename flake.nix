@@ -12,6 +12,7 @@
     nix-gaming.url = "github:fufexan/nix-gaming";
     stylix.url = "github:danth/stylix";
 
+
     niri.url = "github:sodiboo/niri-flake";
     mango = {
       url = "github:DreamMaoMao/mango";
@@ -29,6 +30,7 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     slippi.url = "github:lytedev/slippi-nix";
     # nuhxboard.url = "github:justDeeevin/NuhxBoard";
     pollymc.url = "github:fn2006/PollyMC";

@@ -672,6 +672,12 @@
       }
 
       {
+        on = [ "<Space>" "n" "y" ];
+        run = "cd ${flake_dir}/modules/home-manager/tui/yazi";
+        desc = "yazi";
+      }
+
+      {
         on = [ "<Space>" "n" "h" "n" ];
         run = "cd ${flake_dir}/hosts/nixos";
         desc = "hosts/nixos";
