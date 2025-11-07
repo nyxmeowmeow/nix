@@ -4,6 +4,7 @@
   bg = "#090E13";
   bgtrans = "#090E13cc";
   gray   = "#5C6066";
+  grey   = "#5C6066";
   purple = "#938AA9";
   black  = "#090E13";
   white  = "#f2f1ef";
