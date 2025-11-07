@@ -125,17 +125,17 @@ fg = "Green"
 [key_bindings]
 "1" = "set_mode_subs" # Switch to subscriptions mode
 "2" = "set_mode_latest_videos" # Switch to latest videos mode
-"a down" = "on_down" # Go one line downward
-"e up" = "on_up" # Go one line upward
-"h left" = "on_left" # Switch to channels block
-"i right" = "on_right" # Switch to videos block
+"a" = "on_down" # Go one line downward
+"e" = "on_up" # Go one line upward
+"h" = "on_left" # Switch to channels block
+"i" = "on_right" # Switch to videos block
 "g" = "select_first" # Jump to the first line in the list
 "G" = "select_last" # Jump to the last line in the list
 "I" = "next_tab" # Select next video tab
 "H" = "previous_tab" # Select previous video tab
 "c" = "jump_to_channel" # Jump to the channel of the selected video from latest videos mode
 "t" = "toggle_hide" # Hide/unhide watched videos
-"i" = "subscribe" # Enter editing mode to enter channel id or url
+"S" = "subscribe" # Enter editing mode to enter channel id or url
 "d" = "unsubscribe" # Open confirmation window to unsubcribe from the selected channel
 "D" = "delete_video" # Delete the selected video from database
 "/" = "search_forward" # Enter editing mode to make a forward search
@@ -155,7 +155,7 @@ fg = "Green"
 "w" = "toggle_watched" # Mark/unmark selected video as watched
 "ctrl-h" = "toggle_help" # Toggle help window
 "T" = "toggle_tag" # Toggle tag window
-"q ctrl-c" = "quit" # Quit application
+"q ctrl-c ctrl-d" = "quit" # Quit application
 
 [key_bindings.help]
 "ctrl-e" = "scroll_up"
