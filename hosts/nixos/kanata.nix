@@ -36,6 +36,10 @@
 )
 
 (defalias
+  r (switch
+    ((and (key-history lsft 2)(key-history 0 1))) (macro S-0) break
+    () r break
+  )
 
   eqsft (switch
     ((or (key-history + 1) (key-history 1 1))) (macro =) break
@@ -284,6 +288,8 @@
 )
 
 (deflayermap (base)
+
+r @r
 
 
 
