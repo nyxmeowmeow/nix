@@ -231,8 +231,9 @@
 
   # cant customise keybinds without changing the .lua file
   home.file.".config/mpv/scripts/webm.lua".source =
-    ../../../../stuff/webm.lua;
+    ../../../../stuff/mpv/webm.lua;
 
   home.file.".config/mpv/scripts/auto-save-state.lua".source =
-    ../../../../stuff/auto-save-state.lua;
+    ../../../../stuff/mpv/auto-save-state.lua;
+
 }

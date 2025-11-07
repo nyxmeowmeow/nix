@@ -1,6 +1,7 @@
 {
   inputs,
   username,
+  flake_dir,
   ...
 }: {
   home.packages = [
@@ -23,7 +24,7 @@ highlight_symbol = "" # Symbol to highlight selected items
 hide_watched = false
 hide_members_only = true
 video_player_for_stream_formats = "mpv"
-mpv_path = "mpv"
+mpv_path = "${flake_dir}/stuff/mpv/umpv"
 vlc_path = "vlc"
 
 # the options below apply only while playing stream formats
