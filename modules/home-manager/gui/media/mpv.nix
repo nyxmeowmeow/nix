@@ -4,6 +4,10 @@
     bindings = {
       h = "seek -5";
       i = "seek 5";
+      __unkeyed-1 = "sponsorblock/set_segment";
+      __unkeyed-2 = "sponsorblock/submit_segment";
+      __unkeyed-3 = "sponsorblock/upvote_segment";
+      __unkeyed-4 = "sponsorblock/downvote_segment";
     };
 
     config = {

@@ -1,74 +1,59 @@
--- Runs write-watch-later-config periodically
+-- Save watch-later conditionally.
+-- a) Always for playlists (so mpv remembers the position within this playlist)
+-- b) Never for files shorter than `min_length` seconds
+-- c) When the current playback position is > `thresh_start` and < `thresh_end`
 
-local options = require 'mp.options'
-local o = { save_interval = 10 }
-options.read_options(o)
 
-local function save()
-	if mp.get_property_bool("resume-playback") then
-		mp.command("write-watch-later-config")
-	end
+local opts = require 'mp.options'
+local o = {
+    min_length = 60,
+    thresh_end = 9999,
+    thresh_start = 10,
+}
+opts.read_options(o)
+
+
+-- Return true when multiple files are being played
+function check_playlist()
+    local pcount, err = mp.get_property_number("playlist-count")
+    if not pcount then
+        print("error: " .. err)
+        pcount = 1
+    end
+
+    return pcount > 1
 end
 
-local function save_on_file_loaded()
-	if mp.get_property_number("playlist-pos") == 0 then
-		return -- no point saving here
-	end
-	save()
+
+-- Return true when the current playback time is not too close to the start or end
+-- Always return false for short files, no matter the playback time
+function check_time()
+    local duration = mp.get_property_number("duration", 9999)
+    if duration < o.min_length then
+        return false
+    end
+
+    local remaining, err = mp.get_property_number("time-remaining")
+    if not remaining then
+        print("error: " .. err)
+        remaining = -math.huge
+    end
+    local pos, err = mp.get_property_number("time-pos")
+    if not pos then
+        print("error: " .. err)
+        pos = -math.huge
+    end
+
+    return pos > o.thresh_start and remaining > o.thresh_end
 end
 
-local function save_if_pause(_, pause)
-	if pause then save() end
-end
 
-local function pause_timer_while_paused(_, pause)
-	if pause then timer:stop() else timer:resume() end
-end
-
--- This function runs on file-loaded, registers two callback functions, and 
--- then they run delete-watch-later-config when appropriate.
-local function delete_watch_later(event)
-	local path = mp.get_property("path")
-
-	-- Temporarily disables save-position-on-quit while eof-reached is true, so 
-	-- state isn't saved at EOF when keep-open=yes
-	local function eof_reached(_, eof)
-		if not can_delete then
-			return
-		elseif eof then
-			print("Deleting state (eof-reached)")
-			mp.commandv("delete-watch-later-config", path)
-			mp.set_property("save-position-on-quit", "no")
-		else
-			mp.set_property("save-position-on-quit", "yes")
-		end
-	end
-
-	local function end_file(event)
-		mp.unregister_event(end_file)
-		mp.unobserve_property(eof_reached)
-
-		if not can_delete then
-			can_delete = true
-		elseif event["reason"] == "eof" or event["reason"] == "stop" then
-			print("Deleting state (end-file "..event["reason"]..")")
-			mp.commandv("delete-watch-later-config", path)
-		end
-	end
-
-	mp.observe_property("eof-reached", "bool", eof_reached)
-	mp.register_event("end-file", end_file)
-end
-
-mp.set_property("save-position-on-quit", "yes")
-
-can_delete = true
-mp.register_script_message("skip-delete-state", function() can_delete = false end)
-
-timer = mp.add_periodic_timer(o.save_interval, save)
-mp.observe_property("pause", "bool", pause_timer_while_paused)
-
-mp.observe_property("pause", "bool", save_if_pause)
-mp.register_event("file-loaded", delete_watch_later)
-mp.register_event("file-loaded", save_on_file_loaded)
-
+mp.add_key_binding("q", "quit-watch-later-conditional",
+    function()
+        --mp.set_property_bool("options/save-position-on-quit", check_playlist() or check_time())
+        if check_playlist() or check_time() then
+            mp.command("quit-watch-later")
+        else
+            mp.command("quit")
+        end
+    end)
