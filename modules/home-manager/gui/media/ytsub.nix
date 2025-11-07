@@ -70,7 +70,7 @@ fg = "Blue"
 modifiers = "bold"
 # Selected item in active block
 [focused]
-fg = "blue"
+fg = "Blue"
 modifiers = "bold"
 # Watched videos
 [watched]
