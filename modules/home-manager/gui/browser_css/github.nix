@@ -22,9 +22,9 @@ in {
 .search-suggestions {
   background: ${col.bgtrans} !important;
 }
-
-.AppHeader-CopilotChat /* hide gross smelly ai button */
-{
+/* hide gross smelly ai buttons */
+.CopilotAgentModeButton-module__buttonGroup--ReOsn,
+.AppHeader-CopilotChat {
   display: none !important;
 }
 '';

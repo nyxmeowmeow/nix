@@ -282,17 +282,12 @@
 )
 
 (deflayermap (base)
-. v
-j .
-v -
-' j
 
 
 
 
 
 
-;; ' -
 f15 S--
 f16 S-9
 f17 S-0

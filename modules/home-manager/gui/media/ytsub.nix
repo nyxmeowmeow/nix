@@ -30,7 +30,7 @@ highlight_symbol = "" # Symbol to highlight selected items
 hide_watched = false
 hide_members_only = true
 video_player_for_stream_formats = "mpv"
-mpv_path = "${flake_dir}/stuff/mpv/umpv"
+mpv_path = "${flake_dir}/stuff/mpv/umpv --loadfile-flag=replace"
 vlc_path = "vlc"
 
 # the options below apply only while playing stream formats
@@ -171,12 +171,12 @@ fg = "Green"
 "enter" = "import" # Import selected channels
 
 [key_bindings.tag]
-"i" = "create_tag"
-"d" = "delete_tag"
+"n" = "create_tag"
+"o" = "delete_tag"
 "r" = "rename_tag"
-"s" = "select_channels" # Pick channels for the tag
+"c" = "select_channels" # Pick channels for the tag
 "space" = "toggle_selection" # Select/Unselect tag
-"a" = "select_all" # Select all tags
+"ctrl-g" = "select_all" # Select all tags
 "z" = "deselect_all" # Deselect all tags
 "escape" = "abort" # Close window
 
