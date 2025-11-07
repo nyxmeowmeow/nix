@@ -2,8 +2,16 @@
   inputs,
   pkgs,
   config,
-    ...
-}: {
+  lib,
+  theme,
+  ...
+}:
+let
+  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
+  col = import ../../../themes/${theme_trimmed}/colors.nix;
+  rounding = if ((import ../../nixos/config.nix).config.rounding) then 10 else 0;
+  nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+in {
 
     lib.vicinae.mkRayCastExtension = (
       {
@@ -47,15 +55,36 @@
       faviconService = "twenty"; # twenty | google | none
       font = {
         normal = config.stylix.fonts.monospace.name;
-        size = 11;
+        size = 12;
       };
       popToRootOnClose = false;
       rootSearch.searchFiles = false;
-      theme.name = "vicinae-dark";
+      theme.name = "meow";
+      themes = {
+        meow = {
+          version = "1.0.0";
+          appearance = "dark";
+          icon = nix-icon;
+          name = "meow";
+          description = "default nix theme";
+          palette = {
+            background = col.bg;
+            foreground = col.fg;
+            blue = col.blue;
+            green = col.green;
+            magenta = col.pink;
+            orange = col.orange;
+            purple = col.purple;
+            red = col.red;
+            yellow = col.yellow;
+            cyan = col.cyan;
+          };
+        };
+      };
       window = {
         csd = false;
         opacity = 0.80;
-        rounding = 10;
+        rounding = rounding;
       };
     };
     extensions = [
