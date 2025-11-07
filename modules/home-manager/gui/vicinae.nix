@@ -43,18 +43,21 @@
   services.vicinae = {
     enable = true;
     autoStart = true;
-    # settings = {
-    #     faviconService = "twenty"; # twenty | google | none
-    #     font.size = 11;
-    #     popToRootOnClose = false;
-    #     rootSearch.searchFiles = false;
-    #     theme.name = "vicinae-dark";
-    #     window = {
-    #       csd = true;
-    #       opacity = 0.95;
-    #       rounding = 10;
-    #     };
-    # };
+    settings = {
+      faviconService = "twenty"; # twenty | google | none
+      font = {
+        normal = config.stylix.fonts.monospace.name;
+        size = 11;
+      };
+      popToRootOnClose = false;
+      rootSearch.searchFiles = false;
+      theme.name = "vicinae-dark";
+      window = {
+        csd = false;
+        opacity = 0.80;
+        rounding = 10;
+      };
+    };
     extensions = [
       # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
       (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
