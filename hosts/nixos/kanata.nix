@@ -492,7 +492,7 @@ i end
   
   (l o    ) S-' 14 all-released (over sup melee)
   (  o u  ) S-1 13 all-released (over sup melee)
-  (    u j) S-6 15 all-released (over sup melee)
+  (    u .) S-6 15 all-released (over sup melee)
 
   (n s    ) S-, 14 all-released (over sup melee)
   (  s t  ) '   13 all-released (over sup melee)
@@ -505,8 +505,8 @@ i end
   (  a e  ) +   14 all-released (over sup melee)
   (    e i) S-. 14 all-released (over sup melee)
 
-  (, .    ) \   20 all-released (over sup melee)
-  (  . k  ) S-\ 20 all-released (over sup melee)
+  (, v    ) \   20 all-released (over sup melee)
+  (  v k  ) S-\ 20 all-released (over sup melee)
   (    k g) S-4 20 all-released (over sup melee)
 
   (f15 f16      ) S-3 20 all-released (over sup melee)
@@ -514,7 +514,7 @@ i end
   (    f16 f17  ) S-/ 15 all-released (over sup melee)
   (        f17 ;) S-2 15 all-released (over sup melee)
 
-  (h spc) \ 15 all-released (over sup melee)
+  ;; (h spc) \ 15 all-released (over sup melee)
 
 )
 
