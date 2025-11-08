@@ -97,7 +97,7 @@
     ;; leave
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
     ;; school
-    ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2) (input-history real bspc 2))) l break
+    ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2))) l break
 
     ;; sg -> String
     ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro bspc bspc S-s t r i n g)) break
