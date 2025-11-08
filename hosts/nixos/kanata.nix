@@ -81,6 +81,12 @@
   ;; TODO ; -> . (for vim)
   magic (switch
 
+    ;; kb -> keyboard
+    ((and (key-history k 2) (key-history b 1))) (multi (release-key b) (macro bspc e y b o a r d)) break
+    ;; sb -> svalboard
+    ((and (key-history s 2) (key-history b 1))) (multi (release-key b) (macro bspc v a l b o a r d)) break
+    ;; let -> let mut
+    ((and (key-history l 4) (key-history e 3) (key-history t 2) (key-history spc 1))) (multi (release-key t) (release-key spc) (macro m u t spc)) break
 
 
     ;; school FIXME
@@ -96,7 +102,7 @@
 
 
     ;; mkdir
-    ((and (key-history m 2) (key-history k 1))) d break
+    ((and (key-history m 2) (key-history k 1))) (macro d i r) break
 
     ;; ascii
     ((and (key-history a 4) (key-history s 3) (key-history c 2) (key-history i 1))) (multi (release-key i) (macro i)) break
