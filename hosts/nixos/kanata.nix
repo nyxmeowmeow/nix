@@ -507,7 +507,7 @@ i end
 
 
 (defchordsv2
-  (r spc) rsft 18 all-released (over sup melee)
+  (r spc) rsft 18 first-release (over sup melee)
 
   (f15 a) @cw 16 all-released (over sup melee)
   (t g) caps 16 all-released (over sup melee)
