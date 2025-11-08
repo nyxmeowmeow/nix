@@ -336,7 +336,7 @@ spc @space
 )
 
 (deflayermap mods
-w (cmd "wlr-which-key -k l ~/.config/wlr-which-key/mpc.yaml")
+w (cmd wlr-which-key -k l ~/.config/wlr-which-key/mpc.yaml)
 
 n lsft
 s lsft

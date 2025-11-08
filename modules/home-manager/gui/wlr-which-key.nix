@@ -53,6 +53,10 @@ menu:
     desc: center column
     cmd: niri msg action center-column
 
+  - key: [ "w", "Mod4+w" ]
+    desc: switch wallpaper
+    cmd: ${flake_dir}/stuff/scripts/bgselector
+
   - key: [ "x", "Mod4+x" ]
     desc: expand column
     cmd: ${flake_dir}/stuff/scripts/clear.sh
