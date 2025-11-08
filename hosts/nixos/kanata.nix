@@ -38,7 +38,7 @@
 (defalias
   r (switch
     ;; key-timing to not interfere with vim
-    ((and (key-history lsft 2) (key-history 0 1) (key-timing 1 less-than 150))) (macro S-0) break
+    ((and (key-history lsft 2) (key-history 0 1) (key-timing 1 less-than 110))) (macro S-0) break
     () r break
   )
 

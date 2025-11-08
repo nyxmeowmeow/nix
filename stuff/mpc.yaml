@@ -36,6 +36,7 @@ menu:
     desc: toggle player
     cmd: playerctl play-pause
 
+    # TODO make unpausing rewind a couple seconds
   - key: [ "c", "Mod4+c" ]
     desc: toggle music
     cmd: mpc -p 6669 toggle
