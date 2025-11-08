@@ -77,6 +77,12 @@
   ;; TODO ; -> . (for vim)
   magic (switch
 
+
+
+    ;; school FIXME
+    ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2))) l break
+
+
     ;; >w< -> ≥w≤
     ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
 
@@ -96,8 +102,7 @@
 
     ;; leave
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
-    ;; school
-    ((and (key-history s 6) (key-history c 5) (key-history h 4) (key-history o 3))) l break
+
 
     ;; sg -> String
     ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro bspc bspc S-s t r i n g)) break
@@ -331,6 +336,8 @@ spc @space
 )
 
 (deflayermap mods
+w (cmd "wlr-which-key -k l ~/.config/wlr-which-key/mpc.yaml")
+
 n lsft
 s lsft
 t lsft
