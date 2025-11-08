@@ -80,6 +80,11 @@
     ;; >w< -> ≥w≤
     ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
 
+
+    ;; ease, because  etc
+    ((and (key-history e 3) (key-history a 2) (key-history s 1))) e break
+
+
     ;; mkdir
     ((and (key-history m 2) (key-history k 1))) d break
 
