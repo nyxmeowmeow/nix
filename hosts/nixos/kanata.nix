@@ -249,16 +249,16 @@
 
 
 ;; sfb
-    ((key-history g 1)) (macro y) break
-    ((key-history i 1)) (macro z) break
-    ((key-history w 1)) (macro g) break ;; wget
-    ((key-history c 1)) (macro y) break
-    ((key-history p 1)) (macro y) break
-    ((key-history y 1)) (macro p) break
-    ((key-history j 1)) (macro i) break
-    ((key-history o 1)) (macro a) break
-    ((key-history a 1)) (macro o) break
-    ((key-history u 1)) (macro e) break
+    ((key-history g 1)) y break
+    ((key-history i 1)) z break
+    ((key-history w 1)) g break ;; wget
+    ((key-history c 1)) y break
+    ((key-history p 1)) y break
+    ((key-history y 1)) p break
+    ((key-history j 1)) i break
+    ((key-history o 1)) a break
+    ((key-history a 1)) o break
+    ((key-history u 1)) e break
 
 
     () rpt break
