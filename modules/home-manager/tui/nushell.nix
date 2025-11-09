@@ -26,14 +26,22 @@ in {
       # }
 
       def rgb [ msg: string ] {
-        pastel format rgb "$msg" | wl-copy
+        pastel format rgb $msg | wl-copy
       }
 
+      # git log
       def gl [] {
         let selection = (git log --oneline | lines | fzf)
         let hash = ($selection | split row " " | get 0)
         wl-copy $hash
       }
+      # git reflog
+      def grl [] {
+        let selection = (git reflog | lines | fzf)
+        let hash = ($selection | split row " " | get 0)
+        wl-copy $hash
+      }
+
 
       def hist [] {
         # let selected = (history | reverse | get command | uniq | fzf)
