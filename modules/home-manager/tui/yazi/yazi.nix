@@ -43,7 +43,6 @@ require("git"):setup()
 require("starship"):setup()
 require("gvfs"):setup()
 
-require("show-all"):setup()
 require("dupes"):setup {
 	save_op = false, -- dont save results to file
 	profiles = {
