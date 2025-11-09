@@ -45,7 +45,7 @@
     inkscape
     # aseprite
     # qview
-    pastel
+    # pastel
     imagemagick
 
     /* video */

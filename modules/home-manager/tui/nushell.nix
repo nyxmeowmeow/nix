@@ -25,10 +25,6 @@ in {
       #   niri msg action consume-or-expel-window-left
       # }
 
-      def rgb [ msg: string ] {
-        pastel format rgb $msg | wl-copy
-      }
-
       # git log
       def gl [] {
         let selection = (git log --oneline | lines | fzf)
