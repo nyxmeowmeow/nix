@@ -3,5 +3,5 @@
   config.wm = "niri";
   config.font = "mononoki";
   config.font_size = "small";
-  config.rounding = true;
+  config.rounding = false;
 }

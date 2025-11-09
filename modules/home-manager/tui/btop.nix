@@ -1,14 +1,15 @@
 { pkgs, ... }: {
   programs.btop = {
     enable = true;
-    package = pkgs.btop-rocm;
+    package = pkgs.btop-rocm; # btop with gpu support
     settings = {
       color_theme = "btop.theme";
       theme_background = false;
       truecolor = true;
       force_tty = false;
-      vim_keys = false;
-      rounded_corners = true;
+      vim_keys = false; # TODO fork and change keybinds?
+      rounded_corners =
+        (import ../../nixos/config.nix).config.rounding;
 
       # "default", "braille", "block", "tty"
       graph_symbol = "braille";
@@ -184,7 +185,7 @@
       log_level = "WARNING";
 
 #* Measure PCIe throughput on NVIDIA cards, may impact performance on certain cards.
-      nvml_measure_pcie_speeds = true;
+      nvml_measure_pcie_speeds = false;
 
 # Horizontally mirror the GPU graph
       gpu_mirror_graph = true;
