@@ -31,6 +31,7 @@
       file-actions = ./plugins/gvfs.yazi;
       pref-by-location = ./plugins/pref-by-location.yazi;
       open-with-cmd = ./plugins/open-with-cmd.yazi;
+      show-all = ./plugins/show-all.yazi;
     };
 
     initLua = /* lua */ ''
@@ -42,6 +43,7 @@ require("git"):setup()
 require("starship"):setup()
 require("gvfs"):setup()
 
+require("show-all"):setup()
 require("dupes"):setup {
 	save_op = false, -- dont save results to file
 	profiles = {
