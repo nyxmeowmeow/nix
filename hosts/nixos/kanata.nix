@@ -128,7 +128,9 @@
     ;; Ok(())
     ((and (key-history o 2) (key-history k 1))) (multi (release-key o) (release-key k) (macro bspc bspc S-o k S-9 S-9 S-0 S-0)) break
     ;; Some(
-    ((and (key-history s 2) (key-history m 1))) (macro bspc bspc S-s o m e S-9) break
+    ((and (key-history s 2) (key-history m 1))) (multi (release-key s) (release-key m) (macro bspc bspc S-s o m e S-9)) break
+    ;; None
+    ((and (key-history n 2) (key-history o 1))) (multi (release-key n) (release-key o) (macro bspc bspc S-n o n e)) break
     ;; shift after ::
     ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
     ;; shift after <
