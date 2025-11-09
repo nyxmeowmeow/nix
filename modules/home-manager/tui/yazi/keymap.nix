@@ -13,15 +13,6 @@
       }
 
       {
-        on = [
-          "g"
-          "v"
-        ];
-        run = "plugin show-all";
-        desc = "view all files recursively";
-      }
-
-      {
         on = [ "g" "<Space>" ];
         run = "plugin file-actions -- --around ";
         desc = "perform action on selected files";

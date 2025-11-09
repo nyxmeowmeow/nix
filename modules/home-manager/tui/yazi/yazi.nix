@@ -31,7 +31,6 @@
       file-actions = ./plugins/gvfs.yazi;
       pref-by-location = ./plugins/pref-by-location.yazi;
       open-with-cmd = ./plugins/open-with-cmd.yazi;
-      show-all = ./plugins/show-all.yazi;
     };
 
     initLua = /* lua */ ''
