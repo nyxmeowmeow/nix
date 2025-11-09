@@ -85,85 +85,118 @@
     ((and (key-history k 2) (key-history b 1))) (multi (release-key b) (macro bspc e y b o a r d)) break
     ;; sb -> svalboard
     ((and (key-history s 2) (key-history b 1))) (multi (release-key b) (macro bspc v a l b o a r d)) break
-    ;; let -> let mut
-    ((and (key-history l 4) (key-history e 3) (key-history t 2) (key-history spc 1))) (multi (release-key t) (release-key spc) (macro m u t spc)) break
-
-
-    ;; school FIXME
-    ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2))) l break
-
-
-    ;; >w< -> ≥w≤
-    ((and (key-history . 3) (key-history w 2) (key-history , 1))) (multi (macro bspc bspc bspc) (unicode ≥) w (unicode ≤)) break
-
-
-    ;; ease, increase  etc
-    ((and (key-history e 3) (key-history a 2) (key-history s 1))) e break
-
-
+    ;; linux
+    ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) (macro x) break
+    ;; yazi
+    ((and (key-history y 3) (key-history a 2) (key-history z 1))) (macro i) break
     ;; mkdir
     ((and (key-history m 2) (key-history k 1))) (macro d i r) break
-
     ;; ascii
     ((and (key-history a 4) (key-history s 3) (key-history c 2) (key-history i 1))) (multi (release-key i) (macro i)) break
+    ;; size
+    ((and (key-history s 2) (key-history z 1))) (multi (release-key s) (release-key z) (macro bspc i z e)) break
 
-    ;; Ok(())
-    ((and (key-history lsft 3) (key-history o 2) (key-history k 1))) (macro S-9 S-9 S-0 S-0) break
 
+    ;;; MONKEYTYPE
+    ;; school FIXME
+    ((and (key-history s 5) (key-history c 4) (key-history h 3) (key-history o 2))) l break
     ;; leave
     ((and (key-history l 4) (key-history e 3) (key-history a 2) (key-history v 1))) (macro e) break
-
-
-    ;; sg -> String
-    ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro bspc bspc S-s t r i n g)) break
-
-    ;; date  FIXME
-    ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date +'%F %R' | sed 's/./& /g' | sed 's/:/S-;/g' | sed 's/\\(.\\{20\\}\\)\\(.*\\)/\\(\\1 spc \\2\\)/'") break
-    ;; insert current date
-    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date") break
-    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (macro bspc bspc bspc bspc (cmd-output-keys date)) break
-
-    ((and (key-history e 3) (key-history n 2) (key-history l 1))) (multi (release-key e) (release-key n) (release-key l) (macro bspc a b l e spc = spc t r u e ; esc)) break
-
+    ;; because
+    ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
+    ;; ease, increase  etc
+    ((and (key-history e 3) (key-history a 2) (key-history s 1))) e break
+    ;; problem
     ((and (key-history p 6) (key-history r 5) (key-history o 4) (key-history b 3) (key-history l 2) (key-history e 1))) (macro m) break
-
-    ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) (macro x) break
-
-
-
-
-    ((and (key-history y 3) (key-history a 2) (key-history z 1))) (macro i) break
-
-
-    ((input-history real lsft 2)) (macro lctl ent) break
-
-    ((key-history 3 1)) (macro S-1) break
-
-
+    ;; use
+    ((and (key-history u 2) (key-history s 1))) (macro e) break
+    ;; also
     ((and (key-history a 3) (key-history l 2) (key-history s 1))) (macro o) break
+    ;; state
     ((and (key-history s 3) (key-history t 2) (key-history a 1))) (macro t) break
+    ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
+    ((and(key-history e 2) (key-history y 1))) (multi (release-key e) (macro e)) break
+    ((and(key-history e 2) (key-history v 1))) (multi (release-key e) (macro e)) break
+    ;; system
+    ((and(key-history s 2) (key-history y 1))) (multi (release-key s) (macro s)) break
 
+
+
+
+
+    ;;; CODE
+    ;; Ok(())
+    ((and (key-history o 2) (key-history k 1))) (multi (release-key o) (release-key k) (macro bspc bspc S-o k S-9 S-9 S-0 S-0)) break
+    ;; Some(
+    ((and (key-history s 2) (key-history m 1))) (macro bspc bspc S-s o m e S-9) break
     ;; shift after ::
     ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
     ;; shift after <
     ((key-history , 1)) (one-shot-press 1000 lsft) break
-
-
-    ((and (key-history s 2) (key-history z 1))) (multi (release-key s) (release-key z) (macro bspc i z e)) break
-
-    ((and (key-history b 4) (key-history e 3) (key-history c 2) (key-history a 1))) (macro u) break
-
-    ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
-
-
-    ((key-history ' 1)) (macro S-0) break
-
+    ;; sg -> String
+    ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro bspc bspc S-s t r i n g)) break
+    ;; #!
+    ((key-history 3 1)) (macro S-1) break
+    ;; nix enable
+    ((and (key-history e 3) (key-history n 2) (key-history l 1))) (multi (release-key e) (release-key n) (release-key l) (macro bspc a b l e spc = spc t r u e ; esc)) break
+    ;; let -> let mut
+    ((and (key-history l 4) (key-history e 3) (key-history t 2) (key-history spc 1))) (multi (release-key t) (release-key spc) (macro m u t spc)) break
     ;; println!("
     ((and (key-history p 3) (key-history l 2) (key-history n 1))) (multi (release-key p) (release-key l) (release-key n) (macro bspc bspc r i n t l n S-1 S-9 S-')) break
     ;; printf("
     ((and (key-history p 2) (key-history f 1))) (multi (release-key p) (release-key f) (macro bspc r i n t f S-9 S-')) break
     ;; format!("
     ((and (key-history f 3) (key-history m 2) (key-history t 1))) (multi (release-key f) (release-key m) (release-key t)(macro bspc bspc o r m a t S-1 S-9 S-')) break
+    ;; NULL
+    ((and (key-history n 2) (key-history l 1))) (multi (release-key n) (release-key l) (macro C-w S-n S-u S-l S-l)) break
+    ;; std
+    ((and (key-history s 2) (key-history t 1))) (macro d) break
+    ;; |&   closures with references
+    ((key-history \ 1)) (macro S-7) break
+    ;; !(   rust macros
+    ((key-history 1 1)) (macro S-9) break
+    ;; >>
+    ((key-history . 1)) (macro S-.) break
+    ;; <=
+    ;; ((key-history , 1)) (macro =) break
+    ;; ];
+    ((key-history ] 1)) (macro ;) break
+    ;; auto ; for {}
+    ((key-history { 1)) (macro S-] ; left left) break
+    ;; ).
+    ((key-history 0 1)) (macro .) break
+    ;; &&
+    ((key-history 7 1)) (macro S-7) break
+    ;; ::
+    ((key-history ; 1)) (macro S-;) break
+    ;; =>
+    ((input-history real lctl 2)) (macro (unmod =) S-.) break
+    ;; ->
+    ((key-history - 1)) (macro S-.) break
+
+
+
+
+
+    ;; ;; date  FIXME
+    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date +'%F %R' | sed 's/./& /g' | sed 's/:/S-;/g' | sed 's/\\(.\\{20\\}\\)\\(.*\\)/\\(\\1 spc \\2\\)/'") break
+    ;; insert current date
+    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (cmd-output-keys bash -c "date") break
+    ;; ((and (key-history d 4) (key-history a 3) (key-history t 2) (key-history e 1))) (macro bspc bspc bspc bspc (cmd-output-keys date)) break
+
+
+
+
+
+    ((input-history real lsft 2)) (macro lctl ent) break
+
+
+
+    ((and (key-history f 2) (key-history l 1))) (multi (release-key f) (release-key l) (macro bspc a l s e)) break
+
+
+    ((key-history ' 1)) (macro S-0) break
+
     
     ;; faster space for shorter words
     ((and (key-history spc 2) (key-history n 1))) (macro spc) break
@@ -173,13 +206,8 @@
     ((and (key-history spc 4) (key-history t 3) (key-history h 2) (key-history e 1))) (macro spc) break
 
 
-    ;; use
-    ((and (key-history u 2) (key-history s 1))) (macro e) break
     
 
-
-    ;; NULL
-    ((and (key-history n 2) (key-history l 1))) (multi (release-key n) (release-key l) (macro C-w S-n S-u S-l S-l)) break
 
 
 
@@ -196,8 +224,6 @@
     ;; query
     ((key-history q 1)) (macro u e r y) break
 
-    ;; std
-    ((and (key-history s 2) (key-history t 1))) (macro d) break
 
     ;; https://
     ((and (key-history h 2) (key-history t 1))) (multi (release-key h) (release-key t) (macro t p s S-; / /)) break
@@ -210,12 +236,6 @@
 
 
 
-;; sfs
-    ;; ((and(key-history e 2) (key-history s 1))) (macro e) break
-    ((and(key-history e 2) (key-history y 1))) (multi (release-key e) (macro e)) break
-    ((and(key-history e 2) (key-history v 1))) (multi (release-key e) (macro e)) break
-    ;; sys
-    ((and(key-history s 2) (key-history y 1))) (multi (release-key s) (macro s)) break
 
 
 ;; sfb
@@ -232,32 +252,10 @@
 
 
 
-    ;; |&   closures with references
-    ((key-history \ 1)) (macro S-7) break
-    ;; !(   rust macros
-    ((key-history 1 1)) (macro S-9) break
-    ;; >>
-    ((key-history . 1)) (macro S-.) break
-    ;; <=
-    ;; ((key-history , 1)) (macro =) break
-    ;; ];
-    ((key-history ] 1)) (macro ;) break
-    ;; auto ; for {}
-    ((key-history { 1)) (macro S-] ; left left) break
 
 
 
 
-    ((key-history 0 1)) (macro .) break
-
-    ;; &&
-    ((key-history 7 1)) (macro S-7) break
-    ;; ::
-    ((key-history ; 1)) (macro S-;) break
-    ;; =>
-    ((input-history real lctl 2)) (macro (unmod =) S-.) break
-    ;; ->
-    ((key-history - 1)) (macro S-.) break
 
     ((input-history real f16 2)) (macro S-') break
     ((input-history real f17 2)) (macro S-0) break
