@@ -3,13 +3,22 @@
     keymap = {
       mgr.keymap = [
       {
-        desc = "Run dupes interactive";
         on = [
           "g"
           "d"
           "<Space>"
         ];
         run = "plugin dupes interactive";
+        desc = "Run dupes interactive";
+      }
+
+      {
+        on = [
+          "g"
+          "v"
+        ];
+        run = "plugin show-all";
+        desc = "view all files recursively";
       }
 
       {
