@@ -165,6 +165,7 @@
     ((key-history { 1)) (macro S-] ; left left) break
     ;; ).
     ((key-history 0 1)) (macro .) break
+    ((and (key-history 0 2) (key-history ent 1))) (macro .) break
     ;; &&
     ((key-history 7 1)) (macro S-7) break
     ;; ::
