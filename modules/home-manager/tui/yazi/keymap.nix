@@ -893,6 +893,10 @@
         on = "<Escape>";
         run = "spot close";
       }
+      {
+        on = "q";
+        run = "spot close";
+      }
 
       {
         on = "a";

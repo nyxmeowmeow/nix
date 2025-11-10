@@ -1,3 +1,10 @@
+# TODO `tap-hold-release-tap-keys-release` on t and a
+# acts like sm_td i think? https://github.com/stasmarkin/sm_td
+
+
+
+
+
 # TODO mouse keys
 
 # base:
@@ -14,9 +21,55 @@
 
 {
   pkgs,
+  lib,
   username,
   ...
 }: {
+
+
+  nixpkgs.overlays = [
+    (final: prev: {
+
+kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
+  pname = "kanata";
+  version = "9deeb0f4f00be7401b17cfe531a838322d7a9d2b";
+  cargoLock.lockFile = ../../stuff/kanata/Cargo.lock;
+
+        src = prev.fetchFromGitHub {
+          owner = "jtroo";
+          repo = "kanata";
+          rev = "9deeb0f4f00be7401b17cfe531a838322d7a9d2b";
+          hash = "sha256-7o4zWdLJFM3PKX7L7Cij62HUirUC9Z0zjlvzEguJUUw=";
+        };
+
+      # kanata-with-cmd = prev.buildRustCrate {
+      #   crateName = "kanata-with-cmd";
+      #   version = "9deeb0f4f00be7401b17cfe531a838322d7a9d2b";
+      #
+      #   src = prev.fetchFromGitHub {
+      #     owner = "jtroo";
+      #     repo = "kanata";
+      #     rev = "9deeb0f4f00be7401b17cfe531a838322d7a9d2b";
+      #     hash = "sha256-7o4zWdLJFM3PKX7L7Cij62HUirUC9Z0zjlvzEguJUUw=";
+      #   };
+
+
+        # vendorHash = "sha256-ANMeYiN+66F8EF7dB8+zuQyuT3moSuNxX8+vQ9GH2w4=";
+
+        # meta = {
+        #   description = "Configurable TUI clipboard manager for Unix ";
+        #   homepage = "https://github.com/savedra1/clipse";
+        #   license = lib.licenses.mit;
+        #   maintainers = [ lib.maintainers.savedra1 ];
+        # };
+      };
+    })
+  ];
+
+
+
+
+
   services.kanata = {
     enable = true;
     package = pkgs.kanata-with-cmd;
@@ -316,6 +369,11 @@
 
 r @r
 
+;; TODO not in nixpkgs yet
+;; first list does tap if theyre pressed
+;; second list does tap if theyre pressed and then released
+t (tap-hold-release-tap-keys-release 120 120 t lsft (9 0 ;) ())
+a (tap-hold-release-tap-keys-release 120 120 a rsft (9 0 ;) ())
 
 
 
@@ -348,7 +406,7 @@ spc @space
 )
 
 (deflayermap mods
-w (cmd wlr-which-key -k l /home/${username}/.config/wlr-which-key/mpc.yaml)
+;; w (cmd wlr-which-key -k l /home/${username}/.config/wlr-which-key/mpc.yaml)
 
 n lsft
 s lsft

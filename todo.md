@@ -11,3 +11,5 @@ ytsub
 
 - use limine instead of systemd-boot on next install
 - `rg DP-3` when i get rid of second monitor
+
+- change keybinds for input vim mode in yazi
