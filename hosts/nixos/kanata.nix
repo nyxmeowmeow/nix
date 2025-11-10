@@ -341,7 +341,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; oar trigram
     ((and(key-history a 1) (input-history real lsft 2))) (macro r) break
 
-    ((input-history real lctl 2)) (macro (unmod =) (unmod =)) break
+    ;; ((input-history real lctl 2)) (macro (unmod =) (unmod =)) break
+    ((key-history = 1)) = break
 
     ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
@@ -570,7 +571,7 @@ i end
 
 
 (defchordsv2
-  (r spc) rsft 18 first-release (over sup melee)
+  ;; (r spc) rsft 18 first-release (over sup melee)
 
   (f15 a) @cw 16 all-released (over sup melee)
   (t g) caps 16 all-released (over sup melee)
