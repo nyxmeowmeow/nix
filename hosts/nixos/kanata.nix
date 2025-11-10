@@ -101,7 +101,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   eqsft (switch
     ((or (key-history + 1) (key-history 1 1))) (macro =) break
-    () (tap-hold-press 120 120 = lsft) break
+    ;; () (tap-hold-press 120 120 = lsft) break
+    () = break
   )
 
   space (switch
@@ -385,7 +386,8 @@ f16 S-9
 f17 S-0
 lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
 f19 @magic
-rsft (tap-hold-press 120 120 bspc rctl)
+;; rsft (tap-hold-press 120 120 bspc rctl)
+rsft bspc
 ralt (tap-hold-press 120 120 tab (layer-while-held fn))
 f18 S-;
 lctrl @eqsft
