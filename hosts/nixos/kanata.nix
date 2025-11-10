@@ -372,8 +372,10 @@ r @r
 ;; TODO not in nixpkgs yet
 ;; first list does tap if theyre pressed
 ;; second list does tap if theyre pressed and then released
-t (tap-hold-release-tap-keys-release 120 120 t lsft (9 0 ;) ())
-a (tap-hold-release-tap-keys-release 120 120 a rsft (9 0 ;) ())
+t (tap-hold-release-tap-keys-release 120 120 t lsft (9 0 ; spc) ())
+a (tap-hold-release-tap-keys-release 120 120 a rsft (9 0 ; spc) ())
+c (tap-hold-release-tap-keys-release 120 120 c lctl (9 0 ; spc) ())
+h (tap-hold-release-tap-keys-release 120 120 h rctl (9 0 ; spc) ())
 
 
 
