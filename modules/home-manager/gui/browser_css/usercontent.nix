@@ -5,13 +5,14 @@ let
 in
 {
   home.file.".zen/meow/chrome/userContent.css".text = /* css */ ''
-@import "/home/${username}/.config/usercontent/monkeytype.css";
+@import "/home/${username}/.config/usercontent/codeberg.css";
+@import "/home/${username}/.config/usercontent/duckduckgo.css";
 @import "/home/${username}/.config/usercontent/github.css";
 @import "/home/${username}/.config/usercontent/gitlab.css";
-@import "/home/${username}/.config/usercontent/wikipedia.css";
-@import "/home/${username}/.config/usercontent/duckduckgo.css";
+@import "/home/${username}/.config/usercontent/monkeytype.css";
 @import "/home/${username}/.config/usercontent/nixos.css";
 @import "/home/${username}/.config/usercontent/sourcehut.css";
+@import "/home/${username}/.config/usercontent/wikipedia.css";
 
 *{ scrollbar-width: none; }
 
