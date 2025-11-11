@@ -65,12 +65,10 @@ chapters = true # Get chapter information of videos
 
 # Block titles
 [title]
-fg = "Cyan"
-modifiers = "bold"
+fg = "Blue"
 # Channel, Title, Length and Date headers
 [header]
-fg = "Yellow"
-modifiers = "bold"
+fg = "Cyan"
 # Selected item in inactive block
 [selected]
 fg = "${col.bg}"
@@ -98,7 +96,7 @@ fg = "Green"
 modifiers = "italic"
 # Border of selected block
 [selected_block]
-fg = "Magenta"
+fg = "Blue"
 # Error message
 [error]
 fg = "Red"
@@ -134,7 +132,7 @@ fg = "Green"
 "I" = "next_tab" # Select next video tab
 "H" = "previous_tab" # Select previous video tab
 "c" = "jump_to_channel" # Jump to the channel of the selected video from latest videos mode
-"t" = "toggle_hide" # Hide/unhide watched videos
+"." = "toggle_hide" # Hide/unhide watched videos
 "S" = "subscribe" # Enter editing mode to enter channel id or url
 "d" = "unsubscribe" # Open confirmation window to unsubcribe from the selected channel
 "D" = "delete_video" # Delete the selected video from database
@@ -154,7 +152,7 @@ fg = "Green"
 "f" = "select_formats" # Toggle format selection window
 "w" = "toggle_watched" # Mark/unmark selected video as watched
 "ctrl-h" = "toggle_help" # Toggle help window
-"T" = "toggle_tag" # Toggle tag window
+"t" = "toggle_tag" # Toggle tag window
 "q ctrl-c ctrl-d" = "quit" # Quit application
 
 [key_bindings.help]
