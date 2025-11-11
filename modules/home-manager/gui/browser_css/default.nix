@@ -1,11 +1,12 @@
 {
   imports = [
     ./duckduckgo.nix
-    ./github.nix
-    ./gitlab.nix
+    ./git/codeberg.nix
+    ./git/github.nix
+    ./git/gitlab.nix
+    ./git/sourcehut.nix
     ./monkeytype.nix
     ./nixos.nix
-    ./sourcehut.nix
     ./usercontent.nix
     ./wikipedia.nix
   ];
