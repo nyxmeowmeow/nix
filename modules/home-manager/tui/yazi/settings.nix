@@ -144,7 +144,7 @@
 
           play = [
           {
-            run = "mpv --force-window \"$@\"";
+            run = "mpv --force-window --resume-playback=<yes|no> \"$@\"";
             orphan = true;
             for = "unix";
           }

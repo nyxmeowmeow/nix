@@ -79,6 +79,7 @@ def start_mpv(files: Iterable[str], socket_path: str) -> None:
     mpv_command.extend([
         "--profile=builtin-pseudo-gui",
         f"--input-ipc-server={socket_path}",
+        "--loadfile-flag=replace",
         "--",
     ])
     mpv_command.extend(files)
