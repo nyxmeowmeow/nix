@@ -13,7 +13,13 @@
           insteadOf = "gh:";
         };
         "git@github.com:nyxmeowmeow/" = {
-          insteadOf = "me:";
+          insteadOf = "megh:";
+        };
+        "git@gitlab.com/nyxmeowmeow/" = {
+          insteadOf = "megl:";
+        };
+        "git@codeberg.org/nyxmeowmeow/" = {
+          insteadOf = "mecb:";
         };
       };
     };

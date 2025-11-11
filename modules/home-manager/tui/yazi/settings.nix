@@ -143,7 +143,7 @@
           } ];
 
           play = [
-          {
+          { # FIXME
             run = "mpv --force-window --resume-playback=no \"$@\"";
             orphan = true;
             for = "unix";
