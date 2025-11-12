@@ -891,11 +891,11 @@
       spot.keymap = [
       {
         on = "<Escape>";
-        run = "spot close";
+        run = "close";
       }
       {
         on = "q";
-        run = "spot close";
+        run = "quit";
       }
 
       {
@@ -937,6 +937,66 @@
       }
       ];
 
+      input.keymap = [
+      {
+        on = "t";
+        run = "backward";
+      }
+      {
+        on = "c";
+        run = "forward";
+      }
+      {
+        on = "w";
+        run = "forward --end-of-word";
+      }
+
+      {
+        on = "n";
+        run = "insert";
+      }
+      {
+        on = "s";
+        run = "insert --append";
+      }
+
+      {
+        on = "r";
+        run = "visual";
+      }
+
+      {
+        on = "h";
+        run = "delete";
+      }
+      {
+        on = "i";
+        run = "delete --insert";
+      }
+      {
+        on = "<C-h>";
+        run = "delete --cut";
+      }
+
+      {
+        on = "l";
+        run = "paste";
+      }
+      {
+        on = "L";
+        run = "paste --before";
+      }
+
+      {
+        on = "p";
+        run = "undo";
+      }
+      {
+        on = "P";
+        run = "redo";
+      }
+
+      ];
     };
   };
 }
