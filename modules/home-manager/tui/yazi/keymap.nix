@@ -944,6 +944,10 @@
         desc = "Exit visual mode, clear selected; or cancel search";
       }
       {
+        on = "<enter>";
+        run = "close --submit";
+      }
+      {
         on = "<Backspace>";
         run = "backspace";
       }
