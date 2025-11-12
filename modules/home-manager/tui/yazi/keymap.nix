@@ -939,6 +939,12 @@
 
       input.keymap = [
       {
+        on = "<Esc>";
+        run = "escape";
+        desc = "Exit visual mode, clear selected; or cancel search";
+      }
+
+      {
         on = "t";
         run = "backward";
       }
@@ -976,6 +982,10 @@
       {
         on = "<C-h>";
         run = "delete --cut";
+      }
+      {
+        on = "y";
+        run = "yank";
       }
 
       {
