@@ -943,6 +943,10 @@
         run = "escape";
         desc = "Exit visual mode, clear selected; or cancel search";
       }
+      {
+        on = "<Backspace>";
+        run = "backspace";
+      }
 
       {
         on = "t";
