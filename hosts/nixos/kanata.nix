@@ -135,6 +135,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   ;; TODO ; -> . (for vim)
   magic (switch
 
+
     ;; kb -> keyboard
     ((and (key-history k 2) (key-history b 1))) (multi (release-key b) (macro bspc e y b o a r d)) break
     ;; sb -> svalboard
