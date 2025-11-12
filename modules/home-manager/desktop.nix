@@ -20,6 +20,14 @@
       icon = "${flake_dir}/stuff/icons/wallpaper.svg";
     };
 
+
+    hammer = {
+      name = "hammer";
+      comment = "hammer with bottles";
+      exec = "bottles-cli run -p hammer -b \"hammer\" -- %u";
+      icon = "${flake_dir}/stuff/icons/hammer.png";
+    };
+
     vitetris.noDisplay = true;
     yazi.noDisplay = true;
     nvim.noDisplay = true;
