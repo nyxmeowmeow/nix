@@ -10,6 +10,7 @@
   white  = "#f2f1ef";
   cyan   = "#8ea4a2";
   button = "#22262D";
+  button_hover = "#393B44";
 
 
 # zen bg shades

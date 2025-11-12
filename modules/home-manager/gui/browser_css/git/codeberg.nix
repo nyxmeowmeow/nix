@@ -17,6 +17,10 @@ in {
     --color-text-light-2: ${col.grey} !important;
     --color-button: ${col.button} !important;
     --color-box-body: transparent !important;
+    --color-input-background: ${col.button} !important;
+    --color-secondary-light-1: transparent !important;
+    --color-box-header: transparent !important;
+    --color-hover: ${col.button_hover} !important;
 }
 
 #navbar {
@@ -31,20 +35,25 @@ in {
   right: 0px !important;
 }
 
-
-
 .repository .repository-summary #language-stats-bar {
-  border-top-left-radius: 1000px !important;
-  border-top-right-radius: 1000px !important;
-  border-bottom-left-radius: 1000px !important;
-  border-bottom-right-radius: 1000px !important;
+  border-top-left-radius: 99px !important;
+  border-top-right-radius: 99px !important;
+  border-bottom-left-radius: 99px !important;
+  border-bottom-right-radius: 99px !important;
 }
 
 .tw-bg-box-header {
-  background-color: transparent;
+  background-color: ${col.grey} !important;
 }
+
 .tw-border-secondary {
-  border-color: transparent;
+  border-color: transparent !important;
 }
+
+.ui.table {
+  border: none;
+}
+
+
 '';
 }
