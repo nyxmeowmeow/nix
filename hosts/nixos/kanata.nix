@@ -414,13 +414,18 @@ spc @space
 (deflayermap mods
 ;; w (cmd wlr-which-key -k l /home/${username}/.config/wlr-which-key/mpc.yaml)
 
-l (movemouse-left 6 2)
-o (movemouse-down 6 2)
-u (movemouse-up 6 2)
-. (movemouse-right 6 2)
+l (movemouse-left 6 4)
+o (movemouse-down 6 4)
+u (movemouse-up 6 4)
+. (movemouse-right 6 4)
 
 w mltp
 d mrtp
+
+f (movemouse-speed 200)
+b (movemouse-speed 50)
+
+
 
 
 n lsft
