@@ -141,7 +141,8 @@
           run = "ya pub extract --list \"$@\"";
           desc = "Extract here";
           for = "unix";
-        } ];
+        }
+        ];
 
         play = [
         { # FIXME
@@ -156,28 +157,36 @@
         }
         ];
 
-        icat = [ {
-          run = "kitten icat \"$@\"";
+        icat = [
+        {
+          run = "piper -- kitten icat \"$@\"";
           orphan = true;
           for = "unix";
-        } ];
+        }
+        ];
 
-        image = [ {
+        image = [
+        {
           run = "swayimg \"$@\"";
           orphan = true;
           for = "unix";
-        } ];
+        }
+        ];
 
-        krita = [ {
+        krita = [
+        {
           run = "krita \"$@\"";
           orphan = true;
           for = "unix";
-        } ];
-        inkscape = [ {
+        }
+        ];
+        inkscape = [
+        {
           run = "inkscape \"$@\"";
           orphan = true;
           for = "unix";
-        } ];
+        }
+        ];
       };
 
 
