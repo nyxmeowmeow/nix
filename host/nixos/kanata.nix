@@ -181,17 +181,17 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ;;; CODE
     ;; Ok(())
-    ((and (key-history o 2) (key-history k 1))) (multi (release-key o) (release-key k) (macro bspc bspc S-o k S-9 S-9 S-0 S-0)) break
+    ((and (key-history o 2) (key-history k 1))) (multi (release-key o) (release-key k) (macro C-w bspc S-o k S-9 S-9 S-0 S-0)) break
     ;; Some(
-    ((and (key-history s 2) (key-history m 1))) (multi (release-key s) (release-key m) (macro bspc bspc S-s o m e S-9)) break
+    ((and (key-history s 2) (key-history m 1))) (multi (release-key s) (release-key m) (macro C-w bspc S-s o m e S-9)) break
     ;; None
-    ((and (key-history n 2) (key-history o 1))) (multi (release-key n) (release-key o) (macro bspc bspc S-n o n e)) break
+    ((and (key-history n 2) (key-history o 1))) (multi (release-key n) (release-key o) (macro C-w bspc S-n o n e)) break
     ;; shift after ::
     ((and (key-history lsft 4) (key-history ; 3) (key-history lsft 2) (key-history ; 1))) (one-shot-press 1000 lsft) break
     ;; shift after <
     ((key-history , 1)) (one-shot-press 1000 lsft) break
     ;; sg -> String
-    ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro bspc bspc S-s t r i n g)) break
+    ((and (key-history s 2) (key-history g 1))) (multi (release-key s) (release-key g) (macro C-w S-s t r i n g)) break
     ;; #!
     ((key-history 3 1)) (macro S-1) break
     ;; nix enable
@@ -232,7 +232,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; ->
     ((key-history - 1)) (macro S-.) break
     ;; Vec<_>
-    ((and (key-history v 3) (key-history e 2) (key-history c 1))) (macro bspc bspc bspc S-v e c S-, S-- S-.) break
+    ((and (key-history v 3) (key-history e 2) (key-history c 1))) (macro C-w S-v e c S-, S-- S-.) break
     
 
 
@@ -345,7 +345,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and(key-history a 1) (input-history real lsft 2))) (macro r) break
 
     ;; ((input-history real lctl 2)) (macro (unmod =) (unmod =)) break
-    ((key-history = 1)) = break
+    ;; ((key-history = 1)) = break
+    ((input-history real lctl 2)) = break
 
     ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
