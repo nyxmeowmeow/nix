@@ -435,7 +435,7 @@
 # FIXME
           {
             name = "*.dds";
-            run = "icat";
+            run = "piper -- kitten icat \"$1\"";
           }
 
           {
