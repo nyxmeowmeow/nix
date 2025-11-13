@@ -35,5 +35,14 @@ in {
     _JAVA_OPTIONS = "-Djava.util.prefs.userRoot=${cfg}/java";
     GOPATH = "${data}/go";
     GOMODCACHE = "${data}/go/mod";
+
+
+    DESKTOP = "";
+    DOCUMENTS = "${h}/doc";
+    DOWNLOAD = "${h}/dl";
+    MUSIC = "${h}/music";
+    PICTURES = "${h}/pic";
+    VIDEOS = "${h}/vid";
+
   };
 }

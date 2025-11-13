@@ -585,20 +585,14 @@
       }
 
       {
-        on = [ "<Space>" "d" "e" ];
-        run = "cd ~/Desktop";
-        desc = "desktop";
-      }
-
-      {
         on = [ "<Space>" "d" "o" ];
-        run = "cd ~/Documents";
+        run = "cd ~/docs";
         desc = "documents";
       }
 
       {
         on = [ "<Space>" "d" "l" ];
-        run = "cd ~/Downloads";
+        run = "cd ~/dl";
         desc = "downloads";
       }
 
@@ -747,7 +741,7 @@
 
       {
         on = [ "<Space>" "v" ];
-        run = "cd ~/Videos";
+        run = "cd ~/vids";
         desc = "videos";
       }
 

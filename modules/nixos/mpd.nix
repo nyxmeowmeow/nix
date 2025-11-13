@@ -7,8 +7,8 @@
     mpd = {
       enable = true;
       user = username;
-      musicDirectory = "/home/${username}/Music/";
-      dataDir = "/home/${username}/misc/mpd"; # TODO .local/share?
+      musicDirectory = "/home/${username}/music/";
+      dataDir = "/home/${username}/.local/share/mpd"; # TODO .local/share?
       extraConfig = ''
         port "6669"
         audio_output {
