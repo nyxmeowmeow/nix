@@ -13,8 +13,13 @@
       }
 
       {
-        on = [ "g" "t" ];
+        on = [ "g" "t" "t" ];
         run = "plugin simple-tag -- toggle-tag";
+      }
+
+      {
+        on = [ "g" "t" "a" ];
+        run = "plugin simple-tag -- add-tag";
       }
 
       {
@@ -222,12 +227,6 @@
         desc = "spot";
       }
 
-# Tagging
-      {
-        on = [ "`" ];
-        run = "plugin simple-tag -- toggle-tag";
-        desc = "Toggle tag with any key (press any key to toggle tag)";
-      }
 
 # Operation
       {
