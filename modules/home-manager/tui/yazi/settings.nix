@@ -1,6 +1,6 @@
 {
   programs.yazi = {
-#     settings = {
+    settings = {
 #       mgr = {
 #         ratio          = [ 0 3 4 ];
 #         sort_by        = "natural";
@@ -279,40 +279,40 @@
 #
 #           plugin = {
 #
-#             fetchers = [
-# # Mimetype
-#             {
-#               id = "mime";
-#               name = "*";
-#               run = "mime";
-#               prio = "high";
-#             }
-#
-#             {
-#               id   = "git";
-#               name = "*";
-#               run  = "git";
-#             }
-#
-#             {
-#               id   = "git";
-#               name = "*/";
-#               run  = "git";
-#             }
-#
-#             {
-#               id = "simple-tag";
-#               url = "*";
-#               run = "simple-tag";
-#             }
-#             {
-#               id = "simple-tag";
-#               url = "*/";
-#               run = "simple-tag";
-#             }
-#
-#
-#             ];
+            fetchers = [
+# Mimetype
+            {
+              id = "mime";
+              name = "*";
+              run = "mime";
+              prio = "high";
+            }
+
+            {
+              id   = "git";
+              name = "*";
+              run  = "git";
+            }
+
+            {
+              id   = "git";
+              name = "*/";
+              run  = "git";
+            }
+
+            {
+              id = "simple-tag";
+              url = "*";
+              run = "simple-tag";
+            }
+            {
+              id = "simple-tag";
+              url = "*/";
+              run = "simple-tag";
+            }
+
+
+            ];
 #
 #             spotters = [
 #             {
@@ -504,6 +504,6 @@
 #           };
 #         };
 #       };
-#     };
+    };
   };
 }
