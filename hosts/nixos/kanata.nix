@@ -419,7 +419,7 @@ o (movemouse-down 6 4)
 u (movemouse-up 6 4)
 . (movemouse-right 6 4)
 
-w mltp
+w mlft
 d mrtp
 
 f (movemouse-speed 200)
