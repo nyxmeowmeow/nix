@@ -604,9 +604,9 @@ i end
   (  f   w) `   20 all-released (over sup melee)
   (    d w) S-8 15 all-released (over sup melee)
   
-  (l o    ) S-' 14 all-released (over sup melee)
-  (  o u  ) S-1 13 all-released (over sup melee)
-  (    u .) S-6 15 all-released (over sup melee)
+  (l o    ) S-' 14 all-released (over sup melee mods)
+  (  o u  ) S-1 13 all-released (over sup melee mods)
+  (    u .) S-6 15 all-released (over sup melee mods)
 
   (n s    ) S-, 14 all-released (over sup melee)
   (  s t  ) '   13 all-released (over sup melee)
