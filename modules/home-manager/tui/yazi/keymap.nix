@@ -13,6 +13,12 @@
       }
 
       {
+        on = [ "g" "t" ];
+        run = "plugin simple-tag -- --toggle-tag";
+        desc = "perform action on selected files";
+      }
+
+      {
         on = [ "g" "<Space>" ];
         run = "plugin file-actions -- --around ";
         desc = "perform action on selected files";
@@ -835,11 +841,11 @@
         desc = "Swap current tab with next tab";
       }
 
-      {
-        on = [ "g" "t" ];
-        run = "tasks_show";
-        desc = "Show task manager";
-      }
+      # {
+      #   on = [];
+      #   run = "tasks_show";
+      #   desc = "Show task manager";
+      # }
 
 
       /* sudo */
