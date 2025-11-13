@@ -21,6 +21,11 @@
         on = [ "g" "t" "a" ];
         run = "plugin simple-tag -- add-tag";
       }
+      {
+        on = [ "g" "t" "u" ];
+        run = "plugin simple-tag -- toggle-ui";
+        desc = "Toggle tag indicator (icon > tag key > hidden)";
+      }
 
       {
         on = [ "g" "<Space>" ];
