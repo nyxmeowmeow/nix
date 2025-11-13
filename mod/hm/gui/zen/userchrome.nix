@@ -11,11 +11,11 @@ in {
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
 *{
-  font-size: 16px;
-  font-family: ${config.stylix.fonts.monospace.name} /* Bold */;
+  font-size: 16p !importantx;
+  font-family: ${config.stylix.fonts.monospace.name} /* Bold * !important/;
 
-  scrollbar-width: none;
-  box-shadow: none;
+  scrollbar-width: none !important;
+  box-shadow: none !important;
 }
 
 .tab-close-button,
