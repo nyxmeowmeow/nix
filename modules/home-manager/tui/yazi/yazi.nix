@@ -3,6 +3,10 @@
     ./settings.nix
     ./keymap.nix
     ./theme.nix
+    ./open.nix
+    ./opener.nix
+    ./plugin.nix
+    ./input.nix
   ];
 
   # home.packages = with pkgs; [
