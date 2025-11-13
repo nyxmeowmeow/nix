@@ -10,9 +10,9 @@ let
 in {
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
-*{
+* {
   font-size: 16p !importantx;
-  font-family: ${config.stylix.fonts.monospace.name} /* Bold * !important/;
+  font-family: ${config.stylix.fonts.monospace.name} !important;
 
   scrollbar-width: none !important;
   box-shadow: none !important;
