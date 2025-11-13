@@ -302,12 +302,12 @@
 
             {
               id = "simple-tag";
-              name = "*";
+              url = "*";
               run = "simple-tag";
             }
             {
               id = "simple-tag";
-              name = "*/";
+              url = "*/";
               run = "simple-tag";
             }
 
