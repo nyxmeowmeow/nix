@@ -951,6 +951,18 @@
         on = "<Backspace>";
         run = "backspace";
       }
+      {
+        on = "<C-u>";
+        run = "kill bol";
+      }
+      {
+        on = "<C-k>";
+        run = "kill eol";
+      }
+      {
+        on = "H";
+        run = "kill eol";
+      }
 
       {
         on = "t";

@@ -91,88 +91,88 @@ in {
 
 
 
-    # extensions = [
-    #   # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
-    #   (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
-    #     inherit pkgs;
-    #     name = "case-converter";
-    #     src = pkgs.fetchFromGitHub {
-    #     owner = "nyxmeowmeow";
-    #     repo = "vicinae-extensions";
-    #     rev = "12fefbb2f852c38ac1b418c5955ed6ab070bafe3";
-    #     sha256 = "sha256-6eDqc98qzg1y+O7pbfS69gEelTVPqi+7PK7X1a+S5qE=";
-    #   } + "/case-converter";
-    #   })
-    #
-    #   # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
-    #   #   inherit pkgs;
-    #   #   name = "firefox-symbols";
-    #   #   src = pkgs.fetchFromGitHub {
-    #   #     owner = "nyxmeowmeow";
-    #   #     repo = "vicinae-extensions";
-    #   #     rev = "da27028f4c22344cc6e4d4e05e1b6f13235b2f20";
-    #   #     sha256 = "sha256-J0uQtN0/FyuG6YB3FStUg1PTt1JPUxgpopHuPnrINhE=";
-    #   #   } + "/unicode-symbols";
-    #   # })
-    #
-    #   # (inputs.vicinae.mkRayCastExtension.${pkgs.system} {
-    #   #   inherit pkgs;
-    #   #   name = "balatro-compendium";
-    #   #   src = pkgs.fetchgit {
-    #   #           url = "https://github.com/raycast/extensions";
-    #   #           sparseCheckout = [
-    #   #             "/extensions/balatro-compendium"
-    #   #           ];
-    #   #         }
-    #   #         + "/extensions/balatro-compendium";
-    #   #
-    #   # })
-    #   # (config.lib.vicinae.mkRayCastExtension {
-    #   # name = "balatro-compendium";
-    #   # sha256 = "sha256-FUunOa2cS4MXZTrQ9CxJA64bc7C4VLQRbrJ3p7mCDOU=";
-    #   # rev = "f4b1ca09af17e754f02437a3f6145f45327892bf";
-    #   # })
-    #
-    #   (config.lib.vicinae.mkRayCastExtension {
-    #     name = "oklch-color-converter";
-    #     sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
-    #     rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
-    #   })
-    #
-    #   (config.lib.vicinae.mkRayCastExtension {
-    #     name = "oklch-color-converter";
-    #     sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
-    #     rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
-    #   })
-    #
-    #   # FIXME curl: command not found
-    #   # (config.lib.vicinae.mkRayCastExtension {
-    #   # name = "minecraft-crafting-recipes";
-    #   # sha256 = "sha256-a+jOMhqaDZwMbUMto25yrxeXlCnIFalIagN6BaISQIE=";
-    #   # rev = "27f8c0185122abdafb7ae932868b15206278a7e3";
-    #   # })
-    #
-    #   # FIXME /build/color-shades/node_modules/.bin/ray: line 30: curl: command not found
-    #   # (config.lib.vicinae.mkRayCastExtension {
-    #   # name = "color-shades";
-    #   # sha256 = "sha256-IBbrcliA8sZg/H3GyEw4gs9Sf1NMwmarOVzzmFj8q/Q=";
-    #   # rev = "da1acf4bd2e891fca44f74752d7291eea93d3895";
-    #   # })
-    #
-    #
-    #   # (config.lib.vicinae.mkRayCastExtension {
-    #   #   name = "easydict";
-    #   #   sha256 = "sha256-BDa7L4TAZhDSIvcYbuRcRhL/nVDxYAd2HQVVTUW1ItI=";
-    #   #   rev = "709e3df645ea4c5748584a5019e8b647510e70f9";
-    #   # })
-    #
-    #   (config.lib.vicinae.mkRayCastExtension {
-    #     name = "unicode-symbols";
-    #     sha256 = "sha256-N/PhRxaRu4voslRD5P8Kwn6uBC64lOtqh5ngHnHv9NM=";
-    #     rev = "49b12149b739aab4b3d3a0d922947940b66c3f05";
-    #   })
-    #
-    #
-    #   ];
+    extensions = [
+      # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
+      (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+        inherit pkgs;
+        name = "case-converter";
+        src = pkgs.fetchFromGitHub {
+        owner = "nyxmeowmeow";
+        repo = "vicinae-extensions";
+        rev = "12fefbb2f852c38ac1b418c5955ed6ab070bafe3";
+        sha256 = "sha256-6eDqc98qzg1y+O7pbfS69gEelTVPqi+7PK7X1a+S5qE=";
+      } + "/case-converter";
+      })
+
+      # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+      #   inherit pkgs;
+      #   name = "firefox-symbols";
+      #   src = pkgs.fetchFromGitHub {
+      #     owner = "nyxmeowmeow";
+      #     repo = "vicinae-extensions";
+      #     rev = "da27028f4c22344cc6e4d4e05e1b6f13235b2f20";
+      #     sha256 = "sha256-J0uQtN0/FyuG6YB3FStUg1PTt1JPUxgpopHuPnrINhE=";
+      #   } + "/unicode-symbols";
+      # })
+
+      # (inputs.vicinae.mkRayCastExtension.${pkgs.system} {
+      #   inherit pkgs;
+      #   name = "balatro-compendium";
+      #   src = pkgs.fetchgit {
+      #           url = "https://github.com/raycast/extensions";
+      #           sparseCheckout = [
+      #             "/extensions/balatro-compendium"
+      #           ];
+      #         }
+      #         + "/extensions/balatro-compendium";
+      #
+      # })
+      # (config.lib.vicinae.mkRayCastExtension {
+      # name = "balatro-compendium";
+      # sha256 = "sha256-FUunOa2cS4MXZTrQ9CxJA64bc7C4VLQRbrJ3p7mCDOU=";
+      # rev = "f4b1ca09af17e754f02437a3f6145f45327892bf";
+      # })
+
+      (config.lib.vicinae.mkRayCastExtension {
+        name = "oklch-color-converter";
+        sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
+        rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
+      })
+
+      (config.lib.vicinae.mkRayCastExtension {
+        name = "oklch-color-converter";
+        sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
+        rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
+      })
+
+      # FIXME curl: command not found
+      # (config.lib.vicinae.mkRayCastExtension {
+      # name = "minecraft-crafting-recipes";
+      # sha256 = "sha256-a+jOMhqaDZwMbUMto25yrxeXlCnIFalIagN6BaISQIE=";
+      # rev = "27f8c0185122abdafb7ae932868b15206278a7e3";
+      # })
+
+      # FIXME /build/color-shades/node_modules/.bin/ray: line 30: curl: command not found
+      # (config.lib.vicinae.mkRayCastExtension {
+      # name = "color-shades";
+      # sha256 = "sha256-IBbrcliA8sZg/H3GyEw4gs9Sf1NMwmarOVzzmFj8q/Q=";
+      # rev = "da1acf4bd2e891fca44f74752d7291eea93d3895";
+      # })
+
+
+      # (config.lib.vicinae.mkRayCastExtension {
+      #   name = "easydict";
+      #   sha256 = "sha256-BDa7L4TAZhDSIvcYbuRcRhL/nVDxYAd2HQVVTUW1ItI=";
+      #   rev = "709e3df645ea4c5748584a5019e8b647510e70f9";
+      # })
+
+      (config.lib.vicinae.mkRayCastExtension {
+        name = "unicode-symbols";
+        sha256 = "sha256-N/PhRxaRu4voslRD5P8Kwn6uBC64lOtqh5ngHnHv9NM=";
+        rev = "49b12149b739aab4b3d3a0d922947940b66c3f05";
+      })
+
+
+      ];
 };
 }
