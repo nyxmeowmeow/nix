@@ -54,7 +54,7 @@ require("simple-tag"):setup({
   -- save_path =  -- full path to save tags folder (Optional)
   --       - Linux/MacOS: os.getenv("HOME") .. "/.config/yazi/tags"
   --       - Windows: os.getenv("APPDATA") .. "\\yazi\\config\\tags"
-  save_path = "/home/${username}/.config/yazi/tags",
+  -- save_path = "/home/${username}/.config/yazi/tags",
 
   -- Set tag colors
   colors = { -- (Optional)
