@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   programs.ncmpcpp = {
     enable = true;
     bindings = [
@@ -19,10 +19,10 @@
     ];
     settings = {
       ncmpcpp_directory = "~/.config/ncmpcpp";
-      lyrics_directory = "~/misc/lyrics";
+      lyrics_directory = "~/.local/share/mpd/lyrics";
       mpd_host = "localhost";
       mpd_port = "6669";
-      mpd_music_dir = "~/Music";
+      mpd_music_dir = "$MUSIC";
 
 
       song_list_format = "{%t - }{%a}|{$5%f$9}$R{$5%l$9}";
@@ -65,7 +65,7 @@
       follow_now_playing_lyrics = "no";
       fetch_lyrics_for_current_song_in_background = "no";
       store_lyrics_in_song_dir = "no";
-      generate_win32_compatible_filenames = "yes";
+      generate_win32_compatible_filenames = false;
       allow_for_physical_item_deletion = "no";
 
       screen_switcher_mode = "playlist, browser";

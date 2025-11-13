@@ -37,7 +37,7 @@ in {
     GOMODCACHE = "${data}/go/mod";
 
 
-    DESKTOP = "";
+    DESKTOP = "/tmp/desktop";
     DOCUMENTS = "${h}/doc";
     DOWNLOAD = "${h}/dl";
     MUSIC = "${h}/music";

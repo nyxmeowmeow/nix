@@ -17,7 +17,7 @@
 
 
       prefer-no-csd = true;
-      screenshot-path = "~/Pictures/Screenshots/%d/%m/%Y_%H-%M-%S.png";
+      screenshot-path = "/tmp/screenshots";
       hotkey-overlay.skip-at-startup = true;
       gestures.hot-corners.enable = false;
 

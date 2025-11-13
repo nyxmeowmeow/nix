@@ -586,7 +586,7 @@
 
       {
         on = [ "<Space>" "d" "o" ];
-        run = "cd ~/docs";
+        run = "cd ~/doc";
         desc = "documents";
       }
 
@@ -651,7 +651,7 @@
 
       {
         on = [ "<Space>" "m" "u" ];
-        run = "cd ~/Music";
+        run = "cd ~/music";
         desc = "music";
       }
 
@@ -699,7 +699,7 @@
 
       {
         on = [ "<Space>" "p" "i" ];
-        run = "cd ~/Pictures";
+        run = "cd ~/pic";
         desc = "pictures";
       }
 
@@ -741,7 +741,7 @@
 
       {
         on = [ "<Space>" "v" ];
-        run = "cd ~/vids";
+        run = "cd ~/vid";
         desc = "videos";
       }
 
