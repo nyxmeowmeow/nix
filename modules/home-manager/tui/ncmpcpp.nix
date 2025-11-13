@@ -11,8 +11,6 @@
       { key = "("; command = "previous"; }
       { key = ")"; command = "next"; }
       { key = "enter"; command = "play_item"; }
-      { key = "s"; command = "find_item_forward"; }
-      { key = ";"; command = "find_item_forward"; }
       { key = "m"; command = "next_found_item"; }
       { key = "M"; command = "previous_found_item"; }
       { key = " "; command = "pause"; }
