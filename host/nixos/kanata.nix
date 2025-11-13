@@ -344,10 +344,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; oar trigram
     ((and(key-history a 1) (input-history real lsft 2))) (macro r) break
 
-    ;; ((input-history real lctl 2)) (macro (unmod =) (unmod =)) break
-    ;; ((key-history = 1)) = break
-    ((input-history real lctl 2)) = break
-
     ((key-history , 1)) (macro S-,) break
     ;; ((key-history . 1)) (macro S-.) break
     ((key-history \ 1)) (macro S-\) break
