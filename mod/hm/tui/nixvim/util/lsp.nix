@@ -1,6 +1,6 @@
 { lib, ... }: {
   programs.nixvim.lsp = {
-    inlayHints.enable = true;
+    inlayHints.enable = false;
     servers = {
       nixd.enable = true;
       qmlls.enable = true;
