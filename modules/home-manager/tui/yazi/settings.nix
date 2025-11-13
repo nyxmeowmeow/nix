@@ -299,6 +299,19 @@
               name = "*/";
               run  = "git";
             }
+
+            {
+              id = "simple-tag";
+              name = "*";
+              run = "simple-tag";
+            }
+            {
+              id = "simple-tag";
+              name = "*/";
+              run = "simple-tag";
+            }
+
+
             ];
 
             spotters = [
