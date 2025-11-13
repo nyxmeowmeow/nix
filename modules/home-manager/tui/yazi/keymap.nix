@@ -14,8 +14,7 @@
 
       {
         on = [ "g" "t" ];
-        run = "plugin simple-tag -- --toggle-tag";
-        desc = "perform action on selected files";
+        run = "plugin simple-tag -- toggle-tag";
       }
 
       {
