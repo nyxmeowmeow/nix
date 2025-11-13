@@ -97,6 +97,7 @@
           open_origin = "hovered";
           open_offset = [ 0 1 50 7 ];
         };
+      };
 
         which = {
           sort_by      	 = "none";
@@ -104,7 +105,6 @@
           sort_reverse 	 = false;
           sort_translit  = false;
         };
-};
 
 
 
