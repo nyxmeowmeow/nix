@@ -119,11 +119,11 @@
       sync = true;
     }
 
-    # FIXME opens up ripgrep with weird shit??
-    {
-      name = "*.dds";
-      run = "piper -- kitten icat \"$1\"";
-    }
+    # # FIXME opens up ripgrep with weird shit??
+    # {
+    #   name = "*.dds";
+    #   run = "piper -- kitten icat \"$1\"";
+    # }
 
     # Code
     {

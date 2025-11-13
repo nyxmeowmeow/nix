@@ -24,10 +24,10 @@
 
 
   systemd.user.services = {
-    clipse = {
-      wantedBy = [ "default.target" ];
-      serviceConfig.ExecStart = "${pkgs.clipse}/bin/clipse";
-    };
+    # clipse = {
+    #   wantedBy = [ "default.target" ];
+    #   serviceConfig.ExecStart = "${pkgs.clipse}/bin/clipse";
+    # };
 
     # polkit-gnome-authentication-agent-1 = {
     #   description = "polkit-gnome-authentication-agent-1";

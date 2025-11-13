@@ -7,10 +7,10 @@
 
     gdb
 
-    kotlin
-    kotlin-language-server
-    kotlin-interactive-shell
-    gradle
+    # kotlin
+    # kotlin-language-server
+    # kotlin-interactive-shell
+    # gradle
     zulu # java 21
     zulu8 # java 8
 
