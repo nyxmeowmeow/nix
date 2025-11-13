@@ -2,15 +2,15 @@
   programs.yazi = {
     keymap = {
       mgr.keymap = [
-      {
-        on = [
-          "g"
-          "d"
-          "<Space>"
-        ];
-        run = "plugin dupes interactive";
-        desc = "Run dupes interactive";
-      }
+      # {
+      #   on = [
+      #     "g"
+      #     "d"
+      #     "<Space>"
+      #   ];
+      #   run = "plugin dupes interactive";
+      #   desc = "Run dupes interactive";
+      # }
 
       {
         on = [ "g" "t" "t" ];
@@ -26,111 +26,111 @@
         desc = "Toggle tag indicator (icon > tag key > hidden)";
       }
 
-      {
-        on = [ "g" "<Space>" ];
-        run = "plugin file-actions -- --around ";
-        desc = "perform action on selected files";
-      }
-      {
-        on = [ "g" "<Enter>" ];
-        run = "plugin open-with-cmd --args=block";
-        desc = "open with command";
-      }
-      {
-        on = [ "g" "<S-Enter>" ];
-        run = "plugin open-with-cmd";
-        desc = "open with command";
-      }
-
-      {
-        on = "<Esc>";
-        run = "escape";
-        desc = "Exit visual mode, clear selected; or cancel search";
-      }
-
-      { # FIXME
-        on = [ "g" "r" ];
-        run = "shell -- ya emit cd '$(git rev-parse --show-toplevel)'";
-        desc = "go to git root";
-      }
-
-      {
-        on = [ "g" "M" ];
-        run = "plugin gvfs -- jump-to-device";
-        desc = "Select device then jump to its mount point";
-      }
-
-      /* archive */
-      # TODO compression level?
-      {
-        on = [ "g" "a" "<Space>" ];
-        run = "plugin compress";
-        desc = "Archive";
-      }
-      {
-        on = [ "g" "a" "p" ];
-        run = "plugin compress -p";
-        desc = "Archive (password)";
-      }
-      {
-        on = [ "g" "a" "P" ];
-        run = "plugin compress -ph";
-        desc = "Archive (pw + header)";
-      }
-
-      {
-        on = "<C-z>";
-        run = "suspend";
-        desc = "Suspend the process";
-      }
-
-      {
-        on = "q";
-        run = "quit";
-        desc = "Suspend the process";
-      }
-
-      {
-        on = "<C-c>";
-        run = "quit";
-        desc = "Suspend the process";
-      }
-
-      {
-        on = "<C-d>";
-        run = "quit";
-        desc = "Suspend the process";
-      }
-
-      {
-        on = "f";
-        run = "plugin jump-to-char";
-        desc = "Jump to char";
-      }
-
-      {
-        on = "<C-e>";
-        run = "arrow -10";
-      }
-      {
-        on = "<C-a>";
-        run = "arrow 10";
-      }
-
-      {
-        on = "<C-S-e>";
-        run = "arrow -50%";
-      }
-      {
-        on = "<C-S-a>";
-        run = "arrow 50%";
-      }
-
-      {
-        on = [ "g" "g" ];
-        run = "arrow top";
-      }
-
+      # {
+      #   on = [ "g" "<Space>" ];
+      #   run = "plugin file-actions -- --around ";
+      #   desc = "perform action on selected files";
+      # }
+      # {
+      #   on = [ "g" "<Enter>" ];
+      #   run = "plugin open-with-cmd --args=block";
+      #   desc = "open with command";
+      # }
+      # {
+      #   on = [ "g" "<S-Enter>" ];
+      #   run = "plugin open-with-cmd";
+      #   desc = "open with command";
+      # }
+      #
+      # {
+      #   on = "<Esc>";
+      #   run = "escape";
+      #   desc = "Exit visual mode, clear selected; or cancel search";
+      # }
+      #
+      # { # FIXME
+      #   on = [ "g" "r" ];
+      #   run = "shell -- ya emit cd '$(git rev-parse --show-toplevel)'";
+      #   desc = "go to git root";
+      # }
+      #
+      # {
+      #   on = [ "g" "M" ];
+      #   run = "plugin gvfs -- jump-to-device";
+      #   desc = "Select device then jump to its mount point";
+      # }
+      #
+      # /* archive */
+      # # TODO compression level?
+      # {
+      #   on = [ "g" "a" "<Space>" ];
+      #   run = "plugin compress";
+      #   desc = "Archive";
+      # }
+      # {
+      #   on = [ "g" "a" "p" ];
+      #   run = "plugin compress -p";
+      #   desc = "Archive (password)";
+      # }
+      # {
+      #   on = [ "g" "a" "P" ];
+      #   run = "plugin compress -ph";
+      #   desc = "Archive (pw + header)";
+      # }
+      #
+      # {
+      #   on = "<C-z>";
+      #   run = "suspend";
+      #   desc = "Suspend the process";
+      # }
+      #
+      # {
+      #   on = "q";
+      #   run = "quit";
+      #   desc = "Suspend the process";
+      # }
+      #
+      # {
+      #   on = "<C-c>";
+      #   run = "quit";
+      #   desc = "Suspend the process";
+      # }
+      #
+      # {
+      #   on = "<C-d>";
+      #   run = "quit";
+      #   desc = "Suspend the process";
+      # }
+      #
+      # {
+      #   on = "f";
+      #   run = "plugin jump-to-char";
+      #   desc = "Jump to char";
+      # }
+      #
+      # {
+      #   on = "<C-e>";
+      #   run = "arrow -10";
+      # }
+      # {
+      #   on = "<C-a>";
+      #   run = "arrow 10";
+      # }
+      #
+      # {
+      #   on = "<C-S-e>";
+      #   run = "arrow -50%";
+      # }
+      # {
+      #   on = "<C-S-a>";
+      #   run = "arrow 50%";
+      # }
+      #
+      # {
+      #   on = [ "g" "g" ];
+      #   run = "arrow top";
+      # }
+      #
 #       {
 #         on = "G";
 #         run = "arrow bot";
