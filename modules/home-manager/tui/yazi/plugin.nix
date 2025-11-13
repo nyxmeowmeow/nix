@@ -119,6 +119,12 @@
       sync = true;
     }
 
+    # FIXME opens up ripgrep with weird shit??
+    {
+      name = "*.dds";
+      run = "piper -- kitten icat \"$1\"";
+    }
+
     # Code
     {
       mime = "text/*";
@@ -140,12 +146,6 @@
     {
       mime = "image/{avif,hei?,jxl,svg+xml}";
       run = "magick";
-    }
-
-    # FIXME
-    {
-      name = "*.dds";
-      run = "piper -- kitten icat \"$1\"";
     }
 
     {
