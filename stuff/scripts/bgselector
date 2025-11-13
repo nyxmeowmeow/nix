@@ -19,7 +19,7 @@ wall_selection=$(ls "$wall_dir" | while read -r A; do echo -en "$A\x00icon\x1f$c
 
 
 # get current theme
-themeline="$(cat ~/nix/modules/nixos/config.nix | grep 'config.theme = ')"
+themeline="$(cat ~/nix/mod/os/config.nix | grep 'config.theme = ')"
 for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest}; do
   if [[ $themeline == *"$name"* ]]; then 
     theme=$name
@@ -30,7 +30,7 @@ done
 # set wallpaper and update wallpaper.json
 if [ -n "$wall_selection" ]; then
 	swww img "$wall_dir/$wall_selection" -t grow --transition-duration 1 --transition-fps 165
-  cd $HOME/nix/themes
+  cd $HOME/nix/theme
   echo $(cat wallpaper.json | jq ".$theme = \"$wall_selection\"") > wallpaper.json
 	exit 0
 else

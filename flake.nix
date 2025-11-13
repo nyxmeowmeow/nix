@@ -76,16 +76,16 @@
           inherit inputs username flake_dir zen-browser nixvim niri;
         };
         modules = [
-          ./hosts/nixos/default.nix
-          ./hosts/nixos/home-manager.nix
+          ./host/nixos/default.nix
+          ./host/nixos/hm.nix
 
         {
-          nixpkgs.overlays = import ./overlays/default.nix;
+          nixpkgs.overlays = import ./over/default.nix;
         }
         nur.modules.nixos.default
 
         inputs.slippi.nixosModules.default
-          ./modules/nixos/slippi.nix
+          ./mod/os/slippi.nix
         # {
         #   home-manager = import ./modules/nixos/slippi.nix;
         # }
@@ -100,7 +100,7 @@
 
         home-manager.nixosModules.home-manager
         {
-          nixpkgs.overlays = import ./overlays/default.nix;
+          nixpkgs.overlays = import ./over/default.nix;
         }
 
         # inputs.walker.nixosModules.walker
@@ -117,15 +117,15 @@
         };
         modules = [
 
-          ./hosts/laptop/default.nix
-          ./hosts/laptop/home-manager.nix
+          ./host/laptop/default.nix
+          ./host/laptop/hm.nix
 
 
 
 
             home-manager.nixosModules.home-manager
 #        {
-#          nixpkgs.overlays = import ./overlays/default.nix;
+#          nixpkgs.overlays = import ./over/default.nix;
 #        }
             inputs.stylix.nixosModules.stylix
 

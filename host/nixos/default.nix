@@ -1,0 +1,41 @@
+{
+  imports = [
+    ./boot.nix
+    ./configuration.nix
+    ./hardware-configuration.nix
+    ./kanata.nix
+    ./packages.nix
+    ./services.nix
+
+    ../../mod/os/audio.nix
+    ../../mod/os/cleanup.nix
+    ../../mod/os/clipse.nix
+    ../../mod/os/config.nix
+    ../../mod/os/core/hardware.nix
+    ../../mod/os/core/nix.nix
+    ../../mod/os/core/nixpkgs.nix
+    ../../mod/os/core/polkit.nix
+    ../../mod/os/core/security.nix
+    ../../mod/os/dev.nix
+    ../../mod/os/font.nix
+    ../../mod/os/fontconfig.nix
+    ../../mod/os/gamemode.nix
+    ../../mod/os/misc.nix
+    ../../mod/os/mpd.nix
+    ../../mod/os/nix-gaming.nix
+    ../../mod/os/options.nix
+    ../../mod/os/shared.nix
+    ../../mod/os/steam.nix
+    ../../mod/os/disk.nix
+    ../../mod/os/stylix.nix
+    ../../mod/os/wine.nix
+    ../../mod/os/ydotool.nix
+
+    ../../theme/blacchiato/os/default.nix
+    ../../theme/everforest/os/default.nix
+    ../../theme/lix/os/default.nix
+    ../../theme/macchiato/os/default.nix
+    ../../theme/kanso/os/default.nix
+    ../../theme/kantsi/os/default.nix
+  ];
+}
