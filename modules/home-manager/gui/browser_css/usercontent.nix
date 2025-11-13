@@ -29,9 +29,20 @@ in
   --tridactyl-photon-colours-cm-cursor: transparent !important;
 }
 
+:root #cmdline_iframe {
+  left: 25% !important;
+  width: 50% !important;
+  box-shadow: none !important;
+  font-size: 22px !important;
+}
+
+:root #command-line-holder {
+  border: none !important;
+}
+
 #completions {
   font-family: ${config.stylix.fonts.monospace.name} !important;
-  font-size: 20px !important;
+  font-size: 22px !important;
 
 }
 
@@ -43,7 +54,7 @@ in
 }
 
 input {
-  font-size: 20px !important;
+  font-size: 22px !important;
   color: var(--tridactyl-fg) !important;
 }
 
@@ -53,7 +64,7 @@ input {
 
 
 span.TridactylHint {
-  font-family: mononoki nerd font mono !important;
+  font-family: ${config.stylix.fonts.monospace.name} !important;
   font-weight: bold !important;
   color: var(--tridactyl-bg) !important;
   background-color: ${col.accent} !important;
