@@ -5,7 +5,7 @@
   ...
 }:
 let
-radius = if ((import ../../../os/config.nix).config.rounding) then 10.0 else 0.0;
+radius = if (import ../../../os/config.nix).config.rounding then 10.0 else 0.0;
 in
 {
   config = lib.mkIf (wm == "niri") {

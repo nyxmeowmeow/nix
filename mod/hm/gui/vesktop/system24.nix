@@ -7,7 +7,7 @@
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
-  unrounding = if ((import ../../../os/config.nix).config.rounding) then "off" else "on";
+  unrounding = if (import ../../../os/config.nix).config.rounding then "off" else "on";
 in
 {
   home.file.".config/vesktop/themes/system24_1.css".text = /* css */ ''

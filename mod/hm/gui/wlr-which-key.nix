@@ -3,12 +3,12 @@
   flake_dir,
   ...
 }:
-let
-  # quit = if (config.wm == "niri") then "niri msg action quit"
-  # else if (config.wm == "hyprland") then "hyprctl dispatch exit"
-  #   else "error";
-  # TODO: float, screenshot, kill window, center
-in
+# let
+#   quit = if (config.wm == "niri") then "niri msg action quit"
+#   else if (config.wm == "hyprland") then "hyprctl dispatch exit"
+#     else "error";
+#   # TODO: float, screenshot, kill window, center
+# in
 {
   home.file.".config/wlr-which-key/config.yaml".text = /* yaml */ ''
 font: none

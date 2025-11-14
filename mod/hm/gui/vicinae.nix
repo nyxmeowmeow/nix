@@ -9,7 +9,7 @@
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../theme/${theme_trimmed}/colors.nix;
-  rounding = if ((import ../../os/config.nix).config.rounding) then 10 else 0;
+  rounding = if (import ../../os/config.nix).config.rounding then 10 else 0;
   nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
 in {
 

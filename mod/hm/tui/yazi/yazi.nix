@@ -19,17 +19,17 @@
     enableNushellIntegration = true;
 
     plugins = {
-      git = pkgs.yaziPlugins.git;
-      sudo = pkgs.yaziPlugins.sudo;
-      no-status = pkgs.yaziPlugins.no-status;
-      starship = pkgs.yaziPlugins.starship;
-      restore = pkgs.yaziPlugins.restore;
-      chmod = pkgs.yaziPlugins.chmod;
-      piper = pkgs.yaziPlugins.piper;
-      mount = pkgs.yaziPlugins.mount;
-      dupes = pkgs.yaziPlugins.dupes;
-      jump-to-char = pkgs.yaziPlugins.jump-to-char;
-      # duckdb = pkgs.yaziPlugins.duckdb;
+      inherit (pkgs.yaziPlugins)
+      git
+      sudo 
+      no-status 
+      starship 
+      restore 
+      chmod 
+      piper 
+      mount 
+      dupes 
+      jump-to-char;
       compress = ./plugins/compress.yazi;
       gvfs = ./plugins/gvfs.yazi;
       file-actions = ./plugins/gvfs.yazi;
