@@ -23,7 +23,8 @@ in {
       zen-browser = inputs.zen-browser;
       os_config = config;
 
-      col = import flake_dir + "theme/" + theme_trimmed + "/colors.nix";
+      # FIXME
+      # col = import (builtins.toPath "${flake_dir}/theme/${theme_trimmed}/colors.nix");
 
     };
 
