@@ -3,8 +3,13 @@
   flake_dir,
   inputs,
   config,
+  lib,
+  theme,
   ...
-}: {
+}:
+let
+  theme_trimmed = lib.strings.removeSuffix "_zen" theme;
+in {
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
@@ -17,6 +22,8 @@
       wm = config.wm;
       zen-browser = inputs.zen-browser;
       os_config = config;
+
+      col = import flake_dir + "theme/" + theme_trimmed + "/colors.nix";
 
     };
 

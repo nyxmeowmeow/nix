@@ -68,7 +68,8 @@
   }:
   let
     username = "meow";
-    flake_dir = "/home/${username}/nix";
+    flake_dir = builtins.toString ./.; # TODO deprecated? meow
+    flake = builtins.toString ./.;
   in {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
