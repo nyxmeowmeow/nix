@@ -1,9 +1,11 @@
-# { rounding, ... }:
 {
+  rounding,
+  ...
+}: {
   programs.nixvim.opts = {
     termguicolors = true;
 
-    # winborder = if rounding then "rounded" else "single";
+    winborder = if rounding then "rounded" else "single";
 
     number = true;
     relativenumber = false;

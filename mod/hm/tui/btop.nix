@@ -1,4 +1,8 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  rounding,
+  ...
+}: {
   programs.btop = {
     enable = true;
     package = pkgs.btop-rocm; # btop with gpu support
@@ -8,8 +12,7 @@
       truecolor = true;
       force_tty = false;
       vim_keys = false; # TODO fork and change keybinds?
-      rounded_corners =
-        (import ../../os/config.nix).config.rounding;
+      rounded_corners = rounding;
 
       # "default", "braille", "block", "tty"
       graph_symbol = "braille";

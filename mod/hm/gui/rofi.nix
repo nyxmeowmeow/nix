@@ -1,12 +1,13 @@
 {
   theme,
   lib,
+  rounding,
   ...
 }:
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../theme/${theme_trimmed}/colors.nix;
-  radius = if (import ../../os/config.nix).config.rounding then "10px" else "0px";
+  radius = if rounding then "10px" else "0px";
 in
 {
   home.file.".config/rofi/bgselector.rasi".text = /* rasi */ ''

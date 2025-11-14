@@ -1,11 +1,7 @@
 {
   rounding,
   ...
-}:
-let
-  border = if rounding then "rounded" else "single";
-in
-{
+}: {
   programs.nixvim = {
     plugins.yazi = {
       enable = true;
@@ -16,7 +12,9 @@ in
       ];
 
       settings = {
-        yazi_floating_window_border = border;
+        yazi_floating_window_border = 
+          if rounding then "rounded" else "single";
+
         highlight_hovered_buffers_in_same_directory = false;
       };
     };
@@ -29,5 +27,4 @@ in
     }
     ];
   };
-
 }
