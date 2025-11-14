@@ -3,7 +3,7 @@
   ...
 }:
 let
-  rounding = if ((import ../../../../os/config.nix).config.rounding) then "rounded" else "single";
+  border = if rounding then "rounded" else "single";
 in
 {
   programs.nixvim = {
@@ -16,7 +16,7 @@ in
       ];
 
       settings = {
-        yazi_floating_window_border = rounding;
+        yazi_floating_window_border = border;
         highlight_hovered_buffers_in_same_directory = false;
       };
     };
