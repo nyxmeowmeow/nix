@@ -35,7 +35,7 @@ in {
     _JAVA_OPTIONS = "-Djava.util.prefs.userRoot=${cfg}/java";
     GOPATH = "${data}/go";
     GOMODCACHE = "${data}/go/mod";
-
+    PARALLEL_HOME = "${cfg}/parallel";
 
     DESKTOP = "/tmp/desktop";
     DOCUMENTS = "${h}/doc";

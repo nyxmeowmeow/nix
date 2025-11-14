@@ -5,9 +5,10 @@
     historyFile = "/home/${username}/.config/.bash_history";
     historyIgnore = [
       "ls"
-      "nr"
-      "ng"
       "mkdir"
+      "rm"
+      "shutdown"
+      "reboot"
     ];
     sessionVariables = {
       MANPAGER = "nvim +Man!"; # use nvim for man

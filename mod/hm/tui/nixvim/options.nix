@@ -9,7 +9,10 @@ in {
     number = true;
     relativenumber = false;
     signcolumn = "number";
+
     foldcolumn = "auto";
+    foldmethod = "marker";
+# todo remove the triple brace
     foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')";
 
     scrolloff = 10;

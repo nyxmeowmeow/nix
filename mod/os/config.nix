@@ -1,7 +1,9 @@
 {
-  config.theme = "kanso_zen";
-  config.wm = "niri";
-  config.font = "mononoki";
-  config.font_size = "small";
-  config.rounding = false;
+  config = {
+    theme = "kanso_zen";
+    wm = "niri";
+    font = "mononoki";
+    font_size = "small";
+    rounding = false;
+  };
 }
