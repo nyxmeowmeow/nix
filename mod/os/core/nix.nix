@@ -5,6 +5,7 @@
       # auto-optimise-store = true; # optimise on every rebuild
       keep-derivations = false;
       keep-outputs = false;
+      use-xdg-base-directories = true; # dont put stuff in home
 
       substituters = [
         "https://vicinae.cachix.org"
