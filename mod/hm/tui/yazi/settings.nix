@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   programs.yazi = {
     settings = {
       mgr = {
@@ -16,7 +16,7 @@
 
         # use same scrolloff as nvim
         scrolloff =
-          (import ../nixvim/options.nix).programs.nixvim.opts.scrolloff;
+          config.programs.nixvim.opts.scrolloff;
       };
 
       preview = {

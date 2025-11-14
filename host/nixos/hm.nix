@@ -13,8 +13,11 @@
       inherit username flake_dir inputs ;
       theme = config.theme;
       host = config.networking.hostName;
+      # rounding = config.rounding;
       wm = config.wm;
       zen-browser = inputs.zen-browser;
+      os_config = config;
+
     };
 
 

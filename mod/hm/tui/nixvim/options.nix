@@ -1,19 +1,14 @@
-let
-  rounding = if ((import ../../../os/config.nix).config.rounding) then "rounded" else "single";
-in {
+# { rounding, ... }:
+{
   programs.nixvim.opts = {
     termguicolors = true;
 
-    winborder = rounding;
+    # winborder = if rounding then "rounded" else "single";
 
     number = true;
     relativenumber = false;
     signcolumn = "number";
 
-    foldcolumn = "auto";
-    foldmethod = "marker";
-# todo remove the triple brace
-    foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')";
 
     scrolloff = 10;
 
@@ -51,5 +46,10 @@ in {
     #"vim.diagnostic.severity.HINT".icon = " ";
     #"vim.diagnostic.severity.INFO".icon = " ";
     #"vim.diagnostic.severity.WARN".icon = " ";
+
+    foldcolumn = "auto";
+    foldmethod = "marker";
+# todo remove the triple brace
+    foldtext = "substitute(getline(v:foldstart),'/\\\*\\\\\|\\\*/\\\\\|{{{\\\d\\\=','','g')";
   };
 }

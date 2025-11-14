@@ -3,15 +3,15 @@
     theme = lib.mkOption {
       type = lib.types.enum [
         "macchiato"
-          "blacchiato"
-          "lix"
-          "everforest_hard"
-          "everforest_medium"
-          "everforest_soft"
-          "kanso_mist"
-          "kanso_ink"
-          "kanso_zen"
-          "kantsi"
+        "blacchiato"
+        "lix"
+        "everforest_hard"
+        "everforest_medium"
+        "everforest_soft"
+        "kanso_mist"
+        "kanso_ink"
+        "kanso_zen"
+        "kantsi"
       ];
       default = "blacchiato";
     };
@@ -45,19 +45,6 @@
         "large"
       ];
       default = "medium";
-    };
-
-    palette.bg = lib.mkOption {
-      type = lib.types.str;
-      default = "#000000";
-    };
-    palette.fg = lib.mkOption {
-      type = lib.types.str;
-      default = "#ffffff";
-    };
-    palette.accent = lib.mkOption {
-      type = lib.types.str;
-      default = "#aa00ff";
     };
   };
 }
