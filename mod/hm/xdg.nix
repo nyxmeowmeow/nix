@@ -1,16 +1,20 @@
-{ config, ... }: {
+{ config, ... }:
+let
+  h = config.home.homeDirectory;
+in {
   xdg.userDirs = {
     enable = true;
 
-    download = config.home.homeDirectory + "/dl";
-    documents = config.home.homeDirectory + "/doc";
-    music = config.home.homeDirectory + "/music";
-    pictures = config.home.homeDirectory + "/pic";
-    videos = config.home.homeDirectory + "/vid";
+    download = h + "/dl";
+    documents = h + "/doc";
+    music = h + "/music";
+    pictures = h + "/pic";
+    videos = h + "/vid";
     desktop = null;
+
     extraConfig = {
-      XDG_GAMES_DIR = config.home.homeDirectory + "/games";
-      XDG_MISC_DIR = config.home.homeDirectory + "/misc";
+      XDG_GAMES_DIR = h + "/games";
+      XDG_MISC_DIR = h + "/misc";
     };
   };
 }

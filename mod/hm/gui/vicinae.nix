@@ -105,6 +105,23 @@ in {
       } + "/case-converter";
       })
 
+      # FIXME
+      # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
+      #   inherit pkgs;
+      #   name = "nix";
+      #   src = pkgs.fetchFromGitHub {
+      #     owner = "vicinaehq";
+      #     repo = "extensions";
+      #     rev = "40d795b4f95ce101f49fece3ebd04f350aee4f51";
+      #     sha256 = "sha256-j0lhAkRuJ+K0uvSvhiZUgwCskYyfL8TdEdLwAf4t5xw=";
+      #   } + "/extensions/nix";
+      # })
+
+
+
+
+
+
       # (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
       #   inherit pkgs;
       #   name = "firefox-symbols";
@@ -133,12 +150,6 @@ in {
       # sha256 = "sha256-FUunOa2cS4MXZTrQ9CxJA64bc7C4VLQRbrJ3p7mCDOU=";
       # rev = "f4b1ca09af17e754f02437a3f6145f45327892bf";
       # })
-
-      (config.lib.vicinae.mkRayCastExtension {
-        name = "oklch-color-converter";
-        sha256 = "sha256-wfRJTtMN+IMzGDWl4GaN3EB9v6GmlHdgEqZht8nUikE=";
-        rev = "b8c8fcd7ebd441a5452b396923f2a40e879565ba";
-      })
 
       (config.lib.vicinae.mkRayCastExtension {
         name = "oklch-color-converter";
