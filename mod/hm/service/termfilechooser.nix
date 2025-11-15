@@ -27,21 +27,20 @@ org.freedesktop.impl.portal.FileChooser=termfilechooser
   '';
 
 
-xdg.portal = {
+  xdg.portal = {
     enable = true;
-    
-    config = {
-        niri = {
-            default = ["gnome" "gtk"];
-            "org.freedesktop.impl.portal.Access" = "gtk";
-            "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-            "org.freedesktop.impl.portal.ScreenCast" = "wlr";
-            "org.freedesktop.impl.portal.Secret" = "gnome-keyring";
-        };
-    };
-    extraPortals =  [
-        pkgs.xdg-desktop-portal-termfilechooser
-    ];
-};
 
+    config = {
+      niri = {
+        default = ["gnome" "gtk"];
+        "org.freedesktop.impl.portal.Access" = "gtk";
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+        "org.freedesktop.impl.portal.ScreenCast" = "wlr";
+      };
+    };
+
+    extraPortals =  [
+      pkgs.xdg-desktop-portal-termfilechooser
+    ];
+  };
 }
