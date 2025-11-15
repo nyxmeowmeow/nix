@@ -2,6 +2,7 @@
   lib,
   theme,
   config,
+  rounding,
   ...
 }:
 let
@@ -11,11 +12,12 @@ in {
 
   programs.zen-browser.profiles."meow".userChrome = /* css */ ''
 * {
-  font-size: 16p !importantx;
+  font-size: 16px !important;
   font-family: ${config.stylix.fonts.monospace.name} !important;
 
   scrollbar-width: none !important;
   box-shadow: none !important;
+  ${if (!rounding) then "border-radius: 0px !important;" else ""}
 }
 
 .tab-close-button,
