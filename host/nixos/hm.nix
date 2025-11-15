@@ -68,6 +68,7 @@ in {
         ../../mod/hm/gui/wlr-which-key.nix
         ../../mod/hm/gui/zen/zen.nix
         ../../mod/hm/service/easyeffects.nix
+        ../../mod/hm/service/termfilechooser.nix
         ../../mod/hm/service/hyprkan.nix
         ../../mod/hm/service/swww.nix
         ../../mod/hm/tui/bash.nix
