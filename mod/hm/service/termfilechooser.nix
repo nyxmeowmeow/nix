@@ -1,4 +1,3 @@
-# FIXME
 { pkgs, ... }: {
   systemd.user.services.xdg-desktop-portal-termfilechooser = {
     Unit = {
@@ -15,39 +14,30 @@
     };
   };
 
-#   home.file.".config/xdg-desktop-portal-termfilechooser/config".text = ''
-# [filechooser]
-# cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
-# default_dir=$HOME
-# env=TERMCMD=kitty --app-id="kitty.yazi.filechooser"
-#   '';
+  home.file.".config/xdg-desktop-portal-termfilechooser/config".text = ''
+[filechooser]
+cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+default_dir=$HOME
+env=TERMCMD=foot --app-id="foot.yazi.filechooser"
+  '';
 
-#   home.file.".config/xdg-desktop-portal/portals.conf".text = ''
-# [preferred]
-# org.freedesktop.impl.portal.FileChooser=termfilechooser
-#   '';
-    xdg.configFile."xdg-desktop-portal-termfilechooser/config".text = ''
-        [filechooser]
-        cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
-        default_dir=$HOME/Downloads
-    '';
 
-  # xdg.portal = {
-  #   enable = true;
-  #
-  #   config = {
-  #     common = {
-  #       default = ["termfilechooser"];
-  #       "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-  #     };
-  #     niri = {
-  #       default = ["termfilechooser"];
-  #       "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-  #     };
-  #   };
-  #
-  #   extraPortals = [
-  #     pkgs.xdg-desktop-portal-termfilechooser
-  #   ];
-  # };
+  xdg.portal = {
+    enable = true;
+
+    config = {
+      common = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+      niri = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+    };
+
+    extraPortals = [
+      pkgs.xdg-desktop-portal-termfilechooser
+    ];
+  };
 }
