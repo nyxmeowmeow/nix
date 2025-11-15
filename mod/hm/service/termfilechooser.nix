@@ -31,7 +31,10 @@ env=TERMCMD=kitty --app-id="kitty.yazi.filechooser"
     enable = true;
 
     config = {
-      common.default = ["termfilechooser"];
+      common = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
       niri = {
         default = ["termfilechooser"];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
