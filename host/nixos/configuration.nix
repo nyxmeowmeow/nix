@@ -28,16 +28,12 @@
   };
 
   xdg.portal = {
-  enable = true;
-  extraPortals = with pkgs; [
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome
-    xdg-desktop-portal-termfilechooser
-  ];
-
-
-
-
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+      xdg-desktop-portal-termfilechooser
+    ];
     config = {
       common = {
         default = ["termfilechooser"];
@@ -48,7 +44,6 @@
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
       };
     };
-
   };
 
   system.stateVersion = "24.11";
