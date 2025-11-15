@@ -233,7 +233,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; Vec<_>
     ((and (key-history v 3) (key-history e 2) (key-history c 1))) (macro C-w S-v e c S-, S-- S-.) break
     ;; true;
-    ((and (key-history t 3) (key-history r 2) (input-history real bspc 2))) ; break
+    ((and (key-history t 2) (key-history r 1))) (macro u e) break
     
 
 
@@ -354,7 +354,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
     ((key-history e 1)) (macro u) break
 
-    ((and (key-history t 2) (key-history r 1))) (macro u e) break
 
     ((input-history real f16 2)) (macro S-9) break
 
