@@ -26,7 +26,7 @@ menu:
     cmd: niri msg action quit
 
   - key: [ "s", "Mod4+s" ]
-    desc: float active
+    desc: screenshot
     cmd: niri msg action screenshot -p false
 
   - key: [ "o", "Mod4+o" ]
@@ -42,7 +42,7 @@ menu:
     cmd: ${flake_dir}/stuff/scripts/hextoimg.sh
 
   - key: [ "k", "Mod4+k" ]
-    desc: float active
+    desc: restart kanata
     cmd: systemctl restart kanata-lily-58
 
   - key: [ "f", "Mod4+f" ]
@@ -58,7 +58,7 @@ menu:
     cmd: ${flake_dir}/stuff/scripts/bgselector
 
   - key: [ "x", "Mod4+x" ]
-    desc: expand column
+    desc: clear
     cmd: ${flake_dir}/stuff/scripts/clear.sh
 
   - key: [ "m", "Mod4+m" ]
