@@ -25,4 +25,23 @@ env=TERMCMD=kitty --app-id="kitty.yazi.filechooser"
 [preferred]
 org.freedesktop.impl.portal.FileChooser=termfilechooser
   '';
+
+
+xdg.portal = {
+    enable = true;
+    
+    config = {
+        niri = {
+            default = ["gnome" "gtk"];
+            "org.freedesktop.impl.portal.Access" = "gtk";
+            "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+            "org.freedesktop.impl.portal.ScreenCast" = "wlr";
+            "org.freedesktop.impl.portal.Secret" = "gnome-keyring";
+        };
+    };
+    extraPortals =  [
+        pkgs.xdg-desktop-portal-termfilechooser
+    ];
+};
+
 }
