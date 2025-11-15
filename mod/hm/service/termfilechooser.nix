@@ -32,14 +32,14 @@ org.freedesktop.impl.portal.FileChooser=termfilechooser
 
     config = {
       niri = {
-        default = ["gnome" "gtk"];
+        default = ["gnome" "gtk" "termfilechooser"];
         "org.freedesktop.impl.portal.Access" = "gtk";
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
         "org.freedesktop.impl.portal.ScreenCast" = "wlr";
       };
     };
 
-    extraPortals =  [
+    extraPortals = [
       pkgs.xdg-desktop-portal-termfilechooser
     ];
   };
