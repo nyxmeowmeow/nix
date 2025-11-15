@@ -81,8 +81,8 @@
     playerctl
 
     /* file */
-    # zenity
-    # xdg-desktop-portal-termfilechooser
+    zenity
+    xdg-desktop-portal-termfilechooser
     xdg-utils
 
     /* misc */
