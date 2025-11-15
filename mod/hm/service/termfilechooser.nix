@@ -21,21 +21,20 @@ default_dir=$HOME
 env=TERMCMD=kitty --app-id="kitty.yazi.filechooser"
   '';
 
-  home.file.".config/xdg-desktop-portal/portals.conf".text = ''
-[preferred]
-org.freedesktop.impl.portal.FileChooser=termfilechooser
-  '';
+#   home.file.".config/xdg-desktop-portal/portals.conf".text = ''
+# [preferred]
+# org.freedesktop.impl.portal.FileChooser=termfilechooser
+#   '';
 
 
   xdg.portal = {
     enable = true;
 
     config = {
+      common.default = ["termfilechooser"];
       niri = {
-        default = ["gnome" "gtk" "termfilechooser"];
-        "org.freedesktop.impl.portal.Access" = "gtk";
+        default = ["termfilechooser"];
         "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-        "org.freedesktop.impl.portal.ScreenCast" = "wlr";
       };
     };
 
