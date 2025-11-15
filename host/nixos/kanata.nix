@@ -561,6 +561,7 @@ r .
 
 spc @space2
 ent @enter
+lmet esc
 
 )
 
