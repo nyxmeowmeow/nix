@@ -50,6 +50,7 @@ in {
         ../../mod/hm/gui/emacs/emacs.nix
         ../../mod/hm/gui/firefox/firefox.nix
         ../../mod/hm/gui/terminal/foot.nix
+        ../../mod/hm/xdg.nix
         ../../mod/hm/gui/terminal/ghostty.nix
         ../../mod/hm/gui/terminal/kitty.nix
         ../../mod/hm/gui/mango/mango.nix
