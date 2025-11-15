@@ -1,23 +1,22 @@
-# TODO `tap-hold-release-tap-keys-release` on t and a
-# acts like sm_td i think? https://github.com/stasmarkin/sm_td
-
-
-
-
-
 # TODO mouse keys
 
 # base:
-#          : b f d w p   j l o u . x
-#          = n s t c y   m h a e i rpt
-#          q , v k g -   / _ ( ) ; z
-# alt esc/meta r magic   ent/mods spc bspc/ctrl tab
+#      : b f d w p   / l o u . _
+#      = n s t c y   m h a e i 
+#      q , v k g -   j 󰣏 ( ) ; z
+#        alt 󱊷 r 󰣎   󰌑 󱁐 󰁮 󰌒
 #
 # sym:
-#                          l d u r
-#            1 2 3 4       7 8 9 0
-#            0 9 8 5       6 3 2 1
-#                  .       spc
+#        , , , ,
+#        1 2 3 4       7 8 9 0
+#        0 9 8 5       6 3 2 1
+#              .       󱁐
+#
+# mods:    
+#        󰾆 󰓅 󰳾 󰳽        󱕐 󱕑 
+#                      ← ↓ ↑ →
+#                      󰞗 󰞖 󰞙 󰞘
+#              .       󱁐
 
 {
   pkgs,
@@ -325,11 +324,10 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 ;; sfb
     ((key-history g 1)) y break
     ((key-history i 1)) z break
-    ((key-history w 1)) g break ;; wget
     ((key-history c 1)) y break
     ((key-history p 1)) y break
     ((key-history y 1)) p break
-    ((key-history j 1)) i break
+    ((key-history j 1)) u break ;; big stretch
     ((key-history o 1)) a break
     ((key-history a 1)) o break
     ((key-history u 1)) e break
@@ -368,6 +366,12 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 )
 
 (deflayermap (base)
+j /
+/ j
+x S--
+f15 @magic
+
+
 
 r @r
 
@@ -382,7 +386,6 @@ h (tap-hold-release-tap-keys-release 120 120 h rctl (9 0 ; spc) ())
 
 
 
-f15 S--
 f16 S-9
 f17 S-0
 lmet (multi (tap-hold-press 120 120 esc lmet) (layer-while-held sup))
@@ -624,7 +627,7 @@ i end
 
   (f15 f16      ) S-3 20 all-released (over sup melee)
   ;; (f15     f17  ) S-5 20 all-released (over sup melee)
-  (    f16 f17  ) S-/ 15 all-released (over sup melee)
+  (    f16 f17  ) x 15 all-released (over sup melee)
   (        f17 ;) S-2 15 all-released (over sup melee)
 
   ;; (h spc) \ 15 all-released (over sup melee)
