@@ -168,7 +168,7 @@ in {
               vi_normal: block
           }
           
-          buffer_editor = ["nvim", "-c", "':se nonu'", "--"]
+          buffer_editor: ["nvim", "-c", "':se nonu'", "--"]
 
           show_banner: false
           table: {
