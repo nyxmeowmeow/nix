@@ -2,6 +2,7 @@
   config,
   lib,
   wm,
+  username,
   ...
 }:
 {
@@ -105,7 +106,8 @@
         "Mod+M".action = maximize-column;
         "Mod+Shift+M".action = fullscreen-window;
         "Mod+Ctrl+M".action = fullscreen-window;
-        "Mod+minus".action = toggle-column-tabbed-display;
+        # "Mod+minus".action = toggle-column-tabbed-display;
+        "Mod+minus".action = sh "wlr-which-key -k l /home/${username}/.config/wlr-which-key/mpc.yaml";
 
 
 

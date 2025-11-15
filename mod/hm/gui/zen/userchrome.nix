@@ -17,7 +17,7 @@ in {
 
   scrollbar-width: none !important;
   box-shadow: none !important;
-  ${if (!rounding) then "border-radius: 0px !important;" else ""}
+  ${if !rounding then "border-radius: 0px !important;" else ""}
 }
 
 .tab-close-button,
