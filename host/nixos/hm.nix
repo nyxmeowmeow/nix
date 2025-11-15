@@ -72,6 +72,7 @@ in {
         ../../mod/hm/service/swww.nix
         ../../mod/hm/tui/bash.nix
         ../../mod/hm/tui/btop.nix
+        ../../mod/hm/env.nix
         ../../mod/hm/tui/clipse.nix
         ../../mod/hm/tui/fzf.nix
         ../../mod/hm/tui/git.nix

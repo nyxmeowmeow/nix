@@ -10,6 +10,13 @@ let
   cache = "${h}/.cache";
 in {
   environment.sessionVariables = {
+    DESKTOP = "/tmp/desktop";
+    DOCUMENTS = "${h}/doc";
+    DOWNLOAD = "${h}/dl";
+    MUSIC = "${h}/music";
+    PICTURES = "${h}/pic";
+    VIDEOS = "${h}/vid";
+
     ELECTRON_OZONE_PLATFORM_HINT = "auto";
 
     XDG_CONFIG_HOME = "${h}/.config";
@@ -37,12 +44,8 @@ in {
     GOMODCACHE = "${data}/go/mod";
     PARALLEL_HOME = "${cfg}/parallel";
 
-    DESKTOP = "/tmp/desktop";
-    DOCUMENTS = "${h}/doc";
-    DOWNLOAD = "${h}/dl";
-    MUSIC = "${h}/music";
-    PICTURES = "${h}/pic";
-    VIDEOS = "${h}/vid";
 
   };
+
+
 }
