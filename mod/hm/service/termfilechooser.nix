@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   systemd.user.services.xdg-desktop-portal-termfilechooser = {
     Unit = {
       Description = "Portal service (terminal file chooser implementation)";
@@ -8,7 +8,7 @@
     Service = {
       Type = "dbus";
       BusName = "org.freedesktop.impl.portal.desktop.termfilechooser";
-      ExecStart = "@libexecdir@/xdg-desktop-portal-termfilechooser";
+      ExecStart = "${pkgs.xdg-desktop-portal-termfilechooser}/libexec/xdg-desktop-portal-termfilechooser";
       Restart = "on-failure";
       RestartSec = 3;
     };

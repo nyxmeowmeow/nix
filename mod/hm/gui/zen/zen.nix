@@ -5,6 +5,7 @@
 }:
 let
   settings = {
+    "widget.use-xdg-desktop-portal.file-picker" = 1; # termfilechooser
     "gfx.webrender.all" = true;
       "media.ffmpeg.vaapi.enabled" = true;
     "widget.dmabuf.force-enabled" = true;
