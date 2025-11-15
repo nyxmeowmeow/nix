@@ -27,11 +27,29 @@
     NIXPKGS_ALLOW_UNFREE = "1";
   };
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = with pkgs; [
+  xdg.portal = {
+  enable = true;
+  extraPortals = with pkgs; [
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
+    xdg-desktop-portal-termfilechooser
   ];
+
+
+
+
+    config = {
+      common = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+      niri = {
+        default = ["termfilechooser"];
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+    };
+
+  };
 
   system.stateVersion = "24.11";
 }
