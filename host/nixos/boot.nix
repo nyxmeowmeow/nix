@@ -20,20 +20,21 @@
     # initrd.kernelModules = [];
     kernelModules = [ "amdgpu" ];
     blacklistedKernelModules = [
+
+      # "battery"
+
+      "vivaldi_fmap"
+      "atkbd"
+      "libps2"
+      # "serio"
+
+      /* bluetooth */
       "bluetooth"
       "btrtl"
       "btmtk"
       "btintel"
       "btbcm"
       "btusb"
-
-      "battery"
-
-      "vivaldi_fmap"
-      # "libps2"
-      # "atkbd"
-      # "serio"
-
     ];
   };
 }
