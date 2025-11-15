@@ -19,7 +19,7 @@ wall_selection=$(ls "$wall_dir" | while read -r A; do echo -en "$A\x00icon\x1f$c
 
 
 # get current theme
-themeline="$(cat ~/nix/mod/os/config.nix | grep 'config.theme = ')"
+themeline="$(cat ~/nix/mod/os/config.nix | grep 'theme = ')"
 for name in {kanso,kantsi,macchiato,blacchiato,lix,everforest}; do
   if [[ $themeline == *"$name"* ]]; then 
     theme=$name
