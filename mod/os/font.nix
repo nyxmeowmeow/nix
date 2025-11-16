@@ -20,3 +20,10 @@
     })
   ];
 }
+      # config = let
+      #   f = pkgs.nerd-fonts.mononoki;
+      #   p = "/share/fonts/truetype/NerdFonts/Mononoki/MononokiNerdFontMono-";
+      # in {
+      #   font_path = "${f}${p}Regular.ttf";
+      #   font_path_bold = "${f}${p}Bold.ttf";
+      # };
