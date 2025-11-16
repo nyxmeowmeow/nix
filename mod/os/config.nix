@@ -2,7 +2,7 @@
   config = {
     theme = "kanso_zen";
     wm = "niri";
-    font = "mononoki";
+    font = "iosevka";
     font_size = "small";
     rounding = false;
   };
