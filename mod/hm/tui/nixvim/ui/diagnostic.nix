@@ -1,5 +1,6 @@
 {
-  programs.nixvim.plugins.tiny-inline-diagnostic = {
+  programs.nixvim = {
+    plugins.tiny-inline-diagnostic = {
     enable = true;
 
     # lazyLoad.settings.event = [
@@ -30,5 +31,22 @@
         mixing_color = "None";
       };
     };
+  };
+
+    extraConfigLua = let
+      sym = "󰧟 ";
+    in /* lua */ ''
+local diag = vim.diagnostic
+diag.config({
+  signs = {
+    text = {
+      [diag.severity.ERROR] = "${sym}",
+      [diag.severity.WARN] = "${sym}",
+      [diag.severity.HINT] = "${sym}",
+      [diag.severity.INFO] = "${sym}",
+    },
+  },
+})
+    '';
   };
 }
