@@ -43,7 +43,8 @@
       selected_item_suffix = "$9";
       modified_item_prefix = "$3> $9";
 
-      progressbar_look = if rounding then "⠀" else " ";
+      # progressbar_look = if rounding then "⠀" else " ";
+      progressbar_look = "⠀";
 
       ## Available values: classic, alternative.
       user_interface = "classic";
