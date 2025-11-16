@@ -132,7 +132,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   ;; TODO convert rust ints to c99 ints
   ;; TODO ; -> . (for vim)
-  magic (switch
+  magic (switch ;; {{{
 
 
     ;; kb -> keyboard
@@ -234,7 +234,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((and (key-history v 3) (key-history e 2) (key-history c 1))) (macro C-w S-v e c S-, S-- S-.) break
     ;; true;
     ((and (key-history t 2) (key-history r 1))) (macro u e) break
-    
+    ;; regex
+    ((and(key-history r 2) (key-history e 3) (key-history g 2) (key-history e 1))) x break
 
 
 
@@ -336,7 +337,18 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
     () rpt break
-  )
+  ) ;; }}}
+
+
+  magic_2 (switch ;; {{{
+    ;; kb -> keyboard
+    ((and (key-history lsft 2) (key-history , 1))) S-- break
+
+    () @magic break
+  ) ;; }}}
+
+
+
 
   ;; normal rpt with some exceptions
   rpeat (switch
@@ -662,3 +674,4 @@ i end
     ];
   };
 }
+
