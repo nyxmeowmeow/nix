@@ -41,7 +41,7 @@ in {
 
 
 
-      palette = lib.mkDefault [
+      palette = lib.mkDefault [ # {{{
         "0=${col.black}"
         "1=${col.red}"
         "2=${col.green}"
@@ -58,7 +58,7 @@ in {
         "13=${col.violet}"
         "14=${col.aqua}"
         "15=${col.white}"
-      ];
+      ]; # }}}
 
 
 

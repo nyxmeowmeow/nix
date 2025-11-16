@@ -28,7 +28,7 @@
         workspace-shadow.enable = false;
       };
 
-      workspaces = {
+      workspaces = { # {{{
         "1" = {
           name = "left";
           open-on-output = "DP-1";
@@ -102,7 +102,7 @@
           name = "ghostty_yazi";
           open-on-output = "DP-1";
         };
-      };
+      }; # }}}
     };
   };
 }

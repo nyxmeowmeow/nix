@@ -15,7 +15,7 @@ let
 in {
 
     # install extensions from raycast
-    lib.vicinae.mkRayCastExtension = (
+    lib.vicinae.mkRayCastExtension = ( # {{{
       {
         name,
         sha256,
@@ -43,7 +43,7 @@ in {
         npmDeps = pkgs.importNpmLock { npmRoot = src; };
         npmConfigHook = pkgs.importNpmLock.npmConfigHook;
       })
-    );
+    ); # }}}
 
   imports = [
     inputs.vicinae.homeManagerModules.default
@@ -92,7 +92,7 @@ in {
 
 
 
-    extensions = [
+    extensions = [ # {{{
       # https://github.com/nix-community/home-manager/commit/cc837038306d752355d21a4b4620ff589bcd1e71
       (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
         inherit pkgs;
@@ -185,6 +185,6 @@ in {
       })
 
 
-      ];
+      ]; # }}}
 };
 }

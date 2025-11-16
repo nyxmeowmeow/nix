@@ -1,7 +1,7 @@
 {
   description = "meow meow meow meow :3";
 
-  inputs = {
+  inputs = { # {{{
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -54,7 +54,7 @@
 
     # ags.url = "github:aylur/ags";
     # meow-shell.url = "github:nyxmeowmeow/shell";
-  };
+  }; # }}}
 
   outputs = inputs @ {
     self,
@@ -72,7 +72,7 @@
     flake_ns_path = builtins.toString ./.; # flake nix store path
   in {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      nixos = nixpkgs.lib.nixosSystem { # {{{
         specialArgs = {
           inherit inputs username flake_dir zen-browser nixvim niri;
         };
@@ -110,9 +110,9 @@
         # }
 
         ];
-      };
+      }; # }}}
 
-      laptop = nixpkgs.lib.nixosSystem {
+      laptop = nixpkgs.lib.nixosSystem { # {{{
         specialArgs = {
           inherit username flake_dir inputs;
         };
@@ -132,7 +132,7 @@
 
 
         ];
-      };
+      }; # }}}
     };
   };
 }

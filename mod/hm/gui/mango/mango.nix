@@ -1,14 +1,13 @@
 {
   inputs,
   ...
-}:
-{
-imports = [
-  inputs.mango.hmModules.mango
-];
+}: {
+  imports = [
+    inputs.mango.hmModules.mango
+  ];
   wayland.windowManager.mango = {
     enable = true;
-    settings = /* toml */''
+    settings = /* toml */ '' # {{{
 
 monitorrule=DP-1,0.55,1,tile,0,1,0,0,2560,1440,165
 monitorrule=DP-3,0.55,1,tile,1,1,0,0,2560,1440,75
@@ -267,7 +266,7 @@ axisbind=SUPER,DOWN,viewtoright_have_client
 # layer rule
 layerrule=animation_type_open:zoom,layer_name:rofi
 layerrule=animation_type_close:zoom,layer_name:rofi
-      '';
+      ''; # }}}
     autostart_sh = ''
       '';
   };

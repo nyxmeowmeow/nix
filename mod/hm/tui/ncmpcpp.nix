@@ -1,4 +1,8 @@
-{ config, ... }: {
+{
+  config,
+  rounding,
+  ...
+}: {
   programs.ncmpcpp = {
     enable = true;
     bindings = [
@@ -20,7 +24,7 @@
       lyrics_directory = "~/.local/share/mpd/lyrics";
       mpd_host = "localhost";
       mpd_port = "6669";
-      mpd_music_dir = "$MUSIC";
+      mpd_music_dir = config.xdg.userDirs.music;
 
 
       song_list_format = "{%t - }{%a}|{$5%f$9}$R{$5%l$9}";
@@ -39,7 +43,7 @@
       selected_item_suffix = "$9";
       modified_item_prefix = "$3> $9";
 
-      progressbar_look = "⠀";
+      progressbar_look = if rounding then "⠀" else " ";
 
       ## Available values: classic, alternative.
       user_interface = "classic";
