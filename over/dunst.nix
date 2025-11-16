@@ -1,5 +1,5 @@
 final: prev: {
-  neovim = prev.neovim.override {
+  dunst = prev.dunst.override {
     withX11 = false;
   };
 }
