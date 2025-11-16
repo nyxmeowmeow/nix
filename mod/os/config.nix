@@ -4,6 +4,6 @@
     wm = "niri";
     font = "iosevka";
     font_size = "small";
-    rounding = true;
+    rounding = false;
   };
 }
