@@ -334,6 +334,8 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
   magic_2 (switch ;; {{{
 
+    ;; ||
+    ((key-history \ 1)) S-\ break
     ;; ex
     ((key-history e 1)) x break
     ;; <_
