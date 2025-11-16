@@ -379,10 +379,10 @@ r @r
 ;; TODO not in nixpkgs yet
 ;; first list does tap if theyre pressed
 ;; second list does tap if theyre pressed and then released
-t (tap-hold-release-tap-keys-release 120 120 t lsft (f15 f16 f17 f18 ; spc) ())
-a (tap-hold-release-tap-keys-release 120 120 a rsft (f15 f16 f17 f18 ; spc) ())
-c (tap-hold-release-tap-keys-release 120 120 c lctl (f15 f16 f17 f18 ; spc) ())
-h (tap-hold-release-tap-keys-release 120 120 h rctl (f15 f16 f17 f18 ; spc) ())
+t (tap-hold-release-tap-keys-release 120 120 t lsft (bspc f15 f16 f17 f18 ; spc) ())
+a (tap-hold-release-tap-keys-release 120 120 a rsft (bspc f15 f16 f17 f18 ; spc) ())
+c (tap-hold-release-tap-keys-release 120 120 c lctl (bspc f15 f16 f17 f18 ; spc) ())
+h (tap-hold-release-tap-keys-release 120 120 h rctl (bspc f15 f16 f17 f18 ; spc) ())
 
 
 
