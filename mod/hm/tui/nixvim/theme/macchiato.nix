@@ -1,4 +1,8 @@
-{ lib, theme, ... }:
+{
+  lib,
+  theme,
+  ...
+}:
 let
   col = import ../../../../../theme/macchiato/colors.nix;
 in {

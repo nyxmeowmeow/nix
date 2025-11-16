@@ -1,4 +1,7 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  ...
+}: {
   # services.clipse = {
   # package = pkgs.my-clipse;
   #   imageDisplay = {

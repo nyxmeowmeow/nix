@@ -1,4 +1,9 @@
-{ lib, config, pkgs, ... }: {
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
   config = lib.mkMerge [
     (lib.mkIf (config.font == "mononoki") {
       stylix.fonts.monospace = {

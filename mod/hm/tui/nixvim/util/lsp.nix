@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{
   programs.nixvim.lsp = {
     inlayHints.enable = false;
     servers = {

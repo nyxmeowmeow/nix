@@ -1,4 +1,8 @@
-{ pkgs, username, ... }: {
+{
+  pkgs,
+  username,
+  ...
+}: {
   networking.hostName = "laptop";
   networking.networkmanager.enable = true;
 

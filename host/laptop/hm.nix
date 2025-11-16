@@ -1,4 +1,10 @@
-{ username, flake_dir, inputs, config, ... }: {
+{
+  username,
+  flake_dir,
+  inputs,
+  config,
+  ...
+}: {
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;

@@ -1,4 +1,8 @@
-{ pkgs, username, ... }: {
+{
+  pkgs,
+  username,
+  ...
+}: {
   programs.bash = {
     enable = true;
     enableCompletion = true;

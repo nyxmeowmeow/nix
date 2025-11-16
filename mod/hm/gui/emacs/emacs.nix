@@ -1,4 +1,7 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  ...
+}: {
   programs.emacs = {
     enable = false;
     package = pkgs.emacs-gtk;
@@ -9,5 +12,5 @@
     EMACSLOADPATH= ./emacs;
   };
 
-# ln -sfn ~/nix/emacs ~/.emacs.d
+# ln -sfbn ~/nix/emacs ~/.emacs.d
 }

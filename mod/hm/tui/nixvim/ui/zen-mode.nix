@@ -1,4 +1,7 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  ...
+}: {
   # programs.nixvim = {
   #   extraPlugins = [ pkgs.vimPlugins.nvim-highlight-colors ];
   #    extraConfigLua = ''

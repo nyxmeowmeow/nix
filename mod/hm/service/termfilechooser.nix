@@ -1,4 +1,7 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  ...
+}: {
   systemd.user.services.xdg-desktop-portal-termfilechooser = {
     Unit = {
       Description = "Portal service (terminal file chooser implementation)";
@@ -14,7 +17,7 @@
     };
   };
 
-  home.file.".config/xdg-desktop-portal-termfilechooser/config".text = ''
+  home.file.".config/xdg-desktop-portal-termfilechooser/config".text = /* ini */ ''
 [filechooser]
 cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
 default_dir=$HOME

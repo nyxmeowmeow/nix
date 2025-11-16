@@ -1,4 +1,7 @@
-{ flake_dir, ... }: {
+{
+  flake_dir,
+  ...
+}: {
   programs.yazi = {
     keymap = {
       # mgr {{{

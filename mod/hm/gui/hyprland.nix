@@ -1,4 +1,9 @@
-{ pkgs, lib, wm, ... }: {
+{
+  pkgs,
+  lib,
+  wm,
+  ...
+}: {
   config = lib.mkIf (wm == "hyprland") {
     home.packages = with pkgs; [
       hyprprop

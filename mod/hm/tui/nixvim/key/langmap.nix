@@ -39,6 +39,6 @@
           \   .. ' <Leader>q' .. letter
           \   .. ' :<C-U>call RunMacroWithLangremap("' .. letter .. '", v:count1)<CR>'
           endfor
-          '';
+      '';
   };
 }

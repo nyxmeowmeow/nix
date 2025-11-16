@@ -1,4 +1,8 @@
-{ pkgs, ... }: {
+{
+  pkgs,
+  ...
+}:
+{
   stylix = {
     enable = true;
     autoEnable = false; # manually specify which to enable

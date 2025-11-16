@@ -1,4 +1,10 @@
-{ config, lib, theme, username, ... }:
+{
+  config,
+  lib,
+  theme,
+  username,
+  ...
+}:
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;

@@ -1,4 +1,8 @@
-{ lib, theme, ... }: {
+{
+  lib,
+  theme,
+  ...
+}: {
   # config = lib.mkIf (theme == "lix") {
   #   programs.nixvim.plugins.smear-cursor.settings = {
   #     cursor_color = "#A4A0E8";

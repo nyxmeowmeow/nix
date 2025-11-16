@@ -1,5 +1,3 @@
-# TODO mouse keys
-
 # base:
 #      : b f d w p   / l o u . _
 #      = n s t c y   m h a e i 
@@ -17,7 +15,6 @@
 #                      ← ↓ ↑ →
 #                      󰞗 󰞖 󰞙 󰞘
 #              .       󱁐
-
 {
   pkgs,
   lib,
@@ -26,7 +23,7 @@
 }: {
 
 
-  nixpkgs.overlays = [
+  nixpkgs.overlays = [# {{{
     (final: prev: {
 
 kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
@@ -63,7 +60,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
         # };
       };
     })
-  ];
+  ];# }}}
 
 
 
@@ -91,7 +88,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 (defsrc
 )
 
-(defalias
+(defalias ;; {{{
   r (switch
     ;; key-timing to not interfere with vim
     ((and (key-history lsft 2) (key-history 0 1) (key-timing 1 less-than 110))) (macro S-0) break
@@ -231,7 +228,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ;; true;
     ((and (key-history t 2) (key-history r 1))) (macro u e) break
     ;; regex
-    ((and(key-history r 2) (key-history e 3) (key-history g 2) (key-history e 1))) x break
+    ((and(key-history r 4) (key-history e 3) (key-history g 2) (key-history e 1))) x break
 
 
 
@@ -335,18 +332,18 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     () rpt break
   ) ;; }}}
 
-
   magic_2 (switch ;; {{{
+
+    ;; ex
+    ((key-history e 1)) x break
+    ;; <_
     ((and (key-history lsft 2) (key-history , 1))) S-- break
 
     () @magic break
   ) ;; }}}
 
-
-
-
   ;; normal rpt with some exceptions
-  rpeat (switch
+  rpeat (switch ;; {{{
 
     ;; oar trigram
     ((and(key-history a 1) (input-history real lsft 2))) (macro r) break
@@ -370,10 +367,10 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
     ((key-history spc 1)) (one-shot-press 2000 lsft) break
 
     () rpt break
-  )
-)
+  ) ;; }}}
+) ;; }}}
 
-(deflayermap (base)
+(deflayermap (base) ;; {{{
 j /
 / j
 x S--
@@ -419,9 +416,9 @@ spc @space
 , (tap-hold-press 120 120 , (layer-while-held syms))
 ; (tap-hold-press 120 120 ; (layer-while-held syms))
 
-)
+) ;; }}}
 
-(deflayermap mods
+(deflayermap mods ;; {{{
 ;; w (cmd wlr-which-key -k l /home/${username}/.config/wlr-which-key/mpc.yaml)
 
 l (movemouse-left 6 4)
@@ -467,25 +464,25 @@ f17 pgup
 
 3 (macro ent S-[)
 8 (macro ent S-])
-)
+) ;; }}}
 
-(deflayermap krita
+(deflayermap krita ;; {{{
 lsft lsft
 lctl lctl
 r spc
 spc r
-)
+) ;; }}}
 
-(deflayermap over
+(deflayermap over ;; {{{
 f18 tab
 f15 8
 f16 9
 f17 0
 f19 lsft
 
-)
+) ;; }}}
 
-(deflayermap melee
+(deflayermap melee ;; {{{
 . j
 f18 tab
 f15 8
@@ -494,9 +491,9 @@ f17 0
 f19 lsft
 n `
 
-)
+) ;; }}}
 
-(deflayermap sup
+(deflayermap sup ;; {{{
 lctl lctl
 rsft rsft
 
@@ -534,9 +531,9 @@ a a
 e e
 i i
 
-)
+) ;; }}}
 
-(deflayermap syms
+(deflayermap syms ;; {{{
 
 
 b ,
@@ -570,9 +567,9 @@ spc @space2
 ent @enter
 lmet esc
 
-)
+) ;; }}}
 
-(deflayermap fn
+(deflayermap fn ;; {{{
 b f1
 f f2
 d f3
@@ -593,10 +590,9 @@ i end
 
 
 
-)
+) ;; }}}
 
-
-(defchordsv2
+(defchordsv2 ;; {{{
   ;; (r spc) rsft 18 first-release (over sup melee)
 
   (f15 a) @cw 16 all-released (over sup melee)
@@ -641,7 +637,7 @@ i end
 
   ;; (h spc) \ 15 all-released (over sup melee)
 
-)
+) ;; }}}
 
 
         '';

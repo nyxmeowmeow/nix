@@ -1,4 +1,9 @@
-{ pkgs, lib, theme, ... }: {
+{
+  pkgs,
+  lib,
+  theme,
+  ...
+}: {
   config = lib.mkIf (lib.hasPrefix "kan" theme) {
 
     programs.nixvim = {

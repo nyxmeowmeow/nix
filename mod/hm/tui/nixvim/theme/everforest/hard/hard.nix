@@ -1,4 +1,8 @@
-{ lib, theme, ... }: {
+{
+  lib,
+  theme,
+  ...
+}: {
   config = lib.mkIf (theme == "everforest_hard") {
 
     programs.nixvim.colorschemes.everforest = {

@@ -1,4 +1,8 @@
-{ config, font_size, ... }:
+{
+  config,
+  font_size,
+  ...
+}:
 let
   fn = config.stylix.fonts.monospace.name;
   # fs = if (font_size == "small")  then 22
