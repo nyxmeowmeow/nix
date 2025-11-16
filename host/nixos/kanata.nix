@@ -135,10 +135,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
   magic (switch ;; {{{
 
 
-    ;; kb -> keyboard
-    ((and (key-history k 2) (key-history b 1))) (multi (release-key b) (macro bspc e y b o a r d)) break
-    ;; sb -> svalboard
-    ((and (key-history s 2) (key-history b 1))) (multi (release-key b) (macro bspc v a l b o a r d)) break
     ;; linux
     ((and (key-history l 4) (key-history i 3) (key-history n 2) (key-history u 1))) (macro x) break
     ;; yazi
@@ -341,7 +337,6 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 
 
   magic_2 (switch ;; {{{
-    ;; kb -> keyboard
     ((and (key-history lsft 2) (key-history , 1))) S-- break
 
     () @magic break
@@ -382,7 +377,7 @@ kanata-with-cmd = prev.pkgs.rustPlatform.buildRustPackage rec {
 j /
 / j
 x S--
-f15 @magic
+f15 @magic_2
 
 
 
