@@ -431,13 +431,13 @@
       }
 
       {
-        on = [ "Y" "f" ];
+        on = [ "Y" "n" ];
         run = "copy filename";
         desc = "Copy the filename";
       }
 
       {
-        on = [ "Y" "n" ];
+        on = [ "Y" "N" ];
         run = "copy name_without_ext";
         desc = "Copy the filename without extension";
       }

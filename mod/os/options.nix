@@ -46,5 +46,15 @@
       ];
       default = "medium";
     };
+
+    font_path = lib.mkOption {
+      type = lib.types.str;
+      default = "";
+    };
+
+    font_path_bold = lib.mkOption {
+      type = lib.types.str;
+      default = "";
+    };
   };
 }
