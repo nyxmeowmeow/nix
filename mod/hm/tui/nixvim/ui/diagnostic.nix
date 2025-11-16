@@ -1,4 +1,7 @@
 {
+  rounding,
+  ...
+}: {
   programs.nixvim = {
     plugins.tiny-inline-diagnostic = {
     enable = true;
@@ -34,7 +37,7 @@
   };
 
     extraConfigLua = let
-      sym = "󰧟 ";
+      sym = if rounding then "󰧟 " else " ";
     in /* lua */ ''
 local diag = vim.diagnostic
 diag.config({
