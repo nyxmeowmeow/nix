@@ -1,5 +1,6 @@
 {
   config,
+  os_config,
   lib,
   theme,
   ...
@@ -11,7 +12,7 @@ in {
   programs.ghostty = {
     enable = true;
     settings = {
-      font-family = config.stylix.fonts.monospace.name;
+      font-family = os_config.font_path;
       font-size = 22;
       gtk-single-instance = true;
 
