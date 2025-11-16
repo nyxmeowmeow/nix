@@ -1,4 +1,4 @@
-{ os_config, lib, theme, ... }:
+{ config, lib, theme, ... }:
 let
   theme_trimmed = lib.strings.removeSuffix "_zen" theme;
   col = import ../../../../theme/${theme_trimmed}/colors.nix;
@@ -6,7 +6,7 @@ in {
   home.file.".config/usercontent/nixos.css".text = /* css */ ''
 @-moz-document domain("wiki.nixos.org") {
 * {
-  font-family: ${os_config.font_path} !important;
+  font-family: ${config.stylix.fonts.monospace.name} !important;
   background: transparent !important;
 }
 
